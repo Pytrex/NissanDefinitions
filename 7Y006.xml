@@ -1,0 +1,62 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>7Y006</xmlid>
+		<hwid>4xxes9np</hwid>
+		<internalidaddress>835A</internalidaddress>
+		<internalidstring>7Y006</internalidstring>
+		<ecuid>7Y006</ecuid>
+		<year>04</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Maxima</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH705513</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Trim" storageaddress="0x6931">
+		<table type="X Axis" storageaddress="0x8569" />
+		<table type="Y Axis" storageaddress="0x8579" />
+	</table>
+	<table name="High Octane Ignition Trim" storageaddress="0x6a31">
+		<table type="X Axis" storageaddress="0x8569" />
+		<table type="Y Axis" storageaddress="0x8579" />
+	</table>
+	<table name="Regular Ignition Trim" storageaddress="0x6b31">
+		<table type="X Axis" storageaddress="0x8569" />
+		<table type="Y Axis" storageaddress="0x8579" />
+	</table>
+	<table name="Fuel Compensation" storageaddress="0x6e21">
+		<table type="X Axis" storageaddress="0x84d4" />
+		<table type="Y Axis" storageaddress="0x8480" />
+	</table>
+	<table name="Fuel Target" storageaddress="0x6ff1">
+		<table type="X Axis" storageaddress="0x83ab" />
+		<table type="Y Axis" storageaddress="0x8478" />
+	</table>
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x7171">
+		<table type="X Axis" storageaddress="0x8db5" />
+		<table type="Y Axis" storageaddress="0x8dc5" />
+	</table>
+
+	<table name="MAF" storageaddress="0x090e2">
+	</table>
+
+
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x65ec">
+	</table>
+
+	<table name="Idle Target" storageaddress="0x89fb">
+	</table>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x656c">
+	</table>
+
+	<table name="Speed Limiter" storageaddress="0x668e" />
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6818" xorloc="0x6810" />
+
+</rom>

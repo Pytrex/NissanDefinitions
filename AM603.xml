@@ -1,0 +1,70 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>AM603</xmlid>
+		<hwid>3MFED17N7</hwid>
+		<internalidaddress>6c31</internalidaddress>
+		<internalidstring>AM603</internalidstring>
+		<ecuid>AM603</ecuid>
+		<year>03</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Trim" storageaddress="0x5299">
+		<table type="X Axis" storageaddress="0x6EE8" />
+		<table type="Y Axis" storageaddress="0x6EF8" />
+	</table>
+	<table name="High Octane Ignition Trim" storageaddress="0x5399">
+		<table type="X Axis" storageaddress="0x6EE8" />
+		<table type="Y Axis" storageaddress="0x6EF8" />
+	</table>
+	<table name="Regular Ignition Trim" storageaddress="0x5499">
+		<table type="X Axis" storageaddress="0x6EE8" />
+		<table type="Y Axis" storageaddress="0x6EF8" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x5759">
+		<table type="X Axis" storageaddress="0x6e3E" />
+		<table type="Y Axis" storageaddress="0x6DE2" />
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x5969">
+		<table type="X Axis" storageaddress="0x6CC5" />
+		<table type="Y Axis" storageaddress="0x6DDA" />
+	</table>
+
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x5aa9">
+		<table type="X Axis" storageaddress="0x7774" />
+		<table type="Y Axis" storageaddress="0x7784" />
+	</table>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x4FF2" />
+
+	<table name="MAF" storageaddress="0x7980" />
+
+	<table name="Speed Limiter" storageaddress="0x5058" />
+
+	<table name="Idle Target" storageaddress="0x73AE" />
+	<table name="Idle Target 2" storageaddress="0x73D2" />
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x4f96" />
+
+	<table name="QH0/ torque conversion map" storageaddress="0x6444">
+		<table type="X Axis" storageaddress="0x7960" />
+		<table type="Y Axis" storageaddress="0x6dfa" />   
+	</table>
+
+	<table name="QH0/ torque conversion map 2" storageaddress="0x8674">
+		<table type="X Axis" storageaddress="0x8948" />
+		<table type="Y Axis" storageaddress="0x88b8" />   
+	</table>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x5190" xorloc="0x5188" />
+
+</rom>

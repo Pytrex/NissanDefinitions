@@ -1,0 +1,75 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>AC400</xmlid>
+		<hwid>5ZP8N00</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC400</internalidstring>
+		<ecuid>AC400</ecuid>
+		<year>2004</year>
+		<market></market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Trim" storageaddress="0x730D">
+		<table type="X Axis" storageaddress="0x92ee" />
+		<table type="Y Axis" storageaddress="0x92fe" />
+	</table>
+
+	<table name="High Octane Ignition Trim" storageaddress="0x740D">
+		<table type="X Axis" storageaddress="0x92ee" />
+		<table type="Y Axis" storageaddress="0x92fe" />
+	</table>
+
+	<table name="Regular Ignition Trim" storageaddress="0x750D">
+		<table type="X Axis" storageaddress="0x92ee" />
+		<table type="Y Axis" storageaddress="0x92fe" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x786D">
+		<table type="X Axis" storageaddress="0x9208" />
+		<table type="Y Axis" storageaddress="0x91ac" />
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x79FD">
+		<table type="X Axis" storageaddress="0x9037" />
+		<table type="Y Axis" storageaddress="0x91A4" />
+	</table>
+
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x7B3D">
+		<table type="X Axis" storageaddress="0x9d82" />
+		<table type="Y Axis" storageaddress="0x9d92" />
+	</table>
+
+	<table name="MAF" storageaddress="0xA1E8"/>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
+
+	<table name="Idle Target" storageaddress="0x988c"/>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x6f24"/>
+
+	<table name="Radiator Fan Switch Point" storageaddress="0x697A"/>
+	<table name="Minimum Injector Pulse Width" storageaddress="0x8a86"/>
+
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4" sizey="6"/>
+
+	<table name="Open loop fuel target delay" storageaddress="0x6741"/>
+
+	<table name="Injector Latency at 14V" storageaddress="0x6b40" />
+	<table name="Fuel Injector Latency Adder" storageaddress="0x652d" />
+	<table name="Cranking Enrichment" storageaddress="0xA982"/>
+	<table name="Speed Limiter" storageaddress="0x705e" />
+	<table name="Load Base Fuel Schedule" storageaddress="0xa46c" />
+
+	<table name="Throttle Rev Limit" storageaddress="0x7036"/>
+	<table name="MAF factor" storageaddress="0x691f" />
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
+
+</rom>

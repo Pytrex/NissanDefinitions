@@ -1,0 +1,107 @@
+<rom base="NISSAN_BASE">
+    <romid>
+        <xmlid>CD006</xmlid>
+        <hwid>3GIJ7N04</hwid>
+        <internalidaddress>828c</internalidaddress>
+        <internalidstring>CD006</internalidstring>
+        <ecuid>CD006</ecuid>
+        <year>03</year>
+        <market>US</market>
+        <make>Nissan</make>
+        <model>350Z</model>
+        <submodel>Track</submodel>
+        <transmission>MT</transmission>
+        <memmodel>SH7055</memmodel>
+        <flashmethod>nisprog</flashmethod>
+        <filesize>512kb</filesize>
+    </romid>
+
+    <table name="Cold Ignition Trim" storageaddress="0x68F5">
+        <table type="X Axis" storageaddress="0x8E0F" />
+        <table type="Y Axis" storageaddress="0x8E1F" />
+    </table>
+
+    <table name="High Octane Ignition Trim" storageaddress="0x69F5">
+        <table type="X Axis" storageaddress="0x8E0F" />
+        <table type="Y Axis" storageaddress="0x8E1F" />
+    </table>
+
+    <table name="Regular Ignition Trim" storageaddress="0x6AF5">
+        <table type="X Axis" storageaddress="0x8E0F" />
+        <table type="Y Axis" storageaddress="0x8E1F" />
+    </table>
+
+    <table name="Fuel Compensation" storageaddress="0x6DB5">
+        <table type="X Axis" storageaddress="0x846E" />
+        <table type="Y Axis" storageaddress="0x8412" />
+    </table>
+
+    <table name="Fuel Target" storageaddress="0x06FC5">
+        <table type="X Axis" storageaddress="0x82E5" />  
+        <table type="Y Axis" storageaddress="0x840A" />  
+    </table>
+
+    <table name="Intake Cam Timing (16x16)" storageaddress="0x7105">
+        <table type="X Axis" storageaddress="0x8e0f" />
+        <table type="Y Axis" storageaddress="0x8e1f" />
+    </table>
+
+    <table name="Fuel Cut Bosch" storageaddress="0x8A03"/>
+    <table name="Fuel Cut JECS" storageaddress="0x8A27"/>
+    <table name="Fuel Restore Bosch" storageaddress="0x8A77"/>
+    <table name="Fuel Restore JECS" storageaddress="0x8B45"/>
+    
+    <table name="Idle Target" storageaddress="0x8A3F" />
+
+    <table name="Speed Limiter" storageaddress="0x66AE" />
+    <table name="Speed Limiter (km/h)" storageaddress="0x66AE" />
+
+    <table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6644"/>
+
+    <table name="MAF" storageaddress="0x9002"/>
+
+    <table name="Fuel Injection Multiplier" storageaddress="0x65E4"/>
+
+    <table name="QH0/ torque conversion map" storageaddress="0x7AA0">
+        <table type="Y Axis" storageaddress="0x9f70" />
+        <table type="X Axis" storageaddress="0xA000" />
+    </table>
+
+    <table name="QH0/ torque conversion map 2" storageaddress="0x9D2C">
+        <table type="Y Axis" storageaddress="0x9f70" />
+        <table type="X Axis" storageaddress="0xA000" />
+    </table>
+
+    <table name="Engine torque value map" storageaddress="0x7F20">
+        <table type="X Axis" storageaddress="0x5060" />
+        <table type="Y Axis" storageaddress="0x7D81" />
+    </table>
+
+    <table name="MSATHA" storageaddress="0x7275">
+        <table type="X Axis" storageaddress="0x8E0F" />
+        <table type="Y Axis" storageaddress="0x8E1F" />
+    </table>
+
+    <table name="MSATHB" storageaddress="0x7375">
+        <table type="X Axis" storageaddress="0x8E0F" />
+        <table type="Y Axis" storageaddress="0x8E1F" />
+    </table>
+
+    <table name="MSATH" storageaddress="0x7475">
+        <table type="X Axis" storageaddress="0x8E0F" />
+        <table type="Y Axis" storageaddress="0x8E1F" />
+    </table>
+
+    <table storageaddress="0x8a3F" name="Idle Target"/>
+
+    <table name="Injector Latency at 14V" storageaddress="0x6352" />
+    <table name="Fuel Injector Latency Adder" storageaddress="0x5E65" />
+    <table name="MAF idle voltage limits (USRV)" storageaddress="0x671A" />
+    <table name="Fuel correction limits, % (MALPRV)" storageaddress="0x622b" />
+    <table name="Idle BFS limits, ms (TPRV)" storageaddress="0x66e6" />
+    <table name="MAF factor" storageaddress="0x61ad" />
+
+    <table name="Fuel Cut Prohibition Speed" storageaddress="0x8DB3" />
+
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67ec" xorloc="0x67e4" />
+</rom>

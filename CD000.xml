@@ -1,0 +1,100 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>CD000</xmlid>
+		<hwid>3GIGGN02</hwid>
+		<internalidaddress>824c</internalidaddress>
+		<internalidstring>CD000</internalidstring>
+		<ecuid>CD000</ecuid>
+		<year>03</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Perf</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Trim" storageaddress="0x68B5">
+		<table type="X Axis" storageaddress="0x8DCF" />
+		<table type="Y Axis" storageaddress="0x8DDF" />
+	</table>
+
+	<table name="High Octane Ignition Trim" storageaddress="0x69B5">
+		<table type="X Axis" storageaddress="0x8DCF" />
+		<table type="Y Axis" storageaddress="0x8DDF" />
+	</table>
+
+	<table name="Regular Ignition Trim" storageaddress="0x6AB5">
+		<table type="X Axis" storageaddress="0x8DCF" />
+		<table type="Y Axis" storageaddress="0x8DDF" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x6D75">
+		<table type="X Axis" storageaddress="0x842E" />
+		<table type="Y Axis" storageaddress="0x83D2" />
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x6F85">
+		<table type="X Axis" storageaddress="0x82A5" />  
+		<table type="Y Axis" storageaddress="0x83CA" />  
+	</table>
+
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x70C5">
+		<table type="X Axis" storageaddress="0x8DCF" />
+		<table type="Y Axis" storageaddress="0x8DDF" />
+	</table>
+
+	<table name="Fuel Cut Bosch" storageaddress="0x89C3"/>
+	<table name="Fuel Cut JECS" storageaddress="0x89E7"/>
+	<table name="Fuel Restore Bosch" storageaddress="0x8A37"/>
+	<table name="Fuel Restore JECS" storageaddress="0x8B05"/>
+	
+	<table name="Idle Target" storageaddress="0x89FF" />
+
+	<table name="Speed Limiter" storageaddress="0x666E" />
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x660C"/>
+
+	<table name="MAF" storageaddress="0x8FC2"/>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x65AE"/>
+
+	<table name="QH0/ torque conversion map" storageaddress="0x7A60">
+		<table type="Y Axis" storageaddress="0x9F2E" />
+		<table type="X Axis" storageaddress="0x9FBE" />
+	</table>
+
+	<table name="QH0/ torque conversion map 2" storageaddress="0x9CEA">
+		<table type="Y Axis" storageaddress="0x9F2E" />
+		<table type="X Axis" storageaddress="0x9FBE" />
+	</table>
+
+	<table name="MSATHA" storageaddress="0x7235">
+		<table type="X Axis" storageaddress="0x8DCF" />
+		<table type="Y Axis" storageaddress="0x8DDF" />
+	</table>
+
+	<table name="MSATHB" storageaddress="0x7335">
+		<table type="X Axis" storageaddress="0x8DCF" />
+		<table type="Y Axis" storageaddress="0x8DDF" />
+	</table>
+
+	<table name="MSATH" storageaddress="0x7435">
+		<table type="X Axis" storageaddress="0x8DCF" />
+		<table type="Y Axis" storageaddress="0x8DDF" />
+	</table>
+
+	<table name="Injector Latency at 14V" storageaddress="0x631D" />
+	<table name="Fuel Injector Latency Adder" storageaddress="0x5E34" />
+	<table name="MAF idle voltage limits (USRV)" storageaddress="0x66DA" />
+	<table name="Fuel correction limits, % (MALPRV)" storageaddress="0x61F7" />
+	<table name="Idle BFS limits, ms (TPRV)" storageaddress="0x66A6" />
+	<table name="MAF factor" storageaddress="0x6179" />
+
+	<table name="Fuel Cut Prohibition Speed" storageaddress="0x8D73" />
+	<table name="Load Base Fuel Schedule" storageaddress="0x9182"/>
+	
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67AC" xorloc="0x67A4" />
+</rom>

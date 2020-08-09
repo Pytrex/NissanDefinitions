@@ -1,0 +1,79 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>AM91A</xmlid>
+		<hwid>2wlj6d11</hwid>
+		<internalidaddress>81DF</internalidaddress>
+		<internalidstring>AM91A</internalidstring>
+		<ecuid>AM91A</ecuid>
+		<year>03</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>Skyline</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH705513</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Trim" storageaddress="0x67C5">
+		<table type="X Axis" storageaddress="0x84C3" />
+		<table type="Y Axis" storageaddress="0x84D3" />
+	</table>
+	<table name="High Octane Ignition Trim" storageaddress="0x68C5">
+		<table type="X Axis" storageaddress="0x84C3" />
+		<table type="Y Axis" storageaddress="0x84D3" />
+	</table>
+	<table name="Regular Ignition Trim" storageaddress="0x69C5">
+		<table type="X Axis" storageaddress="0x84C3" />
+		<table type="Y Axis" storageaddress="0x84D3" />
+	</table>
+	<table name="Fuel Compensation" storageaddress="0x6c85">
+		<table type="X Axis" storageaddress="0x83F9" />
+		<table type="Y Axis" storageaddress="0x839D" />
+	</table>
+	<table name="Fuel Target" storageaddress="0x6e95">
+		<table type="X Axis" storageaddress="0x823C" />
+		<table type="Y Axis" storageaddress="0x8385" />
+	</table>
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x7015">
+		<table type="X Axis" storageaddress="0x8E91" />
+		<table type="Y Axis" storageaddress="0x8EA1" />
+	</table>
+
+	<table name="MAF" storageaddress="0x91DA">
+	</table>
+
+	<table name="QH0/ torque conversion map" storageaddress="0x79F0">
+		<table type="X Axis" storageaddress="0x91BA" />
+		<table type="Y Axis" storageaddress="0x83B5" />
+	</table>
+
+
+	<table name="QH0/ torque conversion map 2" storageaddress="0xa144">
+		<table type="X Axis" storageaddress="0xa418" />
+		<table type="Y Axis" storageaddress="0xa388" />
+	</table>
+
+	<table name="Load Base Fuel Schedule" storageaddress="0x93BA">
+	</table>
+
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x64FA">
+	</table>
+
+	<table name="Idle Target" storageaddress="0x8A27">
+	</table>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x6498">
+	</table>
+	
+	<table name="Speed Limiter" storageaddress="0x6566" />
+...
+	<table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x627D"/>
+    	<table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x6287"/>
+
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x66BC" xorloc="0x66B4" />
+
+</rom>

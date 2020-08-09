@@ -1,0 +1,143 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>ZG59B</xmlid>
+		<hwid>6X6E58SYMN36</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>ZG59B</internalidstring>
+		<ecuid>ZG59B</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>Spec V</submodel>
+		<transmission>MT w/o NATS</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+	
+	<table name="Cold Ignition Trim" storageaddress="0x8a31">
+		<table type="X Axis" storageaddress="0xa622"/>
+		<table type="Y Axis" storageaddress="0xa632"/>
+	</table>
+
+	<table name="High Octane Ignition Trim" storageaddress="0x8b31">
+		<table type="X Axis" storageaddress="0xa622"/>
+		<table type="Y Axis" storageaddress="0xa632"/>
+	</table>
+
+	<table name="Regular Ignition Trim" storageaddress="0x8c31">
+		<table type="X Axis" storageaddress="0xa622"/>
+		<table type="Y Axis" storageaddress="0xa632"/>
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x8ED1">
+		<table type="X Axis" storageaddress="0xA544"/>
+		<table type="Y Axis" storageaddress="0xA508"/>
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x9021">
+		<table type="X Axis" storageaddress="0xa3bf"/>
+		<table type="Y Axis" storageaddress="0xa4f0"/>
+	</table>
+
+	<table name="OL Fueling Target Rate" storageaddress="0xaa7e"/>
+
+	<table name="Learning map TP shaft lattice point table" storageaddress="0xaabe"/>
+
+	<table name="Learning map N shaft lattice point table" storageaddress="0xab80"/>
+
+	<table name="Intake Cam Timing (8x8)" storageaddress="0x91d1">
+		<table type="X Axis" storageaddress="0xb04a" />
+		<table type="Y Axis" storageaddress="0xb01e" />
+	</table>
+	
+	<table name="Intake Cam Timing Cold (8x8)" storageaddress="0x9191">
+		<table type="X Axis" storageaddress="0xb03a" />
+		<table type="Y Axis" storageaddress="0xb026" />
+	</table>
+	
+	<table name="Idle Target" storageaddress="0xabbc"/>
+	
+	<table name="Fuel Injection Multiplier" storageaddress="0x864c">
+	</table>
+
+	<table name="QH0/ torque conversion map" storageaddress="0x9A8C">
+		<table type="X Axis" storageaddress="0xB448"/>
+		<table type="Y Axis" storageaddress="0xA524"/>
+	</table>
+
+	<table name="QH0/ torque conversion map 2" storageaddress="0xC49E">
+		<table type="X Axis" storageaddress="0xC77C"/>
+		<table type="Y Axis" storageaddress="0xC6EC"/>
+	</table>
+
+	<table name="mMTFDD" storageaddress="0x968c">
+		<table type="X Axis" storageaddress="0xC75C"/>
+		<table type="Y Axis" storageaddress="0xC73C"/>
+	</table>
+
+	<table name="mMTFDDS" storageaddress="0x988c">
+		<table type="X Axis" storageaddress="0xC75C"/>
+		<table type="Y Axis" storageaddress="0xC73C"/>
+	</table>
+
+	<table name="mMTFDDS_S" storageaddress="0xC09E">
+		<table type="X Axis" storageaddress="0xC75C"/>
+		<table type="Y Axis" storageaddress="0xC73C"/>
+	</table>
+
+	<table name="mMTFDD_S" storageaddress="0xC29E">
+		<table type="X Axis" storageaddress="0xC75C"/>
+		<table type="Y Axis" storageaddress="0xC73C"/>
+	</table>
+
+	<table name="MSATHA" storageaddress="0x9231">
+		<table type="X Axis" storageaddress="0xa42b"/>
+		<table type="Y Axis" storageaddress="0xa44b"/>
+	</table>
+
+	<table name="MSATHB" storageaddress="0x9331">
+		<table type="X Axis" storageaddress="0xa42b"/>
+		<table type="Y Axis" storageaddress="0xa44b"/>
+	</table>
+
+	<table name="MSATH" storageaddress="0x9431">
+		<table type="X Axis" storageaddress="0xa42b"/>
+		<table type="Y Axis" storageaddress="0xa44b"/>
+	</table>
+
+	<table name="MAF" storageaddress="0xb468"/>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x86dc"/>
+
+	<table name="Throttle Rev Limit" storageaddress="0x876E"/>
+
+	<table name="Dwell RPM table" storageaddress="0xA786"/>
+
+	<table name="Dwell battery table" storageaddress="0xA78E"/>
+
+	<table name="mTDENS" storageaddress="0xA3AF"/>
+
+	<table name="mTFLTW" storageaddress="0xAF96"/>
+	
+	<table name="Fuel Cut Bosch" storageaddress="0xab88"/>
+	<table name="Fuel Cut JECS" storageaddress="0xabac"/>
+	<table name="Fuel Restore Bosch" storageaddress="0xac04"/>
+	<table name="Fuel Restore JECS" storageaddress="0xacc8"/>
+	
+	<table name="Catalyst DTCs" storageaddress="0xc6a4"/>
+	<table name="Evap DTCs" storageaddress="0xc6ad"/>
+	<table name="Evap 2 DTCs"  storageaddress="0xc6ae"/>
+	<table name="Power Steering DTC"  storageaddress="0xc6b8"/>
+	<table name="Secondary O2 DTCs" storageaddress="0xc6d0"/>
+	<table name="Secondary O2 Knock DTCs" storageaddress="0xc6d1"/>
+	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0xc6d4"/>
+	<table name="Evap Pressure Flow DTCs" storageaddress="0xc6d6"/>
+	<table name="Evap Leaks DTCs"  storageaddress="0xc6d7"/>
+
+	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0xbfa0" />
+	
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8918" xorloc="8910"/>
+
+</rom>

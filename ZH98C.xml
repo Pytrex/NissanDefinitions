@@ -1,0 +1,20 @@
+<rom base="ZH99A">
+
+	<romid>
+		<xmlid>ZH98C</xmlid>
+		<hwid>6ZVYXN00</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>ZH98C</internalidstring>
+		<ecuid>ZH98C</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Altima</model>
+		<submodel>SER w/ TCS</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+</rom>
+	

@@ -1,0 +1,88 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>8U073</xmlid>
+		<hwid>3TREE21N14</hwid>
+		<internalidaddress>7438</internalidaddress>
+		<internalidstring>8U073</internalidstring>
+		<ecuid>8U073</ecuid>
+		<year>02</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>Spec-V</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Trim" storageaddress="0x56dd">
+		<table type="X Axis" storageaddress="0x7771" />
+		<table type="Y Axis" storageaddress="0x7781" />
+	</table>
+
+	<table name="High Octane Ignition Trim" storageaddress="0x57dd">
+		<table type="X Axis" storageaddress="0x7771" />
+		<table type="Y Axis" storageaddress="0x7781" />
+	</table>
+
+	<table name="Regular Ignition Trim" storageaddress="0x58dd">
+		<table type="X Axis" storageaddress="0x7771" />
+		<table type="Y Axis" storageaddress="0x7781" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x5bdd">
+		<table type="X Axis" storageaddress="0x769e" />
+		<table type="Y Axis" storageaddress="0x765a" />
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x5dad">
+		<table type="X Axis" storageaddress="0x751d" />
+		<table type="Y Axis" storageaddress="0x7652" />
+	</table>
+
+	<table name="Intake Cam Timing (8x8)" storageaddress="0x5f9d">
+		<table type="X Axis" storageaddress="0x817b" />
+		<table type="Y Axis" storageaddress="0x814f" />
+	</table>
+
+	<table name="Intake Cam Timing Cold (8x8)" storageaddress="0x5f5d">
+		<table type="X Axis" storageaddress="0x816b" />
+		<table type="Y Axis" storageaddress="0x8157" />
+	</table>	
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x539e">
+	</table>
+
+	<table name="MAF" storageaddress="0x84a6">
+		<scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100" />
+	</table>
+
+	<table name="Idle Target" storageaddress="0x7d1b">
+	</table>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x5332">
+	</table>
+	<table name="QH0/ torque conversion map" storageaddress="0x6828">
+		<table type="X Axis" storageaddress="0x8486" />
+		<table type="Y Axis" storageaddress="0x7672" />
+	</table>
+
+	<table name="QH0/ torque conversion map 2" storageaddress="0x9540">
+		<table type="X Axis" storageaddress="0x9894" />
+		<table type="Y Axis" storageaddress="0x9804" />
+	</table>
+
+	<table name="mMTFDD" storageaddress="0x6428">
+		<table type="X Axis" storageaddress="0x83e2" />
+		<table type="Y Axis" storageaddress="0x8402" />
+	</table>
+
+	<table name="mMTFDDS" storageaddress="0x6628">
+		<table type="X Axis" storageaddress="0x83e2" />
+		<table type="Y Axis" storageaddress="0x8402" />
+	</table>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x55D0" xorloc="0x55C8" />
+
+</rom>

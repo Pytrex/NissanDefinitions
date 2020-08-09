@@ -1,0 +1,69 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>AC011</xmlid>
+		<hwid>3GIMBN06</hwid>
+		<internalidaddress>8058</internalidaddress>
+		<internalidstring>AC011</internalidstring>
+		<ecuid>AC011</ecuid>
+		<year>03</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Sedan</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH705513</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Trim" storageaddress="0x66C1">
+		<table type="X Axis" storageaddress="0x830F" />
+		<table type="Y Axis" storageaddress="0x831F" />
+	</table>
+	<table name="High Octane Ignition Trim" storageaddress="0x67C1">
+		<table type="X Axis" storageaddress="0x830F" />
+		<table type="Y Axis" storageaddress="0x831F" />
+	</table>
+	<table name="Regular Ignition Trim" storageaddress="0x68C1">
+		<table type="X Axis" storageaddress="0x830F" />
+		<table type="Y Axis" storageaddress="0x831F" />
+	</table>
+	<table name="Fuel Compensation" storageaddress="0x6B81">
+		<table type="X Axis" storageaddress="0x823A" />
+		<table type="Y Axis" storageaddress="0x81DE" />
+	</table>
+	<table name="Fuel Target" storageaddress="0x6D91">
+		<table type="X Axis" storageaddress="0x80B1" />
+		<table type="Y Axis" storageaddress="0x81D6" />
+	</table>
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x6eD1">
+		<table type="X Axis" storageaddress="0x8BDB" />
+		<table type="Y Axis" storageaddress="0x8BEB" />
+	</table>
+
+	<table name="MAF" storageaddress="0x8DCE" />
+
+	<table name="QH0/ torque conversion map" storageaddress="0x786C">
+		<table type="X Axis" storageaddress="0x8DAE" />
+		<table type="Y Axis" storageaddress="0x81F6" />
+	</table>
+
+
+	<table name="QH0/ torque conversion map 2" storageaddress="0x9AF8">
+		<table type="X Axis" storageaddress="0x9DCC" />
+		<table type="Y Axis" storageaddress="0x9D3C" />
+	</table>
+
+	<table name="Load Base Fuel Schedule" storageaddress="0x8F8E" />
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x640E" />
+
+	<table name="Idle Target" storageaddress="0x849B" />
+	<table name="Idle Target 2" storageaddress="0x87F3" />
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x63AE" />
+	<table name="Speed Limiter" storageaddress="0x647A" />
+	<table name="Speed Limiter (km/h)" storageaddress="0x647A" />
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x65B8" xorloc="0x65B0" />
+
+</rom>

@@ -1,0 +1,37 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>5M316</xmlid>
+		<hwid>1MCMCBE8K</hwid>
+		<internalidaddress>2ad7</internalidaddress>
+		<internalidstring>5m316</internalidstring>
+		<ecuid>5m316</ecuid>
+		<year>02</year>
+		<market>EU</market>
+		<make>Nissan</make>
+		<model>Almera</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="High Octane Ignition Trim" storageaddress="0x116c">
+		<table type="X Axis" storageaddress="0x2e56" />
+		<table type="Y Axis" storageaddress="0x2e66" />
+	</table>
+
+	<table name="Regular Ignition Trim" storageaddress="0x126c">
+		<table type="X Axis" storageaddress="0x2e56" />
+		<table type="Y Axis" storageaddress="0x2e66" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x163c">
+		<table type="X Axis" storageaddress="0x2d78" />
+		<table type="Y Axis" storageaddress="0x2d44" />
+	</table>
+
+	<table name="MAF" storageaddress="0x3d56"/>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x10b8" xorloc="0x10a8" />
+</rom>

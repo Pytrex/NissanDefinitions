@@ -1,0 +1,129 @@
+<rom base="A2L">
+<romid>
+	<xmlid>M5113</xmlid>
+	<hwid>N1MATBH5D5</hwid>
+      <internalidaddress>7772</internalidaddress>
+      <internalidstring>M5113</internalidstring>
+      <ecuid>M5113</ecuid>
+      <year>02</year>
+      <market>JP</market>
+      <make>Nissan</make>
+      <model>Stagea</model>
+      <submodel>NISMO</submodel>
+      <transmission>AT</transmission>
+      <memmodel>SH705507</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>512kb</filesize>
+    </romid>
+	
+	6D60 8x8 16 bit
+	6DE0 8x8 16 bit
+	6E60 8x8 16 bit
+	6EE0 8x8 16 bit
+	5A95 (Fuel Target 8x8)
+	5FE5 8x8 8 bit
+	6025 8x8 8 bit
+	61C0 Maybe 16x16 8 bit?
+	6F60 16x16 16 bit
+	7160 8x8 16 bit
+	
+	7160 
+	X-Axis=8B86
+	Y-Axis=8B96
+   <table name="Cold Ignition Trim" storageaddress="0x4e01">
+      <table type="X Axis" storageaddress="0x7a50" />
+      <table type="Y Axis" storageaddress="0x7a60" />
+    </table>
+
+    <table name="High Octane Ignition Trim" storageaddress="0x4f01">
+      <table type="X Axis" storageaddress="0x7a50" />
+      <table type="Y Axis" storageaddress="0x7a60" />
+    </table>
+
+    <table name="Regular Ignition Trim" storageaddress="0x5081">
+      <table type="X Axis" storageaddress="0x7a50" />
+      <table type="Y Axis" storageaddress="0x7a60" />
+    </table>
+	
+	<table name="Fuel Compensation Cold" storageaddress="0x5604"> 
+      <table type="X Axis" storageaddress="0x7975" />
+      <table type="Y Axis" storageaddress="0x7905" />
+    </table>
+
+    <table name="Fuel Compensation" storageaddress="0x5705">
+      <table type="X Axis" storageaddress="0x7975" />
+      <table type="Y Axis" storageaddress="0x7905" />
+    </table>
+
+    <table name="Fuel Target 16x16" storageaddress="0x5ad5">
+      <table type="X Axis" storageaddress="0x77fe" />
+      <table type="Y Axis" storageaddress="0x78e5" />
+    </table>
+
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x61a5">
+      <table type="X Axis" storageaddress="0x83fa" />
+      <table type="Y Axis" storageaddress="0x841a" />
+    </table>
+    
+	<table name="Rev Limit (Fuel Cut)" storageaddress="0x4a26">
+	</table>
+
+	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x4a2a">
+	</table>
+	
+	<table name="Speed Limiter (km/h)" storageaddress="0x4aa6" />
+	
+	<table name="Engine torque value map" storageaddress="0x71e0">
+	<table type="X Axis" storageaddress="0x77fe" />
+      <table type="Y Axis" storageaddress="0x78e5" />
+    </table>
+	
+	<table name="QH0/ torque conversion map" storageaddress="0x6960">
+	<table type="X Axis" storageaddress="0x8786" />
+	<table type="Y Axis" storageaddress="0x7925" />
+</table>
+
+<table name="QH0/ torque conversion map 2" storageaddress="0x97d8">
+	<table type="Y Axis" storageaddress="0x9a96" />
+	<table type="X Axis" storageaddress="0x9b26" />
+	
+</table>
+
+<table name="QH0/ torque conversion map 2" storageaddress="0x74e0">
+	<table type="Y Axis" storageaddress="0x9a96" />
+	<table type="X Axis" storageaddress="0x9b26" />
+	
+</table>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x49c4"/>
+	
+	<table name="MAF" storageaddress="0x87a6">
+</table>
+
+<table name="Load Base Fuel Schedule" storageaddress="0x8a36">
+</table>
+
+<table type="3D" name="Unknown u8 16x16 1" category="Misc" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="4" logparam="?">
+		<scaling units="Unknown" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="?" storagetype="uint8" endian="big" logparam="?">
+			<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="RPM ?" storagetype="uint8" endian="big" logparam="?">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100" />
+		</table>
+		<description>Accessed near the "fuel tgt" access code; both share the same Y axis so they are probably related.</description>
+	</table>
+
+	<table name="Unknown u8 16x16 1" storageaddress="0x5505">
+		<table type="X Axis" storageaddress="0x0000" />
+		<table type="Y Axis" storageaddress="0x0000" />
+	</table>
+	
+	<table name="Torque Related? Unknown" storageaddress="0x74E0">
+		<table type="Y Axis" storageaddress="0x0000" />
+		<table type="X Axis" storageaddress="0x0000" />
+	</table>	
+	
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4cb4" xorloc="0x4Ca0" />
+	
+</rom>

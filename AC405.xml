@@ -1,0 +1,19 @@
+<rom base="AC400">
+    <romid>
+	    <xmlid>AC405</xmlid>
+	    <hwid>5ZVP8N00</hwid>
+      <internalidaddress>8FE6</internalidaddress>
+      <internalidstring>AC405</internalidstring>
+      <ecuid>AC405</ecuid>
+      <year>2004</year>
+      <market></market>
+      <make>Infiniti</make>
+      <model>G35</model>
+      <submodel>Base</submodel>
+      <transmission>MT</transmission>
+      <memmodel>SH7058</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>1024kb</filesize>
+    </romid>
+
+</rom>

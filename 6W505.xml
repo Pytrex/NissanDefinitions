@@ -1,0 +1,105 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>6W505</xmlid>
+		<hwid>4WXLKN3</hwid>
+		<internalidaddress>8153</internalidaddress>
+		<internalidstring>6W505</internalidstring>
+		<ecuid>6W505</ecuid>
+		<year>04</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Pathfinder</model>
+		<submodel>4x4</submodel>
+		<transmission>Auto</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+
+	<table name="Cold Ignition Trim" storageaddress="0x6839">
+		<table type="X Axis" storageaddress="0x8430" />
+		<table type="Y Axis" storageaddress="0x8440" />
+	</table>
+
+	<table name="Regular Ignition Trim" storageaddress="0x6939">
+		<table type="X Axis" storageaddress="0x8430" />
+		<table type="Y Axis" storageaddress="0x8440" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x6bf9">
+		<table type="X Axis" storageaddress="0x835d" />
+		<table type="Y Axis" storageaddress="0x8301" />
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x6e09">
+		<table type="X Axis" storageaddress="0x81b0" />
+		<table type="Y Axis" storageaddress="0x82f9" />
+	</table>
+
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x6f89">
+		<table type="X Axis" storageaddress="0x8e68" />
+		<table type="Y Axis" storageaddress="0x8e78" />
+	</table>
+
+	<table name="MSATHA" storageaddress="0x7139">
+		<table type="X Axis" storageaddress="0x8218" />
+		<table type="Y Axis" storageaddress="0x81f4" />
+	</table>
+
+	<table name="MSATHB" storageaddress="0x7239">
+		<table type="X Axis" storageaddress="0x8218" />
+		<table type="Y Axis" storageaddress="0x81f4" />
+	</table>
+
+	<table name="MSATH" storageaddress="0x7339">
+		<table type="X Axis" storageaddress="0x8218" />
+		<table type="Y Axis" storageaddress="0x81f4" />
+	</table>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x647e"/>
+
+	<table name="MAF" storageaddress="0x91ca"/>
+	
+	<table name="Fuel Cut Bosch" storageaddress="0x8972"/>
+	<table name="Fuel Cut JECS" storageaddress="0x8996"/>
+	<table name="Fuel Restore Bosch" storageaddress="0x8A06"/>
+	<table name="Fuel Restore JECS" storageaddress="0x8B06"/>
+	<table name="Idle Target" storageaddress="0x89AE"/>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x6420"/>
+
+	<!--table name="Speed Limiter" storageaddress="0x"/-->
+
+	<table type="Switch" name="Force Emissions Readiness" category="Hack" sizey="2" storageaddress="0x1711C">
+		<description>When on, this forces all emissions monitors to display 'Ready' Off-road and racing use only. Must NEVER be enabled on vehicles that will be driven on public roads.</description>
+		<state name="on" data=" E2 65" />
+		<state name="off" data=" 62 6c" />
+	</table>  
+
+	<table type="Switch" name="Force System Availabilty (for Readiness)" category="Hack" sizey="1" storageaddress="0x17105">
+		<description>Force system availability if DTCs are disabled. Off-road and racing use only. Must NEVER be enabled on vehicles that will be driven on public roads. </description>
+		<state name="evap" data="44" />
+		<state name="evap+catalyst" data="45" />
+		<state name="catalyst" data="41" />
+		<state name="stock" data="40" />
+	</table>  
+	
+	<table name="Catalyst DTCs" storageaddress="0xa35a"/>
+	<table name="Evap DTCs" storageaddress="0xa363"/>
+	<table name="Evap 2 DTCs"  storageaddress="0xa364"/>
+	<table name="VIAS DTCs"  storageaddress="0xa368"/>
+	<table name="Power Steering DTC"  storageaddress="0xa36e"/>
+	<table name="Primary O2 DTCs" storageaddress="0xa384"/>
+	<table name="Primary O2 Idle DTCs" storageaddress="0xa385"/>
+	<table name="Secondary O2 DTCs" storageaddress="0xa386"/>
+	<table name="Secondary O2 Knock DTCs" storageaddress="0xa387"/>
+	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0xa38a"/>
+	<table name="Evap Pressure Flow DTCs" storageaddress="0xa38c"/>
+	<table name="Evap Leaks DTCs"  storageaddress="0xa38d"/>
+
+	<table name="Load Base Fuel Schedule" storageaddress="0x938a"/>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6630" xorloc="0x6628" />
+
+</rom>

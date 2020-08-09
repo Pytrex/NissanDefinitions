@@ -1,0 +1,133 @@
+<rom base="NISSAN_BASE">
+	<romid>
+		<xmlid>CF41A</xmlid>
+		<hwid>6GIZ7N4</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF41A</internalidstring>
+		<ecuid>CF41A</ecuid>
+		<year>06</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Trim" storageaddress="0x8DED">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+	<table name="High Octane Ignition Trim" storageaddress="0x8EED">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+	<table name="Regular Ignition Trim" storageaddress="0x8FED">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+	<table  name="MBT Flame Speed"  storageaddress="0x91ad">
+		<table type="X Axis" storageaddress="0xb2f1" />
+		<table type="Y Axis" storageaddress="0xb2f5" />
+	</table>
+
+	<table name="Fuel Compensation" storageaddress="0x948D">
+		<table type="X Axis" storageaddress="0xB526"/>
+		<table type="Y Axis" storageaddress="0xB4CA"/>
+	</table>
+
+	<table name="Fuel Target" storageaddress="0x971D">
+		<table type="X Axis" storageaddress="0xB2f9"/>
+		<table type="Y Axis" storageaddress="0xB4a2"/>
+	</table>
+
+	<table name="OL Fueling Target Rate" storageaddress="0xbbb4"/>
+
+	<table name="Exhaust Cam Timing" storageaddress="0x9A2D">
+		<table type="X Axis" storageaddress="0xC2f8"/>
+		<table type="Y Axis" storageaddress="0xC318"/>
+	</table>
+
+	<table name="Intake Cam Timing (16x16)" storageaddress="0x9B2D">
+		<table type="X Axis" storageaddress="0xC308"/>
+		<table type="Y Axis" storageaddress="0xC328"/>
+	</table>
+
+	<table name="MSATHA" storageaddress="0x9d0d">
+		<table type="X Axis" storageaddress="0xb385"/>
+		<table type="Y Axis" storageaddress="0xb3a5"/>
+	</table>
+
+	<table name="MSATHB" storageaddress="0x9e0d">
+		<table type="X Axis" storageaddress="0xb385"/>
+		<table type="Y Axis" storageaddress="0xb3a5"/>
+	</table>
+
+	<table name="MSATH" storageaddress="0x9f0d">
+		<table type="X Axis" storageaddress="0xb385"/>
+		<table type="Y Axis" storageaddress="0xb3a5"/>
+	</table>
+
+	<table name="MAF" storageaddress="0x0c83e"/>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x899A"/>
+
+	<table name="Throttle Rev Limit" storageaddress="0x8a32"/>
+
+	<table name="QH0/ torque conversion map" storageaddress="0xA7A8">
+		<table type="X Axis" storageaddress="0xC81E"/>
+		<table type="Y Axis" storageaddress="0xb4e6"/>
+	</table>
+
+	<table name="QH0/ torque conversion map 2" storageaddress="0xDB62">
+		<table type="X Axis" storageaddress="0xde38"/>
+		<table type="Y Axis" storageaddress="0xdda8"/>
+	</table>
+
+	<table name="mMTFDDS_S" storageaddress="0xD762">
+		<table type="X Axis" storageaddress="0xDE18"/>
+		<table type="Y Axis" storageaddress="0xDDF8"/>
+	</table>
+
+	<table name="mMTFDD_S" storageaddress="0xD962">
+		<table type="X Axis" storageaddress="0xDE18"/>
+		<table type="Y Axis" storageaddress="0xDDF8"/>
+	</table>
+
+	<table name="Idle Target" storageaddress="0xbd02"/>
+
+	<table name="Radiator Fan High Coolant" storageaddress="0x8287"/>
+
+	<table name="Speed Limiter" storageaddress="0x8A6A"/>
+
+	<table name="Fuel Injection Multiplier" storageaddress="0x8906"/>
+
+	<table name="Minimum Injector Pulse Width" storageaddress="0x8ACC"/>
+
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2" sizey="6"/>
+
+	<table name="Master Fueling Transition Delay" storageaddress="0x8003"/>
+
+	<table name="Injector Latency at 14V" storageaddress="0x846C"/>
+
+	<table name="Fuel Injector Latency Adder" storageaddress="0x7DA3"/>
+
+	<table name="Crank Fueling TP value" storageaddress="0xd1a2"/>
+
+	<table name="MAF idle voltage limits (USRV)" storageaddress="0x8B4C" />
+
+	<table name="Fuel correction limits, % (MALPRV)" storageaddress="0x82C5" />
+	<table name="Idle BFS limits, ms (TPRV)" storageaddress="0x8B10" />
+	<table name="Load Base Fuel Schedule" storageaddress="0xcb2c" />
+	<table name="MAF factor" storageaddress="0x8226" />
+
+	<table name="Catalyst DTCs" storageaddress="0xdd68"/>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom>
