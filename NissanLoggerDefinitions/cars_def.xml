@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dyno SYSTEM "cars_def.dtd">
+<!-- All tags must be included and in specified order when adding
+	 a new car definition, the exception is gearratio# where only
+	 applicable gears are to be listed.	 Car Type tags containing
+	 an * denotes this is not the OEM configuration for the vehicle,
+	 but rather a custom user defined configuration.
+	 
+	 Version 14: 2011-11-03
+-->
+<dyno>
+	<car>
+		<type>06 Nissan 350z Automatic</type>
+		<carmass>3300</carmass>
+		<finalratio>3.357</finalratio>
+		<rollcoeff>0.015</rollcoeff>
+		<dragcoeff>0.30</dragcoeff>
+		<frontalarea>21.1</frontalarea>
+		<transmission>Automatic</transmission>
+		<gearratio1>3.540</gearratio1>
+		<gearratio2>2.264</gearratio2>
+		<gearratio3>1.471</gearratio3>
+		<gearratio4>1.000</gearratio4>
+		<gearratio5>0.834</gearratio5>
+		<tirewidth>245</tirewidth>
+		<tireaspect>45</tireaspect>
+		<wheelsize>18</wheelsize>
+	</car>
+</dyno>
