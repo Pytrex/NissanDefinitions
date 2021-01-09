@@ -16,61 +16,13 @@
       <filesize>1024kb</filesize>
     </romid>
 
-<!-- Unknown 
-0xABA8 has a check map :o not in CF48D (SHOWS UP IN GHIDRA!)
-987D that whole section
--->
-
-
-
-
-	\\New//
-
-	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x920D">
-		<table type="X Axis" storageaddress="0xB2E9"/> 
-		<table type="Y Axis" storageaddress="0xB2E1"/>
-	</table>
-
-	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x91CD">
-		<table type="X Axis" storageaddress="0xB2E9"/> 
-		<table type="Y Axis" storageaddress="0xB2E1"/>
-	</table>
-
-
-
-
-
-	<table name="Vehicles Information Type That it can Respond" storageaddress="0xB2D5"/> 
-	<table name="OBD-2 PID 01-20 supmask" storageaddress="0xB2C9"/>
-	<table name="PID That a Mode 2 Answer is Possible" storageaddress="0xB2D1"/> 
-	<table name="Control Related to OBD" storageaddress="0xB2C5"/> 
-	<table name="Torque Compensation Fuel Cut Pattern" storageaddress="0xB2AD"/>
-	<table name="Misfire Judgement Catalyst Criteria Table" storageaddress="0xB28E"/>
-	<table name="Minus KTW Basic Value Table" storageaddress="0xB228"/> 
-	<table name="Consult 2 CUID" storageaddress="0xB24A"/> 
-	<table name="Torque Going Down Rate Choice Parameter (DownShift)" storageaddress="0x9CFD"/>
-	<table name="Lower Limit Speed that a T/M Requirement Fuel Cut is Possible" storageaddress="0x81FC"/> 
-	<table name="T/M Requirement Fuel Cut Recover Hysteresis" storageaddress="0x81FB"/> 
-	<table name="Value Which a Purge System Unusually Judges" storageaddress="0x81F8"/>
-	<table name="Purge System Judgement Pressure 2" storageaddress="0x81F7"/> 
-
-	<table name="High Detonation Intake Cam Timing Map (4x4)" storageaddress="0x98CD"> <!-- Verify -->
-		<table type="X Axis" storageaddress="0x0000"/>
-		<table type="Y Axis" storageaddress="0x0000"/>
-	</table>
-
-	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9C2D">
-		<table type="X Axis" storageaddress="0x0000"/>
-		<table type="Y Axis" storageaddress="0x0000"/>
-	</table>
-
 	\\1D and 2D Values/Tables w/ No Axes//
 	
 	<table name="ISC Opening Area Upper Limit Table 2" storageaddress="0xDE58"/> 
 	<table name="Quantity Rate Basic Value Map" storageaddress="0x924D"/>
 	<table name="PTD On/Off Switchover Step Value Table" storageaddress="0xCFD2"/>
 	<table name="PTD On/Off Switchover Step Value Table (Low Speed)" storageaddress="0xCFDA"/>
-	<table name="Gear Ratio Table" storageaddress="0xCF34"/> <!-- Weird how a manual 6spd has the same values and number of values as the 5spd auto)-->
+	<table name="Gear Ratio Table" storageaddress="0xCF34"/> 
 	<table name="Gear Ratio Table 2" storageaddress="0xDFF8"/>
 	<table name="Adhesion Magnification Basic Value Map" storageaddress="0x969D"/>
 	<table name="QZIKKI Table" storageaddress="0xCF14"/> 
@@ -167,6 +119,15 @@
 	<table name="JECS Fuel Restore Table" storageaddress="0xBE6E"/>	
 	<table name="Radiator Fan High Coolant" storageaddress="0x8285"/>
 	<table name="Speed Limiter" storageaddress="0x8a68"/>
+	<table name="Torque Compensation Fuel Cut Pattern" storageaddress="0xB2AD"/>
+	<table name="Misfire Judgement Catalyst Criteria Table" storageaddress="0xB28E"/>
+	<table name="Minus KTW Basic Value Table" storageaddress="0xB228"/> 
+	<table name="Consult 2 CUID" storageaddress="0xB24A"/> 
+	<table name="Torque Going Down Rate Choice Parameter (DownShift)" storageaddress="0x9CFD"/>
+	<table name="Lower Limit Speed that a T/M Requirement Fuel Cut is Possible" storageaddress="0x81FC"/> 
+	<table name="T/M Requirement Fuel Cut Recover Hysteresis" storageaddress="0x81FB"/> 
+	<table name="Value Which a Purge System Unusually Judges" storageaddress="0x81F8"/>
+	<table name="Purge System Judgement Pressure 2" storageaddress="0x81F7"/> 
 	<table name="K-Value" storageaddress="0x8904"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8aca"/>
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2" sizey="6"/>
@@ -177,8 +138,8 @@
 	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C3" />
 	<table name="Idle BFS limits, ms (TPRV)" storageaddress="0x8b0e" />
 	<table name="Load Base Fuel Schedule Table" storageaddress="0xcb2c" />
-	<table name="MAF Factor" storageaddress="0x8224" />
-	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC26C" />
+	<table name="MAF Factor" storageaddress="0x8224"/>
+	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC26C"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x8998"/>
 	<table name="Throttle Rev Limit" storageaddress="0x8a30"/>
 	<table name="Knock Slice Map" storageaddress="0xB128"/>
@@ -243,6 +204,16 @@
 		<table type="X Axis" storageaddress="0xB4A2"/>
 	</table>
 
+	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x920D">
+		<table type="X Axis" storageaddress="0xB2E9"/> 
+		<table type="Y Axis" storageaddress="0xB2E1"/>
+	</table>
+
+	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x91CD">
+		<table type="X Axis" storageaddress="0xB2E9"/> 
+		<table type="Y Axis" storageaddress="0xB2E1"/>
+	</table>
+	
 	<table name="P-Gain Computed Map" storageaddress="0x928D">
 		<table type="X Axis" storageaddress="0xC3F8"/> 
 		<table type="Y Axis" storageaddress="0xC3D8"/> 
@@ -414,25 +385,16 @@
 		<table type="X Axis" storageaddress="0xDE18"/>
 		<table type="Y Axis" storageaddress="0xDDF8"/>
 	</table>
-	
-
-
-
 
 	\\ Options //
-	<table name="NATS Control" storageaddress="0x7F74"/>	
+	
 	<table name="Catalyst DTC Min Threshold Fix (P0420, P0430)" storageaddress="0xB708"/>
 
-
-
 	\\ DTCs //
-Notes;
-0xDD78 is a value of 3.
-0xDD8B might be exhaust cam DTCs! (CF43D doesn't have CC)
 
 	<table name="NATS DTCs" storageaddress="0xDD6F"/>
-	<table name="DTC 1" storageaddress="0xDD62"/> (extend / shorten)
-	<table name="DTC 2" storageaddress="0xDD99"/> (extend MAYBE. Depends if extended currently or not)
+	<table name="DTC 1" storageaddress="0xDD62"/> 
+	<table name="DTC 2" storageaddress="0xDD99"/> 
 	<table name="DTC 3" storageaddress="0xDD97"/>
 	<table name="DTC 4" storageaddress="0xDD86"/>
 	<table name="DTC 5" storageaddress="0xDD87"/>
@@ -443,11 +405,11 @@ Notes;
 	<table name="DTC 10" storageaddress="0xDD83"/>
 	<table name="Engine Overheating (P1217)" storageaddress="0xDD63"/>
 	<table name="P1805" storageaddress="0xDD85"/>
-	<table name="P1715" storageaddress="0xDD84"/> (0)
+	<table name="P1715" storageaddress="0xDD84"/>
 	<table name="P2101" storageaddress="0xDD82"/>
 	<table name="P0850" storageaddress="0xDD6B"/>
 	<table name="P0125" storageaddress="0xDD6A"/>
-	<table name="P1212" storageaddress="0xDD65"/> (0)
+	<table name="P1212" storageaddress="0xDD65"/>
 	<table name="PD010" storageaddress="0xDDA5"/>
 	<table name="PD001 and PD000" storageaddress="0xDD7D"/>
 	<table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDD8D"/>
@@ -476,6 +438,10 @@ Notes;
 
 	\\ FLAGS //
 
+	<table name="Vehicles Information Type That it can Respond" storageaddress="0xB2D5"/> 
+	<table name="OBD-2 PID 01-20 supmask" storageaddress="0xB2C9"/>
+	<table name="PID That a Mode 2 Answer is Possible" storageaddress="0xB2D1"/> 
+	<table name="Control Related to OBD" storageaddress="0xB2C5"/> 
 	<table name="SRTEND Distinction Flag" storageaddress="0xB2B3"/>
 	<table name="SRTRSL Distinction Flag" storageaddress="0xB2B9"/>
 	<table name="SRTTST Distinction Flag" storageaddress="0xB2BF"/>
@@ -511,27 +477,12 @@ Notes;
 	<table name="Flags 24" storageaddress="0x81FA"/>
 	<table name="Flags 25" storageaddress="0x7F6B"/>
 	
-
 	\\Supmasks//
 	
 	<table name="CID1120 supmask" storageaddress="0xB56F"/>
 	<table name="CID1200 supmask" storageaddress="0xB57B"/> 
 	<table name="CID1220 supmask" storageaddress="0xB57F"/>
-<!-- \\Axes//
 
-mJKPDNSLM 0xB331
-mJKDALP 0xB321
-0xCF68
-0xD192
-0xD3A2
-0xD3C2
-0xD3D2
-
-0xD412
-0xD422
-0xD432
-0xD442
--->
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
 
