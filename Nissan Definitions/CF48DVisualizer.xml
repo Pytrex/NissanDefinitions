@@ -21,7 +21,8 @@ Notes;
 This is NOT the main CF48D Definition File. This is a heavily altered one that only includes the maps within the publicly avaiable A2L template. This file will grow as time goes on.
 
 	\\Values, Tables, and Maps w/o Axes//
-	
+
+	<table name="Minimum Injector Pulse Width" storageaddress="0x8AAE"/>
 	<table name="Cranking Advance Table" storageaddress="0xB6F4"/> 
 	<table name="Throttle Rev Limiter" storageaddress="0x8A14"/> 
 	<table name="Fuel Cut Timing Retard Delay Table" storageaddress="0xB80C"/>	

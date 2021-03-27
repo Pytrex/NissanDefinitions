@@ -48,7 +48,7 @@
 		<description>mKCONST- "K Constant" Global Fuel injection Multiplier. This can be used to compensate for larger or smaller injectors, or a larger or smaller maf housing. This can also be used for alternate fuels such as e85.</description>
 	</table>
 
-	<table type="2D" name="Fuel Injector Latency at 14V" category="Fuel Injector Calibration" storagetype="uint8" endian="big" sizey="1" userlevel="3">
+	<table type="2D" name="Fuel Injector Latency at 14V" category="Fuel Injector Calibration" storagetype="uint8" endian="big" sizey="1" userlevel="1">
 		<scaling name="50%" units="Milliseconds" expression="x*0.01" to_byte="x/0.01" format="0.00ms" fineincrement=".02" coarseincrement=".1" />
 		<scaling name="100%" units="Milliseconds" expression="x*0.02" to_byte="x/0.02" format="0.00ms" fineincrement=".02" coarseincrement=".1" />
 		<scaling name="Microseconds" units="Microseconds" expression="x*10" to_byte="x/10" format="0μs" fineincrement="1" coarseincrement="10" />
@@ -58,7 +58,7 @@
 		<description>mTS14VZ- "At the time of reverse 起 absorption circuit ZD-ization 時, invalid pulse width" Injector Open Time in Microseconds</description>
 	</table>
 
-	<table type="2D" name="Fuel Injector Latency Adder" category="Fuel Injector Calibration" storagetype="uint8" endian="big" sizey="1" userlevel="3">
+	<table type="2D" name="Fuel Injector Latency Adder" category="Fuel Injector Calibration" storagetype="uint8" endian="big" sizey="1" userlevel="1">
 		<scaling name="50%" units="Milliseconds Per Volt" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000ms" fineincrement=".02" coarseincrement=".1" />
 		<scaling name="100%" units="Milliseconds Per Volt" expression="x*0.001953126" to_byte="x/0.001953126" format="0.000ms" fineincrement=".02" coarseincrement=".1" />
 		<scaling name="A33B" units="Milliseconds Per Volt" expression="x/1024" to_byte="x*1024" format="0.000ms/V" fineincrement=".002" coarseincrement=".01" />
@@ -68,7 +68,15 @@
 		<description>mDTS- TS voltage compensation coefficient. This is the value in milliseconds that is added to the "injector latency 14V table for every 1v drop in voltage. IE: if latency at 14v is 2ms and the adder is 1ms then the latency at 13v would be 3ms.</description>
 	</table>
 
-	<table type="2D" name="Injector Magnification Reciprocal Number" category="Fuel Injector Calibration" storagetype="uint16" endian="big" sizey="1" userlevel="3">
+	<table type="2D" name="Minimum Injector Pulse Width" category="Fuel Injector Calibration" storagetype="uint16" endian="big" sizey="1" userlevel="3">
+		<scaling units="Milliseconds" expression="x/256" to_byte="x*256" format="0.00ms" fineincrement=".02" coarseincrement=".1" />
+		<table type="Y Axis" name=" Minimum Pulse Width " sizey="1">
+			<data></data>
+		</table>
+		<description>mTEMIN- "Pulse width minimum limitation value"</description>
+	</table>
+	
+	<table type="2D" name="Injector Magnification Reciprocal Number" category="Fuel Injector Calibration" storagetype="uint16" endian="big" sizey="1" userlevel="1">
 		<scaling units="%" expression="x*0.0061035" to_byte="x/0.0061035" format="0.00" fineincrement="1" coarseincrement="100" />
 		<table type="Y Axis" name="Above" sizey="2">
 			<data>-</data>
@@ -78,7 +86,7 @@
 	
 	\\Cranking and Startup//
 
-	<table type="2D" name="Cranking Advance Table" category="Cranking and Startup" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="Cranking Advance Table" category="Cranking and Startup" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -93,7 +101,7 @@
 	<description>mTCRADV- CRADV table// Cranking Timing A</description>
 	</table>
 
-	<table type="2D" name="Crank Fueling TP Value Table" category="Cranking and Startup" storagetype="uint16" endian="big" sizex="8" userlevel="3">
+	<table type="2D" name="Crank Fueling TP Value Table" category="Cranking and Startup" storagetype="uint16" endian="big" sizex="8" userlevel="1">
 		<scaling units="ms" expression="x*0.000488281" to_byte="x/0.000488281" format="0.00" fineincrement=".1" coarseincrement="1" />
 		<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -158,7 +166,7 @@
 
 	\\Idle Speed Control (Limiters)//
 	
-	<table type="2D" name="ISC Opening Area Upper Limit Table" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<table type="2D" name="ISC Opening Area Upper Limit Table" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="1">
 	<scaling units="TVO (cm^2)" expression="x*.0008" to_byte="x/.0008" format="0.000"/> 
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="16">
 			<data>-40</data>
@@ -181,7 +189,7 @@
 	<description>mTAISMX- ISC opening area upper limit value table</description>
 	</table>
 
-	<table type="2D" name="ISC Opening Area Upper Limit Table 2" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<table type="2D" name="ISC Opening Area Upper Limit Table 2" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="1">
 	<scaling units="TVO (cm^2)" expression="x*.0008" to_byte="x/.0008" format="0.000"/> 
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="16">
 			<data>-40</data>
@@ -204,7 +212,7 @@
 	<description>mTAISMX_S- ISC opening area upper limit value table 2</description>
 	</table>
 
-	<table type="2D" name="ISC Opening Area Upper Limit (Engine Speed Compensation) Table" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<table type="2D" name="ISC Opening Area Upper Limit (Engine Speed Compensation) Table" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="1">
 	<scaling units="TVO (cm^2)" expression="x*.0008" to_byte="x/.0008" format="0.000"/> 
 	<table type="X Axis" name="Engine Speed (RPM)" sizex="16" format="0">
 			<data>0</data> 
@@ -227,7 +235,7 @@
 	<description>mTAISNH- ISC opening area upper limit engine speed compensation table</description>
 	</table>
 	
-	<table type="2D" name="ISC Opening Area Upper Limit (Engine Speed Compensation) Table 2" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<table type="2D" name="ISC Opening Area Upper Limit (Engine Speed Compensation) Table 2" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="1">
 	<scaling units="TVO (cm^2)" expression="x*.0008" to_byte="x/.0008" format="0.000"/> 
 	<table type="X Axis" name="Engine Speed (RPM)" sizex="16" format="0">
 			<data>0</data> 
@@ -345,7 +353,7 @@
 		<description><!--mQUNIT-->Used in main fuel calc, can be used instead of adjusting K factor. This is what Nissan uses to scale MAF from factory.</description>
 	</table> 
 
-	<table type="2D" name="MAF Characteristic Coefficient" category="Airflow" storagetype="uint8" endian="big" sizey="1" userlevel="3"> 
+	<table type="2D" name="MAF Characteristic Coefficient" category="Airflow" storagetype="uint8" endian="big" sizey="1" userlevel="1"> 
 		<scaling units="|" expression="x" to_byte="x" format="0"/>
 		<table type="Y Axis" name="Above" sizey="1">
 			<data>Above</data>
@@ -363,7 +371,7 @@
 
 	\\Airflow (Limiters)//
 
-	<table type="2D" name="MAF Idle Voltage Limits" category="Airflow (Limiters)" storagetype="uint16" endian="big" sizex="2" userlevel="3">
+	<table type="2D" name="MAF Idle Voltage Limits" category="Airflow (Limiters)" storagetype="uint16" endian="big" sizex="2" userlevel="1">
 		<scaling units="MAF Voltage (V)" expression="x*0.005" to_byte="x/0.005" format="0.00" fineincrement=".05" coarseincrement=".10" />
 		<table type="X Axis" name="Limits" sizex="2">
 			<data>Lower</data>
@@ -372,7 +380,7 @@
 		<description><!--mUSRVL and mUSRVU-->This is the voltage range the ECU expects to see from the MAF sensor at idle.</description>
 	</table>
 	
-	<table type="2D" name="MAF Startup Voltage Limit" category="Airflow (Limiters)" storagetype="uint16" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="MAF Startup Voltage Limit" category="Airflow (Limiters)" storagetype="uint16" sizey="1" endian="big" userlevel="1" >
 		<scaling units="V" expression="x*0.005" to_byte="x/0.005" format="0.00"/>
 	<table type="Y Axis" name="MAF Voltage" sizey="1">
 			<data>Limit A</data>
@@ -380,7 +388,7 @@
 	<description>mAFMCL1- At the time of the AFM start, surge judgement voltage// "MAF Limits A"</description>
 	</table>
 
-	<table type="2D" name="MAF Startup Voltage Limit 2" category="Airflow (Limiters)" storagetype="uint16" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="MAF Startup Voltage Limit 2" category="Airflow (Limiters)" storagetype="uint16" sizey="1" endian="big" userlevel="1" >
 		<scaling units="V" expression="x*0.005" to_byte="x/0.005" format="0.00"/>
 	<table type="Y Axis" name="MAF Voltage" sizey="1">
 			<data>Limit B</data>
@@ -388,7 +396,7 @@
 	<description>mAFMCL2- At the time of the AFM start, surge judgement voltage 2// "MAF Limits B"</description>
 	</table>
 
-	<table type="2D" name="MAF Voltage Lower Limit" category="Airflow (Limiters)" storagetype="uint16" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="MAF Voltage Lower Limit" category="Airflow (Limiters)" storagetype="uint16" sizey="1" endian="big" userlevel="1" >
 		<scaling units="V" expression="x*0.005" to_byte="x/0.005" format="0.00"/>
 	<table type="Y Axis" name="MAF Voltage" sizey="1">
 			<data>Lower Limit</data>
@@ -396,7 +404,7 @@
 	<description>mAFONNG- AFM power supply NG judgement lower limit value// "MAF Limits P0102" </description>
 	</table>
 
-	<table type="2D" name="MAF Voltage Upper Limit" category="Airflow (Limiters)" storagetype="uint16" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="MAF Voltage Upper Limit" category="Airflow (Limiters)" storagetype="uint16" sizey="1" endian="big" userlevel="1" >
 		<scaling units="V" expression="x*0.005" to_byte="x/0.005" format="0.00"/>
 	<table type="Y Axis" name="MAF Voltage" sizey="1">
 			<data>Upper Limit</data>
@@ -404,7 +412,7 @@
 	<description>mAFMNGV- AFM power supply NG judgement upper limit value// "MAF Limits C"</description>
 	</table>
 	
-	<table type="2D" name="MAF Startup TVO Limit" category="Airflow (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="MAF Startup TVO Limit" category="Airflow (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x*.35" to_byte="x/.35" format="0.00"/>
 	<table type="Y Axis" name="Limit" sizey="1">
 			<data>TVO</data>
@@ -448,7 +456,7 @@
 		<description><!--mMADVTRMR-->This trimming map is used by the ecu when it detects high detonation. This map should ALWAYS be lower than the high octane map.</description>
 	</table>
 
-	<table type="3D" name="MBT Flame Speed Map" category="Ignition Timing" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="3" logparam="?">
+	<table type="3D" name="MBT Flame Speed Map" category="Ignition Timing" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="1" logparam="?">
 		<scaling name="cc" units="Laminar Flame Speed (cc/ms)" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement=".0625" coarseincrement="0.625" />
 		<scaling name="m^3" units="Laminar Flame Speed (m^3/s)" expression="x*0.0000625" to_byte="x/0.0000625" format="0.0000" fineincrement=".0625" coarseincrement="0.625" />
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8" endian="big" logparam="E3000">
@@ -471,7 +479,7 @@
 		<description><!--mMITAN--> Sets wvITAN (and vITAN), which is used in MBT calculations.</description>
 	</table>
 	
-	<table type="2D" name="Coolant Temperature MBT Compensation Table" category="Ignition Timing" storagetype="uint8" endian="big" sizex="8" userlevel="3"> 
+	<table type="2D" name="Coolant Temperature MBT Compensation Table" category="Ignition Timing" storagetype="uint8" endian="big" sizex="8" userlevel="1"> 
 		<scaling units="MBT Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00"/>
 		<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -486,7 +494,7 @@
 		<description><!--mTFLTW--> Flame Speed Calculation. Multiplied by the mTFLFA Table value, then by the MBT Map value.</description>
 	</table>  
 	
-	<table type="2D" name="Coolant Temperature MBT Compensation Table 2" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="Coolant Temperature MBT Compensation Table 2" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="MBT Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -501,7 +509,7 @@
 	<description><!--mTTWHOS--> Flame Speed Calculation.</description>
 	</table>
 	
-	<table type="2D" name="Target AFR MBT Compensation Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="Target AFR MBT Compensation Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="MBT Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00"/>
 	<table type="X Axis" name="Target AFR" sizex="8">
 			<data>7.35</data>
@@ -516,7 +524,7 @@
 	<description><!--mTFLFA--> Flame Speed Calculation. Multiplied by the mTFLTW Table value, then by the MBT Map value.</description>
 	</table>
 	
-	<table type="2D" name="Target AFR MBT Compensation Table 2" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="Target AFR MBT Compensation Table 2" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="MBT Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00"/>
 	<table type="X Axis" name="Target AFR" sizex="8">
 			<data>7.35</data>
@@ -531,7 +539,7 @@
 	<description><!--mTRMDHOS-->Flame Speed Calculation. Multiplied by the mTFLTW Table value, then by the MBT Map value.</description>
 	</table>
 	
-	<table type="2D" name="Unburned Gas Density Table" category="Ignition Timing" storagetype="uint8" endian="big" sizex="8" userlevel="3"> 
+	<table type="2D" name="Unburned Gas Density Table" category="Ignition Timing" storagetype="uint8" endian="big" sizex="8" userlevel="1"> 
 		<scaling name="A2L" units="Gas Density (g/m^3)" expression="x*125" to_byte="x/125" format="0" fineincrement="125" coarseincrement="1000" />
 		<scaling name="T1" units="Gas Density (g/cc)" expression="(x*125)/1000000" to_byte="(x*1000000)/125" format="0.000"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency (%)" sizex="8">
@@ -547,7 +555,7 @@
 		<description><!--mTDENS--> Table value is multiplied by vFLV (after AFR and Coolant compensations)</description>
 	</table>  
 
-	<table type="2D" name="GOV Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="GOV Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Idle Timing (Degrees)" expression="x-128" to_byte="x+128" format="0"/>
 	<table type="X Axis" name="Engine Speed (RPM)" sizex="8">
 			<data>0</data>
@@ -562,7 +570,7 @@
 	<description><!--mTGOV--> Ignition timing value during idle/deceleration.</description>
 	</table>
 
-	<table type="2D" name="GOV3 Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="GOV3 Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Idle Timing (Degrees)" expression="x-128" to_byte="x+128" format="0"/>
 	<table type="X Axis" name="Engine Speed (RPM)" sizex="8">
 			<data>0</data>
@@ -577,7 +585,7 @@
 	<description><!--mTGOV3-->Ignition timing value during idle.</description>
 	</table>
 
-	<table type="2D" name="GOVL Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="4" >
+	<table type="2D" name="GOVL Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Idle Timing (Degrees)" expression="x-128" to_byte="x+128" format="0"/>
 	<table type="X Axis" name="Engine Speed (RPM)" sizex="8">
 			<data>0</data>
@@ -592,7 +600,7 @@
 	<description><!--mTGOVL-->Used whenever bvSTFBYA "Target AFR Cost" is less than 64 (raw). </description>
 	</table>
 	
-	<table type="2D" name="GOV Addition Table (Drive)" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="GOV Addition Table (Drive)" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Idle Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -607,7 +615,7 @@
 	<description><!--mTAVCD1--> Value is added onto the GOV Table value when in drive.</description>
 	</table>
 
-	<table type="2D" name="GOV Addition Table (Neutral)" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3">
+	<table type="2D" name="GOV Addition Table (Neutral)" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1">
 		<scaling units="Idle Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -622,7 +630,7 @@
 	<description><!--mTAVCN1-->Value is added onto the GOV Table value when in neutral and probably park.</description>
 	</table>
 	
-	<table type="2D" name="Time of Closed Loop, GOV-Neutral Compensation Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="Time of Closed Loop, GOV-Neutral Compensation Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Idle Timing Retard (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -637,7 +645,7 @@
 	<description><!--mTAVCNL-->Value is subtracted from the mTAVCN1 Table value </description>
 	</table>
 
-	<table type="2D" name="Time of PI Control, GOV-Neutral Compensation Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="Time of PI Control, GOV-Neutral Compensation Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Idle Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -652,7 +660,7 @@
 	<description><!--mTAVCNS-->Only used in open loop and if PI conditions are right (unknown atm). Value is then added to the mTAVCN1 Table value.</description>
 	</table>
 	
-	<table type="2D" name="K2Y Table (Deceleration Advance)" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="K2Y Table (Deceleration Advance)" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="MBT (Degrees)" sizex="8">
 			<data>0</data>
@@ -667,7 +675,7 @@
 	<description><!--mTKADVA-->These are apart of the vDLTADV ignition timing calculations :o Sets vK2Y.</description>
 	</table>
 
-	<table type="2D" name="K1 Table (Acceleration Retard)" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="K1 Table (Acceleration Retard)" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="MBT (Degrees)" sizex="8">
 			<data>0</data>
@@ -682,7 +690,7 @@
 	<description><!--mTKADVR-->These are apart of the vDLTADV ignition timing calculations :o Sets vK1.</description>
 	</table>
 	
-	<table type="2D" name="Initial Retard Quantity Table" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="3" >
+	<table type="2D" name="Initial Retard Quantity Table" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="TVO-TVO 10ms Ago (Degrees)" sizex="4">
 			<data>0</data>
@@ -693,7 +701,7 @@
 	<description><!--mTTRADV2--> Used when accelerating.</description>
 	</table>
 
-	<table type="2D" name="Initial Retard Quantity Table (Idle)" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="4" >
+	<table type="2D" name="Initial Retard Quantity Table (Idle)" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="TVO-TVO 10ms Ago (Degrees)" sizex="4">
 			<data>0</data>
@@ -704,7 +712,7 @@
 	<description><!--mTTRADV22--> Only used when accelerating from idle AND if vehicle speed is higher than ROM value. This table will NEVER be used stock because the value is set to 316mph. (Deceleration and idle)</description>
 	</table>
 	
-	<table type="2D" name="Initial Retard Quantity Table (Lock-Up)" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="3" >
+	<table type="2D" name="Initial Retard Quantity Table (Lock-Up)" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="TVO-TVO 10ms Ago (Degrees)" sizex="4">
 			<data>0</data>
@@ -715,7 +723,7 @@
 	<description><!--mTTRADV1--> Only used when accelerating during lock-up.</description>
 	</table>
 
-	<table type="2D" name="Initial Retard Quantity Table (Fuel Cut)" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="3" >
+	<table type="2D" name="Initial Retard Quantity Table (Fuel Cut)" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="TVO-TVO 10ms Ago (Degrees)" sizex="4">
 			<data>0</data>
@@ -726,7 +734,7 @@
 	<description><!--mTTRADV4--> Only used when accelerating from fuel cut.</description>
 	</table>
 	
-	<table type="2D" name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="3" >
+	<table type="2D" name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" category="Ignition Timing" storagetype="uint8" sizex="4" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="TVO-TVO 10ms Ago (Degrees)" sizex="4">
 			<data>0</data>
@@ -737,7 +745,7 @@
 	<description><!--mTTRADV3--> Only used when accelerating from fuel cut and when lock-up is occurring.</description>
 	</table>
 	
-	<table type="2D" name="VVT NK Threshold TP Table" category="Ignition Timing" storagetype="uint8" sizex="16" endian="big" userlevel="3" >
+	<table type="2D" name="VVT NK Threshold TP Table" category="Ignition Timing" storagetype="uint8" sizex="16" endian="big" userlevel="1" >
 		<scaling units="BFS Threshold (ms)" expression="x*.125" to_byte="x/.125" format="0.00"/>
 		<table type="X Axis" name="Engine Speed" storagetype="uint8" endian="big">
 			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" />
@@ -745,7 +753,7 @@
 	<description><!--mTVTHNKTP--></description>
 	</table>
 	
-	<table type="2D" name="VVT MBT Compensation Quantity Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="VVT MBT Compensation Quantity Table" category="Ignition Timing" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x-64" to_byte="x+64" format="0"/>
 	<table type="X Axis" name="VVT Deviance from Target (Degrees)" sizex="8">
 			<data>-64</data>
@@ -760,7 +768,7 @@
 	<description><!--mTVTCTRM-->The deviance is based on how far the actual cam timing is from the target.</description>
 	</table>
 	
-	<table type="2D" name="JAR Sound Compensation Table (Coolant Temperature)" category="Ignition Timing" storagetype="uint8" sizex="16" endian="big" userlevel="3" >
+	<table type="2D" name="JAR Sound Compensation Table (Coolant Temperature)" category="Ignition Timing" storagetype="uint8" sizex="16" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="16">
 			<data>-40</data>
@@ -783,7 +791,7 @@
 	<description><!--mTADVC1--> JAR Sound = Piston Slap. These tables are used to retard ignition timing to prevent damage from occuring. I'd recommend using the Coolant Compensation Table for the MBT calculation instead. This value is subtracted from the Engine RPM Table value (below) to set vADVJAR. This value is subtracted from the timing value, so raising these values will cause the timing to be retarded. This value is ALWAYS USED to calculate timing (apart from idle and decel).</description>
 	</table>
 
-	<table type="2D" name="JAR Sound Compensation Table (Engine RPM)" category="Ignition Timing" storagetype="uint8" sizex="16" endian="big" userlevel="3" >
+	<table type="2D" name="JAR Sound Compensation Table (Engine RPM)" category="Ignition Timing" storagetype="uint8" sizex="16" endian="big" userlevel="1" >
 		<scaling units="Timing Adjustment (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="Engine Speed (RPM)" sizex="16">
 			<data>0</data>
@@ -806,7 +814,7 @@
 	<description><!--mTADVC2--> JAR Sound = Piston Slap. These tables are used to retard ignition timing to prevent damage from occuring. I'd recommend using the main Ignition Timing Maps to compensate for RPM instead. This value has the mTADVC1 Table value subtracted from it before setting vADVJAR. So if you want these tables to compensate, you need to have this value be larger than the Coolant Comp value. Since the value gets subtracted, THESE VALUES CANNOT BE BELOW 0! If they're below 0, it'll just set the value to 0.</description>
 	</table>
 
-	<table type="2D" name="Dwell RPM Table" category="Ignition Timing" storagetype="uint8" endian="big" sizex="8" userlevel="3">
+	<table type="2D" name="Dwell RPM Table" category="Ignition Timing" storagetype="uint8" endian="big" sizex="8" userlevel="1">
 		<scaling units="Engine Speed (RPM)^(2/3)" expression="x*2" to_byte="x/2" format="0" fineincrement=".2" coarseincrement="1" />
 		<table type="X Axis" name="Engine Speed (RPM)" sizex="8">
 			<data>0</data>
@@ -821,7 +829,7 @@
 		<description><!--mTDWLNE--></description>
 	</table>
 
-	<table type="2D" name="Dwell Battery Table" category="Ignition Timing" storagetype="uint8" endian="big" sizex="8" userlevel="3">
+	<table type="2D" name="Dwell Battery Table" category="Ignition Timing" storagetype="uint8" endian="big" sizex="8" userlevel="1">
 		<scaling units="1/V^(2/3)" expression="x*0.0015625" to_byte="x/0.0015625" format="0.00" fineincrement=".02" coarseincrement=".1" />
 		<table type="X Axis" name="Battery (V)" sizex="8">
 			<data>0</data>
@@ -836,7 +844,7 @@
 		<description><!--mTDWLVB--></description>
 	</table>
 
-	<table type="2D" name="Ignition Timing Initial Value" category="Ignition Timing" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Ignition Timing Initial Value" category="Ignition Timing" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Ignition Advance (Degrees)" expression="x" to_byte="x" format="0"/>
 	<table type="Y Axis" name="Initial" sizey="1">
 			<data>Timing</data>
@@ -844,7 +852,7 @@
 	<description>mADVINT- "Ignition advance initial value." Only is used if fADV1ST "Beginning ADV operation completion flag" is set to 0. Since there's a cranking startup timing table, not sure when this would be used.</description>
 	</table>
 	
-	<table type="2D" name="War Way Speed Weight Constant" category="Ignition Timing" storagetype="uint8" endian="big" sizey="1" userlevel="3">
+	<table type="2D" name="War Way Speed Weight Constant" category="Ignition Timing" storagetype="uint8" endian="big" sizey="1" userlevel="1">
 		<scaling name="ms" units="cc/ms" expression="x*0.000125" to_byte="x/0.000125" format="0.000000"/>
 		<table type="Y Axis" name="Constant" sizey="1">
 			<data></data>
@@ -852,7 +860,7 @@
 		<description><!--mMBTT--> MBT Calculation.</description>
 	</table>
 
-	<table type="2D" name="Dilution Modification Coefficient" category="Ignition Timing" storagetype="uint8" endian="big" sizex="1" userlevel="2">
+	<table type="2D" name="Dilution Modification Coefficient" category="Ignition Timing" storagetype="uint8" endian="big" sizex="1" userlevel="1">
 		<scaling units="%" expression="x*1.5625" to_byte="x/1.5625" format="#" fineincrement="1" coarseincrement="5" />
 		<table type="X Axis" name="Coefficient" sizex="1">
 			<data></data>
@@ -860,7 +868,7 @@
 		<description><!--mDILU--> MBT Calculation.</description>
 	</table>
 
-	<table type="2D" name="Ignition Timing Main Constant" category="Ignition Timing" storagetype="uint8" endian="big" sizey="1" userlevel="3">
+	<table type="2D" name="Ignition Timing Main Constant" category="Ignition Timing" storagetype="uint8" endian="big" sizey="1" userlevel="1">
 		<scaling units="g" expression="x*0.00390625" to_byte="x/0.00390625" format="0.0000" fineincrement=".01" coarseincrement=".1" />
 		<table type="Y Axis" name="Constant" sizey="1">
 			<data>g</data>
@@ -868,7 +876,7 @@
 		<description><!--mMBTM--> MBT Calculation.</description>
 	</table>
 
-	<table type="2D" name="Ignition Delay Time" category="Ignition Timing" storagetype="uint8" sizex="1" endian="big" userlevel="3" >
+	<table type="2D" name="Ignition Delay Time" category="Ignition Timing" storagetype="uint8" sizex="1" endian="big" userlevel="1" >
 		<scaling units="ms" expression="x*0.01953125" to_byte="x/0.01953125" format="0.000"/>
 	<table type="X Axis" name="Above" sizex="1">
 			<data>-</data>
@@ -876,7 +884,7 @@
 	<description><!--mTAU0--> MBT Calculation.</description>
 	</table>
 
-	<table type="2D" name="EGR Modification Coefficient" category="Ignition Timing" storagetype="uint8" sizey="1" endian="big" userlevel="4" >
+	<table type="2D" name="EGR Modification Coefficient" category="Ignition Timing" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="%" expression="x*1.5625" to_byte="x/1.5625" format="0.00"/>
 	<table type="Y Axis" name="Ignition" sizey="1">
 			<data>-</data>
@@ -884,7 +892,7 @@
 	<description><!--mEGRS--> Flame Speed Calculation.</description>
 	</table>
 	
-	<table type="2D" name="Dwell VB Coefficient" category="Ignition Timing" storagetype="uint16" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Dwell VB Coefficient" category="Ignition Timing" storagetype="uint16" sizey="1" endian="big" userlevel="1" >
 		<scaling units="(mV^2)se" expression="x*128" to_byte="x/128" format="0.00"/>
 	<table type="Y Axis" name="Above" sizey="1">
 			<data>-</data>
@@ -892,7 +900,7 @@
 	<description>mVBDWL- Dwell VB coefficient</description>
 	</table>
 	
-	<table type="2D" name="Dwell TIM Coefficient" category="Ignition Timing" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Dwell TIM Coefficient" category="Ignition Timing" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Sec" expression="x*0.02" to_byte="x/0.02" format="0.00"/>
 	<table type="Y Axis" name="Above" sizey="1">
 			<data>-</data>
@@ -902,7 +910,7 @@
 	
 	\\Ignition Timing (Limiters)//
 
-	<table type="2D" name="Dwell Limits" category="Ignition Timing (Limiters)" storagetype="uint8" sizex="2" endian="big" userlevel="3" >
+	<table type="2D" name="Dwell Limits" category="Ignition Timing (Limiters)" storagetype="uint8" sizex="2" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" to_byte="x" format="0"/>
 	<table type="X Axis" name="Limit" sizex="2">
 			<data>Upper</data>
@@ -911,7 +919,7 @@
 	<description>mTDWLMAX and mTDWLMIN- Dwell upper/lower limit value</description>
 	</table>
 	
-	<table type="2D" name="Retard Side Maximum Change Width" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Retard Side Maximum Change Width" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" to_byte="x" format="0"/>
 	<table type="Y Axis" name="Above" sizey="1">
 			<data>Deg</data>
@@ -919,7 +927,7 @@
 	<description>mRETLMT- Retard side maximum change width</description>
 	</table>
 
-	<table type="2D" name="Advance Side Maximum Change Width" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Advance Side Maximum Change Width" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" to_byte="x" format="0"/>
 	<table type="Y Axis" name="Above" sizey="1">
 			<data>Deg</data>
@@ -927,7 +935,7 @@
 	<description>mADVLMT- Retard side maximum change width</description>
 	</table>
 
-	<table type="2D" name="Advance Side Maximum Change Width (Cranking)" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Advance Side Maximum Change Width (Cranking)" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" to_byte="x" format="0.00"/>
 	<table type="Y Axis" name="Degrees" sizey="1">
 			<data>Above</data>
@@ -935,7 +943,7 @@
 	<description>mADVLMTS- Retard side maximum change width (When it starts.)</description>
 	</table>
 
-	<table type="2D" name="Retard Side Limiter" category="Ignition Timing (Limiters)" storagetype="int8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Retard Side Limiter" category="Ignition Timing (Limiters)" storagetype="int8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" format="0"/>
 	<table type="Y Axis" name="Retard Limit" sizey="1">
 			<data>Limit</data>
@@ -943,7 +951,7 @@
 	<description>mADVRMX- Retard Side Limiter</description>
 	</table>
 	
-	<table type="2D" name="Advance Side Limiter" category="Ignition Timing (Limiters)" storagetype="int8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Advance Side Limiter" category="Ignition Timing (Limiters)" storagetype="int8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" to_byte="x" format="0"/>
 	<table type="Y Axis" name="Degrees" sizey="1">
 			<data>Above</data>
@@ -951,7 +959,7 @@
 	<description>mADVAMX- Advance side limiter</description>
 	</table>
 	
-	<table type="2D" name="Ignition Timing Compensation Retard Limiter" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Ignition Timing Compensation Retard Limiter" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" to_byte="x" format="0.00"/>
 	<table type="Y Axis" name="-" sizey="1">
 			<data>Above</data>
@@ -959,7 +967,7 @@
 	<description><!--mRLMT--> Ignition retard limiter used in the DLTADV calculation.</description>
 	</table>
 
-	<table type="2D" name="Ignition Timing Compensation Advance Limiter" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Ignition Timing Compensation Advance Limiter" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" to_byte="x" format="0.00"/>
 	<table type="Y Axis" name="Above" sizey="1">
 			<data>-</data>
@@ -967,7 +975,7 @@
 	<description><!--mALMT--> Ignition advance limiter used in the DLTADV calculation.</description>
 	</table>
 	
-	<table type="2D" name="ATRET Limit" category="Ignition Timing (Limiters)" storagetype="int8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="ATRET Limit" category="Ignition Timing (Limiters)" storagetype="int8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="Degrees" expression="x" format="0"/>
 	<table type="Y Axis" name="Retard Limit" sizey="1">
 			<data>Limit</data>
@@ -975,7 +983,7 @@
 	<description>mPILMTAT- Seems to be the retard limit for vATRET calculations. So adjusting this will allow timing to be retarded to whatever you want.</description>
 	</table>
 	
-	<table type="2D" name="Consult Ignition Timing Adjustment Limits" category="Ignition Timing (Limiters)" storagetype="int8" sizey="2" endian="big" userlevel="3" >
+	<table type="2D" name="Consult Ignition Timing Adjustment Limits" category="Ignition Timing (Limiters)" storagetype="int8" sizey="2" endian="big" userlevel="1" >
 		<scaling units="-" expression="x" to_byte="x" format="0.00"/>
 	<table type="Y Axis" name="Limit" sizey="2">
 			<data>Upper</data>
@@ -984,7 +992,7 @@
 	<description><!--mADVADL and mADVADH--> These are the limits as to how far Consult can adjust the ignition timing. There's really no point in adjusting this limiter unless you're wanting to experiment or implement it in some other way.</description>
 	</table>
 	
-	<table type="2D" name="Ignition Timing Change Rate Limiter" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="3" >
+	<table type="2D" name="Ignition Timing Change Rate Limiter" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="1" endian="big" userlevel="1" >
 		<scaling units="REF/Deg" expression="x" to_byte="x" format="0.00"/>
 	<table type="Y Axis" name="REF/Deg" sizey="1">
 			<data>Above</data>
@@ -992,7 +1000,7 @@
 	<description>mADVLMTPI- Ignition timing change rate limiter</description>
 	</table>
 
-	<table type="2D" name="Ignition Adjustment Limits (Filling Up Efficiency)" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="2" endian="big" userlevel="3" >
+	<table type="2D" name="Ignition Adjustment Limits (Filling Up Efficiency)" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="2" endian="big" userlevel="1" >
 		<scaling units="%" expression="x*.78125" to_byte="x/.78125" format="0.00"/>
 	<table type="Y Axis" name="%" sizey="2">
 			<data>Upper</data>
@@ -1001,7 +1009,7 @@
 	<description>Ignition adjustment value upper limit filling up efficiency</description>
 	</table>
 
-	<table type="2D" name="Ignition Adjustment Limits (Engine RPM)" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="2" endian="big" userlevel="3" >
+	<table type="2D" name="Ignition Adjustment Limits (Engine RPM)" category="Ignition Timing (Limiters)" storagetype="uint8" sizey="2" endian="big" userlevel="1" >
 		<scaling units="RPM" expression="x*25" to_byte="x/25" format="0"/>
 	<table type="Y Axis" name="RPM" sizey="2">
 			<data>Upper</data>
@@ -1035,7 +1043,7 @@
 		<description>mMVH6_RSA- Advance of the intake camshaft in degrees.</description>
 	</table>
 
-	<table type="3D" name="High Detonation Intake Cam Timing Map (4x4)" category="Variable Valve Timing" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="3">
+	<table type="3D" name="High Detonation Intake Cam Timing Map (4x4)" category="Variable Valve Timing" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="1">
 		<scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.0" fineincrement=".5" coarseincrement="2" />
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8" endian="big" logparam="E3000">
 			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
@@ -1057,7 +1065,7 @@
 		<description>Retarding of the exhaust camshaft in degrees.</description>
 	</table>
 
-	<table type="3D" name="VTC Drive Abnormality Diagnosis Judgement Delay Map" category="Variable Valve Timing" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="3">
+	<table type="3D" name="VTC Drive Abnormality Diagnosis Judgement Delay Map" category="Variable Valve Timing" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1">
 		<scaling units="Seconds" expression="x*0.1" to_byte="x/0.1" format="0" fineincrement="1" coarseincrement="10" />
 		<table type="X Axis" name="Coolant Temperature (Fahrenheit)" storagetype="uint8" endian="big" logparam="Z4">
 			<scaling units="-" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="0" fineincrement="1" coarseincrement="2" />
@@ -1070,7 +1078,7 @@
 	
 	\\Knock and Misfire Detection//
 	
-	<table type="3D" name="Knock Slice Map" category="Knock and Misfire Detection" storagetype="uint16" endian="big" sizex="16" sizey="6" userlevel="3">
+	<table type="3D" name="Knock Slice Map" category="Knock and Misfire Detection" storagetype="uint16" endian="big" sizex="16" sizey="6" userlevel="1">
 		<scaling units="Knock Count (Threshold)" expression="x*0.00390625" to_byte="x/0.00390625" format="0" fineincrement="1" coarseincrement="4" />
 		<table type="X Axis" name="Engine Speed (RPM)" sizex="16" logparam="P8">
 			<data>400</data>
@@ -1101,7 +1109,7 @@
 		<description>mTSL- "SLI Table" This table sets the thresholds for determining knock by cylinder. If the knock count exceeds this threshold, then it'll trip the knock flag (presumably)</description>
 	</table>
 	
-	<table type="3D" name="Misfire Diagnosis Basic Map" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="3">
+	<table type="3D" name="Misfire Diagnosis Basic Map" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1">
 		<scaling units="NA" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="50" />
 		<scaling name="Experimental" units="Drag on Crankshaft (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="50" />
 		<table type="X Axis" name="Base Fuel Schedule" storagetype="uint8" endian="big" logparam="Z12">
@@ -1113,7 +1121,7 @@
 		<description>MSATH- "Misfire Diagnosis table" </description>
 	</table>
 	
-	<table type="3D" name="Misfire Diagnosis Map A" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="3">
+	<table type="3D" name="Misfire Diagnosis Map A" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1">
 		<scaling units="NA" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="50" />
 		<scaling name="Experimental" units="Drag on Crankshaft (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="50" />
 		<table type="X Axis" name="Base Fuel Schedule" storagetype="uint8" endian="big" logparam="Z12">
@@ -1126,7 +1134,7 @@
 		<description>MSATHA- "Misfire Diagnosis table A" Also called "Crank Drag Main"</description>
 	</table>
 
-	<table type="3D" name="Misfire Diagnosis Map B" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="3">
+	<table type="3D" name="Misfire Diagnosis Map B" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1">
 		<scaling units="NA" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="50" />
 		<scaling name="Experimental" units="Drag on Crankshaft (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="50" />
 		<table type="X Axis" name="Base Fuel Schedule" storagetype="uint8" endian="big" logparam="Z12">
@@ -1139,7 +1147,7 @@
 		<description>MSATHB- "Misfire Diagnosis table B" Also called "Crank Drag High detonation"</description>
 	</table>
 
-	<table type="3D" name="High Octane Knock Limit Map" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="3" sizey="3" userlevel="3" logparam="E3015">
+	<table type="3D" name="High Octane Knock Limit Map" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="3" sizey="3" userlevel="1" logparam="E3015">
 		<scaling units="Degrees Retard" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="4" />
 		<table type="X Axis" name="Engine Speed (RPM)" sizex="3">
 			<data>0</data>
@@ -1154,7 +1162,7 @@
 		<description>mMKLMRTH- This table sets the limits of knock retard correction when high-octane fuel is determined.</description>
 	</table>
 
-	<table type="3D" name="High Detonation Knock Limit Map" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="3" sizey="3" userlevel="3" logparam="E3015">
+	<table type="3D" name="High Detonation Knock Limit Map" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="3" sizey="3" userlevel="1" logparam="E3015">
 		<scaling units="Degrees Retard" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="4" />
 		<table type="X Axis" name="Engine Speed (RPM)" sizex="3">
 			<data>0</data>
@@ -1255,7 +1263,7 @@
 		<description><!--mTKREGR-->This Target AFR table will be used when knock is detected. It will utilize both the Target AFR Table and this Target AFR table to calculate the fueling. It's probably safe to leave this one how it is. </description>
 	</table>
 
-	<table type="2D" name="High Coolant Temperature Increase Compensation Table" category="Fuel Delivery" storagetype="uint8" sizex="8" endian="big" userlevel="3" >
+	<table type="2D" name="High Coolant Temperature Increase Compensation Table" category="Fuel Delivery" storagetype="uint8" sizex="8" endian="big" userlevel="1" >
 		<scaling units="%" expression="x*.78125" to_byte="x/.78125" format="0"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>176</data>
@@ -1270,20 +1278,22 @@
 	<description>mTKHTTW1- A high coolant temperature increase compensation table</description>
 	</table>
 	
-	<table type="2D" name="Individual Cylinder Fuel Trims" category="Fuel Delivery" storagetype="uint8" endian="big" sizex="6" userlevel="1">
+	<table type="2D" name="Individual Cylinder Fuel Trims" category="Fuel Delivery" storagetype="uint8" endian="big" sizey="8" userlevel="1">
 		<scaling units="Percentage" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="5" />
-		<table type="X Axis" name="Cylinder" sizex="6">
+		<table type="Y Axis" name="Cylinder" sizey="8">
 			<data>1</data>
 			<data>2</data>
 			<data>3</data>
 			<data>4</data>
 			<data>5</data>
 			<data>6</data>
+			<data>7</data>
+			<data>8</data>
 		</table>
 		<description>mTRLCY2 "Compensation value table by the cylinder" This adds or subtracts fuel from the respective cylinder. Values over 100 add fuel, values under 100 subtract fuel.</description>
 	</table>
 
-	<table type="2D" name="LTFT Map BFS Axis" category="Fuel Delivery" storagetype="uint8" endian="big" sizex="8" userlevel="3">
+	<table type="2D" name="LTFT Map BFS Axis" category="Fuel Delivery" storagetype="uint8" endian="big" sizex="8" userlevel="1">
 		<scaling units="BFS (ms)" expression="x/8" to_byte="x*8" format="0.0" fineincrement=".125" coarseincrement="1"  />
 		<table type="X Axis" name="Fixed" sizex="8">
 			<data>0</data>
@@ -1298,7 +1308,7 @@
 	<description>mTLBLRC</description>
 	</table>
 
-	<table type="2D" name="LTFT Map RPM Axis" category="Fuel Delivery" storagetype="uint8" endian="big" sizex="8" userlevel="3">
+	<table type="2D" name="LTFT Map RPM Axis" category="Fuel Delivery" storagetype="uint8" endian="big" sizex="8" userlevel="1">
 		<scaling units="Engine Speed (RPM)" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
 		<table type="X Axis" name="Fixed" sizex="8">
 			<data>0</data>
@@ -1323,7 +1333,7 @@
 
 	\\Fuel Delivery (Limiters)//
 
-  	<table type="2D" name="Short Term Fuel Trim Limits" category="Fuel Delivery (Limiters)" storagetype="uint16" sizex="2" endian="big" userlevel="3" >
+  	<table type="2D" name="Short Term Fuel Trim Limits" category="Fuel Delivery (Limiters)" storagetype="uint16" sizex="2" endian="big" userlevel="1" >
 		<scaling units="%" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00"/>
 	<table type="X Axis" name="STFT Limits" sizex="2">
 			<data>Lower</data>
@@ -1332,7 +1342,7 @@
 	<description>mALPMNSM and mALPMXSM- These are the main STFT limits. I would not set these any lower than 85-115.</description>
 	</table>
 
-	<table type="2D" name="Long Term Fuel Trim Limits" category="Fuel Delivery (Limiters)" storagetype="uint8" endian="big" sizex="2" userlevel="3">
+	<table type="2D" name="Long Term Fuel Trim Limits" category="Fuel Delivery (Limiters)" storagetype="uint8" endian="big" sizex="2" userlevel="1">
 		<scaling units="%" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="4" />
 		<table type="X Axis" name="limit" sizex="2">
 			<data>Lower</data>
@@ -1448,7 +1458,7 @@
 		<description>mTNR- "JECS cut recover speed table" This is the recover speed table for JECS/Hitachi fuel cut.</description>
 	</table>
 
-	<table type="2D" name="Fuel Cut Timing Retard Delay Table" category="Fuel Cut and Speed Limiters" storagetype="uint8" sizex="16" endian="big" userlevel="3" >
+	<table type="2D" name="Fuel Cut Timing Retard Delay Table" category="Fuel Cut and Speed Limiters" storagetype="uint8" sizex="16" endian="big" userlevel="1" >
 		<scaling units="ms" expression="x*100" to_byte="x/100" format="0"/>
 	<table type="X Axis" name="Coolant Temperature (Fahrenheit)" sizex="16">
 			<data>-40</data>
@@ -1502,6 +1512,14 @@
 		</table>
 		<description>Speed Limiter. Some ROMs have two speed limiting mechanisms (mVSPCT2 and the other generically named "speed limiter"). This speed (restore) must be lower than cut</description>
 	</table>
+
+	<table type="2D" name="Rev Limiter Fuel Cut Delay" category="Fuel Cut and Speed Limiters" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="seconds" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="5" />
+		<table type="Static Y Axis" name="Fuel Cut Delay" sizey="1">
+			<data>X</data>
+		</table>
+		<description>mTNCUTD-  Usually set to 0, surprised the units are in seconds. "A high rotation cut judgement delay"</description>
+	</table>
 	
 	
 	\\Electronic Throttle Control//
@@ -1540,7 +1558,7 @@
 		<description><!--mTEHOSMAP-->This map acts as a multiplier for the QH0 Torque Conversion Map value. If the multiplied value exceeds the last column value of the QH0 map, then it'll just use the last column value of the QH0 map instead.</description>
 	</table>
 		
-	<table type="2D" name="Throttle Flow Potential Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<table type="2D" name="Throttle Flow Potential Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
 	<scaling units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
 	<table type="X Axis" name="Accelerator Opening Area" storagetype="uint16" endian="big"> 
 		<scaling units="cm^2" expression="x*0.0000390625" to_byte="x/0.0000390625" format="0.000"/>
@@ -1548,7 +1566,7 @@
 	<description> mTTQH0ST- Axis for QH0 Torque Conversion Map.</description>
 	</table>
 	
-	<table type="2D" name="Throttle Flow Potential Table (High Flow-Quantity)" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<table type="2D" name="Throttle Flow Potential Table (High Flow-Quantity)" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
 	<scaling units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
 	<table type="X Axis" name="Accelerator Opening Area" storagetype="uint16" endian="big"> 
 		<scaling units="cm^2" expression="x*0.000625" to_byte="x/0.000625" format="0.000"/>
@@ -1556,7 +1574,7 @@
 	<description>mTTQH0STH-</description>
 	</table>
 	
-	<table type="2D" name="Throttle Flow Potential Table 2" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<table type="2D" name="Throttle Flow Potential Table 2" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
 	<scaling units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
 	<table type="X Axis" name="Accelerator Opening Area" storagetype="uint16" endian="big"> 
 		<scaling units="cm^2" expression="x*0.0000390625" to_byte="x/0.0000390625" format="0.0000"/>
@@ -1564,7 +1582,7 @@
 	<description>mTQH0ST_S- Needs to be set equal to mTTQH0ST</description>
 	</table>
 
-	<table type="2D" name="Throttle Flow Potential Table 2 (High Flow-Quantity)" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<table type="2D" name="Throttle Flow Potential Table 2 (High Flow-Quantity)" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
 	<scaling units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
 	<table type="X Axis" name="Accelerator Opening Area" storagetype="uint16" endian="big"> 
 		<scaling units="cm^2" expression="x*0.000625" to_byte="x/0.000625" format="0.0000"/>
@@ -1572,7 +1590,7 @@
 	<description>mTQH0SH_S- Needs to be set equal to mTTQH0STH</description>
 	</table>
 	
-	<table type="2D" name="Target Throttle Valve Opening Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<table type="2D" name="Target Throttle Valve Opening Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
 	<scaling units="Accelerator Pedal Opening Area (cm^2)" expression="x*0.0008" to_byte="x/0.0008" format="0.0000"/> 
 	<table type="X Axis" name="TVO" storagetype="uint16" endian="big"> 
 		<scaling units="Degrees" expression="x*0.0275" to_byte="x/0.0275" format="0.00"/>
@@ -1580,7 +1598,7 @@
 	<description><!--mTTGTVO--> </description>
 	</table>
 
-	<table type="2D" name="Target Throttle Valve Opening Table 2" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<table type="2D" name="Target Throttle Valve Opening Table 2" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
 	<scaling units="Accelerator Pedal Opening Area (cm^2)" expression="x*0.0008" to_byte="x/0.0008" format="0.0000"/> 
 	<table type="X Axis" name="TVO" storagetype="uint16" endian="big"> 
 		<scaling units="Degrees" expression="x*0.0275" to_byte="x/0.0275" format="0.00"/>
@@ -1588,7 +1606,7 @@
 	<description>mTTGTVO_S- Values must be set the same as mTTGTVO.</description>
 	</table>
 	
-	<table type="2D" name="Throttle Body Opening Area Calibration Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<table type="2D" name="Throttle Body Opening Area Calibration Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
 	<scaling units="Throttle Body Opening Area (cm^2)" expression="x*0.0008" to_byte="x/0.0.0008" format="0.000"/> 
 	<table type="X Axis" name="TVO (Degees)" sizex="32" format="0.00">
 			<data>0.00</data> 
@@ -1672,7 +1690,7 @@
 
 	\\Traction Control System//
 
-	<table type="2D" name="TCS Fuel Cut Prohibition Speed Table" category="Traction Control System" storagetype="uint8" endian="big" sizex="16" userlevel="3">
+	<table type="2D" name="TCS Fuel Cut Prohibition Speed Table" category="Traction Control System" storagetype="uint8" endian="big" sizex="16" userlevel="1">
 		<scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="25" coarseincrement="200" />
 		<table type="X Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizex="16" logparam="P2">
 			<data>-40</data>
@@ -1695,7 +1713,7 @@
 		<description><!--mTTXNEL--> This table sets the RPM threshold that has to be breached before the TCS can cut fuel. If RPM's drop below the table value, fueling will be restored.</description>
 	</table>
 
-	<table type="3D" name="Fuel Cut Extreme Short Rest Time Map" category="Traction Control System" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="3">
+	<table type="3D" name="Fuel Cut Extreme Short Rest Time Map" category="Traction Control System" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="1">
 		<scaling units="Seconds" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="10" />
 		<table type="X Axis" name="Throttle Valve Opening" storagetype="uint8" endian="big">
 			<scaling units="Degrees" expression="x*0.44" to_byte="x/0.44" format="0.00" fineincrement="1" coarseincrement="5" />
@@ -1706,7 +1724,7 @@
 		<description>mMPTOFM- An extreme short rest time map</description>
 	</table>
 	
-	<table type="3D" name="Fuel Cut Suspension Time:Operation Time Ratio Map" category="Traction Control System" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="3">
+	<table type="3D" name="Fuel Cut Suspension Time:Operation Time Ratio Map" category="Traction Control System" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="1">
 		<scaling name="Experimental" units="Seconds" expression="x*0.01" to_byte="x/0.01" format="#.##:1" fineincrement="0.01" coarseincrement="0.1" />
 		<scaling name="A2L" units="Ratio" expression="x*0.1" to_byte="x/0.1" format="#:1" fineincrement="1" coarseincrement="10" />
 		<table type="X Axis" name="Throttle Valve Opening" storagetype="uint8" endian="big">
@@ -1720,7 +1738,7 @@
 
 	\\Wideband O2 Sensor//
 	
-	<table type="3D" name="AFR Correction Map (Bank 1)" category="Wideband O2 Sensor" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="3">
+	<table type="3D" name="AFR Correction Map (Bank 1)" category="Wideband O2 Sensor" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="1">
 		<scaling units="AFR Adjustment (AFR)" expression="(x*0.002)-65.536" to_byte="(x+65.536)/0.002" format="0.000"/>
 		<table type="X Axis" name="Base Fuel Schedule" storagetype="uint16" endian="big">
 			<scaling units="ms" expression="x*0.000488281" to_byte="x/0.000488281" format="0.0"/>
@@ -1731,7 +1749,7 @@
 		<description><!--mMABFSFT--> This value is added on top of the AFR value from the AFR Conversion Table.</description>
 	</table>
 
-	<table type="3D" name="AFR Correction Map (Bank 2)" category="Wideband O2 Sensor" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="3">
+	<table type="3D" name="AFR Correction Map (Bank 2)" category="Wideband O2 Sensor" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="1">
 		<scaling units="AFR Adjustment (AFR)" expression="(x*0.002)-65.536" to_byte="(x+65.536)/0.002" format="0.000"/>
 		<table type="X Axis" name="Base Fuel Schedule" storagetype="uint16" endian="big">
 			<scaling units="ms" expression="x*0.000488281" to_byte="x/0.000488281" format="0.0"/>
@@ -1742,7 +1760,7 @@
 		<description><!--mMABFSFT2--> This value is added on top of the AFR value from the AFR Conversion Table.</description>
 	</table>
 	
-	<table type="2D" name="AFR Conversion Table" category="Wideband O2 Sensor" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<table type="2D" name="AFR Conversion Table" category="Wideband O2 Sensor" storagetype="uint16" sizex="16" endian="big" userlevel="1">
 		<scaling units="AFR (Gasoline Scale)" expression="x*0.002" to_byte="x/0.002" format="0.00"/> 
 		<table type="X Axis" name="Wideband Sensor" storagetype="uint16" endian="big">
 			<scaling units="V" expression="x*0.0025" to_byte="x/0.0025" format="0.00"/>
@@ -1754,7 +1772,7 @@
 
 Notes; Shoutout to A33B for defining most of the supmasks! 
 
-	<table type="BitwiseSwitch" name="CID1100 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1100 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="01 Coolant temperature"/>
 		<bit position ="30" name="02 Vehicle Speed"/>
 		<bit position ="29" name="03 Battery Voltage"/>
@@ -1789,7 +1807,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="20-3F sup"/>
 	</table>
 
-	<table type="BitwiseSwitch" name="CID1120 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1120 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="21 Exhaust Gas Temperature B1"/>
 		<bit position ="30" name="22 Exhaust Gas Temperature B2"/>
 		<bit position ="29" name="23 Short Term Fuel Trim B1"/>
@@ -1824,7 +1842,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="40-5F sup"/>
 	</table>
 
-	<table type="BitwiseSwitch" name="CID1140 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1140 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="41 VRO2 minimum value"/>
 		<bit position ="30" name="42 undefined"/>
 		<bit position ="29" name="43 EGR Temperature"/>
@@ -1859,7 +1877,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="60-7F sup"/>
 	</table>
 
-	<table type="BitwiseSwitch" name="CID1160 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1160 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="61 LFT"/>
 		<bit position ="30" name="62 Ignition Timing"/>
 		<bit position ="29" name="63 Intake Cam Advance Angle B2"/>
@@ -1894,7 +1912,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="80-9F support"/>
 	</table>  
 
-	<table type="BitwiseSwitch" name="CID1200 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1200 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="01 Engine Speed"/>
 		<bit position ="30" name="02 Crank Position"/>
 		<bit position ="29" name="03 Travel MIL"/>
@@ -1929,7 +1947,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="20-3F support"/>
 	</table>
 
-	<table type="BitwiseSwitch" name="CID1220 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1220 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="21 USRVL (minimum MAF idle voltage)"/>
 		<bit position ="30" name="22 USRVU (maximum MAF idle voltage)"/>
 		<bit position ="29" name="23 A/C Pressure Voltage"/>
@@ -1964,7 +1982,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="40-5F sup"/>
 	</table>	  
 
-	<table type="BitwiseSwitch" name="CID1240 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1240 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="41 A counter (for the RATE law) for ISC function diagnosis frequency measuring"/>
 		<bit position ="30" name="42 Diag 14"/>
 		<bit position ="29" name="43 A counter for purge system diagnosis frequency measuring"/>
@@ -2000,7 +2018,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>mSCID24</description>
 	</table>
 	
-	<table type="BitwiseSwitch" name="CID1300 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1300 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="01 vSWMONT_R#5"/>
 		<bit position ="30" name="02 vSWMONT_R#1"/>
 		<bit position ="29" name="03 vSWMONT_R#2"/>
@@ -2035,7 +2053,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="U0 -"/>
 	</table>	
 
-	<table type="BitwiseSwitch" name="CID1301 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1301 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Snow Mode"/>  
 		<bit position ="1" name="Cls TPS"/>
 		<bit position ="2" name="CVTC Learn"/>  
@@ -2047,7 +2065,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1302 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1302 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Cls TPS"/>  
 		<bit position ="1" name="Start"/>
 		<bit position ="2" name="Park/N"/>  
@@ -2059,7 +2077,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1303 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1303 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Sol B"/>  
 		<bit position ="1" name="Sol A"/>
 		<bit position ="2" name="A/T D2 In"/>  
@@ -2071,7 +2089,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1304 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1304 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Susp Unload"/>  
 		<bit position ="1" name="A/C"/>
 		<bit position ="2" name="TCC"/>  
@@ -2083,7 +2101,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1305 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1305 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Combustion"/>  
 		<bit position ="1" name=""/>
 		<bit position ="2" name="Brake Switch"/>  
@@ -2095,7 +2113,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1306 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1306 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="VVL S/V Exh"/>  
 		<bit position ="1" name="VVL S/V Int"/>
 		<bit position ="2" name="Int Sol B2"/>  
@@ -2107,7 +2125,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1307 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1307 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="A/T D3 Out"/>  
 		<bit position ="1" name="ISC OPEN/CLOSED judgement"/>
 		<bit position ="2" name="Engine Mount"/>  
@@ -2119,7 +2137,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1308 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1308 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="FPCM"/>  
 		<bit position ="1" name="FPCM"/>
 		<bit position ="2" name="FPCM"/>  
@@ -2131,7 +2149,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1309 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1309 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Purg Sol"/>  
 		<bit position ="1" name="Vent Cntrl"/>
 		<bit position ="2" name="Purg Sol"/>  
@@ -2143,7 +2161,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID130A supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID130A supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="IACV FICD"/>  
 		<bit position ="1" name="Auxi Sol"/>
 		<bit position ="2" name="Air Relay"/>  
@@ -2155,7 +2173,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID130B supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID130B supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="HO2 B2S2 heater"/>  
 		<bit position ="1" name="HO2 B1S2 heater"/>
 		<bit position ="2" name="HO2 B2S1 heater"/>  
@@ -2167,7 +2185,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID130C supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID130C supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Catalyst Readiness"/>  
 		<bit position ="1" name="H Cat Readiness"/>
 		<bit position ="2" name="Evap Readiness"/>  
@@ -2179,7 +2197,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID130D supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID130D supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Cruise Switch"/>  
 		<bit position ="1" name="Cancel Switch"/>
 		<bit position ="2" name="Resume/Acc Switch"/>  
@@ -2191,7 +2209,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID130E supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID130E supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name=""/>  
 		<bit position ="1" name=""/>
 		<bit position ="2" name="VSS Cutoff"/>  
@@ -2203,7 +2221,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID130F supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID130F supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Inital Diag"/>  
 		<bit position ="1" name="Tran Diag"/>
 		<bit position ="2" name="TCM"/>  
@@ -2215,7 +2233,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1310 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1310 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="AWD/4WD"/>  
 		<bit position ="1" name="EPS"/>
 		<bit position ="2" name=""/>  
@@ -2227,7 +2245,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1311 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1311 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="SCB/V Sol"/>  
 		<bit position ="1" name="VT Learn"/>
 		<bit position ="2" name=""/>  
@@ -2239,7 +2257,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1312 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1312 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="LPG Cut Sol"/>  
 		<bit position ="1" name="Slow Cut Sol"/>
 		<bit position ="2" name=""/>  
@@ -2251,7 +2269,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1313 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1313 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Fan High"/>  
 		<bit position ="1" name="Fan Med"/>
 		<bit position ="2" name="Fan Low"/>  
@@ -2263,7 +2281,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>bits enable/disable</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="CID1314 supmask" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="CID1314 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name=""/>  
 		<bit position ="1" name="Blower Fan"/>
 		<bit position ="2" name="Defogger"/>  
@@ -2383,7 +2401,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 	<description>mSCID50</description>
 	</table>
 	
-	<table type="BitwiseSwitch" name="OBD-2 PID 01-20 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="OBD-2 PID 01-20 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="01 Status since the last clearing of fault codes"/>
 		<bit position ="30" name="02 Fault code that caused the recording of 'freeze frame' data"/>
 		<bit position ="29" name="03 Fuel System Status (Open Loop/Closed Loop I believe)"/>
@@ -2418,7 +2436,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="20 List of PIDs supported (range 21 to 40)"/>
 		</table>
 
-	<table type="BitwiseSwitch" name="OBD-2 PID 21-40 supmask" sizey="4" category="Supmasks" userlevel="3">
+	<table type="BitwiseSwitch" name="OBD-2 PID 21-40 supmask" sizey="4" category="Supmasks" userlevel="1">
 		<bit position ="31" name="21 Distance travelled with MIL on in kms"/>
 		<bit position ="30" name="22 Relative fuel rail pressure in kPa"/>
 		<bit position ="29" name="23 Fuel rail pressure in kPa"/>
@@ -2453,7 +2471,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="40 List of PIDs supported (range 41 to 60)"/>
 	</table>
 
-		<table type="BitwiseSwitch" name="OBD-2 PID 41-60 Supmask" sizey="4" category="Supmasks" userlevel="3">
+		<table type="BitwiseSwitch" name="OBD-2 PID 41-60 Supmask" sizey="4" category="Supmasks" userlevel="1">
 			<bit position ="31" name="41 "/>
 			<bit position ="30" name="42 "/>
 			<bit position ="29" name="43 "/>
@@ -2490,7 +2508,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 	
 	\\Flags//
 	
-	<table type="BitwiseSwitch" name="SRTEND Distinction Flag" sizey="6" category="Flags" userlevel="3" >
+	<table type="BitwiseSwitch" name="SRTEND Distinction Flag" sizey="6" category="Flags" userlevel="1" >
 			<bit position ="47" name="U47 -"/>
 			<bit position ="46" name="U46 -"/>
 			<bit position ="45" name="U45 -"/>
@@ -2542,7 +2560,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 	<description>SRTEND distinction flag</description>
 	</table>
 	
-	<table type="BitwiseSwitch" name="SRTRSL Distinction Flag" sizey="6" category="Flags" userlevel="3" >
+	<table type="BitwiseSwitch" name="SRTRSL Distinction Flag" sizey="6" category="Flags" userlevel="1" >
 			<bit position ="47" name="U47 -"/>
 			<bit position ="46" name="U46 -"/>
 			<bit position ="45" name="U45 -"/>
@@ -2594,7 +2612,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 	<description>SRTRSL Distinction Flag</description>
 	</table>
 	
-	<table type="BitwiseSwitch" name="SRTTST Distinction Flag" sizey="6" category="Flags" userlevel="3" >
+	<table type="BitwiseSwitch" name="SRTTST Distinction Flag" sizey="6" category="Flags" userlevel="1" >
 			<bit position ="47" name="U47 -"/>
 			<bit position ="46" name="U46 -"/>
 			<bit position ="45" name="U45 -"/>
@@ -2646,7 +2664,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 	<description>SRTTST Distinction Flag</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="DOMON Distinction Flag" sizey="8" category="Flags" userlevel="3" >
+	<table type="BitwiseSwitch" name="DOMON Distinction Flag" sizey="8" category="Flags" userlevel="1" >
 			<bit position ="63" name="U63 -"/>
 			<bit position ="62" name="U62 -"/>
 			<bit position ="61" name="U61 -"/>
@@ -2714,7 +2732,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 	<description>mDOID- DOMON Distinction Flag</description>
 	</table>
 	
-	<table type="BitwiseSwitch" name="CO Variable Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="CO Variable Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>   
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2726,7 +2744,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>mFCOVR- CO variable (ROM flag)</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="A Hand-Operated Purge Cut Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="A Hand-Operated Purge Cut Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>   
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2738,7 +2756,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>mFPCUT- A hand-operated purge cut flag</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="KTRM Variable Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="KTRM Variable Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>   
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2750,7 +2768,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>mFVKTRM- KTRM variable (ROM flag)</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="TFBYA Variable Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="TFBYA Variable Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>   
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2762,7 +2780,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>mFVTFA0- TFBYA variable (ROM flag)</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="The Whole Area Torque Going Down Control Switching Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="The Whole Area Torque Going Down Control Switching Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>   
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2774,7 +2792,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>mTDRQARI2- The whole area torque going down control switching flag</description>
 	</table>  
 								
-	<table type="BitwiseSwitch" name="C/S Backup Excuse Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="C/S Backup Excuse Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>   
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2786,7 +2804,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="QH0 Operation Flags" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="QH0 Operation Flags" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="mfQH0ETD- QH0 Tables Logic 0: TVO Based (QH0 Tables set vQH0.) 1: APO Based (Flow Potential = vQH0.) "/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2798,7 +2816,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>-</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="TINT Compensation Permission Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="TINT Compensation Permission Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfKTIUSE - TINT Compensation Permission"/>   
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2810,7 +2828,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="O2/S System Choice Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="O2/S System Choice Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2822,7 +2840,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="O2 Sensor Position Flags" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="O2 Sensor Position Flags" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Narrowband O2 Sensor Bank 2"/>  
@@ -2834,7 +2852,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description><!--mO2S-->Controls what O2 sensors the ECU thinks it has. Disabling any of them will cause said sensor to no longer be utilized by the ECU. (MIGHT need to force emission readiness, as it'll probably show "not supported" for catalyst monitoring)</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Electronic Throttle Control Flags" category="Electronic Throttle Control" userlevel="3"> 
+	<table type="BitwiseSwitch" name="Electronic Throttle Control Flags" category="Electronic Throttle Control" userlevel="1"> 
 0x80		<bit position ="7" name="Unknown 7 -"/> 
 0x40		<bit position ="6" name="mfTTE_ON - Electronic Throttle Control (Off/On)"/>
 0x20		<bit position ="5" name="mfTFD_ON - Drive Force Logic (0: Disabled 1: Enabled)"/>  
@@ -2846,7 +2864,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Disabling the ETC Control flag will cause the throttle to be 1:1 with the accelerator. I would highly recommend against disabling it, as you would be removing the incredible advantages DBW has over cable driven throttles.</description>
 	</table>  	
 	
-	<table type="BitwiseSwitch" name="KATHOS Choice Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="KATHOS Choice Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2858,7 +2876,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Control Switching Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Control Switching Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2870,7 +2888,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Cruise Control Specifications Choice Flags" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Cruise Control Specifications Choice Flags" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2882,7 +2900,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>mSWASCD- Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Cruise Control, PTD Open-Degree Operation Switching Flag" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Cruise Control, PTD Open-Degree Operation Switching Flag" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>   
 0x40		<bit position ="6" name="mfPTDASCD - At the time of ASCD, PTD open-degree operation switching flag // Can't use for autos I don't think."/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2894,7 +2912,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Template" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Template" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="-"/>  
 0x40		<bit position ="6" name="-"/>
 0x20		<bit position ="5" name="-"/>  
@@ -2906,7 +2924,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Flags 1" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 1" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfATMT - Automatic (Off) / Manual (On)"/> 
 0x40		<bit position ="6" name="Unknown 6 -"/>	
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2918,7 +2936,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Flags 2" category="Flags" userlevel="3"> 
+	<table type="BitwiseSwitch" name="Flags 2" category="Flags" userlevel="1"> 
 0x80		<bit position ="7" name="Unknown 7 -"/> 
 0x40		<bit position ="6" name="mfVINV - Control Excuse Switching for Tuning"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2930,7 +2948,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Flags 3" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 3" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfKT- Toroidal CVT Car Choice Flag"/>  
 0x40		<bit position ="6" name="mfTRQ4WDSW- Switching of the Electric 4WD Drive Protection Control Excuse"/>
 0x10		<bit position ="4" name="mfJK- The Car Choice Flag for the Drive Protection of JK (CVT)"/>
@@ -2939,7 +2957,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Flags 4" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 4" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfAPOTD- Torque Going Down Control Executive Flag (0: Disabled 1: Enabled)"/>  
 0x40		<bit position ="6" name="mfFTASEEP- ISCLRC EEPROM Writing Choice Flag (0: Disabled 1: Enabled)"/>
 0x20		<bit position ="5" name="mfFTPDGN- (0: No TCS Anomaly Diagnosis 1: TCS Anomaly Diagnosis)"/>  
@@ -2951,7 +2969,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>From pierelli on forums. UNCONFIRMED.</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Flags 5" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 5" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfFFTASW- There's ISC AC Compensation TASW, Flag (0: Disabled 1: Enabled)"/>  
 0x40		<bit position ="6" name="mfFO2H- Front O2 Heater (0: No Drive? 1: Drive?)"/>  
 0x20		<bit position ="5" name="mfFAFICD- Flag with PWST Interlock FICD Compensation (0: Disabled 1: Enabled)"/>  
@@ -2963,7 +2981,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  	
 
-	<table type="BitwiseSwitch" name="Flags 6" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 6" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="mfACPDCUT- Meter CAN #PDCUT Output Excuse Flag"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2975,7 +2993,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Flags 7" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 7" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2987,7 +3005,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>mTRIPSWS- Toggle On/Off</description>
 	</table>  		
 
-	<table type="BitwiseSwitch" name="Flags 9" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 9" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -2999,7 +3017,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 10" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 10" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfDTYFLG- Wind Up Countermeasure Control Excuse Switching Flag"/>  
 0x40		<bit position ="6" name="mfROGFLG- Dizzer Control/PID Control Switching Flag"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3011,7 +3029,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 11" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 11" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="mfFCOVR- Existence of the CO Adjustment Volume"/>  
@@ -3023,7 +3041,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 12" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 12" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="mfMILGSTIM- At Time of KeyON, MIL Specifications Choice Flag"/>
 0x20		<bit position ="5" name="mfAFMDGSEL- MAF Function Diagnosis for the Choice Flag"/>  
@@ -3035,7 +3053,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="Flags 13" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 13" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfCATCNG- Catalyst Diagnosis Slice Setup Region Switching Flag"/>  
 0x40		<bit position ="6" name="mfPREDAF- The Existence of the SMC Prediction A/F Flag"/>
 0x20		<bit position ="5" name="mfOSCBANK- A Control Choice Flag for the Bank"/>  
@@ -3047,7 +3065,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="Flags 14" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 14" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfECVT- CVT Car Choice Flag"/>  
 0x40		<bit position ="6" name="mfFDUET- DUETTE Control Switching Flag"/> 
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3059,7 +3077,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Flags 15" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 15" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfFLCFCA- During FCADV Switching Flag"/>  
 0x40		<bit position ="6" name="mfCMADVC- Non L/UP Control Excuse Flag"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3071,7 +3089,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 16" category="Flags" userlevel="3"> 
+	<table type="BitwiseSwitch" name="Flags 16" category="Flags" userlevel="1"> 
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3083,7 +3101,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 17" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 17" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfREGGASI- Regular Adaptation Car Specifications Choice Flag // Might be ->  Premium Fuel Required/Recommended: 0 | Premium Fuel Not Required/Recommended: 1 Or something similar."/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3095,7 +3113,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="Flags 18" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 18" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfRO2OUS- RrO2/S Response Time Diagnosis Stage 2 Diagnosis Execution Judgement Flag"/>  
 0x40		<bit position ="6" name="mfRO2IZS- RrO2/S Unusual Voltage Diagnosis Stage 2 Diagnosis Execution Judgement Flag"/>
 0x20		<bit position ="5" name="mfAFSMF- Misfire Diagnosis NG Learning Permission Flag"/>  
@@ -3107,7 +3125,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 19" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 19" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfVADV- Ignition Variable Control Requirement Flag"/>  
 0x40		<bit position ="6" name="mfVKNK- An Ignition Variable Control Requirement Flag by the Cylinder"/>
 0x20		<bit position ="5" name="mfFVKTRM- KTRM Variable Control Requirement Flag"/>  
@@ -3119,7 +3137,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 20" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 20" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfFALRN- An Off-Line Idle Learning Lambda Control Condition Flag"/>  
 0x40		<bit position ="6" name="mfFQINT- Off-Line Idle Learning Flag #FQLRN Initial Value Flag"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3131,7 +3149,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 21" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 21" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfFKNK- Knock Control Switching Flag"/>  
 0x40		<bit position ="6" name="mfFREGDT- At Time of Regular Judgement, DUETTE Control Flag"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3143,7 +3161,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 22" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 22" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfOVH_FC- At the Time of Overheat, Fuel Cut Control Flag"/>   
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3155,7 +3173,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 23" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 23" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfEVPLNP- A Leak-Down Release Condition Distinction for the Evapo"/>  
 0x40		<bit position ="6" name="mfFROSEL- A Distinction for the Evapo"/>
 0x20		<bit position ="5" name="mfAFSDIAG- A/F Sensor Response Diagnosis Form Choice Flag"/>  
@@ -3167,7 +3185,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 24" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 24" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="mfFNETQHOS- TTEPTD Torque Compensation Map Logic (Off/On)"/>  
@@ -3179,7 +3197,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 25" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 25" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3191,7 +3209,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 26" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 26" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="mfRPDLFMNC - Selects a Manual Interpolation Factor"/>  
 0x40		<bit position ="6" name="mfRMAXPOW - Option Selecting Explicit Power Calculation for Driver Torque Setpoint"/>
 0x20		<bit position ="5" name="mfENASIPDY - Activation of Max Gear Change Delay Diagnosis // If 0: Uses the first delay weight table. If 1: sets vTENG22 to 0xFF3132 :o "/>  
@@ -3203,7 +3221,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 27" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 27" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="mfMKSCV - SCV Use Choice"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3215,7 +3233,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description>Toggle On/Off</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Flags 28" category="Flags" userlevel="3">
+	<table type="BitwiseSwitch" name="Flags 28" category="Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3231,42 +3249,42 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 
 Notes; These are all based on CF48D. These can and will vary, so some will need adjusted.
 
-	<table type="BitwiseSwitch" name="Engine Overheating (P1217)" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Engine Overheating (P1217)" category="DTCs" userlevel="1">
 		<bit position ="0" name="P1217 - Engine Over Temperature"/>  
 		<description>Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="PD010" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="PD010" category="DTCs" userlevel="1">
 		<bit position ="0" name="PD010"/>  
 		<description>Not sure what this one is.</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="P0850" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="P0850" category="DTCs" userlevel="1">
 0x20		<bit position ="5" name="P0850 - Park/Neutral Switch Input Circuit"/>  
 		<description>mDGNSW[9]- Toggle DTCs</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="P0125" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="P0125" category="DTCs" userlevel="1">
 		<bit position ="0" name="P0125 - Insufficient Coolant Temperature for Closed Loop Fuel Control"/> 
 		<description>Toggle DTCs</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="P1212" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="P1212" category="DTCs" userlevel="1">
 		<bit position ="4" name="P1212 - ABS/TCS Communication Line"/> 
 		<description>Toggle DTCs</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="P1805" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="P1805" category="DTCs" userlevel="1">
 		<bit position ="5" name="P1805 - Brake Switch/Circuit 2"/>  
 		<description>Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="P1715" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="P1715" category="DTCs" userlevel="1">
 		<bit position ="1" name="P1715 - Input Speed Sensor (Turbine Revolution Sensor)"/>
 		<description>mDGNSW[34]- Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="P2101" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="P2101" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="P2101 - Electric Throttle Control Function"/>  
 0x20		<bit position ="5" name="mfVAPXNG -"/>  
 0x10		<bit position ="4" name="mfAPOXNG -"/>
@@ -3275,7 +3293,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[32]- Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="PD001 and PD000" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="PD001 and PD000" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="Unknown 6 -"/>
 0x20		<bit position ="5" name="Unknown 5 -"/>  
@@ -3287,7 +3305,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="NATS Malfunction DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="NATS Malfunction DTCs" category="DTCs" userlevel="1">
 		<bit position ="5" name="P1610 - NATS Malfunction"/>  
 		<bit position ="4" name="P1611 - NATS Malfunction"/>
 		<bit position ="3" name="P1612 - NATS Malfunction"/>
@@ -3297,13 +3315,13 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="DTC 1" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 1" category="DTCs" userlevel="1">
 0x10		<bit position ="4" name="P0500 - Vehicle Speed Sensor"/>
 0x02		<bit position ="1" name="P1211 - TCS Control Unit"/> 
 		<description>mDGNSW[0]- P1211 is for ABS Actuator and electric unit (Control unit) for vehicles without VDC.</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="DTC 2" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 2" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0172 - System Too Rich (Bank 1)"/>  
 		<bit position ="6" name="P0171 - System Too Lean (Bank 1)"/>
 		<bit position ="5" name="P0175 - System Too Rich (Bank 2)"/>  
@@ -3313,7 +3331,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[55]- Toggle DTCs</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="DTC 3" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 3" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="P0117 - Engine Coolant Temperature Circuit Low Input"/>  
 0x40		<bit position ="6" name="P0118 - Engine Coolant Temperature Circuit High Input"/>
 0x20		<bit position ="5" name="mfEGSNGL -"/>  
@@ -3325,7 +3343,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[53]- Toggle DTCs</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="DTC 4" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 4" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="P2119 - Electric Throttle Control Actuator"/>  
 0x40		<bit position ="6" name="P2119 - Electric Throttle Control Actuator (2)"/>
 0x20		<bit position ="5" name="P2119 - Electric Throttle Control Actuator (3)"/>  
@@ -3335,7 +3353,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[36]- Toggle DTCs</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="DTC 5" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 5" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="mfROMNGM -"/>  
 0x40		<bit position ="6" name="mfRAMNGM -"/>
 0x08		<bit position ="3" name="mfWDTNGM -"/>
@@ -3345,13 +3363,13 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[37]- Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="DTC 6" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 6" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="mfROMNGS -"/>  
 0x10		<bit position ="4" name="mfRANGM2 -"/>
 		<description>mDGNSW[38]- Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="DTC 7" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 7" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="mfO2F1O -"/>  
 0x40		<bit position ="6" name="mfO2F2O -"/>
 0x20		<bit position ="5" name="mfO2F1L -"/>  
@@ -3363,7 +3381,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[48]- Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="DTC 8" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 8" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>  
 0x40		<bit position ="6" name="mfO2R1RO -"/>
 0x20		<bit position ="5" name="mfO2R1LO -"/>  
@@ -3380,7 +3398,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="DTC 10" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="DTC 10" category="DTCs" userlevel="1">
 0x08		<bit position ="3" name="mfQHAPNG -"/>
 0x04		<bit position ="2" name="mfTEPDNG -"/>
 0x02		<bit position ="1" name="mfTATENG -"/>
@@ -3388,7 +3406,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[33]- Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Catalyst DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Catalyst DTCs" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="P0300 - Random misfire (disable at your own peril)"/>
 0x40		<bit position ="6" name="P0420 - bank 1 catalyst low efficiency"/>
 0x20		<bit position ="5" name="P0430 - bank 2 catalyst low efficiency"/> 
@@ -3400,18 +3418,18 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[6]- Disabling the catalyst DTC's will cause your Catalyst Monitoring to be "not supported." </description>
 	</table>
 
-	<table type="BitwiseSwitch" name="Power Steering DTC" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Power Steering DTC" category="DTCs" userlevel="1">
 		<bit position ="0" name="P0550 - Power Steering Pressure Circuit"/>  
 		<description>Toggle DTCs</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="Idle DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Idle DTCs" category="DTCs" userlevel="1">
 		<bit position ="1" name="P0506 - Idle Speed Lower Than Expected"/>
 		<bit position ="0" name="P0507 - Idle Speed Higher Than Expected"/>  
 		<description>mDGNSW[49]- Toggle DTCs</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="Secondary O2 DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Secondary O2 DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0139 - O2S2B1 Slow Response"/>  
 		<bit position ="6" name="P0159 - O2S2B2 Slow Response"/>
 		<bit position ="5" name="P0138 - 02S2B1 High Voltage"/>  
@@ -3423,7 +3441,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[50]- Toggle DTCs</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="Secondary O2 Knock DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Secondary O2 Knock DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0038 - O2S2B1 Heater High"/>  
 		<bit position ="6" name="P0058 - O2S2B2 Heater High"/>
 		<bit position ="5" name="P0037 - O2S2B1 Heater Low"/>  
@@ -3435,14 +3453,14 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[51]- Toggle DTCs</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="EVAP DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="EVAP DTCs" category="DTCs" userlevel="1">
 		<bit position ="2" name="P0443 - EVAP Canister Purge Valve Circuit Malfunction"/>
 		<bit position ="1" name="P0448 - EVAP Canister Vent Control Circuit Shorted"/>
 		<bit position ="0" name="P0455 - EVAP Large Leak"/>  
 		<description>Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="EVAP Pressure Flow DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="EVAP Pressure Flow DTCs" category="DTCs" userlevel="1">
 		<bit position ="3" name="P0452 - EVAP Pressure Low"/>
 		<bit position ="2" name="P0453 - EVAP Pressure High"/>
 		<bit position ="1" name="P0441 - EVAP Incorrect Purge Flow"/>
@@ -3450,13 +3468,15 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="EVAP Leaks DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="EVAP Leaks DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0456 - EVAP very small leak"/>  
+		<bit position ="6" name="P1456 evap very small leak"/>
 		<bit position ="5" name="P0442 - EVAP small leak detected"/>  
+		<bit position ="4" name="P1442 evap small leak detected"/>
 		<description>mDGNSW[57]- Toggle DTCs</description>
 	</table>
 
-	<table type="BitwiseSwitch" name="Fuel EVAP Purge Solenoid DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Fuel EVAP Purge Solenoid DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0181 - Fuel Temperature Range"/>  
 		<bit position ="6" name="P0182 - Fuel Temperature Low Input"/>
 		<bit position ="5" name="P0183 - Fuel Temperature High Input"/>  
@@ -3468,7 +3488,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[54]- Toggle DTCs</description>
 	</table>
 	
-	<table type="BitwiseSwitch" name="Accelerator Pedal Position Sensor DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Accelerator Pedal Position Sensor DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P2123 - Accelerator Pedal Position Sensor"/>  
 		<bit position ="6" name="P2122 - Accelerator Pedal Position Sensor"/>
 		<bit position ="5" name="P2128 - Accelerator Pedal Position Sensor 2"/>  
@@ -3478,7 +3498,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table>   
 	
-	<table type="BitwiseSwitch" name="Throttle Position Sensor DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Throttle Position Sensor DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0223 - Throttle/Pedal Position Sensor B Circuit High Input"/>  
 		<bit position ="6" name="P0222 - Throttle/Pedal Position Sensor B Circuit Low Input"/>
 		<bit position ="5" name="P0123 - Throttle/Pedal Position Sensor A Circuit High Input"/>  
@@ -3489,21 +3509,21 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="Throttle Control Motor DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Throttle Control Motor DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P2100 - Throttle Control Motor Relay"/>  
 		<bit position ="6" name="P2103 - Throttle ControL Motor Relay"/>  
 		<bit position ="4" name="P2118 - Throttle Control Motor"/> 
 		<description>mDGNSW[60]- Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="MAF Sensor DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="MAF Sensor DTCs" category="DTCs" userlevel="1">
 		<bit position ="4" name="P0101 - MAF Circuit Range/Performance Problem"/>
 		<bit position ="3" name="P0102 - MAF Circuit Low Input"/>
 		<bit position ="2" name="P0103 - MAF Circuit High input"/>
 		<description>mDGNSW[52]- Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="AFR Sensors DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="AFR Sensors DTCs" category="DTCs" userlevel="1">
 		<bit position ="3" name="P0031 - AFR Sensor Circuit Low (B1 S1)"/>
 		<bit position ="2" name="P0032 - AFR Sensor Circuit High (B1 S1)"/>
 		<bit position ="1" name="P0051 - AFR Sensor Circuit Low (B2 S1)"/>
@@ -3511,7 +3531,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[61]- Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="AFR Sensor Bank 1 DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="AFR Sensor Bank 1 DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0131 - AFR Sensor Circuit Low Voltage (Bank 1)"/>  
 		<bit position ="6" name="P0132 - AFR Sensor Circuit High Voltage (Bank 1)"/>
 		<bit position ="5" name="P2A00 - AFR Sensor Circuit Range/Performance (Bank 1)"/>  
@@ -3520,7 +3540,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[43]- Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="AFR Sensor Bank 2 DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="AFR Sensor Bank 2 DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0151 - AFR Sensor Circuit Low Voltage (Bank 2)"/>  
 		<bit position ="6" name="P0152 - AFR Sensor Circuit High Voltage (Bank 2)"/>
 		<bit position ="5" name="P2A03 - AFR Sensor Circuit Range/Performance (Bank 2)"/>  
@@ -3529,7 +3549,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[44]- Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="AFR Sensors Circuit DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="AFR Sensors Circuit DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0133 - AFR Sensor Circuit Slow Response (Bank 1)"/>  
 		<bit position ="6" name="P0133 - AFR Sensor Circuit Slow Response (Bank 1) (2)"/>
 		<bit position ="5" name="P0153 - AFR Sensor Circuit Slow Response (Bank 2)"/>  
@@ -3537,21 +3557,21 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[62]- Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Camshaft Position Sensor Bank 2 DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Camshaft Position Sensor Bank 2 DTCs" category="DTCs" userlevel="1">
 		<bit position ="2" name="P0345 - Camshaft Position Sensor A Circuit (Bank 2)"/>
 		<bit position ="1" name="P0345 - Camshaft Position Sensor A Circuit (Bank 2) (2)"/>
 		<bit position ="0" name="P0345 - Camshaft Position Sensor A Circuit (Bank 2) (3)"/>  
 		<description>Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Cruise Control DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Cruise Control DTCs" category="DTCs" userlevel="1">
 		<bit position ="5" name="P1564 - ASCD Steering Switch"/>  
 		<bit position ="4" name="P1572 - ASCD Brake Switch"/>
 		<bit position ="3" name="P1574 - ASCD Vehicle Speed Sensor"/>
 		<description>Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Misfire DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Misfire DTCs" category="DTCs" userlevel="1">
 		<bit position ="5" name="P0306 - Cylinder 6 Misfire"/>  
 		<bit position ="4" name="P0305 - Cylinder 5 Misfire"/>
 		<bit position ="3" name="P0304 - Cylinder 4 Misfire"/>
@@ -3561,7 +3581,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Camshaft and Crankshaft Position Sensor DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Camshaft and Crankshaft Position Sensor DTCs" category="DTCs" userlevel="1">
 		<bit position ="5" name="P0340 - Camshaft Position Sensor Circuit Malfunction"/>  
 		<bit position ="4" name="P0340 - Camshaft Position Sensor Circuit Malfunction (2)"/>
 		<bit position ="3" name="P0340 - Camshaft Position Sensor Circuit Malfunction (3)"/>
@@ -3571,19 +3591,19 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Fuel Level Sensor Circuit DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Fuel Level Sensor Circuit DTCs" category="DTCs" userlevel="1">
 		<bit position ="5" name="P0461 - Fuel Level Sensor Circuit Range/Performance"/>  
 		<bit position ="4" name="P0460 - Fuel Level Sensor Circuit Malfunction"/> 
 		<description>Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Intake Valve Control Solenoid DTCs" category="DTCs" userlevel="3"> 
+	<table type="BitwiseSwitch" name="Intake Valve Control Solenoid DTCs" category="DTCs" userlevel="1"> 
 0x10		<bit position ="4" name="P0075 - Intake Valve Control Solenoid Circuit (Bank 1)"/>
 0x08		<bit position ="3" name="P0081 - Intake Valve Control Solenoid Circuit (Bank 2)"/>
 		<description>mDGNSW[19]- Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Closed Loop DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Closed Loop DTCs" category="DTCs" userlevel="1">
 0x80		<bit position ="7" name="mfCUNG -"/>
 0x40		<bit position ="6" name="mfEGRNG -"/>
 0x10		<bit position ="4" name="mfKNKNG -"/>
@@ -3594,7 +3614,7 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>mDGNSW[2]- Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Automatic Transmission DTCs" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Automatic Transmission DTCs" category="DTCs" userlevel="1">
 		<bit position ="7" name="P1754 - Input Clutch Solenoid Valve Function"/>  
 		<bit position ="6" name="P1752 - Input Clutch Solenoid Valve"/>
 		<bit position ="5" name="P1774 - Low Coast Brake Solenoid Valve Function"/>  
@@ -3603,21 +3623,21 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 		<description>Toggle DTCs</description>
 	</table>  
 	
-	<table type="BitwiseSwitch" name="Automatic Transmission DTCs 2" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Automatic Transmission DTCs 2" category="DTCs" userlevel="1">
 		<bit position ="4" name="P0740 - Torque Converter Clutch Circuit Malfunction"/>
 		<bit position ="3" name="P0745 - Pressure Control Solenoid Malfunction"/>
 		<bit position ="0" name="P0710 - Transmission Fluid Temperature Sensor Circuit Malfunction"/>  
 		<description>Toggle DTCs</description>
 	</table> 
 
-	<table type="BitwiseSwitch" name="Automatic Transmission DTCs 3" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Automatic Transmission DTCs 3" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0705 - Transmission Range Sensor Circuit Malfunction (PRNDL Input)"/>  
 		<bit position ="6" name="P0720 - Output Speed Sensor Circuit Malfunction"/>
 		<bit position ="1" name="P0744 - Torque Converter Clutch Circuit Intermittent"/>  
 		<description>Toggle DTCs</description>
 	</table>  
 
-	<table type="BitwiseSwitch" name="Automatic Transmission DTCs 4" category="DTCs" userlevel="3">
+	<table type="BitwiseSwitch" name="Automatic Transmission DTCs 4" category="DTCs" userlevel="1">
 		<bit position ="7" name="P0717 - Input/Turbine Speed Sensor Circuit No Signal"/>  
 		<bit position ="6" name="P1730 - A/T Interlock"/>
 		<bit position ="5" name="P1769 - High and Low Reverse Clutch Solenoid Valve Function"/>  
@@ -3640,6 +3660,1207 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 0x01		<bit position ="0" name=""/>  
 		<description>Toggle DTCs</description>
 	</table>  
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+//Outdated, Update to Current Definition Names//
+
+
+	\\Outdated//
+
+Notes; Only here for compatibility purposes. This will allow others to utilize the A2L template without needing to convert their definition file to A2L labeling and scaling. 
+	
+	<table type="3D" name="Cold Ignition Trim" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="E3002">
+		<scaling units="Degrees Advance (positive increases advance)" expression="x-64" to_byte="x+64" format="0" fineincrement="1" coarseincrement="4" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMADVTRMC Ignition Advance Trimming Map. This is tied to coolant temp and only used when the coolant temp is under a certain set point. This needs to be kept close to the "High Octane Ignition Trim" map.</description>
+	</table>
+
+	<table type="3D" name="High Octane Ignition Trim" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="E3002">
+		<scaling units="Degrees Advance (positive increases advance)" expression="x-64" to_byte="x+64" format="0" fineincrement="1" coarseincrement="4" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMADVTRMH This is the main trimming table that the ECU uses when high-octane fuel is determined.</description>
+	</table>
+
+	<table type="3D" name="Regular Ignition Trim" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="E3002">
+		<scaling units="Degrees Advance (positive increases advance)" expression="x-64" to_byte="x+64" format="0" fineincrement="1" coarseincrement="4" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMADVTRMR This trimming map is used by the ecu when it detects regular fuel. This table should ALWAYS be lower than the high octane table.</description>
+	</table>
+
+	<table type="3D" name="High Octane Knock Limit" category="Outdated" storagetype="uint8" endian="big" sizex="3" sizey="3" userlevel="1" logparam="E3015">
+		<scaling units="Degrees Retard" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="4" />
+		<table type="Static X Axis" name="RPM" sizex="3">
+			<data>0</data>
+			<data>800</data> 
+			<data>5200</data>
+		</table>
+		<table type="Static Y Axis" name="TP" sizey="3">
+			<data>0</data>
+			<data>8</data> 
+			<data>13</data>
+		</table>
+		<description>mMKLMRTH This table sets the limits of knock retard correction when high-octane fuel is determined.</description>
+	</table>
+
+	<table type="3D" name="Regular Knock Limit" category="Outdated" storagetype="uint8" endian="big" sizex="3" sizey="3" userlevel="1" logparam="E3015">
+		<scaling units="Degrees Retard" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="4" />
+		<table type="Static X Axis" name="RPM" sizex="3" logparam="P8">
+			<data>0-800</data>
+			<data>800-5200</data> 
+			<data>5200-Max</data>
+		</table>
+		<table type="Static Y Axis" name="TP" sizey="3">
+			<data>0-8</data>
+			<data>8-13</data> 
+			<data>13-Max</data>
+		</table>
+		<description>mMKLMRTR This table sets the limits of knock retard correction when regular fuel is determined.</description>
+	</table>
+
+	<table type="2D" name="Ignition Retard Limit" category="Outdated" storagetype="int8" endian="big" sizey="1" userlevel="1">
+		<scaling units="degrees" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="5" />
+		<table type="Static Y Axis" name="Degrees Advance" sizey="1">
+			<data>degrees</data>
+		</table>
+		<description>mADVRMX Retard side limiter</description>
+	</table>
+	
+	<table type="2D" name="Cranking Advance" category="Outdated" storagetype="uint8" endian="big" sizey="8" userlevel="1">
+		<scaling units="deg" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="5" />
+		<table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="8">
+			<data>-40</data>
+			<data>-4</data>
+			<data>32</data>
+			<data>68</data>
+			<data>104</data>
+			<data>140</data>
+			<data>176</data>
+			<data>212</data>
+		</table>
+		<description>mTCRADV This is the target ignition advance at startup which references Coolant Temperature</description>
+	</table>
+
+	<table type="3D" name="Knock Slice Table" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="6" userlevel="1" logparam="?">
+		<scaling units="dB?" expression="x/256" to_byte="x*256" format="0" fineincrement="1" coarseincrement="4" />
+		<table type="Static X Axis" name="RPM" sizex="16" logparam="P8">
+			<data>400</data>
+			<data>800</data> 
+			<data>1200</data>
+			<data>1600</data> 
+			<data>2000</data>
+			<data>2400</data> 
+			<data>2800</data>
+			<data>3200</data>
+			<data>3600</data>
+			<data>4000</data> 
+			<data>4400</data>
+			<data>4800</data> 
+			<data>5200</data>
+			<data>5600</data>
+			<data>6000</data>
+			<data>6400</data>		
+		</table>
+		<table type="Y Axis" name="cylinder" sizey="6">
+			<data>1</data>
+			<data>2</data> 
+			<data>3</data>
+			<data>4</data>
+			<data>5</data> 
+			<data>6</data>
+		</table>
+		<description>mTSL This table sets the thresholds for determining knock by cylinder.</description>
+	</table>	
+
+
+	<table type="3D" name="MBT Flame Speed" category="Outdated" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="4" logparam="?">
+		<scaling units="cc/ms" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement=".0625" coarseincrement="0.625" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMFLML Layer way flame speed basic map</description>
+	</table>
+
+	<table type="3D" name="Fresh air rate" category="Outdated" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="4" logparam="?">
+		<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement=".78125" coarseincrement="4" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".78125" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMITAN Fresh air rate map</description>
+	</table>
+
+	<table type="2D" name="Dwell RPM table" category="Outdated" storagetype="uint8" endian="big" sizey="8" userlevel="4" logparam="?">
+		<scaling units="RPM^(2/3)" expression="x*2" to_byte="x/2" format="0.0" fineincrement=".2" coarseincrement="1" />
+		<table type="Static Y Axis" name="RPM" sizey="8" logparam="P8">
+			<data>0</data>
+			<data>1600</data> 
+			<data>3200</data>
+			<data>4800</data> 
+			<data>6400</data>
+			<data>8000</data> 
+			<data>9600</data>
+			<data>11200</data>
+		</table>
+		<description>mTDWLNE This is just a RPM^0.6667 table. You probably don't need to touch it</description>
+	</table>
+
+	<table type="2D" name="Dwell battery table" category="Outdated" storagetype="uint8" endian="big" sizey="8" userlevel="4" logparam="?">
+		<scaling units="1/V^(2/3)" expression="x*0.0015625" to_byte="x/0.0015625" format="0.00" fineincrement=".02" coarseincrement=".1" />
+		<table type="Static Y Axis" name="Battery Volts" sizey="8">
+			<data>0</data>
+			<data>2.56</data> 
+			<data>5.12</data>
+			<data>7.68</data> 
+			<data>10.24</data>
+			<data>12.8</data> 
+			<data>15.36</data>
+			<data>17.92</data>
+		</table>
+		<description>mTDWLVB Dwell; Battery Voltage^(-2/3) table</description>
+	</table>
+
+
+	<table type="3D" name="Intake Cam Timing (8x8)" category="Outdated" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="P4410">
+		<scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.0" fineincrement=".5" coarseincrement="2" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>Advance of the intake camshaft in degrees.</description>
+	</table>
+
+	<table type="3D" name="Intake Cam Timing Cold (8x8)" category="Outdated" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="P4410">
+		<scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.0" fineincrement=".5" coarseincrement="2" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>Advance of the intake camshaft in degrees.</description>
+	</table>
+
+	<table type="3D" name="Intake Cam Timing (16x16)" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="P4410">
+		<scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.0" fineincrement=".5" coarseincrement="2" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>      
+		<description>Advance of the intake camshaft in degrees.</description>
+	</table>
+
+	<table type="3D" name="Intake Cam Timing (4x4)" category="Outdated" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="1" logparam="P4410">
+		<scaling units="Degrees Advance" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.0" fineincrement=".5" coarseincrement="2" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMRHVTI VTC target operation angle regular compensation value computed map</description>
+	</table>
+
+	<table type="3D" name="Exhaust Cam Timing" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="P4454">
+		<scaling units="Degrees Retard" expression="(x-128)*.5" to_byte="(x*2)+128" format="0.0" fineincrement=".5" coarseincrement="2" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>Retard of the exhaust camshaft in degrees.</description>
+	</table>
+
+	<table type="2D" name="Learning map TP shaft lattice point table" category="Outdated" storagetype="uint8" endian="big" sizey="8" logparam="?" userlevel="1">
+		<scaling units="ms" expression="x/8" to_byte="x*8" format="0.0" fineincrement=".125" coarseincrement="1"  />
+		<table type="Static Y Axis" name="Fixed" sizey="8">
+			<data>0</data>
+			<data>1</data> 
+			<data>2</data>
+			<data>3</data> 
+			<data>4</data>
+			<data>5</data> 
+			<data>6</data>
+			<data>7</data>
+		</table>
+	</table>
+
+	<table type="2D" name="Learning map N shaft lattice point table" category="Outdated"  storagetype="uint8" endian="big" sizey="8" logparam="?" userlevel="1">
+		<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		<table type="Static Y Axis" name="Fixed" sizey="8">
+			<data>0</data>
+			<data>1</data> 
+			<data>2</data>
+			<data>3</data> 
+			<data>4</data>
+			<data>5</data> 
+			<data>6</data>
+			<data>7</data>
+		</table>
+	</table>
+
+	<table type="3D" name="Fuel Compensation" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="E3019">
+		<scaling units="NA" expression="(x/128)*100" to_byte="(x/100)*128" format="0.00" fineincrement=".2" coarseincrement="1" />
+		<table type="X Axis" name="TVO-N flow-quantity" storagetype="uint8" endian="big" logparam="E3018">
+			<scaling units="%" expression="x/2.56" to_byte="x*2.56" format="0" fineincrement=".2" coarseincrement="1" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>This is an enrichment table for the ECU. Values above 100 are adding fuel, and values below 100 remove fuel.</description>
+	</table>
+
+	<table type="3D" name="Fuel Compensation Cold" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="E3019">
+		<scaling units="NA" expression="(x/128)*100" to_byte="(x/100)*128" format="0.00" fineincrement=".2" coarseincrement="1" />
+		<table type="X Axis" name="TVO-N flow-quantity" storagetype="uint8" endian="big" logparam="E3018">
+			<scaling units="%" expression="x/2.56" to_byte="x*2.56" format="0" fineincrement=".2" coarseincrement="1" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>This is an enrichment table for the ECU. Values above 100 are adding fuel, and values below 100 remove fuel.</description>
+	</table>
+
+	<table type="3D" name="Fuel Target" category="Outdated" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="1" logparam="P4404">
+		<scaling units="AFR(Gasoline Scale)" expression="14.7/(x/128)" to_byte="128*(14.7/x)" format="0.00" fineincrement=".2" coarseincrement="1" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>Air fuel ratio that is targeted by the ECU. If this value doesn't match when logging other paramaters need to be adjusted, like fuel compensation, and/or maf scaling.</description>
+	</table>
+
+	<table type="2D" name="OL Fueling Target Rate" category="Outdated" storagetype="uint8" endian="big" sizey="8" userlevel="1" logparam="?">
+		<scaling units="None" expression="x/128" to_byte="x*128" format="0.00" fineincrement=".02" coarseincrement=".1" />
+		<table type="Static Y Axis" name="RPM" sizey="8" logparam="P8">
+			<data>0</data>
+			<data>800</data> 
+			<data>1600</data>
+			<data>2400</data> 
+			<data>3200</data>
+			<data>4000</data> 
+			<data>4800</data>
+			<data>5600</data>
+		</table>
+		<description>mTKREGR Target air-fuel ratio regular compensation rate</description>
+	</table>
+
+	<table type="3D" name="Fuel Target 16x16" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="P4404">
+		<scaling units="AFR(Gasoline Scale)" expression="14.7/(x/128)" to_byte="128*(14.7/x)" format="0.00" fineincrement=".2" coarseincrement="1" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.0" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>Air fuel ratio that is targeted by the ECU. If this value doesn't match when logging other paramaters need to be adjusted, like fuel compensation, and/or maf scaling.</description>
+	</table>
+
+	<table type="2D" name="Rev Limit (Fuel Cut)" category="Limiters" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
+		<table type="Static Y Axis" sizey="1">
+			<data>Cut</data>
+		</table>
+		<description>This is the engine speed at which the rev limiter is engaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active.</description>
+	</table>
+
+	<table type="2D" name="Reverse Rev Limit (Fuel Cut)" category="Limiters" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
+		<table type="Static Y Axis" sizey="1">
+			<data>Cut</data>
+		</table>
+		<description>This is the engine speed at which the rev limiter is engaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active.</description>
+	</table>
+
+	<table type="2D" name="Rev Limit (Fuel Restore)" category="Limiters" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
+		<table type="Static Y Axis" sizey="1">
+			<data>Restore</data>
+		</table>
+		<description>This is the engine speed at which the rev limiter is disengaged. When engine speed is below the 'Off' value, fueling is resumed.</description>
+	</table>
+
+		<table type="2D" name="Reverse Rev Limit (Fuel Restore)" category="Limiters" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
+		<table type="Static Y Axis" sizey="1">
+			<data>Restore</data>
+		</table>
+		<description>This is the engine speed at which the rev limiter is disengaged. When engine speed is below the 'Off' value, fueling is resumed.</description>
+	</table>
+
+	<!-- rev limiters are not actually stored as tables, but happen to be arranged that these configurations works -->
+	<!-- if neither of these tables have valid data, you will have to specify the address of each setting with the tables above -->
+
+	<table type="2D" name="Rev Limit (Fuel Cut - 2D)" category="Limiters" storagetype="uint16" endian="big" sizex="2" sizey="2" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="#" fineincrement="50" coarseincrement="100" />
+		<table type="Static X Axis" name="Limit" sizex="2">
+			<data>Fuel Cut</data>
+			<data>Restore</data>
+		</table>
+		<description>These are the engine speeds at which the rev limiter is engaged and disengaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active, after which, if engine speed drops below the 'Off' value, fueling is resumed.</description>
+	</table>
+
+	<table type="2D" name="MAF idle voltage limits (USRV)" category="Outdated" storagetype="uint16" endian="big" sizey="2" userlevel="1">
+		<scaling units="MAF Voltage (V)" expression="x*0.005" to_byte="x/0.005" format="0.000" fineincrement=".005" coarseincrement=".100" />
+		<table type="Static Y Axis" name="MAF Idle Voltage limits" sizey="2">
+			<data>Lower</data>
+			<data>Upper</data>
+		</table>
+		<description>This is the voltage range the ECU expects to see from the MAF sensor within at idle.</description>
+	</table>
+
+	<table type="2D" name="MAF voltage limits" category="Airflow" storagetype="uint16" endian="big" sizey="2" userlevel="1">
+		<scaling units="MAF Voltage (V)" expression="x*0.005" to_byte="x/0.005" format="0.000" fineincrement=".005" coarseincrement=".100" />
+		<table type="Static Y Axis" name="MAF Voltage limits" sizey="2">
+			<data>Upper</data>
+			<data>Lower</data>
+		</table>
+		<description>This is the voltage range the ECU expects to see from the MAF sensor within.</description>
+	</table>
+
+	<table type="2D" name="MAF low voltage range_w" category="Airflow" storagetype="uint16" endian="big" sizey="2" userlevel="1">
+		<scaling units="MAF Voltage (V)" expression="x*0.005" to_byte="x/0.005" format="0.000" fineincrement=".005" coarseincrement=".100" />
+		<table type="Static Y Axis" name="MAF Low Voltage limits" sizey="2">
+			<data>Lower</data>
+			<data>Upper</data>
+		</table>
+		<description>This is the lowest acceptable voltage range the ECU expects to see from the MAF sensor.</description>
+	</table>
+
+	<table type="2D" name="MAF low voltage range_b" category="Airflow" storagetype="uint8" endian="big" sizey="2" userlevel="1">
+		<scaling units="MAF Voltage (V)" expression="x*0.005" to_byte="x/0.005" format="0.000" fineincrement=".005" coarseincrement=".100" />
+		<table type="Static Y Axis" name="MAF Low Voltage limits" sizey="2">
+			<data>Upper</data>
+			<data>Lower</data>
+		</table>
+		<description>This is the lowest acceptable voltage range the ECU expects to see from the MAF sensor.</description>
+	</table>
+
+	<table type="2D" name="Fuel correction limits, % (MALPRV)" category="Outdated" storagetype="uint8" endian="big" sizey="2" userlevel="1">
+		<scaling units="LTFT %" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="5" />
+		<table type="Static Y Axis" name="LTFT limits" sizey="2">
+			<data>Lower</data>
+			<data>Upper</data>
+		</table>
+		<description>The mean value of air-fuel ratio feedback correction factor per cycle.</description>
+	</table>
+
+	<table type="2D" name="Idle BFS limits, ms (TPRV)" category="Outdated" storagetype="uint16" endian="big" sizey="2" userlevel="1">
+		<scaling units="milliseconds" expression="x*0.0005" to_byte="x/0.0005" format="0.00" fineincrement=".01" coarseincrement=".10" />
+		<table type="Static Y Axis" name="base fuel limits" sizey="2">
+			<data>Lower</data>
+			<data>Upper</data>
+		</table>
+		<description>The fuel injection pulse width programmed into ECM prior to any learned on board correction .</description>
+	</table>
+
+	<table type="2D" name="MAF offset" category="Outdated" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="100" />
+		<table type="Static Y Axis" name="Offset" sizey="2">
+			<data>Offset</data>
+		</table>
+		<description>Some ECUs subtract this value from the MAF lookup result before using it to calculate airflow.</description>
+	</table>
+
+	<table type="2D" name="MAF factor" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1"> 
+		<scaling units="" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="10" />
+		<table type="Static Y Axis" name="Multiplier" sizey="2">
+			<data>Multiplier</data>
+		</table>
+		<description>Used in main fuel calc, can be used instead of adjusting K factor. This is what Nissan uses to scale MAF from factory.</description>
+	</table> 
+
+	<table type="2D" name="MAF" category="Outdated" storagetype="uint16" endian="big" sizey="64" userlevel="1">
+		<scaling name="unscaled" units="N/A" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100" />
+
+		<table type="Static Y Axis" name="MAF Sensor (volts)" format="0.00" sizey="64">
+			<data>0.0</data>
+			<data>0.08</data>
+			<data>.16</data>
+			<data>.24</data>
+			<data>.32</data>
+			<data>.40</data>
+			<data>.48</data>
+			<data>.56</data>
+			<data>.64</data>
+			<data>.72</data>
+			<data>.80</data>
+			<data>.88</data>
+			<data>.96</data>
+			<data>1.04</data>
+			<data>1.12</data>
+			<data>1.20</data>
+			<data>1.28</data>
+			<data>1.36</data>
+			<data>1.44</data>
+			<data>1.52</data>
+			<data>1.60</data>
+			<data>1.68</data>
+			<data>1.76</data>
+			<data>1.84</data>
+			<data>1.92</data>
+			<data>2.00</data>
+			<data>2.08</data>
+			<data>2.16</data>
+			<data>2.24</data>
+			<data>2.32</data>
+			<data>2.40</data>
+			<data>2.48</data>
+			<data>2.56</data>
+			<data>2.64</data>
+			<data>2.72</data>
+			<data>2.80</data>
+			<data>2.88</data>
+			<data>2.96</data>
+			<data>3.04</data>
+			<data>3.12</data>
+			<data>3.20</data>
+			<data>3.28</data>
+			<data>3.36</data>
+			<data>3.44</data>
+			<data>3.52</data>
+			<data>3.60</data>
+			<data>3.68</data>
+			<data>3.76</data>
+			<data>3.84</data>
+			<data>3.92</data>
+			<data>4.00</data>
+			<data>4.08</data>
+			<data>4.16</data>
+			<data>4.24</data>
+			<data>4.32</data>
+			<data>4.40</data>
+			<data>4.48</data>
+			<data>4.56</data>
+			<data>4.64</data>
+			<data>4.72</data>
+			<data>4.80</data>
+			<data>4.88</data>
+			<data>4.96</data>			
+			<data>5.04</data>
+		</table>
+		<description>This table represents airflow through the maf sensor at a given voltage. The ecu uses this to calculate many things including timing and fueling. It is used to fine tune air fuel ratios in many cases, as the ecu thinks more or less air is flowing through the maf sensor at a given voltage it adds or removes a proportionate amount of fuel.</description>
+	</table>
+
+	<table type="2D" name="Idle Target" category="Outdated" storagetype="uint8" endian="big" sizey="16" userlevel="1">
+		<scaling units="RPM" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="100" />
+		<table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="16">
+			<data>-40</data>
+			<data>-22</data>
+			<data>-4</data>
+			<data>14</data>
+			<data>32</data>
+			<data>50</data>
+			<data>68</data>
+			<data>86</data>
+			<data>104</data>
+			<data>122</data>
+			<data>140</data>
+			<data>158</data>
+			<data>176</data>
+			<data>194</data>
+			<data>212</data>
+			<data>230</data>
+		</table>
+		<description>This is the target idle table which references Coolant Temperature</description>
+	</table>
+
+	<table type="2D" name="Idle Target 2" category="Outdated" storagetype="uint8" endian="big" sizey="16" userlevel="1">
+		<scaling units="RPM" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="100" />
+		<table type="Static Y Axis" name="Coolant Temperature(Farenheight)" format="0" sizey="16">
+			<data>-40</data>
+			<data>-22</data>
+			<data>-4</data>
+			<data>14</data>
+			<data>32</data>
+			<data>50</data>
+			<data>68</data>
+			<data>86</data>
+			<data>104</data>
+			<data>122</data>
+			<data>140</data>
+			<data>158</data>
+			<data>176</data>
+			<data>194</data>
+			<data>212</data>
+			<data>230</data>
+		</table>
+		<description>This is the target idle table which references Coolant Temperature</description>
+	</table>
+
+	<table type="2D" name="Fuel Cut Prohibition Speed" category="Outdated" storagetype="uint8" endian="big" sizey="16" userlevel="1">
+		<scaling units="RPM" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="25" coarseincrement="200" />
+		<table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="16">
+			<data>-40</data>
+			<data>-22</data>
+			<data>-4</data>
+			<data>14</data>
+			<data>32</data>
+			<data>50</data>
+			<data>68</data>
+			<data>86</data>
+			<data>104</data>
+			<data>122</data>
+			<data>140</data>
+			<data>158</data>
+			<data>176</data>
+			<data>194</data>
+			<data>212</data>
+			<data>230</data>   
+		</table>
+		<description>mTTXNEL Fuel cut prohibition speed table for FAST Injection Cutoff (not used in fuel cut routine)</description>
+	</table>
+
+<table type="2D" name="Fuel Cut Bosch" category="Outdated" storagetype="uint8" endian="big" sizey="16" userlevel="1">
+		<scaling units="RPM" expression="x*25" to_byte="x/25" format="0" fineincrement="25" coarseincrement="200" />
+		<table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="16">
+			<data>-40</data>
+			<data>-22</data>
+			<data>-4</data>
+			<data>14</data>
+			<data>32</data>
+			<data>50</data>
+			<data>68</data>
+			<data>86</data>
+			<data>104</data>
+			<data>122</data>
+			<data>140</data>
+			<data>158</data>
+			<data>176</data>
+			<data>194</data>
+			<data>212</data>
+			<data>230</data>   
+		</table>
+		<description>mTNC  BOSCH cut speed table</description>
+	</table>
+
+	<table type="2D" name="Fuel Cut JECS" category="Outdated" storagetype="uint8" endian="big" sizey="16" userlevel="1">
+		<scaling units="RPM" expression="x*25" to_byte="x/25" format="0" fineincrement="25" coarseincrement="200" />
+		<table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="16">
+			<data>-40</data>
+			<data>-22</data>
+			<data>-4</data>
+			<data>14</data>
+			<data>32</data>
+			<data>50</data>
+			<data>68</data>
+			<data>86</data>
+			<data>104</data>
+			<data>122</data>
+			<data>140</data>
+			<data>158</data>
+			<data>176</data>
+			<data>194</data>
+			<data>212</data>
+			<data>230</data>   
+		</table>
+		<description>mTNJC  JECS cut speed table</description>
+	</table>
+	
+	
+<table type="2D" name="Fuel Restore Bosch" category="Outdated" storagetype="uint8" endian="big" sizey="16" userlevel="1">
+		<scaling units="RPM" expression="x*25" to_byte="x/25" format="0" fineincrement="25" coarseincrement="200" />
+		<table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="16">
+			<data>-40</data>
+			<data>-22</data>
+			<data>-4</data>
+			<data>14</data>
+			<data>32</data>
+			<data>50</data>
+			<data>68</data>
+			<data>86</data>
+			<data>104</data>
+			<data>122</data>
+			<data>140</data>
+			<data>158</data>
+			<data>176</data>
+			<data>194</data>
+			<data>212</data>
+			<data>230</data>   
+		</table>
+		<description>mTREC  BOSCH cut recover rotation table</description>
+	</table>
+
+	<table type="2D" name="Fuel Restore JECS" category="Outdated" storagetype="uint8" endian="big" sizey="16" userlevel="1">
+		<scaling units="RPM" expression="x*25" to_byte="x/25" format="0" fineincrement="25" coarseincrement="200" />
+		<table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="16">
+			<data>-40</data>
+			<data>-22</data>
+			<data>-4</data>
+			<data>14</data>
+			<data>32</data>
+			<data>50</data>
+			<data>68</data>
+			<data>86</data>
+			<data>104</data>
+			<data>122</data>
+			<data>140</data>
+			<data>158</data>
+			<data>176</data>
+			<data>194</data>
+			<data>212</data>
+			<data>230</data>   
+		</table>
+		<description>mTNR  JECS cut recover speed table</description>
+	</table>
+	
+	<table type="2D" name="Fuel Cut Timing Retard Delay" category="Outdated" storagetype="uint8" endian="big" sizey="16" userlevel="1">
+		<scaling units="sec" expression="x*0.1" to_byte="x/0.1" format="0.0" fineincrement="0.1" coarseincrement="1" />
+		<table type="Static Y Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizey="16">
+			<data>-40</data>
+			<data>-22</data>
+			<data>-4</data>
+			<data>14</data>
+			<data>32</data>
+			<data>50</data>
+			<data>68</data>
+			<data>86</data>
+			<data>104</data>
+			<data>122</data>
+			<data>140</data>
+			<data>158</data>
+			<data>176</data>
+			<data>194</data>
+			<data>212</data>
+			<data>230</data>   
+		</table>
+		<description>mTFCRD   Fuel cut retard delay time table </description>
+	</table>	
+
+	<table type="2D" name="Fuel Injection Multiplier" category="Outdated" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="100" />
+		<table type="Static Y Axis" name="K Value" sizey="2">
+			<data>K Value</data>
+		</table>
+		<description>Global Fuel injection Multiplier. This can be used to compensate for larger or smaller injectors, or a larger or smaller maf housing. This can also be used for alternate fuels such as e85.</description>
+	</table>
+
+	<table type="2D" name="Dwell Time Coefficient" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1"> 
+		<scaling units="Milliseconds" expression="x/50" to_byte="x*50" format="0.00" fineincrement="0.02" coarseincrement="1" />
+		<table type="Static Y Axis" name="Coefficient" sizey="1">
+			<data>Coefficient</data>
+		</table>
+		<description>Coil Timing </description>
+	</table>
+
+	<table type="2D" name="Dwell Voltage Coefficient" category="Outdated" storagetype="uint16" endian="big" sizey="1" userlevel="1"> 
+		<scaling units="(mv^2)se" expression="x*128" to_byte="x/128" format="0" fineincrement="128" coarseincrement="2560" />
+		<table type="Static Y Axis" name="Coefficient" sizey="1">
+			<data>Coefficient</data>
+		</table>
+		<description>Coil Timing </description>
+	</table>
+
+	<table type="2D" name="mTDENS" category="Outdated" storagetype="uint8" endian="big" sizey="8" userlevel="1"> 
+		<scaling units="g/m3" expression="125*x" to_byte="x/125" format="0" fineincrement="125" coarseincrement="1000" />
+		<table type="Static Y Axis" name="Intake air efficiency" sizey="8">
+			<data>12.5%</data> 
+			<data>25%</data>
+			<data>37.5%</data> 
+			<data>50%</data>
+			<data>62.5%</data>
+			<data>75%</data> 
+			<data>87.5%</data>
+			<data>100%</data>
+		</table>
+		<description>An unburned gas density table </description>
+	</table>  
+
+	<table type="2D" name="mTFLTW" category="Outdated" storagetype="uint8" endian="big" sizey="8" userlevel="1"> 
+		<scaling units="none" expression="x*.78125" to_byte="x/.78125" format="0" fineincrement="1" coarseincrement="5" />
+		<table type="Static Y Axis" name="Degrees Fahrenheit" sizey="8">
+			<data>     -40    </data>
+			<data>     -4     </data>
+			<data>     32     </data>
+			<data>     68     </data>
+			<data>     104     </data>
+			<data>     140     </data>
+			<data>     176     </data>
+			<data>     212     </data>
+		</table>
+		<description>Coolant temperature compensation table </description>
+	</table>  
+
+	<table type="2D" name="mDILU" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="%" expression="x*1.5625" to_byte="x/1.5625" format="#" fineincrement="1" coarseincrement="5" />
+		<table type="Static Y Axis" name="Dilution modification coefficient" sizey="1">
+			<data></data>
+		</table>
+		<description>Dilution modification coefficient</description>
+	</table>
+
+	<table type="2D" name="mMBTT" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="cc/sec" expression="x/8" to_byte="x*8" format="0.00" fineincrement=".125" coarseincrement="1" />
+		<table type="Static Y Axis" name="War way speed weight constant" sizey="1">
+			<data></data>
+		</table>
+		<description>War way speed weight constant</description>
+	</table>
+
+	<table type="2D" name="mMBTM" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="g" expression="x/256" to_byte="x*256" format="0.00" fineincrement=".01" coarseincrement=".1" />
+		<table type="Static Y Axis" name="Ignition timing main constant" sizey="1">
+			<data></data>
+		</table>
+		<description>mMBTM Ignition timing main constant. Higher values increase advance</description>
+	</table>
+
+	<table type="2D" name="mTAU0" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="ms" expression="x*.01953" to_byte="x/.01953" format="0.000" fineincrement=".005" coarseincrement=".025" />
+		<table type="Static Y Axis" name="Ignition delay time" sizey="1">
+			<data></data>
+		</table>
+		<description>Ignition delay time</description>
+	</table>
+
+	<table type="2D" name="Master Fueling Transition Delay" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="seconds" expression="x/5" to_byte="x*5" format="0.0" fineincrement=".2" coarseincrement="1" />
+		<table type="Static Y Axis" name="Delay time units" sizey="1">
+			<data>time</data>
+		</table>
+		<description> mKMRCT1  "All the delay stage delays" This value represents a maximum delay between the time the car goes from closed to open loop fuel target values. There are several other potential delays but setting this to 0 should override them. For performance applications to ensure that the ecu transitions to the fuel target as fast as possible upon wide open throttle, set to 0.</description>
+	</table>
+
+	<table type="2D" name="Injector Latency at 14V" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="Microseconds" expression="x*10" to_byte="x/10" format="0μs" fineincrement="1" coarseincrement="10" />
+		<table type="Static Y Axis" name=" Latency @ 14V " sizey="1">
+			<data></data>
+		</table>
+		<description>mTS14VZ Injector Open Time in Microseconds</description>
+	</table>
+
+
+	<table type="2D" name="Crank Fueling TP value" category="Outdated" storagetype="uint16" endian="big" sizey="8" userlevel="1">
+		<scaling units="ms" expression="x/2048" to_byte="x*2048" format="0.00" fineincrement=".1" coarseincrement="1" />
+		<table type="Static Y Axis" name="Degrees Farenheight" sizey="8">
+			<data>     -40    </data>
+			<data>     -4     </data>
+			<data>     32     </data>
+			<data>     68     </data>
+			<data>     104     </data>
+			<data>     140     </data>
+			<data>     176     </data>
+			<data>     212     </data>
+		</table>
+		<description>mTTPINT TP initial value table. Startup which references Coolant Temperature. This table bypasses the injector K value, so modifying this for larger injectors is essential</description>
+	</table>
+
+	<table type="2D" name="High Temp Enrichment" category="Outdated" storagetype="uint16" endian="big" sizey="8" userlevel="1">
+		<scaling units="Percentage" expression="x/1.28" to_byte="x*1.28" format="0.00" fineincrement="1" coarseincrement="5" />
+		<table type="Static Y Axis" name="Degrees Celcius" sizey="8">
+			<data>     80    </data>
+			<data>     85     </data>
+			<data>     90     </data>
+			<data>     95     </data>
+			<data>     100     </data>
+			<data>     105     </data>
+			<data>     110     </data>
+			<data>     115     </data>
+		</table>
+		<description>mTKHTTW1  "A high coolant temperature increase compensation table"</description>
+	</table>
+
+
+	<table type="3D" name="High Temp Fuel Comp" category="Outdated" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="4" logparam="?">
+		<scaling units="%" expression="x/1.28" to_byte="x*1.28" format="0.00" fineincrement=".78125" coarseincrement="4" />
+		<table type="X Axis" name="Cylinder intake filling up efficiency" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="%" expression="x/1.28" to_byte="x*1.28" format="0.0" fineincrement=".78125" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mKHTMAP  "A high coolant temperature increase map" Not sure exactly how this is used</description>
+	</table>	
+
+	<table type="2D" name="Fuel consumption quantity coefficient" category="Outdated" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="mm^3/ms" expression="x/100" to_byte="x*100" format="0.00" fineincrement=".2" coarseincrement="1" />
+		<table type="Static Y Axis" name=" Fuel Consumption Coefficient " sizey="1">
+			<data></data>
+		</table>
+		<description>mKSHO This is the value in cubic millimeters per millisecond. If you change the injector K value you can use this to re-calibrate your fuel consumption monitor.</description>
+	</table>
+
+
+	<table type="3D" name="QH0/ torque conversion map" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="Nm" expression="x/10-3276.8" to_byte="x*10+32768" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="QH0 flow quantity ratio" storagetype="uint16" endian="big" logparam="?">
+			<scaling units="%" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMTTE QH0/ torque 1 and 2 must match exactly if you makes changes.</description>
+	</table>
+
+	<table type="3D" name="QH0/ torque conversion map 2" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="Nm" expression="x/10-3276.8" to_byte="x*10+32768" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="QH0 flow quantity ratio" storagetype="uint16" endian="big" logparam="?">
+			<scaling units="%" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMTTE_S QH0/ torque 1 and 2 must match exactly if you makes changes.</description>
+	</table>
+
+	<table type="3D" name="Engine torque value map" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="Nm" expression="x/10-3276.8" to_byte="x*10+32768" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="Static X Axis" name="Cylinder filling efficiency %" format="0" sizey="16">
+			<data>0</data>
+			<data>10</data>
+			<data>20</data>
+			<data>30</data>
+			<data>40</data>
+			<data>50</data>
+			<data>60</data>
+			<data>70</data>
+			<data>80</data>
+			<data>90</data>
+			<data>100</data>
+			<data>110</data>
+			<data>120</data>
+			<data>130</data>
+			<data>140</data>
+			<data>150</data>        
+		</table>
+		<table type="Static Y Axis" name="RPM" format="0" sizey="16" logparam="P8">
+			<data>400</data>
+			<data>800</data>
+			<data>1200</data>
+			<data>1600</data>
+			<data>2000</data>
+			<data>2400</data>
+			<data>2800</data>
+			<data>3200</data>
+			<data>3600</data>
+			<data>4000</data>
+			<data>4400</data>
+			<data>4800</data>
+			<data>5200</data>
+			<data>5600</data>
+			<data>6000</data>
+			<data>6400</data>
+		</table>
+		<description>mTENGMAP Engine torque value map</description>
+	</table>
+
+	<table type="3D" name="MSATHA" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="NA" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="50" />
+		<table type="X Axis" name="Cylinder intake quantity equivalent pulse width" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="ms" expression="x*.1250" to_byte="x/.1250" format="0.00" fineincrement=".2" coarseincrement="1" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>MSATHA Misfire Diagnosis table A"</description>
+	</table>
+
+	<table type="3D" name="MSATHB" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
+		<table type="X Axis" name="Cylinder intake quantity equivalent pulse width" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="ms" expression="x*.1250" to_byte="x/.1250" format="0.00" fineincrement=".2" coarseincrement="1" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>MSATHB Misfire Diagnosis table B"</description>
+	</table>
+
+	<table type="3D" name="MSATH" category="Outdated" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="NA" expression="x" to_byte="x" format="0" fineincrement=".2" coarseincrement="1" />
+		<table type="X Axis" name="Cylinder intake quantity equivalent pulse width" storagetype="uint8" endian="big" logparam="E3000">
+			<scaling units="ms" expression="x*.1250" to_byte="x/.1250" format="0.00" fineincrement=".2" coarseincrement="1" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>MSATH Misfire Diagnosis table"</description>
+	</table>
+
+	<table type="3D" name="mMTFDD" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="Newtons" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="Vehicle Speed" storagetype="uint16" endian="big" logparam="P4354">
+			<scaling units="km/h" expression="x*.1" to_byte="x/.1" format="0" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="Accelerator Open" storagetype="uint16" endian="big" logparam="?">
+			<scaling units="deg" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="10" coarseincrement="100" />
+		</table>
+		<description>mMTFDD D range target drive power map</description>
+	</table>
+
+	<table type="3D" name="mMTFDDS" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="Newtons" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="Vehicle Speed" storagetype="uint16" endian="big" logparam="P4354">
+			<scaling units="km/h" expression="x*.1" to_byte="x/.1" format="0" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="Accelerator Open" storagetype="uint16" endian="big" logparam="?">
+			<scaling units="deg" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="10" coarseincrement="100" />
+		</table>
+		<description>mMTFDDS Ds range target drive power map</description>
+	</table>
+
+	<table type="3D" name="mMTFDDS_S" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="Newtons" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="Vehicle Speed" storagetype="uint16" endian="big" logparam="P4354">
+			<scaling units="km/h" expression="x*.1" to_byte="x/.1" format="0" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="Accelerator Open" storagetype="uint16" endian="big" logparam="?">
+			<scaling units="deg" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="10" coarseincrement="100" />
+		</table>
+		<description>mMTFDDS_S Ds range target drive power map (redundant operation vice-operation part)</description>
+	</table>
+
+	<table type="3D" name="mMTFDD_S" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
+		<scaling units="Newtons" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="Vehicle Speed" storagetype="uint16" endian="big" logparam="P4354">
+			<scaling units="km/h" expression="x*.1" to_byte="x/.1" format="0" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="Accelerator Open" storagetype="uint16" endian="big" logparam="?">
+			<scaling units="deg" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="10" coarseincrement="100" />
+		</table>
+		<description>mMTFDD_S D range target drive power map (redundant operation vice-operation part)</description>
+	</table>
+
+
+	<table type="2D" name="mVSPCT2 Speed Limiter (cut)" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1" >
+		<!-- scalings from ZB060 A2L, seem to be valid for all 8-bit (low resolution) vehicle speed params -->
+		<scaling name="SI" units="km/h" expression="x*2" to_byte="x/2" format="0.0" fineincrement="2" coarseincrement="10" />
+		<scaling name="imp" units="mph" expression="x*2/1.6" to_byte="x*1.6/2" format="0.0" fineincrement="1" coarseincrement="10" />
+		<table type="Static Y Axis" name="fuel cut" sizey="1">
+			<data>speed</data>
+		</table>
+		<description>Speed Limiter. Some ROMs have two speed limiting mechanisms (mVSPCT2 and the other generically named "speed limiter")</description>
+	</table>
+
+	<table type="2D" name="mVSPRC2 Speed Limiter (restore)" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<!-- scaling from ZB060 A2L ("COMP_0007"), seems to be used for all 8-bit (low resolution) vehicle speed params -->
+		<scaling name="km" units="km/h" expression="x*2" to_byte="x/2" format="0.0" fineincrement="2" coarseincrement="10" />
+		<scaling name="mp" units="mph" expression="x*2/1.6" to_byte="x*1.6/2" format="0.0" fineincrement="1" coarseincrement="10" />
+		<table type="Static Y Axis" name="fuel restore" sizey="1">
+			<data>speed</data>
+		</table>
+		<description>Speed Limiter. Some ROMs have two speed limiting mechanisms (mVSPCT2 and the other generically named "speed limiter"). This speed (restore) must be lower than cut</description>
+	</table>
+
+	<table type="2D" name="Throttle Rev Limit" category="Outdated" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*.781300" to_byte="x/.781300" format="#" fineincrement="50" coarseincrement="250" />
+		<table type="Static Y Axis" name="Rev Limit Throttle Cut" sizey="1">
+			<data>Throttle Cut</data> 
+		</table>
+		<description>Engine speed at which the rev limiter is engaged and disengaged, by closing the throttle. </description>
+	</table>
+
+	<table type="2D" name="Load Base Fuel Schedule" category="Outdated" storagetype="uint16" endian="big" sizey="16" userlevel="1">
+		<scaling name="BFS" units="Base Fuel Schedule (milliseconds)" expression="x/2048" to_byte="x*2048" format="0.00" fineincrement=".01" coarseincrement="10" />
+
+		<table type="Static Y Axis" name="RPM" format="0" sizey="16" logparam="P8">
+			<data>0</data>
+			<data>400</data>
+			<data>800</data>
+			<data>1200</data>
+			<data>1600</data>
+			<data>2000</data>
+			<data>2400</data>
+			<data>2800</data>
+			<data>3200</data>
+			<data>3600</data>
+			<data>4000</data>
+			<data>4400</data>
+			<data>4800</data>
+			<data>5200</data>
+			<data>5600</data>
+			<data>6000</data>
+		</table>
+		<description>mTCCLV This table is how the ecu calculates 100% load at x rpm. The values shown are 100% load calculated from the base fuel schedule milliseconds. This is important for proper automatic transmission shifting. It needs to be adjusted so that the ecu sees at or near 100% when wide open throttle to correctly shift the automatic transmission.</description>
+	</table>
+
+	<table type="Switch" name="Knock sensor CEL (P0327, P0328)" category="OBD-II" sizey="4">
+		<description>When on, this enables the activation of the CEL when knock sensor is unplugged or shorted. </description>
+		<state name="on" data=" 00 A0 00 A0" />
+		<state name="off" data=" 00 20 00 20" />
+	</table>  
+
+	<table type="Switch" name="Catalyst CEL Fix (P0420, P0430)" category="OBD-II" sizey="4">
+		<description>When enabled, this prevents the activation of the CEL when catalyst efficiency is below threshold. </description>
+		<state name="on" data=" 00 20 00 20" />
+		<state name="off" data=" 00 A0 00 A0" />
+	</table>
+
+	<table type="Switch" name="Catalyst DTC Max Threshold Fix (P0420, P0430)" category="OBD-II" sizey="2">
+		<description>Experimental: When enabled, this changes the upper limit of the measured catalyst effeciency, preventing the DTC. </description>
+		<state name="on" data=" FF FF" />
+		<state name="off" data=" 60 60" />
+	</table>
+
+	<table type="Switch" name="Catalyst DTC Min Threshold Fix (P0420, P0430)" category="OBD-II" sizey="8">
+		<description>Experimental: When enabled, this changes the lower limit of the measured catalyst effeciency, preventing the DTC. </description>
+		<state name="on" data=" 01 01 01 01 01 01 01 01" />
+		<state name="off" data=" 32 32 32 32 32 32 32 32" />
+	</table>
+
+	<table type="Switch" name="Secondary O2 Heaters DTC Fix (P0037, P0038, P0057, P0058)" category="OBD-II" sizey="2">
+		<description>When enabled, this changes the acceptable range of heater current and will not trigger a DTC for the secondary oxygen sensor heaters. </description>
+		<state name="on" data=" 00 FF" />
+		<state name="off" data=" 06 EC" />
+	</table>
+
+
+	<table type="Switch" name="VIAS Solenoid CEL (P1800)" category="OBD-II" sizey="2">
+		<description>When enabled, this enables the activation of the CEL when VIAS is unplugged. </description>
+		<state name="on" data=" 00 A0" />
+		<state name="off" data=" 00 20" />
+	</table>
+
+	<table type="2D" name="mVIASN0A" category="VIAS" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*50" to_byte="x/50" format="#" fineincrement="50" coarseincrement="250" />
+		<table type="Static Y Axis" name="VIAS Solenoid 'A'" sizey="1">
+			<data>Low</data>
+		</table>
+		<description>Variable intake valve A lower limit engine speed</description>
+	</table>
+
+	<table type="2D" name="mVIASN1A" category="VIAS" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*50" to_byte="x/50" format="#" fineincrement="50" coarseincrement="250" />
+		<table type="Static Y Axis" name="VIAS Solenoid 'A'" sizey="1">
+			<data>High</data>
+		</table>
+		<description>Variable intake valve A upper limit engine speed</description>
+	</table>
+
+	<table type="2D" name="mVIASN0B" category="VIAS" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*50" to_byte="x/50" format="#" fineincrement="50" coarseincrement="250" />
+		<table type="Static Y Axis" name="VIAS Solenoid 'B'" sizey="1">
+			<data>Low</data>
+		</table>
+		<description>Variable intake valve B lower limit engine speed</description>
+	</table>
+
+	<table type="2D" name="mVIASN1B" category="VIAS" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="Engine Speed (RPM)" expression="x*50" to_byte="x/50" format="#" fineincrement="50" coarseincrement="250" />
+		<table type="Static Y Axis" name="VIAS Solenoid 'B'" sizey="1">
+			<data>High</data>
+		</table>
+		<description>Variable intake valve B upper limit engine speed</description>
+	</table>
+
+	<table type="2D" name="mVIAST1A" category="VIAS" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="IPW (ms)" expression="x/8" to_byte="x*8" format="0.00" fineincrement=".125" coarseincrement="1" />
+		<table type="Static Y Axis" name="VIAS Solenoid 'A'" sizey="1">
+			<data>Minimum</data>
+		</table>
+		<description>Variable intake valve A minimum injector pulse width</description>
+	</table>
+
+
+	<table type="2D" name="mVIAST1B" category="VIAS" storagetype="uint8" endian="big" sizey="1" userlevel="1">
+		<scaling units="IPW (ms)" expression="x/8" to_byte="x*8" format="0.00" fineincrement=".125" coarseincrement="1" />
+		<table type="Static Y Axis" name="VIAS Solenoid 'B'" sizey="1">
+			<data>Minimum</data>
+		</table>
+		<description>Variable intake valve B minimum injector pulse width</description>
+	</table>
+
+	<table type="2D" name="mTP100" category="Outdated" storagetype="uint16" endian="big" sizey="1" userlevel="1">
+		<scaling units="IPW (ms)" expression="x/2048" to_byte="x*2048" format="0.00" fineincrement=".125" coarseincrement="1" />
+		<table type="Static Y Axis" name="BFS scalar" sizey="1">
+			<data></data>
+		</table>
+		<description>Filling up efficiency 100% TP, use to rescale table axis 'Cylinder filling up efficiency' after changing injector size</description>
+	</table>
+
+	<table type="2D" name="ASCD Max Set Speed" category="Outdated" storagetype="int32" endian="big" sizey="1" userlevel="1">
+		<scaling units="km/h" expression="3.6*x/4194304" to_byte="x*4194304/3.6" format="0.00" fineincrement=".1" coarseincrement="1" />
+		<table type="Static Y Axis" name="Cruise Max" sizey="1">
+			<data>High</data>
+		</table>
+		<description>Maximum allowed cruise control set speed</description>
+	</table>
+	<table type="2D" name="ASCD Min Set Speed" category="Outdated" storagetype="int32" endian="big" sizey="1" userlevel="1">
+		<scaling units="km/h" expression="3.6*x/4194304" to_byte="x*4194304/3.6" format="0.00" fineincrement=".1" coarseincrement="1" />
+		<table type="Static Y Axis" name="Cruise Min" sizey="1">
+			<data>Low</data>
+		</table>
+		<description>Minimum allowed cruise control set speed</description>
+	</table>
+
+	<table type="2D" name="ASCD Max Calc Speed" category="Outdated" storagetype="int32" endian="big" sizey="1" userlevel="1">
+		<scaling units="km/h" expression="3.6*x/4194304" to_byte="x*4194304/3.6" format="0.00" fineincrement=".1" coarseincrement="1" />
+		<table type="Static Y Axis" name="Cruise Max" sizey="1">
+			<data>High</data>
+		</table>
+		<description>Maximum speed calculated by the cruise control routine</description>
+	</table>
+	<table type="2D" name="ASCD Min Calc Speed" category="Outdated" storagetype="int32" endian="big" sizey="1" userlevel="1">
+		<scaling units="km/h" expression="3.6*x/4194304" to_byte="x*4194304/3.6" format="0.00" fineincrement=".1" coarseincrement="1" />
+		<table type="Static Y Axis" name="Cruise Min" sizey="1">
+			<data>Low</data>
+		</table>
+		<description>Minimum speed calculated by the cruise control routine</description>
+	</table>
+
+	<table type="BitwiseSwitch" name="O2 Sensors Present" category="Hack">
+		<bit position ="7" name="B1S1"/>
+		<description> OBD</description>
+	</table>
+
+
+	<table type="BitwiseSwitch" name="VIAS DTCs" category="DTC">
+		<bit position ="7" name="P1800 VIAS solenoid"/>  
+		<description>Toggle DTCs</description>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
