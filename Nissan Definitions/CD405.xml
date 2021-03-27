@@ -1,0 +1,81 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>CD405</xmlid>
+		<hwid>2WLGHD10</hwid>
+		<internalidaddress>8163</internalidaddress>
+		<internalidstring>CD405</internalidstring>
+		<ecuid>CD405</ecuid>
+		<year>03</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6749">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x6849">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6949">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+	
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x6C09"> 
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x6F99"> 
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x6E19"> 
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+	
+	<table name="Speed Limiter" storageaddress="0x64E8" /> MAYBE
+	
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6486"/>
+	
+	<table name="MAF Table" storageaddress="0x913E"/>
+	
+	<table name="K-Value" storageaddress="0x6426"/>
+	
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x7974">
+		<table type="Y Axis" storageaddress="0x0000" />
+		<table type="X Axis" storageaddress="0x0000" />
+	</table>
+	
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xA088">
+		<table type="Y Axis" storageaddress="0x0000" />
+		<table type="X Axis" storageaddress="0x0000" />
+	</table>
+	
+	<table name="Engine Torque Map" storageaddress="0x7DF4"/>
+	
+	<table name="Target Idle Table" storageaddress="0x0000"/>
+	
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x0000" />
+	
+	<table name="Long Term Fuel Trim Limits" storageaddress="0x0000" />
+	
+	<table name="Idle BFS Limits" storageaddress="0x0000" />
+	
+	<table name="MAF Factor" storageaddress="0x0000" />
+	
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6640" xorloc="0x6638"/>
+
+</rom>

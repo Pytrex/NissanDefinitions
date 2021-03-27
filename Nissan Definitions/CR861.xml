@@ -1,0 +1,26 @@
+<rom base="A2L">
+    <romid>
+	<xmlid>CR861</xmlid>
+	<hwid>1QETAP2D2</hwid>
+      <internalidaddress>7551</internalidaddress>
+      <internalidstring>CR861</internalidstring>
+      <ecuid>CR861</ecuid>
+      <year>-</year>
+      <market>-</market>
+      <make>Nissan</make>
+      <model>-</model>
+      <submodel>-</submodel>
+      <transmission>-</transmission>
+      <memmodel>SH7055</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>512kb</filesize>
+    </romid>
+    
+ 
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4A0C" xorloc="0x4A08" />
+
+</rom>
+
+
+
+

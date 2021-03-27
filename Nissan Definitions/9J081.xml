@@ -1,0 +1,19 @@
+<rom base="6Y303">
+	<!-- def added 2018 fenugrec-->
+	<romid>
+		<xmlid>9J081</xmlid>
+		<hwid>1TKE8Z5N59</hwid>
+		<internalidaddress>6c61</internalidaddress>
+		<internalidstring>9J081</internalidstring>
+		<ecuid>9J081</ecuid>
+		<year>03</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Altima</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+</rom>

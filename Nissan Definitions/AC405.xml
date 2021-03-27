@@ -1,0 +1,78 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>AC405</xmlid>
+		<hwid>5ZP8N00</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC405</internalidstring>
+		<ecuid>AC405</ecuid>
+		<year>2004</year>
+		<market></market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x730D">
+		<table type="X Axis" storageaddress="0x92ee" />
+		<table type="Y Axis" storageaddress="0x92fe" />
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x740D">
+		<table type="X Axis" storageaddress="0x92ee" />
+		<table type="Y Axis" storageaddress="0x92fe" />
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x750D">
+		<table type="X Axis" storageaddress="0x92ee" />
+		<table type="Y Axis" storageaddress="0x92fe" />
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x786D">
+		<table type="X Axis" storageaddress="0x9208" />
+		<table type="Y Axis" storageaddress="0x91ac" />
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x79FD">
+		<table type="X Axis" storageaddress="0x9037" />
+		<table type="Y Axis" storageaddress="0x91A4" />
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x7B3D">
+		<table type="X Axis" storageaddress="0x9d82" />
+		<table type="Y Axis" storageaddress="0x9d92" />
+	</table>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xa46c" />
+	<table name="Speed Limiter" storageaddress="0x705E"/>
+	<table name="MAF Idle Voltage Limits" storageaddress="0x70F0" />
+	<table name="MAF low voltage range_b" storageaddress="0x6A87" />
+	<table name="MAF voltage limits" storageaddress="0x6D5A" />
+	<table name="Long Term Fuel Trim Limits" storageaddress="0x69B3" />
+	<table name="Idle BFS Limits" storageaddress="0x70B8" />
+	<table name="MAF Factor" storageaddress="0x691F" />
+
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4" sizey="6"/>
+	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x9D06" />
+	<table name="Bosch Fuel Cut Table" storageaddress="0x9848"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x987C"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0x98F4"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0x99B0"/>
+
+	<table name="MAF Table" storageaddress="0xA1E8">
+	</table>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8">
+	</table>
+
+	<table name="Target Idle Table" storageaddress="0x988c">
+	</table>
+
+	<table name="K-Value" storageaddress="0x6f24">
+	</table>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
+
+</rom>

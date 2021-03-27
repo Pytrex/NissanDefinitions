@@ -1,0 +1,134 @@
+<rom base="A2L">
+    <romid>
+	<xmlid>EV16A</xmlid>
+	<hwid>7MFKAWNE</hwid>
+      <internalidaddress>8205</internalidaddress>
+      <internalidstring>EV16A</internalidstring>
+      <ecuid>EV16A</ecuid>
+      <year>08</year>
+      <market>EU</market>
+      <make>Nissan</make>
+      <model>350Z</model>
+      <submodel>HR</submodel>
+      <transmission>MT</transmission>
+      <memmodel>SH7058</memmodel>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>1024kb</filesize>
+    </romid>
+	
+	<!--Cross checked with UpRev, need to check axes-->
+	<table name="Timing1" storageaddress="0x9976">
+		<table type="X Axis" storageaddress="0x13E9B"/>
+		<table type="Y Axis" storageaddress="0x13EAB"/>
+	</table>
+
+	<!--Cross checked with UpRev, need to check axes-->
+	<table name="Timing Main Low Detonation" storageaddress="0x9A76">
+		<table type="X Axis" storageaddress="0x13E9B"/>
+		<table type="Y Axis" storageaddress="0x13EAB"/>
+	</table>
+	<!--Cross checked with UpRev, need to check axes-->
+	<table name="Timing High Detonation" storageaddress="0x9B76">
+		<table type="X Axis" storageaddress="0x13E9B"/>
+		<table type="Y Axis" storageaddress="0x13EAB"/>
+	</table>
+	
+	<!--TODO in between 9B76 and AC06-->
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0xA2F6">
+		<table type="X Axis" storageaddress="0x13D29"/>
+		<table type="Y Axis" storageaddress="0x13CCD"/>
+	</table>
+	
+	<!--Cross checked with UpRev, axes found with ida-->
+	<table name="Target AFR Map (8x8)" storageaddress="0xAC06">
+		<table type="X Axis" storageaddress="0x13AA4"/>
+		<table type="Y Axis" storageaddress="0x13C9D"/>
+	</table>
+	
+	<!--Check axes-->
+	<table name="Exhaust Cam Timing Map (16x16)" storageaddress="0xB596">
+		<table type="X Axis" storageaddress="0x14477"/>
+		<table type="Y Axis" storageaddress="0x14487"/>
+	</table>
+	
+	<!--Check axes-->
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0xB696">
+      <table type="X Axis" storageaddress="0x145DF" />
+      <table type="Y Axis" storageaddress="0x145EF" />
+    </table>
+	
+	<table name="Torque Request 1" storageaddress="0xB876">
+		<table type="X Axis" storageaddress="0x13B48"/>
+		<table type="Y Axis" storageaddress="0x13B68"/>
+	</table>
+
+	<table name="Torque Request 2" storageaddress="0xB976">
+		<table type="X Axis" storageaddress="0x13B48"/>
+		<table type="Y Axis" storageaddress="0x13B68"/>
+	</table>
+
+	<table name="Torque Request 3" storageaddress="0xBA76">
+		<table type="X Axis" storageaddress="0x13B48"/>
+		<table type="Y Axis" storageaddress="0x13B68"/>
+	</table>
+
+	<table name="MAF Table" storageaddress="0x162DA"/>
+	<table name="MAF 2" storageaddress="0x1635A"/>
+	
+	<table name="Rev Limit (Fuel Cut)" storageaddress="0x938C"/>
+	<table name="No Load Rev Limit (Fuel Cut)" storageaddress="0x9390"/>
+	<table name="Throttle Rev Limiter" storageaddress="0x9478"/>
+	
+	<table name="Throttle Open" storageaddress="0x1026A">
+		<table type="X Axis" storageaddress="0x161FA"/>
+		<table type="Y Axis" storageaddress="0x13CE9"/>
+	</table>
+	
+	<table name="Throttle Open 2" storageaddress="0x19F9C">
+		<table type="X Axis" storageaddress="0x1B7BA"/>
+		<table type="Y Axis" storageaddress="0x1B36A"/>
+	</table>
+	
+	<!--Check axes-->
+	<table name="Torque Management" storageaddress="0x1266A">
+		<table type="X Axis" storageaddress="0xC81E"/>
+		<table type="Y Axis" storageaddress="0xb4e6"/>
+	</table>
+	
+	<!--Check if correct, found change in tuned version from 09C4 (2500) to 0AF0 (2800)-->
+	<table name="Speed Limiter" storageaddress="0x94C2"/>
+	<table name="Speed Limiter (km/h)" storageaddress="0x94C2"/>
+    
+	<table name="Target Idle Table" storageaddress="0x1476D"/>
+	<!--Looks like another idle target table, no xref in ida-->
+	<table name="Target Idle Table 2" storageaddress="0x1472D"/>
+	
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x8CB3"/>
+	<table name="Fuel Injector Latency Adder" storageaddress="0x84F9"/>
+	
+	<table name="Load Base Fuel Schedule Table" storageaddress="0x16A00"/>
+	
+	<!--To identify-->	
+	<table type="2D"  name="?" category="Misc" storagetype="uint8" endian="big" sizey="1" userlevel="1" storageaddress="0x8DD9">
+		<scaling units="" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="1" />
+		<table type="Static Y Axis" name="?" sizey="2">
+			<data>?</data>
+		</table>
+	</table>
+	<!--To identify-->	
+	<table type="2D"  name="??" category="Misc" storagetype="uint8" endian="big" sizey="4" userlevel="1" storageaddress="0x8DDB">
+		<scaling units="" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="1" />
+		<table type="Static Y Axis" name="?" sizey="2">
+			<data>?</data>
+		</table>
+	</table>
+	<!--To identify-->	
+	<table type="2D"  name="???" category="Misc" storagetype="uint16" endian="big" sizey="1" userlevel="1" storageaddress="0x8DE4">
+		<scaling units="" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="1" />
+		<table type="Static Y Axis" name="?" sizey="2">
+			<data>?</data>
+		</table>
+	</table>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>
+</rom>

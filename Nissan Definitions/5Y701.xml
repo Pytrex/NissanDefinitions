@@ -1,0 +1,20 @@
+﻿<rom base="5Y712">
+<!-- identical code to 5Y701. Added 2018/06, fenugrec -->
+<!-- nissan-techinfo : "A33 VQ35 M/T STD-AFM 02MY" -->
+	<romid>
+		<xmlid>5Y701</xmlid>
+		<hwid>1TKE8Z5N51</hwid>
+		<internalidaddress>6b7c</internalidaddress>
+		<internalidstring>5y701</internalidstring>
+		<ecuid>5y701</ecuid>
+		<year>02</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Maxima</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+</rom>

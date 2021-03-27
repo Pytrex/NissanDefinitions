@@ -1,0 +1,87 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>CF000</xmlid>
+		<hwid>6GIZ7N4</hwid>
+		<internalidaddress>A14E</internalidaddress>
+		<internalidstring>CF000</internalidstring>
+		<ecuid>CF000</ecuid>
+		<year>05</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7CAD">
+		<table type="X Axis" storageaddress="0xB14E"/>
+		<table type="Y Axis" storageaddress="0xB16E"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x7DAD">
+		<table type="X Axis" storageaddress="0xB14E"/>
+		<table type="Y Axis" storageaddress="0xB16E"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x7EAD">
+		<table type="X Axis" storageaddress="0xB14E"/>
+		<table type="Y Axis" storageaddress="0xB16E"/>
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x834D">
+		<table type="X Axis" storageaddress="0xA3C4"/>
+		<table type="Y Axis" storageaddress="0xA4DE"/>
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x85DD">
+		<table type="X Axis" storageaddress="0xA19F"/>
+		<table type="Y Axis" storageaddress="0xA340"/>
+	</table>
+
+	<table name="Target AFR Table (High Detonation)" storageaddress="0xAA42"/>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x89ED">
+		<table type="X Axis" storageaddress="0xA4CE"/>
+		<table type="Y Axis" storageaddress="0xA4DE"/>
+	</table>
+
+	<table name="MAF Table" storageaddress="0xB644"/>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x78A6"/>
+
+	<table name="Throttle Rev Limiter" storageaddress="0x793E"/>
+
+
+
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x9658">
+		<table type="X Axis" storageaddress="0xB624"/>
+		<table type="Y Axis" storageaddress="0xA384"/>
+	</table>
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xC8FE">
+		<table type="X Axis" storageaddress="0xB624"/>
+		<table type="Y Axis" storageaddress="0xA384"/>
+	</table>
+
+	<table name="Target Idle Table" storageaddress="0xAB88"/>
+
+
+	<table name="Speed Limiter" storageaddress="0x7970"/>
+
+	<table name="K-Value" storageaddress="0x7814"/>
+
+
+
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xB908" />
+	<table name="MAF Factor" storageaddress="0x715A" />
+
+	<table name="Bosch Fuel Cut Table" storageaddress="0xAB44"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0xAB78"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0xACEC"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0xABF0"/>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B54" xorloc="0x7B4C"/>
+
+</rom>

@@ -1,0 +1,52 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>EV13B</xmlid>
+		<hwid>7MFKAWNE</hwid>
+		<internalidaddress>8205</internalidaddress>
+		<internalidstring>EV13B</internalidstring>
+		<ecuid>EV13B</ecuid>
+		<year>07</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350z</model>
+		<submodel>?</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<table name="Target AFR Map" storageaddress="0xAC06">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+	
+	<table name="Fuel Compensation Map" storageaddress="0xA2F6">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="Cold Ignition Timing Map" storageaddress="0x9976">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map" storageaddress="0x9A76">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map" storageaddress="0x9B76">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+
+	<table name="Engine Torque Map" storageaddress="0x1286A"/>
+
+
+
+
+	<checksum type="alt" start="0" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>
+	
+</rom>

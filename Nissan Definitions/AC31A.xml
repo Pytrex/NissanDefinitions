@@ -16,22 +16,22 @@
 		<filesize>1024kb</filesize>
 	</romid>
 
-	<table name="Cold Ignition Trim" storageaddress="0x730D">
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x730D">
 		<table type="X Axis" storageaddress="0x92ee" />
 		<table type="Y Axis" storageaddress="0x92fe" />
 	</table>
 
-	<table name="High Octane Ignition Trim" storageaddress="0x740D">
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x740D">
 		<table type="X Axis" storageaddress="0x92ee" />
 		<table type="Y Axis" storageaddress="0x92fe" />
 	</table>
 
-	<table name="Regular Ignition Trim" storageaddress="0x750D">
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x750D">
 		<table type="X Axis" storageaddress="0x92ee" />
 		<table type="Y Axis" storageaddress="0x92fe" />
 	</table>
 
-	<table name="Fuel Compensation" storageaddress="0x786D">
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x786D">
 		<table type="X Axis" storageaddress="0x9208" />
 		<table type="Y Axis" storageaddress="0x91ac" />
 	</table>
@@ -41,7 +41,7 @@
 		<table type="Y Axis" storageaddress="0x91A4" />
 	</table>
 
-	<table name="Intake Cam Timing (16x16)" storageaddress="0x7B3D">
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x7B3D">
 		<table type="X Axis" storageaddress="0x9d82" />
 		<table type="Y Axis" storageaddress="0x9d92" />
 	</table>
@@ -127,13 +127,13 @@
 	<table name="Initial Retard Quantity 3" storageaddress="0x9C0E"/>
 	<table name="Initial Retard Quantity 4" storageaddress="0x9C12"/>
 	
-	<table name="Knock Slice Table" storageaddress="0x8E88"/>
+	<table name="Knock Slice Map" storageaddress="0x8E88"/>
 
 	<table name="MAF Table" storageaddress="0xA1E8"/>
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
 
-	<table name="Idle Target" storageaddress="0x988c"/>
+	<table name="Target Idle Table" storageaddress="0x988c"/>
 
 	<table name="K-Value" storageaddress="0x6f24"/>
 
@@ -143,9 +143,9 @@
 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4" sizey="6"/>
 
-	<table name="Master Fueling Transition Delay" storageaddress="0x6740"/> 
+	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6740"/> 
 
-	<table name="Injector Latency at 14V" storageaddress="0x6b40" />
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x6b40" />
 	
 	<table name="Fuel Injector Latency Adder" storageaddress="0x652d" />
 	
@@ -153,15 +153,15 @@
 
 	<table name="Speed Limiter" storageaddress="0x705e"/>
 	
-	<table name="Load Base Fuel Schedule" storageaddress="0xa46c"/>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xa46c"/>
 
-	<table name="Throttle Rev Limit" storageaddress="0x7036"/> <!-- Was this previously altered? Maxed out value, but proper address.-->
+	<table name="Throttle Rev Limiter" storageaddress="0x7036"/> <!-- Was this previously altered? Maxed out value, but proper address.-->
 	
-	<table name="MAF factor" storageaddress="0x691f"/>
+	<table name="MAF Factor" storageaddress="0x691f"/>
 	
-	<table name="mTP100" storageaddress="0x70A8"/>
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x70A8"/>
 	
-	<table name="OL Fueling Target Rate" storageaddress="0x974E"/>
+	<table name="Target AFR Table (High Detonation)" storageaddress="0x974E"/>
 
 	
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC"/>

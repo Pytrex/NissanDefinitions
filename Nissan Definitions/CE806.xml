@@ -1,10 +1,10 @@
 <rom base="A2L">
 	<romid>
-		<xmlid>CE805</xmlid>
-		<hwid>5ZVP8N00</hwid>
+		<xmlid>CE806</xmlid>
+		<hwid>5ZVS8N02</hwid>
 		<internalidaddress>8FE6</internalidaddress>
-		<internalidstring>CE805</internalidstring>
-		<ecuid>CE805</ecuid>
+		<internalidstring>CE806</internalidstring>
+		<ecuid>CE806</ecuid>
 		<year>04</year>
 		<market>USDM</market>
 		<make>Nissan</make>

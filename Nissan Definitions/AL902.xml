@@ -1,0 +1,76 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>AL902</xmlid>
+		<hwid>3MFED14N4</hwid>
+		<internalidaddress>6BF9</internalidaddress>
+		<internalidstring>AL902</internalidstring>
+		<ecuid>AL902</ecuid>
+		<year>03</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<!-- very similar to 5Y702, similar to 6Y300 -->
+	<!-- initial def : fenugrec 2018 -->
+
+	<!-- strangely, cold ign trim doesn't have an area with the 0x80 knock bit set, unlike 5y712/6y300 -->
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x5301">
+		<table type="X Axis" storageaddress="0x6f10" />
+		<table type="Y Axis" storageaddress="0x6f20" />
+	</table>
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x5401">
+		<table type="X Axis" storageaddress="0x6f10" />
+		<table type="Y Axis" storageaddress="0x6f20" />
+	</table>
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x5501">
+		<table type="X Axis" storageaddress="0x6f10" />
+		<table type="Y Axis" storageaddress="0x6f20" />
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x57c1">
+		<table type="X Axis" storageaddress="0x6e66" />
+		<table type="Y Axis" storageaddress="0x6e0a" />
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x5991">
+		<table type="X Axis" storageaddress="0x6CED" />
+		<table type="Y Axis" storageaddress="0x6E02" />
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x5ad1">
+		<table type="X Axis" storageaddress="0x77b4" />
+		<table type="Y Axis" storageaddress="0x77c4" />
+	</table>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5056" />
+
+	<table name="MAF Table" storageaddress="0x79c0" />
+
+	<table name="Speed Limiter" storageaddress="0x5022" />
+	<table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x4D9B"/>
+    <table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x4DA6"/>
+
+	<table name="Target Idle Table" storageaddress="0x73e6" />
+	<table name="Target Idle Table 2" storageaddress="0x740a" />
+
+	<table name="K-Value" storageaddress="0x4ffa" />
+
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x646c">
+		<table type="X Axis" storageaddress="0x79a0" />
+		<table type="Y Axis" storageaddress="0x6e22" />   
+	</table>
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x86b4">
+		<table type="X Axis" storageaddress="0x8988" />
+		<table type="Y Axis" storageaddress="0x88f8" />   
+	</table>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x5158" xorloc="0x5150" />
+
+</rom>

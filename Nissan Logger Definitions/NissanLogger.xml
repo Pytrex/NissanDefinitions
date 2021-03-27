@@ -1128,56 +1128,13 @@
                 <dtcode id="D1" name="P0335 CRANKSHAFT POS. SENSOR A MALFUNCTION" desc="D1" tmpaddr="0x00008E" memaddr="0x0000AE" bit="0" />
             </dtcodes>
             <ecuparams>
-                <ecuparam id="E3" name="Battery RAM Addr" desc="E3-Battery RAM Addr" target="1">
-                    <ecu id="ZD89A">
-                        <address>0xFF865E</address>
-                    </ecu>
-                    <conversions>
-                        <conversion units="raw value" expr="x" format="0" />
-                        <conversion units="VDC" expr="x*0.08" format="0.00" gauge_min="20" gauge_max="0" gauge_step="2" />
-                    </conversions>
-                </ecuparam>
-				<ecuparam id="E4" name="Engine Speed RAM Addr" desc="E4-Engine Speed RAM Addr" target="1">
-				   <ecu id="ZD89A">
-					  <address length="2">0xFF86E8</address>
-				   </ecu>
-				   <conversions>
-					  <conversion units="raw value" storagetype="uint16" expr="x" format="0" />
-					  <conversion units="RPM" storagetype="uint16" expr="x*12.5" format="0" gauge_min="8000" gauge_max="0" gauge_step="500" />
-				   </conversions>
-				</ecuparam>
-                <ecuparam id="E173" name="LTFT Table Locator" desc="E173-LTFT Table Locator vMLRCL" target="1">
-                    <ecu id="6Y303">
-                        <address length="2">0xFFAE0C</address>
-                    </ecu>
-                    <ecu id="ZD89A">
-                        <address length="2">0xFFA4A8</address>
-                    </ecu>
-                    <ecu id="ZJ05B">
-                        <address length="2">0xFFA570</address>
-                    </ecu>
-                    <conversions>
-                        <conversion units="%" storagetype="uint16" expr="x/256" format="0.00" />
-                    </conversions>
-                </ecuparam>
-                <ecuparam id="E174" name="LTFT Count Table Locator" desc="E174-LTFT Count Table Locator vMCLRL" target="1">
-                    <ecu id="6Y303">
-                        <address>0xFFAD13</address>
-                    </ecu>
-                    <ecu id="ZD89A">
-                        <address>0xFFA342</address>
-                    </ecu>
-                    <ecu id="ZJ05B">
-                        <address>0xFFA40A</address>
-                    </ecu>
-                    <conversions>
-                        <conversion units="count" expr="x" format="0" />
-                    </conversions>
-                </ecuparam>
-
+				
 				<ecuparam id="Z1" name="Air-Fuel Ratio B1" desc="vAFSAF- An actual air-fuel ratio" target="1">
 					<ecu id="CF48D">
 						<address length="2">0xFF26F0</address>
+					</ecu>
+					<ecu id="AC31A">
+						<address length="2">0xFF24BE</address>
 					</ecu>
 					<conversions>
 						<conversion units="AFR" storagetype="uint16" expr="x*0.002" format="0.00" />
@@ -1188,6 +1145,9 @@
 					<ecu id="CF48D">
 						<address length="2">0xFF26F2</address>
 					</ecu>
+					<ecu id="AC31A">
+						<address length="2">0xFF24C0</address>
+					</ecu>
 					<conversions>
 						<conversion units="AFR" storagetype="uint16" expr="x*0.002" format="0.00" />
 					</conversions>
@@ -1197,82 +1157,102 @@
 					<ecu id="CF48D">
 						<address>0xFF847E</address>
 					</ecu>
+					<ecu id="AC31A">
+						<address>0xFF8474</address>
+					</ecu>
 					<conversions>
 						<conversion units="%" expr="x*0.78125" format="0.00" />
 					</conversions>
 				</ecuparam>		
 
-					<ecuparam id="Z4" name="MAF Table Value" desc="vQA4- Inhalation Air Quantity Index Number" target="1">
-					<ecu id="CF48D">
-						<address length="2">0xFF8484</address>
-					</ecu>
-					<conversions>
-						<conversion units="|" storagetype="uint16" expr="x" format="0" />
-					</conversions>
-				</ecuparam>
-
-				<ecuparam id="Z5" name="QH0" desc="vQH0- QH0 Flow Quantity" target="1">
+				<ecuparam id="Z4" name="QH0" desc="vQH0- QH0 Flow Quantity" target="1">
 					<ecu id="CF48D">
 						<address>0xFF85A2</address>
+					</ecu>
+					<ecu id="AC31A">
+						<address>0xFF855E</address>
 					</ecu>
 					<conversions>
 						<conversion units="%" expr="x/2.56" format="0.00" />
 					</conversions>
 				</ecuparam>		
 
-					<ecuparam id="Z6" name="Engine Torque" desc="Z34- vTENG10" target="1">
+					<ecuparam id="Z5" name="Engine Torque" desc="Z34- vTENG10" target="1">
 					<ecu id="CF48D">
 						<address length="2">0xFF184E</address>
 					</ecu>
-					<conversions>
-						<conversion units="Nm" storagetype="int16" expr="x*0.1" format="0.00" />
-					</conversions>
-				</ecuparam>		
-
-					<ecuparam id="Z7" name="Flow Potential" desc="vTQH0AP- APO/QH0 Conversion Value. Set by Target Basis QH0 Table." target="1">
-					<ecu id="CF48D">
-						<address length="2">0xFF195A</address>
+					<ecu id="AC31A">
+						<address length="2">0xFF1786</address>
 					</ecu>
 					<conversions>
-						<conversion units="%" storagetype="uint16" expr="x*0.001525879" format="0.00" />
+						<conversion units="Nm" storagetype="int16" expr="x*0.1" format="0" />
 					</conversions>
 				</ecuparam>		
 
-					<ecuparam id="Z8" name="Knock Count" desc="vKNCNT" target="1">
+					<ecuparam id="Z6" name="Knock Count" desc="vKNCNT - The Number of Knock Counts" target="1">
 					<ecu id="CF48D">
 						<address>0xFF206E</address>
+					</ecu>
+					<ecu id="AC31A">
+						<address>0xFF1EA6</address>
 					</ecu>
 					<conversions>
 						<conversion units="Count" storagetype="uint8" expr="x" format="0" />
 					</conversions>
 				</ecuparam>
 
-					<ecuparam id="Z9" name="QH0 Map Value" desc="vTTEAPO- APO Engine Torque Order Value" target="1">
+					<ecuparam id="Z7" name="Accelerator Requested Torque" desc="vTTEAPO- APO Engine Torque Order Value | QH0 Map Value" target="1">
 					<ecu id="CF48D">
 						<address length="2">0xFF1994</address>
 					</ecu>
+					<ecu id="AC31A">
+						<address length="2">0xFF188C</address>
+					</ecu>
 					<conversions>
-						<conversion units="Nm" storagetype="int16" expr="x*0.1" format="0.00" />
+						<conversion units="lb-ft" storagetype="int16" expr="x*0.073756" format="0.00" />
 					</conversions>
 				</ecuparam>
 
-					<ecuparam id="Z10" name="Target AFR" desc="bvTFBYA" target="1">
+					<ecuparam id="Z8" name="Target AFR" desc="bvTFBYA - NOT The Target AFR Map Value. This value will be adjusted based off of certain compensations as well. (Such as coolant based compensations)" target="1">
 					<ecu id="CF48D">
 						<address length="2">0xFF227A</address>
+					</ecu>
+					<ecu id="AC31A">
+						<address length="2">0xFF20AE</address>
 					</ecu>
 					<conversions>
 						<conversion units="AFR" storagetype="uint16" expr="14.7/(x*0.000061035)" format="0.00" />
 					</conversions>
 				</ecuparam>		
 
-				<ecuparam id="Z11" name="Open Loop / Closed Loop" desc="bvLMDCLSf- 0: OL 3: CL // Values of 1 or 2 are OL, just not sure what they represent." target="1">
+				<ecuparam id="Z9" name="Open Loop / Closed Loop" desc="bvLMDCLSf- 0-2: OL | 3: CL" target="1">
 					<ecu id="CF48D">
 						<address>0xFF2276</address>
+					</ecu>
+					<ecu id="AC31A">
+						<address>0xFF20AA</address>
 					</ecu>
 					<conversions>
 						<conversion units="OL/CL" storagetype="uint8" expr="x" format="0" />
 					</conversions>
 				</ecuparam>
+
+				<ecuparam id="Z10" name="MBT Operation Value" desc="vMBTCAL- MBT Operation Value" target="1">
+					<ecu id="CF48D">
+						<address>0xFF2357</address>
+					</ecu>
+					<ecu id="AC31A">
+						<address>0xFF2171</address>
+					</ecu>
+					<conversions>
+						<conversion units="Degrees" storagetype="int8" expr="x" format="0" />
+					</conversions>
+				</ecuparam>
+
+
+
+
+
 
 
 

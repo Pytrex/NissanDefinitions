@@ -1,0 +1,68 @@
+<rom base="A2L">
+    <romid>
+        <xmlid>AC012</xmlid>
+        <hwid>3GIPAN07</hwid>
+        <internalidaddress>8060</internalidaddress>
+        <internalidstring>AC012</internalidstring>
+        <ecuid>AC012</ecuid>
+        <year>2004</year>
+        <market>US</market>
+        <make>Infiniti</make>
+        <model>G35</model>
+        <submodel>Sedan</submodel>
+        <transmission>5AT</transmission>
+        <memmodel>SH7055</memmodel>
+        <flashmethod>nisprog</flashmethod>
+        <filesize>512kb</filesize>
+    </romid>
+
+    <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x66C9">
+        <table type="X Axis" storageaddress="0x8317" />
+        <table type="Y Axis" storageaddress="0x8327" />
+    </table>
+    <table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x67C9">
+        <table type="X Axis" storageaddress="0x8317" />
+        <table type="Y Axis" storageaddress="0x8327" />
+    </table>
+    <table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x68C9">
+        <table type="X Axis" storageaddress="0x8317" />
+        <table type="Y Axis" storageaddress="0x8327" />
+    </table>
+    <table name="Fuel Compensation Map (16x16)" storageaddress="0x6B89">
+        <table type="X Axis" storageaddress="0x8242" />
+        <table type="Y Axis" storageaddress="0x81E6" />
+    </table>
+    <table name="Target AFR Map (8x8)" storageaddress="0x6D99">
+        <table type="X Axis" storageaddress="0x80B9" />
+        <table type="Y Axis" storageaddress="0x81DE" />
+    </table>
+    <table name="Intake Cam Timing Map (16x16)" storageaddress="0x6ED9">
+        <table type="X Axis" storageaddress="0x8BFB" />
+        <table type="Y Axis" storageaddress="0x8C0B" />
+    </table>
+
+    <table name="MAF Table" storageaddress="0x8DEE" />
+
+    <table name="QH0/ Torque Conversion Map" storageaddress="0x7874">
+        <table type="X Axis" storageaddress="0x8DCE" />
+        <table type="Y Axis" storageaddress="0x81FE" />
+    </table>
+
+
+    <table name="QH0/ Torque Conversion Map 2" storageaddress="0x9B18">
+        <table type="X Axis" storageaddress="0x9DEC" />
+        <table type="Y Axis" storageaddress="0x9D5C" />
+    </table>
+
+    <table name="Load Base Fuel Schedule Table" storageaddress="0x8FAE" />
+    <table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6412" />
+
+    <table name="Target Idle Table" storageaddress="0x84A3" />
+    <table name="Target Idle Table 2" storageaddress="0x880B" />
+
+    <table name="K-Value" storageaddress="0x63B2" />
+    <table name="Speed Limiter" storageaddress="0x647E" />
+
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x65C0" xorloc="0x65B8" />
+
+</rom>

@@ -1,0 +1,125 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>ZJ05B</xmlid>
+		<hwid>7ZW91N7</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>ZJ05B</internalidstring>
+		<ecuid>ZJ05B</ecuid>
+		<year>2007</year>
+		<market>CAN</market>
+		<make>Nissan</make>
+		<model>Titan</model>
+		<submodel>Big Tow</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8AD1">
+		<table type="X Axis" storageaddress="0xaf92" />
+		<table type="Y Axis" storageaddress="0xAfa2" />
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x8BD1">
+		<table type="X Axis" storageaddress="0xaf92" />
+		<table type="Y Axis" storageaddress="0xAfa2" />
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x8f31">
+		<table type="X Axis" storageaddress="0xaeb4" />
+		<table type="Y Axis" storageaddress="0xae78" />
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x91d1">
+		<table type="X Axis" storageaddress="0xad67" />
+		<table type="Y Axis" storageaddress="0xae60" />
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9311">
+		<table type="X Axis" storageaddress="0xbaa0" />
+		<table type="Y Axis" storageaddress="0xba88" />
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x92D1">
+		<table type="X Axis" storageaddress="0xBA98" />
+		<table type="Y Axis" storageaddress="0xBA90" />
+	</table>
+
+	<table name="LTFT Map BFS Axis" storageaddress="0xb49a"/>
+	<table name="LTFT Map RPM Axis" storageaddress="0xb564"/>
+
+	<table name="MAF Table" storageaddress="0xC0E4"/>
+	<table name="MAF Factor" storageaddress="0x8149"/>
+
+	<table name="Rev Limit (Fuel Cut - 2D)" storageaddress="0x8776"/>
+
+	<table name="Bosch Fuel Cut Table" storageaddress="0xB56C"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0xB590"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0xB628"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0xB6D8"/>
+	
+	<table name="Target Idle Table" storageaddress="0xB5A0"/>
+	<table name="Target Idle Table 2" storageaddress="0xB5D8"/>
+
+	<table name="K-Value" storageaddress="0x86f6"/>
+
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8884"/>
+
+	<table name="Throttle Rev Limiter" storageaddress="0x8806"/>
+
+	<table name="Target AFR Table (High Detonation)" storageaddress="0xB44A"/>
+
+	<table name="Engine Torque Map" storageaddress="0xA9BC"/>
+
+	<table name="mMTFDD" storageaddress="0xA03C">
+		<table type="X Axis" storageaddress="0xBF94" />
+		<table type="Y Axis" storageaddress="0xBF74" />
+	</table>
+
+	<table name="mMTFDDS" storageaddress="0xA23C">
+		<table type="X Axis" storageaddress="0xBF94" />
+		<table type="Y Axis" storageaddress="0xBF74" />
+	</table>
+
+	<table name="QH0/ Torque Conversion Map" storageaddress="0xA43C">
+		<table type="X Axis" storageaddress="0xC0C4" />
+		<table type="Y Axis" storageaddress="0xAE94" />
+	</table>
+
+	<table name="mMTFDDS_S" storageaddress="0xD0FC">
+		<table type="X Axis" storageaddress="0xD7B8" />
+		<table type="Y Axis" storageaddress="0xD798" />
+	</table>
+
+	<table name="mMTFDD_S" storageaddress="0xD2FC">
+		<table type="X Axis" storageaddress="0xD7B8" />
+		<table type="Y Axis" storageaddress="0xD798" /> 
+	</table> 
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xD4FC">
+		<table type="X Axis" storageaddress="0xD7D8" />
+		<table type="Y Axis" storageaddress="0xD748" />
+	</table>
+
+	<table name="Misfire Diagnosis Map A" storageaddress="0x93A1">
+		<table type="X Axis" storageaddress="0xADF3" />
+		<table type="Y Axis" storageaddress="0xADD3" />
+	</table>
+
+	<table name="Misfire Diagnosis Map B" storageaddress="0x94A1">
+		<table type="X Axis" storageaddress="0xADF3" />
+		<table type="Y Axis" storageaddress="0xADD3" />
+	</table>
+
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x95A1">
+		<table type="X Axis" storageaddress="0xADF3" />
+		<table type="Y Axis" storageaddress="0xADD3" />
+	</table>
+
+	<table name="Knock Slice Map" storageaddress="0xABBC"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xB6FC"/>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x89b8" xorloc="0x89b0"/>
+
+</rom>
