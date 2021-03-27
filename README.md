@@ -1,6 +1,10 @@
 # NissanDefinitions
 A2L Supported Nissan and Infiniti ROMs. 
 
+# Disclaimer
+
+While these definitions appear to be fully functional, I cannot guarantee that the conversion worked without flaws for every definition file. There is a possibility that some ROMs will have errors. 
+
 # About
 
 The main purpose of this is to allow people to utilize a redacted variant of my A2L template, which ensures maximum compatibility across all currently defined ROMs. These definition files are not guaranteed to be accurate, as I did not make the majority of these definition files, I merely converted them to be A2L compatible. So if mistakes were made by the original contributer, then those mistakes are still present. On top of this, others can contribute to the repository. So you accept full responsibility for any and all damages that occur. If something looks funky, definitely be extremely cautious.
