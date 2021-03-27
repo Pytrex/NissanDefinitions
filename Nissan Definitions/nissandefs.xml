@@ -6691,21 +6691,6 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 		<description>The fuel injection pulse width programmed into ECM prior to any learned on board correction .</description>
 	</table>
 
-	<table type="2D" name="MAF offset" category="Outdated" storagetype="uint16" endian="big" sizey="1" userlevel="1">
-		<scaling units="" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="100" />
-		<table type="Static Y Axis" name="Offset" sizey="2">
-			<data>Offset</data>
-		</table>
-		<description>Some ECUs subtract this value from the MAF lookup result before using it to calculate airflow.</description>
-	</table>
-
-	<table type="2D" name="MAF factor" category="Outdated" storagetype="uint8" endian="big" sizey="1" userlevel="1"> 
-		<scaling units="" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="10" />
-		<table type="Static Y Axis" name="Multiplier" sizey="2">
-			<data>Multiplier</data>
-		</table>
-		<description>Used in main fuel calc, can be used instead of adjusting K factor. This is what Nissan uses to scale MAF from factory.</description>
-	</table> 
 
 	<table type="2D" name="MAF" category="Outdated" storagetype="uint16" endian="big" sizey="64" userlevel="1">
 		<scaling name="unscaled" units="N/A" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100" />
@@ -7115,29 +7100,6 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 			<data></data>
 		</table>
 		<description>mKSHO This is the value in cubic millimeters per millisecond. If you change the injector K value you can use this to re-calibrate your fuel consumption monitor.</description>
-	</table>
-
-
-	<table type="3D" name="QH0/ torque conversion map" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-		<scaling units="Nm" expression="x/10-3276.8" to_byte="x*10+32768" format="0" fineincrement="1" coarseincrement="10" />
-		<table type="X Axis" name="QH0 flow quantity ratio" storagetype="uint16" endian="big" logparam="?">
-			<scaling units="%" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="1" coarseincrement="10" />
-		</table>
-		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
-			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
-		</table>
-		<description>mMTTE QH0/ torque 1 and 2 must match exactly if you makes changes.</description>
-	</table>
-
-	<table type="3D" name="QH0/ torque conversion map 2" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
-		<scaling units="Nm" expression="x/10-3276.8" to_byte="x*10+32768" format="0" fineincrement="1" coarseincrement="10" />
-		<table type="X Axis" name="QH0 flow quantity ratio" storagetype="uint16" endian="big" logparam="?">
-			<scaling units="%" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="1" coarseincrement="10" />
-		</table>
-		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
-			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
-		</table>
-		<description>mMTTE_S QH0/ torque 1 and 2 must match exactly if you makes changes.</description>
 	</table>
 
 	<table type="3D" name="Engine torque value map" category="Outdated" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1" logparam="?">
