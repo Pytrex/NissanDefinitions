@@ -71,19 +71,7 @@
 
 	<!--table name="Speed Limiter" storageaddress="0x"/-->
 
-	<table type="Switch" name="Force Emissions Readiness" category="Hack" sizey="2" storageaddress="0x1711C">
-		<description>When on, this forces all emissions monitors to display 'Ready' Off-road and racing use only. Must NEVER be enabled on vehicles that will be driven on public roads.</description>
-		<state name="on" data=" E2 65" />
-		<state name="off" data=" 62 6c" />
-	</table>  
 
-	<table type="Switch" name="Force System Availabilty (for Readiness)" category="Hack" sizey="1" storageaddress="0x17105">
-		<description>Force system availability if DTCs are disabled. Off-road and racing use only. Must NEVER be enabled on vehicles that will be driven on public roads. </description>
-		<state name="evap" data="44" />
-		<state name="evap+catalyst" data="45" />
-		<state name="catalyst" data="41" />
-		<state name="stock" data="40" />
-	</table>  
 	
 	<table name="Catalyst DTCs" storageaddress="0xa35a"/>
 	<table name="Evap DTCs" storageaddress="0xa363"/>
