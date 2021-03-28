@@ -1521,7 +1521,6 @@
 		<description>mTNCUTD-  Usually set to 0, surprised the units are in seconds. "A high rotation cut judgement delay"</description>
 	</table>
 	
-	
 	\\Electronic Throttle Control//
 
 	<table type="3D" name="QH0/ Torque Conversion Map" category="Electronic Throttle Control" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1">
@@ -1643,6 +1642,14 @@
 			<data>87.19</data>
 	</table>
 	<description><!--mTATVO--> Sets vATVO (RAM)</description>
+	</table>
+
+	<table type="2D" name="APO Threshold (Brake)" category="Electronic Throttle Control" storagetype="uint16" sizey="1" endian="big" userlevel="1" >
+		<scaling units="Degrees" expression="x*.11" to_byte="x/.11" format="0.00"/>
+	<table type="Y Axis" name="Degrees" sizey="1">
+			<data>Above</data>
+	</table>
+	<description>mBRKFLSL- The APO threshold you need to breach in order to trigger the TVO limiter when the brake is currently being applied. Raising this threshold above ~83 degrees will allow you to bypass this TVO limiter.</description>
 	</table>
 	
 	\\Shifting Performance//

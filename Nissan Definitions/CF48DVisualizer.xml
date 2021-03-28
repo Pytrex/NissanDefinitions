@@ -22,6 +22,7 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 
 	\\Values, Tables, and Maps w/o Axes//
 
+	<table name="APO Threshold (Brake)" storageaddress="0x8748"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8AAE"/>
 	<table name="Cranking Advance Table" storageaddress="0xB6F4"/> 
 	<table name="Throttle Rev Limiter" storageaddress="0x8A14"/> 
