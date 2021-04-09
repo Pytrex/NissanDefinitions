@@ -53,7 +53,7 @@
 	74E0 Might be target drive force? uint16 16x16
 	
 
-	<table  name="MBT Flame Speed Map"  storageaddress="0x53A5">
+	<table name="MBT Flame Speed Map"  storageaddress="0x53A5">
 		<table type="X Axis" storageaddress="0x77E6" />
 		<table type="Y Axis" storageaddress="0x77EA" />
 	</table>
@@ -279,32 +279,6 @@
 	0x9BE6
 	0x9C26
 -->	
-
-<!-- Experimental Maps from Christian
-
-	<table type="2D" name="Idle/Neutral Timing" category="Misc" storagetype="uint8" endian="big" sizey="16" userlevel="4" storageaddress="0x7a80">
-	<scaling units="" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
-	<table type="Static Y Axis" name="RPM" format="0" sizey="16" logparam="P8">
-		<data>0</data>
-			<data>400</data>
-			<data>800</data>
-			<data>1200</data>
-			<data>1600</data>
-			<data>2000</data>
-			<data>2400</data>
-			<data>2800</data>
-			<data>3200</data>
-			<data>3600</data>
-			<data>4000</data>
-			<data>4400</data>
-			<data>4800</data>
-			<data>5200</data>
-			<data>5600</data>
-			<data>6000</data>
-	</table>
-	<description>Idle/neutral timing in *btdc</description>
-	</table> 
--->
 
 	
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4cb4" xorloc="0x4Ca0" />

@@ -27,7 +27,7 @@
 			<data>5600</data>
 			<data>6000</data>
 		</table>
-		<description>mTCCLV- This table is how the ecu calculates 100% load at x rpm. This is important for proper automatic transmission shifting. Lower your BFS at the specific RPM's till your calculated load is showing 100% consistently at max TVO.</description>
+		<description><!--mTCCLV--> This table is how the ecu calculates 100% load at x rpm. This is important for proper automatic transmission shifting. Lower your BFS at the specific RPM's till your calculated load is showing 100% consistently at max TVO.</description>
 	</table>
 	
 	<table type="2D" name="Cylinder Filling Up Efficiency Scaler" category="Fuel Injector Calibration" storagetype="uint16" endian="big" sizex="1" userlevel="1">
@@ -35,17 +35,17 @@
 		<table type="X Axis" name="BFS Scalar" sizex="1">
 			<data></data>
 		</table>
-		<description>mTP100- "Filling up efficiency 100% TP", use to rescale table axis 'Cylinder Filling Up Efficiency' If BFS = BFS Scaler, Cylinder Filling Up Efficiency = 100%. This CAN go above 100%.</description>
+		<description><!--mTP100--> "Filling up efficiency 100% TP", use to rescale table axis 'Cylinder Filling Up Efficiency' If BFS = BFS Scaler, Cylinder Filling Up Efficiency = 100%. This CAN go above 100%.</description>
 	</table>
 	
 	<table type="2D" name="K-Value" category="Fuel Injector Calibration" storagetype="uint16" endian="big" sizey="1" userlevel="1">
 		<scaling name="A2L" units="msec/kg" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="100" />
 		<scaling name="USA" units="s/lb" expression="x/2205" to_byte="x*2205" format="0.000" fineincrement="1" coarseincrement="100" />
 		<scaling name="sec/kg" units="sec/kg" expression="x*0.001" to_byte="x/0.001" format="0.000" fineincrement="1" coarseincrement="100" />
-		<table type="Y Axis" name="K Value" sizey="2">
+		<table type="Y Axis" name="-" sizey="2">
 			<data>K Value</data>
 		</table>
-		<description>mKCONST- "K Constant" Global Fuel injection Multiplier. This can be used to compensate for larger or smaller injectors, or a larger or smaller maf housing. This can also be used for alternate fuels such as e85.</description>
+		<description><!--mKCONST--> Global Fuel injection Multiplier. This can be used to compensate for larger or smaller injectors, or a larger or smaller maf housing. This can also be used for alternate fuels such as e85.</description>
 	</table>
 
 	<table type="2D" name="Fuel Injector Latency at 14V" category="Fuel Injector Calibration" storagetype="uint8" endian="big" sizey="1" userlevel="1">
@@ -346,7 +346,7 @@
 	</table>
 
 	<table type="2D" name="MAF Factor" category="Airflow" storagetype="uint8" endian="big" sizey="1" userlevel="1"> 
-		<scaling units="" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="10" />
+		<scaling units="-" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="10" />
 		<table type="Y Axis" name="MAF Table" sizey="1">
 			<data>Multiplier</data>
 		</table>
@@ -362,8 +362,8 @@
 	</table> 
 	
 	<table type="2D" name="MAF Offset" category="Airflow" storagetype="uint16" endian="big" sizey="1" userlevel="1">
-		<scaling units="" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="100" />
-		<table type="Static Y Axis" name="Offset" sizey="2">
+		<scaling units="-" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="100" />
+		<table type="Y Axis" name="Offset" sizey="2">
 			<data>Offset</data>
 		</table>
 		<description>Some ECUs subtract this value from the MAF lookup result before using it to calculate airflow.</description>
@@ -442,7 +442,7 @@
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
 			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
 		</table>
-		<description><!--mMADVTRMH-->This is the main trimming map that the ECU uses when high-octane fuel is determined. You may add or remove "128" from any cell to enable or disable knock sensor feedback in said cell.</description>
+		<description><!--mMADVTRMH-->This is the main trimming map that the ECU uses when high-octane fuel is determined. You may add or remove "128" from any cell to enable or disable knock sensor feedback in said cell. The ECU calculates a MBT ignition advance, then this trimming map value is added/subtracted from that value. However, there are other compensations that occur as well.</description>
 	</table>
 
 	<table type="3D" name="High Detonation Ignition Timing Map (16x16)" category="Ignition Timing" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1">
@@ -1547,7 +1547,6 @@
 
 	<table type="3D" name="TTEPTD Torque Compensation Map" category="Electronic Throttle Control" storagetype="uint16" endian="big" sizex="8" sizey="8" userlevel="1">
 		<scaling name="A2L" units="Throttle Compensation (%)" expression="x*.003051758" to_byte="x/.003051758" format="0" fineincrement="1" coarseincrement="5" />
-		<scaling name="Multiplier" units="Throttle Multiplier" expression="x*.00003051758" to_byte="x/.00003051758" format="0.00" fineincrement="0.01" coarseincrement="0.1" />
 		<table type="X Axis" name="Gear Ratio" storagetype="uint16" endian="big" logparam="-">
 			<scaling units="-" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000" fineincrement=".2" coarseincrement="1" />
 		</table>
@@ -1641,7 +1640,7 @@
 			<data>84.38</data>
 			<data>87.19</data>
 	</table>
-	<description><!--mTATVO--> Sets vATVO (RAM)</description>
+	<description><!--mTATVO--> NEEDS to be accurate! Directly affects all airflow calculations.</description>
 	</table>
 
 	<table type="2D" name="APO Threshold (Brake)" category="Electronic Throttle Control" storagetype="uint16" sizey="1" endian="big" userlevel="1" >
@@ -1649,7 +1648,7 @@
 	<table type="Y Axis" name="Degrees" sizey="1">
 			<data>Above</data>
 	</table>
-	<description>mBRKFLSL- The APO threshold you need to breach in order to trigger the TVO limiter when the brake is currently being applied. Raising this threshold above ~83 degrees will allow you to bypass this TVO limiter.</description>
+	<description>mBRKFLSL- The APO threshold you need to breach in order to trigger the TVO limiter when the brake is being applied. Raising this threshold above ~83 degrees will allow you to bypass this TVO limiter.</description>
 	</table>
 	
 	\\Shifting Performance//
@@ -2064,9 +2063,9 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="0" name="Snow Mode"/>  
 		<bit position ="1" name="Cls TPS"/>
 		<bit position ="2" name="CVTC Learn"/>  
-		<bit position ="3" name=""/>
+		<bit position ="3" name="-"/>
 		<bit position ="4" name="A/C Sig"/>
-		<bit position ="5" name=""/>
+		<bit position ="5" name="--"/>
 		<bit position ="6" name="HO2 B2S3"/>
 		<bit position ="7" name="HO2 B1S3"/>  
 		<description>bits enable/disable</description>
@@ -2110,7 +2109,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 
 	<table type="BitwiseSwitch" name="CID1305 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="Combustion"/>  
-		<bit position ="1" name=""/>
+		<bit position ="1" name="-"/>
 		<bit position ="2" name="Brake Switch"/>  
 		<bit position ="3" name="Rev Unit D"/>
 		<bit position ="4" name="Boost Vac"/>
@@ -2127,7 +2126,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="3" name="Int Sol B1"/>
 		<bit position ="4" name="VIAS S/V"/>
 		<bit position ="5" name="Vari Duct S/V"/>
-		<bit position ="6" name=""/>
+		<bit position ="6" name="-"/>
 		<bit position ="7" name="Swrl Cont S/V"/>  
 		<description>bits enable/disable</description>
 	</table> 
@@ -2163,8 +2162,8 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="3" name="VC/V Byp"/>
 		<bit position ="4" name="Map/Baro"/>
 		<bit position ="5" name="P/Reg Cntrl"/>
-		<bit position ="6" name=""/>
-		<bit position ="7" name=""/>  
+		<bit position ="6" name="-"/>
+		<bit position ="7" name="--"/>  
 		<description>bits enable/disable</description>
 	</table> 
 
@@ -2212,13 +2211,13 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="4" name="Brake 1 (ASCD) released = h'10"/>
 		<bit position ="5" name="Brake 2 (Stop Lamp) depressed = h'20"/>
 		<bit position ="6" name="Distance"/>
-		<bit position ="7" name=""/>  
+		<bit position ="7" name="-"/>  
 		<description>bits enable/disable</description>
 	</table> 
 
 	<table type="BitwiseSwitch" name="CID130E supmask" category="Supmasks" userlevel="1">
-		<bit position ="0" name=""/>  
-		<bit position ="1" name=""/>
+		<bit position ="0" name="-"/>  
+		<bit position ="1" name="--"/>
 		<bit position ="2" name="VSS Cutoff"/>  
 		<bit position ="3" name="Low Spd Cut"/>
 		<bit position ="4" name="Cruise Lamp"/>
@@ -2243,36 +2242,36 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 	<table type="BitwiseSwitch" name="CID1310 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="AWD/4WD"/>  
 		<bit position ="1" name="EPS"/>
-		<bit position ="2" name=""/>  
-		<bit position ="3" name=""/>
-		<bit position ="4" name=""/>
-		<bit position ="5" name=""/>
-		<bit position ="6" name=""/>
-		<bit position ="7" name=""/>  
+		<bit position ="2" name="-"/>  
+		<bit position ="3" name="--"/>
+		<bit position ="4" name="---"/>
+		<bit position ="5" name="----"/>
+		<bit position ="6" name="-----"/>
+		<bit position ="7" name="------"/>  
 		<description>bits enable/disable</description>
 	</table> 
 
 	<table type="BitwiseSwitch" name="CID1311 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="SCB/V Sol"/>  
 		<bit position ="1" name="VT Learn"/>
-		<bit position ="2" name=""/>  
+		<bit position ="2" name="-"/>  
 		<bit position ="3" name="Ex V/T Learn"/>
-		<bit position ="4" name=""/>
-		<bit position ="5" name=""/>
-		<bit position ="6" name=""/>
-		<bit position ="7" name=""/>  
+		<bit position ="4" name="--"/>
+		<bit position ="5" name="---"/>
+		<bit position ="6" name="----"/>
+		<bit position ="7" name="-----"/>  
 		<description>bits enable/disable</description>
 	</table> 
 
 	<table type="BitwiseSwitch" name="CID1312 supmask" category="Supmasks" userlevel="1">
 		<bit position ="0" name="LPG Cut Sol"/>  
 		<bit position ="1" name="Slow Cut Sol"/>
-		<bit position ="2" name=""/>  
-		<bit position ="3" name=""/>
-		<bit position ="4" name=""/>
-		<bit position ="5" name=""/>
-		<bit position ="6" name=""/>
-		<bit position ="7" name=""/>  
+		<bit position ="2" name="-"/>  
+		<bit position ="3" name="--"/>
+		<bit position ="4" name="---"/>
+		<bit position ="5" name="----"/>
+		<bit position ="6" name="-----"/>
+		<bit position ="7" name="------"/>   
 		<description>bits enable/disable</description>
 	</table> 
 
