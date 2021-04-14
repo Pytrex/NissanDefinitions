@@ -68,7 +68,7 @@
 		<description>mDTS- TS voltage compensation coefficient. This is the value in milliseconds that is added to the "injector latency 14V table for every 1v drop in voltage. IE: if latency at 14v is 2ms and the adder is 1ms then the latency at 13v would be 3ms.</description>
 	</table>
 
-	<table type="2D" name="Minimum Injector Pulse Width" category="Fuel Injector Calibration" storagetype="uint16" endian="big" sizey="1" userlevel="3">
+	<table type="2D" name="Minimum Injector Pulse Width" category="Fuel Injector Calibration" storagetype="uint16" endian="big" sizey="1" userlevel="1">
 		<scaling units="Milliseconds" expression="x/256" to_byte="x*256" format="0.00ms" fineincrement=".02" coarseincrement=".1" />
 		<table type="Y Axis" name=" Minimum Pulse Width " sizey="1">
 			<data></data>

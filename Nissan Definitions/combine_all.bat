@@ -5,7 +5,7 @@ echo.> nissandefs.xml
 del nissandefs.xml
 
 type xmlheader > nissandefs.tmp
-type table_templates >> nissandefs.tmp
+
 
 for %%a in (*.xml) do type %%a >> nissandefs.tmp
 
