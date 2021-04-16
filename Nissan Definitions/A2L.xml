@@ -212,7 +212,7 @@
 	<description>mTAISMX_S- ISC opening area upper limit value table 2</description>
 	</table>
 
-	<table type="2D" name="ISC Opening Area Upper Limit (Engine Speed Compensation) Table" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="1">
+	<table type="2D" name="ISC Opening Area Upper Limit Table (RPM Compensation)" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="1">
 	<scaling units="TVO (cm^2)" expression="x*.0008" to_byte="x/.0008" format="0.000"/> 
 	<table type="X Axis" name="Engine Speed (RPM)" sizex="16" format="0">
 			<data>0</data> 
@@ -235,7 +235,7 @@
 	<description>mTAISNH- ISC opening area upper limit engine speed compensation table</description>
 	</table>
 	
-	<table type="2D" name="ISC Opening Area Upper Limit (Engine Speed Compensation) Table 2" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="1">
+	<table type="2D" name="ISC Opening Area Upper Limit Table 2 (RPM Compensation)" category="Idle Speed Control (Limiters)" storagetype="uint16" sizex="16" endian="big" userlevel="1">
 	<scaling units="TVO (cm^2)" expression="x*.0008" to_byte="x/.0008" format="0.000"/> 
 	<table type="X Axis" name="Engine Speed (RPM)" sizex="16" format="0">
 			<data>0</data> 
@@ -345,6 +345,52 @@
 		<description>mQTBL- Inhalation air quantity conversion table. This table represents airflow through the MAF sensor at a given voltage. For stock MAF diameter intakes, I'd strongly recommend utilizing the MAF Factor alongside Fuel Compensation to dial in your fueling, rather than utilizing this table.</description>
 	</table>
 
+	<table type="2D" name="QH0 Low Flow Quantity Table" category="Airflow" storagetype="uint16" sizex="16" endian="big" userlevel="1">
+	<scaling units="QH0 Flow Quantity (%)" expression="x*0.0015259" to_byte="x/0.0015259" format="0.00"/> 
+	<table type="X Axis" name="Throttle Valve Opening Area (cm^2/RPM)" sizex="16">
+			<data>0</data> 
+			<data>0.930</data>
+			<data>1.859</data> 
+			<data>2.789</data>
+			<data>3.719</data> 
+			<data>4.648</data>
+			<data>5.578</data>
+			<data>6.508</data> 
+			<data>7.438</data>
+			<data>8.367</data> 
+			<data>9.297</data>
+			<data>10.237</data>
+			<data>11.156</data>
+			<data>12.086</data>
+			<data>13.016</data>
+			<data>13.946</data> 
+	</table>
+	<description><!--mTQH0L--></description>
+	</table>
+
+	<table type="2D" name="QH0 High Flow Quantity Table" category="Airflow" storagetype="uint16" sizex="16" endian="big" userlevel="1">
+	<scaling units="QH0 Flow Quantity (%)" expression="x*0.0015259" to_byte="x/0.0015259" format="0.00"/> 
+	<table type="X Axis" name="Throttle Valve Opening Area (cm^2/RPM)" sizex="16">
+			<data>13.947</data> 
+			<data>17.667</data>
+			<data>21.386</data> 
+			<data>25.105</data>
+			<data>28.824</data> 
+			<data>32.544</data>
+			<data>36.263</data>
+			<data>39.982</data> 
+			<data>43.702</data>
+			<data>47.421</data> 
+			<data>51.140</data>
+			<data>54.860</data>
+			<data>58.579</data>
+			<data>62.298</data>
+			<data>66.018</data>
+			<data>69.737</data> 
+	</table>
+	<description><!--mTQH0H--></description>
+	</table>
+	
 	<table type="2D" name="MAF Factor" category="Airflow" storagetype="uint8" endian="big" sizey="1" userlevel="1"> 
 		<scaling units="-" expression="x" to_byte="x" format="#" fineincrement="1" coarseincrement="10" />
 		<table type="Y Axis" name="MAF Table" sizey="1">
@@ -1017,7 +1063,6 @@
 	</table>
 	<description>mNADVAJH and mNADVAJL- Ignition adjustment value lower/upper limit speed</description>
 	</table>
-
 	
 	\\Variable Valve Timing//
 

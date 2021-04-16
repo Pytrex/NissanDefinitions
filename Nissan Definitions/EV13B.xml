@@ -9,7 +9,7 @@
 		<market>USDM</market>
 		<make>Nissan</make>
 		<model>350z</model>
-		<submodel>?</submodel>
+		<submodel>HR</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7058</memmodel>
 		<flashmethod>nisprog</flashmethod>
