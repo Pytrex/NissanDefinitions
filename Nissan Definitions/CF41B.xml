@@ -1,10 +1,10 @@
 <rom base="CF41E">
 	<romid>
-		<xmlid>CF41A</xmlid>
+		<xmlid>CF41B</xmlid>
 		<hwid>6GIZ7N4</hwid>
 		<internalidaddress>2401</internalidaddress>
-		<internalidstring>CF41A</internalidstring>
-		<ecuid>CF41A</ecuid>
+		<internalidstring>CF41B</internalidstring>
+		<ecuid>CF41B</ecuid>
 		<year>06</year>
 		<market>JDM</market>
 		<make>Nissan</make>

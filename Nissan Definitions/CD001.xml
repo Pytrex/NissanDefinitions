@@ -1,10 +1,10 @@
 <rom base="CD003">
 	<romid>
-		<xmlid>CD000</xmlid>
+		<xmlid>CD001</xmlid>
 		<hwid>3GIGGN02</hwid>
 		<internalidaddress>824c</internalidaddress>
-		<internalidstring>CD000</internalidstring>
-		<ecuid>CD000</ecuid>
+		<internalidstring>CD001</internalidstring>
+		<ecuid>CD001</ecuid>
 		<year>03</year>
 		<market>US</market>
 		<make>Nissan</make>

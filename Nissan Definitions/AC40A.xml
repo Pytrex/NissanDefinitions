@@ -1,10 +1,10 @@
 <rom base="A2L">
 	<romid>
-		<xmlid>AC405</xmlid>
+		<xmlid>AC40A</xmlid>
 		<hwid>5ZP8N00</hwid>
 		<internalidaddress>8FE6</internalidaddress>
-		<internalidstring>AC405</internalidstring>
-		<ecuid>AC405</ecuid>
+		<internalidstring>AC40A</internalidstring>
+		<ecuid>AC40A</ecuid>
 		<year>2004</year>
 		<market></market>
 		<make>Infiniti</make>
@@ -45,33 +45,30 @@
 		<table type="X Axis" storageaddress="0x9d82" />
 		<table type="Y Axis" storageaddress="0x9d92" />
 	</table>
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xa46c" />
-	<table name="Speed Limiter" storageaddress="0x705E"/>
-	<table name="MAF Idle Voltage Limits" storageaddress="0x70F0" />
-	<table name="MAF low voltage range_b" storageaddress="0x6A87" />
-	<table name="MAF voltage limits" storageaddress="0x6D5A" />
-	<table name="Long Term Fuel Trim Limits" storageaddress="0x69B3" />
-	<table name="Idle BFS Limits" storageaddress="0x70B8" />
-	<table name="MAF Factor" storageaddress="0x691F" />
+
+	<table name="MAF Table" storageaddress="0xA1E8"/>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
+
+	<table name="Target Idle Table" storageaddress="0x988c"/>
+
+	<table name="K-Value" storageaddress="0x6f24"/>
+
+	<table name="Radiator Fan Switch Point" storageaddress="0x697A"/>
+	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4" sizey="6"/>
-	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x9D06" />
-	<table name="Bosch Fuel Cut Table" storageaddress="0x9848"/>
-	<table name="JECS Fuel Cut Table" storageaddress="0x987C"/>
-	<table name="Bosch Fuel Restore Table" storageaddress="0x98F4"/>
-	<table name="JECS Fuel Restore Table" storageaddress="0x99B0"/>
 
-	<table name="MAF Table" storageaddress="0xA1E8">
-	</table>
+	<table name="Open loop fuel target delay" storageaddress="0x6741"/>
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8">
-	</table>
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x6b40" />
+	<table name="Fuel Injector Latency Adder" storageaddress="0x652d" />
+	<table name="Cranking Enrichment" storageaddress="0xA982"/>
+	<table name="Speed Limiter" storageaddress="0x705e" />
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xa46c" />
 
-	<table name="Target Idle Table" storageaddress="0x988c">
-	</table>
-
-	<table name="K-Value" storageaddress="0x6f24">
-	</table>
+	<table name="Throttle Rev Limiter" storageaddress="0x7036"/>
+	<table name="MAF Factor" storageaddress="0x691f" />
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
 

@@ -1,4 +1,4 @@
-<rom base="A2L">
+<rom base="AC81A">
 	<romid>
 		<xmlid>AC810</xmlid>
 		<hwid>5GIWYN14</hwid>
@@ -16,108 +16,6 @@
 		<filesize>1024kb</filesize>
 	</romid>
 
-	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7D65">
-		<table type="X Axis" storageaddress="0xA59E"/>
-		<table type="Y Axis" storageaddress="0xA5AE"/>
-	</table>
-
-	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x7E65">
-		<table type="X Axis" storageaddress="0xA59E"/>
-		<table type="Y Axis" storageaddress="0xA5AE"/>
-	</table>
-
-	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x7F65">
-		<table type="X Axis" storageaddress="0xA59E"/>
-		<table type="Y Axis" storageaddress="0xA5AE"/>
-	</table>
-
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x8405">
-		<table type="X Axis" storageaddress="0xA494"/>
-		<table type="Y Axis" storageaddress="0xA438"/>
-	</table>
-
-	<table name="Target AFR Map (8x8)" storageaddress="0x8695">
-		<table type="X Axis" storageaddress="0xA267"/>
-		<table type="Y Axis" storageaddress="0xA410"/>
-	</table>
-
-	<table name="Target AFR Table (High Detonation)" storageaddress="0xAB12"/>
-	
-	<table name="Exhaust Cam Timing Map (16x16)" storageaddress="0x89A5">
-		<table type="X Axis" storageaddress="0xB236"/>
-		<table type="Y Axis" storageaddress="0xB256"/>
-	</table>
-
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x8AA5">
-		<table type="X Axis" storageaddress="0xB246"/>
-		<table type="Y Axis" storageaddress="0xB266"/>
-	</table>
-
-	<table name="Misfire Diagnosis Map A" storageaddress="0x8C75">
-		<table type="X Axis" storageaddress="0xA2F3"/>
-		<table type="Y Axis" storageaddress="0xA313"/>
-	</table>
-
-	<table name="Misfire Diagnosis Map B" storageaddress="0x8D75">
-		<table type="X Axis" storageaddress="0xA2F3"/>
-		<table type="Y Axis" storageaddress="0xA313"/>
-	</table>
-
-	<table name="Misfire Diagnosis Basic Map" storageaddress="0x8E75">
-		<table type="X Axis" storageaddress="0xA2F3"/>
-		<table type="Y Axis" storageaddress="0xA313"/>
-	</table>
-
-	<table name="MAF Table" storageaddress="0x0B73C"/>
-
-	<table name="Rev Limit (Fuel Cut)" storageaddress="0x791C"/>
-	<table name="Rev Limit (Fuel Restore)" storageaddress="0x7920"/>
-
-	<table name="Throttle Rev Limiter" storageaddress="0x79B4"/>
-
-	<table name="QH0/ Torque Conversion Map" storageaddress="0x9710">
-		<table type="X Axis" storageaddress="0xB71C"/>
-		<table type="Y Axis" storageaddress="0xA454"/>
-	</table>
-
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xCA16">
-		<table type="X Axis" storageaddress="0xCCEA"/>
-		<table type="Y Axis" storageaddress="0xCC5A"/>
-	</table>
-
-	<table name="mMTFDDS_S" storageaddress="0xC616">
-		<table type="X Axis" storageaddress="0xCCAA"/>
-		<table type="Y Axis" storageaddress="0xCCCA"/>
-	</table>
-
-	<table name="mMTFDD_S" storageaddress="0xC816">
-		<table type="X Axis" storageaddress="0xCCAA"/>
-		<table type="Y Axis" storageaddress="0xCCCA"/>
-	</table>
-
-	<table name="Target Idle Table" storageaddress="0xAC58"/>
-
-	<table name="Radiator Fan Switch Point" storageaddress="0x7214"/>
-
-	<table name="Speed Limiter" storageaddress="0x79E6"/>
-
-	<table name="K-Value" storageaddress="0x788A"/>
-
-	<table name="Minimum Injector Pulse Width" storageaddress="0x7A44"/>
-
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0xADF0" sizey="6"/>
-
-	<table name="Open loop fuel target delay" storageaddress="0x6F97"/>
-
-	<table name="Fuel Injector Latency at 14V" storageaddress="0x73F5"/>
-	<table name="Fuel Injector Latency Adder" storageaddress="0x6D38"/>
-	
-	<table name="Cranking Enrichment" storageaddress="0xC056"/>
-	
-	<table name="MAF Idle Voltage Limits" storageaddress="0x7AC4" />
-	<table name="Long Term Fuel Trim Limits" storageaddress="0x24B3" />
-	<table name="Idle BFS Limits" storageaddress="0x7A88" />
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xBA00" />
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7BCC" xorloc="0x7BC4"/>
 

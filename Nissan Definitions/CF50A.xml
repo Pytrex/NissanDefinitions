@@ -17,6 +17,7 @@
 		<filesize>1024kb</filesize>
 	</romid>
 
+Need a ROM dump to verify if CF48D is compatible.
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
 

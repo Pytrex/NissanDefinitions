@@ -1,4 +1,4 @@
-<rom base="A2L">
+<rom base="CE806">
 	<romid>
 		<xmlid>CE805</xmlid>
 		<hwid>5ZVP8N00</hwid>
@@ -16,67 +16,6 @@
 		<filesize>1024kb</filesize>
 	</romid>
 
-	<table name="AFR Conversion Table" storageaddress="0xA44C"/>
-	
-	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x730D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
-	</table>
-
-	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x740D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
-	</table>
-
-	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x750D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
-	</table>
-
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x786D">
-		<table type="X Axis" storageaddress="0x9208" />
-		<table type="Y Axis" storageaddress="0x91AC" />
-	</table>
-
-	<table name="Target AFR Map (8x8)" storageaddress="0x79FD">
-		<table type="X Axis" storageaddress="0x9037" />
-		<table type="Y Axis" storageaddress="0x91A4" />
-	</table>
-
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x7B3D">
-		<table type="X Axis" storageaddress="0x9D82" />
-		<table type="Y Axis" storageaddress="0x9D92" />
-	</table>
-
-	<table name="Target AFR Table (High Detonation)" storageaddress="0x974E"/>
-
-	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
-
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4" sizey="6"/>
-
-	<table name="Fuel Injector Latency at 14V" storageaddress="0x6B40"/>
-
-	<table name="Fuel Injector Latency Adder" storageaddress="0x652D"/>
-
-	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x70A8"/>
-
-	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x9D06"/>
-
-	<table name="Bosch Fuel Cut Table" storageaddress="0x9848"/>
-
-	<table name="JECS Fuel Cut Table" storageaddress="0x987C"/>
-
-	<table name="Bosch Fuel Restore Table" storageaddress="0x98F4"/>
-
-	<table name="JECS Fuel Restore Table" storageaddress="0x99B0"/>
-
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xA46C"/>
-
-	<table name="Target Idle Table" storageaddress="0x988C"/>
-
-	<table name="MAF Table" storageaddress="0x0A1E8"/>
-	<table name="K-Value" storageaddress="0x6f24"/>
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
 

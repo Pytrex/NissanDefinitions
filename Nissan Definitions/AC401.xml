@@ -1,10 +1,10 @@
 <rom base="AC40A">
 	<romid>
-		<xmlid>AC400</xmlid>
+		<xmlid>AC401</xmlid>
 		<hwid>5ZP8N00</hwid>
 		<internalidaddress>8FE6</internalidaddress>
-		<internalidstring>AC400</internalidstring>
-		<ecuid>AC400</ecuid>
+		<internalidstring>AC401</internalidstring>
+		<ecuid>AC401</ecuid>
 		<year>2004</year>
 		<market></market>
 		<make>Infiniti</make>

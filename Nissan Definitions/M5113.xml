@@ -270,15 +270,6 @@
 	
 	<table name="QH0 Vehicle Speed Upper Limit Table" storageaddress="0x8CEE"/>
 	
-<!-- AXIS DATA?
-	0x8E3C 
-	0x8E7C
-	0x9AE6
-	0x9B06
-	0x9B26
-	0x9BE6
-	0x9C26
--->	
 
 	
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4cb4" xorloc="0x4Ca0" />

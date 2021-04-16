@@ -203,99 +203,53 @@
 
 	\\DTCs//
 
-	<table name="DTC 1" storageaddress="0xDDC2"/>
-	
-	<table name="DTC 2" storageaddress="0xDDF9"/>
-	
-	<table name="DTC 3" storageaddress="0xDDF7"/>
-	
-	<table name="DTC 4" storageaddress="0xDDE6"/>
-	
-	<table name="DTC 5" storageaddress="0xDDE7"/>
-	
-	<table name="DTC 6" storageaddress="0xDDE8"/>
-	
-	<table name="DTC 7" storageaddress="0xDDF2"/>
-	
-	<table name="DTC 8" storageaddress="0xDDD4"/>
-	
-	<table name="DTC 9" storageaddress="0xDDE1"/>
-	
-	<table name="DTC 10" storageaddress="0xDDE3"/>
-	
-	<table name="Engine Overheating (P1217)" storageaddress="0xDDC3"/>
-	
-	<table name="PD010" storageaddress="0xDE05"/>
-	
-	<table name="P1805" storageaddress="0xDDE5"/>
-	
-	<table name="P1715" storageaddress="0xDDE4"/>
-	
-	<table name="P2101" storageaddress="0xDDE2"/>
-	
-	<table name="P0850" storageaddress="0xDDCB"/>
-	
-	<table name="P0125" storageaddress="0xDDCA"/>
-	
-	<table name="P1212" storageaddress="0xDDC5"/>
-	
-	<table name="Closed Loop DTCs" storageaddress="0xDDC4"/>
-	
-	<table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDDD9"/>
-	
-	<table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDDD5"/>
-	
-	<table name="PD001 and PD000" storageaddress="0xDDDD"/>
-	
-	<table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDDED"/>
-	
-	<table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDDEE"/>
-	
-	<table name="AFR Sensors DTCs" storageaddress="0xDDFF"/>
-	
-	<table name="AFR Sensors Circuit DTCs" storageaddress="0xDE00"/>
-	
-	<table name="Throttle Control Motor DTCs" storageaddress="0xDDFE"/>
-	
-	<table name="Throttle Position Sensor DTCs" storageaddress="0xDDFD"/>
-	
-	<table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDDFC"/>
-	
-	<table name="MAF Sensor DTCs" storageaddress="0xDDF6"/>
-	
-	<table name="Idle DTCs" storageaddress="0xDDF3"/>
-	
-	<table name="Automatic Transmission DTCs" storageaddress="0xDDF1"/>
-	
-	<table name="Automatic Transmission DTCs 2" storageaddress="0xDDCD"/>
-	
-	<table name="Automatic Transmission DTCs 3" storageaddress="0xDDCC"/>
-	
-	<table name="Automatic Transmission DTCs 4" storageaddress="0xDDF0"/>
-	
-	<table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDDEC"/>
-	
-	<table name="Cruise Control DTCs" storageaddress="0xDDEA"/>
-	
-	<table name="Misfire DTCs" storageaddress="0xDDC7"/>
-	
-	<table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDDDA"/>
-	
-	<table name="Catalyst DTCs" storageaddress="0xDDC8"/>
-	
-	<table name="EVAP DTCs" storageaddress="0xDDD1"/>
-	
-	<table name="Power Steering DTC" storageaddress="0xDDDC"/>
-	
-	<table name="EVAP Leaks DTCs" storageaddress="0xDDFB"/> 
-	
-	<table name="EVAP Pressure Flow DTCs" storageaddress="0xDDFA"/>
-	
-	<table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDDF8"/>
-	
-	<table name="Secondary O2 Knock DTCs" storageaddress="0xDDF5"/> 
-	
-	<table name="Secondary O2 DTCs" storageaddress="0xDDF4"/> 
+    <table name="DTC 1" storageaddress="0xDDC2"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0xDDC3"/>
+    <table name="Closed Loop DTCs" storageaddress="0xDDC4"/>
+    <table name="P1212" storageaddress="0xDDC5"/>
+    <table name="Misfire DTCs" storageaddress="0xDDC7"/>
+    <table name="Catalyst DTCs" storageaddress="0xDDC8"/>
+    <table name="P0125" storageaddress="0xDDCA"/>
+    <table name="P0850" storageaddress="0xDDCB"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0xDDCC"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0xDDCD"/>
+    <table name="EVAP DTCs" storageaddress="0xDDD1"/>
+    <table name="DTC 8" storageaddress="0xDDD4"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDDD5"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDDD9"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDDDA"/>
+    <table name="Power Steering DTC" storageaddress="0xDDDC"/>
+    <table name="PD001 and PD000" storageaddress="0xDDDD"/>
+    <table name="DTC 9" storageaddress="0xDDE1"/>
+    <table name="P2101" storageaddress="0xDDE2"/>
+    <table name="DTC 10" storageaddress="0xDDE3"/>
+    <table name="P1715" storageaddress="0xDDE4"/>
+    <table name="P1805" storageaddress="0xDDE5"/>
+    <table name="DTC 4" storageaddress="0xDDE6"/>
+    <table name="DTC 5" storageaddress="0xDDE7"/>
+    <table name="DTC 6" storageaddress="0xDDE8"/>
+    <table name="Cruise Control DTCs" storageaddress="0xDDEA"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDDEC"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDDED"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDDEE"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0xDDF0"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0xDDF1"/>
+    <table name="DTC 7" storageaddress="0xDDF2"/>
+    <table name="Idle DTCs" storageaddress="0xDDF3"/>
+    <table name="Secondary O2 DTCs" storageaddress="0xDDF4"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0xDDF5"/>
+    <table name="MAF Sensor DTCs" storageaddress="0xDDF6"/>
+    <table name="DTC 3" storageaddress="0xDDF7"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDDF8"/>
+    <table name="DTC 2" storageaddress="0xDDF9"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0xDDFA"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0xDDFB"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDDFC"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0xDDFD"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0xDDFE"/>
+    <table name="AFR Sensors DTCs" storageaddress="0xDDFF"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0xDE00"/>
+    <table name="PD010" storageaddress="0xDE05"/>
 
 
 

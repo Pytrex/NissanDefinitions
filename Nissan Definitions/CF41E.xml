@@ -1,20 +1,21 @@
 <rom base="A2L">
 	<romid>
-		<xmlid>CM40C</xmlid>
-		<hwid>6ZV2RN10</hwid>
+		<xmlid>CF41E</xmlid>
+		<hwid>6GIZ7N4</hwid>
 		<internalidaddress>2401</internalidaddress>
-		<internalidstring>CM40C</internalidstring>
-		<ecuid>CM40C</ecuid>
+		<internalidstring>CF41E</internalidstring>
+		<ecuid>CF41E</ecuid>
 		<year>06</year>
-		<market>USDM</market>
-		<make>Infiniti</make>
-		<model>G35</model>
-		<submodel>Sport</submodel>
-		<transmission>AT</transmission>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 	</romid>
+
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DED">
 		<table type="X Axis" storageaddress="0xB640"/>
 		<table type="Y Axis" storageaddress="0xB650"/>
@@ -34,24 +35,13 @@
 		<table type="X Axis" storageaddress="0xb2f1" />
 		<table type="Y Axis" storageaddress="0xb2f5" />
 	</table>
-	<table name="Fuel Compensation Open-Loop" storageaddress="0x971D">
-		<table type="X Axis" storageaddress="0xB2F9"/>
-		<table type="Y Axis" storageaddress="0xB4A2"/>
-	</table>
-	<!--<table name="mMTFA_RSA" storageaddress="0x99ED">
-		<table type="X Axis" storageaddress="0xB640"/>
-		<table type="Y Axis" storageaddress="0xB650"/>
-	</table>-->
 
-	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8AFC"/>
-
-	<table name="Throttle Open Degree" storageaddress="0xCA9C"/>
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x9469">
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x948D">
 		<table type="X Axis" storageaddress="0xB526"/>
 		<table type="Y Axis" storageaddress="0xB4CA"/>
 	</table>
 
-	<table name="Target AFR Map (8x8)" storageaddress="0x96F9">
+	<table name="Target AFR Map (8x8)" storageaddress="0x971D">
 		<table type="X Axis" storageaddress="0xB2f9"/>
 		<table type="Y Axis" storageaddress="0xB4a2"/>
 	</table>
@@ -67,8 +57,6 @@
 		<table type="X Axis" storageaddress="0xC308"/>
 		<table type="Y Axis" storageaddress="0xC328"/>
 	</table>
-	<table name="O2 Map1" storageaddress="0xC48C"/>
-	<table name="Secondary O2 DTCs" storageaddress="0xDD94"/>
 
 	<table name="Misfire Diagnosis Map A" storageaddress="0x9d0d">
 		<table type="X Axis" storageaddress="0xb385"/>
@@ -84,11 +72,11 @@
 		<table type="X Axis" storageaddress="0xb385"/>
 		<table type="Y Axis" storageaddress="0xb3a5"/>
 	</table>
-	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB850"/>
 
 	<table name="MAF Table" storageaddress="0x0c83e"/>
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x899A"/>
+
 	<table name="Throttle Rev Limiter" storageaddress="0x8a32"/>
 
 	<table name="QH0/ Torque Conversion Map" storageaddress="0xA7A8">
@@ -111,11 +99,6 @@
 		<table type="Y Axis" storageaddress="0xDDF8"/>
 	</table>
 
-	<!--<table name="Injection End Timing" storageaddress="0x920D">
-		<table type="X Axis" storageaddress="0xB351"/>
-		<table type="Y Axis" storageaddress="0xB2E9"/>
-	</table>-->
-
 	<table name="Target Idle Table" storageaddress="0xbd02"/>
 
 	<table name="Radiator Fan High Coolant" storageaddress="0x8287"/>
@@ -136,8 +119,6 @@
 
 	<table name="Crank Fueling TP Value Table" storageaddress="0xd1a2"/>
 
-		<table name="Engine Torque Map" storageaddress="0xAF28"/>
-
 	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4C" />
 
 	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C5" />
@@ -145,24 +126,7 @@
 	<table name="Load Base Fuel Schedule Table" storageaddress="0xcb2c" />
 	<table name="MAF Factor" storageaddress="0x8226" />
 
-	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC26C"/>
-	<table name="Bosch Fuel Cut Table" storageaddress="0xBCBE"/>
-	<table name="JECS Fuel Cut Table" storageaddress="0xBCF2"/>
-	<table name="Bosch Fuel Restore Table" storageaddress="0xBE6E"/>
-	<table name="JECS Fuel Restore Table" storageaddress="0xBD6A"/>
- 	<!--<table name="Fuel Cut Timing Retard Delay Table" storageaddress="0xB828"/>-->
-	<table name="mTISCTA" storageaddress="0xBA24"/>
 	<table name="Catalyst DTCs" storageaddress="0xdd68"/>
-	<table name="Secondary O2 Heaters DTC Fix (P0037, P0038, P0057, P0058)" storageaddress="0x82A6" />
-
-        <table name="CID1100 supmask"  storageaddress="0xB563"/>
-        <table name="CID1120 supmask"  storageaddress="0xB56F"/>
-        <table name="CID1140 supmask"  storageaddress="0xB567"/>
-        <table name="CID1160 supmask"  storageaddress="0xB56B"/>
-        <table name="CID1200 supmask"  storageaddress="0xB57B"/>
-        <table name="CID1220 supmask"  storageaddress="0xB57F"/>
-        <table name="CID1240 supmask"  storageaddress="0xB583"/>
-        <table name="CID1300 supmask"  storageaddress="0xB587"/>
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
 

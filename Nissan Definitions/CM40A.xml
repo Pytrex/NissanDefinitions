@@ -1,10 +1,10 @@
 <rom base="CM40C">
 	<romid>
-		<xmlid>CM40B</xmlid>
+		<xmlid>CM40A</xmlid>
 		<hwid>6ZV2RN10</hwid>
 		<internalidaddress>2401</internalidaddress>
-		<internalidstring>CM40B</internalidstring>
-		<ecuid>CM40B</ecuid>
+		<internalidstring>CM40A</internalidstring>
+		<ecuid>CM40A</ecuid>
 		<year>06</year>
 		<market>USDM</market>
 		<make>Infiniti</make>

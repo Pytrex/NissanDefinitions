@@ -5191,7 +5191,7 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 	
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC"/>
 
-</rom><rom base="A2L">
+</rom><rom base="AC40A">
 	<romid>
 		<xmlid>AC400</xmlid>
 		<hwid>5ZP8N00</hwid>
@@ -5209,59 +5209,49 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 		<filesize>1024kb</filesize>
 	</romid>
 
-	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x730D">
-		<table type="X Axis" storageaddress="0x92ee" />
-		<table type="Y Axis" storageaddress="0x92fe" />
-	</table>
 
-	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x740D">
-		<table type="X Axis" storageaddress="0x92ee" />
-		<table type="Y Axis" storageaddress="0x92fe" />
-	</table>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
 
-	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x750D">
-		<table type="X Axis" storageaddress="0x92ee" />
-		<table type="Y Axis" storageaddress="0x92fe" />
-	</table>
+</rom>
+<rom base="AC40A">
+	<romid>
+		<xmlid>AC401</xmlid>
+		<hwid>5ZP8N00</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC401</internalidstring>
+		<ecuid>AC401</ecuid>
+		<year>2004</year>
+		<market></market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
 
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x786D">
-		<table type="X Axis" storageaddress="0x9208" />
-		<table type="Y Axis" storageaddress="0x91ac" />
-	</table>
 
-	<table name="Target AFR Map (8x8)" storageaddress="0x79FD">
-		<table type="X Axis" storageaddress="0x9037" />
-		<table type="Y Axis" storageaddress="0x91A4" />
-	</table>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
 
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x7B3D">
-		<table type="X Axis" storageaddress="0x9d82" />
-		<table type="Y Axis" storageaddress="0x9d92" />
-	</table>
-
-	<table name="MAF Table" storageaddress="0xA1E8"/>
-
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
-
-	<table name="Target Idle Table" storageaddress="0x988c"/>
-
-	<table name="K-Value" storageaddress="0x6f24"/>
-
-	<table name="Radiator Fan Switch Point" storageaddress="0x697A"/>
-	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
-
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4" sizey="6"/>
-
-	<table name="Open loop fuel target delay" storageaddress="0x6741"/>
-
-	<table name="Fuel Injector Latency at 14V" storageaddress="0x6b40" />
-	<table name="Fuel Injector Latency Adder" storageaddress="0x652d" />
-	<table name="Cranking Enrichment" storageaddress="0xA982"/>
-	<table name="Speed Limiter" storageaddress="0x705e" />
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xa46c" />
-
-	<table name="Throttle Rev Limiter" storageaddress="0x7036"/>
-	<table name="MAF Factor" storageaddress="0x691f" />
+</rom>
+<rom base="AC406">
+	<romid>
+		<xmlid>AC405</xmlid>
+		<hwid>5ZP8N00</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC405</internalidstring>
+		<ecuid>AC405</ecuid>
+		<year>2004</year>
+		<market></market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
 
@@ -5346,17 +5336,17 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 </rom>
 <rom base="A2L">
 	<romid>
-		<xmlid>AC406</xmlid>
+		<xmlid>AC40A</xmlid>
 		<hwid>5ZP8N00</hwid>
 		<internalidaddress>8FE6</internalidaddress>
-		<internalidstring>AC406</internalidstring>
-		<ecuid>AC406</ecuid>
+		<internalidstring>AC40A</internalidstring>
+		<ecuid>AC40A</ecuid>
 		<year>2004</year>
 		<market></market>
 		<make>Infiniti</make>
 		<model>G35</model>
 		<submodel>Base</submodel>
-		<transmission>MT</transmission>
+		<transmission>AT</transmission>
 		<memmodel>SH7058</memmodel>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>1024kb</filesize>
@@ -5392,17 +5382,29 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 		<table type="Y Axis" storageaddress="0x9d92" />
 	</table>
 
-	<table name="MAF Table" storageaddress="0xA1E8">
-	</table>
+	<table name="MAF Table" storageaddress="0xA1E8"/>
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8">
-	</table>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
 
-	<table name="Target Idle Table" storageaddress="0x988c">
-	</table>
+	<table name="Target Idle Table" storageaddress="0x988c"/>
 
-	<table name="K-Value" storageaddress="0x6f24">
-	</table>
+	<table name="K-Value" storageaddress="0x6f24"/>
+
+	<table name="Radiator Fan Switch Point" storageaddress="0x697A"/>
+	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
+
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4" sizey="6"/>
+
+	<table name="Open loop fuel target delay" storageaddress="0x6741"/>
+
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x6b40" />
+	<table name="Fuel Injector Latency Adder" storageaddress="0x652d" />
+	<table name="Cranking Enrichment" storageaddress="0xA982"/>
+	<table name="Speed Limiter" storageaddress="0x705e" />
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xa46c" />
+
+	<table name="Throttle Rev Limiter" storageaddress="0x7036"/>
+	<table name="MAF Factor" storageaddress="0x691f" />
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
 
@@ -5479,13 +5481,35 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B54" xorloc="0x7B4C" />
 
-</rom><rom base="A2L">
+</rom><rom base="AC81A">
 	<romid>
 		<xmlid>AC810</xmlid>
 		<hwid>5GIWYN14</hwid>
 		<internalidaddress>A216</internalidaddress>
 		<internalidstring>AC810</internalidstring>
 		<ecuid>AC810</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7BCC" xorloc="0x7BC4"/>
+
+</rom>
+<rom base="A2L">
+	<romid>
+		<xmlid>AC81A</xmlid>
+		<hwid>5GIWYN14</hwid>
+		<internalidaddress>A216</internalidaddress>
+		<internalidstring>AC81A</internalidstring>
+		<ecuid>AC81A</ecuid>
 		<year>06</year>
 		<market>USDM</market>
 		<make>Infiniti</make>
@@ -5899,13 +5923,73 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6640" xorloc="0x6638" />
 
 </rom>
-<rom base="A2L">
+<rom base="CD003">
 	<romid>
 		<xmlid>CD000</xmlid>
 		<hwid>3GIGGN02</hwid>
 		<internalidaddress>824c</internalidaddress>
 		<internalidstring>CD000</internalidstring>
 		<ecuid>CD000</ecuid>
+		<year>03</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Perf</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67AC" xorloc="0x67A4" />
+</rom>
+<rom base="CD003">
+	<romid>
+		<xmlid>CD001</xmlid>
+		<hwid>3GIGGN02</hwid>
+		<internalidaddress>824c</internalidaddress>
+		<internalidstring>CD001</internalidstring>
+		<ecuid>CD001</ecuid>
+		<year>03</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Perf</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67AC" xorloc="0x67A4" />
+</rom>
+<rom base="CD003">
+	<romid>
+		<xmlid>CD002</xmlid>
+		<hwid>3GIGGN02</hwid>
+		<internalidaddress>824c</internalidaddress>
+		<internalidstring>CD002</internalidstring>
+		<ecuid>CD002</ecuid>
+		<year>03</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Perf</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67AC" xorloc="0x67A4" />
+</rom>
+<rom base="A2L">
+	<romid>
+		<xmlid>CD003</xmlid>
+		<hwid>3GIGGN02</hwid>
+		<internalidaddress>824c</internalidaddress>
+		<internalidstring>CD003</internalidstring>
+		<ecuid>CD003</ecuid>
 		<year>03</year>
 		<market>US</market>
 		<make>Nissan</make>
@@ -5999,11 +6083,30 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 	
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67AC" xorloc="0x67A4" />
 </rom>
-<rom base="A2L">
+<rom base="CD008">
+    <romid>
+        <xmlid>CD005</xmlid>
+        <hwid>3GIJ7N04</hwid>
+        <internalidaddress>8290</internalidaddress>
+        <internalidstring>CD005</internalidstring>
+        <ecuid>CD005</ecuid>
+        <year>03</year>
+        <market>US</market>
+        <make>Nissan</make>
+        <model>350Z</model>
+        <submodel>Track</submodel>
+        <transmission>MT</transmission>
+        <memmodel>SH7055</memmodel>
+        <flashmethod>nisprog</flashmethod>
+        <filesize>512kb</filesize>
+    </romid>
+
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+</rom><rom base="CD008">
     <romid>
         <xmlid>CD006</xmlid>
         <hwid>3GIJ7N04</hwid>
-        <internalidaddress>828c</internalidaddress>
+        <internalidaddress>8290</internalidaddress>
         <internalidstring>CD006</internalidstring>
         <ecuid>CD006</ecuid>
         <year>03</year>
@@ -6017,94 +6120,102 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
         <filesize>512kb</filesize>
     </romid>
 
-    <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x68F5">
-        <table type="X Axis" storageaddress="0x8E0F" />
-        <table type="Y Axis" storageaddress="0x8E1F" />
-    </table>
 
-    <table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x69F5">
-        <table type="X Axis" storageaddress="0x8E0F" />
-        <table type="Y Axis" storageaddress="0x8E1F" />
-    </table>
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+</rom><rom base="CD008">
+    <romid>
+        <xmlid>CD007</xmlid>
+        <hwid>3GIJ7N04</hwid>
+        <internalidaddress>8290</internalidaddress>
+        <internalidstring>CD007</internalidstring>
+        <ecuid>CD007</ecuid>
+        <year>03</year>
+        <market>US</market>
+        <make>Nissan</make>
+        <model>350Z</model>
+        <submodel>Track</submodel>
+        <transmission>MT</transmission>
+        <memmodel>SH7055</memmodel>
+        <flashmethod>nisprog</flashmethod>
+        <filesize>512kb</filesize>
+    </romid>
 
-    <table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6AF5">
-        <table type="X Axis" storageaddress="0x8E0F" />
-        <table type="Y Axis" storageaddress="0x8E1F" />
-    </table>
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
 
-    <table name="Fuel Compensation Map (16x16)" storageaddress="0x6DB5">
-        <table type="X Axis" storageaddress="0x846E" />
-        <table type="Y Axis" storageaddress="0x8412" />
-    </table>
+</rom><rom base="A2L">
+    <romid>
+        <xmlid>CD008</xmlid>
+        <hwid>3GILXN05</hwid>
+        <internalidaddress>8290</internalidaddress>
+        <internalidstring>CD008</internalidstring>
+        <ecuid>CD008</ecuid>
+        <year>03</year>
+        <market>US</market>
+        <make>Nissan</make>
+        <model>350Z</model>
+        <submodel>Track</submodel>
+        <transmission>MT</transmission>
+        <memmodel>SH7055</memmodel>
+        <flashmethod>nisprog</flashmethod>
+        <filesize>512kb</filesize>
+    </romid>
 
-    <table name="Target AFR Map (8x8)" storageaddress="0x06FC5">
-        <table type="X Axis" storageaddress="0x82E5" />  
-        <table type="Y Axis" storageaddress="0x840A" />  
-    </table>
+ 
 
-    <table name="Intake Cam Timing Map (16x16)" storageaddress="0x7105">
-        <table type="X Axis" storageaddress="0x8e0f" />
-        <table type="Y Axis" storageaddress="0x8e1f" />
-    </table>
+	\\DTCs//
 
-    <table name="Bosch Fuel Cut Table" storageaddress="0x8A03"/>
-    <table name="JECS Fuel Cut Table" storageaddress="0x8A27"/>
-    <table name="Bosch Fuel Restore Table" storageaddress="0x8A77"/>
-    <table name="JECS Fuel Restore Table" storageaddress="0x8B45"/>
-    
-    <table name="Target Idle Table" storageaddress="0x8A3F" />
+    <table name="DTC 1" storageaddress="0x9F30"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0x9F31"/>
+    <table name="Closed Loop DTCs" storageaddress="0x9F32"/>
+    <table name="P1212" storageaddress="0x9F33"/>
+    <table name="Misfire DTCs" storageaddress="0x9F35"/>
+    <table name="Catalyst DTCs" storageaddress="0x9F36"/>
+    <table name="P0125" storageaddress="0x9F38"/>
+    <table name="P0850" storageaddress="0x9F39"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0x9F3A"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0x9F3B"/>
+    <table name="EVAP DTCs" storageaddress="0x9F3F"/>
+    <table name="DTC 8" storageaddress="0x9F42"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0x9F43"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0x9F47"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0x9F48"/>
+    <table name="Power Steering DTC" storageaddress="0x9F4A"/>
+    <table name="PD001 and PD000" storageaddress="0x9F4B"/>
+    <table name="DTC 9" storageaddress="0x9F4F"/>
+    <table name="P2101" storageaddress="0x9F50"/>
+    <table name="DTC 10" storageaddress="0x9F51"/>
+    <table name="P1715" storageaddress="0x9F52"/>
+    <table name="P1805" storageaddress="0x9F53"/>
+    <table name="DTC 4" storageaddress="0x9F54"/>
+    <table name="DTC 5" storageaddress="0x9F55"/>
+    <table name="DTC 6" storageaddress="0x9F56"/>
+    <table name="Cruise Control DTCs" storageaddress="0x9F58"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0x9F5A"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0x9F5B"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0x9F5C"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0x9F5E"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0x9F5F"/>
+    <table name="DTC 7" storageaddress="0x9F60"/>
+    <table name="Idle DTCs" storageaddress="0x9F61"/>
+    <table name="Secondary O2 DTCs" storageaddress="0x9F62"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0x9F63"/>
+    <table name="MAF Sensor DTCs" storageaddress="0x9F64"/>
+    <table name="DTC 3" storageaddress="0x9F65"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0x9F66"/>
+    <table name="DTC 2" storageaddress="0x9F67"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0x9F68"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0x9F69"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0x9F6A"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0x9F6B"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0x9F6C"/>
+    <table name="AFR Sensors DTCs" storageaddress="0x9F6D"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0x9F6E"/>
+    <table name="PD010" storageaddress="0x9F73"/>
 
-    <table name="Speed Limiter" storageaddress="0x66AE" />
-    <table name="Speed Limiter (km/h)" storageaddress="0x66AE" />
 
-    <table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6644"/>
 
-    <table name="MAF Table" storageaddress="0x9002"/>
 
-    <table name="K-Value" storageaddress="0x65E4"/>
-
-    <table name="QH0/ Torque Conversion Map" storageaddress="0x7AA0">
-        <table type="Y Axis" storageaddress="0x9f70" />
-        <table type="X Axis" storageaddress="0xA000" />
-    </table>
-
-    <table name="QH0/ Torque Conversion Map 2" storageaddress="0x9D2C">
-        <table type="Y Axis" storageaddress="0x9f70" />
-        <table type="X Axis" storageaddress="0xA000" />
-    </table>
-
-    <table name="Engine Torque Map" storageaddress="0x7F20">
-        <table type="X Axis" storageaddress="0x5060" />
-        <table type="Y Axis" storageaddress="0x7D81" />
-    </table>
-
-    <table name="Misfire Diagnosis Map A" storageaddress="0x7275">
-        <table type="X Axis" storageaddress="0x8E0F" />
-        <table type="Y Axis" storageaddress="0x8E1F" />
-    </table>
-
-    <table name="Misfire Diagnosis Map B" storageaddress="0x7375">
-        <table type="X Axis" storageaddress="0x8E0F" />
-        <table type="Y Axis" storageaddress="0x8E1F" />
-    </table>
-
-    <table name="Misfire Diagnosis Basic Map" storageaddress="0x7475">
-        <table type="X Axis" storageaddress="0x8E0F" />
-        <table type="Y Axis" storageaddress="0x8E1F" />
-    </table>
-
-    <table storageaddress="0x8a3F" name="Target Idle Table"/>
-
-    <table name="Fuel Injector Latency at 14V" storageaddress="0x6352" />
-    <table name="Fuel Injector Latency Adder" storageaddress="0x5E65" />
-    <table name="MAF Idle Voltage Limits" storageaddress="0x671A" />
-    <table name="Long Term Fuel Trim Limits" storageaddress="0x622b" />
-    <table name="Idle BFS Limits" storageaddress="0x66e6" />
-    <table name="MAF Factor" storageaddress="0x61ad" />
-
-    <table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8DB3" />
-
-    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67ec" xorloc="0x67e4" />
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
 </rom><rom base="A2L">
 	<romid>
 		<xmlid>CD101</xmlid>
@@ -6663,7 +6774,7 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 4TTZVEM41N1 might be HWID, verify with Nisrom.
 
 </rom>
-<rom base="A2L">
+<rom base="CE806">
 	<romid>
 		<xmlid>CE805</xmlid>
 		<hwid>5ZVP8N00</hwid>
@@ -6681,67 +6792,6 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 		<filesize>1024kb</filesize>
 	</romid>
 
-	<table name="AFR Conversion Table" storageaddress="0xA44C"/>
-	
-	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x730D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
-	</table>
-
-	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x740D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
-	</table>
-
-	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x750D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
-	</table>
-
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x786D">
-		<table type="X Axis" storageaddress="0x9208" />
-		<table type="Y Axis" storageaddress="0x91AC" />
-	</table>
-
-	<table name="Target AFR Map (8x8)" storageaddress="0x79FD">
-		<table type="X Axis" storageaddress="0x9037" />
-		<table type="Y Axis" storageaddress="0x91A4" />
-	</table>
-
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x7B3D">
-		<table type="X Axis" storageaddress="0x9D82" />
-		<table type="Y Axis" storageaddress="0x9D92" />
-	</table>
-
-	<table name="Target AFR Table (High Detonation)" storageaddress="0x974E"/>
-
-	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
-
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4" sizey="6"/>
-
-	<table name="Fuel Injector Latency at 14V" storageaddress="0x6B40"/>
-
-	<table name="Fuel Injector Latency Adder" storageaddress="0x652D"/>
-
-	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x70A8"/>
-
-	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x9D06"/>
-
-	<table name="Bosch Fuel Cut Table" storageaddress="0x9848"/>
-
-	<table name="JECS Fuel Cut Table" storageaddress="0x987C"/>
-
-	<table name="Bosch Fuel Restore Table" storageaddress="0x98F4"/>
-
-	<table name="JECS Fuel Restore Table" storageaddress="0x99B0"/>
-
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xA46C"/>
-
-	<table name="Target Idle Table" storageaddress="0x988C"/>
-
-	<table name="MAF Table" storageaddress="0x0A1E8"/>
-	<table name="K-Value" storageaddress="0x6f24"/>
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
 
@@ -6827,13 +6877,34 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
 
-</rom><rom base="A2L">
+</rom><rom base="CE811">
 	<romid>
 		<xmlid>CE810</xmlid>
 		<hwid>5ZVP8N00</hwid>
 		<internalidaddress>8FE6</internalidaddress>
 		<internalidstring>CE810</internalidstring>
 		<ecuid>CE810</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
+
+</rom>
+<rom base="A2L">
+	<romid>
+		<xmlid>CE811</xmlid>
+		<hwid>5ZVP8N00</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>CE811</internalidstring>
+		<ecuid>CE811</ecuid>
 		<year>06</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -6969,7 +7040,52 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 	<table name="JECS Fuel Restore Table" storageaddress="0xABF0"/>
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B54" xorloc="0x7B4C"/>
 
-</rom><rom base="A2L">
+</rom><rom base="CF48D">
+	<romid>
+		<xmlid>CF40A</xmlid>
+		<hwid>6GIZ7N4</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF40A</internalidstring>
+		<caseid>Lucky</caseid>
+		<ecuid>CF40A</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Touring</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
+
+</rom><rom base="CF43D">
+	<romid>
+		<xmlid>CF40C</xmlid>
+		<hwid>6GI3BN5</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF40C</internalidstring>
+		<ecuid>CF40C</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom>
+<rom base="CF43D">
 	<romid>
 		<xmlid>CF40E</xmlid>
 		<hwid>6GI3BN5</hwid>
@@ -6987,159 +7103,81 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
 		<filesize>1024kb</filesize>
 	</romid>
 
-	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DED">
-		<table type="X Axis" storageaddress="0xB640"/>
-		<table type="Y Axis" storageaddress="0xB650"/>
-	</table>
 
-	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x8EED">
-		<table type="X Axis" storageaddress="0xB640"/>
-		<table type="Y Axis" storageaddress="0xB650"/>
-	</table>
-
-	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x8FED">
-		<table type="X Axis" storageaddress="0xB640"/>
-		<table type="Y Axis" storageaddress="0xB650"/>
-	</table>
-
-	<table  name="MBT Flame Speed Map"  storageaddress="0x91ad">
-		<table type="X Axis" storageaddress="0xb2f1" />
-		<table type="Y Axis" storageaddress="0xb2f5" />
-	</table>
-
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x948D">
-		<table type="X Axis" storageaddress="0xB526"/>
-		<table type="Y Axis" storageaddress="0xB4CA"/>
-	</table>
-
-	<table name="Target AFR Map (8x8)" storageaddress="0x971D">
-		<table type="X Axis" storageaddress="0xB2f9"/>
-		<table type="Y Axis" storageaddress="0xB4a2"/>
-	</table>
-
-	<table name="Target AFR Table (High Detonation)" storageaddress="0xbbb4"/>
-
-	<table name="Exhaust Cam Timing Map (16x16)" storageaddress="0x9A2D">
-		<table type="X Axis" storageaddress="0xC2f8"/>
-		<table type="Y Axis" storageaddress="0xC318"/>
-	</table>
-
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x9B2D">
-		<table type="X Axis" storageaddress="0xC308"/>
-		<table type="Y Axis" storageaddress="0xC328"/>
-	</table>
-
-	<table name="Misfire Diagnosis Map A" storageaddress="0x9d0d">
-		<table type="X Axis" storageaddress="0xb385"/>
-		<table type="Y Axis" storageaddress="0xb3a5"/>
-	</table>
-
-	<table name="Misfire Diagnosis Map B" storageaddress="0x9e0d">
-		<table type="X Axis" storageaddress="0xb385"/>
-		<table type="Y Axis" storageaddress="0xb3a5"/>
-	</table>
-
-	<table name="Misfire Diagnosis Basic Map" storageaddress="0x9f0d">
-		<table type="X Axis" storageaddress="0xb385"/>
-		<table type="Y Axis" storageaddress="0xb3a5"/>
-	</table>
-
-	<table name="LTFT Map BFS Axis" storageaddress="0xBBF4"/>
-
-	<table name="LTFT Map RPM Axis" storageaddress="0xBCB6"/>
-
-	<table name="Unburned Gas Density Table" storageaddress="0xB2E9"/>
-
-	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB850"/>
-
-	<table name="Dwell RPM Table" storageaddress="0xB7B0"/>
-
-	<table name="Dwell Battery Table" storageaddress="0xB7B8"/>
-
-	<table name="MAF Table" storageaddress="0x0c83e"/>
-
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x899A"/>
-
-	<table name="Throttle Rev Limiter" storageaddress="0x8a32"/>
-
-	<table name="QH0/ Torque Conversion Map" storageaddress="0xA7A8">
-		<table type="X Axis" storageaddress="0xC81E"/>
-		<table type="Y Axis" storageaddress="0xb4e6"/>
-	</table>
-
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xDB62">
-		<table type="X Axis" storageaddress="0xde38"/>
-		<table type="Y Axis" storageaddress="0xdda8"/>
-	</table>
-
-	<table name="Engine Torque Map" storageaddress="0xAF28"/>
-
-	<table name="mMTFDD" storageaddress="0xA3A8">
-		<table type="X Axis" storageaddress="0xDE18"/>
-		<table type="Y Axis" storageaddress="0xDDF8"/>
-	</table>
-
-	<table name="mMTFDDS" storageaddress="0xA5A8">
-		<table type="X Axis" storageaddress="0xDE18"/>
-		<table type="Y Axis" storageaddress="0xDDF8"/>
-	</table>
-
-	<table name="mMTFDDS_S" storageaddress="0xD762">
-		<table type="X Axis" storageaddress="0xDE18"/>
-		<table type="Y Axis" storageaddress="0xDDF8"/>
-	</table>
-
-	<table name="mMTFDD_S" storageaddress="0xD962">
-		<table type="X Axis" storageaddress="0xDE18"/>
-		<table type="Y Axis" storageaddress="0xDDF8"/>
-	</table>
-
-	<table name="Target Idle Table" storageaddress="0xbd02"/>
-
-	<table name="Radiator Fan High Coolant" storageaddress="0x8287"/>
-
-	<table name="Speed Limiter" storageaddress="0x8A6A"/>
-
-	<table name="Bosch Fuel Cut Table" storageaddress="0xBCBE"/>
-	<table name="JECS Fuel Cut Table" storageaddress="0xBCF2"/>
-	<table name="Bosch Fuel Restore Table" storageaddress="0xBD6A"/>
-	<table name="JECS Fuel Restore Table" storageaddress="0xBE6E"/>
-
-	<table name="K-Value" storageaddress="0x8906"/>
-
-	<table name="Minimum Injector Pulse Width" storageaddress="0x8ACC"/>
-
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2" sizey="6"/>
-
-	<table name="Closed Loop to Open Loop Delay" storageaddress="0x8003"/>
-
-	<table name="Fuel Injector Latency at 14V" storageaddress="0x846C"/>
-
-	<table name="Fuel Injector Latency Adder" storageaddress="0x7DA3"/>
-
-	<table name="Crank Fueling TP Value Table" storageaddress="0xd1a2"/>
-
-	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4C" />
-
-	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C5" />
-	<table name="Idle BFS Limits" storageaddress="0x8B10" />
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xcb2c" />
-	<table name="MAF Factor" storageaddress="0x8226" />
-
-	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC26C" />
-
-	<table name="Catalyst DTCs" storageaddress="0xdd68"/>
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
 
 </rom>
-<rom base="A2L">
+<rom base="CF41E">
 	<romid>
 		<xmlid>CF41A</xmlid>
 		<hwid>6GIZ7N4</hwid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CF41A</internalidstring>
 		<ecuid>CF41A</ecuid>
+		<year>06</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom>
+<rom base="CF41E">
+	<romid>
+		<xmlid>CF41B</xmlid>
+		<hwid>6GIZ7N4</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF41B</internalidstring>
+		<ecuid>CF41B</ecuid>
+		<year>06</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom>
+<rom base="CF41E">
+	<romid>
+		<xmlid>CF41D</xmlid>
+		<hwid>6GIZ7N4</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF41D</internalidstring>
+		<ecuid>CF41D</ecuid>
+		<year>06</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom>
+<rom base="A2L">
+	<romid>
+		<xmlid>CF41E</xmlid>
+		<hwid>6GIZ7N4</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF41E</internalidstring>
+		<ecuid>CF41E</ecuid>
 		<year>06</year>
 		<market>JDM</market>
 		<make>Nissan</make>
@@ -7507,49 +7545,54 @@ Notes;
 0xDD78 is a value of 3.
 0xDD8B might be exhaust cam DTCs! (CF43D doesn't have CC)
 
+    <table name="DTC 1" storageaddress="0xDD62"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0xDD63"/>
+    <table name="Closed Loop DTCs" storageaddress="0xDD64"/>
+    <table name="P1212" storageaddress="0xDD65"/>
+    <table name="Misfire DTCs" storageaddress="0xDD67"/>
+    <table name="Catalyst DTCs" storageaddress="0xDD68"/>
+    <table name="P0125" storageaddress="0xDD6A"/>
+    <table name="P0850" storageaddress="0xDD6B"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0xDD6C"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0xDD6D"/>
+    <table name="EVAP DTCs" storageaddress="0xDD71"/>
+    <table name="DTC 8" storageaddress="0xDD74"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDD75"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDD79"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDD7A"/>
+    <table name="Power Steering DTC" storageaddress="0xDD7C"/>
+    <table name="PD001 and PD000" storageaddress="0xDD7D"/>
+    <table name="DTC 9" storageaddress="0xDD81"/>
+    <table name="P2101" storageaddress="0xDD82"/>
+    <table name="DTC 10" storageaddress="0xDD83"/>
+    <table name="P1715" storageaddress="0xDD84"/>
+    <table name="P1805" storageaddress="0xDD85"/>
+    <table name="DTC 4" storageaddress="0xDD86"/>
+    <table name="DTC 5" storageaddress="0xDD87"/>
+    <table name="DTC 6" storageaddress="0xDD88"/>
+    <table name="Cruise Control DTCs" storageaddress="0xDD8A"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDD8C"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDD8D"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDD8E"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0xDD90"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0xDD91"/>
+    <table name="DTC 7" storageaddress="0xDD92"/>
+    <table name="Idle DTCs" storageaddress="0xDD93"/>
+    <table name="Secondary O2 DTCs" storageaddress="0xDD94"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0xDD95"/>
+    <table name="MAF Sensor DTCs" storageaddress="0xDD96"/>
+    <table name="DTC 3" storageaddress="0xDD97"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDD98"/>
+    <table name="DTC 2" storageaddress="0xDD99"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0xDD9A"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0xDD9B"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDD9C"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0xDD9D"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0xDD9E"/>
+    <table name="AFR Sensors DTCs" storageaddress="0xDD9F"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0xDDA0"/>
+    <table name="PD010" storageaddress="0xDDA5"/>
 
-	<table name="DTC 1" storageaddress="0xDD62"/> (extend / shorten)
-	<table name="DTC 2" storageaddress="0xDD99"/> (extend MAYBE. Depends if extended currently or not)
-	<table name="DTC 3" storageaddress="0xDD97"/>
-	<table name="DTC 4" storageaddress="0xDD86"/>
-	<table name="DTC 5" storageaddress="0xDD87"/>
-	<table name="DTC 6" storageaddress="0xDD88"/>
-	<table name="DTC 7" storageaddress="0xDD92"/>
-	<table name="DTC 8" storageaddress="0xDD74"/>
-	<table name="DTC 9" storageaddress="0xDD81"/>
-	<table name="DTC 10" storageaddress="0xDD83"/>
-	<table name="Engine Overheating (P1217)" storageaddress="0xDD63"/>
-	<table name="P1805" storageaddress="0xDD85"/>
-	<table name="P1715" storageaddress="0xDD84"/> 
-	<table name="P2101" storageaddress="0xDD82"/>
-	<table name="P0850" storageaddress="0xDD6B"/>
-	<table name="P0125" storageaddress="0xDD6A"/>
-	<table name="P1212" storageaddress="0xDD65"/> 
-	<table name="PD010" storageaddress="0xDDA5"/>
-	<table name="PD001 and PD000" storageaddress="0xDD7D"/>
-	<table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDD8D"/>
-	<table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDD8E"/>
-	<table name="Throttle Control Motor DTCs" storageaddress="0xDD9E"/>
-	<table name="Throttle Position Sensor DTCs" storageaddress="0xDD9D"/>
-	<table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDD9C"/>
-	<table name="EVAP Leaks DTCs" storageaddress="0xDD9B"/> 
-	<table name="EVAP Pressure Flow DTCs" storageaddress="0xDD9A"/> 
-	<table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDD98"/> 
-	<table name="MAF Sensor DTCs" storageaddress="0xDD96"/>
-	<table name="Secondary O2 Knock DTCs" storageaddress="0xDD95"/> 
-	<table name="Secondary O2 DTCs" storageaddress="0xDD94"/> 
-	<table name="Idle DTCs" storageaddress="0xDD93"/>
-	<table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDD8C"/>
-	<table name="Power Steering DTC"  storageaddress="0xDD7C"/> 
-	<table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0DD7A"/>
-	<table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDD79"/>
-	<table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDD75"/>
-	<table name="EVAP DTCs" storageaddress="0xDD71"/> 
-	<table name="Catalyst DTCs" storageaddress="0xDD68"/> 
-	<table name="Misfire DTCs" storageaddress="0xDD67"/>
-	<table name="Closed Loop DTCs" storageaddress="0xDD64"/>
-	<table name="AFR Sensors Circuit DTCs" storageaddress="0xDDA0"/>
-	<table name="AFR Sensors DTCs" storageaddress="0xDD9F"/>
 
 	\\ FLAGS //
 
@@ -7617,6 +7660,7 @@ Notes;
 		<filesize>1024kb</filesize>
 	</romid>
 
+Need a ROM dump to verify is this IS able to use CF48D or not.
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
 
@@ -7934,55 +7978,54 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 	<table name="Flags 28" storageaddress="0xDDE8"/> 
 
 	\\DTCs//
-
-	<table name="DTC 1" storageaddress="0xDDCA"/>
-	<table name="DTC 2" storageaddress="0xDE01"/>
-	<table name="DTC 3" storageaddress="0xDDFF"/>
-	<table name="DTC 4" storageaddress="0xDDEE"/>
-	<table name="DTC 5" storageaddress="0xDDEF"/>
-	<table name="DTC 6" storageaddress="0xDDF0"/>
-	<table name="DTC 7" storageaddress="0xDDFA"/>
-	<table name="DTC 8" storageaddress="0xDDDC"/>
-	<table name="DTC 9" storageaddress="0xDDE9"/>
-	<table name="DTC 10" storageaddress="0xDDEB"/>
-	<table name="Engine Overheating (P1217)" storageaddress="0xDDCB"/>
-	<table name="PD010" storageaddress="0xDE0D"/>
-	<table name="P1805" storageaddress="0xDDED"/>
-	<table name="P1715" storageaddress="0xDDEC"/>
-	<table name="P2101" storageaddress="0xDDEA"/>
-	<table name="P0850" storageaddress="0xDDD3"/>
-	<table name="P0125" storageaddress="0xDDD2"/>
-	<table name="P1212" storageaddress="0xDDCD"/>
-	<table name="Closed Loop DTCs" storageaddress="0xDDCC"/>
-	<table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDDE1"/>
-	<table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDDDD"/>
-	<table name="PD001 and PD000" storageaddress="0xDDE5"/>
-	<table name="NATS Malfunction DTCs" storageaddress="0xDDD7"/>
-	<table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDDF5"/>
-	<table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDDF6"/>
-	<table name="AFR Sensors DTCs" storageaddress="0xDE07"/>
-	<table name="AFR Sensors Circuit DTCs" storageaddress="0xDE08"/>
-	<table name="Throttle Control Motor DTCs" storageaddress="0xDE06"/>
-	<table name="Throttle Position Sensor DTCs" storageaddress="0xDE05"/>
-	<table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDE04"/>
-	<table name="MAF Sensor DTCs" storageaddress="0xDDFE"/>
-	<table name="Idle DTCs" storageaddress="0xDDFB"/>
-	<table name="Automatic Transmission DTCs" storageaddress="0xDDF9"/>
-	<table name="Automatic Transmission DTCs 2" storageaddress="0xDDD5"/>
-	<table name="Automatic Transmission DTCs 3" storageaddress="0xDDD4"/>
-	<table name="Automatic Transmission DTCs 4" storageaddress="0xDDF8"/>
-	<table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDDF4"/>
-	<table name="Cruise Control DTCs" storageaddress="0xDDF2"/>
-	<table name="Misfire DTCs" storageaddress="0xDDCF"/>
-	<table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDDE2"/>
-	<table name="Catalyst DTCs" storageaddress="0xDDD0"/> 
-	<table name="EVAP DTCs" storageaddress="0xDDD9"/> 
-	<table name="Power Steering DTC" storageaddress="0xDDE4"/> 
-	<table name="EVAP Leaks DTCs" storageaddress="0xDE03"/> 
-	<table name="EVAP Pressure Flow DTCs" storageaddress="0xDE02"/> 
-	<table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDE00"/> 
-	<table name="Secondary O2 Knock DTCs" storageaddress="0xDDFD"/> 
-	<table name="Secondary O2 DTCs" storageaddress="0xDDFC"/> 
+	
+    <table name="DTC 1" storageaddress="0xDDCA"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0xDDCB"/>
+    <table name="Closed Loop DTCs" storageaddress="0xDDCC"/>
+    <table name="P1212" storageaddress="0xDDCD"/>
+    <table name="Misfire DTCs" storageaddress="0xDDCF"/>
+    <table name="Catalyst DTCs" storageaddress="0xDDD0"/>
+    <table name="P0125" storageaddress="0xDDD2"/>
+    <table name="P0850" storageaddress="0xDDD3"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0xDDD4"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0xDDD5"/>
+    <table name="EVAP DTCs" storageaddress="0xDDD9"/>
+    <table name="DTC 8" storageaddress="0xDDDC"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDDDD"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDDE1"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDDE2"/>
+    <table name="Power Steering DTC" storageaddress="0xDDE4"/>
+    <table name="PD001 and PD000" storageaddress="0xDDE5"/>
+    <table name="DTC 9" storageaddress="0xDDE9"/>
+    <table name="P2101" storageaddress="0xDDEA"/>
+    <table name="DTC 10" storageaddress="0xDDEB"/>
+    <table name="P1715" storageaddress="0xDDEC"/>
+    <table name="P1805" storageaddress="0xDDED"/>
+    <table name="DTC 4" storageaddress="0xDDEE"/>
+    <table name="DTC 5" storageaddress="0xDDEF"/>
+    <table name="DTC 6" storageaddress="0xDDF0"/>
+    <table name="Cruise Control DTCs" storageaddress="0xDDF2"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDDF4"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDDF5"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDDF6"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0xDDF8"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0xDDF9"/>
+    <table name="DTC 7" storageaddress="0xDDFA"/>
+    <table name="Idle DTCs" storageaddress="0xDDFB"/>
+    <table name="Secondary O2 DTCs" storageaddress="0xDDFC"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0xDDFD"/>
+    <table name="MAF Sensor DTCs" storageaddress="0xDDFE"/>
+    <table name="DTC 3" storageaddress="0xDDFF"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDE00"/>
+    <table name="DTC 2" storageaddress="0xDE01"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0xDE02"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0xDE03"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDE04"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0xDE05"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0xDE06"/>
+    <table name="AFR Sensors DTCs" storageaddress="0xDE07"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0xDE08"/>
+    <table name="PD010" storageaddress="0xDE0D"/>
 	
 	\\Supmasks//
 
@@ -8022,8 +8065,30 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 		<filesize>1024kb</filesize>
 	</romid>
 
+Need a ROM dump to verify if CF48D is compatible.
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
+
+</rom><rom base="CM30B">
+	<romid>
+		<xmlid>CM30A</xmlid>
+		<hwid>6ZV2RN10</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CM30A</internalidstring>
+		<ecuid>CM30A</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Sport</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C30" xorloc="0x8C28"/>
 
 </rom><rom base="A2L">
 	<romid>
@@ -8230,99 +8295,53 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 
 	\\DTCs//
 
-	<table name="DTC 1" storageaddress="0xDDC2"/>
-	
-	<table name="DTC 2" storageaddress="0xDDF9"/>
-	
-	<table name="DTC 3" storageaddress="0xDDF7"/>
-	
-	<table name="DTC 4" storageaddress="0xDDE6"/>
-	
-	<table name="DTC 5" storageaddress="0xDDE7"/>
-	
-	<table name="DTC 6" storageaddress="0xDDE8"/>
-	
-	<table name="DTC 7" storageaddress="0xDDF2"/>
-	
-	<table name="DTC 8" storageaddress="0xDDD4"/>
-	
-	<table name="DTC 9" storageaddress="0xDDE1"/>
-	
-	<table name="DTC 10" storageaddress="0xDDE3"/>
-	
-	<table name="Engine Overheating (P1217)" storageaddress="0xDDC3"/>
-	
-	<table name="PD010" storageaddress="0xDE05"/>
-	
-	<table name="P1805" storageaddress="0xDDE5"/>
-	
-	<table name="P1715" storageaddress="0xDDE4"/>
-	
-	<table name="P2101" storageaddress="0xDDE2"/>
-	
-	<table name="P0850" storageaddress="0xDDCB"/>
-	
-	<table name="P0125" storageaddress="0xDDCA"/>
-	
-	<table name="P1212" storageaddress="0xDDC5"/>
-	
-	<table name="Closed Loop DTCs" storageaddress="0xDDC4"/>
-	
-	<table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDDD9"/>
-	
-	<table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDDD5"/>
-	
-	<table name="PD001 and PD000" storageaddress="0xDDDD"/>
-	
-	<table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDDED"/>
-	
-	<table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDDEE"/>
-	
-	<table name="AFR Sensors DTCs" storageaddress="0xDDFF"/>
-	
-	<table name="AFR Sensors Circuit DTCs" storageaddress="0xDE00"/>
-	
-	<table name="Throttle Control Motor DTCs" storageaddress="0xDDFE"/>
-	
-	<table name="Throttle Position Sensor DTCs" storageaddress="0xDDFD"/>
-	
-	<table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDDFC"/>
-	
-	<table name="MAF Sensor DTCs" storageaddress="0xDDF6"/>
-	
-	<table name="Idle DTCs" storageaddress="0xDDF3"/>
-	
-	<table name="Automatic Transmission DTCs" storageaddress="0xDDF1"/>
-	
-	<table name="Automatic Transmission DTCs 2" storageaddress="0xDDCD"/>
-	
-	<table name="Automatic Transmission DTCs 3" storageaddress="0xDDCC"/>
-	
-	<table name="Automatic Transmission DTCs 4" storageaddress="0xDDF0"/>
-	
-	<table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDDEC"/>
-	
-	<table name="Cruise Control DTCs" storageaddress="0xDDEA"/>
-	
-	<table name="Misfire DTCs" storageaddress="0xDDC7"/>
-	
-	<table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDDDA"/>
-	
-	<table name="Catalyst DTCs" storageaddress="0xDDC8"/>
-	
-	<table name="EVAP DTCs" storageaddress="0xDDD1"/>
-	
-	<table name="Power Steering DTC" storageaddress="0xDDDC"/>
-	
-	<table name="EVAP Leaks DTCs" storageaddress="0xDDFB"/> 
-	
-	<table name="EVAP Pressure Flow DTCs" storageaddress="0xDDFA"/>
-	
-	<table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDDF8"/>
-	
-	<table name="Secondary O2 Knock DTCs" storageaddress="0xDDF5"/> 
-	
-	<table name="Secondary O2 DTCs" storageaddress="0xDDF4"/> 
+    <table name="DTC 1" storageaddress="0xDDC2"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0xDDC3"/>
+    <table name="Closed Loop DTCs" storageaddress="0xDDC4"/>
+    <table name="P1212" storageaddress="0xDDC5"/>
+    <table name="Misfire DTCs" storageaddress="0xDDC7"/>
+    <table name="Catalyst DTCs" storageaddress="0xDDC8"/>
+    <table name="P0125" storageaddress="0xDDCA"/>
+    <table name="P0850" storageaddress="0xDDCB"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0xDDCC"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0xDDCD"/>
+    <table name="EVAP DTCs" storageaddress="0xDDD1"/>
+    <table name="DTC 8" storageaddress="0xDDD4"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDDD5"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDDD9"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDDDA"/>
+    <table name="Power Steering DTC" storageaddress="0xDDDC"/>
+    <table name="PD001 and PD000" storageaddress="0xDDDD"/>
+    <table name="DTC 9" storageaddress="0xDDE1"/>
+    <table name="P2101" storageaddress="0xDDE2"/>
+    <table name="DTC 10" storageaddress="0xDDE3"/>
+    <table name="P1715" storageaddress="0xDDE4"/>
+    <table name="P1805" storageaddress="0xDDE5"/>
+    <table name="DTC 4" storageaddress="0xDDE6"/>
+    <table name="DTC 5" storageaddress="0xDDE7"/>
+    <table name="DTC 6" storageaddress="0xDDE8"/>
+    <table name="Cruise Control DTCs" storageaddress="0xDDEA"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDDEC"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDDED"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDDEE"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0xDDF0"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0xDDF1"/>
+    <table name="DTC 7" storageaddress="0xDDF2"/>
+    <table name="Idle DTCs" storageaddress="0xDDF3"/>
+    <table name="Secondary O2 DTCs" storageaddress="0xDDF4"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0xDDF5"/>
+    <table name="MAF Sensor DTCs" storageaddress="0xDDF6"/>
+    <table name="DTC 3" storageaddress="0xDDF7"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDDF8"/>
+    <table name="DTC 2" storageaddress="0xDDF9"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0xDDFA"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0xDDFB"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDDFC"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0xDDFD"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0xDDFE"/>
+    <table name="AFR Sensors DTCs" storageaddress="0xDDFF"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0xDE00"/>
+    <table name="PD010" storageaddress="0xDE05"/>
 
 
 
@@ -8347,6 +8366,7 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 		<filesize>1024kb</filesize>
 	</romid>
 
+Need a ROM dump to verify if this is compatible with CF48D
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
 
@@ -8538,16 +8558,57 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 		<filesize>1024kb</filesize>
 	</romid>
 
+Need a ROM dump to verify if compatible with CF48D
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
 
-</rom><rom base="A2L">
+</rom><rom base="CM40C">
+	<romid>
+		<xmlid>CM40A</xmlid>
+		<hwid>6ZV2RN10</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CM40A</internalidstring>
+		<ecuid>CM40A</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Sport</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom><rom base="CM40C">
 	<romid>
 		<xmlid>CM40B</xmlid>
 		<hwid>6ZV2RN10</hwid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CM40B</internalidstring>
 		<ecuid>CM40B</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Sport</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom><rom base="A2L">
+	<romid>
+		<xmlid>CM40C</xmlid>
+		<hwid>6ZV2RN10</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CM40C</internalidstring>
+		<ecuid>CM40C</ecuid>
 		<year>06</year>
 		<market>USDM</market>
 		<make>Infiniti</make>
@@ -8709,27 +8770,47 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
 
-</rom><rom base="CF48D">
+</rom><rom base="CM41C">
 	<romid>
-		<xmlid>CM40C</xmlid>
-		<hwid>6GIZ7N4</hwid>
+		<xmlid>CM41A</xmlid>
+		<hwid>6GI5VN6</hwid>
 		<internalidaddress>2401</internalidaddress>
-		<internalidstring>CM40C</internalidstring>
-		<caseid>2/4/21</caseid>
-		<ecuid>CM40C</ecuid>
+		<internalidstring>CM41A</internalidstring>
+		<ecuid>CM41A</ecuid>
 		<year>06</year>
 		<market>USDM</market>
-		<make>Nissan</make>
-		<model>350Z</model>
-		<submodel>-</submodel>
-		<transmission>AT</transmission>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
-		<flashmethod>Nisprog</flashmethod>
+		<flashmethod>nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 	</romid>
 
 
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom><rom base="CM41C">
+	<romid>
+		<xmlid>CM41B</xmlid>
+		<hwid>6GI5VN6</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CM41B</internalidstring>
+		<ecuid>CM41B</ecuid>
+		<year>06</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
 
 </rom><rom base="A2L">
 	<romid>
@@ -9395,15 +9476,6 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 	
 	<table name="QH0 Vehicle Speed Upper Limit Table" storageaddress="0x8CEE"/>
 	
-<!-- AXIS DATA?
-	0x8E3C 
-	0x8E7C
-	0x9AE6
-	0x9B06
-	0x9B26
-	0x9BE6
-	0x9C26
--->	
 
 	
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4cb4" xorloc="0x4Ca0" />
@@ -9597,53 +9669,55 @@ This is just a base to help you add new maps to a definition file. The current v
 
 	\\DTCs//
 
-	<table name="DTC 1" storageaddress="0xDDCA"/> 
-	<table name="Engine Overheating (P1217)" storageaddress="0xDDCB"/> 
-	<table name="Closed Loop DTCs" storageaddress="0xDDCC"/> 
-	<table name="P1212" storageaddress="0xDDCD"/> 
-	<table name="Misfire DTCs" storageaddress="0xDDCF"/> 
-	<table name="Catalyst DTCs" storageaddress="0xDDD0"/> 
-	<table name="P0125" storageaddress="0xDDD2"/>
-	<table name="P0850" storageaddress="0xDDD3"/>
-	<table name="Automatic Transmission DTCs 3" storageaddress="0xDDD4"/>
-	<table name="Automatic Transmission DTCs 2" storageaddress="0xDDD5"/>
-	<table name="EVAP DTCs" storageaddress="0xDDD9"/>
-	<table name="DTC 8" storageaddress="0xDDDC"/>
-	<table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDDDD"/>
-	<table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDDE1"/>
-	<table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDDE2"/>
-	<table name="Power Steering DTC" storageaddress="0xDDE4"/> 
-	<table name="PD001 and PD000" storageaddress="0xDDE5"/>
-	<table name="DTC 9" storageaddress="0xDDE9"/>
-	<table name="P2101" storageaddress="0xDDEA"/>
-	<table name="DTC 10" storageaddress="0xDDEB"/>
-	<table name="P1715" storageaddress="0xDDEC"/>
-	<table name="P1805" storageaddress="0xDDED"/>
-	<table name="DTC 4" storageaddress="0xDDEE"/>
-	<table name="DTC 5" storageaddress="0xDDEF"/>
-	<table name="DTC 6" storageaddress="0xDDF0"/>
-	<table name="Cruise Control DTCs" storageaddress="0xDDF2"/>
-	<table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDDF4"/>
-	<table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDDF5"/>
-	<table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDDF6"/>
-	<table name="Automatic Transmission DTCs 4" storageaddress="0xDDF8"/>
-	<table name="Automatic Transmission DTCs" storageaddress="0xDDF9"/>
-	<table name="DTC 7" storageaddress="0xDDFA"/>
-	<table name="Idle DTCs" storageaddress="0xDDFB"/>
-	<table name="Secondary O2 DTCs" storageaddress="0xDDFC"/> 	
-	<table name="Secondary O2 Knock DTCs" storageaddress="0xDDFD"/> 
-	<table name="MAF Sensor DTCs" storageaddress="0xDDFE"/>
-	<table name="DTC 3" storageaddress="0xDDFF"/>
- 	<table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDE00"/> 
-	<table name="DTC 2" storageaddress="0xDE01"/>
-	<table name="EVAP Pressure Flow DTCs" storageaddress="0xDE02"/> 
-	<table name="EVAP Leaks DTCs" storageaddress="0xDE03"/> 
-	<table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDE04"/>
-	<table name="Throttle Position Sensor DTCs" storageaddress="0xDE05"/>
-	<table name="Throttle Control Motor DTCs" storageaddress="0xDE06"/>
-	<table name="AFR Sensors DTCs" storageaddress="0xDE07"/>
-	<table name="AFR Sensors Circuit DTCs" storageaddress="0xDE08"/>
-	<table name="PD010" storageaddress="0xDE0D"/>
+    <table name="DTC 1" storageaddress="0xDDCA"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0xDDCB"/>
+    <table name="Closed Loop DTCs" storageaddress="0xDDCC"/>
+    <table name="P1212" storageaddress="0xDDCD"/>
+    <table name="Misfire DTCs" storageaddress="0xDDCF"/>
+    <table name="Catalyst DTCs" storageaddress="0xDDD0"/>
+    <table name="P0125" storageaddress="0xDDD2"/>
+    <table name="P0850" storageaddress="0xDDD3"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0xDDD4"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0xDDD5"/>
+    <table name="EVAP DTCs" storageaddress="0xDDD9"/>
+    <table name="DTC 8" storageaddress="0xDDDC"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDDDD"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDDE1"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDDE2"/>
+    <table name="Power Steering DTC" storageaddress="0xDDE4"/>
+    <table name="PD001 and PD000" storageaddress="0xDDE5"/>
+    <table name="DTC 9" storageaddress="0xDDE9"/>
+    <table name="P2101" storageaddress="0xDDEA"/>
+    <table name="DTC 10" storageaddress="0xDDEB"/>
+    <table name="P1715" storageaddress="0xDDEC"/>
+    <table name="P1805" storageaddress="0xDDED"/>
+    <table name="DTC 4" storageaddress="0xDDEE"/>
+    <table name="DTC 5" storageaddress="0xDDEF"/>
+    <table name="DTC 6" storageaddress="0xDDF0"/>
+    <table name="Cruise Control DTCs" storageaddress="0xDDF2"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDDF4"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDDF5"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDDF6"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0xDDF8"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0xDDF9"/>
+    <table name="DTC 7" storageaddress="0xDDFA"/>
+    <table name="Idle DTCs" storageaddress="0xDDFB"/>
+    <table name="Secondary O2 DTCs" storageaddress="0xDDFC"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0xDDFD"/>
+    <table name="MAF Sensor DTCs" storageaddress="0xDDFE"/>
+    <table name="DTC 3" storageaddress="0xDDFF"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDE00"/>
+    <table name="DTC 2" storageaddress="0xDE01"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0xDE02"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0xDE03"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDE04"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0xDE05"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0xDE06"/>
+    <table name="AFR Sensors DTCs" storageaddress="0xDE07"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0xDE08"/>
+    <table name="PD010" storageaddress="0xDE0D"/>
+
+
 	
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x0000" xorloc="0x0000"/>
 
