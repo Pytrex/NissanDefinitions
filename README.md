@@ -1,5 +1,5 @@
 # NissanDefinitions
-A2L Supported Nissan and Infiniti ROMs. 
+A2L Supported Nissan 350z and Infiniti G35 ROMs. 
 
 # Disclaimer
 
