@@ -7527,15 +7527,15 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 		<internalidaddress>7D46</internalidaddress>
 		<internalidstring>CE860</internalidstring>
 		<ecuid>CE860</ecuid>
-		<year>06</year>
-		<market>USDM</market>
+		<year>04</year>
+		<market>JDM?</market>
 		<make>Nissan</make>
-		<model>350Z</model>
+		<model>350z</model>
 		<submodel>Base</submodel>
 		<transmission>MT</transmission>
-		<memmodel>SH7058</memmodel>
+		<memmodel>SH7055</memmodel>
 		<flashmethod>nisprog</flashmethod>
-		<filesize>1024kb</filesize>
+		<filesize>512kb</filesize>
 	</romid>
 
 
