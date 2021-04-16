@@ -6,7 +6,7 @@
 		<internalidstring>CD405</internalidstring>
 		<ecuid>CD405</ecuid>
 		<year>03</year>
-		<market>USDM</market>
+		<market>JDM?</market>
 		<make>Nissan</make>
 		<model>350z</model>
 		<submodel>Base</submodel>
@@ -62,6 +62,56 @@
 		<table type="X Axis" storageaddress="0xA2CC"/>
 	</table>
 	
+	\\DTCs//
+
+    <table name="DTC 1" storageaddress="0xA288"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0xA289"/>
+    <table name="Closed Loop DTCs" storageaddress="0xA28A"/>
+    <table name="P1212" storageaddress="0xA28B"/>
+    <table name="Misfire DTCs" storageaddress="0xA28D"/>
+    <table name="Catalyst DTCs" storageaddress="0xA28E"/>
+    <table name="P0125" storageaddress="0xA290"/>
+    <table name="P0850" storageaddress="0xA291"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0xA292"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0xA293"/>
+    <table name="EVAP DTCs" storageaddress="0xA297"/>
+    <table name="DTC 8" storageaddress="0xA29A"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0xA29B"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xA29F"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xA2A0"/>
+    <table name="Power Steering DTC" storageaddress="0xA2A2"/>
+    <table name="PD001 and PD000" storageaddress="0xA2A3"/>
+    <table name="DTC 9" storageaddress="0xA2A7"/>
+    <table name="P2101" storageaddress="0xA2A8"/>
+    <table name="DTC 10" storageaddress="0xA2A9"/>
+    <table name="P1715" storageaddress="0xA2AA"/>
+    <table name="P1805" storageaddress="0xA2AB"/>
+    <table name="DTC 4" storageaddress="0xA2AC"/>
+    <table name="DTC 5" storageaddress="0xA2AD"/>
+    <table name="DTC 6" storageaddress="0xA2AE"/>
+    <table name="Cruise Control DTCs" storageaddress="0xA2B0"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xA2B2"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0xA2B3"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0xA2B4"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0xA2B6"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0xA2B7"/>
+    <table name="DTC 7" storageaddress="0xA2B8"/>
+    <table name="Idle DTCs" storageaddress="0xA2B9"/>
+    <table name="Secondary O2 DTCs" storageaddress="0xA2BA"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0xA2BB"/>
+    <table name="MAF Sensor DTCs" storageaddress="0xA2BC"/>
+    <table name="DTC 3" storageaddress="0xA2BD"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xA2BE"/>
+    <table name="DTC 2" storageaddress="0xA2BF"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0xA2C0"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0xA2C1"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xA2C2"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0xA2C3"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0xA2C4"/>
+    <table name="AFR Sensors DTCs" storageaddress="0xA2C5"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0xA2C6"/>
+    <table name="PD010" storageaddress="0xA2CB"/>
+
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6640" xorloc="0x6638"/>
 
 </rom>

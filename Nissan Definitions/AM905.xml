@@ -1,0 +1,20 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>AM905</xmlid>
+		<hwid>2WLJ6D11</hwid>
+		<internalidaddress>8163</internalidaddress>
+		<internalidstring>AM905</internalidstring>
+		<ecuid>AM905</ecuid>
+		<year>04</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>Skyline (G35)</model>
+		<submodel>-</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6640" xorloc="0x6638" />
+</rom>
