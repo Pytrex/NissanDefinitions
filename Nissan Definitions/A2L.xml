@@ -1121,6 +1121,28 @@
 		<description>mCNGDLY- VTC drive abnormality diagnosis judgement delay</description>
 	</table>
 	
+	<table type="3D" name="P-Gain Computed Map (Bank 1)" category="Variable Valve Timing" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="3">
+		<scaling units="%" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="Coolant Temperature" storagetype="uint8" endian="big" logparam="Z4">
+		<scaling units="Degrees Fahrenheit" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="#" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMKPVTCL- The left bank P-gain gain computed map // Cam Timing</description>
+	</table>
+	
+	<table type="3D" name="P-Gain Computed Map (Bank 2)" category="Variable Valve Timing" storagetype="uint8" endian="big" sizex="8" sizey="8" userlevel="3">
+		<scaling units="%" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="Coolant Temperature" storagetype="uint8" endian="big" logparam="Z4">
+		<scaling units="Degrees Fahrenheit" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="#" fineincrement="1" coarseincrement="10" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="P8">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMKPVTC- P-gain gain computed map// Cam Timing</description>
+	</table>
+	
 	\\Knock and Misfire Detection//
 	
 	<table type="3D" name="Knock Slice Map" category="Knock and Misfire Detection" storagetype="uint16" endian="big" sizex="16" sizey="6" userlevel="1">

@@ -135,7 +135,60 @@
 	<table name="MAF Factor" storageaddress="0x8224" />
 
 	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC26C" />
-	
+
+
+	\\DTCs//
+
+
+    <table name="DTC 1" storageaddress="0xDD62"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0xDD63"/>
+    <table name="Closed Loop DTCs" storageaddress="0xDD64"/>
+    <table name="P1212" storageaddress="0xDD65"/>
+    <table name="Misfire DTCs" storageaddress="0xDD67"/>
+    <table name="Catalyst DTCs" storageaddress="0xDD68"/>
+    <table name="P0125" storageaddress="0xDD6A"/>
+    <table name="P0850" storageaddress="0xDD6B"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0xDD6C"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0xDD6D"/>
+    <table name="EVAP DTCs" storageaddress="0xDD71"/>
+    <table name="DTC 8" storageaddress="0xDD74"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0xDD75"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xDD79"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xDD7A"/>
+    <table name="Power Steering DTC" storageaddress="0xDD7C"/>
+    <table name="PD001 and PD000" storageaddress="0xDD7D"/>
+    <table name="DTC 9" storageaddress="0xDD81"/>
+    <table name="P2101" storageaddress="0xDD82"/>
+    <table name="DTC 10" storageaddress="0xDD83"/>
+    <table name="P1715" storageaddress="0xDD84"/>
+    <table name="P1805" storageaddress="0xDD85"/>
+    <table name="DTC 4" storageaddress="0xDD86"/>
+    <table name="DTC 5" storageaddress="0xDD87"/>
+    <table name="DTC 6" storageaddress="0xDD88"/>
+    <table name="Cruise Control DTCs" storageaddress="0xDD8A"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xDD8C"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0xDD8D"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0xDD8E"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0xDD90"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0xDD91"/>
+    <table name="DTC 7" storageaddress="0xDD92"/>
+    <table name="Idle DTCs" storageaddress="0xDD93"/>
+    <table name="Secondary O2 DTCs" storageaddress="0xDD94"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0xDD95"/>
+    <table name="MAF Sensor DTCs" storageaddress="0xDD96"/>
+    <table name="DTC 3" storageaddress="0xDD97"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xDD98"/>
+    <table name="DTC 2" storageaddress="0xDD99"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0xDD9A"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0xDD9B"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xDD9C"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0xDD9D"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0xDD9E"/>
+    <table name="AFR Sensors DTCs" storageaddress="0xDD9F"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0xDDA0"/>
+    <table name="PD010" storageaddress="0xDDA5"/>
+
+
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
 
 </rom>

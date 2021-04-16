@@ -16,8 +16,59 @@
         <filesize>512kb</filesize>
     </romid>
 
-    <!--sorry didn't make a def, checksums are here though, have fun:) -->
 
-    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67ec" xorloc="0x67e4" />
+
+	\\DTCs//
+	
+    <table name="DTC 1" storageaddress="0x9F2C"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0x9F2D"/>
+    <table name="Closed Loop DTCs" storageaddress="0x9F2E"/>
+    <table name="P1212" storageaddress="0x9F2F"/>
+    <table name="Misfire DTCs" storageaddress="0x9F31"/>
+    <table name="Catalyst DTCs" storageaddress="0x9F32"/>
+    <table name="P0125" storageaddress="0x9F34"/>
+    <table name="P0850" storageaddress="0x9F35"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0x9F36"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0x9F37"/>
+    <table name="EVAP DTCs" storageaddress="0x9F3B"/>
+    <table name="DTC 8" storageaddress="0x9F3E"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0x9F3F"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0x9F43"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0x9F44"/>
+    <table name="Power Steering DTC" storageaddress="0x9F46"/>
+    <table name="PD001 and PD000" storageaddress="0x9F47"/>
+    <table name="DTC 9" storageaddress="0x9F4B"/>
+    <table name="P2101" storageaddress="0x9F4C"/>
+    <table name="DTC 10" storageaddress="0x9F4D"/>
+    <table name="P1715" storageaddress="0x9F4E"/>
+    <table name="P1805" storageaddress="0x9F4F"/>
+    <table name="DTC 4" storageaddress="0x9F50"/>
+    <table name="DTC 5" storageaddress="0x9F51"/>
+    <table name="DTC 6" storageaddress="0x9F52"/>
+    <table name="Cruise Control DTCs" storageaddress="0x9F54"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0x9F56"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0x9F57"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0x9F58"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0x9F5A"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0x9F5B"/>
+    <table name="DTC 7" storageaddress="0x9F5C"/>
+    <table name="Idle DTCs" storageaddress="0x9F5D"/>
+    <table name="Secondary O2 DTCs" storageaddress="0x9F5E"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0x9F5F"/>
+    <table name="MAF Sensor DTCs" storageaddress="0x9F60"/>
+    <table name="DTC 3" storageaddress="0x9F61"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0x9F62"/>
+    <table name="DTC 2" storageaddress="0x9F63"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0x9F64"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0x9F65"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0x9F66"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0x9F67"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0x9F68"/>
+    <table name="AFR Sensors DTCs" storageaddress="0x9F69"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0x9F6A"/>
+    <table name="PD010" storageaddress="0x9F6F"/>
+
+
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 
 </rom>

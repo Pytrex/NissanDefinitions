@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>CD406</xmlid>
-		<hwid>???</hwid>
+		<hwid>2WLM1D13</hwid>
 		<internalidaddress>8023</internalidaddress>
 		<internalidstring>CD406</internalidstring>
 		<ecuid>CD406</ecuid>
@@ -97,7 +97,8 @@
 	<table name="MAF Factor" storageaddress="0x5E65" />
 	
 	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8C19" />
-	
+
+
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6500" xorloc="0x64F8" />
 	
 </rom>

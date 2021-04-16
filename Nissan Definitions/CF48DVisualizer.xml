@@ -145,6 +145,16 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 		<table type="X Axis" storageaddress="0xD446"/> 
 	</table>
 
+	<table name="P-Gain Computed Map (Bank 1)" storageaddress="0x92B1">
+		<table type="X Axis" storageaddress="0xC3DC"/>
+		<table type="Y Axis" storageaddress="0xC3BC"/>
+	</table>
+	
+	<table name="P-Gain Computed Map (Bank 2)" storageaddress="0x9271">
+		<table type="X Axis" storageaddress="0xC3DC"/>
+		<table type="Y Axis" storageaddress="0xC3BC"/>
+	</table>
+	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DD1"> 
 		<table type="X Axis" storageaddress="0xB624"/> 
 		<table type="Y Axis" storageaddress="0xB634"/> 
@@ -315,7 +325,7 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 	
     <table name="DTC 1" storageaddress="0xDDCA"/>
     <table name="Engine Overheating (P1217)" storageaddress="0xDDCB"/>
-    <table name="Closed Loop DTCs" storageaddress="0xDDCC"/>
+    <table name="Closed Loop DTCs" storageaddress="0xDDCC"/> 
     <table name="P1212" storageaddress="0xDDCD"/>
     <table name="Misfire DTCs" storageaddress="0xDDCF"/>
     <table name="Catalyst DTCs" storageaddress="0xDDD0"/>
