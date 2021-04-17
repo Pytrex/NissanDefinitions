@@ -34,7 +34,8 @@ uint16;
 	<table name="Engine Torque Map" storageaddress="0xAF0C"/>
 	<table name="MAF Table" storageaddress="0xC862"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x897A"/>
-
+	<table name="Crank Fueling TP Value Table" storageaddress="0xD1F6"/>
+	
 uint8;
 	<table name="Cranking Advance Table" storageaddress="0xB6F4"/> 
 	<table name="Bosch Fuel Restore Table" storageaddress="0xBE52"/>
@@ -49,7 +50,6 @@ uint8;
 	<table name="MAF Factor" storageaddress="0x8200" />
 	<table name="MAF Idle Voltage Limits" storageaddress="0x8B2E"/> 
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x7FDA"/> 
-	<table name="Crank Fueling TP Value Table" storageaddress="0xD1F6"/>
 	<table name="GOV Table" storageaddress="0xB884"/>
 	<table name="GOV3 Table" storageaddress="0xB88C"/> 
 	<table name="GOVL Table" storageaddress="0xB894"/> 
@@ -117,7 +117,22 @@ uint8;
 		<table type="X Axis" storageaddress="0xB2D5"/>
 		<table type="Y Axis" storageaddress="0xB2D9"/>
 	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x9471">
+		<table type="X Axis" storageaddress="0xB50A"/>
+		<table type="Y Axis" storageaddress="0xB4AE"/>
+	</table>
+
+	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x91B1"> 
+		<table type="X Axis" storageaddress="0xB2CD"/> 
+		<table type="Y Axis" storageaddress="0xB2C5"/> 
+	</table>
 	
+	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x91F1"> 
+		<table type="X Axis" storageaddress="0xB2CD"/> 
+		<table type="Y Axis" storageaddress="0xB2C5"/> 
+	</table>
+
 	<table name="AFR Correction Map (Bank 1)" storageaddress="0xA08C"> 
 		<table type="X Axis" storageaddress="0xC7E2"/>
 		<table type="Y Axis" storageaddress="0xC7C2"/>
@@ -126,21 +141,6 @@ uint8;
 	<table name="AFR Correction Map (Bank 2)" storageaddress="0xA10C"> 
 		<table type="X Axis" storageaddress="0xC7E2"/>
 		<table type="Y Axis" storageaddress="0xC7C2"/>
-	</table>
-
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x9471">
-		<table type="X Axis" storageaddress="0xB50A"/>
-		<table type="Y Axis" storageaddress="0xB4AE"/>
-	</table>
-	
-	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x91F1"> 
-		<table type="X Axis" storageaddress="0xB2CD"/> 
-		<table type="Y Axis" storageaddress="0xB2C5"/> 
-	</table>
-
-	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x91B1"> 
-		<table type="X Axis" storageaddress="0xB2CD"/> 
-		<table type="Y Axis" storageaddress="0xB2C5"/> 
 	</table>
 	
 	<table name="Target AFR Map (8x8)" storageaddress="0x9701">

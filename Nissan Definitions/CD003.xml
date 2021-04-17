@@ -16,9 +16,8 @@
 		<filesize>512kb</filesize>
 	</romid>
 
-
-
 	\\ 1D Values / 2D Tables //
+	
 	<table name="Initial Retard Quantity Table 1" storageaddress="0x8D2B"/>
 	<table name="Initial Retard Quantity Table 2" storageaddress="0x8D2F"/>
 	<table name="Initial Retard Quantity Table 2 (Steps from Idle)" storageaddress="0x8D33"/>	
@@ -57,10 +56,31 @@
 	<table name="MAF Factor" storageaddress="0x61AE"/>
 	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8DB7"/>
 
-
-
-
 	\\ 2D Tables w/ Axes and 3D Maps //
+
+	<table name="Throttle Flow Potential Table" storageaddress="0x95EC">
+		<table type="Y Axis" storageaddress="0x94FC"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0x962C">
+		<table type="Y Axis" storageaddress="0x953C"/>
+	</table>
+	
+	<table name="Throttle Flow Potential Table 2" storageaddress="0xA164">
+		<table type="Y Axis" storageaddress="0xA0E4"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xA124">
+		<table type="Y Axis" storageaddress="0xA0A4"/>
+	</table>
+	
+	<table name="Target Throttle Valve Opening Table" storageaddress="0x8E84">
+		<table type="X Axis" storageaddress="0x957C"/>
+	</table>
+
+	<table name="Target Throttle Valve Opening Table 2" storageaddress="0x9F84">
+		<table type="X Axis" storageaddress="0xA1AE"/>
+	</table>
 	
 	<table name="Cold Ignition Timing Map" storageaddress="0x68F9">
 		<table type="X Axis" storageaddress="0x8547"/>
@@ -171,35 +191,6 @@
 		<table type="X Axis" storageaddress="0x8E5F"/>
 		<table type="Y Axis" storageaddress="0x8E5B"/>
 	</table>	
-
-	<table name="Throttle Flow Potential Table" storageaddress="0x95EC">
-		<table type="Y Axis" storageaddress="0x94FC"/>
-	</table>
-
-	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0x962C">
-		<table type="Y Axis" storageaddress="0x953C"/>
-	</table>
-	
-	<table name="Throttle Flow Potential Table 2" storageaddress="0xA164">
-		<table type="Y Axis" storageaddress="0xA0E4"/>
-	</table>
-
-	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xA124">
-		<table type="Y Axis" storageaddress="0xA0A4"/>
-	</table>
-	
-	<table name="Target Throttle Valve Opening Table" storageaddress="0x8E84">
-		<table type="X Axis" storageaddress="0x957C"/>
-	</table>
-
-	<table name="Target Throttle Valve Opening Table 2" storageaddress="0x9F84">
-		<table type="X Axis" storageaddress="0xA1AE"/>
-	</table>
-
-
-
-
-
 
 	\\DTCs//
 
