@@ -64,7 +64,7 @@ uint8;
 	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0xC154"/>
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xBB98"/> 
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0xBAB0"/> 
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0xBE86" sizey="6"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xBE86"/>
 
 
 	\\Maps and Tables w/ Axes//
