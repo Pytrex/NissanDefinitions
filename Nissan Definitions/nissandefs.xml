@@ -9015,10 +9015,10 @@ SH7055 is annoying.
 	<table name="Bosch Fuel Restore Table" storageaddress="0xBD6A"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0xBE6E"/>	
 	<table name="Radiator Fan High Coolant" storageaddress="0x8285"/>
-	<table name="Speed Limiter" storageaddress="0x8a68"/>
+	<table name="Speed Limiter" storageaddress="0x8A68"/>
 	<table name="K-Value" storageaddress="0x8904"/>
-	<table name="Minimum Injector Pulse Width" storageaddress="0x8aca"/>
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2" sizey="6"/>
+	<table name="Minimum Injector Pulse Width" storageaddress="0x8ACA"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbEA2" sizey="6"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x8001"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x846a"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x7d9f"/>
