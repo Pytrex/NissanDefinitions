@@ -1,0 +1,21 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>6Z55A</xmlid>
+		<hwid>5X6E58TPN9</hwid>
+		<internalidaddress>88EA</internalidaddress>
+		<internalidstring>6Z55A</internalidstring>
+		<ecuid>6Z55A</ecuid>
+		<year>05</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>SE-R Spec-V</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x70A0" xorloc="0x7098" />
+</rom>

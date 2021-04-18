@@ -35,6 +35,7 @@ uint16;
 	<table name="MAF Table" storageaddress="0xC862"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x897A"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xD1F6"/>
+	<table name="MAF Idle Voltage Limits" storageaddress="0x8B2E"/> 
 	
 uint8;
 	<table name="Cranking Advance Table" storageaddress="0xB6F4"/> 
@@ -48,7 +49,6 @@ uint8;
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x8542"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x854E"/>
 	<table name="MAF Factor" storageaddress="0x8200" />
-	<table name="MAF Idle Voltage Limits" storageaddress="0x8B2E"/> 
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x7FDA"/> 
 	<table name="GOV Table" storageaddress="0xB884"/>
 	<table name="GOV3 Table" storageaddress="0xB88C"/> 

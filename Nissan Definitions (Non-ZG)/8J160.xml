@@ -1,0 +1,91 @@
+﻿<rom base="A2L">
+	<romid>
+		<xmlid>8J160</xmlid>
+		<hwid>1TKE8Z5N5</hwid>
+		<internalidaddress>6B78</internalidaddress>
+		<internalidstring>8J160</internalidstring>
+		<ecuid>8J160</ecuid>
+		<year>03</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Altima</model>
+		<submodel>Base</submodel>
+		<transmission>5MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x51e1">
+		<table type="X Axis" storageaddress="0x6e28" />
+		<table type="Y Axis" storageaddress="0x6e38" />
+	</table>
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x52E1">
+		<table type="X Axis" storageaddress="0x6e28" />
+		<table type="Y Axis" storageaddress="0x6e38" />
+	</table>
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x53e1">
+		<table type="X Axis" storageaddress="0x6e28" />
+		<table type="Y Axis" storageaddress="0x6e38" />
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x56a1">
+		<table type="X Axis" storageaddress="0x6d7e" />
+		<table type="Y Axis" storageaddress="0x6d22" />
+	</table>
+	<table name="Target AFR Map (8x8)" storageaddress="0x58B1">
+		<table type="X Axis" storageaddress="0x6D1a" />
+		<table type="Y Axis" storageaddress="0x6C05" />
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x59f1">
+		<table type="X Axis" storageaddress="0x769c" />
+		<table type="Y Axis" storageaddress="0x768c" />
+	</table>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x4F6C">
+	</table>
+
+	<table name="MAF Table" storageaddress="0x7898"/>
+	<table name="MAF Factor" storageaddress="0x4b34"/>
+	<table name="MAF Offset" storageaddress="0x4f94"/>
+	<table name="MAF Idle Voltage Limits" storageaddress="0x5014" />
+	<table name="MAF voltage limits" storageaddress="0x4de6" />
+	<table name="MAF low voltage range_w" storageaddress="0x4f56" />
+
+	<table name="Speed Limiter" storageaddress="0x4fba"/>
+
+	<table name="Target Idle Table" storageaddress="0x72e6"/>
+
+	<table name="Target Idle Table 2" storageaddress="0x730a"/>
+
+	<table name="K-Value" storageaddress="0x4f16"/>
+	
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x4fdc"/>
+
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x638C">
+		<table type="X Axis" storageaddress="0x7878" />
+		<table type="Y Axis" storageaddress="0x6d3a" />   
+	</table>
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x850a">
+		<table type="X Axis" storageaddress="0x87d8" />
+		<table type="Y Axis" storageaddress="0x8747" />   
+	</table>
+
+	<table name="Catalyst DTCs" storageaddress="0x8710"/>
+	<table name="Evap DTCs" storageaddress="0x8719"/>
+	<table name="Evap 2 DTCs"  storageaddress="0x871A"/>
+	<table name="VIAS DTCs"  storageaddress="0x871E"/>
+	<table name="Power Steering DTC"  storageaddress="0x8724"/>
+	<table name="CAN DTCs" storageaddress="0x8725"/>
+	<table name="Secondary O2 DTCs" storageaddress="0x873c"/>
+	<table name="Secondary O2 Knock DTCs" storageaddress="0x873d"/>
+	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0x8740"/>
+	<table name="Evap Pressure Flow DTCs" storageaddress="0x8742"/>
+	<table name="Evap Leaks DTCs"  storageaddress="0x8743"/>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x50d8" xorloc="0x50d0" />
+
+</rom>

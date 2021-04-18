@@ -1,0 +1,20 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>CM37A</xmlid>
+		<hwid>6ZVYXN00</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CM37A</internalidstring>
+		<ecuid>CM37A</ecuid>
+		<year>06</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>Skyline (G35)</model>
+		<submodel>-</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x8C10" xorloc="0x8C08" />
+</rom>

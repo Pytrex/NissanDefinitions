@@ -1,0 +1,53 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>BT67A</xmlid>
+		<hwid>9CMCVAPD31</hwid>
+		<internalidaddress>92EB</internalidaddress>
+		<internalidstring>BT67A</internalidstring>
+		<ecuid>BT67A</ecuid>
+		<year>-</year>
+		<market>-</market>
+		<make>-</make>
+		<model>-</model>
+		<submodel>-</submodel>
+		<transmission>-</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6E2A">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x6F2A">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x70AA">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+
+752E fuel comp or cam timing 
+
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x7CAE">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+	
+	<table name="Misfire Diagnosis Map A" storageaddress="0x7AAE">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>
+	</table>
+	
+	<table name="Misfire Diagnosis Map B" storageaddress="0x7BAE">
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x0000"/>	
+	</table>
+	
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0xB88" xorloc="0xB80"/>
+
+</rom>

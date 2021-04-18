@@ -1,0 +1,21 @@
+<rom base="CF41E">
+	<romid>
+		<xmlid>CF41D</xmlid>
+		<hwid>6GIZ7N4</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF41D</internalidstring>
+		<ecuid>CF41D</ecuid>
+		<year>06</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+
+</rom>
