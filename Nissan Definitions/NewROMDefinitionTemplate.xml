@@ -27,11 +27,11 @@ uint16;
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8AAE"/>
 	<table name="Throttle Rev Limiter" storageaddress="0x8A14"/> 
 	<table name="Knock Slice Map" storageaddress="0xB10C"/> 
+	<table name="Engine Torque Map" storageaddress="0xAF0C"/>
 	<table name="Speed Limiter" storageaddress="0x8A4C"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8ADE"/>
 	<table name="K-Value" storageaddress="0x88E8"/>	
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xCA70"/>
-	<table name="Engine Torque Map" storageaddress="0xAF0C"/>
 	<table name="MAF Table" storageaddress="0xC862"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x897A"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xD1F6"/>

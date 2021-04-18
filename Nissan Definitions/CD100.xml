@@ -1,10 +1,10 @@
 <rom base="CD102">
 	<romid>
-		<xmlid>CD101</xmlid>
+		<xmlid>CD100</xmlid>
 		<hwid>3GIJ7N04</hwid>
 		<internalidaddress>828C</internalidaddress>
-		<internalidstring>CD101</internalidstring>
-		<ecuid>CD101</ecuid>
+		<internalidstring>CD100</internalidstring>
+		<ecuid>CD100</ecuid>
 		<year>03</year>
 		<market>US</market>
 		<make>Nissan</make>

@@ -25,8 +25,8 @@
 	<table name="GOV Table" storageaddress="0x9526"/>
 	<table name="GOV3 Table" storageaddress="0x952E"/>
 	<table name="GOVL Table" storageaddress="0x9536"/>
-	<table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x6C18"/>
-	<table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x6C24"/>
+	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x6C18"/>
+	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x6C24"/>
 	<table name="Initial Retard Quantity Table 1" storageaddress="0x9C02"/>
 	<table name="Initial Retard Quantity Table 2" storageaddress="0x9C06"/>
 	<table name="Initial Retard Quantity Table 2 (Steps from Idle)" storageaddress="0x9C0A"/>
@@ -41,7 +41,7 @@
 	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6740"/> 
-	<table name="FUel Injector Latency at 14V" storageaddress="0x6B40" />
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x6B40" />
 	<table name="Fuel Injector Latency Adder" storageaddress="0x652D" />
 	<table name="Crank Fueling TP Value Table" storageaddress="0xA982"/> 
 	<table name="Speed Limiter" storageaddress="0x705E"/>
@@ -97,8 +97,8 @@
 	</table>
 	
 	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x7B3D">
-		<table type="X Axis" storageaddress="0x9d82"/>
-		<table type="Y Axis" storageaddress="0x9d92"/>
+		<table type="X Axis" storageaddress="0x9D82"/>
+		<table type="Y Axis" storageaddress="0x9D92"/>
 	</table>
 	
 	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x76ED">
@@ -143,7 +143,6 @@
 
 	\\DTCs//
 Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
-
 
     <table name="DTC 1" storageaddress="0xB460"/>
     <table name="Engine Overheating (P1217)" storageaddress="0xB461"/>
@@ -192,9 +191,6 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
     <table name="AFR Sensors DTCs" storageaddress="0xB49D"/>
     <table name="AFR Sensors Circuit DTCs" storageaddress="0xB49E"/>
     <table name="PD010" storageaddress="0xB4A3"/>
-
-
-
 
 	\\Flags//
 
