@@ -5307,7 +5307,117 @@ Notes; Only here for compatibility purposes. This will allow others to utilize t
     <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 
 </rom>
-<rom base="A2L">
+<rom base="AC30A">
+	<romid>
+		<xmlid>AC300</xmlid>
+		<hwid>5ZVS8N02</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC300</internalidstring>
+		<ecuid>AC300</ecuid>
+		<year>2003</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>RWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
+
+</rom><rom base="AC30A">
+	<romid>
+		<xmlid>AC301</xmlid>
+		<hwid>5ZVS8N02</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC301</internalidstring>
+		<ecuid>AC301</ecuid>
+		<year>2003</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>RWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
+
+</rom><rom base="AC306">
+	<romid>
+		<xmlid>AC305</xmlid>
+		<hwid>5ZVP8N00</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC305</internalidstring>
+		<ecuid>AC305</ecuid>
+		<year>2004</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>AWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
+
+</rom><rom base="A2L">
+	<romid>
+		<xmlid>AC306</xmlid>
+		<hwid>5ZVP8N00</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC306</internalidstring>
+		<ecuid>AC306</ecuid>
+		<year>2004</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>AWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
+
+</rom><rom base="A2L">
+	<romid>
+		<xmlid>AC30A</xmlid>
+		<hwid>5ZVS8N02</hwid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC30A</internalidstring>
+		<ecuid>AC30A</ecuid>
+		<year>2003</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>RWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
+
+</rom><rom base="A2L">
 	<romid>
 		<xmlid>AC31A</xmlid>
 		<hwid>5ZV6LN03</hwid>
@@ -5960,6 +6070,28 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B54" xorloc="0x7B4C" />
 
+</rom><rom base="A2L">
+	<romid>
+		<xmlid>AC705</xmlid>
+		<hwid>5ZVSUNH</hwid>
+		<internalidaddress>A14E</internalidaddress>
+		<internalidstring>AC705</internalidstring>
+		<ecuid>AC705</ecuid>
+		<year>2005</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>AWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B54" xorloc="0x7B4C" />
+
 </rom><rom base="AC81A">
 	<romid>
 		<xmlid>AC810</xmlid>
@@ -5967,11 +6099,11 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 		<internalidaddress>A216</internalidaddress>
 		<internalidstring>AC810</internalidstring>
 		<ecuid>AC810</ecuid>
-		<year>06</year>
+		<year>05</year>
 		<market>USDM</market>
 		<make>Infiniti</make>
 		<model>G35</model>
-		<submodel>Base</submodel>
+		<submodel>REv-Up</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<flashmethod>nisprog</flashmethod>
@@ -5989,11 +6121,11 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 		<internalidaddress>A216</internalidaddress>
 		<internalidstring>AC81A</internalidstring>
 		<ecuid>AC81A</ecuid>
-		<year>06</year>
+		<year>05</year>
 		<market>USDM</market>
 		<make>Infiniti</make>
 		<model>G35</model>
-		<submodel>Base</submodel>
+		<submodel>Rev-Up</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<flashmethod>nisprog</flashmethod>
@@ -6554,48 +6686,48 @@ SH7055 is annoying.
 <rom base="CD003">
 	<romid>
 		<xmlid>CD000</xmlid>
-		<hwid>3GIGGN02</hwid>
-		<internalidaddress>824c</internalidaddress>
+		<hwid>3GIJ7N04</hwid>
+		<internalidaddress>828C</internalidaddress>
 		<internalidstring>CD000</internalidstring>
 		<ecuid>CD000</ecuid>
 		<year>03</year>
 		<market>US</market>
 		<make>Nissan</make>
 		<model>350Z</model>
-		<submodel>Perf</submodel>
+		<submodel>Performance</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>512kb</filesize>
 	</romid>
-
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67AC" xorloc="0x67A4" />
+	
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 </rom>
 <rom base="CD003">
 	<romid>
 		<xmlid>CD001</xmlid>
-		<hwid>3GIGGN02</hwid>
-		<internalidaddress>824c</internalidaddress>
+		<hwid>3GIJ7N04</hwid>
+		<internalidaddress>828C</internalidaddress>
 		<internalidstring>CD001</internalidstring>
 		<ecuid>CD001</ecuid>
 		<year>03</year>
 		<market>US</market>
 		<make>Nissan</make>
 		<model>350Z</model>
-		<submodel>Perf</submodel>
+		<submodel>Performance</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>512kb</filesize>
 	</romid>
-
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67AC" xorloc="0x67A4" />
+	
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 </rom>
 <rom base="CD003">
 	<romid>
 		<xmlid>CD002</xmlid>
-		<hwid>3GILXN05</hwid>
-		<internalidaddress>8290</internalidaddress>
+		<hwid>3GIJ7N04</hwid>
+		<internalidaddress>828C</internalidaddress>
 		<internalidstring>CD002</internalidstring>
 		<ecuid>CD002</ecuid>
 		<year>03</year>
@@ -6609,20 +6741,20 @@ SH7055 is annoying.
 		<filesize>512kb</filesize>
 	</romid>
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 </rom>
 <rom base="A2L">
 	<romid>
 		<xmlid>CD003</xmlid>
-		<hwid>3GILXN05</hwid>
-		<internalidaddress>8290</internalidaddress>
+		<hwid>3GIJ7N04</hwid>
+		<internalidaddress>828C</internalidaddress>
 		<internalidstring>CD003</internalidstring>
 		<ecuid>CD003</ecuid>
 		<year>03</year>
 		<market>US</market>
 		<make>Nissan</make>
 		<model>350Z</model>
-		<submodel>Perf</submodel>
+		<submodel>Performance</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<flashmethod>nisprog</flashmethod>
@@ -6856,7 +6988,7 @@ SH7055 is annoying.
     <table name="PD010" storageaddress="0x9F73"/>
 
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 </rom>
 <rom base="CD008">
     <romid>

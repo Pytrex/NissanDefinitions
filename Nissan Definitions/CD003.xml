@@ -1,15 +1,15 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>CD003</xmlid>
-		<hwid>3GILXN05</hwid>
-		<internalidaddress>8290</internalidaddress>
+		<hwid>3GIJ7N04</hwid>
+		<internalidaddress>828C</internalidaddress>
 		<internalidstring>CD003</internalidstring>
 		<ecuid>CD003</ecuid>
 		<year>03</year>
 		<market>US</market>
 		<make>Nissan</make>
 		<model>350Z</model>
-		<submodel>Perf</submodel>
+		<submodel>Performance</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<flashmethod>nisprog</flashmethod>
@@ -243,5 +243,5 @@
     <table name="PD010" storageaddress="0x9F73"/>
 
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 </rom>

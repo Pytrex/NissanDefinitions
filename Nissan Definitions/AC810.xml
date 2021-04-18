@@ -5,11 +5,11 @@
 		<internalidaddress>A216</internalidaddress>
 		<internalidstring>AC810</internalidstring>
 		<ecuid>AC810</ecuid>
-		<year>06</year>
+		<year>05</year>
 		<market>USDM</market>
 		<make>Infiniti</make>
 		<model>G35</model>
-		<submodel>Base</submodel>
+		<submodel>REv-Up</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<flashmethod>nisprog</flashmethod>

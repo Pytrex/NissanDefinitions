@@ -1,8 +1,8 @@
 <rom base="CD003">
 	<romid>
 		<xmlid>CD002</xmlid>
-		<hwid>3GILXN05</hwid>
-		<internalidaddress>8290</internalidaddress>
+		<hwid>3GIJ7N04</hwid>
+		<internalidaddress>828C</internalidaddress>
 		<internalidstring>CD002</internalidstring>
 		<ecuid>CD002</ecuid>
 		<year>03</year>
@@ -16,5 +16,5 @@
 		<filesize>512kb</filesize>
 	</romid>
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 </rom>

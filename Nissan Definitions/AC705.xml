@@ -1,0 +1,23 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>AC705</xmlid>
+		<hwid>5ZVSUNH</hwid>
+		<internalidaddress>A14E</internalidaddress>
+		<internalidstring>AC705</internalidstring>
+		<ecuid>AC705</ecuid>
+		<year>2005</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>AWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B54" xorloc="0x7B4C" />
+
+</rom>
