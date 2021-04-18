@@ -7,7 +7,7 @@ While these definitions appear to be fully functional, I cannot guarantee that t
 
 # About
 
-The main purpose of this is to allow people to utilize a redacted variant of my A2L template, which ensures maximum compatibility across all currently defined 350z and G35 ROMs. These definition files are not guaranteed to be accurate, so do be cautious. You accept full responsibility for any damages that occur. 
+The main purpose of this is to allow people to utilize a redacted variant of my A2L template, which ensures maximum compatibility across all currently defined 350z and G35 ROMs. These definition files are not guaranteed to be accurate, so do be cautious. Make sure to let me know if anything is incorrect or looks off, so that I can look into it! You accept full responsibility for any damages that occur. 
 
 # Instructions 
 
