@@ -1160,6 +1160,9 @@
 				<ecu id="AC31A">
 					<address>0xFF8474</address>
 				</ecu>
+				<ecu id="M5113">
+					<address>0xFF84A8</address>
+				</ecu>
 				<conversions>
 					<conversion units="%" expr="x*0.78125" format="0.00" />
 				</conversions>
@@ -1171,6 +1174,9 @@
 				</ecu>
 				<ecu id="AC31A">
 					<address>0xFF855E</address>
+				</ecu>
+				<ecu id="M5113">
+					<address>0xFF85A0</address>
 				</ecu>
 				<conversions>
 					<conversion units="%" expr="x/2.56" format="0.00" />
@@ -1302,8 +1308,6 @@
 				<conversion units="|" storagetype="uint8" expr="x" format="0.00" />
 			</conversions>
 		</ecuparam>	
-
-
 
 
 

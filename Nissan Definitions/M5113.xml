@@ -203,6 +203,16 @@
 		<table type="Y Axis" storageaddress="0x9a96" />
 	</table>
 
+	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x5405"> 
+		<table type="X Axis" storageaddress="0x77DE"/>
+		<table type="Y Axis" storageaddress="0x77D6"/> 
+	</table>
+
+	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x53C5"> 
+		<table type="X Axis" storageaddress="0x77DE"/>
+		<table type="Y Axis" storageaddress="0x77D6"/> 
+	</table>
+	
 	\\Flags and Supmasks//
 
 	<table name="Flags 3" storageaddress="0x4498"/>
