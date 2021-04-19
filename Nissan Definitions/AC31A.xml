@@ -196,8 +196,6 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 
 	<table name="Flags 24" storageaddress="0x68FD"/>
 	
-	
-	
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC"/>
 
 </rom>
