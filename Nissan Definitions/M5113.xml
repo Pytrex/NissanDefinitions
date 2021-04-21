@@ -67,7 +67,7 @@
 	<table name="K-Value" storageaddress="0x49c4"/>
 	<table name="MAF Table" storageaddress="0x87a6"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0x8a36"/>
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x4a26"/>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x4A26"/>
 	<table name="Speed Limiter" storageaddress="0x4aa6" />
 	<table name="Ignition Timing During Torque Control" storageaddress="0x4601"/>
 	<table name="Torque Limiter (Vehicle Speed R/L)" storageaddress="0x49d8"/>
