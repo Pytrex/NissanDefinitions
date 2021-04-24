@@ -54,8 +54,8 @@
 	<table name="GOVL Table" storageaddress="0x9536"/>
 	<table name="GOV Addition Table (Drive)" storageaddress="0x930E"/> 
 	<table name="GOV Addition Table (Neutral)" storageaddress="0x9316"/>
-	<table name="K2Y Table (Deceleration Advance)" storageaddress="0x966A"/> 
-	<table name="K1 Table (Acceleration Retard)" storageaddress="0x9672"/> 
+	<table name="K2Y Table (Deceleration Advance)" storageaddress="0x9662"/> 
+	<table name="K1 Table (Acceleration Retard)" storageaddress="0x966A"/> 
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x9C02"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0x9C06"/>
 	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0x9C0A"/>
