@@ -7146,81 +7146,6 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 </rom>
 <rom base="A2L">
 	<romid>
-		<xmlid>AL902</xmlid>
-		<hwid>3MFED14N4</hwid>
-		<internalidaddress>6BF9</internalidaddress>
-		<internalidstring>AL902</internalidstring>
-		<ecuid>AL902</ecuid>
-		<year>03</year>
-		<market>USDM</market>
-		<make>Infiniti</make>
-		<model>G35</model>
-		<submodel>Base</submodel>
-		<transmission>AT</transmission>
-		<memmodel>SH7055</memmodel>
-		<flashmethod>nisprog</flashmethod>
-		<filesize>512kb</filesize>
-	</romid>
-
-	<!-- very similar to 5Y702, similar to 6Y300 -->
-	<!-- initial def : fenugrec 2018 -->
-
-	<!-- strangely, cold ign trim doesn't have an area with the 0x80 knock bit set, unlike 5y712/6y300 -->
-	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x5301">
-		<table type="X Axis" storageaddress="0x6f10" />
-		<table type="Y Axis" storageaddress="0x6f20" />
-	</table>
-	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x5401">
-		<table type="X Axis" storageaddress="0x6f10" />
-		<table type="Y Axis" storageaddress="0x6f20" />
-	</table>
-	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x5501">
-		<table type="X Axis" storageaddress="0x6f10" />
-		<table type="Y Axis" storageaddress="0x6f20" />
-	</table>
-
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x57c1">
-		<table type="X Axis" storageaddress="0x6e66" />
-		<table type="Y Axis" storageaddress="0x6e0a" />
-	</table>
-
-	<table name="Target AFR Map (8x8)" storageaddress="0x5991">
-		<table type="X Axis" storageaddress="0x6CED" />
-		<table type="Y Axis" storageaddress="0x6E02" />
-	</table>
-
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x5ad1">
-		<table type="X Axis" storageaddress="0x77b4" />
-		<table type="Y Axis" storageaddress="0x77c4" />
-	</table>
-
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5056" />
-
-	<table name="MAF Table" storageaddress="0x79c0" />
-
-	<table name="Speed Limiter" storageaddress="0x5022" />
-	<table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x4D9B"/>
-    <table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x4DA6"/>
-
-	<table name="Target Idle Table" storageaddress="0x73e6" />
-	<table name="Target Idle Table 2" storageaddress="0x740a" />
-
-	<table name="K-Value" storageaddress="0x4ffa" />
-
-	<table name="QH0/ Torque Conversion Map" storageaddress="0x646c">
-		<table type="X Axis" storageaddress="0x79a0" />
-		<table type="Y Axis" storageaddress="0x6e22" />   
-	</table>
-
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x86b4">
-		<table type="X Axis" storageaddress="0x8988" />
-		<table type="Y Axis" storageaddress="0x88f8" />   
-	</table>
-
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x5158" xorloc="0x5150" />
-
-</rom><rom base="A2L">
-	<romid>
 		<xmlid>AM603</xmlid>
 		<hwid>3MFED17N7</hwid>
 		<internalidaddress>6C31</internalidaddress>
@@ -7460,57 +7385,146 @@ SH7055 is annoying.
 		<filesize>512kb</filesize>
 	</romid>
 
-	<!-- very similar to 5Y702, similar to 6Y300 -->
-	<!-- initial def : fenugrec 2018 -->
+	\\Values, Tables, and Maps w/o Axes//
 
-	<!-- strangely, cold ign trim doesn't have an area with the 0x80 knock bit set, unlike 5y712/6y300 -->
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5056"/>
+	<table name="MAF Table" storageaddress="0x79C0"/>
+	<table name="Speed Limiter" storageaddress="0x50BE"/>
+	<table name="K-Value" storageaddress="0x4FFA"/>
+	<table name="APO Threshold (Brake)" storageaddress="0x4EEA"/>
+	<table name="Minimum Injector Pulse Width" storageaddress="0x50D6"/>
+	<table name="Knock Slice Map" storageaddress="0x6AEC"/>
+	<table name="Engine Torque Map" storageaddress="0x68EC"/>
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x50E4"/>
+	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0x7A90"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0x7502"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0x745A"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x740A"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0x73E6"/>
+	<table name="Target Idle Table" storageaddress="0x7422"/>
+	<table name="Fuel Injector Latency Adder" storageaddress="0x48AD"/>
+	<table name="GOV Table" storageaddress="0x711C"/>
+	<table name="GOV3 Table" storageaddress="0x7124"/>
+	<table name="GOVL Table" storageaddress="0x712C"/>
+	<table name="GOV Addition Table (Drive)" storageaddress="0x6F30"/> 
+	<table name="GOV Addition Table (Neutral)" storageaddress="0x6F38"/>
+	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x76E4"/>
+	<table name="Initial Retard Quantity Table" storageaddress="0x76E8"/>
+	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0x76EC"/>
+	<table name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" storageaddress="0x76F0"/>
+	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0x76F4"/>
+	<table name="Target AFR Table (High Detonation)" storageaddress="0x72F8"/> 
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x7526"/>
+
+	\\Maps and Tables w/ Axes//
+	
+	<table name="Target Throttle Valve Opening Table" storageaddress="0x7824">
+		<table type="X Axis" storageaddress="0x7F16"/>
+	</table>
+
+	<table name="Target Throttle Valve Opening Table 2" storageaddress="0x8908">
+		<table type="X Axis" storageaddress="0x8B32"/>
+	</table>
+	
+	<table name="Throttle Flow Potential Table" storageaddress="0x7F76">
+		<table type="X Axis" storageaddress="0x7E96"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0x7FB6">
+		<table type="X Axis" storageaddress="0x7ED6"/>
+	</table>
+	
+	<table name="Throttle Flow Potential Table 2" storageaddress="0x8AE8">
+		<table type="X Axis" storageaddress="0x8A68"/>
+	</table>
+	
+	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0x8AA8">
+		<table type="X Axis" storageaddress="0x8A28"/>
+	</table>
+	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x5301">
-		<table type="X Axis" storageaddress="0x6f10" />
-		<table type="Y Axis" storageaddress="0x6f20" />
+		<table type="X Axis" storageaddress="0x6F10"/>
+		<table type="Y Axis" storageaddress="0x6F20"/>
 	</table>
+	
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x5401">
-		<table type="X Axis" storageaddress="0x6f10" />
-		<table type="Y Axis" storageaddress="0x6f20" />
+		<table type="X Axis" storageaddress="0x6F10"/>
+		<table type="Y Axis" storageaddress="0x6F20"/>
 	</table>
+	
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x5501">
-		<table type="X Axis" storageaddress="0x6f10" />
-		<table type="Y Axis" storageaddress="0x6f20" />
+		<table type="X Axis" storageaddress="0x6F10"/>
+		<table type="Y Axis" storageaddress="0x6F20"/>
 	</table>
 
-	<table name="Fuel Compensation Map (16x16)" storageaddress="0x57c1">
-		<table type="X Axis" storageaddress="0x6e66" />
-		<table type="Y Axis" storageaddress="0x6e0a" />
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x57C1">
+		<table type="X Axis" storageaddress="0x6E66"/>
+		<table type="Y Axis" storageaddress="0x6E0A"/>
 	</table>
 
 	<table name="Target AFR Map (8x8)" storageaddress="0x5991">
-		<table type="X Axis" storageaddress="0x6CED" />
-		<table type="Y Axis" storageaddress="0x6E02" />
+		<table type="X Axis" storageaddress="0x6CED"/>
+		<table type="Y Axis" storageaddress="0x6E02"/>
 	</table>
 
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x5ad1">
-		<table type="X Axis" storageaddress="0x77b4" />
-		<table type="Y Axis" storageaddress="0x77c4" />
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x5AD1">
+		<table type="X Axis" storageaddress="0x77B4"/>
+		<table type="Y Axis" storageaddress="0x77C4"/>
 	</table>
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5056" />
-
-	<table name="MAF Table" storageaddress="0x79c0" />
-
-	<table name="Speed Limiter" storageaddress="0x50be" />
-
-	<table name="Target Idle Table" storageaddress="0x73e6" />
-	<table name="Target Idle Table 2" storageaddress="0x740a" />
-
-	<table name="K-Value" storageaddress="0x4ffa" />
-
-	<table name="QH0/ Torque Conversion Map" storageaddress="0x646c">
-		<table type="X Axis" storageaddress="0x79a0" />
-		<table type="Y Axis" storageaddress="0x6e22" />   
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x646C">
+		<table type="X Axis" storageaddress="0x79A0"/>
+		<table type="Y Axis" storageaddress="0x6E22"/>   
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x86b4">
-		<table type="X Axis" storageaddress="0x8988" />
-		<table type="Y Axis" storageaddress="0x88f8" />   
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x86B4">
+		<table type="X Axis" storageaddress="0x8988"/>
+		<table type="Y Axis" storageaddress="0x88F8"/>   
+	</table>
+	
+	<table name="MBT Flame Speed Map" storageaddress="0x5661">
+		<table type="X Axis" storageaddress="0x6CE5"/>
+		<table type="Y Axis" storageaddress="0x6CE9"/>
+	</table>
+
+	<table name="Cylinder Fresh Air Rate Map" storageaddress="0x5671">
+		<table type="X Axis" storageaddress="0x6CE5"/>
+		<table type="Y Axis" storageaddress="0x6CE9"/>
+	</table>
+
+	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x5681"> 
+		<table type="X Axis" storageaddress="0x6CDD"/> 
+		<table type="Y Axis" storageaddress="0x6CD5"/> 
+	</table>
+	
+	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x56C1"> 
+		<table type="X Axis" storageaddress="0x6CDD"/> 
+		<table type="Y Axis" storageaddress="0x6CD5"/> 
+	</table>
+	
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5BD1">
+		<table type="X Axis" storageaddress="0x7798"/>
+		<table type="Y Axis" storageaddress="0x77A0"/>	
+	</table>
+	
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x5E41">
+		<table type="X Axis" storageaddress="0x6D4D"/>
+		<table type="Y Axis" storageaddress="0x6D29"/>
+	</table>
+	
+	<table name="Misfire Diagnosis Map A" storageaddress="0x5C41">
+		<table type="X Axis" storageaddress="0x6D4D"/>
+		<table type="Y Axis" storageaddress="0x6D29"/>
+	</table>
+	
+	<table name="Misfire Diagnosis Map B" storageaddress="0x5D41">
+		<table type="X Axis" storageaddress="0x6D4D"/>
+		<table type="Y Axis" storageaddress="0x6D29"/>
+	</table>
+
+	<table name="TTEPTD Torque Compensation Map" storageaddress="0x686C"> 
+		<table type="X Axis" storageaddress="0x7BC0"/> 
+		<table type="Y Axis" storageaddress="0x7BB0"/>
 	</table>
 
 	\\DTCs//
@@ -7562,7 +7576,6 @@ SH7055 is annoying.
     <table name="AFR Sensors DTCs" storageaddress="0x88F1"/>
     <table name="AFR Sensors Circuit DTCs" storageaddress="0x88F2"/>
     <table name="PD010" storageaddress="0x88F7"/>
-
 
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x51F8" xorloc="0x51F0" />
 
@@ -10180,91 +10193,53 @@ Need a ROM dump to verify if CF48D is compatible.
 		<market>USDM</market>
 		<make>Infiniti</make>
 		<model>G35</model>
-		<submodel>Sport</submodel>
+		<submodel>Sport - RWD</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7058</memmodel>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 	</romid>
-
-
+	
 	\\Values, Tables, and Maps w/o Axes//
-
+	
 	<table name="APO Threshold (Brake)" storageaddress="0x8742"/>
-	
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8AA8"/>
-	
 	<table name="Cranking Advance Table" storageaddress="0xB6EC"/> 
-	
 	<table name="Throttle Rev Limiter" storageaddress="0x8A0E"/>
-	
 	<table name="Bosch Fuel Restore Table" storageaddress="0xBE4A"/>
-	
 	<table name="JECS Fuel Restore Table" storageaddress="0xBD46"/>
-	
 	<table name="JECS Fuel Cut Table" storageaddress="0xBCCE"/>
-	
 	<table name="Bosch Fuel Cut Table" storageaddress="0xBC9A"/> 
-	
 	<table name="Knock Slice Map" storageaddress="0xB104"/>
-	
 	<table name="Speed Limiter" storageaddress="0x8A46"/>
-	
 	<table name="Target Idle Table" storageaddress="0xBCDE"/>
-	
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8AD8"/>
-	
 	<table name="K-Value" storageaddress="0x88E2"/>
-	
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xCA68"/>
-	
 	<table name="Engine Torque Map" storageaddress="0xAF04"/>
-	
 	<table name="Fuel Injector Latency Adder" storageaddress="0x7D70"/>
-	
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x8440"/>
- 	
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x853C"/>
-	
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x8548"/>
-	
 	<table name="MAF Table" storageaddress="0xC85A"/>
-	
 	<table name="MAF Factor" storageaddress="0x81FA"/>
-	
 	<table name="MAF Idle Voltage Limits" storageaddress="0x8B28"/>
-	
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x7FD4"/>
-	
 	<table name="Crank Fueling TP Value Table" storageaddress="0xD1EE"/>
-	
 	<table name="GOV Table" storageaddress="0xB87C"/>
-	
 	<table name="GOV3 Table" storageaddress="0xB884"/> 
-	
 	<table name="GOVL Table" storageaddress="0xB88C"/>
-	
 	<table name="GOV Addition Table (Drive)" storageaddress="0xB640"/> 
-	
 	<table name="GOV Addition Table (Neutral)" storageaddress="0xB648"/>
-	
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0xC13C"/>
-	
 	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0xC144"/>
-	
 	<table name="Initial Retard Quantity Table" storageaddress="0xC140"/>
-	
 	<table name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" storageaddress="0xC148"/>
-	
 	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0xC14C"/>
-	
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x8974"/>
-	
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xBB90"/> 
-	
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0xBAA8"/> 
-	
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0xBE7E" sizey="6"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xBE7E"/>
 
 	\\Maps and Tables w/ Axes//
 	
@@ -10421,8 +10396,6 @@ Need a ROM dump to verify if CF48D is compatible.
     <table name="AFR Sensors DTCs" storageaddress="0xDDFF"/>
     <table name="AFR Sensors Circuit DTCs" storageaddress="0xDE00"/>
     <table name="PD010" storageaddress="0xDE05"/>
-
-
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C30" xorloc="0x8C28"/>
 
