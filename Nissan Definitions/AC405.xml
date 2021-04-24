@@ -1,4 +1,4 @@
-<rom base="AC406">
+<rom base="AC40A">
 	<romid>
 		<xmlid>AC405</xmlid>
 		<hwid>5ZP8N00</hwid>
@@ -16,6 +16,6 @@
 		<filesize>1024kb</filesize>
 	</romid>
 
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec" />
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
 
 </rom>
