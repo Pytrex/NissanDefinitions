@@ -17,7 +17,8 @@
 	</romid>
 	
 	\\Values, Tables, and Maps w/o Axes//
-	
+
+	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC248"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x8742"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8AA8"/>
 	<table name="Cranking Advance Table" storageaddress="0xB6EC"/> 
@@ -59,6 +60,10 @@
 
 	\\Maps and Tables w/ Axes//
 	
+	<table name="AFR Conversion Table" storageaddress="0xCB38">
+		<table type="X Axis" storageaddress="0xD43E"/> 
+	</table>
+	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xC4A8">
 		<table type="X Axis" storageaddress="0xD19E"/>
 	</table>
@@ -83,6 +88,16 @@
 		<table type="X Axis" storageaddress="0xDF5A"/>
 	</table>
 
+	<table name="Fuel Cut Extreme Short Rest Time Map" storageaddress="0x9839">
+		<table type="X Axis" storageaddress="0xC390"/>
+		<table type="Y Axis" storageaddress="0xC38C"/>
+	</table>	
+
+	<table name="Fuel Cut Suspension Time:Operation Time Ratio Map" storageaddress="0x9849">
+		<table type="X Axis" storageaddress="0xC390"/>
+		<table type="Y Axis" storageaddress="0xC38C"/>
+	</table>	
+	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DC9"> 
 		<table type="X Axis" storageaddress="0xB61C"/> 
 		<table type="Y Axis" storageaddress="0xB62C"/> 

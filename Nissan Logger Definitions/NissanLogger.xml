@@ -1136,6 +1136,9 @@
 				<ecu id="AC31A">
 					<address length="2">0xFF24BE</address>
 				</ecu>
+				<ecu id="CM30B">
+					<address length="2">0xFF26F0</address>
+				</ecu>
 				<conversions>
 					<conversion units="AFR" storagetype="uint16" expr="x*0.002" format="0.00" />
 				</conversions>
@@ -1148,6 +1151,9 @@
 				<ecu id="AC31A">
 					<address length="2">0xFF24C0</address>
 				</ecu>
+				<ecu id="CM30B">
+					<address length="2">0xFF26F2</address>
+				</ecu>
 				<conversions>
 					<conversion units="AFR" storagetype="uint16" expr="x*0.002" format="0.00" />
 				</conversions>
@@ -1159,6 +1165,9 @@
 				</ecu>
 				<ecu id="AC31A">
 					<address>0xFF8474</address>
+				</ecu>
+				<ecu id="CM30B">
+					<address>0xFF847E</address>
 				</ecu>
 				<ecu id="M5113">
 					<address>0xFF84A8</address>
@@ -1175,6 +1184,9 @@
 				<ecu id="AC31A">
 					<address>0xFF855E</address>
 				</ecu>
+				<ecu id="CM30B">
+					<address>0xFF85A2</address>
+				</ecu>
 				<ecu id="M5113">
 					<address>0xFF85A0</address>
 				</ecu>
@@ -1190,6 +1202,9 @@
 				<ecu id="AC31A">
 					<address length="2">0xFF1786</address>
 				</ecu>
+				<ecu id="CM30B">
+					<address length="2">0xFF184E</address>
+				</ecu>
 				<conversions>
 					<conversion units="Nm" storagetype="int16" expr="x*0.1" format="0" />
 				</conversions>
@@ -1201,6 +1216,9 @@
 				</ecu>
 				<ecu id="AC31A">
 					<address>0xFF1EA6</address>
+				</ecu>
+				<ecu id="CM30B">
+					<address>0xFF206E</address>
 				</ecu>
 				<conversions>
 					<conversion units="Count" storagetype="uint8" expr="x" format="0" />
@@ -1214,6 +1232,9 @@
 				<ecu id="AC31A">
 					<address length="2">0xFF188C</address>
 				</ecu>
+				<ecu id="CM30B">
+					<address length="2">0xFF1994</address>
+				</ecu>
 				<conversions>
 					<conversion units="lb-ft" storagetype="int16" expr="x*0.073756" format="0.00" />
 				</conversions>
@@ -1225,6 +1246,9 @@
 				</ecu>
 				<ecu id="AC31A">
 					<address length="2">0xFF20AE</address>
+				</ecu>
+				<ecu id="CM30B">
+					<address length="2">0xFF227A</address>
 				</ecu>
 				<conversions>
 					<conversion units="AFR" storagetype="uint16" expr="14.7/(x*0.000061035)" format="0.00" />
@@ -1238,6 +1262,9 @@
 				<ecu id="AC31A">
 					<address>0xFF20AA</address>
 				</ecu>
+				<ecu id="CM30B">
+					<address>0xFF2276</address>
+				</ecu>
 				<conversions>
 					<conversion units="OL/CL" storagetype="uint8" expr="x" format="0" />
 				</conversions>
@@ -1250,6 +1277,9 @@
 				<ecu id="AC31A">
 					<address>0xFF2171</address>
 				</ecu>
+				<ecu id="CM30B">
+					<address>0xFF2357</address>
+				</ecu>
 				<conversions>
 					<conversion units="Degrees" storagetype="int8" expr="x" format="0" />
 				</conversions>
@@ -1257,6 +1287,9 @@
 
 			<ecuparam id="Z11" name="Flow Potential" desc="vTQH0AP- QH0/ Torque Conversion Map X-Axis. Set by Target Basis QH0 Table." target="1">
 			<ecu id="CF48D">
+				<address length="2">0xFF195A</address>
+			</ecu>
+			<ecu id="CM30B">
 				<address length="2">0xFF195A</address>
 			</ecu>
 			<conversions>
