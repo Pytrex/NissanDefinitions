@@ -1442,6 +1442,15 @@
 		<description>mNMAX2-mNMAXR2-mNMAX2R-mNMAXRR These are the engine speeds at which the rev limiter is engaged and disengaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active, after which, if engine speed drops below the 'Off' value, fueling is resumed.</description>
 	</table>
 
+	<table type="2D" name="KT Low Oil Temperature Fuel Cut/Restore" category="Fuel Cut and Speed Limiters" storagetype="uint16" sizey="2" endian="big" userlevel="4" >
+		<scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="0"/>
+	<table type="Y Axis" name="Fuel" sizey="2">
+			<data>Cut</data>
+			<data>Restore</data>
+	</table>
+	<description>mNMXCLD and mNMXRCD- At the time of KT low oil temperature, all cylinder high rotation cut/recover judgement speed</description>
+	</table>
+	
 	<table type="2D" name="Bosch Fuel Cut Table" category="Fuel Cut and Speed Limiters" storagetype="uint8" endian="big" sizex="16" userlevel="1">
 		<scaling units="Cut" expression="x*25" to_byte="x/25" format="0" fineincrement="25" coarseincrement="200" />
 		<table type="X Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizex="16" logparam="P2">
@@ -10540,7 +10549,8 @@ Need a ROM dump to verify if CF48D is compatible.
 	</romid>
 	
 	\\Values, Tables, and Maps w/o Axes//
-	
+
+	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC248"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x8742"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8AA8"/>
 	<table name="Cranking Advance Table" storageaddress="0xB6EC"/> 
@@ -10582,6 +10592,10 @@ Need a ROM dump to verify if CF48D is compatible.
 
 	\\Maps and Tables w/ Axes//
 	
+	<table name="AFR Conversion Table" storageaddress="0xCB38">
+		<table type="X Axis" storageaddress="0xD43E"/> 
+	</table>
+	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xC4A8">
 		<table type="X Axis" storageaddress="0xD19E"/>
 	</table>
@@ -10606,6 +10620,16 @@ Need a ROM dump to verify if CF48D is compatible.
 		<table type="X Axis" storageaddress="0xDF5A"/>
 	</table>
 
+	<table name="Fuel Cut Extreme Short Rest Time Map" storageaddress="0x9839">
+		<table type="X Axis" storageaddress="0xC390"/>
+		<table type="Y Axis" storageaddress="0xC38C"/>
+	</table>	
+
+	<table name="Fuel Cut Suspension Time:Operation Time Ratio Map" storageaddress="0x9849">
+		<table type="X Axis" storageaddress="0xC390"/>
+		<table type="Y Axis" storageaddress="0xC38C"/>
+	</table>	
+	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DC9"> 
 		<table type="X Axis" storageaddress="0xB61C"/> 
 		<table type="Y Axis" storageaddress="0xB62C"/> 

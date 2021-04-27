@@ -1440,6 +1440,15 @@
 		<description>mNMAX2-mNMAXR2-mNMAX2R-mNMAXRR These are the engine speeds at which the rev limiter is engaged and disengaged. When engine speed is equal to or exceeds the 'On' value, fuel cut is active, after which, if engine speed drops below the 'Off' value, fueling is resumed.</description>
 	</table>
 
+	<table type="2D" name="KT Low Oil Temperature Fuel Cut/Restore" category="Fuel Cut and Speed Limiters" storagetype="uint16" sizey="2" endian="big" userlevel="4" >
+		<scaling units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="0"/>
+	<table type="Y Axis" name="Fuel" sizey="2">
+			<data>Cut</data>
+			<data>Restore</data>
+	</table>
+	<description>mNMXCLD and mNMXRCD- At the time of KT low oil temperature, all cylinder high rotation cut/recover judgement speed</description>
+	</table>
+	
 	<table type="2D" name="Bosch Fuel Cut Table" category="Fuel Cut and Speed Limiters" storagetype="uint8" endian="big" sizex="16" userlevel="1">
 		<scaling units="Cut" expression="x*25" to_byte="x/25" format="0" fineincrement="25" coarseincrement="200" />
 		<table type="X Axis" name="Coolant Temperature(Fahrenheit)" format="0" sizex="16" logparam="P2">
