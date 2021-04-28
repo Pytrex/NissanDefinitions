@@ -1182,7 +1182,7 @@
 			<data>5</data> 
 			<data>6</data>
 		</table>
-		<description>mTSL- "SLI Table" This table sets the thresholds for determining knock by cylinder. If the knock count exceeds this threshold, then it'll trip the knock flag (presumably)</description>
+		<description><!--mTSL-->This table sets the thresholds for determining knock by cylinder. If the knock strength value exceeds this map value, then it adds one to the knock count. For built motors, you'll need to raise these values so that it doesn't count false knock as actual knock.</description>
 	</table>
 	
 	<table type="3D" name="Misfire Diagnosis Basic Map" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1">

@@ -1184,7 +1184,7 @@
 			<data>5</data> 
 			<data>6</data>
 		</table>
-		<description>mTSL- "SLI Table" This table sets the thresholds for determining knock by cylinder. If the knock count exceeds this threshold, then it'll trip the knock flag (presumably)</description>
+		<description><!--mTSL-->This table sets the thresholds for determining knock by cylinder. If the knock strength value exceeds this map value, then it adds one to the knock count. For built motors, you'll need to raise these values so that it doesn't count false knock as actual knock.</description>
 	</table>
 	
 	<table type="3D" name="Misfire Diagnosis Basic Map" category="Knock and Misfire Detection" storagetype="uint8" endian="big" sizex="16" sizey="16" userlevel="1">
@@ -6664,7 +6664,7 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 		<internalidaddress>A14E</internalidaddress>
 		<internalidstring>AC700</internalidstring>
 		<ecuid>AC700</ecuid>
-		<year>2004</year>
+		<year>2005</year>
 		<market></market>
 		<make>Infiniti</make>
 		<model>G35</model>
@@ -11371,11 +11371,22 @@ Need a ROM dump to verify if compatible with CF48D
 		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
 
-
+	<table name="AFR Conversion Table" storageaddress="0x169E0">
+		<table type="X Axis" storageaddress="0x17F06"/>
+	</table>
+	
 	<table name="Engine Torque Map" storageaddress="0x1286A"/>
 
 
-
+	<table name="AFR Correction Map (Bank 1)" storageaddress="0xC7EA"> 
+		<table type="X Axis" storageaddress="0x15E1A"/>
+		<table type="Y Axis" storageaddress="0x15DDA"/>
+	</table>
+	
+	<table name="AFR Correction Map (Bank 2)" storageaddress="0xC86A"> 
+		<table type="X Axis" storageaddress="0x15E1A"/>
+		<table type="Y Axis" storageaddress="0x15DDA"/>
+	</table>
 
 	<checksum type="alt" start="0" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>
 	

@@ -41,11 +41,22 @@
 		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
 
-
+	<table name="AFR Conversion Table" storageaddress="0x169E0">
+		<table type="X Axis" storageaddress="0x17F06"/>
+	</table>
+	
 	<table name="Engine Torque Map" storageaddress="0x1286A"/>
 
 
-
+	<table name="AFR Correction Map (Bank 1)" storageaddress="0xC7EA"> 
+		<table type="X Axis" storageaddress="0x15E1A"/>
+		<table type="Y Axis" storageaddress="0x15DDA"/>
+	</table>
+	
+	<table name="AFR Correction Map (Bank 2)" storageaddress="0xC86A"> 
+		<table type="X Axis" storageaddress="0x15E1A"/>
+		<table type="Y Axis" storageaddress="0x15DDA"/>
+	</table>
 
 	<checksum type="alt" start="0" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>
 	
