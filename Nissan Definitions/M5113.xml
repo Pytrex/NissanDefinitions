@@ -37,6 +37,15 @@
 -->
 
 	\\ Values, Tables, and Maps w/o Axes//
+	<table name="ADVCD1 Table (D Range)" storageaddress="0x7A78"/> 
+	<table name="ADVCD1 Table (N Range)" storageaddress="0x7A80"/> 	
+	<table name="GOV Table" storageaddress="0x7C38"/>
+	<table name="GOV3 Table" storageaddress="0x7C40"/>	
+	<table name="GOVL Table" storageaddress="0x7C48"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0x7F1C"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x7F70"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0x80C4"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0x7FC0"/>
 	<table name="MAF Voltage Limits" storageaddress="0x47AE"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x4B9C"/>
 	<table name="TRQPIG Reference Table" storageaddress="0x8F7C"/> 

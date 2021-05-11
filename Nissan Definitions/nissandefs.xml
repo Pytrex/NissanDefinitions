@@ -346,6 +346,158 @@
 		</table>
 		<description>mQTBL- Inhalation air quantity conversion table. This table represents airflow through the MAF sensor at a given voltage. For stock MAF diameter intakes, I'd strongly recommend utilizing the MAF Factor alongside Fuel Compensation to dial in your fueling, rather than utilizing this table.</description>
 	</table>
+	
+	<table type="3D" name="MAF Table 2" category="Airflow" storagetype="uint16" endian="big" sizex="1" sizey="64" userlevel="1">
+		<scaling name="A2L" units="unscaled" expression="x" to_byte="x" format="0" fineincrement="50" coarseincrement="200" />
+		<scaling name="EXPERIMENTAL 105" units="g/s" expression="(x*105)/25600" to_byte="(x*25600)/105" format="0.00" fineincrement="1" coarseincrement="20" />
+		<scaling name="EXPERIMENTAL 105 | 3121" units="g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="20" />
+		<table type="X Axis" name="MAF Table" sizey="1">
+			<data>MAF Value</data>
+		</table>
+		<table type="Y Axis" name="MAF Sensor (V)" format="0.00" sizey="64">
+			<data>0.00</data>
+			<data>0.08</data>
+			<data>0.16</data>
+			<data>0.24</data>
+			<data>0.32</data>
+			<data>0.40</data>
+			<data>0.48</data>
+			<data>0.56</data>
+			<data>0.64</data>
+			<data>0.72</data>
+			<data>0.80</data>
+			<data>0.88</data>
+			<data>0.96</data>
+			<data>1.04</data>
+			<data>1.12</data>
+			<data>1.20</data>
+			<data>1.28</data>
+			<data>1.36</data>
+			<data>1.44</data>
+			<data>1.52</data>
+			<data>1.60</data>
+			<data>1.68</data>
+			<data>1.76</data>
+			<data>1.84</data>
+			<data>1.92</data>
+			<data>2.00</data>
+			<data>2.08</data>
+			<data>2.16</data>
+			<data>2.24</data>
+			<data>2.32</data>
+			<data>2.40</data>
+			<data>2.48</data>
+			<data>2.56</data>
+			<data>2.64</data>
+			<data>2.72</data>
+			<data>2.80</data>
+			<data>2.88</data>
+			<data>2.96</data>
+			<data>3.04</data>
+			<data>3.12</data>
+			<data>3.20</data>
+			<data>3.28</data>
+			<data>3.36</data>
+			<data>3.44</data>
+			<data>3.52</data>
+			<data>3.60</data>
+			<data>3.68</data>
+			<data>3.76</data>
+			<data>3.84</data>
+			<data>3.92</data>
+			<data>4.00</data>
+			<data>4.08</data>
+			<data>4.16</data>
+			<data>4.24</data>
+			<data>4.32</data>
+			<data>4.40</data>
+			<data>4.48</data>
+			<data>4.56</data>
+			<data>4.64</data>
+			<data>4.72</data>
+			<data>4.80</data>
+			<data>4.88</data>
+			<data>4.96</data>			
+			<data>5.04</data>
+		</table>
+		<description>mQTBL- Inhalation air quantity conversion table. This table represents airflow through the MAF sensor at a given voltage. For stock MAF diameter intakes, I'd strongly recommend utilizing the MAF Factor alongside Fuel Compensation to dial in your fueling, rather than utilizing this table.</description>
+	</table>
+	
+	<table type="3D" name="MAF Table 3" category="Airflow" storagetype="uint16" endian="big" sizex="1" sizey="64" userlevel="1">
+		<scaling name="A2L" units="unscaled" expression="x" to_byte="x" format="0" fineincrement="50" coarseincrement="200" />
+		<scaling name="EXPERIMENTAL 105" units="g/s" expression="(x*105)/25600" to_byte="(x*25600)/105" format="0.00" fineincrement="1" coarseincrement="20" />
+		<scaling name="EXPERIMENTAL 105 | 3121" units="g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="20" />
+		<table type="X Axis" name="MAF Table" sizey="1">
+			<data>MAF Value</data>
+		</table>
+		<table type="Y Axis" name="MAF Sensor (V)" format="0.00" sizey="64">
+			<data>0.00</data>
+			<data>0.08</data>
+			<data>0.16</data>
+			<data>0.24</data>
+			<data>0.32</data>
+			<data>0.40</data>
+			<data>0.48</data>
+			<data>0.56</data>
+			<data>0.64</data>
+			<data>0.72</data>
+			<data>0.80</data>
+			<data>0.88</data>
+			<data>0.96</data>
+			<data>1.04</data>
+			<data>1.12</data>
+			<data>1.20</data>
+			<data>1.28</data>
+			<data>1.36</data>
+			<data>1.44</data>
+			<data>1.52</data>
+			<data>1.60</data>
+			<data>1.68</data>
+			<data>1.76</data>
+			<data>1.84</data>
+			<data>1.92</data>
+			<data>2.00</data>
+			<data>2.08</data>
+			<data>2.16</data>
+			<data>2.24</data>
+			<data>2.32</data>
+			<data>2.40</data>
+			<data>2.48</data>
+			<data>2.56</data>
+			<data>2.64</data>
+			<data>2.72</data>
+			<data>2.80</data>
+			<data>2.88</data>
+			<data>2.96</data>
+			<data>3.04</data>
+			<data>3.12</data>
+			<data>3.20</data>
+			<data>3.28</data>
+			<data>3.36</data>
+			<data>3.44</data>
+			<data>3.52</data>
+			<data>3.60</data>
+			<data>3.68</data>
+			<data>3.76</data>
+			<data>3.84</data>
+			<data>3.92</data>
+			<data>4.00</data>
+			<data>4.08</data>
+			<data>4.16</data>
+			<data>4.24</data>
+			<data>4.32</data>
+			<data>4.40</data>
+			<data>4.48</data>
+			<data>4.56</data>
+			<data>4.64</data>
+			<data>4.72</data>
+			<data>4.80</data>
+			<data>4.88</data>
+			<data>4.96</data>			
+			<data>5.04</data>
+		</table>
+		<description>mQTBL- Inhalation air quantity conversion table. This table represents airflow through the MAF sensor at a given voltage. For stock MAF diameter intakes, I'd strongly recommend utilizing the MAF Factor alongside Fuel Compensation to dial in your fueling, rather than utilizing this table.</description>
+	</table>
 
 	<table type="2D" name="QH0 Low Flow Quantity Table" category="Airflow" storagetype="uint16" sizex="16" endian="big" userlevel="1">
 	<scaling units="QH0 Flow Quantity (%)" expression="x*0.0015259" to_byte="x/0.0015259" format="0.00"/> 
@@ -1739,6 +1891,47 @@
 	\\Shifting Performance//
 
 	<table type="3D" name="Engine Torque Map" category="Shifting Performance" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1">
+		<scaling name="USA" units="Engine Torque (lb-ft)" expression="x*0.073756-2416.836136" to_byte="x/0.073756+32767.9936" format="0" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="Cylinder Filling up Efficiency (%)" sizex="16">
+			<data>0</data>
+			<data>10</data>
+			<data>20</data>
+			<data>30</data>
+			<data>40</data>
+			<data>50</data> 
+			<data>60</data>
+			<data>70</data>
+			<data>80</data> 
+			<data>90</data>
+			<data>100</data>
+			<data>110</data> 
+			<data>120</data>
+			<data>130</data>
+			<data>140</data> 
+			<data>150</data>		
+		</table>
+		<table type="Y Axis" name="Engine Speed (RPM)" sizey="16">
+			<data>400</data>
+			<data>800</data>
+			<data>1200</data>
+			<data>1600</data>
+			<data>2000</data>
+			<data>2400</data> 
+			<data>2800</data>
+			<data>3200</data>
+			<data>3600</data> 
+			<data>4000</data>
+			<data>4400</data>
+			<data>4800</data> 
+			<data>5200</data>
+			<data>5600</data>
+			<data>6000</data> 
+			<data>6400</data>	
+		</table>   
+		<description>mTENGMAP- Directly alters transmission line pressure. Can be used to improve shifting speeds and shift firmness.</description>
+	</table>
+
+	<table type="3D" name="Engine Torque Map 2" category="Shifting Performance" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="1">
 		<scaling name="USA" units="Engine Torque (lb-ft)" expression="x*0.073756-2416.836136" to_byte="x/0.073756+32767.9936" format="0" fineincrement="1" coarseincrement="10" />
 		<table type="X Axis" name="Cylinder Filling up Efficiency (%)" sizex="16">
 			<data>0</data>
@@ -11346,27 +11539,187 @@ Need a ROM dump to verify if compatible with CF48D
 		<filesize>1024kb</filesize>
 	</romid>
 
-	<table name="Target AFR Map" storageaddress="0xAC06">
+	\\Values, Tables, and Maps w/o Axes//
+
+uint16;
+	<table name="APO Threshold (Brake)" storageaddress="0x904E"/>
+	
+
+	<table name="Throttle Rev Limiter" storageaddress="0x9478"/>
+	
+	<table name="Knock Slice Map" storageaddress="0x12A6A"/>
+	
+	<table name="Speed Limiter" storageaddress="0x94C2"/>
+	
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x9582"/>
+	
+	<table name="K-Value" storageaddress="0x92BE"/>
+	
+	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0x16870"/>
+	
+	<table name="MAF Table" storageaddress="0x1625A"/>
+	
+	<table name="MAF Table 2" storageaddress="0x162DA"/>
+	
+	<table name="MAF Table 3" storageaddress="0x1635A"/>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x938C"/>
+	
+uint8;
+	<table name="Cranking Advance Table" storageaddress="0x13F9B"/>
+	
+	<table name="Bosch Fuel Restore Table" storageaddress="0x14991"/>
+	
+	<table name="JECS Fuel Restore Table" storageaddress="0x1481D"/>
+	
+	<table name="JECS Fuel Cut Table" storageaddress="0x1471D"/>
+	
+	<table name="Bosch Fuel Cut Table" storageaddress="0x146E9"/> 
+	
+	<table name="Target Idle Table" storageaddress="0x1472D"/>
+	
+
+	<table name="MAF Factor" storageaddress="0x8A35" />
+	
+
+	<table name="GOV Table" storageaddress="0x14173"/>
+	
+	<table name="GOV3 Table" storageaddress="0x1417B"/>
+	
+	<table name="GOVL Table" storageaddress="0x14183"/>
+	
+	<table name="GOV Addition Table (Drive)" storageaddress="0x13EE7"/>
+	
+	<table name="GOV Addition Table (Neutral)" storageaddress="0x13EEF"/>
+	
+	<table name="K2Y Table (Deceleration Advance)" storageaddress="0x1437F"/>
+	
+	<table name="K1 Table (Acceleration Retard)" storageaddress="0x14387"/>
+	
+	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x14CF3"/>
+	
+	<table name="Initial Retard Quantity Table" storageaddress="0x14CF7"/>
+	
+	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0x14CFB"/>
+	
+	<table name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" storageaddress="0x14CFF"/>
+	
+	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0x14D03"/>
+
+	\\Maps and Tables w/ Axes//
+	<!--
+	<table name="Target Throttle Valve Opening Table" storageaddress="0xC4B0">
+		<table type="X Axis" storageaddress="0xD1A6"/>
+	</table>
+
+	<table name="Target Throttle Valve Opening Table 2" storageaddress="0xDE22">
+		<table type="X Axis" storageaddress="0xE06C"/>
+	</table>
+	
+	<table name="Throttle Flow Potential Table" storageaddress="0xD216">
+		<table type="X Axis" storageaddress="0xD106"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0xD256">
+		<table type="X Axis" storageaddress="0xD146"/>
+	</table>
+	
+	<table name="Throttle Flow Potential Table 2" storageaddress="0xE022">
+		<table type="X Axis" storageaddress="0xDFA2"/>
+	</table>
+	
+	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xDFE2">
+		<table type="X Axis" storageaddress="0xDF62"/>
+	</table>
+-->
+	<table name="MBT Flame Speed Map" storageaddress="0x9D86">
+		<table type="X Axis" storageaddress="0xB2D5"/>
+		<table type="Y Axis" storageaddress="0xB2D9"/>
+	</table>
+<!--
+	<table name="Cylinder Fresh Air Rate Map" storageaddress="0x91A1">
+		<table type="X Axis" storageaddress="0xB2D5"/>
+		<table type="Y Axis" storageaddress="0xB2D9"/>
+	</table>
+
+	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x91B1"> 
+		<table type="X Axis" storageaddress="0xB2CD"/> 
+		<table type="Y Axis" storageaddress="0xB2C5"/> 
+	</table>
+	
+	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x91F1"> 
+		<table type="X Axis" storageaddress="0xB2CD"/> 
+		<table type="Y Axis" storageaddress="0xB2C5"/> 
+	</table>-->
+	
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0xB696"> 
+		<table type="X Axis" storageaddress="0xC2EC"/>
+		<table type="Y Axis" storageaddress="0xC30C"/>
+	</table>
+
+	<table name="Exhaust Cam Timing Map" storageaddress="0xB596"> 
+		<table type="X Axis" storageaddress="0xC2EC"/>
+		<table type="Y Axis" storageaddress="0xC30C"/>
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0xB796">
+		<table type="X Axis" storageaddress="0xC2A0"/>
+		<table type="Y Axis" storageaddress="0xC2B8"/>	
+	</table>
+	
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0xBA76">
+		<table type="X Axis" storageaddress="0xB389"/>
+		<table type="Y Axis" storageaddress="0xB369"/>
+	</table>
+	
+	<table name="Misfire Diagnosis Map A" storageaddress="0xB876">
+		<table type="X Axis" storageaddress="0xB389"/>
+		<table type="Y Axis" storageaddress="0xB369"/>
+	</table>
+	
+	<table name="Misfire Diagnosis Map B" storageaddress="0xB976">
+		<table type="X Axis" storageaddress="0xB389"/>
+		<table type="Y Axis" storageaddress="0xB369"/>	
+	</table>
+	
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x1026A"> 
+		<table type="X Axis" storageaddress="0xC842"/>
+		<table type="Y Axis" storageaddress="0xB4CA"/>
+	</table>
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xE0260">
+		<table type="X Axis" storageaddress="0xDEA2"/>
+		<table type="Y Axis" storageaddress="0xDE11"/>
+	</table>
+
+	<table name="TTEPTD Torque Compensation Map" storageaddress="0x125EA"> 
+		<table type="X Axis" storageaddress="0xCCC0"/>axes
+		<table type="Y Axis" storageaddress="0xCCB0"/>
+	</table>
+
+//////////////////////////////////////
+
+	<table name="Target AFR Map (8x8)" storageaddress="0xAC06">
 		<table type="X Axis" storageaddress="0x0000"/>
 		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
 	
-	<table name="Fuel Compensation Map" storageaddress="0xA2F6">
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0xA2F6">
 		<table type="X Axis" storageaddress="0x0000"/>
 		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
 
-	<table name="Cold Ignition Timing Map" storageaddress="0x9976">
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x9976">
 		<table type="X Axis" storageaddress="0x0000"/>
 		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
 
-	<table name="High Octane Ignition Timing Map" storageaddress="0x9A76">
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x9A76">
 		<table type="X Axis" storageaddress="0x0000"/>
 		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
 
-	<table name="High Detonation Ignition Timing Map" storageaddress="0x9B76">
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x9B76">
 		<table type="X Axis" storageaddress="0x0000"/>
 		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
@@ -11376,7 +11729,7 @@ Need a ROM dump to verify if compatible with CF48D
 	</table>
 	
 	<table name="Engine Torque Map" storageaddress="0x1286A"/>
-
+	<table name="Engine Torque Map 2" storageaddress="0x1266A"/> ???
 
 	<table name="AFR Correction Map (Bank 1)" storageaddress="0xC7EA"> 
 		<table type="X Axis" storageaddress="0x15E1A"/>
@@ -11388,7 +11741,59 @@ Need a ROM dump to verify if compatible with CF48D
 		<table type="Y Axis" storageaddress="0x15DDA"/>
 	</table>
 
-	<checksum type="alt" start="0" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>
+	\\DTCs//
+Notes;
+Not accurate I don't think. Further analysis required since CAN-based.
+
+    <table name="DTC 1" storageaddress="0x1B31C"/>
+    <table name="Engine Overheating (P1217)" storageaddress="0x1B31D"/>
+    <table name="Closed Loop DTCs" storageaddress="0x1B31E"/>
+    <table name="P1212" storageaddress="0x1B31F"/>
+    <table name="Misfire DTCs" storageaddress="0x1B321"/>
+    <table name="Catalyst DTCs" storageaddress="0x1B322"/>
+    <table name="P0125" storageaddress="0x1B324"/>
+    <table name="P0850" storageaddress="0x1B325"/>
+    <table name="Automatic Transmission DTCs 3" storageaddress="0x1B326"/>
+    <table name="Automatic Transmission DTCs 2" storageaddress="0x1B327"/>
+    <table name="EVAP DTCs" storageaddress="0x1B32B"/>
+    <table name="DTC 8" storageaddress="0x1B32E"/>
+    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0x1B32F"/>
+    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0x1B333"/>
+    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0x1B334"/>
+    <table name="Power Steering DTC" storageaddress="0x1B336"/>
+    <table name="PD001 and PD000" storageaddress="0x1B337"/>
+    <table name="DTC 9" storageaddress="0x1B33B"/>
+    <table name="P2101" storageaddress="0x1B33C"/>
+    <table name="DTC 10" storageaddress="0x1B33D"/>
+    <table name="P1715" storageaddress="0x1B33E"/>
+    <table name="P1805" storageaddress="0x1B33F"/>
+    <table name="DTC 4" storageaddress="0x1B340"/>
+    <table name="DTC 5" storageaddress="0x1B341"/>
+    <table name="DTC 6" storageaddress="0x1B342"/>
+    <table name="Cruise Control DTCs" storageaddress="0x1B344"/>
+    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0x1B346"/>
+    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0x1B347"/>
+    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0x1B348"/>
+    <table name="Automatic Transmission DTCs 4" storageaddress="0x1B34A"/>
+    <table name="Automatic Transmission DTCs" storageaddress="0x1B34B"/>
+    <table name="DTC 7" storageaddress="0x1B34C"/>
+    <table name="Idle DTCs" storageaddress="0x1B34D"/>
+    <table name="Secondary O2 DTCs" storageaddress="0x1B34E"/>
+    <table name="Secondary O2 Knock DTCs" storageaddress="0x1B34F"/>
+    <table name="MAF Sensor DTCs" storageaddress="0x1B350"/>
+    <table name="DTC 3" storageaddress="0x1B351"/>
+    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0x1B352"/>
+    <table name="DTC 2" storageaddress="0x1B353"/>
+    <table name="EVAP Pressure Flow DTCs" storageaddress="0x1B354"/>
+    <table name="EVAP Leaks DTCs" storageaddress="0x1B355"/>
+    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0x1B356"/>
+    <table name="Throttle Position Sensor DTCs" storageaddress="0x1B357"/>
+    <table name="Throttle Control Motor DTCs" storageaddress="0x1B358"/>
+    <table name="AFR Sensors DTCs" storageaddress="0x1B359"/>
+    <table name="AFR Sensors Circuit DTCs" storageaddress="0x1B35A"/>
+    <table name="PD010" storageaddress="0x1B35F"/>
+
+	<checksum type="alt2" start="0x8204" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>
 	
 </rom>
 <rom base="A2L">
@@ -11496,6 +11901,15 @@ Need a ROM dump to verify if compatible with CF48D
 -->
 
 	\\ Values, Tables, and Maps w/o Axes//
+	<table name="ADVCD1 Table (D Range)" storageaddress="0x7A78"/> 
+	<table name="ADVCD1 Table (N Range)" storageaddress="0x7A80"/> 	
+	<table name="GOV Table" storageaddress="0x7C38"/>
+	<table name="GOV3 Table" storageaddress="0x7C40"/>	
+	<table name="GOVL Table" storageaddress="0x7C48"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0x7F1C"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x7F70"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0x80C4"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0x7FC0"/>
 	<table name="MAF Voltage Limits" storageaddress="0x47AE"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x4B9C"/>
 	<table name="TRQPIG Reference Table" storageaddress="0x8F7C"/> 
