@@ -752,14 +752,14 @@
 		<scaling name="A2L" units="Gas Density (g/m^3)" expression="x*125" to_byte="x/125" format="0" fineincrement="125" coarseincrement="1000" />
 		<scaling name="T1" units="Gas Density (g/cc)" expression="(x*125)/1000000" to_byte="(x*1000000)/125" format="0.000"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency (%)" sizex="8">
-			<data>12.5</data> 
+			<data>0</data> 
 			<data>25</data>
-			<data>37.5</data> 
-			<data>50</data>
-			<data>62.5</data>
-			<data>75</data> 
-			<data>87.5</data>
+			<data>50</data> 
+			<data>75</data>
 			<data>100</data>
+			<data>125</data> 
+			<data>150</data>
+			<data>175</data>
 		</table>
 		<description><!--mTDENS--> Table value is multiplied by vFLV (after AFR and Coolant compensations)</description>
 	</table>  
@@ -1309,7 +1309,7 @@
 	\\Knock and Misfire Detection//
 	
 	<table type="3D" name="Knock Slice Map" category="Knock and Misfire Detection" storagetype="uint16" endian="big" sizex="16" sizey="6" userlevel="1">
-		<scaling units="Knock Count (Threshold)" expression="x*0.00390625" to_byte="x/0.00390625" format="0" fineincrement="1" coarseincrement="4" />
+		<scaling units="Knock Strength (Threshold)" expression="x*0.00390625" to_byte="x/0.00390625" format="0" fineincrement="1" coarseincrement="4" />
 		<table type="X Axis" name="Engine Speed (RPM)" sizex="16" logparam="P8">
 			<data>400</data>
 			<data>800</data> 
@@ -12088,6 +12088,14 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	
 	\\Flags and Supmasks//
 
+
+
+	<table name="Electronic Throttle Control Flags" storageaddress="0x4498"/>
+
+
+	
+	<table name="Flags 2" storageaddress="0x453B"/>
+	<table name="Flags 14" storageaddress="0x42B1"/> 
 	<table name="Flags 3" storageaddress="0x4498"/>
 	<table name="CID1100 supmask" storageaddress="0x7997"/> 
 	<table name="CID1120 supmask" storageaddress="0x79A3"/>

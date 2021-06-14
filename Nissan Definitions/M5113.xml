@@ -224,6 +224,14 @@
 	
 	\\Flags and Supmasks//
 
+
+
+	<table name="Electronic Throttle Control Flags" storageaddress="0x4498"/>
+
+
+	
+	<table name="Flags 2" storageaddress="0x453B"/>
+	<table name="Flags 14" storageaddress="0x42B1"/> 
 	<table name="Flags 3" storageaddress="0x4498"/>
 	<table name="CID1100 supmask" storageaddress="0x7997"/> 
 	<table name="CID1120 supmask" storageaddress="0x79A3"/>
