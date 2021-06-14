@@ -12209,6 +12209,8 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	<table name="Flags 2" storageaddress="0x453B"/>
 	<table name="Flags 3" storageaddress="0x4498"/>
 	<table name="Flags 14" storageaddress="0x42B1"/> 
+	<table name="Flags 24" storageaddress="0x4499"/>
+
 	<table name="CID1100 Supmask" storageaddress="0x7997"/> 
 	<table name="CID1120 Supmask" storageaddress="0x79A3"/>
 	<table name="CID1140 Supmask" storageaddress="0x799B"/> 
