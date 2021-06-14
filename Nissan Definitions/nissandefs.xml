@@ -1559,6 +1559,21 @@
 		<description> <!--mKMRCT1--> This value represents a maximum delay between the time the car goes from closed to open loop fuel target values. There are several other potential delays but setting this to 0 should override them. For performance applications to ensure that the ecu transitions to the fuel target as fast as possible upon wide open throttle, set to 0.</description>
 	</table>
 
+	\\Fuel Delivery (Advanced)//
+
+	<table type="3D" name="Steady State Judgement Smoothing Coefficient Map" category="Fuel Delivery (Advanced)" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="3" logparam="?">
+		<scaling name="EXPERIMENTAL" units="%" expression="x*0.1953125" to_byte="x/0.1953125" format="0.00" fineincrement="1" coarseincrement="10" />
+		<scaling name="A2L" units="l" expression="x*.001953125" to_byte="x/.001953125" format="0.0000" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="QH0" storagetype="uint8" endian="big" logparam="Z1">
+			<scaling units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="Z1">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMDUMP- At the time of the steady state judgement, smoothing coefficient map.</description>
+	</table>
+	
+	
 	\\Fuel Delivery (Limiters)//
 
   	<table type="2D" name="Short Term Fuel Trim Limits" category="Fuel Delivery (Limiters)" storagetype="uint16" sizex="2" endian="big" userlevel="1" >
@@ -1756,6 +1771,23 @@
 			<data>X</data>
 		</table>
 		<description>mTNCUTD-  Usually set to 0, surprised the units are in seconds. "A high rotation cut judgement delay"</description>
+	</table>
+	
+	\\Torque Management//
+
+	<table type="2D" name="TRQPIG Reference Table" category="Torque Management" storagetype="uint16" sizex="8" endian="big" userlevel="3">
+	<scaling name="USA" units="Engine Torque (lb-ft)" expression="x*0.073756-2416.836136" to_byte="x/0.073756+32767.9936" format="0" fineincrement="1" coarseincrement="10" />
+	<table type="X Axis" name="Engine Speed (RPM)" sizex="8">
+			<data>0</data> 
+			<data>200</data>
+			<data>400</data> 
+			<data>600</data>
+			<data>800</data> 
+			<data>1000</data>
+			<data>1200</data>	
+			<data>1400</data>				
+	</table>
+	<description><!--mTTRQPIG-->Pre-Ignition Avoidance Control Torque</description>
 	</table>
 	
 	\\Electronic Throttle Control//
@@ -1972,6 +2004,80 @@
 		<description>mTENGMAP- Directly alters transmission line pressure. Can be used to improve shifting speeds and shift firmness.</description>
 	</table>
 
+	\\Gear Ratio Calibration//
+	
+	<table type="2D" name="Gear Ratio Table" category="Gear Ratio Calibration" storagetype="uint16" sizex="5" endian="big" userlevel="3" >
+		<scaling units="Gear Ratio" expression="x*.000976563" to_byte="x/.000976563" format="#.###:1"/>
+	<table type="X Axis" name="Gear" sizex="5">
+			<data>1</data>
+			<data>2</data>
+			<data>3</data>
+			<data>4</data>
+			<data>5</data>
+	</table>
+	<description><!--mTRATIO--></description>
+	</table>
+
+	<table type="2D" name="Gear Ratio Table 2" category="Gear Ratio Calibration" storagetype="uint16" sizex="5" endian="big" userlevel="3" >
+		<scaling units="Gear Ratio" expression="x*.000976563" to_byte="x/.000976563" format="#.###:1"/>
+	<table type="X Axis" name="Gear" sizex="5">
+			<data>1</data>
+			<data>2</data>
+			<data>3</data>
+			<data>4</data>
+			<data>5</data>
+	</table>
+	<description><!--mTRATIO_S--> Table values must match the first table's values.</description>
+	</table>
+	
+	\\Torque Converter//
+
+	<table type="2D" name="Torque Converter Torque Ratio Table" category="Torque Converter" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<scaling units="Torque Ratio" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000"/> 
+	<table type="X Axis" name="Normalized Speed Ratio" sizex="16">
+			<data>0.00</data> 
+			<data>0.06</data>
+			<data>0.12</data> 
+			<data>0.18</data>
+			<data>0.24</data> 
+			<data>0.30</data>
+			<data>0.36</data>
+			<data>0.42</data> 
+			<data>0.48</data> 
+			<data>0.54</data>
+			<data>0.60</data> 
+			<data>0.66</data>
+			<data>0.72</data> 
+			<data>0.78</data>
+			<data>0.84</data>
+			<data>0.90</data> 
+	</table>
+	<description>mTTRQRTO- Torque converter torque ratio table// Axis vNSLPRT</description>
+	</table>
+
+	<table type="2D" name="Torque Converter Torque Ratio Table 2" category="Torque Converter" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<scaling units="Torque Ratio" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000"/> 
+	<table type="X Axis" name="Normalized Speed Ratio" sizex="16">
+			<data>0.00</data> 
+			<data>0.06</data>
+			<data>0.12</data> 
+			<data>0.18</data>
+			<data>0.24</data> 
+			<data>0.30</data>
+			<data>0.36</data>
+			<data>0.42</data> 
+			<data>0.48</data> 
+			<data>0.54</data>
+			<data>0.60</data> 
+			<data>0.66</data>
+			<data>0.72</data> 
+			<data>0.78</data>
+			<data>0.84</data>
+			<data>0.90</data> 
+	</table>
+	<description>mTTRQRT_S- Torque converter torque ratio table// Axis vNSLPRT_S</description>
+	</table>
+	
 	\\Traction Control System//
 
 	<table type="2D" name="TCS Fuel Cut Prohibition Speed Table" category="Traction Control System" storagetype="uint8" endian="big" sizex="16" userlevel="1">
@@ -11901,8 +12007,12 @@ Not accurate I don't think. Further analysis required since CAN-based.
 -->
 
 	\\ Values, Tables, and Maps w/o Axes//
-	<table name="ADVCD1 Table (D Range)" storageaddress="0x7A78"/> 
-	<table name="ADVCD1 Table (N Range)" storageaddress="0x7A80"/> 	
+
+	<table name="Fuel Injector Latency Adder" storageaddress="0x41B1"/>
+	<table name="Injector Latency at 14V" storageaddress="0x4607"/> 
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x80E8"/>
+	<table name="GOV Addition Table (Drive)" storageaddress="0x7A78"/> 
+	<table name="GOV Addition Table (Neutral)" storageaddress="0x7A80"/> 	
 	<table name="GOV Table" storageaddress="0x7C38"/>
 	<table name="GOV3 Table" storageaddress="0x7C40"/>	
 	<table name="GOVL Table" storageaddress="0x7C48"/>
@@ -11915,9 +12025,14 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	<table name="TRQPIG Reference Table" storageaddress="0x8F7C"/> 
 	<table name="Torque Converter Torque Ratio Table" storageaddress="0x8F8C"/>
 	<table name="Torque Converter Torque Ratio Table 2" storageaddress="0x9D60"/>
-	<table name="ISC Opening Area Upper Limit (Engine Speed Compensation) Table 2" storageaddress="0x9B46"/> 
+	<table name="ISC Opening Area Upper Limit Table 2 (RPM Compensation)" storageaddress="0x9B46"/> 
 	<table name="Gear Ratio Table" storageaddress="0x8D1E"/>
 	<table name="Gear Ratio Table 2" storageaddress="0x9D16"/> 
+	<table name="Cranking Advance Table" storageaddress="0x7A88"/>
+
+
+//
+
 	<table name="QH0 Vehicle Speed Upper Limit Table" storageaddress="0x8CEE"/>
 	<table name="Knock Slice Map" storageaddress="0x73E0"/>
 	<table name="AFM Backup TP" storageaddress="0x4CED"/>
@@ -11946,11 +12061,15 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	<table name="Torque Limiter (Vehicle Speed R/L)" storageaddress="0x49d8"/>
 	<table name="Engine Torque Map" storageaddress="0x71E0"/>
 	<table name="PTD On/Off Switchover Step Value Table" storageaddress="0x8D7C"/>
-	<table name="PTD On/Off Switchover Step Value Table (Low Speed)" storageaddress="0x8D84"/> <!-- These Two are potential. Very different values from CF48D.-->
+	<table name="PTD On/Off Switchover Step Value Table (Low Speed)" storageaddress="0x8D84"/>
+
+<!-- These Two are potential. Very different values from CF48D
+	
 	<table name="APOFS Shaft Conversion Table" storageaddress="0x89C6"/>
 	<table name="APOFS Shaft Conversion Table 2" storageaddress="0x8D8C"/>
-	<table name="Extreme Short Rest Time Map" storageaddress="0x5BD5"/>
-	<table name="Suspension Time/Operation Time Ratio Map" storageaddress="0x5BE5"/>
+-->
+	<table name="Fuel Cut Extreme Short Rest Time Map" storageaddress="0x5BD5"/>
+	<table name="Fuel Cut Suspension Time:Operation Time Ratio Map" storageaddress="0x5BE5"/>
 	<table name="Adhesion Magnification Rotation Compensation Rate" storageaddress="0x8C7E"/>
 	<table name="Adhesion Magnification Basic Value (1 Cylinder Hit)" storageaddress="0x5A55"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x47FA"/>
@@ -11980,11 +12099,15 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0x9C86">
 		<table type="Y Axis" storageaddress="0x9BE6"/>
 	</table>
-	
-	<table name="Target AFR Map?" storageaddress="0x5505"><!-- Analyze-->
+
+
+<!-- Analyze
+
+	<table name="Target AFR Map?" storageaddress="0x5505">
 		<table type="X Axis" storageaddress="0x780E"/>
 		<table type="Y Axis" storageaddress="0x78E5" />
 	</table>
+-->
 	
 	<table name="MBT Flame Speed Map"  storageaddress="0x53A5">
 		<table type="X Axis" storageaddress="0x77E6" />
@@ -11995,37 +12118,31 @@ Not accurate I don't think. Further analysis required since CAN-based.
 		<table type="X Axis" storageaddress="0x77E6" />
 		<table type="Y Axis" storageaddress="0x77EA" />
 	</table>
-	
-	<table name="Steady State Judgement Smoothing Coefficient Map" storageaddress="0x5395">
-		<table type="X Axis" storageaddress="0x7761"/>
-		<table type="Y Axis" storageaddress="0x775D"/>
-	</table>
 
-	<table name="P-Gain Computed Map" storageaddress="0x53C5">
-		<table type="X Axis" storageaddress="0x77DE"/>
-		<table type="Y Axis" storageaddress="0x77D6"/>
-	</table>
-	<!-- These two are potential -->
-	<table name="P-Gain Computed Map (Left Bank)" storageaddress="0x5405">
-		<table type="X Axis" storageaddress="0x77DE"/>
-		<table type="Y Axis" storageaddress="0x77D6"/>
-	</table>
-	
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7160">
       <table type="X Axis" storageaddress="0x8B96" />
       <table type="Y Axis" storageaddress="0x8B86" />
 	</table>
 
-	<table name="High Temp Fuel Compensation" storageaddress="0x4DF1"> 
-      <table type="X Axis" storageaddress="0x0000" /> <!-- FInd in Ghidra-->
+	<!--<table name="High Temp Fuel Compensation" storageaddress="0x4DF1"> 
+      <table type="X Axis" storageaddress="0x0000" /> Find in Ghidra
       <table type="Y Axis" storageaddress="0x0000" />
-    </table>
-	
+    </table>-->
+
+
+<!-- Which one is real????
+
 	<table name="Steady State Judgement Smoothing Coefficient Map" storageaddress="0x5201">
-		<table type="X Axis" storageaddress="0xAD84"/> <!-- 0xAD84 0x9C27 //0x9D4F-->
+		<table type="X Axis" storageaddress="0xAD84"/> // 0xAD84 0x9C27 //0x9D4F
 		<table type="Y Axis" storageaddress="0x9C27"/>
 	</table>
-	
+
+	<table name="Steady State Judgement Smoothing Coefficient Map" storageaddress="0x5395">
+		<table type="X Axis" storageaddress="0x7761"/>
+		<table type="Y Axis" storageaddress="0x775D"/>
+	</table>
+-->
+
    <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x4e01"> 
       <table type="X Axis" storageaddress="0x7a50" />
       <table type="Y Axis" storageaddress="0x7a60" />
@@ -12088,23 +12205,18 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	
 	\\Flags and Supmasks//
 
-
-
 	<table name="Electronic Throttle Control Flags" storageaddress="0x4498"/>
-
-
-	
 	<table name="Flags 2" storageaddress="0x453B"/>
-	<table name="Flags 14" storageaddress="0x42B1"/> 
 	<table name="Flags 3" storageaddress="0x4498"/>
-	<table name="CID1100 supmask" storageaddress="0x7997"/> 
-	<table name="CID1120 supmask" storageaddress="0x79A3"/>
-	<table name="CID1140 supmask" storageaddress="0x799B"/> 
-	<table name="CID1160 supmask" storageaddress="0x799F"/> 
-	<table name="CID1200 supmask" storageaddress="0x79AF"/> 
-	<table name="CID1220 supmask" storageaddress="0x79B3"/>
+	<table name="Flags 14" storageaddress="0x42B1"/> 
+	<table name="CID1100 Supmask" storageaddress="0x7997"/> 
+	<table name="CID1120 Supmask" storageaddress="0x79A3"/>
+	<table name="CID1140 Supmask" storageaddress="0x799B"/> 
+	<table name="CID1160 Supmask" storageaddress="0x799F"/> 
+	<table name="CID1200 Supmask" storageaddress="0x79AF"/> 
+	<table name="CID1220 Supmask" storageaddress="0x79B3"/>
 	
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4cb4" xorloc="0x4Ca0" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4CB4" xorloc="0x4CA0" />
 	
 </rom><rom base="A2L">
 	<romid>

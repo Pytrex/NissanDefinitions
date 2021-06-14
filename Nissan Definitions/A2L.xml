@@ -1557,6 +1557,21 @@
 		<description> <!--mKMRCT1--> This value represents a maximum delay between the time the car goes from closed to open loop fuel target values. There are several other potential delays but setting this to 0 should override them. For performance applications to ensure that the ecu transitions to the fuel target as fast as possible upon wide open throttle, set to 0.</description>
 	</table>
 
+	\\Fuel Delivery (Advanced)//
+
+	<table type="3D" name="Steady State Judgement Smoothing Coefficient Map" category="Fuel Delivery (Advanced)" storagetype="uint8" endian="big" sizex="4" sizey="4" userlevel="3" logparam="?">
+		<scaling name="EXPERIMENTAL" units="%" expression="x*0.1953125" to_byte="x/0.1953125" format="0.00" fineincrement="1" coarseincrement="10" />
+		<scaling name="A2L" units="l" expression="x*.001953125" to_byte="x/.001953125" format="0.0000" fineincrement="1" coarseincrement="10" />
+		<table type="X Axis" name="QH0" storagetype="uint8" endian="big" logparam="Z1">
+			<scaling units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement=".5" coarseincrement="4" />
+		</table>
+		<table type="Y Axis" name="Engine Speed" storagetype="uint8" endian="big" logparam="Z1">
+			<scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" />
+		</table>
+		<description>mMDUMP- At the time of the steady state judgement, smoothing coefficient map.</description>
+	</table>
+	
+	
 	\\Fuel Delivery (Limiters)//
 
   	<table type="2D" name="Short Term Fuel Trim Limits" category="Fuel Delivery (Limiters)" storagetype="uint16" sizex="2" endian="big" userlevel="1" >
@@ -1754,6 +1769,23 @@
 			<data>X</data>
 		</table>
 		<description>mTNCUTD-  Usually set to 0, surprised the units are in seconds. "A high rotation cut judgement delay"</description>
+	</table>
+	
+	\\Torque Management//
+
+	<table type="2D" name="TRQPIG Reference Table" category="Torque Management" storagetype="uint16" sizex="8" endian="big" userlevel="3">
+	<scaling name="USA" units="Engine Torque (lb-ft)" expression="x*0.073756-2416.836136" to_byte="x/0.073756+32767.9936" format="0" fineincrement="1" coarseincrement="10" />
+	<table type="X Axis" name="Engine Speed (RPM)" sizex="8">
+			<data>0</data> 
+			<data>200</data>
+			<data>400</data> 
+			<data>600</data>
+			<data>800</data> 
+			<data>1000</data>
+			<data>1200</data>	
+			<data>1400</data>				
+	</table>
+	<description><!--mTTRQPIG-->Pre-Ignition Avoidance Control Torque</description>
 	</table>
 	
 	\\Electronic Throttle Control//
@@ -1970,6 +2002,80 @@
 		<description>mTENGMAP- Directly alters transmission line pressure. Can be used to improve shifting speeds and shift firmness.</description>
 	</table>
 
+	\\Gear Ratio Calibration//
+	
+	<table type="2D" name="Gear Ratio Table" category="Gear Ratio Calibration" storagetype="uint16" sizex="5" endian="big" userlevel="3" >
+		<scaling units="Gear Ratio" expression="x*.000976563" to_byte="x/.000976563" format="#.###:1"/>
+	<table type="X Axis" name="Gear" sizex="5">
+			<data>1</data>
+			<data>2</data>
+			<data>3</data>
+			<data>4</data>
+			<data>5</data>
+	</table>
+	<description><!--mTRATIO--></description>
+	</table>
+
+	<table type="2D" name="Gear Ratio Table 2" category="Gear Ratio Calibration" storagetype="uint16" sizex="5" endian="big" userlevel="3" >
+		<scaling units="Gear Ratio" expression="x*.000976563" to_byte="x/.000976563" format="#.###:1"/>
+	<table type="X Axis" name="Gear" sizex="5">
+			<data>1</data>
+			<data>2</data>
+			<data>3</data>
+			<data>4</data>
+			<data>5</data>
+	</table>
+	<description><!--mTRATIO_S--> Table values must match the first table's values.</description>
+	</table>
+	
+	\\Torque Converter//
+
+	<table type="2D" name="Torque Converter Torque Ratio Table" category="Torque Converter" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<scaling units="Torque Ratio" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000"/> 
+	<table type="X Axis" name="Normalized Speed Ratio" sizex="16">
+			<data>0.00</data> 
+			<data>0.06</data>
+			<data>0.12</data> 
+			<data>0.18</data>
+			<data>0.24</data> 
+			<data>0.30</data>
+			<data>0.36</data>
+			<data>0.42</data> 
+			<data>0.48</data> 
+			<data>0.54</data>
+			<data>0.60</data> 
+			<data>0.66</data>
+			<data>0.72</data> 
+			<data>0.78</data>
+			<data>0.84</data>
+			<data>0.90</data> 
+	</table>
+	<description>mTTRQRTO- Torque converter torque ratio table// Axis vNSLPRT</description>
+	</table>
+
+	<table type="2D" name="Torque Converter Torque Ratio Table 2" category="Torque Converter" storagetype="uint16" sizex="16" endian="big" userlevel="3">
+	<scaling units="Torque Ratio" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000"/> 
+	<table type="X Axis" name="Normalized Speed Ratio" sizex="16">
+			<data>0.00</data> 
+			<data>0.06</data>
+			<data>0.12</data> 
+			<data>0.18</data>
+			<data>0.24</data> 
+			<data>0.30</data>
+			<data>0.36</data>
+			<data>0.42</data> 
+			<data>0.48</data> 
+			<data>0.54</data>
+			<data>0.60</data> 
+			<data>0.66</data>
+			<data>0.72</data> 
+			<data>0.78</data>
+			<data>0.84</data>
+			<data>0.90</data> 
+	</table>
+	<description>mTTRQRT_S- Torque converter torque ratio table// Axis vNSLPRT_S</description>
+	</table>
+	
 	\\Traction Control System//
 
 	<table type="2D" name="TCS Fuel Cut Prohibition Speed Table" category="Traction Control System" storagetype="uint8" endian="big" sizex="16" userlevel="1">
