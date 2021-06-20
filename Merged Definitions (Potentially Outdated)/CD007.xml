@@ -1,0 +1,21 @@
+<rom base="CD008">
+    <romid>
+        <xmlid>CD007</xmlid>
+        <hwid>3GILXN05</hwid>
+        <internalidaddress>8290</internalidaddress>
+        <internalidstring>CD007</internalidstring>
+        <ecuid>CD007</ecuid>
+        <year>03</year>
+        <market>US</market>
+        <make>Nissan</make>
+        <model>350Z</model>
+        <submodel>Track</submodel>
+        <transmission>MT</transmission>
+        <memmodel>SH7055</memmodel>
+        <flashmethod>nisprog</flashmethod>
+        <filesize>512kb</filesize>
+    </romid>
+
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+
+</rom>

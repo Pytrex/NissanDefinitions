@@ -12008,6 +12008,7 @@ Not accurate I don't think. Further analysis required since CAN-based.
 
 	\\ Values, Tables, and Maps w/o Axes//
 
+	<table name="Target Idle Table" storageaddress="0x7F80"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x41B1"/>
 	<table name="Injector Latency at 14V" storageaddress="0x4607"/> 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x80E8"/>

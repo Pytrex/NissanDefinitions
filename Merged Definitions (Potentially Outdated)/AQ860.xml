@@ -1,0 +1,67 @@
+<rom base="A2L">	
+<!-- initial def fenugrec 2017 -->
+	<romid>
+		<xmlid>AQ860</xmlid>
+		<hwid>1MATBHDK</hwid>
+		<internalidaddress>0770a</internalidaddress>
+		<internalidstring>AQ860</internalidstring>
+		<ecuid>AQ860</ecuid>
+		<year>02</year>
+		<market>AUS</market>
+		<make>Nissan</make>
+		<model>Stagea</model>
+		<submodel>Impul</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH705507</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x4d99">
+		<table type="X Axis" storageaddress="0" />
+		<table type="Y Axis" storageaddress="0" />
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x4e99">
+		<table type="X Axis" storageaddress="0" />
+		<table type="Y Axis" storageaddress="0" />
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x5019">
+		<table type="X Axis" storageaddress="0" />
+		<table type="Y Axis" storageaddress="0" />
+	</table>
+
+	<table name="Target AFR Map (16x16)" storageaddress="5A6D">
+		<table type="X Axis" storageaddress="0" />
+		<table type="Y Axis" storageaddress="0" />
+	</table>
+
+	<table name="Fuel Compensation Cold" storageaddress="0x559d">
+		<table type="X Axis" storageaddress="0" />
+		<table type="Y Axis" storageaddress="0" />
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x569d">
+		<table type="X Axis" storageaddress="0" />
+		<table type="Y Axis" storageaddress="0" />
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x613d">
+		<table type="X Axis" storageaddress="0" />
+		<table type="Y Axis" storageaddress="0" />
+	</table>
+
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x68f8">
+		<table type="X Axis" storageaddress="0" />
+		<table type="Y Axis" storageaddress="0" />
+	</table>
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x9770">
+		<table type="Y Axis" storageaddress="0" />
+		<table type="X Axis" storageaddress="0" />
+	</table>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4c4c" xorloc="0x4c38" />
+
+</rom>

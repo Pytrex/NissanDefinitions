@@ -1,0 +1,93 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>6W505</xmlid>
+		<hwid>4WXLKN3</hwid>
+		<internalidaddress>8153</internalidaddress>
+		<internalidstring>6W505</internalidstring>
+		<ecuid>6W505</ecuid>
+		<year>04</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Pathfinder</model>
+		<submodel>4x4</submodel>
+		<transmission>Auto</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6839">
+		<table type="X Axis" storageaddress="0x8430" />
+		<table type="Y Axis" storageaddress="0x8440" />
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6939">
+		<table type="X Axis" storageaddress="0x8430" />
+		<table type="Y Axis" storageaddress="0x8440" />
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x6bf9">
+		<table type="X Axis" storageaddress="0x835d" />
+		<table type="Y Axis" storageaddress="0x8301" />
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x6e09">
+		<table type="X Axis" storageaddress="0x81b0" />
+		<table type="Y Axis" storageaddress="0x82f9" />
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x6f89">
+		<table type="X Axis" storageaddress="0x8e68" />
+		<table type="Y Axis" storageaddress="0x8e78" />
+	</table>
+
+	<table name="Misfire Diagnosis Map A" storageaddress="0x7139">
+		<table type="X Axis" storageaddress="0x8218" />
+		<table type="Y Axis" storageaddress="0x81f4" />
+	</table>
+
+	<table name="Misfire Diagnosis Map B" storageaddress="0x7239">
+		<table type="X Axis" storageaddress="0x8218" />
+		<table type="Y Axis" storageaddress="0x81f4" />
+	</table>
+
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x7339">
+		<table type="X Axis" storageaddress="0x8218" />
+		<table type="Y Axis" storageaddress="0x81f4" />
+	</table>
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x647e"/>
+
+	<table name="MAF Table" storageaddress="0x91ca"/>
+	
+	<table name="Bosch Fuel Cut Table" storageaddress="0x8972"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x8996"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0x8A06"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0x8B06"/>
+	<table name="Target Idle Table" storageaddress="0x89AE"/>
+
+	<table name="K-Value" storageaddress="0x6420"/>
+
+	<!--table name="Speed Limiter" storageaddress="0x"/-->
+
+
+	
+	<table name="Catalyst DTCs" storageaddress="0xa35a"/>
+	<table name="Evap DTCs" storageaddress="0xa363"/>
+	<table name="Evap 2 DTCs"  storageaddress="0xa364"/>
+	<table name="VIAS DTCs"  storageaddress="0xa368"/>
+	<table name="Power Steering DTC"  storageaddress="0xa36e"/>
+	<table name="Primary O2 DTCs" storageaddress="0xa384"/>
+	<table name="Primary O2 Idle DTCs" storageaddress="0xa385"/>
+	<table name="Secondary O2 DTCs" storageaddress="0xa386"/>
+	<table name="Secondary O2 Knock DTCs" storageaddress="0xa387"/>
+	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0xa38a"/>
+	<table name="Evap Pressure Flow DTCs" storageaddress="0xa38c"/>
+	<table name="Evap Leaks DTCs"  storageaddress="0xa38d"/>
+
+	<table name="Load Base Fuel Schedule Table" storageaddress="0x938a"/>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6630" xorloc="0x6628" />
+
+</rom>

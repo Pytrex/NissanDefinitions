@@ -1,0 +1,18 @@
+<rom base="8U51B">
+	<romid>
+		<xmlid>8U07B</xmlid>
+		<hwid>3TREE21N19</hwid>
+		<internalidaddress>747C</internalidaddress>
+		<internalidstring>8U07B</internalidstring>
+		<ecuid>8U07B</ecuid>
+		<year>03</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>SE-R</submodel>
+		<transmission>Auto</transmission>
+		<memmodel>SH7055</memmodel>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+	</romid>
+</rom>
