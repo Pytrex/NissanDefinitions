@@ -1170,7 +1170,7 @@
 					<address>0xFF847E</address>
 				</ecu>
 				<ecu id="M5113">
-					<address>0xFF84A8</address>
+					<address>0xFF848C</address>
 				</ecu>
 				<conversions>
 					<conversion units="%" expr="x*0.78125" format="0.00" />
@@ -1188,7 +1188,7 @@
 					<address>0xFF85A2</address>
 				</ecu>
 				<ecu id="M5113">
-					<address>0xFF85A0</address>
+					<address>0xFF8594</address>
 				</ecu>
 				<conversions>
 					<conversion units="%" expr="x/2.56" format="0.00" />
