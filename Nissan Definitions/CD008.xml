@@ -16,6 +16,9 @@
         <filesize>512kb</filesize>
     </romid>
 
+From Alex-Angarsk; // Will need to look into this further.
+CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
+
  	\\Values, Tables, and Maps w/o Axes//
 
 	<table name="APO Threshold (Brake)" storageaddress="0x64CA"/>

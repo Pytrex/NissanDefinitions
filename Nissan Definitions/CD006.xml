@@ -1,8 +1,8 @@
-<rom base="CD008">
+<rom base="A2L">
     <romid>
         <xmlid>CD006</xmlid>
         <hwid>3GIJ7N04</hwid>
-        <internalidaddress>8290</internalidaddress>
+        <internalidaddress>828C</internalidaddress>
         <internalidstring>CD006</internalidstring>
         <ecuid>CD006</ecuid>
         <year>03</year>
@@ -17,5 +17,5 @@
     </romid>
 
 
-    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
 </rom>

@@ -1308,7 +1308,7 @@
 	
 	<table type="3D" name="Knock Slice Map" category="Knock and Misfire Detection" storagetype="uint16" endian="big" sizex="16" sizey="6" userlevel="1">
 		<scaling units="Knock Strength (Threshold)" expression="x*0.00390625" to_byte="x/0.00390625" format="0" fineincrement="1" coarseincrement="4" />
-		<table type="X Axis" name="Engine Speed (RPM)" sizex="16" logparam="P8">
+		<table type="X Axis" name="Engine Speed (RPM)" sizex="16">
 			<data>400</data>
 			<data>800</data> 
 			<data>1200</data>
