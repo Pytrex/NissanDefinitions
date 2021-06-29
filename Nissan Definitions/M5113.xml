@@ -35,12 +35,15 @@
 	88C6 32x1 16 bit 
 	74E0 Might be target drive force? uint16 16x16
 -->
+	\\To bes tested and confirmed n00bz//	
+	<table name="QH0 Low Flow Quantity Table" storageaddress="0x8C8E"/>
+	<table name="QH0 High Flow Quantity Table" storageaddress="0x8CAE"/>
 
 	\\ Values, Tables, and Maps w/o Axes//
 
 	<table name="Target Idle Table" storageaddress="0x7F80"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x41B1"/>
-	<table name="Injector Latency at 14V" storageaddress="0x4607"/> 
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x4607"/> 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x80E8"/>
 	<table name="GOV Addition Table (Drive)" storageaddress="0x7A78"/> 
 	<table name="GOV Addition Table (Neutral)" storageaddress="0x7A80"/> 	
