@@ -11,7 +11,7 @@ The main purpose of this is to allow people to utilize a redacted variant of my 
 
 # Instructions 
 
-To begin using these definitions, download and unzip the repository to wherever you want. Then inside of the "Nissan Definitions" folder, run the "combine_all.bat" file to combine all of the definition files into "Nissandefs.xml" Then inside of RomRaider, click "Definitions" -> "Definition File Manager" -> "Add" and then select the "Nissandefs.xml" file from the folder. 
+To begin using these definitions, download and unzip the repository to wherever you want. Then inside of the "Nissan Definitions" folder, run the "combine_all.bat" file to combine all of the definition files into "NissanDefinitions.xml" Then inside of RomRaider, click "Definitions" -> "Definition File Manager" -> "Add" and then select the "NissanDefinitions.xml" file from the folder. 
 
 I'd highly recommend checking out CF48D.bin if you're unfamiliar with the A2L template, as it's the most defined Nissan ROM. However, do note that this is a redacted variant of the A2L template. So only a handful of the total maps defined for CF48D will be visible. But as time goes on, and functionality is better understood, more and more maps will be added to this redacted template. CF48D is from an 06 Nissan 350z USDM (SH7058), so it can be used to cross reference most Nissan ROMs as well. 
 
