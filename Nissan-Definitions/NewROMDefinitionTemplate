@@ -20,6 +20,8 @@
 Notes;
 This is just a base to help you add new maps to a definition file. The current values are for CF48D and need to be changed for your specific ROM, alongside the ROM ID information and the checksum values.
 
+Save the completed file as an xml in order to allow for "Combine All" to merge it with the rest of the definitions.
+
 	\\Values, Tables, and Maps w/o Axes//
 
 uint16;
