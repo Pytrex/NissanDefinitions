@@ -1822,37 +1822,37 @@
 		</table>
 		<description><!--mTEHOSMAP-->This map acts as a multiplier for the QH0 Torque Conversion Map value. If the multiplied value exceeds the last column value of the QH0 map, then it'll just use the last column value of the QH0 map instead.</description>
 	</table>
-		
-	<table type="2D" name="Throttle Flow Potential Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
-	<scaling units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
+	
+	<table type="2D" name="Throttle Flow Potential Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<scaling units="QH0 Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
 	<table type="X Axis" name="Accelerator Opening Area" storagetype="uint16" endian="big"> 
 		<scaling units="cm^2" expression="x*0.0000390625" to_byte="x/0.0000390625" format="0.000"/>
 	</table>
-	<description> mTTQH0ST- Axis for QH0 Torque Conversion Map.</description>
+	<description><!--mTTQH0ST--> Used to calculate a QH0 Flow Potential value to determined the APO Requested Torque. (QH0/ Torque Conversion Map) Nissan has these tables setup identically across all the ROM's I've checked, so you really don't need to touch these.</description>
 	</table>
 	
-	<table type="2D" name="Throttle Flow Potential Table (High Flow-Quantity)" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
-	<scaling units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
+	<table type="2D" name="Throttle Flow Potential Table (High Flow-Quantity)" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<scaling units="QH0 Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
 	<table type="X Axis" name="Accelerator Opening Area" storagetype="uint16" endian="big"> 
 		<scaling units="cm^2" expression="x*0.000625" to_byte="x/0.000625" format="0.000"/>
 	</table>
-	<description>mTTQH0STH-</description>
+	<description><!--mTTQH0STH--> Used to calculate a QH0 Flow Potential value to determined the APO Requested Torque. (QH0/ Torque Conversion Map) Nissan has these tables setup identically across all the ROM's I've checked, so you really don't need to touch these.</description>
 	</table>
 	
-	<table type="2D" name="Throttle Flow Potential Table 2" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
-	<scaling units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
+	<table type="2D" name="Throttle Flow Potential Table 2" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<scaling units="QH0 Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
 	<table type="X Axis" name="Accelerator Opening Area" storagetype="uint16" endian="big"> 
-		<scaling units="cm^2" expression="x*0.0000390625" to_byte="x/0.0000390625" format="0.0000"/>
+		<scaling units="cm^2" expression="x*0.0000390625" to_byte="x/0.0000390625" format="0.000"/>
 	</table>
-	<description>mTQH0ST_S- Needs to be set equal to mTTQH0ST</description>
+	<description><!--mTQH0ST_S--> Table MUST be identical to the first one!</description>
 	</table>
 
-	<table type="2D" name="Throttle Flow Potential Table 2 (High Flow-Quantity)" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">
-	<scaling units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
+	<table type="2D" name="Throttle Flow Potential Table 2 (High Flow-Quantity)" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="3">
+	<scaling units="QH0 Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00"/> 
 	<table type="X Axis" name="Accelerator Opening Area" storagetype="uint16" endian="big"> 
-		<scaling units="cm^2" expression="x*0.000625" to_byte="x/0.000625" format="0.0000"/>
+		<scaling units="cm^2" expression="x*0.000625" to_byte="x/0.000625" format="0.000"/>
 	</table>
-	<description>mTQH0SH_S- Needs to be set equal to mTTQH0STH</description>
+	<description><!--mTQH0SH_S--> Table MUST be identical to the first one!</description>
 	</table>
 	
 	<table type="2D" name="Target Throttle Valve Opening Table" category="Electronic Throttle Control" storagetype="uint16" sizex="32" endian="big" userlevel="1">

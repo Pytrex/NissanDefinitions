@@ -84,7 +84,7 @@
 		<table type="X Axis" storageaddress="0xDF9A"/>
 	</table>
 	
-	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xDFE2">
+	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xDFDA">
 		<table type="X Axis" storageaddress="0xDF5A"/>
 	</table>
 
