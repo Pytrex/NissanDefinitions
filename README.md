@@ -21,6 +21,7 @@ For the logger, it's recommended to use the official logger definition file from
 
 Feel free to contribute to the repository as you'd please! I'm only one guy with only so much time. So having others help contribute to the repository could help spread more support to other ROM's! the way you go about this is by creating a pull request for the definition file(s) you have updates to. I do ask that you completely verify your definition update before making a pull request, as I can't manually verify every single update. A good method of verifying a definition file is by using RomRaider's compare option. When using this against a known-good ROM, it will potentially show you immediate red flags. But as this isn't a fool proof method, manual verification will be required through Ghidra for certain things. (Axes, ROM Flags, 1D values, etc.) If there's even a hint of uncertainty over the accuracy of something, add "userlevel="5" to the ROM definition file and make a comment explaining the uncertainty if possible. 
 
-ex. <table name="Test" storageaddress="0x1234" userlevel="5"> <!-- Verify -->
+ex. table name="Test" storageaddress="0x1234" userlevel="5"  Verify 
 
 #ROM/Logger Definition Request
+ROM Definition Request can be made through the "Issues" section. A template will eventually be created to simplify this process. Logger Definition Requests will eventually have a set procedure. But for now, logger requests will be handled through PM's on RomRaider. 
