@@ -24,4 +24,4 @@ Feel free to contribute to the repository as you'd please! I'm only one guy with
 ex. table name="Test" storageaddress="0x1234" userlevel="5"  Verify 
 
 # ROM/Logger Definition Request
-ROM Definition Request can be made through the "Issues" section. A template will eventually be created to simplify this process. Logger Definition Requests will eventually have a set procedure. But for now, logger requests will be handled through PM's on RomRaider. 
+ROM/Logger Definition Requests can be made through the "Issues" section. There are currently beta templates available to use for both ROM and Logger definition requests. Please utilize these templates, as they automatically assign labels and such. :) 
