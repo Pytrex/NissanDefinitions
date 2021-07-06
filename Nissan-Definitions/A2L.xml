@@ -7,6 +7,29 @@
 
 	\\Fuel Injector Calibration//
 	
+	<table type="2D" name="Maximum Injector Pulsewidth Table" category="Fuel Injector Calibration" storagetype="uint8" sizex="16" endian="big" userlevel="3" >
+		<scaling units="Injector Pulsewidth (ms)" expression="x*0.125" to_byte="x/0.125" format="0.00"/>
+	<table type="X Axis" name="Engine Speed (RPM)" sizex="16">
+			<data>0</data>
+			<data>400</data>
+			<data>800</data>
+			<data>1200</data>
+			<data>1600</data>
+			<data>2000</data>
+			<data>2400</data>
+			<data>2800</data>
+			<data>3200</data>
+			<data>3600</data>
+			<data>4000</data>
+			<data>4400</data>
+			<data>4800</data>
+			<data>5200</data>
+			<data>5600</data>
+			<data>6000</data>
+	</table>
+	<description><!--mTTPMAX-->If your pulsewidth exceeds this value, fuel cut will occur.</description>
+	</table>
+	
 	<table type="2D" name="Load Base Fuel Schedule Table" category="Fuel Injector Calibration" storagetype="uint16" endian="big" sizex="16" userlevel="1" logparam="P4616">
 		<scaling name="BFS" units="Base Fuel Schedule (ms)" expression="x/2048" to_byte="x*2048" format="0.00" fineincrement=".01" coarseincrement="10" />
 		<table type="X Axis" name="Engine Speed (RPM)" format="0" sizex="16" logparam="P8">
