@@ -188,6 +188,11 @@
 		<table type="Y Axis" storageaddress="0xCC5A"/>
 	</table>
 
+	\\Flags//
+
+	<table name="O2 Sensor Position Flags" storageaddress="0x70D9"/> 
+
+
 	\\DTCs//
 
     <table name="DTC 1" storageaddress="0xCC16"/>
