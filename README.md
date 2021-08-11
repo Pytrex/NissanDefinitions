@@ -1,6 +1,9 @@
 # NissanDefinitions
 A2L Supported Nissan 350z and Infiniti G35 ROMs. 
 
+# Important Notice
+I personally will not be developing definitions for other ROMs any further. The currently provided definitions are more than suitable for most DIY tuning endeavors. With that said, anyone who wants to continue developing definitions can freely update these definition files here. 
+ 
 # Disclaimer
 
 While these definitions are meant to be completely accurate, there's a possibility that some definitions will have some errors. As long as the checksums are accurate, these errors shoud not cause any irreversable damage. However, it's something to be cautious of. Do note that by using these definitions, you accept full responsibility for any damages that occur. If you come across a definition that appears to contain incorrect information, create an issue so that I can look into it! :) 
