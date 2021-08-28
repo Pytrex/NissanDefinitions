@@ -106,6 +106,14 @@
 		</table>
 		<description>mKINJM- Injector magnification reciprocal number</description>
 	</table>
+
+	<table type="2D" name="Fuel Injection Quantity Lower Limit" category="Fuel Injector Calibration" storagetype="uint32" sizey="1" endian="big" userlevel="3" >
+		<scaling units="RPM/ms" expression="x*0.00610352" to_byte="x/0.00610352" format="0.0000"/>
+	<table type="Y Axis" name="Above" sizey="1">
+			<data>-</data>
+	</table>
+	<description><!--mTPDEFO--></description>
+	</table>
 	
 	\\Cranking and Startup//
 
