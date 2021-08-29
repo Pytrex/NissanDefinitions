@@ -40,6 +40,7 @@
 
 	<table name="Minimum Injector Pulse Width" storageaddress="0x4B1A"/>
 	<table name="Fuel Injection Quantity Lower Limit" storageaddress="0x4CBC"/>
+	<table name="Maximum Injector Pulsewidth Table" storageaddress="0x829A"/> 
 
 	<table name="Target Idle Table" storageaddress="0x7F80"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x41B1"/>

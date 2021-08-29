@@ -12522,10 +12522,11 @@ Not accurate I don't think. Further analysis required since CAN-based.
 
 	<table name="Minimum Injector Pulse Width" storageaddress="0x4B1A"/>
 	<table name="Fuel Injection Quantity Lower Limit" storageaddress="0x4CBC"/>
+	<table name="Maximum Injector Pulsewidth Table" storageaddress="0x829A"/> 
 
 	<table name="Target Idle Table" storageaddress="0x7F80"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x41B1"/>
-	<table name="Injector Latency at 14V" storageaddress="0x4607"/> 
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x4607"/> 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x80E8"/>
 	<table name="GOV Addition Table (Drive)" storageaddress="0x7A78"/> 
 	<table name="GOV Addition Table (Neutral)" storageaddress="0x7A80"/> 	
