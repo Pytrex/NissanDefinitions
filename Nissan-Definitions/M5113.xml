@@ -38,10 +38,13 @@
 
 	\\ Values, Tables, and Maps w/o Axes//
 
+	<table name="QH0 Low Flow Quantity Table" storageaddress="0x8C8E"/>
+	<table name="QH0 High Flow Quantity Table" storageaddress="0x8CAE"/>
+	<table name="Complete Combustion RPM" storageaddress="0x40EA"/>
+	<table name="Flow Potential Vehicle Speed Upper Limit Table" storageaddress="0x8CEE"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x4B1A"/>
 	<table name="Fuel Injection Quantity Lower Limit" storageaddress="0x4CBC"/>
 	<table name="Maximum Injector Pulsewidth Table" storageaddress="0x829A"/> 
-
 	<table name="Target Idle Table" storageaddress="0x7F80"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x41B1"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x4607"/> 
@@ -68,7 +71,6 @@
 
 //
 
-	<table name="QH0 Vehicle Speed Upper Limit Table" storageaddress="0x8CEE"/>
 	<table name="Knock Slice Map" storageaddress="0x73E0"/>
 	<table name="AFM Backup TP" storageaddress="0x4CED"/>
 	<table name="Throttle Table 1" storageaddress="0x84B4"/> 
