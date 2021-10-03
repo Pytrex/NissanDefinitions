@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <roms>
+
 <rom>
 	<romid>
 		<xmlid>A2L</xmlid>
@@ -11183,14 +11184,13 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 	</table>	
 
 	\\Flags//
-
+	<table name="DOMON Distinction Flag" storageaddress="0xB27F"/>
 	<table name="CO Variable Flag" storageaddress="0x7E5F"/> 
 	<table name="A Hand-Operated Purge Cut Flag" storageaddress="0x7E88"/> 
 	<table name="KTRM Variable Flag" storageaddress="0x7EC0"/> 
 	<table name="TFBYA Variable Flag" storageaddress="0x7EC1"/>
 	<table name="Cruise Control Specifications Choice Flags" storageaddress="0x82EE"/>
 	<table name="QH0 Operation Flags" storageaddress="0x82F3"/> 
-	<table name="DOMON Distinction Flag" storageaddress="0xB27F"/>
 	<table name="C/S Backup Excuse Flag" storageaddress="0x7C61"/>  
 	<table name="Electronic Throttle Control Flags" storageaddress="0x81D5"/>
 	<table name="TINT Compensation Permission Flag" storageaddress="0x805F"/> 
@@ -11203,8 +11203,8 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 	<table name="Flags 1" storageaddress="0x8301"/>
 	<table name="Flags 2" storageaddress="0x82F8"/>
 	<table name="Flags 3" storageaddress="0x82FA"/>
-	<table name="Flags 4" storageaddress="0x82F7"/> <!--TCS-->
-	<table name="Flags 5" storageaddress="0x7F3F"/> <!--TCS-->
+	<table name="Flags 4" storageaddress="0x82F7"/> 
+	<table name="Flags 5" storageaddress="0x7F3F"/> 
 	<table name="Flags 6" storageaddress="0x7BE2"/>
 	<table name="Flags 7" storageaddress="0x8441"/>
 	<table name="Flags 9" storageaddress="0x7E4E"/>
@@ -11229,7 +11229,7 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 	<table name="Flags 28" storageaddress="0xDDE8"/> 
 
 	\\DTCs//
-	
+
     <table name="DTC 1" storageaddress="0xDDCA"/>
     <table name="Engine Overheating (P1217)" storageaddress="0xDDCB"/>
     <table name="Closed Loop DTCs" storageaddress="0xDDCC"/> 
@@ -12761,7 +12761,28 @@ Not accurate I don't think. Further analysis required since CAN-based.
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
 
-</rom><rom base="A2L">
+</rom><rom base="A2l">
+	<romid>
+		<xmlid>AC510</xmlid>
+		<hwid>5ZVSVNJ</hwid>
+		<internalidaddress>A152</internalidaddress>
+		<internalidstring>AC510</internalidstring>
+		<ecuid>AC510</ecuid>
+		<year>-</year>
+		<market>JDM</market>
+		<make>-</make>
+		<model>-</model>
+		<submodel>-</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B58" xorloc="0x7B50" />
+
+</rom>
+<rom base="A2L">
 	<romid>
 		<xmlid>CD405</xmlid>
 		<hwid>2WLGHD10</hwid>
