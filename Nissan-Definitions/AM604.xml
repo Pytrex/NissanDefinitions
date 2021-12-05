@@ -77,13 +77,28 @@
 		<table type="X Axis" storageaddress="0x6F10"/>
 		<table type="Y Axis" storageaddress="0x6F20"/>
 	</table>
+
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x5301">
+		<table type="X Axis" storageaddress="0x6F10"/>
+		<table type="Y Axis" storageaddress="0x6F20"/>
+	</table>
 	
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x5401">
 		<table type="X Axis" storageaddress="0x6F10"/>
 		<table type="Y Axis" storageaddress="0x6F20"/>
 	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x5401">
+		<table type="X Axis" storageaddress="0x6F10"/>
+		<table type="Y Axis" storageaddress="0x6F20"/>
+	</table>
 	
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x5501">
+		<table type="X Axis" storageaddress="0x6F10"/>
+		<table type="Y Axis" storageaddress="0x6F20"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x5501">
 		<table type="X Axis" storageaddress="0x6F10"/>
 		<table type="Y Axis" storageaddress="0x6F20"/>
 	</table>
@@ -160,53 +175,7 @@
 
 	\\DTCs//
 
-    <table name="DTC 1" storageaddress="0x88B4"/>
-    <table name="Engine Overheating (P1217)" storageaddress="0x88B5"/>
-    <table name="Closed Loop DTCs" storageaddress="0x88B6"/>
-    <table name="P1212" storageaddress="0x88B7"/>
-    <table name="Misfire DTCs" storageaddress="0x88B9"/>
-    <table name="Catalyst DTCs" storageaddress="0x88BA"/>
-    <table name="P0125" storageaddress="0x88BC"/>
-    <table name="P0850" storageaddress="0x88BD"/>
-    <table name="Automatic Transmission DTCs 3" storageaddress="0x88BE"/>
-    <table name="Automatic Transmission DTCs 2" storageaddress="0x88BF"/>
-    <table name="EVAP DTCs" storageaddress="0x88C3"/>
-    <table name="DTC 8" storageaddress="0x88C6"/>
-    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0x88C7"/>
-    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0x88CB"/>
-    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0x88CC"/>
-    <table name="Power Steering DTC" storageaddress="0x88CE"/>
-    <table name="PD001 and PD000" storageaddress="0x88CF"/>
-    <table name="DTC 9" storageaddress="0x88D3"/>
-    <table name="P2101" storageaddress="0x88D4"/>
-    <table name="DTC 10" storageaddress="0x88D5"/>
-    <table name="P1715" storageaddress="0x88D6"/>
-    <table name="P1805" storageaddress="0x88D7"/>
-    <table name="DTC 4" storageaddress="0x88D8"/>
-    <table name="DTC 5" storageaddress="0x88D9"/>
-    <table name="DTC 6" storageaddress="0x88DA"/>
-    <table name="Cruise Control DTCs" storageaddress="0x88DC"/>
-    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0x88DE"/>
-    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0x88DF"/>
-    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0x88E0"/>
-    <table name="Automatic Transmission DTCs 4" storageaddress="0x88E2"/>
-    <table name="Automatic Transmission DTCs" storageaddress="0x88E3"/>
-    <table name="DTC 7" storageaddress="0x88E4"/>
-    <table name="Idle DTCs" storageaddress="0x88E5"/>
-    <table name="Secondary O2 DTCs" storageaddress="0x88E6"/>
-    <table name="Secondary O2 Knock DTCs" storageaddress="0x88E7"/>
-    <table name="MAF Sensor DTCs" storageaddress="0x88E8"/>
-    <table name="DTC 3" storageaddress="0x88E9"/>
-    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0x88EA"/>
-    <table name="DTC 2" storageaddress="0x88EB"/>
-    <table name="EVAP Pressure Flow DTCs" storageaddress="0x88EC"/>
-    <table name="EVAP Leaks DTCs" storageaddress="0x88ED"/>
-    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0x88EE"/>
-    <table name="Throttle Position Sensor DTCs" storageaddress="0x88EF"/>
-    <table name="Throttle Control Motor DTCs" storageaddress="0x88F0"/>
-    <table name="AFR Sensors DTCs" storageaddress="0x88F1"/>
-    <table name="AFR Sensors Circuit DTCs" storageaddress="0x88F2"/>
-    <table name="PD010" storageaddress="0x88F7"/>
+    <table name="Full DTC List" storageaddress="0x88B4"/>
 
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x51F8" xorloc="0x51F0" />
 

@@ -1,20 +1,19 @@
 <rom base="CM40B">
 	<romid>
-		<xmlid>CF40D</xmlid>
+		<xmlid>CM32B</xmlid>
 		<hwid>6ZV2RN10</hwid>
 		<internalidaddress>2401</internalidaddress>
-		<internalidstring>CF40D</internalidstring>
-		<ecuid>CF40D</ecuid>
+		<internalidstring>CM32B</internalidstring>
+		<ecuid>CM32B</ecuid>
 		<year>06</year>
 		<market>USDM</market>
-		<make>Nissan</make>
-		<model>350Z</model>
-		<submodel>Unknown</submodel>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>?</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7058</memmodel>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 	</romid>
-
 
 </rom>

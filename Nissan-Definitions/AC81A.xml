@@ -133,12 +133,27 @@
 		<table type="Y Axis" storageaddress="0xA5AE"/>
 	</table>
 
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x7D65">
+		<table type="X Axis" storageaddress="0xA59E"/>
+		<table type="Y Axis" storageaddress="0xA5AE"/>
+	</table>
+
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x7E65">
 		<table type="X Axis" storageaddress="0xA59E"/>
 		<table type="Y Axis" storageaddress="0xA5AE"/>
 	</table>
 
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x7E65">
+		<table type="X Axis" storageaddress="0xA59E"/>
+		<table type="Y Axis" storageaddress="0xA5AE"/>
+	</table>
+
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x7F65">
+		<table type="X Axis" storageaddress="0xA59E"/>
+		<table type="Y Axis" storageaddress="0xA5AE"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x7F65">
 		<table type="X Axis" storageaddress="0xA59E"/>
 		<table type="Y Axis" storageaddress="0xA5AE"/>
 	</table>
@@ -195,53 +210,7 @@
 
 	\\DTCs//
 
-    <table name="DTC 1" storageaddress="0xCC16"/>
-    <table name="Engine Overheating (P1217)" storageaddress="0xCC17"/>
-    <table name="Closed Loop DTCs" storageaddress="0xCC18"/>
-    <table name="P1212" storageaddress="0xCC19"/>
-    <table name="Misfire DTCs" storageaddress="0xCC1B"/>
-    <table name="Catalyst DTCs" storageaddress="0xCC1C"/>
-    <table name="P0125" storageaddress="0xCC1E"/>
-    <table name="P0850" storageaddress="0xCC1F"/>
-    <table name="Automatic Transmission DTCs 3" storageaddress="0xCC20"/>
-    <table name="Automatic Transmission DTCs 2" storageaddress="0xCC21"/>
-    <table name="EVAP DTCs" storageaddress="0xCC25"/>
-    <table name="DTC 8" storageaddress="0xCC28"/>
-    <table name="Intake Valve Control Solenoid DTCs" storageaddress="0xCC29"/>
-    <table name="Fuel Level Sensor Circuit DTCs" storageaddress="0xCC2D"/>
-    <table name="Camshaft and Crankshaft Position Sensor DTCs" storageaddress="0xCC2E"/>
-    <table name="Power Steering DTC" storageaddress="0xCC30"/>
-    <table name="PD001 and PD000" storageaddress="0xCC31"/>
-    <table name="DTC 9" storageaddress="0xCC35"/>
-    <table name="P2101" storageaddress="0xCC36"/>
-    <table name="DTC 10" storageaddress="0xCC37"/>
-    <table name="P1715" storageaddress="0xCC38"/>
-    <table name="P1805" storageaddress="0xCC39"/>
-    <table name="DTC 4" storageaddress="0xCC3A"/>
-    <table name="DTC 5" storageaddress="0xCC3B"/>
-    <table name="DTC 6" storageaddress="0xCC3C"/>
-    <table name="Cruise Control DTCs" storageaddress="0xCC3E"/>
-    <table name="Camshaft Position Sensor Bank 2 DTCs" storageaddress="0xCC40"/>
-    <table name="AFR Sensor Bank 1 DTCs" storageaddress="0xCC41"/>
-    <table name="AFR Sensor Bank 2 DTCs" storageaddress="0xCC42"/>
-    <table name="Automatic Transmission DTCs 4" storageaddress="0xCC44"/>
-    <table name="Automatic Transmission DTCs" storageaddress="0xCC45"/>
-    <table name="DTC 7" storageaddress="0xCC46"/>
-    <table name="Idle DTCs" storageaddress="0xCC47"/>
-    <table name="Secondary O2 DTCs" storageaddress="0xCC48"/>
-    <table name="Secondary O2 Knock DTCs" storageaddress="0xCC49"/>
-    <table name="MAF Sensor DTCs" storageaddress="0xCC4A"/>
-    <table name="DTC 3" storageaddress="0xCC4B"/>
-    <table name="Fuel EVAP Purge Solenoid DTCs" storageaddress="0xCC4C"/>
-    <table name="DTC 2" storageaddress="0xCC4D"/>
-    <table name="EVAP Pressure Flow DTCs" storageaddress="0xCC4E"/>
-    <table name="EVAP Leaks DTCs" storageaddress="0xCC4F"/>
-    <table name="Accelerator Pedal Position Sensor DTCs" storageaddress="0xCC50"/>
-    <table name="Throttle Position Sensor DTCs" storageaddress="0xCC51"/>
-    <table name="Throttle Control Motor DTCs" storageaddress="0xCC52"/>
-    <table name="AFR Sensors DTCs" storageaddress="0xCC53"/>
-    <table name="AFR Sensors Circuit DTCs" storageaddress="0xCC54"/>
-    <table name="PD010" storageaddress="0xCC59"/>
+    <table name="Full DTC List" storageaddress="0xCC16"/>
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7BCC" xorloc="0x7BC4"/>
 

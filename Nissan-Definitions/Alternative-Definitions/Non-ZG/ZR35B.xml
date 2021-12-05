@@ -20,8 +20,18 @@
       <table type="X Axis" storageaddress="0xBAB0" />
       <table type="Y Axis" storageaddress="0xBAC0" />
     </table>
+
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x9235">
+      <table type="X Axis" storageaddress="0xBAB0" />
+      <table type="Y Axis" storageaddress="0xBAC0" />
+    </table>
 	
     <table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x9335">
+     <table type="X Axis" storageaddress="0xBAB0" />
+     <table type="Y Axis" storageaddress="0xBAC0" />
+    </table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x9335">
      <table type="X Axis" storageaddress="0xBAB0" />
      <table type="Y Axis" storageaddress="0xBAC0" />
     </table>

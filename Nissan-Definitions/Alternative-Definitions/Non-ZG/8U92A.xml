@@ -21,12 +21,27 @@
 		<table type="Y Axis" storageaddress="0x8052" />
 	</table>
 
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x6611">
+		<table type="X Axis" storageaddress="0x8062" />
+		<table type="Y Axis" storageaddress="0x8052" />
+	</table>
+
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x6711">
 		<table type="X Axis" storageaddress="0x8062" />
 		<table type="Y Axis" storageaddress="0x8052" />
 	</table>
 
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x6711">
+		<table type="X Axis" storageaddress="0x8062" />
+		<table type="Y Axis" storageaddress="0x8052" />
+	</table>
+
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6811">
+		<table type="X Axis" storageaddress="0x8062" />
+		<table type="Y Axis" storageaddress="0x8052" />
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x6811">
 		<table type="X Axis" storageaddress="0x8062" />
 		<table type="Y Axis" storageaddress="0x8052" />
 	</table>

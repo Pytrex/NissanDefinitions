@@ -1,0 +1,17 @@
+v0.0.1 (12/5/2021)
+-----------------
+Editor Definitions:
+- Added Subcategory Support 
+- Separated Ignition Timing Knock Window from Trimming Map (See Category Ignition Timing//Knock Control//Main)
+- Compiled All DTC's into a Single Parameter 
+- Updated DTC List With Full Code Support
+- Reorganized Parameter Locations
+- Switched to Scalingbase for all Scales
+- Beginning of Support for Standard/Metric Scaling Options 
+- Removal of a Few Irrelevant Parameters
+- Assigned any Singular Value to the 1D Table Type 
+- Reset all Userlevels back to 1
+
+Future Plans;
+- Utilize offsets for each model year and transmission type for Z/G ROM's to allow for rapid auto-defining of ROM's 
+- Sort DTC List by DTC Number (Awaiting RR Update)
