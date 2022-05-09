@@ -1,6 +1,9 @@
 # NissanDefinitions
 A2L Supported Nissan 350z and Infiniti G35 ROM Definitions. 
- 
+
+# Temporary Warning
+As of 5/8/2022, Nissan Definitions is NOT stable on any RomRaider v0.9.X build! 
+
 # Disclaimer
 Do note that by using these definitions, you accept full responsibility for any damages that occur. It's highly recommended that you avoid making changes to things that you don't feel confident modifying.
 
