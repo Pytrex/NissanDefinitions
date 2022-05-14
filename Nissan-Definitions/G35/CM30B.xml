@@ -1,0 +1,22 @@
+<rom base="CM40B">
+	<romid>
+		<xmlid>CM30B</xmlid>
+		<hwid>6ZV2RN10</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CM30B</internalidstring>
+		<ecuid>CM30B</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Sport - RWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+
+</rom>

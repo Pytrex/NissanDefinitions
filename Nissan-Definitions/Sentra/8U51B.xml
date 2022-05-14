@@ -1,0 +1,150 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>8U51B</xmlid>
+		<hwid>3TREE21N19</hwid>
+		<internalidaddress>747C</internalidaddress>
+		<internalidstring>8U51B</internalidstring>
+		<ecuid>8U51B</ecuid>
+		<year>2002</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>Spec-V</submodel>
+		<transmission>5MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+	<!-- added fenugrec 04/2017. Very very similar to 8U07A, about 0x30 offset between most elements.
+ Code patterns practically identical -->
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x5721">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x5721">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x5821">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x5821">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x5921">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x5921">
+		<table type="X Axis" storageaddress="0x77c5" />
+		<table type="Y Axis" storageaddress="0x77d5" />
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x5c21">
+		<table type="X Axis" storageaddress="0x76f2" />
+		<table type="Y Axis" storageaddress="0x76ae" />
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x5df1">
+		<table type="X Axis" storageaddress="0x7561" />
+		<table type="Y Axis" storageaddress="0x7696" />
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5fe1">
+		<table type="X Axis" storageaddress="0x81df" />
+		<table type="Y Axis" storageaddress="0x81b3" />
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5fa1">
+		<table type="X Axis" storageaddress="0x81cf" />
+		<table type="Y Axis" storageaddress="0x81bb" />
+	</table>	
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x53d4" />
+
+	<table name="MAF Table" storageaddress="0x850A">
+		<scaling units="Airflow g/s" expression="(x-3013)*95/25600" to_byte="3013+x*25600/95" format="0.00" fineincrement="1" coarseincrement="100" />
+	</table>
+
+	<table name="Target Idle Table" storageaddress="0x7d77" />
+
+	<table name="K-Value" storageaddress="0x5366" />
+
+	<table name="mMTFDD" storageaddress="0x646c">
+		<table type="X Axis" storageaddress="0x8466" />
+		<table type="Y Axis" storageaddress="0x8446" />
+	</table>
+
+	<table name="mMTFDDS" storageaddress="0x666c">
+		<table type="X Axis" storageaddress="0x8466" />
+		<table type="Y Axis" storageaddress="0x8446" />
+	</table>
+
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x686c">
+		<table type="X Axis" storageaddress="0x84ea" />
+		<table type="Y Axis" storageaddress="0x76c6" />
+	</table>
+
+	<table name="mMTFDDS_S" storageaddress="0x91A4">
+		<table type="X Axis" storageaddress="0x98D8" />
+		<table type="Y Axis" storageaddress="0x98B8" />
+	</table>
+
+	<table name="mMTFDD_S" storageaddress="0x93A4">
+		<table type="X Axis" storageaddress="0x98D8" />
+		<table type="Y Axis" storageaddress="0x98B8" /> 
+	</table> 
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x95A4">
+		<table type="X Axis" storageaddress="0x98F8" />
+		<table type="Y Axis" storageaddress="0x9868" />
+	</table>
+
+	<table name="Engine Torque Map" storageaddress="0x6EEC"/>
+
+	<table name="LTFT Map BFS Axis" storageaddress="0x7C7D"/>
+	<table name="LTFT Map RPM Axis" storageaddress="0x7D5B"/>
+
+	<table name="Misfire Diagnosis Map A" storageaddress="0x6041">
+		<table type="X Axis" storageaddress="0x75C9" />
+		<table type="Y Axis" storageaddress="0x75A5" />
+	</table>
+
+	<table name="Misfire Diagnosis Map B" storageaddress="0x6141">
+		<table type="X Axis" storageaddress="0x75C9" />
+		<table type="Y Axis" storageaddress="0x75A5" />
+	</table>
+
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x6241">
+		<table type="X Axis" storageaddress="0x75C9" />
+		<table type="Y Axis" storageaddress="0x75A5" />
+	</table>
+
+	<table name="MAF Factor" storageaddress="0x4DEC"/>
+	<table name="MAF Offset" storageaddress="0x5446"/> 
+	<table name="Speed Limiter" storageaddress="0x5482"/>
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x54C2"/>
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x4FC9" />
+	<table name="Fuel Injector Latency Adder" storageaddress="0x4A05" />
+	<table name="Catalyst DTCs" storageaddress="0x982A"/>
+	<table name="Evap DTCs" storageaddress="0x9833"/>
+	<table name="Evap 2 DTCs"  storageaddress="0x9834"/>
+	<table name="Secondary O2 DTCs" storageaddress="0x9856"/>
+	<table name="Secondary O2 Knock DTCs" storageaddress="0x9857"/>
+	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0x985A"/>
+	<table name="Evap Pressure Flow DTCs" storageaddress="0x985C"/>
+	<table name="Evap Leaks DTCs"  storageaddress="0x985D"/>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x5614" xorloc="0x560C" />
+</rom>

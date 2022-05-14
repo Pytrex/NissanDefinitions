@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>9DA0D</xmlid>
+		<hwid>2ZVKD8N21</hwid>
+		<internalidaddress>8204</internalidaddress>
+		<internalidstring>19DA0D</internalidstring>
+		<ecuid>19DA0D</ecuid>
+		<year>2012</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>Maxima</model>
+		<submodel>?</submodel>
+		<transmission>CVT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nis-can</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+
+  <checksum type="alt2" start="0x8204" end="0xFFFFF" sumloc="0x9a18" xorloc="0x9a14"/>
+
+</rom>

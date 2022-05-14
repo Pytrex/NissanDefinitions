@@ -1,0 +1,21 @@
+<rom base="8U906">
+	<romid>
+		<xmlid>8U901</xmlid>
+		<hwid>5X61BENHN6</hwid>
+		<internalidaddress>7D56</internalidaddress>
+		<internalidstring>8U901</internalidstring>
+		<ecuid>8U901</ecuid>
+		<year>2004</year>
+		<market>CAN</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+</rom>

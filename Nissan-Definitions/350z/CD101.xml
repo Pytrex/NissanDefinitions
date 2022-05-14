@@ -1,0 +1,23 @@
+<rom base="CD102">
+	<romid>
+		<xmlid>CD101</xmlid>
+		<hwid>3GIJ7N04</hwid>
+		<internalidaddress>828C</internalidaddress>
+		<internalidstring>CD101</internalidstring>
+		<ecuid>CD101</ecuid>
+		<year>2003</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Track</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
+</rom>

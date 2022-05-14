@@ -1,0 +1,27 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>CE860</xmlid>
+		<hwid>4TTZVEM43N3</hwid>
+		<internalidaddress>7D46</internalidaddress>
+		<internalidstring>CE860</internalidstring>
+		<ecuid>CE860</ecuid>
+		<year>2004</year>
+		<market>JDM?</market>
+		<make>Nissan</make>
+		<model>350z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+
+
+
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6304" xorloc="0x62FC" />
+
+</rom>

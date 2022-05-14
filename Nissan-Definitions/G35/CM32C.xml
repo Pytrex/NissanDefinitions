@@ -1,0 +1,27 @@
+<rom base="CF48D">
+	<romid>
+		<xmlid>CM32C</xmlid>
+		<hwid>6GIZ7N4</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CM32C</internalidstring>
+		<caseid>2/4/21</caseid>
+		<ecuid>CM32C</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>-</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+
+Need a ROM dump to verify if compatible with CF48D
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
+
+</rom>

@@ -1,0 +1,21 @@
+<rom base="8U51B">
+	<romid>
+		<xmlid>8U52B</xmlid>
+		<hwid>3TREE21N19</hwid>
+		<internalidaddress>747C</internalidaddress>
+		<internalidstring>8U52B</internalidstring>
+		<ecuid>8U52B</ecuid>
+		<year>2003</year>
+		<market>US</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>SE-R</submodel>
+		<transmission>6MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+</rom>

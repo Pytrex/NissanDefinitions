@@ -1,0 +1,23 @@
+<rom base="CD700">
+    <romid>
+	  <xmlid>CD800</xmlid>
+	  <hwid>1TKE8Z5N56</hwid>
+      <internalidaddress>7DFA</internalidaddress>
+      <internalidstring>CD800</internalidstring>
+      <ecuid>CD800</ecuid>
+      <year>2003</year>
+      <market>EU</market>
+      <make>Nissan</make>
+      <model>350Z</model>
+      <submodel></submodel>
+      <transmission>MT</transmission>
+      <memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+      <flashmethod>nisprog</flashmethod>
+      <filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+    </romid>
+4TTZVEM41N1 might be HWID, verify with Nisrom.
+
+</rom>

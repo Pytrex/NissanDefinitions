@@ -1,0 +1,24 @@
+<rom base="ZH99A">
+	<romid>
+		<xmlid>CF42C</xmlid>
+		<hwid>6ZVYXN00</hwid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF42C</internalidstring>
+		<ecuid>CF42C</ecuid>
+		<year>2003</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>Fairlady Z</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+	</romid>
+	<table name="Speed Limiter" storageaddress="0x8A24"/>
+	<table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x8524"/>
+    <table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x8530"/>
+</rom>
