@@ -12,4 +12,6 @@ This repository is setup in such a way that each ROM has its own definition file
 # Instructions 
 To begin using these definitions, download and unzip the repository to wherever you want. Then inside of RomRaider, click "Definitions" -> "Definition File Manager" -> "Add" and then select the "NissanDefinitions.xml" file from the folder. 
 
+For stability, use the most recent release. If you're wanting to get the newest additions and fixes, download the repository instead. While the repository should mostly be stable, there's always a chance that a definition file might have an error. 
+
 For the logger, it's recommended to use the official logger definition file from https://www.romraider.com/forum/viewtopic.php?f=8&t=1642 
