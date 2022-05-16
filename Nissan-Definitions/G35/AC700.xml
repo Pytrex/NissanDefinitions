@@ -151,8 +151,8 @@
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x9D58"> 
-		<table type="X Axis" storageaddress="0xBA48"/>
-		<table type="Y Axis" storageaddress="0xBA38"/>
+		<table type="X Axis" storageaddress="0xBA38"/>
+		<table type="Y Axis" storageaddress="0xBA48"/>
 	</table>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7CAD">

@@ -119,8 +119,8 @@
 	</table>
 	
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0xAEA8">  
-		<table type="X Axis" storageaddress="0xCC7C"/> 
-		<table type="Y Axis" storageaddress="0xCC6C"/>
+		<table type="X Axis" storageaddress="0xCC6C"/> 
+		<table type="Y Axis" storageaddress="0xCC7C"/>
 	</table>
 	
 	<table name="AFR Correction Map (Bank 1)" storageaddress="0xA0A8"> 

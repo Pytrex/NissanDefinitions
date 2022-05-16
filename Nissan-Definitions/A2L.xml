@@ -1564,11 +1564,11 @@
 
 	<table type="3D" name="TTEPTD Torque Compensation Map" category="Electronic Throttle Control//Main" storagetype="uint16" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Percentage (x*0.0030518)" format="0"/>
-		<table type="X Axis" name="Gear Ratio" storagetype="uint16">
-			<scaling base="Gear Ratio (x*0.000976563)"/>
-		</table>
-		<table type="Y Axis" name="Engine Speed" storagetype="uint16">
+		<table type="X Axis" name="Engine Speed" storagetype="uint16">
 			<scaling base="Axis RPM (x*3.125)"/>
+		</table>
+		<table type="Y Axis" name="Gear Ratio" storagetype="uint16">
+			<scaling base="Gear Ratio (x*0.000976563)"/>
 		</table>
 		<description><!--mTEHOSMAP-->This map acts as a multiplier for the QH0 Torque Conversion Map value. If the multiplied value exceeds the last column value of the QH0 map, then it'll just use the last column value of the QH0 map instead.</description>
 	</table>
@@ -1673,7 +1673,7 @@
 
 	<table type="2D" name="TVO Upper Limit Table" category="Electronic Throttle Control//Limiters//Degree Based" storagetype="uint8" sizex="8" userlevel="1">
 	<scaling base="Degrees (x*0.3575)"/>
-	<table type="Static X Axis" name="Engine Speed" storagetype="uint8">
+	<table type="X Axis" name="Engine Speed" storagetype="uint8">
 		<scaling base="RPM (x*25)"/>
 	</table>
 	<description><!--mTTVOULM--> If this value is greater than 79.97 degrees, then it'll just use 79.97 degrees as the upper limiter.</description>
@@ -2568,7 +2568,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="2" name="1E Auxiliary input status"/>
 		<bit position ="1" name="1F Run time since engine start"/>
 		<bit position ="0" name="20 List of PIDs supported (range 21 to 40)"/>
-		<description><!--Undefined-->bits enable/disable</description>
+		<description><!--mGSTPI1-->bits enable/disable</description>
 		</table>
 
 	<table type="BitwiseSwitch" name="OBD-2 PID 21-40 supmask" sizey="1" storagetype="uint32" category="Options//Supmasks//OBD-II PIDs" userlevel="1">
@@ -2604,7 +2604,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="2" name="3E Catalyst temperature in °C bank 1, sensor 2"/>
 		<bit position ="1" name="3F Catalyst temperature in °C bank 2, sensor 2"/>
 		<bit position ="0" name="40 List of PIDs supported (range 41 to 60)"/>
-			<description><!--Undefined-->bits enable/disable</description>
+			<description><!--zmGSTPI2-->bits enable/disable</description>
 	</table>
 
 		<table type="BitwiseSwitch" name="OBD-2 PID 41-60 Supmask" sizey="1" storagetype="uint32" category="Options//Supmasks//OBD-II PIDs" userlevel="1">
@@ -2640,7 +2640,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 			<bit position ="2" name="5E"/>
 			<bit position ="1" name="5F"/>
 			<bit position ="0" name="60 List of TIDs supported"/>
-		<description><!--Undefined-->bits enable/disable</description>
+		<description><!--mGSTPI2-->bits enable/disable</description>
 		</table>
 
 	\\Flags//

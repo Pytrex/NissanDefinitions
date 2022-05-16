@@ -278,8 +278,8 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0xAE8C"> 
-		<table type="X Axis" storageaddress="0xCCC0"/>
-		<table type="Y Axis" storageaddress="0xCCB0"/>
+		<table type="X Axis" storageaddress="0xCCB0"/>
+		<table type="Y Axis" storageaddress="0xCCC0"/>
 	</table>
 
 	<table name="Fuel Cut Extreme Short Rest Time Map" storageaddress="0x9841">

@@ -145,8 +145,8 @@
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7E44"> 
-		<table type="X Axis" storageaddress="0x9542"/> 
-		<table type="Y Axis" storageaddress="0x9532"/>
+		<table type="X Axis" storageaddress="0x9532"/> 
+		<table type="Y Axis" storageaddress="0x9542"/>
 	</table>
 	
 	<table name="Engine Torque Map" storageaddress="0x7EC4"/>

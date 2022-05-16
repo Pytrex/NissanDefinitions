@@ -57,8 +57,8 @@
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x6790"> 
-		<table type="X Axis" storageaddress="0x7A8C"/>
-		<table type="Y Axis" storageaddress="0x7A9C"/>
+		<table type="X Axis" storageaddress="0x7A9C"/>
+		<table type="Y Axis" storageaddress="0x7A8C"/>
 	</table>
 	
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x6390"> 

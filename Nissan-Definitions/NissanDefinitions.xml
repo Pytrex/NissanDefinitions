@@ -687,7 +687,7 @@
 	
 	<scalingbase name="- (x*0.000030518)" units="-" expression="x*0.000030518" to_byte="x/0.000030518" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Gear Ratio (x*0.000976563)" units="Gear Ratio" expression="x*0.000976563" to_byte="x/0.000976563" format="#.###:1" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="Gear Ratio (x*0.000976563)" units="Gear Ratio" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="Inches (x*0.000240296)" units="Inches" expression="x*0.000240296" to_byte="x/0.000240296" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
@@ -2305,11 +2305,11 @@
 
 	<table type="3D" name="TTEPTD Torque Compensation Map" category="Electronic Throttle Control//Main" storagetype="uint16" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Percentage (x*0.0030518)" format="0"/>
-		<table type="X Axis" name="Gear Ratio" storagetype="uint16">
-			<scaling base="Gear Ratio (x*0.000976563)"/>
-		</table>
-		<table type="Y Axis" name="Engine Speed" storagetype="uint16">
+		<table type="X Axis" name="Engine Speed" storagetype="uint16">
 			<scaling base="Axis RPM (x*3.125)"/>
+		</table>
+		<table type="Y Axis" name="Gear Ratio" storagetype="uint16">
+			<scaling base="Gear Ratio (x*0.000976563)"/>
 		</table>
 		<description><!--mTEHOSMAP-->This map acts as a multiplier for the QH0 Torque Conversion Map value. If the multiplied value exceeds the last column value of the QH0 map, then it'll just use the last column value of the QH0 map instead.</description>
 	</table>
@@ -2414,7 +2414,7 @@
 
 	<table type="2D" name="TVO Upper Limit Table" category="Electronic Throttle Control//Limiters//Degree Based" storagetype="uint8" sizex="8" userlevel="1">
 	<scaling base="Degrees (x*0.3575)"/>
-	<table type="Static X Axis" name="Engine Speed" storagetype="uint8">
+	<table type="X Axis" name="Engine Speed" storagetype="uint8">
 		<scaling base="RPM (x*25)"/>
 	</table>
 	<description><!--mTTVOULM--> If this value is greater than 79.97 degrees, then it'll just use 79.97 degrees as the upper limiter.</description>
@@ -3309,7 +3309,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="2" name="1E Auxiliary input status"/>
 		<bit position ="1" name="1F Run time since engine start"/>
 		<bit position ="0" name="20 List of PIDs supported (range 21 to 40)"/>
-		<description><!--Undefined-->bits enable/disable</description>
+		<description><!--mGSTPI1-->bits enable/disable</description>
 		</table>
 
 	<table type="BitwiseSwitch" name="OBD-2 PID 21-40 supmask" sizey="1" storagetype="uint32" category="Options//Supmasks//OBD-II PIDs" userlevel="1">
@@ -3345,7 +3345,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="2" name="3E Catalyst temperature in °C bank 1, sensor 2"/>
 		<bit position ="1" name="3F Catalyst temperature in °C bank 2, sensor 2"/>
 		<bit position ="0" name="40 List of PIDs supported (range 41 to 60)"/>
-			<description><!--Undefined-->bits enable/disable</description>
+			<description><!--zmGSTPI2-->bits enable/disable</description>
 	</table>
 
 		<table type="BitwiseSwitch" name="OBD-2 PID 41-60 Supmask" sizey="1" storagetype="uint32" category="Options//Supmasks//OBD-II PIDs" userlevel="1">
@@ -3381,7 +3381,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 			<bit position ="2" name="5E"/>
 			<bit position ="1" name="5F"/>
 			<bit position ="0" name="60 List of TIDs supported"/>
-		<description><!--Undefined-->bits enable/disable</description>
+		<description><!--mGSTPI2-->bits enable/disable</description>
 		</table>
 
 	\\Flags//
@@ -4337,8 +4337,8 @@ Notes; These are all based on CF48D. These can and will vary, so some will need 
 	</table>	
 	
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7EA4"> 
-		<table type="X Axis" storageaddress="0x9226"/>
-		<table type="Y Axis" storageaddress="0x9216"/>
+		<table type="X Axis" storageaddress="0x9216"/>
+		<table type="Y Axis" storageaddress="0x9226"/>
 	</table>	
 
 	<table name="P-Gain Computed Map" storageaddress="0x6D39">
@@ -4646,8 +4646,8 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7EA4"> 
-		<table type="X Axis" storageaddress="0x9226"/> 
-		<table type="Y Axis" storageaddress="0x9216"/>
+		<table type="X Axis" storageaddress="0x9216"/> 
+		<table type="Y Axis" storageaddress="0x9226"/>
 	</table>
 
 	\\DTCs//
@@ -4815,8 +4815,8 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7EA0"> 
-		<table type="X Axis" storageaddress="0x9222"/> 
-		<table type="Y Axis" storageaddress="0x9212"/>
+		<table type="X Axis" storageaddress="0x9212"/> 
+		<table type="Y Axis" storageaddress="0x9222"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x68F5">
@@ -5205,8 +5205,8 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7D74"> 
-		<table type="X Axis" storageaddress="0x937e"/>
-		<table type="Y Axis" storageaddress="0x0936e"/>
+		<table type="X Axis" storageaddress="0x0936e"/>
+		<table type="Y Axis" storageaddress="0x937e"/>
 	</table>
 
 	<table name="MBT Flame Speed Map" storageaddress="0x6AA9">
@@ -5508,8 +5508,8 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7A1C"> 
-		<table type="X Axis" storageaddress="0x8DC2"/>
-		<table type="Y Axis" storageaddress="0x8DB2"/>
+		<table type="X Axis" storageaddress="0x8DB2"/>
+		<table type="Y Axis" storageaddress="0x8DC2"/>
 	</table>
 	
 	\\DTCs//
@@ -5763,8 +5763,8 @@ Due to this being a non-USDM ROM, the DTCs will need to be bit extended in the A
 	</table>
 	
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x8C08"> 
-		<table type="X Axis" storageaddress="0xA4CC"/>
-		<table type="Y Axis" storageaddress="0xA4BC"/>
+		<table type="X Axis" storageaddress="0xA4BC"/>
+		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 
 	\\DTCs//
@@ -5946,8 +5946,8 @@ Due to this being a non-USDM ROM, the DTCs will need to be bit extended in the A
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x8C08"> 
-		<table type="X Axis" storageaddress="0xA4CC"/> 
-		<table type="Y Axis" storageaddress="0xA4BC"/>
+		<table type="X Axis" storageaddress="0xA4BC"/> 
+		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x730D">
@@ -6225,8 +6225,8 @@ Due to this being a non-USDM ROM, the DTCs will need to be bit extended in the A
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x9D58"> 
-		<table type="X Axis" storageaddress="0xBA48"/> 
-		<table type="Y Axis" storageaddress="0xBA38"/>
+		<table type="X Axis" storageaddress="0xBA38"/> 
+		<table type="Y Axis" storageaddress="0xBA48"/>
 	</table>
 
 	\\DTCs//
@@ -6730,8 +6730,8 @@ Due to this being a non-USDM ROM, the DTCs will need to be bit extended in the A
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0xAEA8">
-		<table type="X Axis" storageaddress="0xCC8C"/>
-		<table type="Y Axis" storageaddress="0xCC7C"/>
+		<table type="X Axis" storageaddress="0xCC7C"/>
+		<table type="Y Axis" storageaddress="0xCC8C"/>
 	</table>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DED">
@@ -7082,8 +7082,8 @@ Notes;
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0xAEA8"> 
-		<table type="X Axis" storageaddress="0xCC8C"/> 
-		<table type="Y Axis" storageaddress="0xCC7C"/>
+		<table type="X Axis" storageaddress="0xCC7C"/> 
+		<table type="Y Axis" storageaddress="0xCC8C"/>
 	</table>
 
 	<table name="TVO Upper Limit Table" storageaddress="0xC21C"> 
@@ -7458,8 +7458,8 @@ This is NOT the main CF48D Definition File. This is a heavily altered one that o
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0xAE8C"> 
-		<table type="X Axis" storageaddress="0xCCC0"/>
-		<table type="Y Axis" storageaddress="0xCCB0"/>
+		<table type="X Axis" storageaddress="0xCCB0"/>
+		<table type="Y Axis" storageaddress="0xCCC0"/>
 	</table>
 
 	<table name="Fuel Cut Extreme Short Rest Time Map" storageaddress="0x9841">
@@ -7796,8 +7796,8 @@ uint8;
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x125EA"> 
-		<table type="X Axis" storageaddress="0xCCC0"/>axes
-		<table type="Y Axis" storageaddress="0xCCB0"/>
+		<table type="X Axis" storageaddress="0xCCB0"/>axes
+		<table type="Y Axis" storageaddress="0xCCC0"/>
 	</table>
 
 //////////////////////////////////////
@@ -9107,8 +9107,8 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7E44"> 
-		<table type="X Axis" storageaddress="0x9542"/> 
-		<table type="Y Axis" storageaddress="0x9532"/>
+		<table type="X Axis" storageaddress="0x9532"/> 
+		<table type="Y Axis" storageaddress="0x9542"/>
 	</table>
 	
 	<table name="Engine Torque Map" storageaddress="0x7EC4"/>
@@ -9249,8 +9249,8 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7C6C"> 
-		<table type="X Axis" storageaddress="0x8FEE"/> 
-		<table type="Y Axis" storageaddress="0x8FDE"/>
+		<table type="X Axis" storageaddress="0x8FDE"/> 
+		<table type="Y Axis" storageaddress="0x8FEE"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x66C1">
@@ -9440,8 +9440,8 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7C74"> 
-		<table type="X Axis" storageaddress="0x900E"/> 
-		<table type="Y Axis" storageaddress="0x8FFE"/>
+		<table type="X Axis" storageaddress="0x8FFE"/> 
+		<table type="Y Axis" storageaddress="0x900E"/>
 	</table>
 	
     <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x66C9">
@@ -9677,8 +9677,8 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7EA0"> 
-		<table type="X Axis" storageaddress="0x9222"/>
-		<table type="Y Axis" storageaddress="0x9212"/>
+		<table type="X Axis" storageaddress="0x9212"/>
+		<table type="Y Axis" storageaddress="0x9222"/>
 	</table>
 
 	\\DTCs//
@@ -9952,8 +9952,8 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x8C08"> 
-		<table type="X Axis" storageaddress="0xA4CC"/> 
-		<table type="Y Axis" storageaddress="0xA4BC"/>
+		<table type="X Axis" storageaddress="0xA4BC"/> 
+		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 
 	\\DTCs//
@@ -10153,8 +10153,8 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x8C08"> 
-		<table type="X Axis" storageaddress="0xA4CC"/> 
-		<table type="Y Axis" storageaddress="0xA4BC"/>
+		<table type="X Axis" storageaddress="0xA4BC"/> 
+		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 
 	\\DTCs//
@@ -10317,8 +10317,8 @@ Not accurate I don't think. Further analysis required since CAN-based.
 	</table>
 	
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x8C08">
-		<table type="X Axis" storageaddress="0xA4CC"/>
-		<table type="Y Axis" storageaddress="0xA4BC"/>
+		<table type="X Axis" storageaddress="0xA4BC"/>
+		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 	
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x8708">
@@ -10681,8 +10681,8 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x8C08"> 
-		<table type="X Axis" storageaddress="0xA4CC"/>
-		<table type="Y Axis" storageaddress="0xA4BC"/>
+		<table type="X Axis" storageaddress="0xA4BC"/>
+		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 	
 	\\DTCs//
@@ -10849,8 +10849,8 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x9D58"> 
-		<table type="X Axis" storageaddress="0xBA48"/>
-		<table type="Y Axis" storageaddress="0xBA38"/>
+		<table type="X Axis" storageaddress="0xBA38"/>
+		<table type="Y Axis" storageaddress="0xBA48"/>
 	</table>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7CAD">
@@ -11100,8 +11100,8 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x9D58"> 
-		<table type="X Axis" storageaddress="0xBA48"/> 
-		<table type="Y Axis" storageaddress="0xBA38"/>
+		<table type="X Axis" storageaddress="0xBA38"/> 
+		<table type="Y Axis" storageaddress="0xBA48"/>
 	</table>
 
 	\\DTCs//
@@ -11264,8 +11264,8 @@ Notes; Bits will need to be extended and the AWD DTCs will need to be defined.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x9E10"> 
-		<table type="X Axis" storageaddress="0xBB40"/>
-		<table type="Y Axis" storageaddress="0xBB30"/>
+		<table type="X Axis" storageaddress="0xBB30"/>
+		<table type="Y Axis" storageaddress="0xBB40"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7D65">
@@ -11483,8 +11483,8 @@ SH7055 is annoying.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x6844"> 
-		<table type="X Axis" storageaddress="0x7B80"/>
-		<table type="Y Axis" storageaddress="0x7B70"/>
+		<table type="X Axis" storageaddress="0x7B70"/>
+		<table type="Y Axis" storageaddress="0x7B80"/>
 	</table>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x5299">
@@ -11724,8 +11724,8 @@ SH7055 is annoying.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x686C"> 
-		<table type="X Axis" storageaddress="0x7BC0"/> 
-		<table type="Y Axis" storageaddress="0x7BB0"/>
+		<table type="X Axis" storageaddress="0x7BB0"/> 
+		<table type="Y Axis" storageaddress="0x7BC0"/>
 	</table>
 
 	\\DTCs//
@@ -12419,8 +12419,8 @@ Need a ROM dump to verify if compatible with CF48D
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0xAE84"> 
-		<table type="X Axis" storageaddress="0xCCB8"/>
-		<table type="Y Axis" storageaddress="0xCCA8"/>
+		<table type="X Axis" storageaddress="0xCCA8"/>
+		<table type="Y Axis" storageaddress="0xCCB8"/>
 	</table>
 
 	\\DTCs//
@@ -12786,8 +12786,8 @@ Need a ROM dump to verify if compatible with CF48D
 	</table>
 	
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0xAEA8">  
-		<table type="X Axis" storageaddress="0xCC7C"/> 
-		<table type="Y Axis" storageaddress="0xCC6C"/>
+		<table type="X Axis" storageaddress="0xCC6C"/> 
+		<table type="Y Axis" storageaddress="0xCC7C"/>
 	</table>
 	
 	<table name="AFR Correction Map (Bank 1)" storageaddress="0xA0A8"> 
@@ -13689,8 +13689,8 @@ Need a ROM dump to verify if compatible with CF48D
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x6790"> 
-		<table type="X Axis" storageaddress="0x7A8C"/>
-		<table type="Y Axis" storageaddress="0x7A9C"/>
+		<table type="X Axis" storageaddress="0x7A9C"/>
+		<table type="Y Axis" storageaddress="0x7A8C"/>
 	</table>
 	
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x6390"> 
@@ -16092,8 +16092,8 @@ Need a ROM dump to verify if compatible with CF48D
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7160">
-      <table type="X Axis" storageaddress="0x8B96" />
-      <table type="Y Axis" storageaddress="0x8B86" />
+      <table type="X Axis" storageaddress="0x8B86" />
+      <table type="Y Axis" storageaddress="0x8B96" />
 	</table>
 
 	<!--<table name="High Temp Fuel Compensation" storageaddress="0x4DF1"> 

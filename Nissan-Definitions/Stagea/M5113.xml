@@ -160,8 +160,8 @@
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7160">
-      <table type="X Axis" storageaddress="0x8B96" />
-      <table type="Y Axis" storageaddress="0x8B86" />
+      <table type="X Axis" storageaddress="0x8B86" />
+      <table type="Y Axis" storageaddress="0x8B96" />
 	</table>
 
 	<!--<table name="High Temp Fuel Compensation" storageaddress="0x4DF1"> 

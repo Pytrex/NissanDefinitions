@@ -126,8 +126,8 @@ SH7055 is annoying.
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x6844"> 
-		<table type="X Axis" storageaddress="0x7B80"/>
-		<table type="Y Axis" storageaddress="0x7B70"/>
+		<table type="X Axis" storageaddress="0x7B70"/>
+		<table type="Y Axis" storageaddress="0x7B80"/>
 	</table>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x5299">

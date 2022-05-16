@@ -178,8 +178,8 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7EA4"> 
-		<table type="X Axis" storageaddress="0x9226"/> 
-		<table type="Y Axis" storageaddress="0x9216"/>
+		<table type="X Axis" storageaddress="0x9216"/> 
+		<table type="Y Axis" storageaddress="0x9226"/>
 	</table>
 
 	\\DTCs//

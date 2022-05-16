@@ -687,7 +687,7 @@
 	
 	<scalingbase name="- (x*0.000030518)" units="-" expression="x*0.000030518" to_byte="x/0.000030518" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Gear Ratio (x*0.000976563)" units="Gear Ratio" expression="x*0.000976563" to_byte="x/0.000976563" format="#.###:1" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="Gear Ratio (x*0.000976563)" units="Gear Ratio" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="Inches (x*0.000240296)" units="Inches" expression="x*0.000240296" to_byte="x/0.000240296" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
 	

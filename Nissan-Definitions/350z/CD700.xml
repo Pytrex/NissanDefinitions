@@ -181,8 +181,8 @@
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7A1C"> 
-		<table type="X Axis" storageaddress="0x8DC2"/>
-		<table type="Y Axis" storageaddress="0x8DB2"/>
+		<table type="X Axis" storageaddress="0x8DB2"/>
+		<table type="Y Axis" storageaddress="0x8DC2"/>
 	</table>
 	
 	\\DTCs//

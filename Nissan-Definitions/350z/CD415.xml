@@ -101,8 +101,8 @@
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7D74"> 
-		<table type="X Axis" storageaddress="0x937e"/>
-		<table type="Y Axis" storageaddress="0x0936e"/>
+		<table type="X Axis" storageaddress="0x0936e"/>
+		<table type="Y Axis" storageaddress="0x937e"/>
 	</table>
 
 	<table name="MBT Flame Speed Map" storageaddress="0x6AA9">

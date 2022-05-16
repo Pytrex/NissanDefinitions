@@ -173,8 +173,8 @@ uint8;
 	</table>
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x125EA"> 
-		<table type="X Axis" storageaddress="0xCCC0"/>axes
-		<table type="Y Axis" storageaddress="0xCCB0"/>
+		<table type="X Axis" storageaddress="0xCCB0"/>axes
+		<table type="Y Axis" storageaddress="0xCCC0"/>
 	</table>
 
 //////////////////////////////////////
