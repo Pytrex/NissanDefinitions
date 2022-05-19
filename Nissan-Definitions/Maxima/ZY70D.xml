@@ -50,13 +50,13 @@
 	</table>
 
   <table  name="MBT Flame Speed Map"  storageaddress="0xA162">
-      <table type="X Axis" storageaddress="0xE574" />
-      <table type="Y Axis" storageaddress="0xE578" />
+      <table type="X Axis" storageaddress="0xE574"/>
+      <table type="Y Axis" storageaddress="0xE578"/>
     </table>
 	
   <table  name="Cylinder Fresh Air Rate Map"  storageaddress="0xA1f2">
-      <table type="X Axis" storageaddress="0xE574" />
-      <table type="Y Axis" storageaddress="0xE578" />
+      <table type="X Axis" storageaddress="0xE574"/>
+      <table type="Y Axis" storageaddress="0xE578"/>
     </table>
 	
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0xA652">

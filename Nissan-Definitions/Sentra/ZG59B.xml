@@ -66,13 +66,13 @@
 	<table name="LTFT Map RPM Axis" storageaddress="0xab80"/>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x91d1">
-		<table type="X Axis" storageaddress="0xb04a" />
-		<table type="Y Axis" storageaddress="0xb01e" />
+		<table type="X Axis" storageaddress="0xb04a"/>
+		<table type="Y Axis" storageaddress="0xb01e"/>
 	</table>
 	
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9191">
-		<table type="X Axis" storageaddress="0xb03a" />
-		<table type="Y Axis" storageaddress="0xb026" />
+		<table type="X Axis" storageaddress="0xb03a"/>
+		<table type="Y Axis" storageaddress="0xb026"/>
 	</table>
 	
 	<table name="Target Idle Table" storageaddress="0xabbc"/>
@@ -154,7 +154,7 @@
 	<table name="Evap Pressure Flow DTCs" storageaddress="0xc6d6"/>
 	<table name="Evap Leaks DTCs"  storageaddress="0xc6d7"/>
 
-	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0xbfa0" />
+	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0xbfa0"/>
 	
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8918" xorloc="8910"/>
 

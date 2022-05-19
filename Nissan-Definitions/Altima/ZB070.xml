@@ -21,43 +21,43 @@
 	</romid>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7B5D">
-		<table type="X Axis" storageaddress="0xa38e" />
-		<table type="Y Axis" storageaddress="0xa37e" />
+		<table type="X Axis" storageaddress="0xa38e"/>
+		<table type="Y Axis" storageaddress="0xa37e"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x7B5D">
-		<table type="X Axis" storageaddress="0xa38e" />
-		<table type="Y Axis" storageaddress="0xa37e" />
+		<table type="X Axis" storageaddress="0xa38e"/>
+		<table type="Y Axis" storageaddress="0xa37e"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x7C5D">
-		<table type="X Axis" storageaddress="0xa38e" />
-		<table type="Y Axis" storageaddress="0xa37e" />
+		<table type="X Axis" storageaddress="0xa38e"/>
+		<table type="Y Axis" storageaddress="0xa37e"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x7C5D">
-		<table type="X Axis" storageaddress="0xa38e" />
-		<table type="Y Axis" storageaddress="0xa37e" />
+		<table type="X Axis" storageaddress="0xa38e"/>
+		<table type="Y Axis" storageaddress="0xa37e"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x7D5D">
-		<table type="X Axis" storageaddress="0xa38e" />
-		<table type="Y Axis" storageaddress="0xa37e" />
+		<table type="X Axis" storageaddress="0xa38e"/>
+		<table type="Y Axis" storageaddress="0xa37e"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x7D5D">
-		<table type="X Axis" storageaddress="0xa38e" />
-		<table type="Y Axis" storageaddress="0xa37e" />
+		<table type="X Axis" storageaddress="0xa38e"/>
+		<table type="Y Axis" storageaddress="0xa37e"/>
 	</table>
 
 	<table  name="MBT Flame Speed Map"  storageaddress="0x7F1D">
-		<table type="X Axis" storageaddress="0xA047" />
-		<table type="Y Axis" storageaddress="0xA04B" />
+		<table type="X Axis" storageaddress="0xA047"/>
+		<table type="Y Axis" storageaddress="0xA04B"/>
 	</table>
 
 	<table name="Cylinder Fresh Air Rate Map" storageaddress="0x7F2D">
-		<table type="X Axis" storageaddress="0xA047" />
-		<table type="Y Axis" storageaddress="0xA04B" />
+		<table type="X Axis" storageaddress="0xA047"/>
+		<table type="Y Axis" storageaddress="0xA04B"/>
 	</table>
 
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x81FD">
@@ -75,8 +75,8 @@
 	<table name="Minimum Injector Pulse Width" storageaddress="0x787E"/>
 
 	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x889D">
-		<table type="X Axis" storageaddress="0xa38e" />
-		<table type="Y Axis" storageaddress="0xa37e" />
+		<table type="X Axis" storageaddress="0xa38e"/>
+		<table type="Y Axis" storageaddress="0xa37e"/>
 	</table>
 
 
@@ -102,8 +102,8 @@
 	</table>
 
 	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xC7B6">
-		<table type="X Axis" storageaddress="0xCA8A" />
-		<table type="Y Axis" storageaddress="0xC9FA" />
+		<table type="X Axis" storageaddress="0xCA8A"/>
+		<table type="Y Axis" storageaddress="0xC9FA"/>
 	</table>
 
 	<table name="Engine Torque Map" storageaddress="0x9C88"/>
@@ -151,7 +151,7 @@
 
 	<table name="K-Value" storageaddress="0x76C4"/>
 
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0xABD0" sizey="6"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xABD0"/>
 
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6DF2"/>
 
@@ -159,9 +159,9 @@
 
 	<table name="Fuel Injector Latency Adder" storageaddress="0x6B96"/>
 
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xB7C0" />
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xB7C0"/>
 
-	<table name="MAF Factor" storageaddress="0x700A" />
+	<table name="MAF Factor" storageaddress="0x700A"/>
 
 	<table name="Crank Fueling TP Value Table" storageaddress="0xBE16"/>
 

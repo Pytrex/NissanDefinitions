@@ -19,76 +19,76 @@
 		<version>v0.01</version>
     </romid>
     <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6609">
-      <table type="X Axis" storageaddress="0x82F7" />
-      <table type="Y Axis" storageaddress="0x8307" />
+      <table type="X Axis" storageaddress="0x82F7"/>
+      <table type="Y Axis" storageaddress="0x8307"/>
     </table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x6609">
-      <table type="X Axis" storageaddress="0x82F7" />
-      <table type="Y Axis" storageaddress="0x8307" />
+      <table type="X Axis" storageaddress="0x82F7"/>
+      <table type="Y Axis" storageaddress="0x8307"/>
     </table>
     <table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x6709">
-      <table type="X Axis" storageaddress="0x82F7" />
-      <table type="Y Axis" storageaddress="0x8307" />
+      <table type="X Axis" storageaddress="0x82F7"/>
+      <table type="Y Axis" storageaddress="0x8307"/>
     </table>
 
 	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x6709">
-      <table type="X Axis" storageaddress="0x82F7" />
-      <table type="Y Axis" storageaddress="0x8307" />
+      <table type="X Axis" storageaddress="0x82F7"/>
+      <table type="Y Axis" storageaddress="0x8307"/>
     </table>
     <table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6809">
-      <table type="X Axis" storageaddress="0x82F7" />
-      <table type="Y Axis" storageaddress="0x8307" />
+      <table type="X Axis" storageaddress="0x82F7"/>
+      <table type="Y Axis" storageaddress="0x8307"/>
     </table>
 
 	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x6809">
-      <table type="X Axis" storageaddress="0x82F7" />
-      <table type="Y Axis" storageaddress="0x8307" />
+      <table type="X Axis" storageaddress="0x82F7"/>
+      <table type="Y Axis" storageaddress="0x8307"/>
     </table>
 
     <table name="Fuel Compensation Map (16x16)" storageaddress="0x6ac9">
-      <table type="X Axis" storageaddress="0x822D" />
-      <table type="Y Axis" storageaddress="0x82F7" />
+      <table type="X Axis" storageaddress="0x822D"/>
+      <table type="Y Axis" storageaddress="0x82F7"/>
     </table>
 
     <table name="Target AFR Map (8x8)" storageaddress="0x6CD9">
-      <table type="X Axis" storageaddress="0x8080" />
-      <table type="Y Axis" storageaddress="0x81C9" />
+      <table type="X Axis" storageaddress="0x8080"/>
+      <table type="Y Axis" storageaddress="0x81C9"/>
     </table>
 
 <table name="Intake Cam Timing Map (16x16)" storageaddress="0x6E59">
-  <table type="X Axis" storageaddress="0x8CB5" />
-  <table type="Y Axis" storageaddress="0x8CC5" />
+  <table type="X Axis" storageaddress="0x8CB5"/>
+  <table type="Y Axis" storageaddress="0x8CC5"/>
 </table>
 
-<table name="MAF Table" storageaddress="0x8FFE" />
+<table name="MAF Table" storageaddress="0x8FFE"/>
 
 
   <table name="QH0/ Torque Conversion Map" storageaddress="0x7834">
-    <table type="Y Axis" storageaddress="0xA2CC" />
-    <table type="X Axis" storageaddress="0xA35C" />
+    <table type="Y Axis" storageaddress="0xA2CC"/>
+    <table type="X Axis" storageaddress="0xA35C"/>
   </table>
 
   <table name="QH0/ Torque Conversion Map 2" storageaddress="0x9F48">
-    <table type="Y Axis" storageaddress="0xA2CC" />
-    <table type="X Axis" storageaddress="0xA35C" />
+    <table type="Y Axis" storageaddress="0xA2CC"/>
+    <table type="X Axis" storageaddress="0xA35C"/>
   </table>
 
   <table name="Engine Torque Map" storageaddress="0x7DF4"/>
 
 
 
-<table name="K-Value" storageaddress="0x62E8" />
+<table name="K-Value" storageaddress="0x62E8"/>
 
-<table name="Target Idle Table" storageaddress="0x8853" />
+<table name="Target Idle Table" storageaddress="0x8853"/>
 
 <table name="Bosch Fuel Cut Table" storageaddress="0x8957"/>
 <table name="JECS Fuel Cut Table" storageaddress="0x897B"/>
-<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8D59" />
-<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6346" />
-<table name="Speed Limiter" storageaddress="0x63AA" />
+<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8D59"/>
+<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6346"/>
+<table name="Speed Limiter" storageaddress="0x63AA"/>
 <table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x60CC"/>
 <table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x60D6"/>
-<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6500" xorloc="0x64F8" />
+<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6500" xorloc="0x64F8"/>
 
 </rom>

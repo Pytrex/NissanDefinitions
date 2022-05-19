@@ -68,13 +68,13 @@
 	<table name="LTFT Map RPM Axis" storageaddress="0xab80"/>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x91d1">
-		<table type="X Axis" storageaddress="0xb04a" />
-		<table type="Y Axis" storageaddress="0xb01e" />
+		<table type="X Axis" storageaddress="0xb04a"/>
+		<table type="Y Axis" storageaddress="0xb01e"/>
 	</table>
 	
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9191">
-		<table type="X Axis" storageaddress="0xb03a" />
-		<table type="Y Axis" storageaddress="0xb026" />
+		<table type="X Axis" storageaddress="0xb03a"/>
+		<table type="Y Axis" storageaddress="0xb026"/>
 	</table>
 
 <!-- not sure. See code near 8d38c 
@@ -159,14 +159,14 @@
 	<table name="Evap Pressure Flow DTCs" storageaddress="0xc6d6"/>
 	<table name="Evap Leaks DTCs"  storageaddress="0xc6d7"/>
 
-	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0xbfa0" />
+	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0xbfa0"/>
 
 	<!-- absent probably
 	<table name="Throttle Rev Limiter" storageaddress="0x8a30">
 	</table> -->
 
 	<!-- Removed, pending merge of rework commit table.
-	<table name="Speed Limiter" storageaddress="0x8a68" /> -->
+	<table name="Speed Limiter" storageaddress="0x8a68"/> -->
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8918" xorloc="8910"/>
 

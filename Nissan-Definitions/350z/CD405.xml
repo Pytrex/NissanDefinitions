@@ -19,7 +19,7 @@
 		<version>v0.01</version>
 	</romid>
 
-	<table name="Speed Limiter" storageaddress="0x64E8" />
+	<table name="Speed Limiter" storageaddress="0x64E8"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6486"/>
 	<table name="Engine Torque Map" storageaddress="0x7DF4"/>
 	<table name="Target Idle Table" storageaddress="0x8993"/>

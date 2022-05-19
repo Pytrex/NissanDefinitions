@@ -19,6 +19,6 @@
 		<version>v0.01</version>
     </romid>
 
-    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8"/>
 
 </rom>

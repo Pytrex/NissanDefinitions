@@ -1,0 +1,30 @@
+<rom base="A2L">
+    <romid>
+        <xmlid>1TV1B</xmlid>
+        <hwid>0KHDCFDZ7</hwid>
+        <internalidaddress>6F00</internalidaddress>
+        <internalidstring>1TV1B</internalidstring>
+        <ecuid>1TV1B</ecuid>
+        <year>Unknown</year>
+        <market>Unknown</market>
+        <make>Nissan</make>
+        <model>Juke</model>
+        <submodel>Unknown</submodel>
+        <transmission>Unknown</transmission>
+        <memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+        <flashmethod>nisprog</flashmethod>
+        <filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v0.01</version>
+    </romid>
+	
+	
+	
+	<checksum type="alt" start="0x2040C" end="0x222B4" sumloc="0x20404" xorloc="0x20408"/>
+	<!--<checksum type="std" start="0" end="0xFFFFF" sumloc="0x0000" xorloc="0x0000"/>-->
+
+</rom>
+	
+
+

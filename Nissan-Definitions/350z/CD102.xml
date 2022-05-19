@@ -19,7 +19,7 @@
 		<version>v0.01</version>
 	</romid>
 
-	\\Values, Tables, and Maps w/o Axes//
+	
 
 	<table name="APO Threshold (Brake)" storageaddress="0x64C8"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x66C2"/>
@@ -57,7 +57,7 @@
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x8889"/>
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x8B69"/>
 
-	\\Maps and Tables w/ Axes//
+	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x8E80">
 		<table type="X Axis" storageaddress="0x9578"/>
@@ -183,9 +183,9 @@
 		<table type="Y Axis" storageaddress="0x8321"/>
 	</table>
 
-	\\DTCs//
+	
 
     <table name="Full DTC List" storageaddress="0x9F2C"/>
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4"/>
 </rom>

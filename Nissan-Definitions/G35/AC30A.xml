@@ -20,7 +20,7 @@
 	</romid>
 
 
-	\\Values, Tables, and Maps w/o Axes//
+	
 
 
 	<table name="APO Threshold (Brake)" storageaddress="0x6DC0"/>
@@ -40,7 +40,7 @@
 	<table name="Target Idle Table" storageaddress="0x988C"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x652D"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x6B40"/>
-	<table name="MAF Factor" storageaddress="0x691F" />
+	<table name="MAF Factor" storageaddress="0x691F"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6740"/>
 	<table name="GOV Table" storageaddress="0x9526"/>
 	<table name="GOV3 Table" storageaddress="0x952E"/> 
@@ -56,7 +56,7 @@
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x96BE"/> 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4"/>
 	
-	\\Maps and Tables w/ Axes//
+	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x9ED6">
 		<table type="X Axis" storageaddress="0xA932"/>
@@ -192,11 +192,11 @@
 		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 
-	\\DTCs//
+	
 
     <table name="Full DTC List" storageaddress="0xB460"/>
 
 
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC"/>
 
 </rom>

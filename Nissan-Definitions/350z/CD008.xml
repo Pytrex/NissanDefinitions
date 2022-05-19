@@ -19,10 +19,10 @@
 		<version>v0.01</version>
     </romid>
 
-From Alex-Angarsk; // Will need to look into this further.
+<!--From Alex-Angarsk; // Will need to look into this further.
 CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
-
- 	\\Values, Tables, and Maps w/o Axes//
+-->
+ 	
 
 	<table name="APO Threshold (Brake)" storageaddress="0x64CA"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x66C4"/>
@@ -40,7 +40,7 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	<table name="Bosch Fuel Cut Table" storageaddress="0x8A07"/>
 	<table name="Target Idle Table" storageaddress="0x8A43"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x5E66"/>
-	<table name="MAF Factor" storageaddress="0x61AE" />
+	<table name="MAF Factor" storageaddress="0x61AE"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6005"/>
 	<table name="GOV Table" storageaddress="0x8741"/>
 	<table name="GOV3 Table" storageaddress="0x8749"/> 
@@ -56,7 +56,7 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x888D"/> 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x8B6D"/>
 
-	\\Maps and Tables w/ Axes//
+	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x8E84">
 		<table type="X Axis" storageaddress="0x957C"/>
@@ -182,12 +182,12 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 		<table type="Y Axis" storageaddress="0x9226"/>
 	</table>
 
-	\\DTCs//
+	
 
     <table name="Full DTC List" storageaddress="0x9F30"/>
 
 
 
 
-    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8" />
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8"/>
 </rom>

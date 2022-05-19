@@ -19,7 +19,7 @@
 		<version>v0.01</version>
 	</romid>
 
-	\\No Axes//
+	
 	
 	<table name="MAF Table" storageaddress="0x0A1E8"/>
 	<table name="K-Value" storageaddress="0x6f24"/>
@@ -59,7 +59,7 @@
 	<table name="Target AFR Table (High Detonation)" storageaddress="0x974E"/>
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x96BE"/> 
 	
-	\\Axes//
+	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x9ED6">
 		<table type="X Axis" storageaddress="0xA932"/>
@@ -151,55 +151,55 @@
 	</table>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x730D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
+		<table type="X Axis" storageaddress="0x92EE"/>
+		<table type="Y Axis" storageaddress="0x92FE"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x730D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
+		<table type="X Axis" storageaddress="0x92EE"/>
+		<table type="Y Axis" storageaddress="0x92FE"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x740D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
+		<table type="X Axis" storageaddress="0x92EE"/>
+		<table type="Y Axis" storageaddress="0x92FE"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x740D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
+		<table type="X Axis" storageaddress="0x92EE"/>
+		<table type="Y Axis" storageaddress="0x92FE"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x750D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
+		<table type="X Axis" storageaddress="0x92EE"/>
+		<table type="Y Axis" storageaddress="0x92FE"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x750D">
-		<table type="X Axis" storageaddress="0x92EE" />
-		<table type="Y Axis" storageaddress="0x92FE" />
+		<table type="X Axis" storageaddress="0x92EE"/>
+		<table type="Y Axis" storageaddress="0x92FE"/>
 	</table>
 
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x786D">
-		<table type="X Axis" storageaddress="0x9208" />
-		<table type="Y Axis" storageaddress="0x91AC" />
+		<table type="X Axis" storageaddress="0x9208"/>
+		<table type="Y Axis" storageaddress="0x91AC"/>
 	</table>
 
 	<table name="Target AFR Map (8x8)" storageaddress="0x79FD">
-		<table type="X Axis" storageaddress="0x9037" />
-		<table type="Y Axis" storageaddress="0x91A4" />
+		<table type="X Axis" storageaddress="0x9037"/>
+		<table type="Y Axis" storageaddress="0x91A4"/>
 	</table>
 
 	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x7B3D">
-		<table type="X Axis" storageaddress="0x9D82" />
-		<table type="Y Axis" storageaddress="0x9D92" />
+		<table type="X Axis" storageaddress="0x9D82"/>
+		<table type="Y Axis" storageaddress="0x9D92"/>
 	</table>
 
-	\\DTCs//
+	
 
     <table name="Full DTC List" storageaddress="0xB460"/>
 
 
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC" />
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC"/>
 
 </rom>

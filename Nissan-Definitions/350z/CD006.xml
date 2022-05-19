@@ -20,5 +20,5 @@
     </romid>
 
 
-    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4" />
+    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4"/>
 </rom>

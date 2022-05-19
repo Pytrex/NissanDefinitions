@@ -50,8 +50,8 @@
 	</table>
 
 	<table  name="MBT Flame Speed Map"  storageaddress="0x91ad">
-		<table type="X Axis" storageaddress="0xb2f1" />
-		<table type="Y Axis" storageaddress="0xb2f5" />
+		<table type="X Axis" storageaddress="0xb2f1"/>
+		<table type="Y Axis" storageaddress="0xb2f5"/>
 	</table>
 
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x948D">
@@ -127,7 +127,7 @@
 
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8ACC"/>
 
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2" sizey="6"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2"/>
 
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x8003"/>
 
@@ -137,12 +137,12 @@
 
 	<table name="Crank Fueling TP Value Table" storageaddress="0xd1a2"/>
 
-	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4C" />
+	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4C"/>
 
-	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C5" />
-	<table name="Idle BFS Limits" storageaddress="0x8B10" />
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xcb2c" />
-	<table name="MAF Factor" storageaddress="0x8226" />
+	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C5"/>
+	<table name="Idle BFS Limits" storageaddress="0x8B10"/>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xcb2c"/>
+	<table name="MAF Factor" storageaddress="0x8226"/>
 
 	<table name="Catalyst DTCs" storageaddress="0xdd68"/>
 

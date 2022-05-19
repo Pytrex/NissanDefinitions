@@ -22,33 +22,33 @@
 
 
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x00EA8">
-		<table type="X Axis" storageaddress="0x26da" />
-		<table type="Y Axis" storageaddress="0x26ea" />
+		<table type="X Axis" storageaddress="0x26da"/>
+		<table type="Y Axis" storageaddress="0x26ea"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x00EA8">
-		<table type="X Axis" storageaddress="0x26da" />
-		<table type="Y Axis" storageaddress="0x26ea" />
+		<table type="X Axis" storageaddress="0x26da"/>
+		<table type="Y Axis" storageaddress="0x26ea"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x00FA8">
-		<table type="X Axis" storageaddress="0x26da" />
-		<table type="Y Axis" storageaddress="0x26ea" />
+		<table type="X Axis" storageaddress="0x26da"/>
+		<table type="Y Axis" storageaddress="0x26ea"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x00FA8">
-		<table type="X Axis" storageaddress="0x26da" />
-		<table type="Y Axis" storageaddress="0x26ea" />
+		<table type="X Axis" storageaddress="0x26da"/>
+		<table type="Y Axis" storageaddress="0x26ea"/>
 	</table>
 
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x1378">
-		<table type="X Axis" storageaddress="0x25fc" />
-		<table type="Y Axis" storageaddress="0x25c8" />
+		<table type="X Axis" storageaddress="0x25fc"/>
+		<table type="Y Axis" storageaddress="0x25c8"/>
 	</table>
 
 	<table name="Target AFR Map (8x8)" storageaddress="0x1608">
-		<table type="X Axis" storageaddress="0x2483" />
-		<table type="Y Axis" storageaddress="0x25c0" />
+		<table type="X Axis" storageaddress="0x2483"/>
+		<table type="Y Axis" storageaddress="0x25c0"/>
 	</table>
 
 	<table name="Rev Limit (Fuel Cut)" storageaddress="0xd9c"/>
@@ -58,6 +58,6 @@
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0xdfc"/>
 	<table name="MAF Table" storageaddress="0x333e"/>
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0xe44" xorloc="0xe38" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0xe44" xorloc="0xe38"/>
 	s27 0x88733BA0 s36 0x704387BA
 </rom>

@@ -19,7 +19,7 @@
 		<version>v0.01</version>
 	</romid>
 	
-	\\Values, Tables, and Maps w/o Axes//
+	
 
 	<table name="AFR Compensation Limits" storageaddress="0x8726"/>
 	<table name="Short Term Fuel Trim Limits" storageaddress="0x872A"/>	
@@ -64,7 +64,7 @@
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0xBACC"/> 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0xBEA2"/>
 
-	\\Maps and Tables w/ Axes//
+	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xC4CC">
 		<table type="X Axis" storageaddress="0xD152"/>
@@ -198,12 +198,12 @@
 		<table type="X Axis" storageaddress="0xC214"/> 
  	</table>
 	
-	\\Flags//
+	
 
 	<table name="O2/S System Choice Flag" storageaddress="0x8316"/>
 	<table name="O2 Sensor Position Flags" storageaddress="0x814A"/> 
 	
-	\\DTCs//
+	
 
     <table name="Full DTC List" storageaddress="0xDD62"/>
 

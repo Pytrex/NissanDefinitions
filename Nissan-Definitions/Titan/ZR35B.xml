@@ -20,43 +20,43 @@
     </romid>
 	
     <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x9235">
-      <table type="X Axis" storageaddress="0xBAB0" />
-      <table type="Y Axis" storageaddress="0xBAC0" />
+      <table type="X Axis" storageaddress="0xBAB0"/>
+      <table type="Y Axis" storageaddress="0xBAC0"/>
     </table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x9235">
-      <table type="X Axis" storageaddress="0xBAB0" />
-      <table type="Y Axis" storageaddress="0xBAC0" />
+      <table type="X Axis" storageaddress="0xBAB0"/>
+      <table type="Y Axis" storageaddress="0xBAC0"/>
     </table>
 	
     <table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x9335">
-     <table type="X Axis" storageaddress="0xBAB0" />
-     <table type="Y Axis" storageaddress="0xBAC0" />
+     <table type="X Axis" storageaddress="0xBAB0"/>
+     <table type="Y Axis" storageaddress="0xBAC0"/>
     </table>
 
 	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x9335">
-     <table type="X Axis" storageaddress="0xBAB0" />
-     <table type="Y Axis" storageaddress="0xBAC0" />
+     <table type="X Axis" storageaddress="0xBAB0"/>
+     <table type="Y Axis" storageaddress="0xBAC0"/>
     </table>
     
     <table name="Fuel Compensation Map (16x16)" storageaddress="0x96F5">
-      <table type="X Axis" storageaddress="0xB98A" />
-      <table type="Y Axis" storageaddress="0xB94E" />
+      <table type="X Axis" storageaddress="0xB98A"/>
+      <table type="Y Axis" storageaddress="0xB94E"/>
     </table>
 	
     <table name="Target AFR Map (8x8)" storageaddress="0x9995">
-      <table type="X Axis" storageaddress="0xB81D" />
-      <table type="Y Axis" storageaddress="0xB936" />
+      <table type="X Axis" storageaddress="0xB81D"/>
+      <table type="Y Axis" storageaddress="0xB936"/>
     </table>
    
     <table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9AD5">
-      <table type="X Axis" storageaddress="0xC656" />
-      <table type="Y Axis" storageaddress="0xC63E" />
+      <table type="X Axis" storageaddress="0xC656"/>
+      <table type="Y Axis" storageaddress="0xC63E"/>
     </table>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9A95">
-      <table type="X Axis" storageaddress="0xC64E" />
-      <table type="Y Axis" storageaddress="0xC646" />
+      <table type="X Axis" storageaddress="0xC64E"/>
+      <table type="Y Axis" storageaddress="0xC646"/>
     </table>
 	
 	<table name="LTFT Map BFS Axis" storageaddress="0xBFD8"/>

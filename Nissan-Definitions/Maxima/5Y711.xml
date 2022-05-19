@@ -21,48 +21,48 @@
 
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x51E1">
-		<table type="X Axis" storageaddress="0x6e28" />
-		<table type="Y Axis" storageaddress="0x6e38" />
+		<table type="X Axis" storageaddress="0x6e28"/>
+		<table type="Y Axis" storageaddress="0x6e38"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x51E1">
-		<table type="X Axis" storageaddress="0x6e28" />
-		<table type="Y Axis" storageaddress="0x6e38" />
+		<table type="X Axis" storageaddress="0x6e28"/>
+		<table type="Y Axis" storageaddress="0x6e38"/>
 	</table>
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x52E1">
-		<table type="X Axis" storageaddress="0x6e28" />
-		<table type="Y Axis" storageaddress="0x6e38" />
+		<table type="X Axis" storageaddress="0x6e28"/>
+		<table type="Y Axis" storageaddress="0x6e38"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x52E1">
-		<table type="X Axis" storageaddress="0x6e28" />
-		<table type="Y Axis" storageaddress="0x6e38" />
+		<table type="X Axis" storageaddress="0x6e28"/>
+		<table type="Y Axis" storageaddress="0x6e38"/>
 	</table>
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x53E1">
-		<table type="X Axis" storageaddress="0x6e28" />
-		<table type="Y Axis" storageaddress="0x6e38" />
+		<table type="X Axis" storageaddress="0x6e28"/>
+		<table type="Y Axis" storageaddress="0x6e38"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x53E1">
-		<table type="X Axis" storageaddress="0x6e28" />
-		<table type="Y Axis" storageaddress="0x6e38" />
+		<table type="X Axis" storageaddress="0x6e28"/>
+		<table type="Y Axis" storageaddress="0x6e38"/>
 	</table>
 
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x56A1">
-		<table type="X Axis" storageaddress="0x6d7e" />
-		<table type="Y Axis" storageaddress="0x6d22" />
+		<table type="X Axis" storageaddress="0x6d7e"/>
+		<table type="Y Axis" storageaddress="0x6d22"/>
 	</table>
 	<table name="Target AFR Map (8x8)" storageaddress="0x58B1">
-		<table type="X Axis" storageaddress="0x6C05" />
-		<table type="Y Axis" storageaddress="0x6D1A" />
+		<table type="X Axis" storageaddress="0x6C05"/>
+		<table type="Y Axis" storageaddress="0x6D1A"/>
 	</table>
 
 	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x59F1">
-		<table type="X Axis" storageaddress="0x768C" />
-		<table type="Y Axis" storageaddress="0x769C" />
+		<table type="X Axis" storageaddress="0x768C"/>
+		<table type="Y Axis" storageaddress="0x769C"/>
 	</table>
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x4F6C" />
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x4F6C"/>
 
 	
 	<table name="MAF Table" storageaddress="0x7898"/>
@@ -96,8 +96,8 @@
 	</table>
 	
 	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x850A">
-		<table type="X Axis" storageaddress="0x87D8" />
-		<table type="Y Axis" storageaddress="0x8747" />
+		<table type="X Axis" storageaddress="0x87D8"/>
+		<table type="Y Axis" storageaddress="0x8747"/>
 	</table>
 	
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x50D8" xorloc="0x50D0"/>

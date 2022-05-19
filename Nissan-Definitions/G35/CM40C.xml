@@ -51,8 +51,8 @@
 	</table>
 
 	<table  name="MBT Flame Speed Map"  storageaddress="0x91ad">
-		<table type="X Axis" storageaddress="0xb2f1" />
-		<table type="Y Axis" storageaddress="0xb2f5" />
+		<table type="X Axis" storageaddress="0xb2f1"/>
+		<table type="Y Axis" storageaddress="0xb2f5"/>
 	</table>
 	<table name="Fuel Compensation Open-Loop" storageaddress="0x971D">
 		<table type="X Axis" storageaddress="0xB2F9"/>
@@ -146,7 +146,7 @@
 
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8ACC"/>
 
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2" sizey="6"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2"/>
 
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x8003"/>
 
@@ -158,12 +158,12 @@
 
 		<table name="Engine Torque Map" storageaddress="0xAF28"/>
 
-	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4C" />
+	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4C"/>
 
-	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C5" />
-	<table name="Idle BFS Limits" storageaddress="0x8B10" />
-	<table name="Load Base Fuel Schedule Table" storageaddress="0xcb2c" />
-	<table name="MAF Factor" storageaddress="0x8226" />
+	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C5"/>
+	<table name="Idle BFS Limits" storageaddress="0x8B10"/>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xcb2c"/>
+	<table name="MAF Factor" storageaddress="0x8226"/>
 
 	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC26C"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0xBCBE"/>
@@ -173,7 +173,7 @@
  	<!--<table name="Fuel Cut Timing Retard Delay Table" storageaddress="0xB828"/>-->
 	<table name="mTISCTA" storageaddress="0xBA24"/>
 	<table name="Catalyst DTCs" storageaddress="0xdd68"/>
-	<table name="Secondary O2 Heaters DTC Fix (P0037, P0038, P0057, P0058)" storageaddress="0x82A6" />
+	<table name="Secondary O2 Heaters DTC Fix (P0037, P0038, P0057, P0058)" storageaddress="0x82A6"/>
 
         <table name="CID1100 supmask"  storageaddress="0xB563"/>
         <table name="CID1120 supmask"  storageaddress="0xB56F"/>

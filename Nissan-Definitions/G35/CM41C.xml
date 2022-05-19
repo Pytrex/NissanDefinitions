@@ -20,17 +20,11 @@
 	</romid>
 
 
-
-
-<!--
-	\\No Axes//
-	
 	<table name="APO Threshold (Brake)" storageaddress="0x8768"/>
 	<table name="Knock Slice Map" storageaddress="0xB128"/> 
 	<table name="Engine Torque Map" storageaddress="0xAF28"/>	
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8AFA"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xCA3C"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xD1A2"/>
 	<table name="Cranking Advance Table" storageaddress="0xB710"/>
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x8566"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x8572"/>
@@ -51,7 +45,7 @@
 	<table name="MAF Table" storageaddress="0xC83E"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x8998"/>
 	<table name="Throttle Rev Limiter" storageaddress="0x8A30"/>
-	<table name="Target Idle Table" storageaddress="0xBD02"/>
+<!--Low Confidence:	<table name="Target Idle Table" storageaddress="0xBD02"/> -->
 	<table name="Bosch Fuel Cut Table" storageaddress="0xBCBE"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0xBCF2"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0xBD6A"/>
@@ -67,12 +61,12 @@
 	<table name="Crank Fueling TP Value Table" storageaddress="0xD1A2"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4A"/>
 	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C3"/>
-	<table name="Idle BFS Limits" storageaddress="0x8B0E" />
+	<table name="Idle BFS Limits" storageaddress="0x8B0E"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0xCB2C"/>
 	<table name="MAF Factor" storageaddress="0x8224"/>
 	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC26C"/>
 	
-	\\Axes//
+	
 
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xC4CC">
 		<table type="X Axis" storageaddress="0xD152"/>
@@ -132,7 +126,8 @@
 		<table type="X Axis" storageaddress="0xC7BE"/>
 		<table type="Y Axis" storageaddress="0xC79E"/>
 	</table>
-	
+
+<!-- X-Axis is incorrect for these
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DED">
 		<table type="X Axis" storageaddress="0xB640"/>
 		<table type="Y Axis" storageaddress="0xB650"/>
@@ -162,10 +157,10 @@
 		<table type="X Axis" storageaddress="0xB640"/>
 		<table type="Y Axis" storageaddress="0xB650"/>
 	</table>
-
+-->
 	<table name="MBT Flame Speed Map" storageaddress="0x91AD">
-		<table type="X Axis" storageaddress="0xB2F1" />
-		<table type="Y Axis" storageaddress="0xB2F5" />
+		<table type="X Axis" storageaddress="0xB2F1"/>
+		<table type="Y Axis" storageaddress="0xB2F5"/>
 	</table>
 
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x948D">
@@ -213,11 +208,10 @@
 		<table type="Y Axis" storageaddress="0xDDA8"/>
 	</table>
 
-	\\DTCs//
+	
 
     <table name="Full DTC List" storageaddress="0xDD62"/>
 
--->
 
 
 
@@ -233,11 +227,9 @@
 <table name="Throttle Rev Limiter" storageaddress="0x8A30"/>
 <table name="Minimum Injector Pulse Width" storageaddress="0x8ACA"/>
 <table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8AFA"/>
-<table name="MBT Flame Speed Map" storageaddress="0x91AD"/>
 <table name="P-Gain Computed Map (Bank 2)" storageaddress="0x928D"/>
 <table name="P-Gain Computed Map (Bank 1)" storageaddress="0x92CD"/>
 <table name="High Detonation Intake Cam Timing Map (4x4)" storageaddress="0x98CD"/>
-<table name="Intake Cam Timing Map (16x16)" storageaddress="0x9B2D"/>
 <table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9C2D"/>
 <table name="AFR Correction Map (Bank 1)" storageaddress="0xA0A8"/>
 <table name="AFR Correction Map (Bank 2)" storageaddress="0xA128"/>
@@ -256,16 +248,12 @@
 <table name="JECS Fuel Cut Table" storageaddress="0xBCF2"/>
 <table name="Target AFR MBT Compensation Table 2" storageaddress="0xBEAC"/>
 <table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xC22C"/>
-<table name="Target Throttle Valve Opening Table" storageaddress="0xC4CC"/>
 <table name="ISC Opening Area Upper Limit Table" storageaddress="0xC98C"/>
 <table name="ISC Opening Area Upper Limit Table (RPM Compensation)" storageaddress="0xC9AC"/>
-<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xCA3C"/>
 <table name="QH0 High Flow Quantity Table" storageaddress="0xCE44"/>
 <table name="QH0 Low Flow Quantity Table" storageaddress="0xCE64"/>
 <table name="Gear Ratio Table" storageaddress="0xCF34"/>
-<table name="Target Throttle Valve Opening Table (Trustful)" storageaddress="0xDDB8"/>
-<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xDF78"/>
-<table name="Throttle Flow Potential Table 2" storageaddress="0xDFB8"/>
+
 
 
 

@@ -19,7 +19,7 @@
 		<version>v0.01</version>
 	</romid>
 
-	\\Values, Tables, and Maps w/o Axes//
+	
 
 	<table name="APO Threshold (Brake)" storageaddress="0x767C"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x79CE"/>
@@ -44,7 +44,7 @@
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x7398"/>
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x7492"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x749E"/>
-	<table name="MAF Factor" storageaddress="0x715A" />
+	<table name="MAF Factor" storageaddress="0x715A"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6F42"/> 
 	<table name="GOV Table" storageaddress="0xA72E"/>
 	<table name="GOV3 Table" storageaddress="0xA736"/> 
@@ -61,7 +61,7 @@
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xAA42"/>
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0xAD20"/>
 
-	\\Maps and Tables w/ Axes//
+	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xB2F2">
 		<table type="X Axis" storageaddress="0xBF0E"/>
@@ -197,10 +197,10 @@
 		<table type="Y Axis" storageaddress="0xBA48"/>
 	</table>
 
-	\\DTCs//
+	
 
     <table name="Full DTC List" storageaddress="0xCAFE"/>
 
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B54" xorloc="0x7B4C" />
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B54" xorloc="0x7B4C"/>
 
 </rom>

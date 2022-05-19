@@ -19,7 +19,7 @@
 		<version>v0.01</version>
 	</romid>
 
-	\\Values, Tables, and Maps w/o Axes//
+	
 	
 	<table name="APO Threshold (Brake)" storageaddress="0x6060"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x627E"/>
@@ -41,7 +41,7 @@
 	<table name="Target Idle Table" storageaddress="0x845F"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x5A43"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x5E92"/>
-	<table name="MAF Factor" storageaddress="0x5D15" />
+	<table name="MAF Factor" storageaddress="0x5D15"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x5BB5"/>
 	<table name="GOV Table" storageaddress="0x815D"/>
 	<table name="GOV3 Table" storageaddress="0x8165"/> 
@@ -59,7 +59,7 @@
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x82DD"/>
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x8543"/>
 	
-	\\Maps and Tables w/ Axes//
+	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x88EE">
 		<table type="X Axis" storageaddress="0x91D8"/>
@@ -185,13 +185,13 @@
 		<table type="Y Axis" storageaddress="0x8DC2"/>
 	</table>
 	
-	\\DTCs//
+	
 	
 IMPORTANT NOTICE; 
 Due to this being a non-USDM ROM, the DTCs will need to be bit extended in the A2L template. So while the addresses are correct, not all DTCs will be visible until I bit extend them.
 
     <table name="Full DTC List" storageaddress="0x9C28"/>
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x63B8" xorloc="0x63B0" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x63B8" xorloc="0x63B0"/>
 
 </rom>

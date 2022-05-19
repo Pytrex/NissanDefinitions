@@ -19,7 +19,7 @@
 		<version>v0.01</version>
 	</romid>
 
-	\\Values, Tables, and Maps w/o Axes//
+	
 
 uint16;
 	<table name="APO Threshold (Brake)" storageaddress="0x904E"/>
@@ -59,7 +59,7 @@ uint8;
 	<table name="Target Idle Table" storageaddress="0x1472D"/>
 	
 
-	<table name="MAF Factor" storageaddress="0x8A35" />
+	<table name="MAF Factor" storageaddress="0x8A35"/>
 	
 
 	<table name="GOV Table" storageaddress="0x14173"/>
@@ -86,7 +86,7 @@ uint8;
 	
 	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0x14D03"/>
 
-	\\Maps and Tables w/ Axes//
+	
 	<!--
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xC4B0">
 		<table type="X Axis" storageaddress="0xD1A6"/>
@@ -236,7 +236,7 @@ uint8;
 		<table type="Y Axis" storageaddress="0x15DDA"/>
 	</table>
 
-	\\DTCs//
+	
 Notes;
 Not accurate I don't think. Further analysis required since CAN-based.
 

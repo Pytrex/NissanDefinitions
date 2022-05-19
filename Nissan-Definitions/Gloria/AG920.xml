@@ -21,24 +21,24 @@
 
 
 	<table type="3D" name="Unknown u16 16x16 1" category="Misc" storagetype="uint16" endian="big" sizex="16" sizey="16" userlevel="4" logparam="?">
-		<scaling units="Unknown" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100" />
+		<scaling units="Unknown" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100"/>
 		<table type="X Axis" name="?" storagetype="uint8" endian="big" logparam="?">
-			<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100" />
+			<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="10" coarseincrement="100"/>
 		</table>
 		<table type="Y Axis" name="?" storagetype="uint16" endian="big" logparam="?">
-			<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" />
+			<scaling units="?" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
 		</table>
 		<description>No idea what this is. Note, the X/Y axis may be swapped !!! (unverified)!</description>
 	</table>
 
 	<table name="Unknown u16 16x16 1" storageaddress="0x1bf0">
-		<table type="X Axis" storageaddress="0x202e" />
-		<table type="Y Axis" storageaddress="0x2890" />
+		<table type="X Axis" storageaddress="0x202e"/>
+		<table type="Y Axis" storageaddress="0x2890"/>
 	</table>
 
 	<!-- note : another similar table to 0x1bf0 is at 0x1930, with axis 202E (shared) and 2D46 (different). -->
 
 
-	<checksum type="std" start="0" end="0x3FFFF" sumloc="0x0C84" xorloc="0x0C80" />
+	<checksum type="std" start="0" end="0x3FFFF" sumloc="0x0C84" xorloc="0x0C80"/>
 
 </rom>

@@ -20,57 +20,57 @@
 	</romid>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6611">
-		<table type="X Axis" storageaddress="0x8062" />
-		<table type="Y Axis" storageaddress="0x8052" />
+		<table type="X Axis" storageaddress="0x8062"/>
+		<table type="Y Axis" storageaddress="0x8052"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x6611">
-		<table type="X Axis" storageaddress="0x8062" />
-		<table type="Y Axis" storageaddress="0x8052" />
+		<table type="X Axis" storageaddress="0x8062"/>
+		<table type="Y Axis" storageaddress="0x8052"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x6711">
-		<table type="X Axis" storageaddress="0x8062" />
-		<table type="Y Axis" storageaddress="0x8052" />
+		<table type="X Axis" storageaddress="0x8062"/>
+		<table type="Y Axis" storageaddress="0x8052"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x6711">
-		<table type="X Axis" storageaddress="0x8062" />
-		<table type="Y Axis" storageaddress="0x8052" />
+		<table type="X Axis" storageaddress="0x8062"/>
+		<table type="Y Axis" storageaddress="0x8052"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6811">
-		<table type="X Axis" storageaddress="0x8062" />
-		<table type="Y Axis" storageaddress="0x8052" />
+		<table type="X Axis" storageaddress="0x8062"/>
+		<table type="Y Axis" storageaddress="0x8052"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x6811">
-		<table type="X Axis" storageaddress="0x8062" />
-		<table type="Y Axis" storageaddress="0x8052" />
+		<table type="X Axis" storageaddress="0x8062"/>
+		<table type="Y Axis" storageaddress="0x8052"/>
 	</table>
 
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x6aD1">
-		<table type="X Axis" storageaddress="0x7f88" />
-		<table type="Y Axis" storageaddress="0x7f44" />
+		<table type="X Axis" storageaddress="0x7f88"/>
+		<table type="Y Axis" storageaddress="0x7f44"/>
 	</table>
 
 	<table name="Target AFR Map" storageaddress="0x6ca1">
-		<table type="X Axis" storageaddress="0x7e23" />
-		<table type="Y Axis" storageaddress="0x7f2c" />
+		<table type="X Axis" storageaddress="0x7e23"/>
+		<table type="Y Axis" storageaddress="0x7f2c"/>
 	</table>
 
 	<table name="Target AFR Table (Regular Fuel)" storageaddress="0x843A">
-		<table type="X Axis" storageaddress="0x7f2c" />
+		<table type="X Axis" storageaddress="0x7f2c"/>
 	</table>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x6e11">
-		<table type="X Axis" storageaddress="0x897a" />
-		<table type="Y Axis" storageaddress="0x894e" />
+		<table type="X Axis" storageaddress="0x897a"/>
+		<table type="Y Axis" storageaddress="0x894e"/>
 	</table>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x6dd1">
-		<table type="X Axis" storageaddress="0x896a" />
-		<table type="Y Axis" storageaddress="0x8956" />
+		<table type="X Axis" storageaddress="0x896a"/>
+		<table type="Y Axis" storageaddress="0x8956"/>
 	</table>
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x636A">
@@ -90,20 +90,20 @@
 	<table name="JECS Fuel Restore Table" storageaddress="0x8658"/>
 
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x9888">
-		<table type="X Axis" storageaddress="0x9b5c" />
-		<table type="Y Axis" storageaddress="0x9acc" />
+		<table type="X Axis" storageaddress="0x9b5c"/>
+		<table type="Y Axis" storageaddress="0x9acc"/>
 	</table>
 
 	<table name="mMTFDD" storageaddress="0x71dc">
-		<table type="X Axis" storageaddress="0x8ac2" />
-		<table type="Y Axis" storageaddress="0x8ae2" />
+		<table type="X Axis" storageaddress="0x8ac2"/>
+		<table type="Y Axis" storageaddress="0x8ae2"/>
 	</table>
 
 	<table name="mMTFDDS" storageaddress="0x73dc">
-		<table type="X Axis" storageaddress="0x8ac2" />
-		<table type="Y Axis" storageaddress="0x8ae2" />
+		<table type="X Axis" storageaddress="0x8ac2"/>
+		<table type="Y Axis" storageaddress="0x8ae2"/>
 	</table>
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6508" xorloc="0x6500" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6508" xorloc="0x6500"/>
 
 </rom>

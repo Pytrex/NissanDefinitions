@@ -19,7 +19,7 @@
 		<version>v0.01</version>
 	</romid>
 
-	\\Values, Tables, and Maps w/o Axes//
+	
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5056"/>
 	<table name="MAF Table" storageaddress="0x79C0"/>
@@ -50,7 +50,7 @@
 	<table name="Target AFR Table (High Detonation)" storageaddress="0x72F8"/> 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x7526"/>
 
-	\\Maps and Tables w/ Axes//
+	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x7824">
 		<table type="X Axis" storageaddress="0x7F16"/>
@@ -176,10 +176,10 @@
 		<table type="Y Axis" storageaddress="0x7BC0"/>
 	</table>
 
-	\\DTCs//
+	
 
     <table name="Full DTC List" storageaddress="0x88B4"/>
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x51F8" xorloc="0x51F0" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x51F8" xorloc="0x51F0"/>
 
 </rom>

@@ -12,7 +12,7 @@
 
 		<!-- Ignition Timing -->
 
-	<table type="2D" name="Cranking Advance Table" category="Engine Start Performance//Cranking Control//Ignition Timing" storagetype="uint8" sizex="8" userlevel="1">
+	<table type="2D" name="Cranking Advance Table" category="Engine Start Performance//Cranking Control//Ignition Timing" storagetype="uint8" sizex="8" userlevel="3">
 		<scaling base="Degrees (x)"/>
 	<table type="Static X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
 			<data>-40</data>
@@ -24,9 +24,19 @@
 			<data>176</data>
 			<data>212</data>
 	</table>
-	<description><!--mTCRADV-->CRADV table// Cranking Timing A</description>
+		<description><!--mTCRADV-->CRADV table// Cranking Timing A</description>
 	</table>
 
+
+	<table type="2D" name="Consult Ignition Timing Adjustment Limits" category="Ignition Timing//Limiters" storagetype="int8" sizey="2" userlevel="3">
+		<scaling base="- (x)"/>
+	<table type="Static Y Axis" name="Limit" sizey="2">
+			<data>Upper</data>
+			<data>Lower</data>
+	</table>
+		<description><!--mADVADH--> <!--NTPR: mADVADL--> These are the limits as to how far Consult can adjust the ignition timing. There's really no point in adjusting this limiter unless you're wanting to experiment or implement it in some other way.</description>
+	</table>
+	
 		<!-- Fuel Delivery -->
 
 	<table type="2D" name="Crank Fueling TP Value Table" category="Engine Start Performance//Cranking Control//Fuel Delivery" storagetype="uint16" sizex="8" userlevel="1">
@@ -993,7 +1003,7 @@
 	<description><!--mDWLTIM-->Dwell TIM coefficient</description>
 	</table>
 
-	\\Dwell Time//Limiters//
+	<!--\\Dwell Time//Limiters//-->
 
 	<table type="2D" name="Dwell Limits" category="Ignition Timing//Dwell Time//Limiters" storagetype="uint8" sizex="2" userlevel="1">
 		<scaling base="Degrees (x)"/>
@@ -1004,7 +1014,7 @@
 	<description><!--mTDWLMAX--> <!--NTPR: mTDWLMIN--> Dwell upper/lower limit value</description>
 	</table>
 
-	\\GOV Control//
+	<!--\\GOV Control//-->
 
 	<table type="2D" name="GOV Table" category="Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="1">
 		<scaling base="Degrees (x-128)"/>
@@ -1111,7 +1121,7 @@
 	<description><!--mTAVCNS-->Only used in open loop and if PI conditions are right (unknown atm). Value is then added to the mTAVCN1 Table value.</description>
 	</table>
 
-	\\Ignition Timing//Transient Correction//
+	<!--\\Ignition Timing//Transient Correction//-->
 
 	<table type="2D" name="K2Y Table (Deceleration Advance)" category="Ignition Timing//Transient Correction//Main" storagetype="uint8" sizex="8" userlevel="1">
 		<scaling base="Degrees (x)"/>
@@ -1198,7 +1208,7 @@
 	<description><!--mTTRADV3--> Only used when accelerating from fuel cut and when lock-up is occurring.</description>
 	</table>
 
-	\\Transient Correction//Limiters//
+	<!--\\Transient Correction//Limiters//-->
 
 	<table type="1D" name="Ignition Timing Compensation Retard Limiter" category="Ignition Timing//Transient Correction//Limiters" storagetype="uint8" userlevel="1">
 		<scaling base="Degrees (x)"/>
@@ -1210,7 +1220,7 @@
 	<description><!--mALMT--> Ignition advance limiter used in the DLTADV calculation.</description>
 	</table>
 
-	\\Compensations//Variable Valve Timing//
+	<!--\\Compensations//Variable Valve Timing//-->
 
 	<table type="2D" name="VVT NK Threshold TP Table" category="Ignition Timing//Compensations//Variable Valve Timing" storagetype="uint8" sizex="16" userlevel="1">
 		<scaling base="BFS (x*0.125)"/>
@@ -1235,7 +1245,7 @@
 	<description><!--mTVTCTRM-->The deviance is based on how far the actual cam timing is from the target.</description>
 	</table>
 
-	\\Ignition Timing//Limiters//
+	<!--\\Ignition Timing//Limiters//-->
 
 	<table type="2D" name="Ignition Adjustment Limits (Filling Up Efficiency)" category="Ignition Timing//Limiters" storagetype="uint8" sizey="2" userlevel="1">
 		<scaling base="Percentage (x*0.78125)"/>
@@ -1261,7 +1271,7 @@
 			<data>Upper</data>
 			<data>Lower</data>
 	</table>
-	<description><!--mADVADL--> <!--NTPR: mADVADH--> These are the limits as to how far Consult can adjust the ignition timing. There's really no point in adjusting this limiter unless you're wanting to experiment or implement it in some other way.</description>
+	<description><!--mADVADH--> <!--NTPR: mADVADL--> These are the limits as to how far Consult can adjust the ignition timing. There's really no point in adjusting this limiter unless you're wanting to experiment or implement it in some other way.</description>
 	</table>
 
 	<table type="1D" name="Retard Side Maximum Change Width" category="Ignition Timing//Limiters" storagetype="uint8" userlevel="1">
@@ -1294,7 +1304,7 @@
 	<description><!--mADVLMTPI-->Ignition timing change rate limiter</description>
 	</table>
 
-	\\Misfire Detection//
+	<!--\\Misfire Detection//-->
 
 	<table type="3D" name="Misfire Diagnosis Basic Map" category="Ignition Timing//Misfire Detection//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
 		<scaling base="- (x)"/>
@@ -1329,7 +1339,7 @@
 		<description><!--MSATHB--></description>
 	</table>
 
-	\\Knock Control//
+	<!--\\Knock Control//-->
 
 	<table type="3D" name="Cold Ignition Timing Map Knock Window" category="Ignition Timing//Knock Control//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1" mask="80">
 		<scaling base="Knock Window"/>
@@ -1364,7 +1374,7 @@
 		<description><!--mMADVTRMR-->This is the knock window that determines whether the ECU will aggressively pull timing if knock is detected. So basically, if you're in the knock window and knock is detected, it'll pull timing and keep timing retarded from MBT for a bit while it waits to see if anymore knock occurs. If no more knock occurs, it'll slowly add timing back. If more knock occurs, it'll continue retarding timing.</description>
 	</table>
 
-	\\Knock Control//Thresholds//
+	<!--\\Knock Control//Thresholds//-->
 
 	<table type="3D" name="Knock Slice Map" category="Ignition Timing//Knock Control//Thresholds" storagetype="uint16" sizex="16" sizey="6" userlevel="1">
 		<scaling base="Knock Strength Threshold (x*0.0015259)"/>
@@ -1397,7 +1407,7 @@
 		<description><!--mTSL-->This table sets the thresholds for determining knock by cylinder. If the knock strength value exceeds this map value, then it adds one to the knock count. For built motors, you'll need to raise these values so that it doesn't count false knock as actual knock.</description>
 	</table>
 
-	\\Knock Control//Limiters//
+	<!--\\Knock Control//Limiters//-->
 
 	<table type="3D" name="High Octane Knock Limit Map" category="Ignition Timing//Knock Control//Limiters" storagetype="uint8" sizex="3" sizey="3" userlevel="1">
 		<scaling base="Degrees (x)"/>
@@ -1429,7 +1439,7 @@
 		<description><!--mMKLMRTR-->This table sets the limits of knock retard correction when high detonation occurs.</description>
 	</table>
 
-	\\Variable Valve Timing//
+	<!--\\Variable Valve Timing//-->
 
 	<table type="3D" name="Cold Intake Cam Timing Map (8x8)" category="Variable Valve Timing//Main" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Degrees (x-128)*0.5"/>
@@ -1464,7 +1474,7 @@
 		<description><!--mMRHVTI-->VTC target operation angle regular compensation value computed map. This is only used when knock is detected.</description>
 	</table>
 
-	<table type="3D" name="Exhaust Cam Timing Map" category="Variable Valve Timing//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+	<table type="3D" name="Exhaust Cam Timing Map (16x16)" category="Variable Valve Timing//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
 		<scaling base="Degrees (x-128)*0.5"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
 			<scaling base="Percentage (x*0.78125)"/>
@@ -1486,7 +1496,7 @@
 		<description><!--mCNGDLY-->VTC drive abnormality diagnosis judgement delay</description>
 	</table>
 
-	\\Variable Valve Timing//PID Control//
+	<!--\\Variable Valve Timing//PID Control//-->
 
 	<table type="3D" name="P-Gain Computed Map (Bank 1)" category="Variable Valve Timing//PID Control" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Percentage (x)"/>
@@ -1510,11 +1520,10 @@
 		<description><!--mMKPVTC-->P-gain gain computed map// Cam Timing</description>
 	</table>
 
-----------------------------------------------------------------------------------------------
 
-	\\Gauge Cluster//
+	<!--\\Gauge Cluster//-->
 
-	\\Vehicle Speed Control//Speed Limiters//
+	<!--\\Vehicle Speed Control//Speed Limiters//-->
 
 	<table type="1D" name="Throttle Rev Limiter" category="Gauge Cluster//Vehicle Speed Control//Speed Limiters" storagetype="uint16" userlevel="1">
 		<scaling base="RPM (x*0.78125)"/>
@@ -1536,7 +1545,7 @@
 		<description><!--Undefined-->Ensure that this value is below the fuel cut speed limiter's value.</description>
 	</table>
 
-	\\Electronic Throttle Control//
+	<!--\\Electronic Throttle Control//-->
 
 	<table type="3D" name="QH0/ Torque Conversion Map" category="Electronic Throttle Control//Main" storagetype="uint16" sizex="16" sizey="16" userlevel="1">
 		<scaling base="Requested Torque (x*0.07)-2416"/>
@@ -1628,7 +1637,7 @@
 	<description><!--mTATVO--> Sets vATVO (RAM)</description>
 	</table>
 
-	\\Accelerator Pedal//
+	<!--\\Accelerator Pedal//-->
 
 	<table type="2D" name="Throttle Flow Potential Table" category="Electronic Throttle Control//Accelerator Pedal//Main" storagetype="uint16" sizex="32" userlevel="1">
 	<scaling base="QH0 Flow Quantity (x*0.001525879)"/>
@@ -1662,14 +1671,14 @@
 	<description><!--mTQH0SH_S--> Table MUST be identical to the first one!</description>
 	</table>
 
-	\\Accelerator Pedal//Limiters//
+	<!--\\Accelerator Pedal//Limiters//-->
 
 	<table type="1D" name="APO Threshold (Brake)" category="Electronic Throttle Control//Accelerator Pedal//Limiters" storagetype="uint16" userlevel="1">
 		<scaling base="Degrees (x*0.11)"/>
 	<description><!--mBRKFLSL-->The APO threshold you need to breach in order to trigger the TVO limiter when the brake is currently being applied. Raising this threshold above ~83 degrees will allow you to bypass this TVO limiter.</description>
 	</table>
 
-	\\Limiters//Degree Based//
+	<!--\\Limiters//Degree Based//-->
 
 	<table type="2D" name="TVO Upper Limit Table" category="Electronic Throttle Control//Limiters//Degree Based" storagetype="uint8" sizex="8" userlevel="1">
 	<scaling base="Degrees (x*0.3575)"/>
@@ -1687,16 +1696,16 @@
 	<description><!--mTTVOULMS--> A throttle open-degree upper limit speed table (a main operation part) for the intake pulsation countermeasure</description>
 	</table>
 
-	\\Transmission//
+	<!--\\Transmission//-->
 
-	\\DUETTE Control//
+	<!--\\DUETTE Control//-->
 
 	<table type="1D" name="ATRET Limit" category="Transmission//DUETTE Control" storagetype="int8" userlevel="1">
 		<scaling base="Degrees (x)"/>
 	<description><!--mPILMTAT-->Seems to be the retard limit for vATRET calculations. So adjusting this will allow timing to be retarded to whatever you want.</description>
 	</table>
 
-	\\Shifting Performance//
+	<!--\\Shifting Performance//-->
 
 	<table type="3D" name="Engine Torque Map" category="Transmission//Shifting Performance" storagetype="uint16" sizex="16" sizey="16" userlevel="1">
 		<scaling base="Standard Engine Torque (x*0.07)-2416"/>
@@ -1740,7 +1749,7 @@
 		<description><!--mTENGMAP-->Map value is compensated, then sent to the TCM for it to determine proper line pressure. Raising the values will result in increased line pressure, while decreasing the values will result in decreased line pressure. It's important to ensure that the map values are at LEAST equal to actual torque output. While it's safe to specify higher torque figures than what you're making, it's extremely dangerous to specify lower torque figures than what you're making.</description>
 	</table>
 
-	\\Gear Ratio Calibration//
+	<!--\\Gear Ratio Calibration//-->
 
 	<table type="2D" name="Gear Ratio Table" category="Transmission//Gear Ratio Calibration//Main" storagetype="uint16" sizex="5" userlevel="1">
 		<scaling base="Gear Ratio (x*0.000976563)"/>
@@ -1766,7 +1775,7 @@
 	<description><!--mTRATIO_S--> Table values must match the first table's values.</description>
 	</table>
 
-	\\Torque Converter//
+	<!--\\Torque Converter//-->
 
 	<table type="2D" name="Torque Converter Torque Ratio Table" category="Transmission//Torque Converter//Main" storagetype="uint16" sizex="16" userlevel="1">
 	<scaling base="Torque Ratio (x*0.000976563)"/>
@@ -1814,7 +1823,7 @@
 	<description><!--mTTRQRT_S-->Torque converter torque ratio table// Axis vNSLPRT_S</description>
 	</table>
 
-	\\Traction Control System//
+	<!--\\Traction Control System//-->
 
 	<table type="2D" name="TCS Fuel Cut Prohibition Speed Table" category="Traction Control System" storagetype="uint8" sizex="16" userlevel="1">
 		<scaling base="RPM (x*12.5)"/>
@@ -1861,7 +1870,7 @@
 		<description><!--mMPTXRT-->Suspension time/operation time ratio map</description>
 	</table>
 
-	\\Wideband O2 Sensor//
+	<!--\\Wideband O2 Sensor//-->
 
 	<table type="3D" name="AFR Correction Map (Bank 1)" category="Oxygen Sensor Calibration//Wideband O2 Sensor//Main" storagetype="uint16" sizex="8" sizey="8" userlevel="1">
 		<scaling base="AFR Adjustment (x*0.002)"/>
@@ -1893,9 +1902,9 @@
 	<description><!--mTCALABF-->Tells the ECU what wideband voltage equals what AFR. Axis is AFR Sensor Voltage after atmospheric pressure compensation.</description>
 	</table>
 
-		\\CIDs//
+		<!--\\CIDs//-->
 
-Notes; Shoutout to A33B for defining most of the supmasks!
+<!--Notes; Shoutout to A33B for defining most of the supmasks!-->
 
 	<table type="BitwiseSwitch" name="CID1100 supmask" sizey="1" storagetype="uint32" category="Options//Supmasks//CIDs" userlevel="1">
 		<bit position ="31" name="01 Coolant temperature"/>
@@ -2182,7 +2191,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<bit position ="2" name="U2 -"/>
 		<bit position ="1" name="U1 -"/>
 		<bit position ="0" name="U0 -"/>
-	<description><!--Undefined-->mSCID30</description>
+	<description><!--mSCID30--></description>
 	</table>
 
 	<table type="BitwiseSwitch" name="CID1301 supmask" category="Options//Supmasks//CIDs" userlevel="1">
@@ -2458,7 +2467,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 			<bit position ="2" name="U2 -"/>
 			<bit position ="1" name="U1 -"/>
 			<bit position ="0" name="U0 -"/>
-	<description><!--Undefined-->mSCID14</description>
+	<description><!--mSCID14--></description>
 	</table>
 
 	<table type="BitwiseSwitch" name="CID1420 Supmask" sizey="1" storagetype="uint32" category="Options//Supmasks//CIDs" userlevel="1">
@@ -2533,7 +2542,7 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 	<description><!--Undefined-->mSCID50</description>
 	</table>
 
-	\\OBD-II PIDs//
+	<!--\\OBD-II PIDs//-->
 
 	<table type="BitwiseSwitch" name="OBD-2 PID 01-20 supmask" sizey="1" storagetype="uint32" category="Options//Supmasks//OBD-II PIDs" userlevel="1">
 		<bit position ="31" name="01 Status since the last clearing of fault codes"/>
@@ -2643,7 +2652,6 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description><!--mGSTPI2-->bits enable/disable</description>
 		</table>
 
-	\\Flags//
 
 	<table type="BitwiseSwitch" name="CO Variable Flag" category="Options//Flags" userlevel="1">
 0x80		<bit position ="7" name="Unknown 7 -"/>
@@ -3158,229 +3166,4 @@ Notes; Shoutout to A33B for defining most of the supmasks!
 		<description><!--Undefined-->mDGNSW[30]- Toggle On/Off</description>
 	</table>
 
-
-
-<!-- Redacted until split into uint32 switches
-		\\DTCs//
-
-Notes; These are all based on CF48D. These can and will vary, so some will need adjusted.
-
-	<table type="BitwiseSwitch" name="Full DTC List" category="Options//DTCs" sizey="71">
-		<bit position ="1" name ="P1422 - EVAP Small Leak"/>
-		<bit position ="100" name ="P2127 - Accelerator Pedal Position Sensor 2 #1"/>
-		<bit position ="101" name ="P2128 - Accelerator Pedal Position Sensor 2 #2"/>
-		<bit position ="102" name ="P2122 - Accelerator Pedal Position Sensor #1"/>
-		<bit position ="103" name ="P2123 - Accelerator Pedal Position Sensor #2"/>
-		<bit position ="112" name ="P0447 - Evaporative Emission Control System Vent Control Circuit Open"/>
-		<bit position ="113" name ="P0441 - Evaporative Emission Control System Incorrect Purge Flow"/>
-		<bit position ="114" name ="P0453 - Evaporative Emission Control System Pressure Sensor High Input"/>
-		<bit position ="115" name ="P0452 - Evaporative Emission Control System Pressure Sensor Low Input"/>
-		<bit position ="116" name ="P1442 - Canister Control Vacuum Check Switch"/>
-		<bit position ="117" name ="P0442 - Evaporative Emission Control System Leak Detected (small leak)"/>
-		<bit position ="118" name ="P1456 - EVAP Control System"/>
-		<bit position ="119" name ="P0456 - Evaporative Emission Control System Leak Detected (very small leak)"/>
-		<bit position ="122" name ="P0021 - 'A' Camshaft Position - Timing Over-Advanced or System Performance (Bank 2)"/>
-		<bit position ="123" name ="P0011 - 'A' Camshaft Position - Timing Over-Advanced or System Performance (Bank 1)"/>
-		<bit position ="124" name ="P0174 - System too Lean (Bank 2)"/>
-		<bit position ="125" name ="P0175 - System too Rich (Bank 2)"/>
-		<bit position ="126" name ="P0171 - System too Lean (Bank 1)"/>
-		<bit position ="127" name ="P0172 - System too Rich (Bank 1)"/>
-		<bit position ="128" name ="P0128 - Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)"/>
-		<bit position ="129" name ="P0445 - Evaporative Emission Control System Purge Control Valve Circuit Shorted"/>
-		<bit position ="130" name ="P0444 - Evaporative Emission Control System Purge Control Valve Circuit Open"/>
-		<bit position ="131" name ="P0463 - Fuel Level Sensor Circuit High Input"/>
-		<bit position ="132" name ="P0462 - Fuel Level Sensor Circuit Low Input"/>
-		<bit position ="133" name ="P0183 - Fuel Temperature Sensor A Circuit High Input"/>
-		<bit position ="134" name ="P0182 - Fuel Temperature Sensor A Circuit Low Input"/>
-		<bit position ="135" name ="P0181 - Fuel Temperature Sensor A Circuit Range/Performance"/>
-		<bit position ="136" name ="P0451 - Evaporative Emission Control System Pressure Sensor Range/Performance"/>
-		<bit position ="137" name ="P0127 - Intake Air Temperature Too High"/>
-		<bit position ="138" name ="P0113 - Intake Air Temperature Circuit High Input"/>
-		<bit position ="139" name ="P0112 - Intake Air Temperature Circuit Low Input"/>
-		<bit position ="140" name ="P0406 - Exhaust Gas Recirculation Sensor A Circuit High"/>
-		<bit position ="141" name ="P0405 - Exhaust Gas Recirculation Sensor A Circuit Low"/>
-		<bit position ="142" name ="P0118 - Engine Coolant Temperature Circuit High Input"/>
-		<bit position ="143" name ="P0117 - Engine Coolant Temperature Circuit Low Input"/>
-		<bit position ="144" name ="P0350 - Ignition Coil Primary/Secondary Circuit Malfunction"/>
-		<bit position ="146" name ="P0103 - Mass or Volume Air Flow Circuit High Input"/>
-		<bit position ="147" name ="P0102 - Mass or Volume Air Flow Circuit Low Input"/>
-		<bit position ="148" name ="P0101 - Mass or Volume Air Flow Circuit Range/Performance Problem"/>
-		<bit position ="149" name ="P0123 - Throttle/Petal Position Sensor/Switch A Circuit High Input #1"/>
-		<bit position ="150" name ="P0122 - Throttle/Petal Position Sensor/Switch A Circuit Low Input #1"/>
-		<bit position ="151" name ="P0121 - Throttle/Petal Position Sensor/Switch A Circuit Range/Performance Problem"/>
-		<bit position ="152" name ="P0333 - Knock Sensor 2 Circuit High Input (Bank 2)"/>
-		<bit position ="153" name ="P0332 - Knock Sensor 2 Circuit Low Input (Bank 2)"/>
-		<bit position ="154" name ="P0328 - Knock Sensor 1 Circuit High Input (Bank 1 or Single Sensor)"/>
-		<bit position ="155" name ="P0327 - Knock Sensor 1 Circuit Low Input (Bank 1 or Single Sensor)"/>
-		<bit position ="156" name ="P0057 - Heated O2 Sensor Heater Control Circuit Low (Bank 2 Sensor 2)"/>
-		<bit position ="157" name ="P0037 - Heated O2 Sensor Heater Control Circuit Low (Bank 1 Sensor 2)"/>
-		<bit position ="158" name ="P0058 - Heated O2 Sensor Heater Control Circuit High (Bank 2 Sensor 2)"/>
-		<bit position ="159" name ="P0038 - Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 2)"/>
-		<bit position ="160" name ="P0158 - O2 Sensor Circuit High Voltage (Bank 2 Sensor 2) #1"/>
-		<bit position ="161" name ="P0138 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 2) #2"/>
-		<bit position ="162" name ="P0157 - O2 Sensor Circuit Low Voltage (Bank 2 Sensor 2)"/>
-		<bit position ="163" name ="P0137 - O2 Sensor Circuit Low Voltage (Bank 1 Sensor 2)"/>
-		<bit position ="164" name ="P0158 - O2 Sensor Circuit High Voltage (Bank 2 Sensor 2)"/>
-		<bit position ="165" name ="P0138 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 2)"/>
-		<bit position ="166" name ="P0159 - O2 Sensor Circuit Slow Response (Bank 2 Sensor 2)"/>
-		<bit position ="167" name ="P0139 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 2)"/>
-		<bit position ="168" name ="P0507 - Idle Control System RPM Higher Than Expected"/>
-		<bit position ="169" name ="P0506 - Idle Control System RPM Lower Than Expected"/>
-		<bit position ="187" name ="P0700 - Transmission Control System Malfunction"/>
-		<bit position ="188" name ="P1772 - LOW COAST BRAKE SOLENOID VALVE"/>
-		<bit position ="189" name ="P1774 - LOW COAST BRAKE SOLENOID VALVE FUNCTION"/>
-		<bit position ="190" name ="P1752 - INPUT CLUTCH SOLENOID VALVE"/>
-		<bit position ="191" name ="P1754 - INPUT CLUTCH SOLENOID VALVE FUNCTION"/>
-		<bit position ="192" name ="P1757 - FRONT BRAKE SOLENOID VALVE"/>
-		<bit position ="193" name ="P1759 - FRONT BRAKE SOLENOID VALVE FUNCTION"/>
-		<bit position ="194" name ="P1762 - DIRECT CLUTCH SOLENOID VALVE"/>
-		<bit position ="195" name ="P1764 - DIRECT CLUTCH SOLENOID VALVE FUNCTION"/>
-		<bit position ="196" name ="P1767 - HIGH AND LOW REVERSE CLUTCH SOLENOID VALVE"/>
-		<bit position ="197" name ="P1769 - HIGH AND LOW REVERSE CLUTCH SOLENOID VALVE FUNCTION"/>
-		<bit position ="198" name ="P1730 - A/T INTERLOCK"/>
-		<bit position ="199" name ="P0717 - Input/Turbine Speed Sensor Circuit No Signal"/>
-		<bit position ="210" name ="P0150 - O2 Sensor Circuit Malfunction (Bank 2 Sensor 1)"/>
-		<bit position ="212" name ="P2a03 - A/F Sensor 1 Bank 2 Circuit Range/Performance #1"/>
-		<bit position ="213" name ="P2a03 - A/F Sensor 1 Bank 2 Circuit Range/Performance #2"/>
-		<bit position ="214" name ="P0152 - O2 Sensor Circuit High Voltage (Bank 2 Sensor 1)"/>
-		<bit position ="215" name ="P0151 - O2 Sensor Circuit Low Voltage (Bank 2 Sensor 1)"/>
-		<bit position ="218" name ="P0130 - O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)"/>
-		<bit position ="220" name ="P2a00 - A/F Sensor 1 Bank 1 Circuit Range/Performance #1"/>
-		<bit position ="221" name ="P2a00 - A/F Sensor 1 Bank 1 Circuit Range/Performance #2"/>
-		<bit position ="222" name ="P0132 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 1)"/>
-		<bit position ="223" name ="P0131 - O2 Sensor Circuit Low Voltage (Bank 1 Sensor 1)"/>
-		<bit position ="224" name ="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2) #1"/>
-		<bit position ="225" name ="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2) #2"/>
-		<bit position ="226" name ="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2) #3"/>
-		<bit position ="24" name ="Pd010 -#10"/>
-		<bit position ="240" name ="Pd000 -#00"/>
-		<bit position ="241" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #26"/>
-		<bit position ="242" name ="P1568 - ICC (Intelligent Cruise Control)"/>
-		<bit position ="243" name ="P1574 - ASCD VEHICLE SPEED SENSOR"/>
-		<bit position ="244" name ="P1572 - ASCD BRAKE SWITCH"/>
-		<bit position ="245" name ="P1564 - ASCD STEERING SWITCH"/>
-		<bit position ="246" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #27"/>
-		<bit position ="247" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #28"/>
-		<bit position ="260" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #25"/>
-		<bit position ="264" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #19"/>
-		<bit position ="265" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #20"/>
-		<bit position ="266" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #21"/>
-		<bit position ="267" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #22"/>
-		<bit position ="270" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #23"/>
-		<bit position ="271" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #24"/>
-		<bit position ="273" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #17"/>
-		<bit position ="274" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #18"/>
-		<bit position ="276" name ="P0603 - Internal Control Module Keep Alive Memory (KAM) Error"/>
-		<bit position ="277" name ="P2119 - Electric Throttle Control Actuator #1"/>
-		<bit position ="278" name ="P2119 - Electric Throttle Control Actuator #2"/>
-		<bit position ="279" name ="P2119 - Electric Throttle Control Actuator #3"/>
-		<bit position ="285" name ="P1805 - BRAKE SWITCH/CIRCUIT 2"/>
-		<bit position ="289" name ="P1715 - Input Speed Sensor (Turbine Revolution Sensor)"/>
-		<bit position ="290" name ="P1720 - Vehicle Speed Sensor- A/T Output"/>
-		<bit position ="292" name ="P1780 - Shift Change Signal"/>
-		<bit position ="294" name ="P1123 - Throttle Control Motor Relay #1"/>
-		<bit position ="295" name ="P1123 - Throttle Control Motor Relay #2"/>
-		<bit position ="296" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #13"/>
-		<bit position ="297" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #14"/>
-		<bit position ="298" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #15"/>
-		<bit position ="299" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #16"/>
-		<bit position ="300" name ="P1700 - TRANSMISSION CONTROL MODULE (RAM)"/>
-		<bit position ="305" name ="P2101 - Electric Throttle Control Function #1"/>
-		<bit position ="306" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #9"/>
-		<bit position ="307" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #10"/>
-		<bit position ="308" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #11"/>
-		<bit position ="309" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #12"/>
-		<bit position ="311" name ="P2101 - Electric Throttle Control Function"/>
-		<bit position ="312" name ="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction #2"/>
-		<bit position ="313" name ="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction #3"/>
-		<bit position ="316" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #8"/>
-		<bit position ="320" name ="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction #1"/>
-		<bit position ="344" name ="Pd000 -#0"/>
-		<bit position ="345" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #2"/>
-		<bit position ="346" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #3"/>
-		<bit position ="347" name ="Pd001 -#1"/>
-		<bit position ="348" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #4"/>
-		<bit position ="349" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #5"/>
-		<bit position ="350" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #6"/>
-		<bit position ="351" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #7"/>
-		<bit position ="352" name ="P0550 - Power Steering Pressure Sensor Circuit Malfunction"/>
-		<bit position ="368" name ="P0335 - Crankshaft Position Sensor A Circuit Malfunction #2"/>
-		<bit position ="369" name ="P0335 - Crankshaft Position Sensor A Circuit Malfunction #3"/>
-		<bit position ="370" name ="P0335 - Crankshaft Position Sensor A Circuit Malfunction #4"/>
-		<bit position ="371" name ="P0340 - Camshaft Position Sensor Circuit Malfunction #1"/>
-		<bit position ="372" name ="P0340 - Camshaft Position Sensor Circuit Malfunction #2"/>
-		<bit position ="373" name ="P0340 - Camshaft Position Sensor Circuit Malfunction #3"/>
-		<bit position ="380" name ="P0460 - Fuel Level Sensor Circuit Malfunction"/>
-		<bit position ="381" name ="P0461 - Fuel Level Sensor Circuit Range/Performance"/>
-		<bit position ="393" name ="P1740 - INPUT CLUTCH SOLENOID VALVE"/>
-		<bit position ="394" name ="P0778 - Pressure Control Solenoid 'B' Electrical"/>
-		<bit position ="395" name ="P0776 - Pressure Control Solenoid 'B' Performance or Stuck Off"/>
-		<bit position ="396" name ="P0746 - Pressure Control Solenoid Performance or Stuck Off"/>
-		<bit position ="397" name ="P0744 - Torque Converter Clutch Circuit Intermittent"/>
-		<bit position ="400" name ="P0745 - Pressure Control Solenoid Malfunction"/>
-		<bit position ="401" name ="P0740 - Torque Converter Clutch Circuit Malfuction"/>
-		<bit position ="402" name ="P1791 - VIAS Control Solenoid Valve"/>
-		<bit position ="403" name ="P1777 - Shift Change Signal"/>
-		<bit position ="404" name ="P0715 - Input/Turbine Speed Sensor Circuit Malfunction"/>
-		<bit position ="405" name ="P1778 - Shift Change Signal"/>
-		<bit position ="407" name ="P1800 - VIAS Control Solenoid Valve"/>
-		<bit position ="411" name ="P0081 - Intake Valve Control Solenoid Circuit (Bank 2)"/>
-		<bit position ="412" name ="P0075 - Intake Valve Control Solenoid Circuit (Bank 1)"/>
-		<bit position ="415" name ="P0403 - Exhaust Gas Recirculation Circuit Malfunction"/>
-		<bit position ="418" name ="P1402 - EGR System"/>
-		<bit position ="439" name ="P0447 - Evaporative Emission Control System Vent Control Circuit Open #1"/>
-		<bit position ="440" name ="P0455 - Evaporative Emission Control System Leak Detected (gross leak)"/>
-		<bit position ="441" name ="P0448 - Evaporative Emission Control System Vent Control Circuit Shorted"/>
-		<bit position ="442" name ="P0443 - Evaporative Emission Control System Purge Control Valve Circuit Malfunction"/>
-		<bit position ="467" name ="P1220 - FPCM"/>
-		<bit position ="472" name ="P0710 - Transmission Fluid Temperature Sensor Circuit Malfunction"/>
-		<bit position ="473" name ="P0725 - Engine Speed input Circuit Malfunction"/>
-		<bit position ="474" name ="P1705 -Throttle Position Sensor"/>
-		<bit position ="475" name ="P0745 - Pressure Control Solenoid Malfunction #1"/>
-		<bit position ="476" name ="P0740 - Torque Converter Clutch Circuit Malfuction #1"/>
-		<bit position ="477" name ="P1760 - Overrun Clutch S/V"/>
-		<bit position ="479" name ="P0755 - Shift Solenoid B Malfunction"/>
-		<bit position ="480" name ="P0750 - Shift Solenoid A Malfunction"/>
-		<bit position ="481" name ="P0744 - Torque Converter Clutch Circuit Intermittent #1"/>
-		<bit position ="482" name ="P0734 - Gear 4 Incorrect ratio"/>
-		<bit position ="483" name ="P0733 - Gear 3 Incorrect ratio"/>
-		<bit position ="484" name ="P0732 - Gear 2 Incorrect ratio"/>
-		<bit position ="485" name ="P0731 - Gear 1 Incorrect ratio"/>
-		<bit position ="486" name ="P0720 - Output Speed Sensor Circuit Malfunction"/>
-		<bit position ="487" name ="P0705 - Transmission Range Sensor Circuit malfunction (PRNDL Input)"/>
-		<bit position ="493" name ="P0850 - Park/Neutral Switch Input Circuit"/>
-		<bit position ="496" name ="P0125 - Insufficient Coolant Temperature for Closed Loop Fuel Control"/>
-		<bit position ="506" name ="P0173 - Fuel Trim Malfunction (Bank 2)"/>
-		<bit position ="510" name ="P0335 - Crankshaft Position Sensor A Circuit Malfunction #1"/>
-		<bit position ="514" name ="P0170 - Fuel Trim Malfunction (Bank 1)"/>
-		<bit position ="517" name ="P0430 - Catalyst System Efficiency Below Threshold (Bank 2)"/>
-		<bit position ="518" name ="P0420 - Catalyst System Efficiency Below Threshold (Bank 1)"/>
-		<bit position ="519" name ="P0300 - Random/Multiple Cylinder Misfire Detected"/>
-		<bit position ="520" name ="P0301 - Cylinder 1 Misfire Detected"/>
-		<bit position ="521" name ="P0302 - Cylinder 2 Misfire Detected"/>
-		<bit position ="522" name ="P0303 - Cylinder 3 Misfire Detected"/>
-		<bit position ="523" name ="P0304 - Cylinder 4 Misfire Detected"/>
-		<bit position ="524" name ="P0305 - Cylinder 5 Misfire Detected"/>
-		<bit position ="525" name ="P0306 - Cylinder 6 Misfire Detected"/>
-		<bit position ="540" name ="P1212 - ABS/TCS Communication Line"/>
-		<bit position ="544" name ="P1168 - Closed Loop, Bank 2"/>
-		<bit position ="545" name ="P1148 - Closed Loop, Bank 1"/>
-		<bit position ="550" name ="P0400 - Exhaust Gas Recirculation Flow Malfunction"/>
-		<bit position ="551" name ="P0605 - Internal Control Module Read Only Memory (ROM) Error #1"/>
-		<bit position ="552" name ="P1217 - Engine Coolant Temperature"/>
-		<bit position ="561" name ="P1211 - ABS/TCS Control Unit"/>
-		<bit position ="564" name ="P0500 - Vehicle Speed Sensor Malfunction"/>
-		<bit position ="88" name ="P1226 - Closed Throttle Position Learning #1"/>
-		<bit position ="89" name ="P1225 - Closed Throttle Position Learning #2"/>
-		<bit position ="90" name ="P0032 - Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 1)"/>
-		<bit position ="91" name ="P2135 - Throttle Position Sensor"/>
-		<bit position ="92" name ="P0122 - Throttle/Petal Position Sensor/Switch A Circuit Low Input"/>
-		<bit position ="93" name ="P0123 - Throttle/Petal Position Sensor/Switch A Circuit High Input"/>
-		<bit position ="94" name ="P0222 - Throttle/Pedal Position Sensor/Switch B Circuit Low Input"/>
-		<bit position ="95" name ="P0223 - Throttle/Pedal Position Sensor/Switch B Circuit High Input"/>
-		<bit position ="96" name ="P0643 - A/C Clutch Relay Control Circuit"/>
-		<bit position ="99" name ="P2138 - A/F Sensor 1 Bank 1 Circuit Range/Performance"/>
-		<description>mDGNSW[0] The entire list of supported DTC's. As this list is based on CF48D's supported DTC's, this is most likely not going to be a full list of DTC's for your individual ROM. However, it'll still be the large majority of them.</description>
-	</table>
-	-->
 </rom>

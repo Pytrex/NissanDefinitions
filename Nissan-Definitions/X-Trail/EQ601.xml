@@ -20,6 +20,6 @@
 		<version>v0.01</version>
 	</romid>
 
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x70A0" xorloc="0x7098" />
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x70A0" xorloc="0x7098"/>
 
 </rom>

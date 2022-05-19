@@ -20,53 +20,53 @@
 	</romid>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x659D">
-		<table type="X Axis" storageaddress="0x7FDE" />
-		<table type="Y Axis" storageaddress="0x7FCE" />
+		<table type="X Axis" storageaddress="0x7FDE"/>
+		<table type="Y Axis" storageaddress="0x7FCE"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x659D">
-		<table type="X Axis" storageaddress="0x7FDE" />
-		<table type="Y Axis" storageaddress="0x7FCE" />
+		<table type="X Axis" storageaddress="0x7FDE"/>
+		<table type="Y Axis" storageaddress="0x7FCE"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x669D">
-		<table type="X Axis" storageaddress="0x7FDE" />
-		<table type="Y Axis" storageaddress="0x7FCE" />
+		<table type="X Axis" storageaddress="0x7FDE"/>
+		<table type="Y Axis" storageaddress="0x7FCE"/>
 	</table>
 
 	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x669D">
-		<table type="X Axis" storageaddress="0x7FDE" />
-		<table type="Y Axis" storageaddress="0x7FCE" />
+		<table type="X Axis" storageaddress="0x7FDE"/>
+		<table type="Y Axis" storageaddress="0x7FCE"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x679D">
-		<table type="X Axis" storageaddress="0x7FDE" />
-		<table type="Y Axis" storageaddress="0x7FCE" />
+		<table type="X Axis" storageaddress="0x7FDE"/>
+		<table type="Y Axis" storageaddress="0x7FCE"/>
 	</table>
 
 	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x679D">
-		<table type="X Axis" storageaddress="0x7FDE" />
-		<table type="Y Axis" storageaddress="0x7FCE" />
+		<table type="X Axis" storageaddress="0x7FDE"/>
+		<table type="Y Axis" storageaddress="0x7FCE"/>
 	</table>
 
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x6A5D">
-		<table type="X Axis" storageaddress="0x7F04" />
-		<table type="Y Axis" storageaddress="0x7EC0" />
+		<table type="X Axis" storageaddress="0x7F04"/>
+		<table type="Y Axis" storageaddress="0x7EC0"/>
 	</table>
 
 	<table name="Target AFR Map (8x8)" storageaddress="0x6C2D">
-		<table type="X Axis" storageaddress="0x7DAF" />
-		<table type="Y Axis" storageaddress="0x7EB8" />
+		<table type="X Axis" storageaddress="0x7DAF"/>
+		<table type="Y Axis" storageaddress="0x7EB8"/>
 	</table>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x6D5D">
-		<table type="X Axis" storageaddress="0x88BE" />
-		<table type="Y Axis" storageaddress="0x88AA" />
+		<table type="X Axis" storageaddress="0x88BE"/>
+		<table type="Y Axis" storageaddress="0x88AA"/>
 	</table>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x6D9D">
-		<table type="X Axis" storageaddress="0x88CE" />
-		<table type="Y Axis" storageaddress="0x88A2" />
+		<table type="X Axis" storageaddress="0x88CE"/>
+		<table type="Y Axis" storageaddress="0x88A2"/>
 	</table>
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x630A"/>
@@ -83,18 +83,18 @@
 	<table name="JECS Fuel Restore Table" storageaddress="0x85C4"/>
 
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x97DA">
-		<table type="X Axis" storageaddress="0x9AAE" />
-		<table type="Y Axis" storageaddress="0x9A1E" />
+		<table type="X Axis" storageaddress="0x9AAE"/>
+		<table type="Y Axis" storageaddress="0x9A1E"/>
 	</table>
 
 	<table name="mMTFDD" storageaddress="0x7168">
-		<table type="X Axis" storageaddress="0x8A16" />
-		<table type="Y Axis" storageaddress="0x8A36" />
+		<table type="X Axis" storageaddress="0x8A16"/>
+		<table type="Y Axis" storageaddress="0x8A36"/>
 	</table>
 
 	<table name="mMTFDDS" storageaddress="0x7368">
-		<table type="X Axis" storageaddress="0x8A16" />
-		<table type="Y Axis" storageaddress="0x8A36" />
+		<table type="X Axis" storageaddress="0x8A16"/>
+		<table type="Y Axis" storageaddress="0x8A36"/>
 	</table>
 	
 	<table name="Catalyst DTCs" storageaddress="0x99e0"/>
@@ -109,8 +109,8 @@
 	<table name="Evap Pressure Flow DTCs" storageaddress="0x9a12"/>
 	<table name="Evap Leaks DTCs"  storageaddress="0x9a13"/>
 
-	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0x92d8" />
+	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0x92d8"/>
 
-	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6494" xorloc="0x648C" />
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6494" xorloc="0x648C"/>
 
 </rom>
