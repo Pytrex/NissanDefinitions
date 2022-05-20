@@ -6,6 +6,7 @@ A2L Supported Nissan 350z and Infiniti G35 ROM Definitions for use with RomRaide
 ![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/Pytrex/NissanDefinitions?color=blueviolet&display_name=release&include_prereleases&label=Latest%20Release&sort=date)
 ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Pytrex/NissanDefinitions/latest?label=Commits%20Since%20Latest%20Release&style=flat)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Pytrex/NissanDefinitions?label=Repo%20Size&style=flat)
+![GitHub all releases](https://img.shields.io/github/downloads/Pytrex/NissanDefinitions/total?color=blue&label=Total%20Downloads)
 
 # About
 
