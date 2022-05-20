@@ -19,9 +19,9 @@ Thanks to IDA, the Diaphora IDA script, and a XML parsing script I created, ROMs
 
 
 # Instructions 
-To begin using these definitions, download and unzip the repository to wherever you want. Then inside of RomRaider, click "Definitions" -> "Definition File Manager" -> "Add" and then select the "NissanDefinitions.xml" file from the folder. 
+To begin using these definitions, download and unzip the latest release to wherever you want. Then inside of RomRaider, click "Definitions" -> "Definition File Manager" -> "Add" and then select the "NissanDefinitions.xml" file from wherever you unzipped it. 
 
-For stability, use the most recent release. If you're wanting to get the newest additions and fixes, download the repository instead. While the repository should mostly be stable, there's always a chance that a definition file might have an error. 
+For stability, use the most recent release. If you're wanting to get the newest additions and fixes, download the repository instead. When you unzip the repository, you'll need to run "Combine All.bat" at least once in order to generate the "NissanDefinitions.xml" file. While the repository should mostly be stable, there's always a chance that a definition file might have an error. 
 
 For the logger, it's recommended to use the official logger definition file from https://www.romraider.com/forum/viewtopic.php?f=8&t=1642 
 
