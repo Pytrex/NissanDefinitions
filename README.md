@@ -1,30 +1,68 @@
-# Nissan Definitions
+
+# NissanDefinitions
+
 A2L Supported Nissan 350z and Infiniti G35 ROM Definitions for use with RomRaider Editor and Logger. 
 
 ![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/Pytrex/NissanDefinitions?color=blueviolet&display_name=release&include_prereleases&label=Latest%20Release&sort=date)
 ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Pytrex/NissanDefinitions/latest?label=Commits%20Since%20Latest%20Release&style=flat)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Pytrex/NissanDefinitions?label=Repo%20Size&style=flat)
 
-
-# Disclaimer
-Do note that by using these definitions, you accept full responsibility for any damages that occur. It's highly recommended that you avoid making changes to things that you don't feel confident modifying. Due to switching to a more automated defining system, it is critical that you don't modify any parameters that appear to be inaccurate. While the automation process is overall extremely accurate, it isn't guaranteed to be perfect. While I'll attempt to keep the ROMs that haven't been manually verified separate from the rest, there's no guarantees.
-
-
 # About
-This repository is focused on providing RomRaider ECU definition files for all SH705X Nissan and Infiniti ECU's. This typically means model years between ~2001-2010. This repository is setup in such a way that each ROM has its own definition file that stores the storageaddresses for all defined parameters. This definition file references the A2L template file, which contains map specific data. The combine all script merges all of these files into one file, alongside a xmlheader and xmlfooter file to meet RomRaider's formatting. All scaling data has been transfered to the xmlheader file. When selecting a definition file within RomRaider, be sure to select the "NissanDefinitions.xml" file.
 
+#### Current Stable RomRaider Version (Repository): v0.9.2  
 
-# Information Regarding ROM Definition Automation 
-Thanks to IDA, the Diaphora IDA script, and a XML parsing script I created, ROMs can now be partially automated when it comes to definitions. So rather than requiring someone to manually parse through the ECU's ROM to locate specific ROM tables, the combination of software can automatically define various tables. The accuracy is based on the similarity with another pre-defined ROM. So since CF48D has over 3,000 tables defined, most ROMs will be compared to it. However, as more and more ROMs get defined, the more viable they'll be to use as a comparison base. This switch has no impact on the end user experience. All it means is that more ROMs will be getting defined much more quickly and efficiently.
+NissanDefinitions supports RomRaider ECU definition files for all SH705X Nissan and Infiniti ECU's. This typically includes model years between ~2001-2010 with processors SH7055 or SH7058. You can utilize these definition files within RomRaider to modify the contents on your ECU's ROM. By doing so, you're able to modify the behavior of the vehicle. 
 
+Each ROM has its own definition file that stores the ROM addresses for all defined tables. This definition file references the A2L template file, which contains table specific data. The ScalingData file is where all table scalars are stored. Using the "Combine All.bat" file will merge all files into one, NissanDefinitions. As time goes on, more and more ROMs will be defined. 
 
-# Instructions 
-To begin using these definitions, download and unzip the repository to wherever you want. Then inside of RomRaider, click "Definitions" -> "Definition File Manager" -> "Add" and then select the "NissanDefinitions.xml" file from the folder. 
+# Key Features
 
-For stability, use the most recent release. If you're wanting to get the newest additions and fixes, download the repository instead. While the repository should mostly be stable, there's always a chance that a definition file might have an error. 
+### General Repository Features
 
-For the logger, it's recommended to use the official logger definition file from https://www.romraider.com/forum/viewtopic.php?f=8&t=1642 
+- Utilizes RomRaider's XML Formatting to the Fullest Extent (Scalingbase, Subcategories, etc) 
+- Semi-Automated Definition Files (Automated initial definition files with manual verification) 
+- Ability to Modify Individual ROM Contents and Definition Files
+- Cross Compatible with Any Preexisting Definition Repositories (add the preexisting definition template to your Nissan-Definitions folder)
+- Tables Derived from [ZB060 a2l file](https://www.romraider.com/forum/viewtopic.php?f=45&t=14750)
+
+### A2L Specific Features
+
+- ~221 Supported Tables
+- Full DTC Support (Pending fix for RomRaider v0.9.2)
+- Full CID Supmask Support
+- ROM Flags
+
+#### Example of CF48D
+
+![NissanDefinitionsFull1](https://user-images.githubusercontent.com/13327710/169581074-9c4cc23e-5348-42e7-b6b3-94c96b50422a.png)
+
+# Instructions for Installation and Setup
+
+### For Stability (Recommended)
+
+~~~
+1. Download and unzip latest release  
+2. Open RomRaider Editor and click "Definitions" tab at the top, "Definition File Manager", then "add"
+4. Select the "NissanDefinitions.xml" file from the release
+~~~
+
+### For Latest Updates
+
+~~~
+1. Download the repository from GitHub
+2. Go to the "Nissan-Definitions" folder
+3. Run "Combine All.bat" to generate the "NissanDefinitions.xml" file
+2. Open RomRaider Editor and click "Definitions" tab at the top, "Definition File Manager", then "add"
+4. Select the "NissanDefinitions.xml" file from the "Nissan-Definitions" folder
+~~~
+
+### Logger
+
+[Official RomRaider Logger Definition File](https://www.romraider.com/forum/viewtopic.php?f=8&t=1642) **(Recommended)**
 
 # Useful Links
+
 * [RomRaider Software](https://www.romraider.com/) 
 * [Official Nissan Tuning Wiki](https://nissanecu.miraheze.org/wiki/Main_Page)
+* [Official Tuning Information Section](https://nissanecu.miraheze.org/wiki/Nissan_Tuning) **(WIP)**
+
