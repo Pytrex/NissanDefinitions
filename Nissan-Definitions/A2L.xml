@@ -365,7 +365,7 @@
 	<table type="3D" name="Fuel Compensation Map (16x16)" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
 		<scaling base="Percentage (x*0.78125)"/>
 		<table type="X Axis" name="QH0 Flow Quantity" storagetype="uint8">
-			<scaling base="Percentage (x*0.390625)"/>
+			<scaling base="Axis Percentage (x*0.390625)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -376,7 +376,7 @@
 	<table type="3D" name="Steady State Judgement Smoothing Coefficient Map" category="Fuel Delivery" storagetype="uint8" sizex="4" sizey="4" userlevel="1">
 		<scaling base="Percentage (x*1.953125)"/>
 		<table type="X Axis" name="QH0" storagetype="uint8">
-			<scaling base="Percentage (x*0.390625)"/>
+			<scaling base="Axis Percentage (x*0.390625)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -426,7 +426,7 @@
 	<table type="3D" name="Target AFR Map (8x8)" category="Fuel Delivery//Air Fuel Ratio//Main" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Target AFR (1881.6/x)"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -437,7 +437,7 @@
 	<table type="3D" name="Target AFR Map (16x16)" category="Fuel Delivery//Air Fuel Ratio//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
 		<scaling base="Target AFR (1881.6/x)"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -474,7 +474,7 @@
 	<table type="3D" name="Fuel Compensation Map (Transient Throttle Deceleration)" category="Fuel Delivery//Transient Correction" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Percentage (x*0.78125)"/>
 		<table type="X Axis" name="QH0 Flow Quantity" storagetype="uint8">
-			<scaling base="Percentage (x*0.390625)"/>
+			<scaling base="Axis Percentage (x*0.390625)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -485,7 +485,7 @@
 	<table type="3D" name="Fuel Compensation Map (Transient Throttle Acceleration)" category="Fuel Delivery//Transient Correction" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Percentage (x*0.78125)"/>
 		<table type="X Axis" name="QH0 Flow Quantity" storagetype="uint8">
-			<scaling base="Percentage (x*0.390625)"/>
+			<scaling base="Axis Percentage (x*0.390625)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -532,7 +532,7 @@
 	<table type="3D" name="High Temperature Fuel Compensation Map" category="Fuel Delivery//Engine Cooling" storagetype="uint8" sizex="4" sizey="4" userlevel="1">
 		<scaling base="Percentage (x*0.78125)"/>
 		<table type="X Axis" name="Cylinder Intake Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -755,7 +755,7 @@
 	<table type="3D" name="Cold Ignition Timing Map (16x16)" category="Ignition Timing//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1" mask="7F">
 		<scaling base="Degrees (x-64)"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -766,7 +766,7 @@
 	<table type="3D" name="High Octane Ignition Timing Map (16x16)" category="Ignition Timing//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1" mask="7F">
 		<scaling base="Degrees (x-64)"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -777,7 +777,7 @@
 	<table type="3D" name="High Detonation Ignition Timing Map (16x16)" category="Ignition Timing//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1" mask="7F">
 		<scaling base="Degrees (x-64)"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -842,7 +842,7 @@
 	<table type="3D" name="MBT Flame Speed Map" category="Ignition Timing//MBT Calculation" storagetype="uint8" sizex="4" sizey="4" userlevel="1">
 		<scaling base="Laminar Flame Speed (cc/ms)"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -853,7 +853,7 @@
 	<table type="3D" name="Cylinder Fresh Air Rate Map" category="Ignition Timing//MBT Calculation" storagetype="uint8" sizex="4" sizey="4" userlevel="1">
 		<scaling base="Percentage (x*0.78125)" units="Fresh Air Rate (%)"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1225,7 +1225,7 @@
 	<table type="2D" name="VVT NK Threshold TP Table" category="Ignition Timing//Compensations//Variable Valve Timing" storagetype="uint8" sizex="16" userlevel="1">
 		<scaling base="BFS (x*0.125)"/>
 		<table type="X Axis" name="Engine Speed" storagetype="uint8">
-			<scaling base="RPM (x*50)"/>
+			<scaling base="Axis RPM (x*50)"/>
 		</table>
 	<description><!--mTVTHNKTP--></description>
 	</table>
@@ -1312,7 +1312,7 @@
 			<scaling base="BFS (x*0.125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
-			<scaling base="RPM (x*50)"/>
+			<scaling base="Axis RPM (x*50)"/>
 		</table>
 		<description><!--MSATH--></description>
 	</table>
@@ -1323,7 +1323,7 @@
 			<scaling base="BFS (x*0.125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
-			<scaling base="RPM (x*50)"/>
+			<scaling base="Axis RPM (x*50)"/>
 		</table>
 		<description><!--MSATHA--></description>
 	</table>
@@ -1334,7 +1334,7 @@
 			<scaling base="BFS (x*0.125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
-			<scaling base="RPM (x*50)"/>
+			<scaling base="Axis RPM (x*50)"/>
 		</table>
 		<description><!--MSATHB--></description>
 	</table>
@@ -1344,7 +1344,7 @@
 	<table type="3D" name="Cold Ignition Timing Map Knock Window" category="Ignition Timing//Knock Control//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1" mask="80">
 		<scaling base="Knock Window"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1355,7 +1355,7 @@
 	<table type="3D" name="High Octane Ignition Timing Map Knock Window" category="Ignition Timing//Knock Control//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1" mask="80">
 		<scaling base="Knock Window"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1366,7 +1366,7 @@
 	<table type="3D" name="High Detonation Ignition Timing Map Knock Window" category="Ignition Timing//Knock Control//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1" mask="80">
 		<scaling base="Knock Window"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1444,7 +1444,7 @@
 	<table type="3D" name="Cold Intake Cam Timing Map (8x8)" category="Variable Valve Timing//Main" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Degrees (x-128)*0.5"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1455,7 +1455,7 @@
 	<table type="3D" name="Intake Cam Timing Map (16x16)" category="Variable Valve Timing//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
 		<scaling base="Degrees (x-128)*0.5"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1466,7 +1466,7 @@
 	<table type="3D" name="High Detonation Intake Cam Timing Map (4x4)" category="Variable Valve Timing//Main" storagetype="uint8" sizex="4" sizey="4" userlevel="1">
 		<scaling base="Degrees (x-128)*0.5"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1477,7 +1477,7 @@
 	<table type="3D" name="Exhaust Cam Timing Map (16x16)" category="Variable Valve Timing//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
 		<scaling base="Degrees (x-128)*0.5"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
-			<scaling base="Percentage (x*0.78125)"/>
+			<scaling base="Axis Percentage (x*0.78125)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1488,7 +1488,7 @@
 	<table type="3D" name="VVT Drive Abnormality Diagnosis Judgement Delay Map" category="Variable Valve Timing//Main" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
 		<scaling base="Seconds (x*0.1)"/>
 		<table type="X Axis" name="Coolant Temperature (Fahrenheit)" storagetype="uint8">
-			<scaling base="Standard Temperature (x-50)"/>
+			<scaling base="Axis Standard Temperature (x-50)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1551,7 +1551,7 @@
 		<scaling base="Requested Torque (x*0.07)-2416"/>
 		<scaling base="Requested Torque (x*0.1)-3276.8"/>
 		<table type="X Axis" name="QH0 Flow Potential" storagetype="uint16">
-			<scaling base="Percentage (x*0.00152588)"/>
+			<scaling base="Axis Percentage (x*0.00152588)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1563,7 +1563,7 @@
 		<scaling base="Requested Torque (x*0.07)-2416"/>
 		<scaling base="Requested Torque (x*0.1)-3276.8"/>
 		<table type="X Axis" name="QH0 Flow Potential" storagetype="uint16">
-			<scaling base="Percentage (x*0.00152588)"/>
+			<scaling base="Axis Percentage (x*0.00152588)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
@@ -1854,7 +1854,7 @@
 			<scaling base="Degrees (x*0.44)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
-			<scaling base="RPM (x*50)"/>
+			<scaling base="Axis RPM (x*50)"/>
 		</table>
 		<description><!--mMPTOFM-->An extreme short rest time map</description>
 	</table>
@@ -1865,7 +1865,7 @@
 			<scaling base="Degrees (x*0.44)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
-			<scaling base="RPM (x*50)"/>
+			<scaling base="Axis RPM (x*50)"/>
 		</table>
 		<description><!--mMPTXRT-->Suspension time/operation time ratio map</description>
 	</table>
@@ -1878,7 +1878,7 @@
 			<scaling base="BFS (x*0.000488)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint16">
-			<scaling base="RPM (x*12.5)"/>
+			<scaling base="Axis RPM (x*12.5)"/>
 		</table>
 		<description><!--mMABFSFT--> This value is added on top of the AFR value from the AFR Conversion Table.</description>
 	</table>
@@ -1889,7 +1889,7 @@
 			<scaling base="BFS (x*0.000488)"/>
 		</table>
 		<table type="Y Axis" name="Engine Speed" storagetype="uint16">
-			<scaling base="RPM (x*12.5)"/>
+			<scaling base="Axis RPM (x*12.5)"/>
 		</table>
 		<description><!--mMABFSFT2--> This value is added on top of the AFR value from the AFR Conversion Table.</description>
 	</table>

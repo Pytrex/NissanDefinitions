@@ -128,7 +128,9 @@
 	<scalingbase name="Inverse Percentage (x*0.390625)" units="Compensation (%)" expression="100-(x*0.390625)" to_byte="(100-x)/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
 
 	<scalingbase name="Inverse Percentage (x*0.00152588)" units="Compensation (%)" expression="100-(x*0.00152588)" to_byte="-((x-100)/0.00152588)" format="0.00" fineincrement="0.5" coarseincrement="5" system="Universal"/>
-			
+
+	<scalingbase name="Axis Percentage (x*0.390625)" units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
+	
 	<scalingbase name="Percentage (x*0.390625)" units="Compensation (%)" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
 
 	<scalingbase name="Axis Percentage (x*0.00152588)" units="%" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="0.5" coarseincrement="5" system="Universal"/>
@@ -365,38 +367,42 @@
 	
 <!--Temperature-->
 
-	<Scalingbase category="Metric" name="Metric Temperature (x)" units="Temperature (Celsius)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<Scalingbase category="Metric" name="Metric Temperature (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 
-	<Scalingbase category="Standard" name="Standard Temperature (x*1.8)" units="Temperature (Fahrenheit)" expression="(x*1.8)+32" to_byte="(x-32)/1.8" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+	<Scalingbase category="Standard" name="Standard Temperature (x*1.8)" units="Temperature (°F)" expression="(x*1.8)+32" to_byte="(x-32)/1.8" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
 
-	<Scalingbase category="Metric" name="Metric Temperature (x-50)" units="Temperature (Celsius)" expression="x-50" to_byte="x+50" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<Scalingbase category="Metric" name="Metric Temperature (x-50)" units="Temperature (°C)" expression="x-50" to_byte="x+50" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 
-	<Scalingbase category="Standard" name="Standard Temperature (x-50)" units="Temperature (Fahrenheit)" expression="(x*1.8)-58" to_byte="(x+58)/1.8" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+	<Scalingbase category="Standard" name="Standard Temperature (x-50)" units="Temperature (°F)" expression="(x*1.8)-58" to_byte="(x+58)/1.8" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
 
-	<Scalingbase category="Standard" name="Axis Standard Temperature (x-50)" units="Fahrenheit" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+	<Scalingbase category="Standard" name="Axis Standard Temperature (x-50)" units="°F" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
 
-	<Scalingbase category="Metric" name="Metric Coolant Temperature (x)" units="Temperature (Z)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<Scalingbase category="Metric" name="Metric Coolant Temperature (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 
-	<Scalingbase category="Metric" name="Metric Temperature (x*0.625-40)" units="Temperature (Celsius)" expression="(x*0.625)-40" to_byte="(x+40)/0.625" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<Scalingbase category="Metric" name="Metric Temperature (x*0.625-40)" units="Temperature (°C)" expression="(x*0.625)-40" to_byte="(x+40)/0.625" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 	
-	<Scalingbase category="Metric" name="Z (x*4)" units="Z" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<Scalingbase category="Metric" name="Z (x*4)" units="Temperature (°C)" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 
-	<Scalingbase category="Metric" name="Z (x)" units="Z" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<Scalingbase category="Metric" name="Z (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 
-	<Scalingbase category="Standard" name="Standard Temperature (x*7.2)" units="Temperature (Fahrenheit)" expression="(x*7.2)+32" to_byte="(x-32)/7.2" format="0" fineincrement="1" coarseincrement="5" system="Standard"/>
+	<Scalingbase category="Standard" name="Standard Temperature (x*7.2)" units="Temperature (°F)" expression="(x*7.2)+32" to_byte="(x-32)/7.2" format="0" fineincrement="1" coarseincrement="5" system="Standard"/>
 
 
 
 <!--Vehicle Speed-->
-	<Scalingbase category="Standard" name="Standard Speed (x*0.6215040398)" units="mph" expression="x*0.6215040398" to_byte="x/0.6215040398" format="0" fineincrement="1" coarseincrement="2" system="Standard"/> 
+	<Scalingbase category="Standard" name="Standard Speed (x*0.6215040398)" units="Vehicle Speed (MPH)" expression="x*0.6215040398" to_byte="x/0.6215040398" format="0" fineincrement="1" coarseincrement="2" system="Standard"/> 
 
-	<Scalingbase category="Standard" name="Standard Speed (x*0.000000533)" units="mph" expression="x*0.000000533" to_byte="x/0.000000533" format="0" fineincrement="1" coarseincrement="5" system="Standard"/>
+	<Scalingbase category="Standard" name="Standard Speed (x*0.000000533)" units="Vehicle Speed (MPH)" expression="x*0.000000533" to_byte="x/0.000000533" format="0" fineincrement="1" coarseincrement="5" system="Standard"/>
 
-	<Scalingbase category="Standard" name="Standard Speed (x*0.0621371)" units="mph" expression="x*0.0621371" to_byte="x/0.0621371" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+	<Scalingbase category="Standard" name="Standard Speed (x*0.0621371)" units="Vehicle Speed (MPH)" expression="x*0.0621371" to_byte="x/0.0621371" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+
+	<Scalingbase category="Standard" name="Axis Standard Speed (x*1.24300808)" units="Vehicle Speed (MPH)" expression="x*1.24300808" to_byte="x/1.24300808" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
 	
-	<Scalingbase category="Standard" name="Standard Speed (x*1.24300808)" units="mph" expression="x*1.24300808" to_byte="x/1.24300808" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+	<Scalingbase category="Standard" name="Standard Speed (x*1.24300808)" units="Vehicle Speed (MPH)" expression="x*1.24300808" to_byte="x/1.24300808" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
 
-	<Scalingbase category="Standard" name="Standard Speed (x*0.062150404)" units="mph" expression="x*0.062150404" to_byte="x/0.062150404" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+	<Scalingbase category="Standard" name="Axis Standard Speed (x*0.062150404)" units="Vehicle Speed (MPH)" expression="x*0.062150404" to_byte="x/0.062150404" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+	
+	<Scalingbase category="Standard" name="Standard Speed (x*0.062150404)" units="Vehicle Speed (MPH)" expression="x*0.062150404" to_byte="x/0.062150404" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
 
 	<Scalingbase category="Metric" name="Metric Speed (x*2)" units="Km/h" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 	
