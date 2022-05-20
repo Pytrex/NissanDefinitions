@@ -1,9 +1,9 @@
-# NissanDefinitions
+# Nissan Definitions
 A2L Supported Nissan 350z and Infiniti G35 ROM Definitions for use with RomRaider Editor and Logger. 
 
-Useful Links: 
-* RomRaider Software: https://www.romraider.com/ 
-* Official Nissan Tuning Wiki: https://nissanecu.miraheze.org/wiki/Main_Page
+![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/Pytrex/NissanDefinitions?color=blueviolet&display_name=release&include_prereleases&label=Latest%20Release&sort=date)
+![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Pytrex/NissanDefinitions/latest?label=Commits%20Since%20Latest%20Release&style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/Pytrex/NissanDefinitions?label=Repo%20Size&style=flat)
 
 
 # Disclaimer
@@ -24,3 +24,7 @@ To begin using these definitions, download and unzip the repository to wherever 
 For stability, use the most recent release. If you're wanting to get the newest additions and fixes, download the repository instead. While the repository should mostly be stable, there's always a chance that a definition file might have an error. 
 
 For the logger, it's recommended to use the official logger definition file from https://www.romraider.com/forum/viewtopic.php?f=8&t=1642 
+
+# Useful Links
+* [RomRaider Software](https://www.romraider.com/) 
+* [Official Nissan Tuning Wiki](https://nissanecu.miraheze.org/wiki/Main_Page)
