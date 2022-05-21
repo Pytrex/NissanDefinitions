@@ -5,7 +5,6 @@
 		<flashmethod>nisprog</flashmethod>
 	</romid>
 
-
 <!-- Engine Start Performance -->
 
 	<!-- Cranking Control -->
@@ -2654,515 +2653,503 @@
 
 
 	<table type="BitwiseSwitch" name="CO Variable Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->mFCOVR- CO variable (ROM flag)</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="A Hand-Operated Purge Cut Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->mFPCUT- A hand-operated purge cut flag</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="KTRM Variable Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->mFVKTRM- KTRM variable (ROM flag)</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="TFBYA Variable Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->mFVTFA0- TFBYA variable (ROM flag)</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="The Whole Area Torque Going Down Control Switching Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->mTDRQARI2- The whole area torque going down control switching flag</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="C/S Backup Excuse Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="mfCSBU- C/S Backup Excuse Flag"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="mfCSBU- C/S Backup Excuse Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="QH0 Operation Flags" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="mfQH0ETD- QH0 Tables Logic 0: TVO Based (QH0 Tables set vQH0.) 1: APO Based (Flow Potential = vQH0.) "/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="mfQH0ETD- QH0 Tables Logic 0: TVO Based (QH0 Tables set vQH0.) 1: APO Based (Flow Potential = vQH0.) "/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description>-</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="TINT Compensation Permission Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfKTIUSE - TINT Compensation Permission"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="mfKTIUSE - TINT Compensation Permission"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="O2/S System Choice Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="mfF2IN1 - O2/S System Choice Flag. Enabling this will cause the ECU to only utilize Bank 1's narrowband O2 sensor."/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="mfF2IN1 - O2/S System Choice Flag. Enabling this will cause the ECU to only utilize Bank 1's narrowband O2 sensor."/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="O2 Sensor Position Flags" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Narrowband O2 Sensor Bank 2"/>
-0x10		<bit position ="4" name="AFR Sensor Bank 2"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Narrowband O2 Sensor Bank 1"/>
-0x01		<bit position ="0" name="AFR Sensor Bank 1"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Narrowband O2 Sensor Bank 2"/>
+			<bit position ="4" name="AFR Sensor Bank 2"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Narrowband O2 Sensor Bank 1"/>
+			<bit position ="0" name="AFR Sensor Bank 1"/>
 		<description><!--mO2S-->Controls what O2 sensors the ECU thinks it has. Disabling any of them will cause said sensor to no longer be utilized by the ECU. (MIGHT need to force emission readiness, as it'll probably show "not supported" for catalyst monitoring)</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Electronic Throttle Control Flags" category="Electronic Throttle Control//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="mfTTE_ON - Electronic Throttle Control (Off/On)"/>
-0x20		<bit position ="5" name="mfTFD_ON - Drive Force Logic (0: Disabled 1: Enabled)"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="mfTFDCVT - Drive Power Choice Flag for the CVT Transmission/0:TFD0 to CVT 1:TFDD to CVT"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="mfPTD_ON - Drive Power Demand Control On/Off Flag"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="mfTTE_ON - Electronic Throttle Control (Off/On)"/>
+			<bit position ="5" name="mfTFD_ON - Drive Force Logic (0: Disabled 1: Enabled)"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="mfTFDCVT - Drive Power Choice Flag for the CVT Transmission/0:TFD0 to CVT 1:TFDD to CVT"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="mfPTD_ON - Drive Power Demand Control On/Off Flag"/>
 		<description><!--Undefined-->Disabling the ETC Control flag will cause the throttle to be 1:1 with the accelerator. I would highly recommend against disabling it, as you would be removing the incredible advantages DBW has over cable driven throttles.</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="KATHOS Choice Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="mfISCKH - KATHOS Choice Flag"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="mfISCKH - KATHOS Choice Flag"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Control Switching Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="mfFETDEN - Control Switching Flag"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="mfFETDEN - Control Switching Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Cruise Control Specifications Choice Flags" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfFLGACC - ACC Choice SW"/>
-0x01		<bit position ="0" name="mfFASCD - Cruise Control Disabled: 0 | Cruise Control Enabled: 1"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfFLGACC - ACC Choice SW"/>
+			<bit position ="0" name="mfFASCD - Cruise Control Disabled: 0 | Cruise Control Enabled: 1"/>
 		<description><!--Undefined-->mSWASCD- Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Cruise Control, PTD Open-Degree Operation Switching Flag" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="mfPTDASCD - At the time of ASCD, PTD open-degree operation switching flag // Can't use for autos I don't think."/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
-		<description><!--Undefined-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Template" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="-"/>
-0x40		<bit position ="6" name="-"/>
-0x20		<bit position ="5" name="-"/>
-0x10		<bit position ="4" name="-"/>
-0x08		<bit position ="3" name="-"/>
-0x04		<bit position ="2" name="-"/>
-0x02		<bit position ="1" name="-"/>
-0x01		<bit position ="0" name="-"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="mfPTDASCD - At the time of ASCD, PTD open-degree operation switching flag // Can't use for autos I don't think."/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 1" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfATMT - Automatic (Off) / Manual (On)"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="mfFATTRQ - Torque Control Switching Flag (Controls whether PI % Table is used or not! Probably even more tbh)"/>
-0x08		<bit position ="3" name="mfATTNS - AT Turbine Sensor Excuse Judgement"/>
-0x04		<bit position ="2" name="mfRATIOFB - Ratio F/B Control Choice Flag"/>
-0x02		<bit position ="1" name="mfREGHOS - There is No TENG Regular Compensation"/>
-0x01		<bit position ="0" name="mfCOADJ - CO Adjustment Control Excuse by Consult Communication"/>
+			<bit position ="7" name="mfATMT - Automatic (Off) / Manual (On)"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="mfFATTRQ - Torque Control Switching Flag (Controls whether PI % Table is used or not! Probably even more tbh)"/>
+			<bit position ="3" name="mfATTNS - AT Turbine Sensor Excuse Judgement"/>
+			<bit position ="2" name="mfRATIOFB - Ratio F/B Control Choice Flag"/>
+			<bit position ="1" name="mfREGHOS - There is No TENG Regular Compensation"/>
+			<bit position ="0" name="mfCOADJ - CO Adjustment Control Excuse by Consult Communication"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 2" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="mfVINV - Control Excuse Switching for Tuning"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="If enabled, it'll check vSTSTATE. If 0, then it doesn't use the temperature non-balance tables during cranking or something related to starting."/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfSTFSARI - APOFS Shaft Conversion Treatment Flag"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="mfVINV - Control Excuse Switching for Tuning"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="If enabled, it'll check vSTSTATE. If 0, then it doesn't use the temperature non-balance tables during cranking or something related to starting."/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfSTFSARI - APOFS Shaft Conversion Treatment Flag"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 3" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfKT- Toroidal CVT Car Choice Flag"/>
-0x40		<bit position ="6" name="mfTRQ4WDSW- Switching of the Electric 4WD Drive Protection Control Excuse"/>
-0x10		<bit position ="4" name="mfJK- The Car Choice Flag for the Drive Protection of JK (CVT)"/>
-0x08		<bit position ="3" name="mfMU- T/M Choice Flag"/>
-0x02		<bit position ="1" name="mfFCTCS- TCS Form Choice Flag"/>
+			<bit position ="7" name="mfKT- Toroidal CVT Car Choice Flag"/>
+			<bit position ="6" name="mfTRQ4WDSW- Switching of the Electric 4WD Drive Protection Control Excuse"/>
+			<bit position ="4" name="mfJK- The Car Choice Flag for the Drive Protection of JK (CVT)"/>
+			<bit position ="3" name="mfMU- T/M Choice Flag"/>
+			<bit position ="1" name="mfFCTCS- TCS Form Choice Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 4" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfAPOTD- Torque Going Down Control Executive Flag (0: Disabled 1: Enabled)"/>
-0x40		<bit position ="6" name="mfFTASEEP- ISCLRC EEPROM Writing Choice Flag (0: Disabled 1: Enabled)"/>
-0x20		<bit position ="5" name="mfFTPDGN- (0: No TCS Anomaly Diagnosis 1: TCS Anomaly Diagnosis)"/>
-0x10		<bit position ="4" name="mfFVTCS- TCS Fuel Cut Variable Control Flag (0 = Fuel Cut 1 = No Fuel Cut)"/>
-0x08		<bit position ="3" name="mfFTXACR- AC Relay Control (0: Disabled 1: Enabled)"/>
-0x04		<bit position ="2" name="mfFETDMN- ETD Control Mode (0: Normal 1: Matching)"/>
-0x02		<bit position ="1" name="mfFLTC- Torque Control (0: Disabled 1: Enabled)"/>
-0x01		<bit position ="0" name="mfFKNALL- ALLC During Knock Control (0: Enabled 1: Disabled)"/>
+			<bit position ="7" name="mfAPOTD- Torque Going Down Control Executive Flag (0: Disabled 1: Enabled)"/>
+			<bit position ="6" name="mfFTASEEP- ISCLRC EEPROM Writing Choice Flag (0: Disabled 1: Enabled)"/>
+			<bit position ="5" name="mfFTPDGN- (0: No TCS Anomaly Diagnosis 1: TCS Anomaly Diagnosis)"/>
+			<bit position ="4" name="mfFVTCS- TCS Fuel Cut Variable Control Flag (0 = Fuel Cut 1 = No Fuel Cut)"/>
+			<bit position ="3" name="mfFTXACR- AC Relay Control (0: Disabled 1: Enabled)"/>
+			<bit position ="2" name="mfFETDMN- ETD Control Mode (0: Normal 1: Matching)"/>
+			<bit position ="1" name="mfFLTC- Torque Control (0: Disabled 1: Enabled)"/>
+			<bit position ="0" name="mfFKNALL- ALLC During Knock Control (0: Enabled 1: Disabled)"/>
 		<description><!--Undefined-->From pierelli on forums. UNCONFIRMED.</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 5" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfFFTASW- There's ISC AC Compensation TASW, Flag (0: Disabled 1: Enabled)"/>
-0x40		<bit position ="6" name="mfFO2H- Front O2 Heater (0: No Drive? 1: Drive?)"/>
-0x20		<bit position ="5" name="mfFAFICD- Flag with PWST Interlock FICD Compensation (0: Disabled 1: Enabled)"/>
-0x10		<bit position ="4" name="mfSWAP- Exhaust Secondary Air Pump (0: No 1: Yes)"/>
-0x08		<bit position ="3" name="mfBGLINH- BGL Control when Entering KNK Territory (0: Disabled 1: Enabled)"/>
-0x04		<bit position ="2" name="mfFTCS- TCS Control Switching Flag (0 = No TCS Control 1 = TCS Control)"/>
-0x02		<bit position ="1" name="mfFKORFN - Radio Fan Control (0: Disabled 1: Enabled)"/>
-0x01		<bit position ="0" name="mfFLNBRN- Lean Burn Control (GOVL Tables) (0: Disabled 1: Enabled)"/>
+			<bit position ="7" name="mfFFTASW- There's ISC AC Compensation TASW, Flag (0: Disabled 1: Enabled)"/>
+			<bit position ="6" name="mfFO2H- Front O2 Heater (0: No Drive? 1: Drive?)"/>
+			<bit position ="5" name="mfFAFICD- Flag with PWST Interlock FICD Compensation (0: Disabled 1: Enabled)"/>
+			<bit position ="4" name="mfSWAP- Exhaust Secondary Air Pump (0: No 1: Yes)"/>
+			<bit position ="3" name="mfBGLINH- BGL Control when Entering KNK Territory (0: Disabled 1: Enabled)"/>
+			<bit position ="2" name="mfFTCS- TCS Control Switching Flag (0 = No TCS Control 1 = TCS Control)"/>
+			<bit position ="1" name="mfFKORFN - Radio Fan Control (0: Disabled 1: Enabled)"/>
+			<bit position ="0" name="mfFLNBRN- Lean Burn Control (GOVL Tables) (0: Disabled 1: Enabled)"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 6" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="mfACPDCUT- Meter CAN #PDCUT Output Excuse Flag"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown Flag 4"/>
-0x08		<bit position ="3" name="mfMETCAN3- Meter CAN VSP"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfMETCAN1- Related to the meter CAN A/C (others)"/>
-0x01		<bit position ="0" name="mfMETCAN- (HTASW is removed) Related to the Meter CAN A/C"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="mfACPDCUT- Meter CAN #PDCUT Output Excuse Flag"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown Flag 4"/>
+			<bit position ="3" name="mfMETCAN3- Meter CAN VSP"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfMETCAN1- Related to the meter CAN A/C (others)"/>
+			<bit position ="0" name="mfMETCAN- (HTASW is removed) Related to the Meter CAN A/C"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 7" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="mfNG1RLYON- Motor Relay Diagnosis 2TRIP Flag"/>
-0x04		<bit position ="2" name="mfNG1DEFLT- Default Mechanism Diagnosis 2TRIP Flag"/>
-0x02		<bit position ="1" name="mfNG1SPRG2- IGNOFF Return Spring Diagnosis 2TRIP Flag"/>
-0x01		<bit position ="0" name="mfNG1SPRG1- IGNON Return Spring Diagnosis 2TRIP Flag"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="mfNG1RLYON- Motor Relay Diagnosis 2TRIP Flag"/>
+			<bit position ="2" name="mfNG1DEFLT- Default Mechanism Diagnosis 2TRIP Flag"/>
+			<bit position ="1" name="mfNG1SPRG2- IGNOFF Return Spring Diagnosis 2TRIP Flag"/>
+			<bit position ="0" name="mfNG1SPRG1- IGNON Return Spring Diagnosis 2TRIP Flag"/>
 		<description><!--Undefined-->mTRIPSWS- Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 9" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="mfFTASAC- At Time of A/C Panel SW On, Learning Switch Flag"/>
-0x04		<bit position ="2" name="mfFFRQTAS- Friction Learning Control Switch Flag"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="mfFTASAC- At Time of A/C Panel SW On, Learning Switch Flag"/>
+			<bit position ="2" name="mfFFRQTAS- Friction Learning Control Switch Flag"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 10" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfDTYFLG- Wind Up Countermeasure Control Excuse Switching Flag"/>
-0x40		<bit position ="6" name="mfROGFLG- Dizzer Control/PID Control Switching Flag"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="mfFFULVTC- At Time of Full Increase, a Flag for VTC"/>
+			<bit position ="7" name="mfDTYFLG- Wind Up Countermeasure Control Excuse Switching Flag"/>
+			<bit position ="6" name="mfROGFLG- Dizzer Control/PID Control Switching Flag"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="mfFFULVTC- At Time of Full Increase, a Flag for VTC"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 11" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="mfFCOVR- Existence of the CO Adjustment Volume"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfFINCA- Choice Flag for INCA"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="mfFCOVR- Existence of the CO Adjustment Volume"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfFINCA- Choice Flag for INCA"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 12" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="mfMILGSTIM- At Time of KeyON, MIL Specifications Choice Flag"/>
-0x20		<bit position ="5" name="mfAFMDGSEL- MAF Function Diagnosis for the Choice Flag"/>
-0x10		<bit position ="4" name="mfWOTTP- WOT Adoption/Non-Adoption Choice. 0: Uses mMDUMP Map 1: Doesn't use Map"/>
-0x08		<bit position ="3" name="Unknown 3 - Doesn't use mTGZTW and mTGZAS Tables (0) | Does Use Tables (1)"/>
-0x04		<bit position ="2" name="Unknown 2 - KNOCK BASED"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="mfMILGSTIM- At Time of KeyON, MIL Specifications Choice Flag"/>
+			<bit position ="5" name="mfAFMDGSEL- MAF Function Diagnosis for the Choice Flag"/>
+			<bit position ="4" name="mfWOTTP- WOT Adoption/Non-Adoption Choice. 0: Uses mMDUMP Map 1: Doesn't use Map"/>
+			<bit position ="3" name="Unknown 3 - Doesn't use mTGZTW and mTGZAS Tables (0) | Does Use Tables (1)"/>
+			<bit position ="2" name="Unknown 2 - KNOCK BASED"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 13" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfCATCNG- Catalyst Diagnosis Slice Setup Region Switching Flag"/>
-0x40		<bit position ="6" name="mfPREDAF- The Existence of the SMC Prediction A/F Flag"/>
-0x20		<bit position ="5" name="mfOSCBANK- A Control Choice Flag for the Bank"/>
-0x10		<bit position ="4" name="mfAFIDLESW- IDLE SW Enable, Disable Switching Flag"/>
-0x08		<bit position ="3" name="mfAFVSEL- A/F Voltage Sampling Periodic Choice Flag"/>
-0x04		<bit position ="2" name="mfAFDCHG- Time Switching, Slice Switching Choice Flag"/>
-0x02		<bit position ="1" name="mfAFDTGCLP- Target AFR It's Fixed on mABFCMV"/>
-0x01		<bit position ="0" name="mfAFDSEL- Alpha Form, Target Form Choice Flag"/>
+			<bit position ="7" name="mfCATCNG- Catalyst Diagnosis Slice Setup Region Switching Flag"/>
+			<bit position ="6" name="mfPREDAF- The Existence of the SMC Prediction A/F Flag"/>
+			<bit position ="5" name="mfOSCBANK- A Control Choice Flag for the Bank"/>
+			<bit position ="4" name="mfAFIDLESW- IDLE SW Enable, Disable Switching Flag"/>
+			<bit position ="3" name="mfAFVSEL- A/F Voltage Sampling Periodic Choice Flag"/>
+			<bit position ="2" name="mfAFDCHG- Time Switching, Slice Switching Choice Flag"/>
+			<bit position ="1" name="mfAFDTGCLP- Target AFR It's Fixed on mABFCMV"/>
+			<bit position ="0" name="mfAFDSEL- Alpha Form, Target Form Choice Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 14" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfECVT- CVT Car Choice Flag"/>
-0x40		<bit position ="6" name="mfFDUET- DUETTE Control Switching Flag"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="mfECVT- CVT Car Choice Flag"/>
+			<bit position ="6" name="mfFDUET- DUETTE Control Switching Flag"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--mIDOS2-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 15" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfFLCFCA- During FCADV Switching Flag"/>
-0x40		<bit position ="6" name="mfCMADVC- Non L/UP Control Excuse Flag"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="mfPWSTV- Power Steering Valve Excuse Flag"/>
-0x04		<bit position ="2" name="mfFACPDS- A/C Pd Pressure Sensor Excuse Choice Flag"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="mfFLCFCA- During FCADV Switching Flag"/>
+			<bit position ="6" name="mfCMADVC- Non L/UP Control Excuse Flag"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="mfPWSTV- Power Steering Valve Excuse Flag"/>
+			<bit position ="2" name="mfFACPDS- A/C Pd Pressure Sensor Excuse Choice Flag"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 16" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="mfFBAROS- Atmospheric Pressure Sensor Excuse Flag"/>
-0x08		<bit position ="3" name="mfPSS- P/S Oil Pressure Sensor Specifications Choice Flag"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="mfFISCV- At the Time of ECM Internal Organs ISCVvol Use, Un-use, Switching Flag"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="mfFBAROS- Atmospheric Pressure Sensor Excuse Flag"/>
+			<bit position ="3" name="mfPSS- P/S Oil Pressure Sensor Specifications Choice Flag"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="mfFISCV- At the Time of ECM Internal Organs ISCVvol Use, Un-use, Switching Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 17" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfREGGASI- Regular Adaptation Car Specifications Choice Flag // Might be ->  Premium Fuel Required/Recommended: 0 | Premium Fuel Not Required/Recommended: 1 Or something similar."/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="mfTASEN- IAT Sensor Specifications Choice Flag"/>
+			<bit position ="7" name="mfREGGASI- Regular Adaptation Car Specifications Choice Flag // Might be ->  Premium Fuel Required/Recommended: 0 | Premium Fuel Not Required/Recommended: 1 Or something similar."/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="mfTASEN- IAT Sensor Specifications Choice Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 18" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfRO2OUS- RrO2/S Response Time Diagnosis Stage 2 Diagnosis Execution Judgement Flag"/>
-0x40		<bit position ="6" name="mfRO2IZS- RrO2/S Unusual Voltage Diagnosis Stage 2 Diagnosis Execution Judgement Flag"/>
-0x20		<bit position ="5" name="mfAFSMF- Misfire Diagnosis NG Learning Permission Flag"/>
-0x10		<bit position ="4" name="mfHOSMF- Misfire Diagnosis NG Learning Permission Flag"/>
-0x08		<bit position ="3" name="mfHOSKIN- HOSCMAX Learning Prohibition Flag"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="mfAFHZLR- A/F Sensor LR Response Diagnosis Judgement Flag"/>
+			<bit position ="7" name="mfRO2OUS- RrO2/S Response Time Diagnosis Stage 2 Diagnosis Execution Judgement Flag"/>
+			<bit position ="6" name="mfRO2IZS- RrO2/S Unusual Voltage Diagnosis Stage 2 Diagnosis Execution Judgement Flag"/>
+			<bit position ="5" name="mfAFSMF- Misfire Diagnosis NG Learning Permission Flag"/>
+			<bit position ="4" name="mfHOSMF- Misfire Diagnosis NG Learning Permission Flag"/>
+			<bit position ="3" name="mfHOSKIN- HOSCMAX Learning Prohibition Flag"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="mfAFHZLR- A/F Sensor LR Response Diagnosis Judgement Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 19" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfVADV- Ignition Variable Control Requirement Flag"/>
-0x40		<bit position ="6" name="mfVKNK- An Ignition Variable Control Requirement Flag by the Cylinder"/>
-0x20		<bit position ="5" name="mfFVKTRM- KTRM Variable Control Requirement Flag"/>
-0x10		<bit position ="4" name="mfVEGR- -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfVVTC- -"/>
-0x01		<bit position ="0" name="mfANADEG- Digital Variable Control Switching Flag"/>
+			<bit position ="7" name="mfVADV- Ignition Variable Control Requirement Flag"/>
+			<bit position ="6" name="mfVKNK- An Ignition Variable Control Requirement Flag by the Cylinder"/>
+			<bit position ="5" name="mfFVKTRM- KTRM Variable Control Requirement Flag"/>
+			<bit position ="4" name="mfVEGR- -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfVVTC- -"/>
+			<bit position ="0" name="mfANADEG- Digital Variable Control Switching Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 20" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfFALRN- An Off-Line Idle Learning Lambda Control Condition Flag"/>
-0x40		<bit position ="6" name="mfFQINT- Off-Line Idle Learning Flag #FQLRN Initial Value Flag"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="mfFALRN- An Off-Line Idle Learning Lambda Control Condition Flag"/>
+			<bit position ="6" name="mfFQINT- Off-Line Idle Learning Flag #FQLRN Initial Value Flag"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 21" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfFKNK- Knock Control Switching Flag"/>
-0x40		<bit position ="6" name="mfFREGDT- At Time of Regular Judgement, DUETTE Control Flag"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="mfKNKTYP2- Single 2 Gain, Twin 2 Gain Choice Flag"/>
-0x04		<bit position ="2" name="mfADVFB- At Time of N->D Select, Retard Limitation Flag"/>
-0x02		<bit position ="1" name="mfFFULTRM- At the Time of Full Increase, Trimming Map Compensation Judgement"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="mfFKNK- Knock Control Switching Flag"/>
+			<bit position ="6" name="mfFREGDT- At Time of Regular Judgement, DUETTE Control Flag"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="mfKNKTYP2- Single 2 Gain, Twin 2 Gain Choice Flag"/>
+			<bit position ="2" name="mfADVFB- At Time of N->D Select, Retard Limitation Flag"/>
+			<bit position ="1" name="mfFFULTRM- At the Time of Full Increase, Trimming Map Compensation Judgement"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 22" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfOVH_FC- At the Time of Overheat, Fuel Cut Control Flag"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="mfFCHVER- ETD Adoption Engine Variable Control Switching Flag"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfFVTFA0- TFBYA0 Variable Control Switching Flag"/>
-0x01		<bit position ="0" name="mfFVTIM- TITM Variable Control Switching Flag"/>
+			<bit position ="7" name="mfOVH_FC- At the Time of Overheat, Fuel Cut Control Flag"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="mfFCHVER- ETD Adoption Engine Variable Control Switching Flag"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfFVTFA0- TFBYA0 Variable Control Switching Flag"/>
+			<bit position ="0" name="mfFVTIM- TITM Variable Control Switching Flag"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 23" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfEVPLNP- A Leak-Down Release Condition Distinction for the Evapo"/>
-0x40		<bit position ="6" name="mfFROSEL- A Distinction for the Evapo"/>
-0x20		<bit position ="5" name="mfAFSDIAG- A/F Sensor Response Diagnosis Form Choice Flag"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="mfMFSTSW- A Misfire Diagnosis for the Switching Flag"/>
-0x04		<bit position ="2" name="mfGSTM8- A Flag for the GST Mode 8"/>
-0x02		<bit position ="1" name="mfGSTM67- GST Mode 6, a Flag for 7"/>
-0x01		<bit position ="0" name="mfRATECLR- Prohibition of Permission/Of the Rate Law Counter Clear Treatment"/>
+			<bit position ="7" name="mfEVPLNP- A Leak-Down Release Condition Distinction for the Evapo"/>
+			<bit position ="6" name="mfFROSEL- A Distinction for the Evapo"/>
+			<bit position ="5" name="mfAFSDIAG- A/F Sensor Response Diagnosis Form Choice Flag"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="mfMFSTSW- A Misfire Diagnosis for the Switching Flag"/>
+			<bit position ="2" name="mfGSTM8- A Flag for the GST Mode 8"/>
+			<bit position ="1" name="mfGSTM67- GST Mode 6, a Flag for 7"/>
+			<bit position ="0" name="mfRATECLR- Prohibition of Permission/Of the Rate Law Counter Clear Treatment"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 24" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="mfFNETQHOS- TTEPTD Torque Compensation Map Logic (Off/On)"/>
-0x10		<bit position ="4" name="mfFHHTQHOS- Highlands, Heat Ground Compensation Control On/Off Flag"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfFZADDFD- A Control On/Off Flag for the Area Attribute"/>
-0x01		<bit position ="0" name="mfFADDFD- A Control On/Off Flag for the Running Resistance"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="mfFNETQHOS- TTEPTD Torque Compensation Map Logic (Off/On)"/>
+			<bit position ="4" name="mfFHHTQHOS- Highlands, Heat Ground Compensation Control On/Off Flag"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfFZADDFD- A Control On/Off Flag for the Area Attribute"/>
+			<bit position ="0" name="mfFADDFD- A Control On/Off Flag for the Running Resistance"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 25" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="mfFGVARI- Gear Position Variable Control Executive Permission Flag"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfFPSR- PSR Control Switching Flag"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="mfFGVARI- Gear Position Variable Control Executive Permission Flag"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfFPSR- PSR Control Switching Flag"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 26" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="mfRPDLFMNC - Selects a Manual Interpolation Factor"/>
-0x40		<bit position ="6" name="mfRMAXPOW - Option Selecting Explicit Power Calculation for Driver Torque Setpoint"/>
-0x20		<bit position ="5" name="mfENASIPDY - Activation of Max Gear Change Delay Diagnosis // If 0: Uses the first delay weight table. If 1: sets vTENG22 to 0xFF3132 :o "/>
-0x10		<bit position ="4" name="mfTQCMDTYP - Torque Command Type : 1"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="mfRSAMAXTQ - Renault Specific Selection for Maximum Torque Calculation"/>
-0x01		<bit position ="0" name="mfRSAMINTQ - Renault Specific Selection for Minimum Torque Calculation"/>
+			<bit position ="7" name="mfRPDLFMNC - Selects a Manual Interpolation Factor"/>
+			<bit position ="6" name="mfRMAXPOW - Option Selecting Explicit Power Calculation for Driver Torque Setpoint"/>
+			<bit position ="5" name="mfENASIPDY - Activation of Max Gear Change Delay Diagnosis // If 0: Uses the first delay weight table. If 1: sets vTENG22 to 0xFF3132 :o "/>
+			<bit position ="4" name="mfTQCMDTYP - Torque Command Type : 1"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="mfRSAMAXTQ - Renault Specific Selection for Maximum Torque Calculation"/>
+			<bit position ="0" name="mfRSAMINTQ - Renault Specific Selection for Minimum Torque Calculation"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 27" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="mfMKSCV - SCV Use Choice"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="mfSTPKUB - At the Time of the Start, An Unburned Advantage, Stop Flag"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="Unknown 0 -"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="mfMKSCV - SCV Use Choice"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="mfSTPKUB - At the Time of the Start, An Unburned Advantage, Stop Flag"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="Unknown 0 -"/>
 		<description><!--Undefined-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Flags 28" category="Options//Flags" userlevel="1">
-0x80		<bit position ="7" name="Unknown 7 -"/>
-0x40		<bit position ="6" name="Unknown 6 -"/>
-0x20		<bit position ="5" name="Unknown 5 -"/>
-0x10		<bit position ="4" name="Unknown 4 -"/>
-0x08		<bit position ="3" name="Unknown 3 -"/>
-0x04		<bit position ="2" name="Unknown 2 -"/>
-0x02		<bit position ="1" name="Unknown 1 -"/>
-0x01		<bit position ="0" name="mfAVCCNG - 0: Not DGN 1: DGN"/>
+			<bit position ="7" name="Unknown 7 -"/>
+			<bit position ="6" name="Unknown 6 -"/>
+			<bit position ="5" name="Unknown 5 -"/>
+			<bit position ="4" name="Unknown 4 -"/>
+			<bit position ="3" name="Unknown 3 -"/>
+			<bit position ="2" name="Unknown 2 -"/>
+			<bit position ="1" name="Unknown 1 -"/>
+			<bit position ="0" name="mfAVCCNG - 0: Not DGN 1: DGN"/>
 		<description><!--Undefined-->mDGNSW[30]- Toggle On/Off</description>
 	</table>
 
@@ -3499,33 +3486,6 @@
 			<bit position ="0" name="P1421 -  Cold Start Control"/>
 		<description><!--Undefined--></description>
 	</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

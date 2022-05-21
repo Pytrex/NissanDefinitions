@@ -16,7 +16,7 @@
 		<flashmethod>nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
-		<version>v0.01</version>
+		<version>v1.0</version>
 	</romid>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6611">

@@ -16,7 +16,7 @@
 		<flashmethod>nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
-		<version>v0.01</version>
+		<version>v1.0</version>
 	</romid>
 	<!-- added fenugrec 04/2017. Very very similar to 8U07A, about 0x30 offset between most elements.
  Code patterns practically identical -->

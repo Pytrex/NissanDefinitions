@@ -16,7 +16,7 @@
 		<flashmethod>nis-can</flashmethod>
 		<filesize>1536kb</filesize>
 		<author>Pytrex</author>
-		<version>v0.01</version>
+		<version>v1.0</version>
 	</romid>
 
   <checksum type="alt2" start="0x8204" end="0x17FFFF" sumloc="0x9a2c" xorloc="0x9a24"/>

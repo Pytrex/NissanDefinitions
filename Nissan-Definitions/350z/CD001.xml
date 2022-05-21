@@ -16,7 +16,7 @@
 		<flashmethod>nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
-		<version>v0.01</version>
+		<version>v1.0</version>
 	</romid>
 	
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x67EC" xorloc="0x67E4"/>

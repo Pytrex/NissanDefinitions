@@ -16,7 +16,7 @@
 		<flashmethod>nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
-		<version>v0.01</version>
+		<version>v1.0</version>
 	</romid>
 
 	<table name="Speed Limiter" storageaddress="0x64E8"/>

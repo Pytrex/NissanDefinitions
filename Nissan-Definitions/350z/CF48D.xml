@@ -16,7 +16,7 @@
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
-		<version>v0.01</version>
+		<version>v1.0</version>
 	</romid>
 
 <!--Notes; This is NOT the main CF48D Definition File. This is a heavily altered one that only includes the maps within the publicly avaiable A2L template. This file will grow as time goes on.-->

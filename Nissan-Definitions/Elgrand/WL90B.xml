@@ -16,7 +16,7 @@
     		<flashmethod>nisprog</flashmethod>
     		<filesize>512kb</filesize>
 		<author>Pytrex</author>
-		<version>v0.01</version>
+		<version>v1.0</version>
 	</romid>
 <!-- Axes will have to be found later. Initial look in IDA didn't show anything-->
 	<table name="VTC Drive Abnormality Diagnosis Judgement Delay" storageaddress="0x67C9"> 
