@@ -114,7 +114,25 @@
 	</table>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x7d9f"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x846a"/>
-	<table name="Full DTC List" storageaddress="0xDD62"/>
+	<table name="DTC 1" storageaddress="0xDD62"/>
+	<table name="DTC 2" storageaddress="0xDD64"/>
+	<table name="DTC 3" storageaddress="0xDD68"/>
+	<table name="DTC 4" storageaddress="0xDD6C"/>
+	<table name="DTC 5" storageaddress="0xDD70"/>
+	<table name="DTC 6" storageaddress="0xDD74"/>
+	<table name="DTC 7" storageaddress="0xDD78"/>
+	<table name="DTC 8" storageaddress="0xDD7C"/>
+	<table name="DTC 9" storageaddress="0xDD80"/>
+	<table name="DTC 10" storageaddress="0xDD84"/>
+	<table name="DTC 11" storageaddress="0xDD88"/>
+	<table name="DTC 12" storageaddress="0xDD8C"/>
+	<table name="DTC 13" storageaddress="0xDD90"/>
+	<table name="DTC 14" storageaddress="0xDD94"/>
+	<table name="DTC 15" storageaddress="0xDD98"/>
+	<table name="DTC 16" storageaddress="0xDD9C"/>
+	<table name="DTC 17" storageaddress="0xDDA0"/>
+	<table name="DTC 18" storageaddress="0xDDA4"/>
+	<table name="DTC 19" storageaddress="0xDDA8"/>
 	<table name="GOV Addition Table (Drive)" storageaddress="0xB664"/>
 	<table name="GOV Addition Table (Neutral)" storageaddress="0xB66C"/>
 	<table name="GOV Table" storageaddress="0xB8A0"/>

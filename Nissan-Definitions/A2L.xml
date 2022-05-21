@@ -3166,4 +3166,371 @@
 		<description><!--Undefined-->mDGNSW[30]- Toggle On/Off</description>
 	</table>
 
+
+	<!--\\DTCs//-->
+
+	<table type="BitwiseSwitch" name="DTC 1" category="Options//DTCs" storagetype="uint16">
+			<bit position ="12" name="P0500 -  Vehicle Speed Sensor Malfunction"/>
+			<bit position ="9" name="P1211 -  ABS/TCS Control Unit"/>
+			<bit position ="0" name="P1217 -  Engine Coolant Temperature"/>
+		<description><!--mDGNSW[0]--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 2" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="30" name="P0400 -  Exhaust Gas Recirculation Flow Malfunction"/>
+			<bit position ="25" name="P1148 -  Closed Loop, Bank 1"/>
+			<bit position ="24" name="P1168 -  Closed Loop, Bank 2"/>
+			<bit position ="20" name="P1212 -  ABS/TCS Communication Line"/>
+			<bit position ="5" name="P0306 -  Cylinder 6 Misfire Detected"/>
+			<bit position ="4" name="P0305 -  Cylinder 5 Misfire Detected"/>
+			<bit position ="3" name="P0304 -  Cylinder 4 Misfire Detected"/>
+			<bit position ="2" name="P0303 -  Cylinder 3 Misfire Detected"/>
+			<bit position ="1" name="P0302 -  Cylinder 2 Misfire Detected"/>
+			<bit position ="0" name="P0301 -  Cylinder 1 Misfire Detected"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 3" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P0300 -  Random/Multiple Cylinder Misfire Detected"/>
+			<bit position ="30" name="P0420 -  Catalyst System Efficiency Below Threshold (Bank 1)"/>
+			<bit position ="29" name="P0430 -  Catalyst System Efficiency Below Threshold (Bank 2)"/>
+			<bit position ="26" name="P0170 -  Fuel Trim Malfunction (Bank 1)"/>
+			<bit position ="22" name="P0335 -  Crankshaft Position Sensor A Circuit Malfunction"/>
+			<bit position ="18" name="P0173 -  Fuel Trim Malfunction (Bank 2)"/>
+			<bit position ="8" name="P0125 -  Insufficient Coolant Temperature for Closed Loop Fuel Control"/>
+			<bit position ="5" name="P0850 -  Park/Neutral Switch Input Circuit"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 4" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P0705 -  Transmission Range Sensor Circuit malfunction (PRNDL Input)"/>
+			<bit position ="30" name="P0720 -  Output Speed Sensor Circuit Malfunction"/>
+			<bit position ="29" name="P0731 -  Gear 1 Incorrect ratio"/>
+			<bit position ="28" name="P0732 -  Gear 2 Incorrect ratio"/>
+			<bit position ="27" name="P0733 -  Gear 3 Incorrect ratio"/>
+			<bit position ="26" name="P0734 -  Gear 4 Incorrect ratio"/>
+			<bit position ="25" name="P0744 -  Torque Converter Clutch Circuit Intermittent"/>
+			<bit position ="24" name="P0750 -  Shift Solenoid A Malfunction"/>
+			<bit position ="23" name="P0755 -  Shift Solenoid B Malfunction"/>
+			<bit position ="21" name="P1760 -  Overrun Clutch S/V"/>
+			<bit position ="20" name="P0740 -  Torque Converter Clutch Circuit Malfuction"/>
+			<bit position ="19" name="P0745 -  Pressure Control Solenoid Malfunction"/>
+			<bit position ="18" name="P1705 -  Throttle Position Sensor"/>
+			<bit position ="17" name="P0725 -  Engine Speed input Circuit Malfunction"/>
+			<bit position ="16" name="P0710 -  Transmission Fluid Temperature Sensor Circuit Malfunction"/>
+			<bit position ="11" name="P1220 -  FPCM"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 5" category="Options//DTCs" storagetype="uint32">
+			<bit position ="18" name="P0443 -  Evaporative Emission Control System Purge Control Valve Circuit Malfunction"/>
+			<bit position ="17" name="P0448 -  Evaporative Emission Control System Vent Control Circuit Shorted"/>
+			<bit position ="16" name="P0455 -  Evaporative Emission Control System Leak Detected (gross leak)"/>
+			<bit position ="15" name="P0447 -  Evaporative Emission Control System Vent Control Circuit Open"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 6" category="Options//DTCs" storagetype="uint32">
+			<bit position ="26" name="P1402 -  EGR System"/>
+			<bit position ="23" name="P0403 -  Exhaust Gas Recirculation Circuit Malfunction"/>
+			<bit position ="20" name="P0075 -  Intake Valve Control Solenoid Circuit (Bank 1)"/>
+			<bit position ="19" name="P0081 -  Intake Valve Control Solenoid Circuit (Bank 2)"/>
+			<bit position ="15" name="P1800 -  VIAS Control Solenoid Valve"/>
+			<bit position ="13" name="P1778 -  Shift Change Signal"/>
+			<bit position ="12" name="P0715 -  Input/Turbine Speed Sensor Circuit Malfunction"/>
+			<bit position ="11" name="P1777 -  Shift Change Signal"/>
+			<bit position ="10" name="P1791 -  VIAS Control Solenoid Valve"/>
+			<bit position ="9" name="P0740 -  Torque Converter Clutch Circuit Malfuction"/>
+			<bit position ="8" name="P0745 -  Pressure Control Solenoid Malfunction"/>
+			<bit position ="5" name="P0744 -  Torque Converter Clutch Circuit Intermittent"/>
+			<bit position ="4" name="P0746 -  Pressure Control Solenoid Performance or Stuck Off"/>
+			<bit position ="3" name="P0776 -  Pressure Control Solenoid 'B' Performance or Stuck Off"/>
+			<bit position ="2" name="P0778 -  Pressure Control Solenoid 'B' Electrical"/>
+			<bit position ="1" name="P1740 -  Input Clutch Solenoid Valve"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 7" category="Options//DTCs" storagetype="uint32">
+			<bit position ="21" name="P0461 -  Fuel Level Sensor Circuit Range/Performance"/>
+			<bit position ="20" name="P0460 -  Fuel Level Sensor Circuit Malfunction"/>
+			<bit position ="13" name="P0340 -  Camshaft Position Sensor Circuit Malfunction"/>
+			<bit position ="12" name="P0340 -  Camshaft Position Sensor Circuit Malfunction"/>
+			<bit position ="11" name="P0340 -  Camshaft Position Sensor Circuit Malfunction"/>
+			<bit position ="10" name="P0335 -  Crankshaft Position Sensor A Circuit Malfunction"/>
+			<bit position ="9" name="P0335 -  Crankshaft Position Sensor A Circuit Malfunction"/>
+			<bit position ="8" name="P0335 -  Crankshaft Position Sensor A Circuit Malfunction"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 8" category="Options//DTCs" storagetype="uint32">
+			<bit position ="24" name="P0550 -  Power Steering Pressure Sensor Circuit Malfunction"/>
+			<bit position ="23" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="22" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="21" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="20" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="19" name="PD001 - "/>
+			<bit position ="18" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="17" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="16" name="PD000 - "/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 9" category="Options//DTCs" storagetype="uint32">
+			<bit position ="24" name="P0120 -  Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
+			<bit position ="20" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="17" name="P0120 -  Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
+			<bit position ="16" name="P0120 -  Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
+			<bit position ="15" name="P2101 -  Electric Throttle Control Function"/>
+			<bit position ="13" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="12" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="11" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="10" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="9" name="P2101 -  Electric Throttle Control Function"/>
+			<bit position ="4" name="P1700 -  Transmission Control Module (RAM)"/>
+			<bit position ="3" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="2" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="1" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="0" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 10" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P1123 -  Throttle Control Motor Relay"/>
+			<bit position ="30" name="P1123 -  Throttle Control Motor Relay"/>
+			<bit position ="28" name="P1780 -  Shift Change Signal"/>
+			<bit position ="26" name="P1720 -  Vehicle Speed Sensor- A/T Output"/>
+			<bit position ="25" name="P1715 -  Input Speed Sensor (Turbine Revolution Sensor)"/>
+			<bit position ="21" name="P1805 -  Brake Switch/Circuit 2"/>
+			<bit position ="15" name="P2119 -  Electric Throttle Control Actuator"/>
+			<bit position ="14" name="P2119 -  Electric Throttle Control Actuator"/>
+			<bit position ="13" name="P2119 -  Electric Throttle Control Actuator"/>
+			<bit position ="12" name="P0603 -  Internal Control Module Keep Alive Memory (KAM) Error"/>
+			<bit position ="10" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="9" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="7" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="6" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="3" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="2" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="1" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="0" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 11" category="Options//DTCs" storagetype="uint32">
+			<bit position ="28" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="15" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="14" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="13" name="P1564 -  ASCD Steering Switch"/>
+			<bit position ="12" name="P1572 -  ASCD Brake Switch"/>
+			<bit position ="11" name="P1574 -  ASCD Vehicle Speed Sensor"/>
+			<bit position ="10" name="P1568 -  ICC (Intelligent Cruise Control)"/>
+			<bit position ="9" name="P0605 -  Internal Control Module Read Only Memory (ROM) Error"/>
+			<bit position ="8" name="PD000 - "/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 12" category="Options//DTCs" storagetype="uint32">
+			<bit position ="26" name="P0345 -  Camshaft Position Sensor 'A' Circuit (Bank 2)"/>
+			<bit position ="25" name="P0345 -  Camshaft Position Sensor 'A' Circuit (Bank 2)"/>
+			<bit position ="24" name="P0345 -  Camshaft Position Sensor 'A' Circuit (Bank 2)"/>
+			<bit position ="23" name="P0131 -  O2 Sensor Circuit Low Voltage (Bank 1 Sensor 1)"/>
+			<bit position ="22" name="P0132 -  O2 Sensor Circuit High Voltage (Bank 1 Sensor 1)"/>
+			<bit position ="21" name="P2A00 -  AFR Sensor 1 Bank 1 Circuit Range/Performance"/>
+			<bit position ="20" name="P2A00 -  AFR Sensor 1 Bank 1 Circuit Range/Performance"/>
+			<bit position ="18" name="P0130 -  O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)"/>
+			<bit position ="15" name="P0151 -  O2 Sensor Circuit Low Voltage (Bank 2 Sensor 1)"/>
+			<bit position ="14" name="P0152 -  O2 Sensor Circuit High Voltage (Bank 2 Sensor 1)"/>
+			<bit position ="13" name="P2A03 -  AFR Sensor 1 Bank 2 Circuit Range/Performance"/>
+			<bit position ="12" name="P2A03 -  AFR Sensor 1 Bank 2 Circuit Range/Performance"/>
+			<bit position ="10" name="P0150 -  O2 Sensor Circuit Malfunction (Bank 2 Sensor 1)"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 13" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P0717 -  Input/Turbine Speed Sensor Circuit No Signal"/>
+			<bit position ="30" name="P1730 -  A/T Interlock"/>
+			<bit position ="29" name="P1769 -  High and Low Reverse Clutch Solenoid Valve Function"/>
+			<bit position ="28" name="P1767 -  High and Low Reverse Clutch Solenoid Valve"/>
+			<bit position ="27" name="P1764 -  Direct Clutch Solenoid Valve Function"/>
+			<bit position ="26" name="P1762 -  Direct Clutch Solenoid Valve"/>
+			<bit position ="25" name="P1759 -  Front Brake Solenoid Valve Function"/>
+			<bit position ="24" name="P1757 -  Front Brake Solenoid Valve"/>
+			<bit position ="23" name="P1754 -  Input Clutch Solenoid Valve Function"/>
+			<bit position ="22" name="P1752 -  Input Clutch Solenoid Valve"/>
+			<bit position ="21" name="P1774 -  Low Coast Brake Solenoid Valve Function"/>
+			<bit position ="20" name="P1772 -  Low Coast Brake Solenoid Valve"/>
+			<bit position ="19" name="P0700 -  Transmission Control System Malfunction"/>
+			<bit position ="1" name="P0506 -  Idle Control System RPM Lower Than Expected"/>
+			<bit position ="0" name="P0507 -  Idle Control System RPM Higher Than Expected"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 14" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P0139 -  O2 Sensor Circuit Slow Response (Bank 1 Sensor 2)"/>
+			<bit position ="30" name="P0159 -  O2 Sensor Circuit Slow Response (Bank 2 Sensor 2)"/>
+			<bit position ="29" name="P0138 -  O2 Sensor Circuit High Voltage (Bank 1 Sensor 2)"/>
+			<bit position ="28" name="P0158 -  O2 Sensor Circuit High Voltage (Bank 2 Sensor 2)"/>
+			<bit position ="27" name="P0137 -  O2 Sensor Circuit Low Voltage (Bank 1 Sensor 2)"/>
+			<bit position ="26" name="P0157 -  O2 Sensor Circuit Low Voltage (Bank 2 Sensor 2)"/>
+			<bit position ="25" name="P0138 -  O2 Sensor Circuit High Voltage (Bank 1 Sensor 2)"/>
+			<bit position ="24" name="P0158 -  O2 Sensor Circuit High Voltage (Bank 2 Sensor 2)"/>
+			<bit position ="23" name="P0038 -  Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 2)"/>
+			<bit position ="22" name="P0058 -  Heated O2 Sensor Heater Control Circuit High (Bank 2 Sensor 2)"/>
+			<bit position ="21" name="P0037 -  Heated O2 Sensor Heater Control Circuit Low (Bank 1 Sensor 2)"/>
+			<bit position ="20" name="P0057 -  Heated O2 Sensor Heater Control Circuit Low (Bank 2 Sensor 2)"/>
+			<bit position ="19" name="P0327 -  Knock Sensor 1 Circuit Low Input (Bank 1 or Single Sensor)"/>
+			<bit position ="18" name="P0328 -  Knock Sensor 1 Circuit High Input (Bank 1 or Single Sensor)"/>
+			<bit position ="17" name="P0332 -  Knock Sensor 2 Circuit Low Input (Bank 2)"/>
+			<bit position ="16" name="P0333 -  Knock Sensor 2 Circuit High Input (Bank 2)"/>
+			<bit position ="15" name="P0121 -  Throttle/Petal Position Sensor/Switch A Circuit Range/Performance Problem"/>
+			<bit position ="14" name="P0122 -  Throttle/Petal Position Sensor/Switch A Circuit Low Input"/>
+			<bit position ="13" name="P0123 -  Throttle/Petal Position Sensor/Switch A Circuit High Input"/>
+			<bit position ="12" name="P0101 -  Mass or Volume Air Flow Circuit Range/Performance Problem"/>
+			<bit position ="11" name="P0102 -  Mass or Volume Air Flow Circuit Low Input"/>
+			<bit position ="10" name="P0103 -  Mass or Volume Air Flow Circuit High Input"/>
+			<bit position ="8" name="P0350 -  Ignition Coil Primary/Secondary Circuit Malfunction"/>
+			<bit position ="7" name="P0117 -  Engine Coolant Temperature Circuit Low Input"/>
+			<bit position ="6" name="P0118 -  Engine Coolant Temperature Circuit High Input"/>
+			<bit position ="5" name="P0405 -  Exhaust Gas Recirculation Sensor A Circuit Low"/>
+			<bit position ="4" name="P0406 -  Exhaust Gas Recirculation Sensor A Circuit High"/>
+			<bit position ="3" name="P0112 -  Intake Air Temperature Circuit Low Input"/>
+			<bit position ="2" name="P0113 -  Intake Air Temperature Circuit High Input"/>
+			<bit position ="1" name="P0127 -  Intake Air Temperature Too High"/>
+			<bit position ="0" name="P0451 -  Evaporative Emission Control System Pressure Sensor Range/Performance"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 15" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P0181 -  Fuel Temperature Sensor A Circuit Range/Performance"/>
+			<bit position ="30" name="P0182 -  Fuel Temperature Sensor A Circuit Low Input"/>
+			<bit position ="29" name="P0183 -  Fuel Temperature Sensor A Circuit High Input"/>
+			<bit position ="28" name="P0462 -  Fuel Level Sensor Circuit Low Input"/>
+			<bit position ="27" name="P0463 -  Fuel Level Sensor Circuit High Input"/>
+			<bit position ="26" name="P0444 -  Evaporative Emission Control System Purge Control Valve Circuit Open"/>
+			<bit position ="25" name="P0445 -  Evaporative Emission Control System Purge Control Valve Circuit Shorted"/>
+			<bit position ="24" name="P0128 -  Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)"/>
+			<bit position ="23" name="P0172 -  System too Rich (Bank 1)"/>
+			<bit position ="22" name="P0171 -  System too Lean (Bank 1)"/>
+			<bit position ="21" name="P0175 -  System too Rich (Bank 2)"/>
+			<bit position ="20" name="P0174 -  System too Lean (Bank 2)"/>
+			<bit position ="19" name="P0011 -  'A' Camshaft Position - Timing Over-Advanced or System Performance (Bank 1)"/>
+			<bit position ="18" name="P0021 -  'A' Camshaft Position - Timing Over-Advanced or System Performance (Bank 2)"/>
+			<bit position ="11" name="P0452 -  Evaporative Emission Control System Pressure Sensor Low Input"/>
+			<bit position ="10" name="P0453 -  Evaporative Emission Control System Pressure Sensor High Input"/>
+			<bit position ="9" name="P0441 -  Evaporative Emission Control System Incorrect Purge Flow"/>
+			<bit position ="8" name="P0447 -  Evaporative Emission Control System Vent Control Circuit Open"/>
+			<bit position ="7" name="P0456 -  Evaporative Emission Control System Leak Detected (very small leak)"/>
+			<bit position ="6" name="P1456 -  EVAP Control System"/>
+			<bit position ="5" name="P0442 -  Evaporative Emission Control System Leak Detected (small leak)"/>
+			<bit position ="4" name="P1442 -  Canister Control Vacuum Check Switch"/>
+			<bit position ="3" name="P0505 -  Idle Control System Malfunction"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 16" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P2123 -  Accelerator Pedal Position Sensor"/>
+			<bit position ="30" name="P2122 -  Accelerator Pedal Position Sensor"/>
+			<bit position ="29" name="P2128 -  Accelerator Pedal Position Sensor 2"/>
+			<bit position ="28" name="P2127 -  Accelerator Pedal Position Sensor 2"/>
+			<bit position ="27" name="P2138 -  A/F Sensor 1 Bank 1 Circuit Range/Performance"/>
+			<bit position ="24" name="P0643 -  A/C Clutch Relay Control Circuit"/>
+			<bit position ="23" name="P0223 -  Throttle/Pedal Position Sensor/Switch B Circuit High Input"/>
+			<bit position ="22" name="P0222 -  Throttle/Pedal Position Sensor/Switch B Circuit Low Input"/>
+			<bit position ="21" name="P0123 -  Throttle/Petal Position Sensor/Switch A Circuit High Input"/>
+			<bit position ="20" name="P0122 -  Throttle/Petal Position Sensor/Switch A Circuit Low Input"/>
+			<bit position ="19" name="P2135 -  Throttle Position Sensor"/>
+			<bit position ="17" name="P1225 -  Closed Throttle Position Learning"/>
+			<bit position ="16" name="P1226 -  Closed Throttle Position Learning"/>
+			<bit position ="15" name="P2100 -  Throttle Control Motor Relay"/>
+			<bit position ="14" name="P2103 -  Throttle Control Motor Relay"/>
+			<bit position ="13" name="P1127 -  Throttle Control Motor"/>
+			<bit position ="12" name="P2118 -  Throttle Control Motor"/>
+			<bit position ="11" name="P1129 -  Swirl Control Valve Control Solenoid Valve"/>
+			<bit position ="7" name="P0133 -  O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
+			<bit position ="6" name="P0133 -  O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
+			<bit position ="5" name="P0153 -  O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)"/>
+			<bit position ="4" name="P0153 -  O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)"/>
+			<bit position ="3" name="P0031 -  Heated O2 Sensor Heater Control Circuit Low (Bank 1 Sensor 1)"/>
+			<bit position ="2" name="P0032 -  Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 1)"/>
+			<bit position ="1" name="P0051 -  Heated O2 Sensor Heater Control Circuit Low (Bank 2 Sensor 1)"/>
+			<bit position ="0" name="P0052 -  Heated O2 Sensor Heater Control Circuit High (Bank 2 Sensor 1)"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 17" category="Options//DTCs" storagetype="uint32">
+			<bit position ="31" name="P0133 -  O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
+			<bit position ="30" name="P0133 -  O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
+			<bit position ="29" name="P0153 -  O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)"/>
+			<bit position ="28" name="P0153 -  O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)"/>
+			<bit position ="23" name="P0760 -  Shift Solenoid C Malfunction"/>
+			<bit position ="22" name="P0765 -  Shift Solenoid D Malfunction"/>
+			<bit position ="21" name="P0770 -  Shift Solenoid E Malfunction"/>
+			<bit position ="20" name="P0775 -  Pressure Control Solenoid 'B'"/>
+			<bit position ="19" name="P0795 -  Pressure Control Solenoid 'C'"/>
+			<bit position ="18" name="P0722 -  Output Speed Sensor No Signal"/>
+			<bit position ="17" name="P0717 -  Input/Turbine Speed Sensor Circuit No Signal"/>
+			<bit position ="16" name="P0711 -  Transmission Fluid Temperature Sensor Circuit Range/Performance"/>
+			<bit position ="15" name="P0882 -  TCM Power Input Signal Low"/>
+			<bit position ="14" name="P0797 -  Pressure Control Solenoid 'C' Stuck On"/>
+			<bit position ="13" name="P0735 -  Gear 5 Incorrect ratio"/>
+			<bit position ="12" name="P0736 -  Reverse incorrect gear ratio"/>
+			<bit position ="11" name="P0762 -  Shift Solenoid C Stuck On"/>
+			<bit position ="10" name="P0780 -  Shift Malfunction"/>
+			<bit position ="9" name="P0726 -  Engine Speed Input Circuit Range/Performance"/>
+			<bit position ="2" name="P0840 -  Transmission Fluid Pressure Sensor/Switch 'A' Circuit"/>
+			<bit position ="1" name="P0845 -  Transmission Fluid Pressure Sensor/Switch 'B' Circuit"/>
+			<bit position ="0" name="P0841 -  Transmission Fluid Pressure Sensor/Switch 'A' Circuit Range/Performance"/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 18" category="Options//DTCs" storagetype="uint32">
+			<bit position ="28" name="P1554 -  ASCD Steering Switch"/>
+			<bit position ="27" name="P1553 -  ASCD Steering Switch"/>
+			<bit position ="26" name="P1552 -  ASCD Steering Switch"/>
+			<bit position ="25" name="P1551 -  ASCD Steering Switch"/>
+			<bit position ="24" name="P1550 -  ASCD Steering Switch"/>
+			<bit position ="16" name="PD010 - "/>
+		<description><!--Undefined--></description>
+	</table>
+
+	<table type="BitwiseSwitch" name="DTC 19" category="Options//DTCs" storagetype="uint8">
+			<bit position ="1" name="P1422 -  EVAP Small Leak"/>
+			<bit position ="0" name="P1421 -  Cold Start Control"/>
+		<description><!--Undefined--></description>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </rom>

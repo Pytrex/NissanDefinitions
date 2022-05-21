@@ -15,22 +15,20 @@
 		<endian>Big</endian>
       <flashmethod>nisprog</flashmethod>
       <filesize>1024kb</filesize>
-		<author>Pytrex</author>
-		<version>v0.01</version>
+		<author>Unknown</author>
+		<version>v0.00</version>
     </romid>
 	
-	<!--Cross checked with UpRev, need to check axes-->
 	<table name="Timing1" storageaddress="0x9976">
 		<table type="X Axis" storageaddress="0x13E9B"/>
 		<table type="Y Axis" storageaddress="0x13EAB"/>
 	</table>
 
-	<!--Cross checked with UpRev, need to check axes-->
 	<table name="Timing Main Low Detonation" storageaddress="0x9A76">
 		<table type="X Axis" storageaddress="0x13E9B"/>
 		<table type="Y Axis" storageaddress="0x13EAB"/>
 	</table>
-	<!--Cross checked with UpRev, need to check axes-->
+
 	<table name="Timing High Detonation" storageaddress="0x9B76">
 		<table type="X Axis" storageaddress="0x13E9B"/>
 		<table type="Y Axis" storageaddress="0x13EAB"/>
@@ -42,7 +40,6 @@
 		<table type="Y Axis" storageaddress="0x13CCD"/>
 	</table>
 	
-	<!--Cross checked with UpRev, axes found with ida-->
 	<table name="Target AFR Map (8x8)" storageaddress="0xAC06">
 		<table type="X Axis" storageaddress="0x13AA4"/>
 		<table type="Y Axis" storageaddress="0x13C9D"/>
@@ -111,27 +108,5 @@
 	
 	<table name="Load Base Fuel Schedule Table" storageaddress="0x16A00"/>
 	
-	<!--To identify-->	
-	<table type="2D"  name="?" category="Misc" storagetype="uint8" endian="big" sizey="1" userlevel="1" storageaddress="0x8DD9">
-		<scaling units="" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="1"/>
-		<table type="Static Y Axis" name="?" sizey="2">
-			<data>?</data>
-		</table>
-	</table>
-	<!--To identify-->	
-	<table type="2D"  name="??" category="Misc" storagetype="uint8" endian="big" userlevel="1" storageaddress="0x8DDB">
-		<scaling units="" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="1"/>
-		<table type="Static Y Axis" name="?" sizey="2">
-			<data>?</data>
-		</table>
-	</table>
-	<!--To identify-->	
-	<table type="2D"  name="???" category="Misc" storagetype="uint16" endian="big" sizey="1" userlevel="1" storageaddress="0x8DE4">
-		<scaling units="" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="1"/>
-		<table type="Static Y Axis" name="?" sizey="2">
-			<data>?</data>
-		</table>
-	</table>
-
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>
 </rom>

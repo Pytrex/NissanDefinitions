@@ -177,7 +177,25 @@
 
 	
 
-    <table name="Full DTC List" storageaddress="0x9D18"/>
+	<table name="DTC 1" storageaddress="0x9D18"/>
+	<table name="DTC 2" storageaddress="0x9D1A"/>
+	<table name="DTC 3" storageaddress="0x9D1E"/>
+	<table name="DTC 4" storageaddress="0x9D22"/>
+	<table name="DTC 5" storageaddress="0x9D26"/>
+	<table name="DTC 6" storageaddress="0x9D2A"/>
+	<table name="DTC 7" storageaddress="0x9D2E"/>
+	<table name="DTC 8" storageaddress="0x9D32"/>
+	<table name="DTC 9" storageaddress="0x9D36"/>
+	<table name="DTC 10" storageaddress="0x9D3A"/>
+	<table name="DTC 11" storageaddress="0x9D3E"/>
+	<table name="DTC 12" storageaddress="0x9D42"/>
+	<table name="DTC 13" storageaddress="0x9D46"/>
+	<table name="DTC 14" storageaddress="0x9D4A"/>
+	<table name="DTC 15" storageaddress="0x9D4E"/>
+	<table name="DTC 16" storageaddress="0x9D52"/>
+	<table name="DTC 17" storageaddress="0x9D56"/>
+	<table name="DTC 18" storageaddress="0x9D5A"/>
+	<table name="DTC 19" storageaddress="0x9D5E"/>
 
 
     <checksum type="std" start="0" end="0x7FFFF" sumloc="0x65C0" xorloc="0x65B8"/>

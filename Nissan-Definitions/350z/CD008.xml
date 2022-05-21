@@ -184,7 +184,25 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 
 	
 
-    <table name="Full DTC List" storageaddress="0x9F30"/>
+	<table name="DTC 1" storageaddress="0x9F30"/>
+	<table name="DTC 2" storageaddress="0x9F32"/>
+	<table name="DTC 3" storageaddress="0x9F36"/>
+	<table name="DTC 4" storageaddress="0x9F3A"/>
+	<table name="DTC 5" storageaddress="0x9F3E"/>
+	<table name="DTC 6" storageaddress="0x9F42"/>
+	<table name="DTC 7" storageaddress="0x9F46"/>
+	<table name="DTC 8" storageaddress="0x9F4A"/>
+	<table name="DTC 9" storageaddress="0x9F4E"/>
+	<table name="DTC 10" storageaddress="0x9F52"/>
+	<table name="DTC 11" storageaddress="0x9F56"/>
+	<table name="DTC 12" storageaddress="0x9F5A"/>
+	<table name="DTC 13" storageaddress="0x9F5E"/>
+	<table name="DTC 14" storageaddress="0x9F62"/>
+	<table name="DTC 15" storageaddress="0x9F66"/>
+	<table name="DTC 16" storageaddress="0x9F6A"/>
+	<table name="DTC 17" storageaddress="0x9F6E"/>
+	<table name="DTC 18" storageaddress="0x9F72"/>
+	<table name="DTC 19" storageaddress="0x9F76"/>
 
 
 

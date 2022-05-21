@@ -187,7 +187,25 @@ SH7055 is annoying.
 
 	
 
-    <table name="Full DTC List" storageaddress="0x8874"/>
+	<table name="DTC 1" storageaddress="0x8874"/>
+	<table name="DTC 2" storageaddress="0x8876"/>
+	<table name="DTC 3" storageaddress="0x887A"/>
+	<table name="DTC 4" storageaddress="0x887E"/>
+	<table name="DTC 5" storageaddress="0x8882"/>
+	<table name="DTC 6" storageaddress="0x8886"/>
+	<table name="DTC 7" storageaddress="0x888A"/>
+	<table name="DTC 8" storageaddress="0x888E"/>
+	<table name="DTC 9" storageaddress="0x8892"/>
+	<table name="DTC 10" storageaddress="0x8896"/>
+	<table name="DTC 11" storageaddress="0x889A"/>
+	<table name="DTC 12" storageaddress="0x889E"/>
+	<table name="DTC 13" storageaddress="0x88A2"/>
+	<table name="DTC 14" storageaddress="0x88A6"/>
+	<table name="DTC 15" storageaddress="0x88AA"/>
+	<table name="DTC 16" storageaddress="0x88AE"/>
+	<table name="DTC 17" storageaddress="0x88B2"/>
+	<table name="DTC 18" storageaddress="0x88B6"/>
+	<table name="DTC 19" storageaddress="0x88BA"/>
 
 
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x5190" xorloc="0x5188"/>

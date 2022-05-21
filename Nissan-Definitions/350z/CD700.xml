@@ -186,11 +186,29 @@
 	</table>
 	
 	
-	
+<!--
 IMPORTANT NOTICE; 
-Due to this being a non-USDM ROM, the DTCs will need to be bit extended in the A2L template. So while the addresses are correct, not all DTCs will be visible until I bit extend them.
+Due to this being a non-USDM ROM, the DTCs will need to be bit extended in the A2L template. So while the addresses are correct, not all DTCs will be visible until I bit extend them.-->
 
-    <table name="Full DTC List" storageaddress="0x9C28"/>
+	<table name="DTC 1" storageaddress="0x9C28"/>
+	<table name="DTC 2" storageaddress="0x9C2A"/>
+	<table name="DTC 3" storageaddress="0x9C2E"/>
+	<table name="DTC 4" storageaddress="0x9C32"/>
+	<table name="DTC 5" storageaddress="0x9C36"/>
+	<table name="DTC 6" storageaddress="0x9C3A"/>
+	<table name="DTC 7" storageaddress="0x9C3E"/>
+	<table name="DTC 8" storageaddress="0x9C42"/>
+	<table name="DTC 9" storageaddress="0x9C46"/>
+	<table name="DTC 10" storageaddress="0x9C4A"/>
+	<table name="DTC 11" storageaddress="0x9C4E"/>
+	<table name="DTC 12" storageaddress="0x9C52"/>
+	<table name="DTC 13" storageaddress="0x9C56"/>
+	<table name="DTC 14" storageaddress="0x9C5A"/>
+	<table name="DTC 15" storageaddress="0x9C5E"/>
+	<table name="DTC 16" storageaddress="0x9C62"/>
+	<table name="DTC 17" storageaddress="0x9C66"/>
+	<table name="DTC 18" storageaddress="0x9C6A"/>
+	<table name="DTC 19" storageaddress="0x9C6E"/>
 
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x63B8" xorloc="0x63B0"/>
 

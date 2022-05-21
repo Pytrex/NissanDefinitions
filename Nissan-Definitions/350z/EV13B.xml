@@ -21,7 +21,7 @@
 
 	
 
-uint16;
+
 	<table name="APO Threshold (Brake)" storageaddress="0x904E"/>
 	
 
@@ -45,7 +45,7 @@ uint16;
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x938C"/>
 	
-uint8;
+
 	<table name="Cranking Advance Table" storageaddress="0x13F9B"/>
 	
 	<table name="Bosch Fuel Restore Table" storageaddress="0x14991"/>
@@ -177,7 +177,7 @@ uint8;
 		<table type="Y Axis" storageaddress="0xCCC0"/>
 	</table>
 
-//////////////////////////////////////
+
 
 	<table name="Target AFR Map (8x8)" storageaddress="0xAC06">
 		<table type="X Axis" storageaddress="0x0000"/>
@@ -224,7 +224,7 @@ uint8;
 	</table>
 	
 	<table name="Engine Torque Map" storageaddress="0x1286A"/>
-	<table name="Engine Torque Map 2" storageaddress="0x1266A"/> ???
+	<table name="Engine Torque Map 2" storageaddress="0x1266A"/>
 
 	<table name="AFR Correction Map (Bank 1)" storageaddress="0xC7EA"> 
 		<table type="X Axis" storageaddress="0x15E1A"/>
@@ -236,11 +236,7 @@ uint8;
 		<table type="Y Axis" storageaddress="0x15DDA"/>
 	</table>
 
-	
-Notes;
-Not accurate I don't think. Further analysis required since CAN-based.
 
-    <table name="Full DTC List" storageaddress="0x1B31C"/>
 
 	<checksum type="alt2" start="0x8204" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>
 	
