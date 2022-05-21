@@ -10,7 +10,7 @@ A2L Supported Nissan 350z and Infiniti G35 ROM Definitions for use with RomRaide
 
 # About
 
-#### Current Stable RomRaider Version (Repository): v0.9.2  
+#### Current Stable RomRaider Version (Repository): v0.9.3 
 
 NissanDefinitions supports RomRaider ECU definition files for all SH705X Nissan and Infiniti ECU's. This typically includes model years between ~2001-2010 with processors SH7055 or SH7058. You can utilize these definition files within RomRaider to modify the contents on your ECU's ROM. By doing so, you're able to modify the behavior of the vehicle. 
 
