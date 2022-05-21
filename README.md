@@ -29,7 +29,7 @@ Each ROM has its own definition file that stores the ROM addresses for all defin
 ### A2L Specific Features
 
 - ~221 Supported Tables
-- Full DTC Support (Pending fix for RomRaider v0.9.2)
+- Full DTC Support 
 - Full CID Supmask Support
 - ROM Flags
 
