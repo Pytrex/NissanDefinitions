@@ -50,7 +50,7 @@ Each ROM has its own definition file that stores the ROM addresses for all defin
 ### For Latest Updates
 
 ~~~
-1. Download the repository from GitHub
+1. Download the repository from GitHub and unzip it
 2. Go to the "Nissan-Definitions" folder
 3. Run "Combine All.bat" to generate the "NissanDefinitions.xml" file
 2. Open RomRaider Editor and click "Definitions" tab at the top, "Definition File Manager", then "add"
