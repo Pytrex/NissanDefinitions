@@ -1,0 +1,16 @@
+<rom base="CD008">
+	<romid>
+		<xmlid>AM607</xmlid>
+		<caseid>3GILXN05</caseid>
+		<internalidaddress>8290</internalidaddress>
+		<internalidstring>AM607</internalidstring>
+		<ecuid>AM607</ecuid>
+		<year>2003</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055-13</memmodel>
+	</romid>
+</rom>

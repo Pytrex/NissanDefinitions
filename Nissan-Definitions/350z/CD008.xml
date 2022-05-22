@@ -18,7 +18,7 @@
 		<author>Pytrex</author>
 		<version>v1.0</version>
     </romid>
-<!--Children: CD002, CD003, CD007-->
+<!--Children: CD002, CD003, CD007, AM607-->
  	
 	<table name="Load Base Fuel Schedule Table" storageaddress="0x91C6"/>
 	<table name="Cranking Advance Table" storageaddress="0x85E7"/> 	
@@ -236,6 +236,7 @@
 	<table name="DTC 17" storageaddress="0x9F6E"/>
 	<table name="DTC 18" storageaddress="0x9F72"/>
 	<table name="DTC 19" storageaddress="0x9F76"/>
-
+	
+	<checksum type="alt" start="0x1408" end="0x30D2" sumloc="0x1400" xorloc="0x1404"/>
     <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8"/>
 </rom>
