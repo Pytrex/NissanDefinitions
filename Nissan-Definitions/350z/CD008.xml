@@ -1,7 +1,7 @@
 <rom base="A2L">
     <romid>
         <xmlid>CD008</xmlid>
-        <hwid>3GILXN05</hwid>
+        <caseid>3GILXN05</caseid>
         <internalidaddress>8290</internalidaddress>
         <internalidstring>CD008</internalidstring>
         <ecuid>CD008</ecuid>
@@ -18,12 +18,19 @@
 		<author>Pytrex</author>
 		<version>v1.0</version>
     </romid>
-
-<!--From Alex-Angarsk; // Will need to look into this further.
-CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
--->
+<!--Children: CD002, CD003, CD007-->
  	
-
+	<table name="Load Base Fuel Schedule Table" storageaddress="0x91C6"/>
+	<table name="Cranking Advance Table" storageaddress="0x85E7"/> 	
+	<table name="QH0 Upper Limit Table" storageaddress="0x936E"/>
+	<table name="QH0 Vehicle Speed Upper Limit Table" storageaddress="0x938E"/>	
+	<table name="Gear Ratio Table" storageaddress="0x93CE"/> 
+	<table name="Gear Ratio Table 2" storageaddress="0xA1A4"/> 
+	<table name="Injector Latency at 14V" storageaddress="0x6353"/>
+	<table name="MAF Idle Voltage Limits" storageaddress="0x671C"/>
+	<table name="Long Term Fuel Trim Limits" storageaddress="0x622C"/>
+	<table name="Idle BFS limits, ms (TPRV)" storageaddress="0x66E8"/>
+	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8DB7"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x64CA"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x66C4"/>
 	<table name="Knock Slice Map" storageaddress="0x8124"/> 
@@ -56,8 +63,6 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x888D"/> 
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x8B6D"/>
 
-	
-	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x8E84">
 		<table type="X Axis" storageaddress="0x957C"/>
 	</table>
@@ -182,7 +187,35 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 		<table type="Y Axis" storageaddress="0x9226"/>
 	</table>
 
+	<table name="P-Gain Computed Map" storageaddress="0x6D39">
+		<table type="X Axis" storageaddress="0x8E7B"/>
+		<table type="Y Axis" storageaddress="0x8E73"/>
+	</table>
 	
+	<table name="P-Gain Computed Map (Bank 2)" storageaddress="0x6D79">
+		<table type="X Axis" storageaddress="0x8E7B"/>
+		<table type="Y Axis" storageaddress="0x8E73"/>
+	</table>
+	
+	<table name="VTC Drive Abnormality Diagnosis Judgement Delay Map" storageaddress="0x68A9"> 
+		<table type="X Axis" storageaddress="0x0000"/>
+		<table type="Y Axis" storageaddress="0x825A"/>
+	</table>	
+
+	<table name="High Temperature Fuel Compensation Map" storageaddress="0x68E9">
+		<table type="X Axis" storageaddress="0x82F5"/>
+		<table type="Y Axis" storageaddress="0x82F1"/>
+	</table>	
+
+	<table name="Fuel Cut Extreme Short Rest Time Map" storageaddress="0x7009">
+		<table type="X Axis" storageaddress="0x8E5F"/>
+		<table type="Y Axis" storageaddress="0x8E5B"/>
+	</table>	
+
+	<table name="Fuel Cut Suspension Time:Operation Time Ratio Map" storageaddress="0x7019">
+		<table type="X Axis" storageaddress="0x8E5F"/>
+		<table type="Y Axis" storageaddress="0x8E5B"/>
+	</table>	
 
 	<table name="DTC 1" storageaddress="0x9F30"/>
 	<table name="DTC 2" storageaddress="0x9F32"/>
@@ -203,9 +236,6 @@ CD008 = CD003, CE406, AM703, AC012, CD103, AC202, CE401, AM608
 	<table name="DTC 17" storageaddress="0x9F6E"/>
 	<table name="DTC 18" storageaddress="0x9F72"/>
 	<table name="DTC 19" storageaddress="0x9F76"/>
-
-
-
 
     <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8"/>
 </rom>

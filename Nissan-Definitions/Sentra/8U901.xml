@@ -1,7 +1,7 @@
 <rom base="8U906">
 	<romid>
 		<xmlid>8U901</xmlid>
-		<hwid>5X61BENHN6</hwid>
+		<caseid>5X61BENHN6</caseid>
 		<internalidaddress>7D56</internalidaddress>
 		<internalidstring>8U901</internalidstring>
 		<ecuid>8U901</ecuid>
@@ -12,10 +12,5 @@
 		<submodel>Base</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
-		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
-		<filesize>512kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
 	</romid>
 </rom>

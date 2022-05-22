@@ -1,8 +1,7 @@
-<rom base="8U523">
-	<!-- initial def: fenugrec 2018/05 -->
+<rom base="A2L">
 	<romid>
 		<xmlid>9J003</xmlid>
-		<hwid>3TREE21N14</hwid>
+		<caseid>3TREE21N14</caseid>
 		<internalidaddress>7438</internalidaddress>
 		<internalidstring>9J003</internalidstring>
 		<ecuid>9J003</ecuid>
@@ -10,13 +9,86 @@
 		<market>US</market>
 		<make>Nissan</make>
 		<model>Altima</model>
-		<submodel>?</submodel>
+		<submodel>Unknown</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
 	</romid>
+<!--Children: 8U023, 8U073, 8U523-->
+
+<!--NOTES: Addresses need to be verified. Need a dump of 9J003 to verify whether 9J003 is apart of this grouping or not.-->
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x56DD">
+		<table type="X Axis" storageaddress="0x7771"/>
+		<table type="Y Axis" storageaddress="0x7781"/>
+	</table>
+
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x56DD">
+		<table type="X Axis" storageaddress="0x7771"/>
+		<table type="Y Axis" storageaddress="0x7781"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x57DD">
+		<table type="X Axis" storageaddress="0x7771"/>
+		<table type="Y Axis" storageaddress="0x7781"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x57DD">
+		<table type="X Axis" storageaddress="0x7771"/>
+		<table type="Y Axis" storageaddress="0x7781"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x58DD">
+		<table type="X Axis" storageaddress="0x7771"/>
+		<table type="Y Axis" storageaddress="0x7781"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x58DD">
+		<table type="X Axis" storageaddress="0x7771"/>
+		<table type="Y Axis" storageaddress="0x7781"/>
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x5BDD">
+		<table type="X Axis" storageaddress="0x769E"/>
+		<table type="Y Axis" storageaddress="0x765A"/>
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x5DAD">
+		<table type="X Axis" storageaddress="0x751D"/>
+		<table type="Y Axis" storageaddress="0x7652"/>
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5F9D">
+		<table type="X Axis" storageaddress="0x817B"/>
+		<table type="Y Axis" storageaddress="0x814F"/>
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5F5D">
+		<table type="X Axis" storageaddress="0x816B"/>
+		<table type="Y Axis" storageaddress="0x8157"/>
+	</table>	
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x539E"/>
+
+	<table name="MAF Table" storageaddress="0x84A6"/>
+
+	<table name="Target Idle Table" storageaddress="0x7D1B"/>
+
+	<table name="K-Value" storageaddress="0x5332"/>
+	
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x6828">
+		<table type="X Axis" storageaddress="0x8486"/>
+		<table type="Y Axis" storageaddress="0x7672"/>
+	</table>
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x9540">
+		<table type="X Axis" storageaddress="0x9894"/>
+		<table type="Y Axis" storageaddress="0x9804"/>
+	</table>
+
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x55D0" xorloc="0x55C8"/>
 </rom>

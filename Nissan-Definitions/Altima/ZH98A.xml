@@ -1,23 +1,17 @@
-<rom base="ZH99A">
-
+<rom base="CF42C">
 	<romid>
 		<xmlid>ZH98A</xmlid>
-		<hwid>6ZVYXN00</hwid>
+		<caseid>6ZVYXN00</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>ZH98A</internalidstring>
 		<ecuid>ZH98A</ecuid>
 		<year>2006</year>
-		<market>USDM</market>
+		<market>JDM</market>
 		<make>Nissan</make>
 		<model>Altima</model>
 		<submodel>SER</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7058</memmodel>
-		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
-		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
 	</romid>
 </rom>
 	

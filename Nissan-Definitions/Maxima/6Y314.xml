@@ -1,7 +1,7 @@
-<rom base="6Y303">
+<rom base="6Y324">
 	<romid>
 		<xmlid>6Y314</xmlid>
-		<hwid>1TKE8Z5N59</hwid>
+		<caseid>1TKE8Z5N59</caseid>
 		<internalidaddress>6C61</internalidaddress>
 		<internalidstring>6Y314</internalidstring>
 		<ecuid>6Y314</ecuid>
@@ -12,10 +12,5 @@
 		<submodel>Base</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7055</memmodel>
-		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
-		<filesize>512kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
 	</romid>
 </rom>

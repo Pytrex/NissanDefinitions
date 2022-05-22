@@ -1,7 +1,7 @@
 <rom base="CD008">
     <romid>
         <xmlid>CD007</xmlid>
-        <hwid>3GILXN05</hwid>
+        <caseid>3GILXN05</caseid>
         <internalidaddress>8290</internalidaddress>
         <internalidstring>CD007</internalidstring>
         <ecuid>CD007</ecuid>
@@ -12,13 +12,5 @@
         <submodel>Track</submodel>
         <transmission>MT</transmission>
         <memmodel>SH7055</memmodel>
-		<endian>Big</endian>
-        <flashmethod>nisprog</flashmethod>
-        <filesize>512kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
     </romid>
-
-    <checksum type="std" start="0" end="0x7FFFF" sumloc="0x67F0" xorloc="0x67E8"/>
-
 </rom>

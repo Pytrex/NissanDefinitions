@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>8U906</xmlid>
-		<hwid>5X61BENHN6</hwid>
+		<caseid>5X61BENHN6</caseid>
 		<internalidaddress>7D56</internalidaddress>
 		<internalidstring>8U906</internalidstring>
 		<ecuid>8U906</ecuid>
@@ -15,10 +15,22 @@
 		<endian>Big</endian>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Pytrex</author>
+		<author>a33b</author>
 		<version>v1.0</version>
 	</romid>
+<!-- Children: 8U901 -->
 
+<!-- Note: I haven't personally verified these addresses. -->
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x630A"/>
+	<table name="MAF Table" storageaddress="0x8A8A"/>
+	<table name="Target Idle Table" storageaddress="0x84C8"/>
+	<table name="K-Value" storageaddress="0x62B2"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0x849C"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x84B0"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0x8500"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0x85C4"/>
+	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x659D">
 		<table type="X Axis" storageaddress="0x7FDE"/>
 		<table type="Y Axis" storageaddress="0x7FCE"/>
@@ -69,32 +81,9 @@
 		<table type="Y Axis" storageaddress="0x88A2"/>
 	</table>
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x630A"/>
-
-	<table name="MAF Table" storageaddress="0x8A8A"/>
-
-	<table name="Target Idle Table" storageaddress="0x84C8"/>
-
-	<table name="K-Value" storageaddress="0x62B2"/>
-
-	<table name="Bosch Fuel Cut Table" storageaddress="0x849C"/>
-	<table name="JECS Fuel Cut Table" storageaddress="0x84B0"/>
-	<table name="Bosch Fuel Restore Table" storageaddress="0x8500"/>
-	<table name="JECS Fuel Restore Table" storageaddress="0x85C4"/>
-
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x97DA">
 		<table type="X Axis" storageaddress="0x9AAE"/>
 		<table type="Y Axis" storageaddress="0x9A1E"/>
-	</table>
-
-	<table name="mMTFDD" storageaddress="0x7168">
-		<table type="X Axis" storageaddress="0x8A16"/>
-		<table type="Y Axis" storageaddress="0x8A36"/>
-	</table>
-
-	<table name="mMTFDDS" storageaddress="0x7368">
-		<table type="X Axis" storageaddress="0x8A16"/>
-		<table type="Y Axis" storageaddress="0x8A36"/>
 	</table>
 	
 	<table name="Catalyst DTCs" storageaddress="0x99e0"/>
@@ -108,8 +97,6 @@
 	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0x9a10"/>
 	<table name="Evap Pressure Flow DTCs" storageaddress="0x9a12"/>
 	<table name="Evap Leaks DTCs"  storageaddress="0x9a13"/>
-
-	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0x92d8"/>
 
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6494" xorloc="0x648C"/>
 

@@ -1,7 +1,7 @@
-<rom base="CM40C">
+<rom base="CF40D">
 	<romid>
 		<xmlid>CM40A</xmlid>
-		<hwid>6ZV2RN10</hwid>
+		<caseid>6ZV2RN10</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CM40A</internalidstring>
 		<ecuid>CM40A</ecuid>
@@ -12,13 +12,5 @@
 		<submodel>Sport</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7058</memmodel>
-		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
-		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
 	</romid>
-
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
-
 </rom>

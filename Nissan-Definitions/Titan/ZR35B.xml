@@ -1,7 +1,7 @@
 <rom base="A2L">
     <romid>
 	    <xmlid>ZR35B</xmlid>
-	    <hwid>8ZHFAUN5</hwid>
+	    <caseid>8ZHFAUN5</caseid>
       <internalidaddress>8210</internalidaddress>
       <internalidstring>ZR35B</internalidstring>
       <ecuid>ZR35B</ecuid>

@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>ZY70D</xmlid>
-		<hwid>33</hwid>
+		<caseid>33</caseid>
 		<internalidaddress>E4E5</internalidaddress>
 		<internalidstring>ZY70D</internalidstring>
 		<ecuid>ZY70D</ecuid>

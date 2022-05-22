@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>AM91A</xmlid>
-		<hwid>2wlj6d11</hwid>
+		<caseid>2WLYFD110</caseid>
 		<internalidaddress>81DF</internalidaddress>
 		<internalidstring>AM91A</internalidstring>
 		<ecuid>AM91A</ecuid>
@@ -87,9 +87,9 @@
 	</table>
 	
 	<table name="Speed Limiter" storageaddress="0x6566"/>
-...
+
 	<table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x627D"/>
-    	<table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x6287"/>
+    <table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x6287"/>
 
 
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x66BC" xorloc="0x66B4"/>

@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>AC40A</xmlid>
-		<hwid>5ZP8N00</hwid>
+		<caseid>5ZP8N00</caseid>
 		<internalidaddress>8FE6</internalidaddress>
 		<internalidstring>AC40A</internalidstring>
 		<ecuid>AC40A</ecuid>
@@ -18,7 +18,7 @@
 		<author>Pytrex</author>
 		<version>v1.0</version>
 	</romid>
-
+<!-- Children: AC400, AC401, AC405, AC406 -->
 	
 	
 	<table name="MAF Idle Voltage Limits" storageaddress="0x70F0"/>
@@ -36,13 +36,13 @@
 	<table name="Radiator Fan Switch Point" storageaddress="0x697A"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4"/>
-	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6741"/>
+	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6740"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x6B40"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x652D"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xA982"/>
 	<table name="Speed Limiter" storageaddress="0x705E"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0xA46C"/>
-	<table name="Throttle Rev Limiter" storageaddress="0x7036"/>
+	<table name="Throttle Rev Limiter" storageaddress="0x7036"/><!-- This is right, but is the ROM modified? -->
 	<table name="MAF Factor" storageaddress="0x691F"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x6DC0"/>
 	<table name="Knock Slice Map" storageaddress="0x8E88"/>
@@ -67,8 +67,6 @@
 	<table name="Target AFR Table (High Detonation)" storageaddress="0x974E"/> 
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x96BE"/> 
 
-	
-	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x9ED6">
 		<table type="X Axis" storageaddress="0xA932"/>
 	</table>
@@ -159,12 +157,12 @@
 	</table>
 
 	<table name="AFR Correction Map (Bank 1)" storageaddress="0x8088"> 
-		<table type="X Axis" storageaddress="0xA188"/>Axes
+		<table type="X Axis" storageaddress="0xA188"/><!-- Fix Axes -->
 		<table type="Y Axis" storageaddress="0xA168"/>
 	</table>
 	
 	<table name="AFR Correction Map (Bank 2)" storageaddress="0x8108"> 
-		<table type="X Axis" storageaddress="0xA188"/>Axes
+		<table type="X Axis" storageaddress="0xA188"/><!-- Fix Axes -->
 		<table type="Y Axis" storageaddress="0xA168"/>
 	</table>
 
@@ -173,7 +171,7 @@
 		<table type="Y Axis" storageaddress="0x9D5E"/>	
 	</table>
 	
-	<table name="Misfire Diagnosis Basic Map" storageaddress="0x9EF1">
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x7CED">
 		<table type="X Axis" storageaddress="0x90C3"/>
 		<table type="Y Axis" storageaddress="0x90A3"/>
 	</table>
@@ -203,7 +201,7 @@
 		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 	
-	
+	<table name="Flags 1" storageaddress="0x6A0D"/>
 
 	<table name="DTC 1" storageaddress="0xB460"/>
 	<table name="DTC 2" storageaddress="0xB462"/>
@@ -225,10 +223,6 @@
 	<table name="DTC 18" storageaddress="0xB4A2"/>
 	<table name="DTC 19" storageaddress="0xB4A6"/>
 
-	
 
-	<table name="Flags 1" storageaddress="0x6A0D"/>
-
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec"/>
-
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC"/>
 </rom>

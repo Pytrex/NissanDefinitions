@@ -1,23 +1,25 @@
 <rom base="A2L">
     <romid>
-	<xmlid>CD416</xmlid>
-	<hwid>2WLM1D13</hwid>
-      <internalidaddress>8023</internalidaddress>
-      <internalidstring>CD416</internalidstring>
-      <ecuid>CD416</ecuid>
-      <year>2003</year>
-      <market>JDM</market>
-      <make>Nissan</make>
-      <model>350Z</model>
-      <submodel>??</submodel>
-      <transmission>MT</transmission>
-      <memmodel>SH7055</memmodel>
+		<xmlid>CD416</xmlid>
+		<caseid>2WLM1D13</caseid>
+		<internalidaddress>8023</internalidaddress>
+		<internalidstring>CD416</internalidstring>
+		<ecuid>CD416</ecuid>
+		<year>2003</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>??</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-      <flashmethod>nisprog</flashmethod>
-      <filesize>512kb</filesize>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
     </romid>
+<!--Children: CD406-->
+	
     <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6609">
       <table type="X Axis" storageaddress="0x82F7"/>
       <table type="Y Axis" storageaddress="0x8307"/>
@@ -27,6 +29,7 @@
       <table type="X Axis" storageaddress="0x82F7"/>
       <table type="Y Axis" storageaddress="0x8307"/>
     </table>
+	
     <table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x6709">
       <table type="X Axis" storageaddress="0x82F7"/>
       <table type="Y Axis" storageaddress="0x8307"/>
@@ -36,6 +39,7 @@
       <table type="X Axis" storageaddress="0x82F7"/>
       <table type="Y Axis" storageaddress="0x8307"/>
     </table>
+	
     <table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6809">
       <table type="X Axis" storageaddress="0x82F7"/>
       <table type="Y Axis" storageaddress="0x8307"/>
@@ -46,9 +50,9 @@
       <table type="Y Axis" storageaddress="0x8307"/>
     </table>
 
-    <table name="Fuel Compensation Map (16x16)" storageaddress="0x6ac9">
+    <table name="Fuel Compensation Map (16x16)" storageaddress="0x6AC9">
       <table type="X Axis" storageaddress="0x822D"/>
-      <table type="Y Axis" storageaddress="0x82F7"/>
+      <table type="Y Axis" storageaddress="0x81D1"/>
     </table>
 
     <table name="Target AFR Map (8x8)" storageaddress="0x6CD9">
@@ -56,39 +60,58 @@
       <table type="Y Axis" storageaddress="0x81C9"/>
     </table>
 
-<table name="Intake Cam Timing Map (16x16)" storageaddress="0x6E59">
-  <table type="X Axis" storageaddress="0x8CB5"/>
-  <table type="Y Axis" storageaddress="0x8CC5"/>
-</table>
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x6E59">
+		<table type="X Axis" storageaddress="0x8CB5"/>
+		<table type="Y Axis" storageaddress="0x8CC5"/>
+	</table>
 
-<table name="MAF Table" storageaddress="0x8FFE"/>
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x7834">
+		<table type="X Axis" storageaddress="0x8FDE"/>
+		<table type="Y Axis" storageaddress="0x81E9"/>
+	</table>
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x9F48">
+		<table type="X Axis" storageaddress="0xA21C"/>
+		<table type="Y Axis" storageaddress="0xA18C"/>
+	</table>
+	
+	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7C34">
+		<table type="X Axis" storageaddress="0x922E"/>
+		<table type="Y Axis" storageaddress="0x923E"/>
+	</table>
+
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x7209">
+		<table type="X Axis" storageaddress="0x80E8"/>
+		<table type="Y Axis" storageaddress="0x80C4"/>
+	</table>
+
+	<table name="Misfire Diagnosis Map A" storageaddress="0x7009">
+		<table type="X Axis" storageaddress="0x80E8"/>
+		<table type="Y Axis" storageaddress="0x80C4"/>
+	</table>
+	
+	<table name="Misfire Diagnosis Map B" storageaddress="0x7109">
+		<table type="X Axis" storageaddress="0x80E8"/>
+		<table type="Y Axis" storageaddress="0x80C4"/>
+	</table>
+
+	<table name="Knock Slice Map" storageaddress="0x7EB4"/>
+	<table name="MAF Table" storageaddress="0x8FFE"/>
+	<table name="Engine Torque Map" storageaddress="0x7CB4"/>
+	<table name="K-Value" storageaddress="0x62E6"/>
+	<table name="Target Idle Table" storageaddress="0x8853"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0x8817"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0x8973"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0x888B"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x883B"/>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6346"/>
+	<table name="Speed Limiter" storageaddress="0x63AA"/>
+	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x60CC"/>
+	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x60D6"/>
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x6017"/>
+	<table name="Long Term Fuel Trim Limits" storageaddress="0x5EE3"/>
+	<table name="MAF Factor" storageaddress="0x5E65"/>
 
 
-  <table name="QH0/ Torque Conversion Map" storageaddress="0x7834">
-    <table type="Y Axis" storageaddress="0xA2CC"/>
-    <table type="X Axis" storageaddress="0xA35C"/>
-  </table>
-
-  <table name="QH0/ Torque Conversion Map 2" storageaddress="0x9F48">
-    <table type="Y Axis" storageaddress="0xA2CC"/>
-    <table type="X Axis" storageaddress="0xA35C"/>
-  </table>
-
-  <table name="Engine Torque Map" storageaddress="0x7DF4"/>
-
-
-
-<table name="K-Value" storageaddress="0x62E8"/>
-
-<table name="Target Idle Table" storageaddress="0x8853"/>
-
-<table name="Bosch Fuel Cut Table" storageaddress="0x8957"/>
-<table name="JECS Fuel Cut Table" storageaddress="0x897B"/>
-<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8D59"/>
-<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6346"/>
-<table name="Speed Limiter" storageaddress="0x63AA"/>
-<table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x60CC"/>
-<table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x60D6"/>
-<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6500" xorloc="0x64F8"/>
-
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6500" xorloc="0x64F8"/>
 </rom>

@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>AC81A</xmlid>
-		<hwid>5GIWYN14</hwid>
+		<caseid>5GIWYN14</caseid>
 		<internalidaddress>A216</internalidaddress>
 		<internalidstring>AC81A</internalidstring>
 		<ecuid>AC81A</ecuid>
@@ -13,13 +13,12 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
 	</romid>
-
-	
+<!--Children: AC810-->
 	
 	<table name="MAF Table" storageaddress="0x0B73C"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x791C"/>
@@ -64,8 +63,6 @@
 	<table name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" storageaddress="0xB0AA"/>
 	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0xB0AE"/>
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0xAA2A"/> 
-
-	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xB3EA">
 		<table type="X Axis" storageaddress="0xC006"/>
@@ -206,13 +203,7 @@
 		<table type="Y Axis" storageaddress="0xCC5A"/>
 	</table>
 
-	
-
 	<table name="O2 Sensor Position Flags" storageaddress="0x70D9"/> 
-
-
-	
-
 	<table name="DTC 1" storageaddress="0xCC16"/>
 	<table name="DTC 2" storageaddress="0xCC18"/>
 	<table name="DTC 3" storageaddress="0xCC1C"/>
@@ -234,5 +225,4 @@
 	<table name="DTC 19" storageaddress="0xCC5C"/>
 
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7BCC" xorloc="0x7BC4"/>
-
 </rom>

@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>CD102</xmlid>
-		<hwid>3GIJ7N04</hwid>
+		<caseid>3GIJ7N04</caseid>
 		<internalidaddress>828C</internalidaddress>
 		<internalidstring>CD102</internalidstring>
 		<ecuid>CD102</ecuid>
@@ -18,9 +18,8 @@
 		<author>Pytrex</author>
 		<version>v1.0</version>
 	</romid>
-
+<!--Children: CD001, CD006, CD100, CD101, AC200-->
 	
-
 	<table name="APO Threshold (Brake)" storageaddress="0x64C8"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x66C2"/>
 	<table name="Knock Slice Map" storageaddress="0x8120"/> 
@@ -103,11 +102,6 @@
 		<table type="Y Axis" storageaddress="0x82CD"/> 
 	</table>
 
-	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x7205">
-		<table type="X Axis" storageaddress="0x8DF3"/>
-		<table type="Y Axis" storageaddress="0x8DFB"/>	
-	</table>
-
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7EA0"> 
 		<table type="X Axis" storageaddress="0x9212"/> 
 		<table type="Y Axis" storageaddress="0x9222"/>
@@ -153,6 +147,11 @@
 		<table type="Y Axis" storageaddress="0x840A"/>  
 	</table>
 
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x7205">
+		<table type="X Axis" storageaddress="0x8DF3"/>
+		<table type="Y Axis" storageaddress="0x8DFB"/>	
+	</table>
+	
 	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x7105">
 		<table type="X Axis" storageaddress="0x8E0F"/>
 		<table type="Y Axis" storageaddress="0x8E1F"/>
@@ -168,6 +167,11 @@
 		<table type="Y Axis" storageaddress="0x9F70"/>
 	</table>
 
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x7475">
+		<table type="X Axis" storageaddress="0x8345"/>
+		<table type="Y Axis" storageaddress="0x8321"/>
+	</table>
+	
 	<table name="Misfire Diagnosis Map A" storageaddress="0x7275">
 		<table type="X Axis" storageaddress="0x8345"/>
 		<table type="Y Axis" storageaddress="0x8321"/>
@@ -178,10 +182,6 @@
 		<table type="Y Axis" storageaddress="0x8321"/>
 	</table>
 
-	<table name="Misfire Diagnosis Basic Map" storageaddress="0x7475">
-		<table type="X Axis" storageaddress="0x8345"/>
-		<table type="Y Axis" storageaddress="0x8321"/>
-	</table>
 
 	
 

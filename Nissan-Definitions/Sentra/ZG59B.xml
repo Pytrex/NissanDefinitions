@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>ZG59B</xmlid>
-		<hwid>6X6E58SYMN36</hwid>
+		<caseid>6X6E58SYMN36</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>ZG59B</internalidstring>
 		<ecuid>ZG59B</ecuid>
@@ -10,15 +10,18 @@
 		<make>Nissan</make>
 		<model>Sentra</model>
 		<submodel>Spec V</submodel>
-		<transmission>MT w/o NATS</transmission>
+		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
+		<author>Fenugrec</author>
 		<version>v1.0</version>
 	</romid>
-	
+<!-- Children: ZD89A -->
+
+<!-- Notes: I haven't personally gone through and verified addresses. ROM is apparently without NATS. -->
+
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8a31">
 		<table type="X Axis" storageaddress="0xa622"/>
 		<table type="Y Axis" storageaddress="0xa632"/>
@@ -59,12 +62,6 @@
 		<table type="Y Axis" storageaddress="0xa4f0"/>
 	</table>
 
-	<table name="Target AFR Table (High Detonation)" storageaddress="0xaa7e"/>
-
-	<table name="LTFT Map BFS Axis" storageaddress="0xaabe"/>
-
-	<table name="LTFT Map RPM Axis" storageaddress="0xab80"/>
-
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x91d1">
 		<table type="X Axis" storageaddress="0xb04a"/>
 		<table type="Y Axis" storageaddress="0xb01e"/>
@@ -73,11 +70,6 @@
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9191">
 		<table type="X Axis" storageaddress="0xb03a"/>
 		<table type="Y Axis" storageaddress="0xb026"/>
-	</table>
-	
-	<table name="Target Idle Table" storageaddress="0xabbc"/>
-	
-	<table name="K-Value" storageaddress="0x864c">
 	</table>
 
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x9A8C">
@@ -88,26 +80,6 @@
 	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xC49E">
 		<table type="X Axis" storageaddress="0xC77C"/>
 		<table type="Y Axis" storageaddress="0xC6EC"/>
-	</table>
-
-	<table name="mMTFDD" storageaddress="0x968c">
-		<table type="X Axis" storageaddress="0xC75C"/>
-		<table type="Y Axis" storageaddress="0xC73C"/>
-	</table>
-
-	<table name="mMTFDDS" storageaddress="0x988c">
-		<table type="X Axis" storageaddress="0xC75C"/>
-		<table type="Y Axis" storageaddress="0xC73C"/>
-	</table>
-
-	<table name="mMTFDDS_S" storageaddress="0xC09E">
-		<table type="X Axis" storageaddress="0xC75C"/>
-		<table type="Y Axis" storageaddress="0xC73C"/>
-	</table>
-
-	<table name="mMTFDD_S" storageaddress="0xC29E">
-		<table type="X Axis" storageaddress="0xC75C"/>
-		<table type="Y Axis" storageaddress="0xC73C"/>
 	</table>
 
 	<table name="Misfire Diagnosis Map A" storageaddress="0x9231">
@@ -125,25 +97,22 @@
 		<table type="Y Axis" storageaddress="0xa44b"/>
 	</table>
 
+	<table name="Target Idle Table" storageaddress="0xabbc"/>
+	<table name="K-Value" storageaddress="0x864c"/>
+	<table name="Target AFR Table (High Detonation)" storageaddress="0xaa7e"/>
+	<table name="LTFT Map BFS Axis" storageaddress="0xaabe"/>
+	<table name="LTFT Map RPM Axis" storageaddress="0xab80"/>
 	<table name="MAF Table" storageaddress="0xb468"/>
-
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x86dc"/>
-
 	<table name="Throttle Rev Limiter" storageaddress="0x876E"/>
-
 	<table name="Dwell RPM Table" storageaddress="0xA786"/>
-
 	<table name="Dwell Battery Table" storageaddress="0xA78E"/>
-
 	<table name="Unburned Gas Density Table" storageaddress="0xA3AF"/>
-
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xAF96"/>
-	
 	<table name="Bosch Fuel Cut Table" storageaddress="0xab88"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0xabac"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0xac04"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0xacc8"/>
-	
 	<table name="Catalyst DTCs" storageaddress="0xc6a4"/>
 	<table name="Evap DTCs" storageaddress="0xc6ad"/>
 	<table name="Evap 2 DTCs"  storageaddress="0xc6ae"/>
@@ -153,9 +122,6 @@
 	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0xc6d4"/>
 	<table name="Evap Pressure Flow DTCs" storageaddress="0xc6d6"/>
 	<table name="Evap Leaks DTCs"  storageaddress="0xc6d7"/>
-
-	<table name="Knock sensor CEL (P0327, P0328)" storageaddress="0xbfa0"/>
 	
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8918" xorloc="8910"/>
-
 </rom>

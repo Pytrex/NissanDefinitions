@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>AM603</xmlid>
-		<hwid>3MFED17N7</hwid>
+		<caseid>3MFED17N7</caseid>
 		<internalidaddress>6C31</internalidaddress>
 		<internalidstring>AM603</internalidstring>
 		<ecuid>AM603</ecuid>
@@ -19,15 +19,13 @@
 		<version>v1.0</version>
 	</romid>
 
-Notes;
-SH7055 is annoying. 
 
 
 
 	
 
 	<table name="APO Threshold (Brake)" storageaddress="0x4E8A"/>
-	<table name="Minimum Injector Pulse Width" storageaddress="0x5070"/>  <!-- Needs verified, have I ever mentioned that I HATE SH7055? :) )-->
+	<table name="Minimum Injector Pulse Width" storageaddress="0x5070"/> 
 	<table name="Knock Slice Map" storageaddress="0x6AC4"/> 
 	<table name="Speed Limiter" storageaddress="0x5058"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x507E"/> <!-- Might want to verify as well-->

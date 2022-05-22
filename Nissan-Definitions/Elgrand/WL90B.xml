@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
     		<xmlid>WL90B</xmlid>
-    		<hwid>2WLAAD18</hwid>
+    		<caseid>2WLAAD18</caseid>
     		<internalidaddress>8233</internalidaddress>
     		<internalidstring>WL90B</internalidstring>
     		<ecuid>WL90B</ecuid>

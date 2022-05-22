@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>CF48D</xmlid>
-		<hwid>6GIZ7N4</hwid>
+		<caseid>6GIZ7N4</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CF48D</internalidstring>
 		<ecuid>CF48D</ecuid>
@@ -18,11 +18,8 @@
 		<author>Pytrex</author>
 		<version>v1.0</version>
 	</romid>
-
-<!--Notes; This is NOT the main CF48D Definition File. This is a heavily altered one that only includes the maps within the publicly avaiable A2L template. This file will grow as time goes on.-->
-
+<!-- Children: CF40A, CF41A, CF41B, CF41D, CF41E, CF42A, CF44B, CF44C, CF44D, CF49A, CF50A, CM80A, ZH96E, CM30C, CM32C, ZC070 (Not all have been added)-->
 	
-
 	<table name="AFR Compensation Limits" storageaddress="0x8704"/>
 	<table name="QH0 High Flow Quantity Table" storageaddress="0xCE98"/> 
 	<table name="QH0 Low Flow Quantity Table" storageaddress="0xCEB8"/> 
@@ -112,8 +109,6 @@
 	<table name="LTFT Map RPM Axis" storageaddress="0xBC9A"/> 
 	<table name="LTFT Map BFS Axis" storageaddress="0xBBD8"/>
 
-	
-
 	<table name="VVT NK Threshold TP Table" storageaddress="0xC31C">
 		<table type="X Axis" storageaddress="0xC30C"/> 
 	</table>
@@ -146,6 +141,14 @@
 		<table type="X Axis" storageaddress="0xD446"/> 
 	</table>
 
+	<table name="TVO Upper Limit Table" storageaddress="0xC200"> 
+		<table type="X Axis" storageaddress="0xC1F0"/> 
+ 	</table>
+
+	<table name="TVO Upper Limit Table 2" storageaddress="0xC208"> 
+		<table type="X Axis" storageaddress="0xC1F8"/> 
+ 	</table>
+	
 	<table name="P-Gain Computed Map (Bank 1)" storageaddress="0x92B1">
 		<table type="X Axis" storageaddress="0xC3DC"/>
 		<table type="Y Axis" storageaddress="0xC3BC"/>
@@ -290,15 +293,6 @@
 		<table type="X Axis" storageaddress="0xC398"/>
 		<table type="Y Axis" storageaddress="0xC394"/>
 	</table>	
-
-	<table name="TVO Upper Limit Table" storageaddress="0xC200"> 
-		<table type="X Axis" storageaddress="0xC1F0"/> 
- 	</table>
-
-	<table name="TVO Upper Limit Table 2" storageaddress="0xC208"> 
-		<table type="X Axis" storageaddress="0xC1F8"/> 
- 	</table>
-	
 	
 	<table name="DOMON Distinction Flag" storageaddress="0xB27F"/>
 	<table name="CO Variable Flag" storageaddress="0x7E5F"/> 
@@ -344,8 +338,6 @@
 	<table name="Flags 27" storageaddress="0x82F9"/> 
 	<table name="Flags 28" storageaddress="0xDDE8"/> 
 
-	
-
 	<table name="DTC 1" storageaddress="0xDDCA"/>
 	<table name="DTC 2" storageaddress="0xDDCC"/>
 	<table name="DTC 3" storageaddress="0xDDD0"/>
@@ -366,8 +358,6 @@
 	<table name="DTC 18" storageaddress="0xDE0C"/>
 	<table name="DTC 19" storageaddress="0xDE10"/>
 	
-	
-
 	<table name="CID1100 supmask" storageaddress="0xB547"/> 
 	<table name="CID1120 supmask" storageaddress="0xB553"/>
 	<table name="CID1140 supmask" storageaddress="0xB54B"/> 
@@ -381,8 +371,6 @@
 	<table name="CID1500 Supmask" storageaddress="0xB56F"/> 
 
 
-
-
+	<checksum type="alt" start="0x2414" end="0x4162" sumloc="0x240C" xorloc="0x2410"/>
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
-
 </rom>

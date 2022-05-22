@@ -1,7 +1,7 @@
-<rom base="CM40B">
+<rom base="CF40D">
 	<romid>
 		<xmlid>CM30B</xmlid>
-		<hwid>6ZV2RN10</hwid>
+		<caseid>6ZV2RN10</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CM30B</internalidstring>
 		<ecuid>CM30B</ecuid>
@@ -12,11 +12,5 @@
 		<submodel>Sport - RWD</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7058</memmodel>
-		<endian>Big</endian>
-		<flashmethod>Nisprog</flashmethod>
-		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
 	</romid>
-
 </rom>

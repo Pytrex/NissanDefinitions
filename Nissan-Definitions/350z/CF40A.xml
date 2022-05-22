@@ -1,10 +1,9 @@
 <rom base="CF48D">
 	<romid>
 		<xmlid>CF40A</xmlid>
-		<hwid>6GIZ7N4</hwid>
+		<caseid>6GIZ7N4</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CF40A</internalidstring>
-		<caseid>Lucky</caseid>
 		<ecuid>CF40A</ecuid>
 		<year>2006</year>
 		<market>USDM</market>

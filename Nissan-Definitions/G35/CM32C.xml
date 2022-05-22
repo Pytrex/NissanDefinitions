@@ -1,10 +1,9 @@
 <rom base="CF48D">
 	<romid>
 		<xmlid>CM32C</xmlid>
-		<hwid>6GIZ7N4</hwid>
+		<caseid>6GIZ7N4</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CM32C</internalidstring>
-		<caseid>2/4/21</caseid>
 		<ecuid>CM32C</ecuid>
 		<year>2006</year>
 		<market>USDM</market>

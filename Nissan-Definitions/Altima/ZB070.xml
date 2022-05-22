@@ -2,7 +2,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>ZB070</xmlid>
-		<hwid>6ZVYXN00</hwid>
+		<caseid>5TTTDN4</caseid>
 		<internalidaddress>9FFE</internalidaddress>
 		<internalidstring>ZB070</internalidstring>
 		<ecuid>ZB070</ecuid>
@@ -16,7 +16,7 @@
 		<endian>Big</endian>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
+		<author>Fenugrec</author>
 		<version>v1.0</version>
 	</romid>
 
@@ -165,6 +165,6 @@
 
 	<table name="Crank Fueling TP Value Table" storageaddress="0xBE16"/>
 
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7A04" xorloc="79FC"/>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7A04" xorloc="0x79FC"/>
 
 </rom>

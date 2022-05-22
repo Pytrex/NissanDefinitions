@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>CE811</xmlid>
-		<hwid>5ZVP8N00</hwid>
+		<caseid>5ZVP8N00</caseid>
 		<internalidaddress>8FE6</internalidaddress>
 		<internalidstring>CE811</internalidstring>
 		<ecuid>CE811</ecuid>
@@ -18,11 +18,11 @@
 		<author>Pytrex</author>
 		<version>v1.0</version>
 	</romid>
-
+<!-- Children: CE805, CE810, AC305, AC306 -->
 	
 	
 	<table name="MAF Table" storageaddress="0x0A1E8"/>
-	<table name="K-Value" storageaddress="0x6f24"/>
+	<table name="K-Value" storageaddress="0x6F24"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x6DC0"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
@@ -58,8 +58,7 @@
 	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0x9C12"/>
 	<table name="Target AFR Table (High Detonation)" storageaddress="0x974E"/>
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x96BE"/> 
-	
-	
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4"/>	
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x9ED6">
 		<table type="X Axis" storageaddress="0xA932"/>
@@ -195,8 +194,6 @@
 		<table type="Y Axis" storageaddress="0x9D92"/>
 	</table>
 
-	
-
 	<table name="DTC 1" storageaddress="0xB460"/>
 	<table name="DTC 2" storageaddress="0xB462"/>
 	<table name="DTC 3" storageaddress="0xB466"/>
@@ -217,7 +214,5 @@
 	<table name="DTC 18" storageaddress="0xB4A2"/>
 	<table name="DTC 19" storageaddress="0xB4A6"/>
 
-
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71F4" xorloc="0x71EC"/>
-
 </rom>

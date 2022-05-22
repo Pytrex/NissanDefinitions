@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>BT67A</xmlid>
-		<hwid>9CMCVAPD31</hwid>
+		<caseid>9CMCVAPD31</caseid>
 		<internalidaddress>92EB</internalidaddress>
 		<internalidstring>BT67A</internalidstring>
 		<ecuid>BT67A</ecuid>

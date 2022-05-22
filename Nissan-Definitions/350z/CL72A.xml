@@ -1,7 +1,7 @@
 <rom base="CF42A">
 	<romid>
 		<xmlid>CM80A</xmlid>
-		<hwid>6GIZ7N4</hwid>
+		<caseid>6GIZ7N4</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CM80A</internalidstring>
 		<ecuid>CM80A</ecuid>

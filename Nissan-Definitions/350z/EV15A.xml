@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>EV15A</xmlid>
-		<hwid>unknown</hwid>
+		<caseid>unknown</caseid>
 		<internalidaddress>81CB</internalidaddress>
 		<internalidstring>EV15A</internalidstring>
 		<ecuid>EV15A</ecuid>

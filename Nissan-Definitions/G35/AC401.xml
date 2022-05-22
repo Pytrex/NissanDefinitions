@@ -1,7 +1,7 @@
 <rom base="AC40A">
 	<romid>
 		<xmlid>AC401</xmlid>
-		<hwid>5ZP8N00</hwid>
+		<caseid>5ZP8N00</caseid>
 		<internalidaddress>8FE6</internalidaddress>
 		<internalidstring>AC401</internalidstring>
 		<ecuid>AC401</ecuid>
@@ -12,14 +12,5 @@
 		<submodel>Base</submodel>
 		<transmission>AT</transmission>
 		<memmodel>SH7058</memmodel>
-		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
-		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
 	</romid>
-
-
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x71f4" xorloc="0x71ec"/>
-
 </rom>

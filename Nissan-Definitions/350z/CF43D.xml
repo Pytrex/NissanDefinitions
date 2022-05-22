@@ -1,7 +1,7 @@
 <rom base="A2L">
     <romid>
 	  <xmlid>CF43D</xmlid>
-	  <hwid>6GI5VN6</hwid>
+	  <caseid>6GI5VN6</caseid>
       <internalidaddress>2401</internalidaddress>
       <internalidstring>CF43D</internalidstring>
       <ecuid>CF43D</ecuid>
@@ -18,7 +18,8 @@
 		<author>Pytrex</author>
 		<version>v1.0</version>
     </romid>
-	
+<!-- Children: CF40C, CM31C, CM41A, CM41B, CM41C -->
+
 	<table name="AFR Conversion Table" storageaddress="0xCB0C">
 		<table type="X Axis" storageaddress="0xD3E2"/>
 	</table>
@@ -166,7 +167,7 @@
 	<table name="ISC Opening Area Upper Limit Table" storageaddress="0xC98C"/>
 	<table name="ISC Opening Area Upper Limit Table (RPM Compensation)" storageaddress="0xC9AC"/>
 	<table name="ISC Opening Area Upper Limit Table 2" storageaddress="0xDE58"/>
-	<table name="Idle BFS limits" storageaddress="0x8b0e"/>
+	<table name="Idle BFS limits" storageaddress="0x8B0E"/>
 	<table name="Ignition Delay Time" storageaddress="0x834D"/>
 	<table name="Ignition Timing Main Constant" storageaddress="0x8072"/>
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0xBEA2"/>
@@ -288,5 +289,4 @@
 	<table name="War Way Speed Weight Constant" storageaddress="0x8073"/>
 	
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
-
 </rom>

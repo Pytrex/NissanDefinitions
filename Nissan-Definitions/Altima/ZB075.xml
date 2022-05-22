@@ -2,7 +2,7 @@
 <rom base="ZB070">
 	<romid>
 		<xmlid>ZB075</xmlid>
-		<hwid>5TTTDN4</hwid>
+		<caseid>5TTTDN4</caseid>
 		<internalidaddress>9FFE</internalidaddress>
 		<internalidstring>ZB075</internalidstring>
 		<ecuid>ZB075</ecuid>

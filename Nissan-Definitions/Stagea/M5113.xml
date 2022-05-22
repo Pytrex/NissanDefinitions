@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>M5113</xmlid>
-		<hwid>N1MATBH5D5</hwid>
+		<caseid>N1MATBH5D5</caseid>
 		<internalidaddress>7772</internalidaddress>
 		<internalidstring>M5113</internalidstring>
 		<ecuid>M5113</ecuid>

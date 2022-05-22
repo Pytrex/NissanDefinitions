@@ -1,7 +1,7 @@
 <rom base="CF43D">
 	<romid>
 		<xmlid>CF40C</xmlid>
-		<hwid>6GI5VN6</hwid>
+		<caseid>6GI5VN6</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CF40C</internalidstring>
 		<ecuid>CF40C</ecuid>
@@ -12,15 +12,5 @@
 		<submodel>Base</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
-		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
-		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
 	</romid>
-
-
-
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
-
 </rom>

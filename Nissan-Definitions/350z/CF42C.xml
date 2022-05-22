@@ -1,11 +1,11 @@
-<rom base="ZH99A">
+<rom base="A2L">
 	<romid>
 		<xmlid>CF42C</xmlid>
-		<hwid>6ZVYXN00</hwid>
+		<caseid>6ZVYXN00</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CF42C</internalidstring>
 		<ecuid>CF42C</ecuid>
-		<year>2003</year>
+		<year>2005</year>
 		<market>JDM</market>
 		<make>Nissan</make>
 		<model>Fairlady Z</model>
@@ -15,10 +15,87 @@
 		<endian>Big</endian>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
+		<author>Fenugrec</author>
 		<version>v1.0</version>
 	</romid>
+<!-- Children: CM37A, ZH98A, ZH98C, ZH99A, ZK01B -->
+
+<!-- Note: I haven't personally verified these addresses. -->
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8Da9">
+		<table type="X Axis" storageaddress="0xB5fc"/>
+		<table type="Y Axis" storageaddress="0xB60c"/>
+	</table>
+
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x8Da9">
+		<table type="X Axis" storageaddress="0xB5fc"/>
+		<table type="Y Axis" storageaddress="0xB60c"/>
+	</table>
+	
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x8ea9">
+		<table type="X Axis" storageaddress="0xB5fc"/>
+		<table type="Y Axis" storageaddress="0xB60c"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x8ea9">
+		<table type="X Axis" storageaddress="0xB5fc"/>
+		<table type="Y Axis" storageaddress="0xB60c"/>
+	</table>
+	
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x8Fa9">
+		<table type="X Axis" storageaddress="0xB5fc"/>
+		<table type="Y Axis" storageaddress="0xB60c"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x8Fa9">
+		<table type="X Axis" storageaddress="0xB5fc"/>
+		<table type="Y Axis" storageaddress="0xB60c"/>
+	</table>
+	
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x9449">
+		<table type="X Axis" storageaddress="0xB4e2"/>
+		<table type="Y Axis" storageaddress="0xB486"/>
+	</table>
+	
+	<table name="Target AFR Map (8x8)" storageaddress="0x96d9">
+		<table type="X Axis" storageaddress="0xB2b5"/>
+		<table type="Y Axis" storageaddress="0xB45e"/>
+	</table>
+	
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x9ae9">
+		<table type="X Axis" storageaddress="0xC2c4"/>
+		<table type="Y Axis" storageaddress="0xC2e4"/>
+	</table>
+
+	<table name="Bosch Fuel Cut Table" storageaddress="0xBC7A"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0xBCAE"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0xBD26"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0xBE2A"/>
 	<table name="Speed Limiter" storageaddress="0x8A24"/>
-	<table name="mVSPCT2 Speed Limiter (cut)" storageaddress="0x8524"/>
-    <table name="mVSPRC2 Speed Limiter (restore)" storageaddress="0x8530"/>
+	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x8524"/>
+    <table name="Speed Limiter (Fuel Restore)" storageaddress="0x8530"/>
+	<table name="MAF Table" storageaddress="0x0c7fa"/>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x8954"/>
+	<table name="Target Idle Table" storageaddress="0xbcbe"/>
+	<table name="K-Value" storageaddress="0x88c2"/>
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x8428"/>
+	<table name="Fuel Injector Latency Adder" storageaddress="0x7d5f"/>
+	<table name="Speed Limiter" storageaddress="0x8a24"/>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xcae8"/>
+	<table name="Throttle Rev Limiter" storageaddress="0x89ec"/>
+	<table name="MAF Factor" storageaddress="0x81e2"/>
+	
+	<table name="Catalyst DTCs" storageaddress="0xDD24"/>
+	<table name="Evap DTCs" storageaddress="0xDD2D"/>
+	<table name="Evap 2 DTCs"  storageaddress="0xDD2E"/>
+	<table name="VIAS DTCs"  storageaddress="0xDD32"/>
+	<table name="Power Steering DTC"  storageaddress="0xDD38"/>
+	<table name="Secondary O2 DTCs" storageaddress="0xDD50"/>
+	<table name="Secondary O2 Knock DTCs" storageaddress="0xDD51"/>
+	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0xDD54"/>
+	<table name="Evap Pressure Flow DTCs" storageaddress="0xDD55"/>
+	<table name="Evap Leaks DTCs"  storageaddress="0xDD56"/>
+	
+	<checksum type="alt" start="0x2414" end="0x4162" sumloc="0x240C" xorloc="0x2410"/>
+	<checksum type="std" start="0x0000" end="0xFFFFF" sumloc="0x8C10" xorloc="0x8C08"/>
 </rom>
