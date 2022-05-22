@@ -10,7 +10,7 @@ type A2L.xml >> NissanDefinitions.temp
 ren ScalingData.xml ScalingData.txt
 ren A2L.xml A2L.txt
 
-for /R %%a in (*.xml) do type %%a >> NissanDefinitions.temp
+for /R %%a in (*.xml) do type "%%a" >> NissanDefinitions.temp
 
 echo ^</roms^> >> NissanDefinitions.temp
 
