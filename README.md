@@ -1,7 +1,7 @@
 
 # NissanDefinitions
 
-Nissan and Infiniti ROM Definitions for use with RomRaider Editor and Logger. 
+Nissan and Infiniti ECU ROM Definitions for use with RomRaider Editor. 
 
 ![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/Pytrex/NissanDefinitions?color=blueviolet&display_name=release&include_prereleases&label=Latest%20Release&sort=date)
 ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Pytrex/NissanDefinitions/latest?color=blueviolet&label=Commits%20Since%20Release)
@@ -12,23 +12,24 @@ Nissan and Infiniti ROM Definitions for use with RomRaider Editor and Logger.
 
 #### Current Stable RomRaider Version (Repository): v0.9.3 
 
-NissanDefinitions supports RomRaider ECU definition files for all SH705X Nissan and Infiniti ECU's. This typically includes model years between ~2001-2010 with processors SH7055 or SH7058. You can utilize these definition files within RomRaider to modify the contents on your ECU's ROM. By doing so, you're able to modify the behavior of the vehicle. 
+NissanDefinitions supports ECU ROM definition files for SH7055/SH7058 Nissan and Infiniti ECU's. These definition files are formatted to be compatible with RomRaider editor. Vehicles with SH7055/SH7058 ECU's typically includes model years between ~2001-2010. 
 
-Each ROM has its own definition file that stores the ROM addresses for all defined tables. This definition file references the A2L template file, which contains table specific data. The ScalingData file is where all table scalars are stored. Using the "Combine All.bat" file will merge all files into one, NissanDefinitions. As time goes on, more and more ROMs will be defined. 
+Each ROM has its own definition file that stores the ROM addresses for all defined tables. This definition file references the A2L template file, which contains table specific data. The ScalingData file is where all table scalars are stored. Using the "Combine All.bat" file will merge all files into one, NissanDefinitions. As time goes on, more and more ROMs will be defined. But there's no guarantee that every ROM will have the same tables defined for it in this repository. 
 
 # Key Features
 
 ### General Repository Features
 
-- Utilizes RomRaider's XML Formatting to the Fullest Extent (Scalingbase, Subcategories, etc) 
+- Utilizes RomRaider's XML Formatting to its Full Extent (Scalingbase, Subcategories, etc) 
 - Semi-Automated Definition Files (Automated initial definition files with manual verification) 
 - Ability to Modify Individual ROM Contents and Definition Files
-- Cross Compatible with Any Preexisting Definition Repositories (add the preexisting definition template to your Nissan-Definitions folder)
-- Tables Derived from [ZB060 a2l file](https://www.romraider.com/forum/viewtopic.php?f=45&t=14750)
+- Cross Compatible with Any Preexisting Definition Repositories (add the preexisting definition template to your "Nissan Definitions" folder)
 
-### A2L Specific Features
+### A2L Template Specific Features
 
-- ~221 Supported Tables
+- Tables Derived from [ZB060 a2l file](https://www.romraider.com/forum/viewtopic.php?f=45&t=14750) (It means that the tables are official tables from Nissan directly)
+- ~221 Supported Tables 
+- Separate Maps for Ignition Timing Adjustment and Knock Window
 - Full DTC Support 
 - Full CID Supmask Support
 - ROM Flags
@@ -51,10 +52,10 @@ Each ROM has its own definition file that stores the ROM addresses for all defin
 
 ~~~
 1. Download and unzip the repository from GitHub
-2. Go to the "Nissan-Definitions" folder
+2. Go to the "Nissan Definitions" folder
 3. Run "Combine All.bat" to generate the "NissanDefinitions.xml" file
 2. Open RomRaider Editor and click "Definitions" tab at the top, "Definition File Manager", then "add"
-4. Select the "NissanDefinitions.xml" file from the "Nissan-Definitions" folder
+4. Select the "NissanDefinitions.xml" file from the "Nissan Definitions" folder
 ~~~
 
 ### Logger
@@ -63,7 +64,9 @@ Each ROM has its own definition file that stores the ROM addresses for all defin
 
 # Useful Links
 
-* [RomRaider Software](https://www.romraider.com/) 
+* [RomRaider Software](https://www.romraider.com/) **(Used to Modify ROM Contents)**
+* [Pre-Compiled Nisprog Software](https://www.romraider.com/forum/viewtopic.php?t=13259) **(Used for Dumping and Flashing ECU)**
+* [Nisprog Source Code](https://github.com/fenugrec/nisprog) **(If you want to make modifications to Nisprog)**
 * [Official Nissan Tuning Wiki](https://nissanecu.miraheze.org/wiki/Main_Page)
 * [Official Tuning Information Section](https://nissanecu.miraheze.org/wiki/Nissan_Tuning) **(WIP)**
 
