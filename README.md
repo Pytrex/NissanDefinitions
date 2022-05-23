@@ -1,7 +1,7 @@
 
 # NissanDefinitions
 
-A2L Supported Nissan 350z and Infiniti G35 ROM Definitions for use with RomRaider Editor and Logger. 
+Nissan and Infiniti ROM Definitions for use with RomRaider Editor and Logger. 
 
 ![GitHub release (release name instead of tag name)](https://img.shields.io/github/v/release/Pytrex/NissanDefinitions?color=blueviolet&display_name=release&include_prereleases&label=Latest%20Release&sort=date)
 ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Pytrex/NissanDefinitions/latest?color=blueviolet&label=Commits%20Since%20Release)
