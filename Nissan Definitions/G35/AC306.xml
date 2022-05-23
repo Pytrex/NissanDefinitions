@@ -1,0 +1,16 @@
+<rom base="CE811">
+	<romid>
+		<xmlid>AC306</xmlid>
+		<caseid>5ZVS8N02</caseid>
+		<internalidaddress>8FE6</internalidaddress>
+		<internalidstring>AC306</internalidstring>
+		<ecuid>AC306</ecuid>
+		<year>2004</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>AWD</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+	</romid>
+</rom>

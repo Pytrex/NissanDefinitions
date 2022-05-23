@@ -1,0 +1,16 @@
+<rom base="CF43D">
+	<romid>
+		<xmlid>CM31C</xmlid>
+		<caseid>6GI5VN6</caseid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CM31C</internalidstring>
+		<ecuid>CM31C</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+	</romid>
+</rom>

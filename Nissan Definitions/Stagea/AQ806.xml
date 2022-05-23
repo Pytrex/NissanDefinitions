@@ -1,0 +1,24 @@
+<rom base="A2L">
+    <romid>
+        <xmlid>AQ806</xmlid>
+        <caseid>1MATBH6D6</caseid>
+        <internalidaddress>778A</internalidaddress>
+        <internalidstring>AQ806</internalidstring>
+        <ecuid>AQ806</ecuid>
+        <year>Unknown</year>
+        <market>Unknown</market>
+        <make>Nissan</make>
+        <model>Stagea</model>
+        <submodel>Unknown</submodel>
+        <transmission>Unknown</transmission>
+        <memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+        <flashmethod>Nisprog</flashmethod>
+        <filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>v1.0</version>
+    </romid>
+
+	<checksum type="alt" start="0x408" end="0x1FAE" sumloc="0x400" xorloc="0x404"/>
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x4CCC" xorloc="0x4CB8"/>
+</rom>

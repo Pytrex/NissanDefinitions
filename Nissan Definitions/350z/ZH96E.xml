@@ -1,0 +1,26 @@
+<rom base="CF48D">
+	<romid>
+		<xmlid>ZH96E</xmlid>
+		<caseid>6GIZ7N4</caseid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>ZH96E</internalidstring>
+		<caseid>2/4/21</caseid>
+		<ecuid>ZH96E</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>-</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v1.0</version>
+	</romid>
+
+<!--
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
+-->
+</rom>

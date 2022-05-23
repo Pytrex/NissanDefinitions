@@ -1,0 +1,16 @@
+<rom base="CF000">
+	<romid>
+		<xmlid>CF010</xmlid>
+		<caseid>5ZVSUNH</caseid>
+		<internalidaddress>A14E</internalidaddress>
+		<internalidstring>CF010</internalidstring>
+		<ecuid>CF010</ecuid>
+		<year>2005</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350z</model>
+		<submodel>Unknown</submodel>
+		<transmission>Unknown</transmission>
+		<memmodel>SH7058</memmodel>
+	</romid>
+</rom>

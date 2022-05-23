@@ -1,0 +1,75 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>6Y324</xmlid>
+		<caseid>1TKE8Z5N59</caseid>
+		<internalidaddress>6C61</internalidaddress>
+		<internalidstring>6Y324</internalidstring>
+		<ecuid>6Y324</ecuid>
+		<year>2003</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Maxima</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Fenugrec</author>
+		<version>v1.0</version>
+	</romid>
+<!--Children: 9J081, 5Y703, 6Y303, 6Y314-->
+
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5062"/>
+	<table name="MAF Table" storageaddress="0x7992"/>
+	<table name="K-Value" storageaddress="0x500C"/>
+	<table name="Engine Torque Map" storageaddress="0x68F4"/>
+	
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x52C9">
+		<table type="X Axis" storageaddress="0x6F21"/>
+		<table type="Y Axis" storageaddress="0x6F31"/>
+	</table>
+
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x52C9">
+		<table type="X Axis" storageaddress="0x6F21"/>
+		<table type="Y Axis" storageaddress="0x6F31"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x53C9">
+		<table type="X Axis" storageaddress="0x6F21"/>
+		<table type="Y Axis" storageaddress="0x6F31"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x53C9">
+		<table type="X Axis" storageaddress="0x6F21"/>
+		<table type="Y Axis" storageaddress="0x6F31"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x54C9">
+		<table type="X Axis" storageaddress="0x6F21"/>
+		<table type="Y Axis" storageaddress="0x6F31"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x54C9">
+		<table type="X Axis" storageaddress="0x6F21"/>
+		<table type="Y Axis" storageaddress="0x6F31"/>
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x5789">
+		<table type="X Axis" storageaddress="0x6E77"/>
+		<table type="Y Axis" storageaddress="0x6E1B"/>
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x5999">
+		<table type="X Axis" storageaddress="0x6CFE"/>
+		<table type="Y Axis" storageaddress="0x6D13"/>
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x5AD9">
+		<table type="X Axis" storageaddress="0x7785"/>
+		<table type="Y Axis" storageaddress="0x7795"/>
+	</table>
+	
+	<checksum type="alt" start="0x408" end="0x2046" sumloc="0x400" xorloc="0x404"/>
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x51C0" xorloc="0x51B8"/>
+</rom>

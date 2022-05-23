@@ -1,0 +1,16 @@
+<rom base="AM91A">
+	<romid>
+		<xmlid>AM90A</xmlid>
+		<caseid>2WLYFD110</caseid>
+		<internalidaddress>81DF</internalidaddress>
+		<internalidstring>AM90A</internalidstring>
+		<ecuid>AM90A</ecuid>
+		<year>2003</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>Skyline</model>
+		<submodel>Unknown</submodel>
+		<transmission>Unknown</transmission>
+		<memmodel>SH7055</memmodel>
+	</romid>
+</rom>

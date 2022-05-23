@@ -1,0 +1,24 @@
+<rom base="A2L">
+    <romid>
+        <xmlid>ZB060</xmlid>
+        <caseid>7V4YHZEB2</caseid>
+        <internalidaddress>C961</internalidaddress>
+        <internalidstring>ZB060</internalidstring>
+        <ecuid>ZB060</ecuid>
+        <year>Unknown</year>
+        <market>Unknown</market>
+        <make>Nissan</make>
+        <model>Laguna</model>
+        <submodel>Unknown</submodel>
+        <transmission>Unknown</transmission>
+        <memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+        <flashmethod>Nisprog</flashmethod>
+        <filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v1.0</version>
+    </romid>
+<!--
+	<checksum type="alt" start="0x2040C" end="0x22728" sumloc="0x20404" xorloc="0x20408"/>
+-->
+</rom>

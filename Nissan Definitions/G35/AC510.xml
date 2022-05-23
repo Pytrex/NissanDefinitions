@@ -1,0 +1,16 @@
+<rom base="CF065">
+	<romid>
+		<xmlid>AC510</xmlid>
+		<caseid>5ZVSVNJ</caseid>
+		<internalidaddress>A152</internalidaddress>
+		<internalidstring>AC510</internalidstring>
+		<ecuid>AC510</ecuid>
+		<year>2004/2005</year>
+		<market>Unknown</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Unknown</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+	</romid>
+</rom>

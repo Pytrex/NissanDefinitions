@@ -1,0 +1,24 @@
+<rom base="A2L">
+    <romid>
+        <xmlid>ZB010</xmlid>
+        <caseid>5TKESSN7</caseid>
+        <internalidaddress>8E7E</internalidaddress>
+        <internalidstring>ZB010</internalidstring>
+        <ecuid>ZB010</ecuid>
+        <year>2005</year>
+        <market>Unknown</market>
+        <make>Nissan</make>
+        <model>Altima</model>
+        <submodel>SE</submodel>
+        <transmission>AT</transmission>
+        <memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+        <flashmethod>Nisprog</flashmethod>
+        <filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v1.0</version>
+    </romid>
+
+	<checksum type="alt" start="0x1408" end="0x31D6" sumloc="0x1400" xorloc="0x1404"/>
+    <checksum type="std" start="0" end="0xFFFFF" sumloc="0x737C" xorloc="0x7374"/>
+</rom>

@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>CF44D</xmlid>
+		<caseid>6GIZ7N4</caseid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF44D</internalidstring>
+		<ecuid>CF44D</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>-</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v1.0</version>
+	</romid>
+
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C38" xorloc="0x8C30"/>
+
+</rom>

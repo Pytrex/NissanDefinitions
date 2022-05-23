@@ -1,0 +1,27 @@
+<rom base="A2L">
+    <romid>
+	<xmlid>1KA6A</xmlid>
+	<caseid>1XHK14CDG</caseid>
+      <internalidaddress>8205</internalidaddress>
+      <internalidstring>1KA6A</internalidstring>
+      <ecuid>1KA6A</ecuid>
+      <year>10?</year>
+      <market>?</market>
+      <make>Nissan</make>
+      <model>Juke</model>
+      <submodel>?</submodel>
+      <transmission>CVT?</transmission>
+      <memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+      <flashmethod>?</flashmethod>
+      <filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v1.0</version>
+    </romid>
+
+<!--
+	<checksum type="alt2" start="0" end="0xFFFFF" sumloc="0x980C" xorloc="0x9804"/>
+-->
+</rom>
+
+

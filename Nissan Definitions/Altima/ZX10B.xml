@@ -1,0 +1,25 @@
+<rom base="A2L">
+    <romid>
+        <xmlid>ZX10B</xmlid>
+        <caseid>0TRKHUCN51</caseid>
+        <internalidaddress>8205</internalidaddress>
+        <internalidstring>ZX10B</internalidstring>
+        <ecuid>ZX10B</ecuid>
+        <year>2010</year>
+        <market>Unknown</market>
+        <make>Nissan</make>
+        <model>Altima</model>
+        <submodel>Unknown</submodel>
+        <transmission>Unknown</transmission>
+        <memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+        <flashmethod>Nisprog</flashmethod>
+        <filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v1.0</version>
+    </romid>
+<!--
+	<checksum type="alt" start="0x2040C" end="0x222A4" sumloc="0x20404" xorloc="0x20408"/>
+    <checksum type="alt2" start="0x8204" end="0xFFFFF" sumloc="0x96AC" xorloc="0x96A4"/>
+-->
+</rom>

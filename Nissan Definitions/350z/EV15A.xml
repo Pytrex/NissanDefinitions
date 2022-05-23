@@ -1,0 +1,84 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>EV15A</xmlid>
+		<caseid>unknown</caseid>
+		<internalidaddress>81CB</internalidaddress>
+		<internalidstring>EV15A</internalidstring>
+		<ecuid>EV15A</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Infiniti</make>
+		<model>G35</model>
+		<submodel>Piasini</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>v1.0</version>
+	</romid>
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x9932">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x9932">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x9a32">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x9a32">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x9b32">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x9b32">
+		<table type="X Axis" storageaddress="0xB640"/>
+		<table type="Y Axis" storageaddress="0xB650"/>
+	</table>
+
+  <table  name="MBT Flame Speed Map"  storageaddress="0x9d38">
+      <table type="X Axis" storageaddress="0xb2f1"/>
+      <table type="Y Axis" storageaddress="0xb2f5"/>
+    </table>
+	
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0xa2a8">
+		<table type="X Axis" storageaddress="0xB526"/>
+		<table type="Y Axis" storageaddress="0xB4CA"/>
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x9abae">
+		<table type="X Axis" storageaddress="0xB2f9"/>
+		<table type="Y Axis" storageaddress="0xB4a2"/>
+	</table>
+	
+	<table name="Exhaust Cam Timing Map (16x16)" storageaddress="0x9A2D">
+		<table type="X Axis" storageaddress="0xC2f8"/>
+		<table type="Y Axis" storageaddress="0xC318"/>
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x9B2D">
+		<table type="X Axis" storageaddress="0xC308"/>
+		<table type="Y Axis" storageaddress="0xC328"/>
+	</table>
+
+	
+<!--
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>
+-->
+
+
+
+</rom>

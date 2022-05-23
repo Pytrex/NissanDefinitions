@@ -1,0 +1,16 @@
+<rom base="5Y724">
+	<romid>
+		<xmlid>5Y713</xmlid>
+		<caseid>1TKE8Z5N51</caseid>
+		<internalidaddress>6B7C</internalidaddress>
+		<internalidstring>5Y713</internalidstring>
+		<ecuid>5Y713</ecuid>
+		<year>2002</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Maxima</model>
+		<submodel>Base</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+	</romid>
+</rom>

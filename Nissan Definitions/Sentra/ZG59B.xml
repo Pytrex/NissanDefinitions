@@ -1,0 +1,129 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>ZG59B</xmlid>
+		<caseid>6X6E58SYMN36</caseid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>ZG59B</internalidstring>
+		<ecuid>ZG59B</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>Sentra</model>
+		<submodel>Spec V</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Fenugrec</author>
+		<version>v1.0</version>
+	</romid>
+<!-- Children: ZD89A -->
+
+<!-- Notes: I haven't personally gone through and verified addresses. ROM is apparently without NATS. -->
+
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8A31">
+		<table type="X Axis" storageaddress="0xA622"/>
+		<table type="Y Axis" storageaddress="0xA632"/>
+	</table>
+
+	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x8A31">
+		<table type="X Axis" storageaddress="0xA622"/>
+		<table type="Y Axis" storageaddress="0xA632"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x8B31">
+		<table type="X Axis" storageaddress="0xA622"/>
+		<table type="Y Axis" storageaddress="0xA632"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x8B31">
+		<table type="X Axis" storageaddress="0xA622"/>
+		<table type="Y Axis" storageaddress="0xA632"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x8C31">
+		<table type="X Axis" storageaddress="0xA622"/>
+		<table type="Y Axis" storageaddress="0xA632"/>
+	</table>
+
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x8C31">
+		<table type="X Axis" storageaddress="0xA622"/>
+		<table type="Y Axis" storageaddress="0xA632"/>
+	</table>
+
+	<table name="Fuel Compensation Map (16x16)" storageaddress="0x8ED1">
+		<table type="X Axis" storageaddress="0xA544"/>
+		<table type="Y Axis" storageaddress="0xA508"/>
+	</table>
+
+	<table name="Target AFR Map (8x8)" storageaddress="0x9021">
+		<table type="X Axis" storageaddress="0xA3BF"/>
+		<table type="Y Axis" storageaddress="0xA4F0"/>
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x91D1">
+		<table type="X Axis" storageaddress="0xB04A"/>
+		<table type="Y Axis" storageaddress="0xB01E"/>
+	</table>
+	
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x9191">
+		<table type="X Axis" storageaddress="0xB03A"/>
+		<table type="Y Axis" storageaddress="0xB026"/>
+	</table>
+
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x9A8C">
+		<table type="X Axis" storageaddress="0xB448"/>
+		<table type="Y Axis" storageaddress="0xA524"/>
+	</table>
+
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xC49E">
+		<table type="X Axis" storageaddress="0xC77C"/>
+		<table type="Y Axis" storageaddress="0xC6EC"/>
+	</table>
+
+	<table name="Misfire Diagnosis Map A" storageaddress="0x9231">
+		<table type="X Axis" storageaddress="0xA42B"/>
+		<table type="Y Axis" storageaddress="0xA44B"/>
+	</table>
+
+	<table name="Misfire Diagnosis Map B" storageaddress="0x9331">
+		<table type="X Axis" storageaddress="0xA42B"/>
+		<table type="Y Axis" storageaddress="0xA44B"/>
+	</table>
+
+	<table name="Misfire Diagnosis Basic Map" storageaddress="0x9431">
+		<table type="X Axis" storageaddress="0xA42B"/>
+		<table type="Y Axis" storageaddress="0xA44B"/>
+	</table>
+
+	<table name="Target Idle Table" storageaddress="0xABBC"/>
+	<table name="K-Value" storageaddress="0x864C"/>
+	<table name="Target AFR Table (High Detonation)" storageaddress="0xAA7E"/>
+	<table name="LTFT Map BFS Axis" storageaddress="0xAABE"/>
+	<table name="LTFT Map RPM Axis" storageaddress="0xAB80"/>
+	<table name="MAF Table" storageaddress="0xB468"/>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x86DC"/>
+	<table name="Throttle Rev Limiter" storageaddress="0x876E"/>
+	<table name="Dwell RPM Table" storageaddress="0xA786"/>
+	<table name="Dwell Battery Table" storageaddress="0xA78E"/>
+	<table name="Unburned Gas Density Table" storageaddress="0xA3AF"/>
+	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xAF96"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0xAB88"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0xABAC"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0xAC04"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0xACC8"/>
+	
+	<table name="Catalyst DTCs" storageaddress="0xC6A4"/>
+	<table name="Evap DTCs" storageaddress="0xC6AD"/>
+	<table name="Evap 2 DTCs"  storageaddress="0xC6AE"/>
+	<table name="Power Steering DTC"  storageaddress="0xC6B8"/>
+	<table name="Secondary O2 DTCs" storageaddress="0xC6D0"/>
+	<table name="Secondary O2 Knock DTCs" storageaddress="0xC6D1"/>
+	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0xC6D4"/>
+	<table name="Evap Pressure Flow DTCs" storageaddress="0xC6D6"/>
+	<table name="Evap Leaks DTCs"  storageaddress="0xC6D7"/>
+
+	<checksum type="alt" start="0x2414" end="0x4246" sumloc="0x240C" xorloc="0x2410"/>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8918" xorloc="8910"/>
+</rom>
