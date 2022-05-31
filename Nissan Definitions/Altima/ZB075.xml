@@ -5,7 +5,7 @@
 		<caseid>5TTTDN4</caseid>
 		<internalidaddress>9FFE</internalidaddress>
 		<internalidstring>ZB075</internalidstring>
-		<ecuid>ZB075</ecuid>
+		<ecuid>1ZB075</ecuid>
 		<year>2005</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -14,7 +14,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

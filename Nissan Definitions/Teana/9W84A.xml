@@ -4,7 +4,7 @@
 		<caseid>3GI13NP</caseid>
 		<internalidaddress>8621</internalidaddress>
 		<internalidstring>9W84A</internalidstring>
-		<ecuid>9W84A</ecuid>
+		<ecuid>19W84A</ecuid>
 		<year>2007</year>
 		<market>JM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>AT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -125,7 +125,7 @@
 		<table type="Y Axis" storageaddress="0xA9C8"/> 
 	</table> 
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xA734">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xA734">
 		<table type="X Axis" storageaddress="0xAA08"/>
 		<table type="Y Axis" storageaddress="0xA978"/>
 	</table>
@@ -187,27 +187,27 @@
 	<table name="ASCD Max Calc Speed" storageaddress="0x6AD0"/>
 	<table name="ASCD Min Calc Speed" storageaddress="0x6AD4"/>
 		
-	<table name="CID1100 supmask"  storageaddress="0x8874"/>
-	<table name="CID1120 supmask"  storageaddress="0x8880"/>
-	<table name="CID1140 supmask"  storageaddress="0x8878"/>
-	<table name="CID1160 supmask"  storageaddress="0x887C"/>
-	<table name="CID1200 supmask"  storageaddress="0x888C"/>
-	<table name="CID1220 supmask"  storageaddress="0x8890"/>
-	<table name="CID1300 supmask"  storageaddress="0x8894"/>
-	<table name="CID1301 supmask"  storageaddress="0x88C4"/>
-	<table name="CID1302 supmask"  storageaddress="0x88C0"/>
-	<table name="CID1303 supmask"  storageaddress="0x88C1"/>
-	<table name="CID1304 supmask"  storageaddress="0x88C2"/>
-	<table name="CID1305 supmask"  storageaddress="0x88C3"/>
-	<table name="CID1306 supmask"  storageaddress="0x8609"/>
-	<table name="CID1307 supmask"  storageaddress="0x860A"/>
-	<table name="CID1308 supmask"  storageaddress="0x860B"/>
-	<table name="CID1309 supmask"  storageaddress="0x860C"/>
-	<table name="CID130A supmask"  storageaddress="0x860D"/>
-	<table name="CID130B supmask"  storageaddress="0x860E"/>
-	<table name="CID130C supmask"  storageaddress="0x8664"/>
-	<table name="CID130F supmask"  storageaddress="0x85D0"/>
-	<table name="CID1310 supmask"  storageaddress="0x85D1"/>
+	<table name="CID1100 Supmask"  storageaddress="0x8874"/>
+	<table name="CID1120 Supmask"  storageaddress="0x8880"/>
+	<table name="CID1140 Supmask"  storageaddress="0x8878"/>
+	<table name="CID1160 Supmask"  storageaddress="0x887C"/>
+	<table name="CID1200 Supmask"  storageaddress="0x888C"/>
+	<table name="CID1220 Supmask"  storageaddress="0x8890"/>
+	<table name="CID1300 Supmask"  storageaddress="0x8894"/>
+	<table name="CID1301 Supmask"  storageaddress="0x88C4"/>
+	<table name="CID1302 Supmask"  storageaddress="0x88C0"/>
+	<table name="CID1303 Supmask"  storageaddress="0x88C1"/>
+	<table name="CID1304 Supmask"  storageaddress="0x88C2"/>
+	<table name="CID1305 Supmask"  storageaddress="0x88C3"/>
+	<table name="CID1306 Supmask"  storageaddress="0x8609"/>
+	<table name="CID1307 Supmask"  storageaddress="0x860A"/>
+	<table name="CID1308 Supmask"  storageaddress="0x860B"/>
+	<table name="CID1309 Supmask"  storageaddress="0x860C"/>
+	<table name="CID130A Supmask"  storageaddress="0x860D"/>
+	<table name="CID130B Supmask"  storageaddress="0x860E"/>
+	<table name="CID130C Supmask"  storageaddress="0x8664"/>
+	<table name="CID130F Supmask"  storageaddress="0x85D0"/>
+	<table name="CID1310 Supmask"  storageaddress="0x85D1"/>
 
 	
 

@@ -4,16 +4,16 @@
 	    <caseid>8ZHFAUN5</caseid>
       <internalidaddress>8210</internalidaddress>
       <internalidstring>ZR35B</internalidstring>
-      <ecuid>ZR35B</ecuid>
+      <ecuid>1ZR35B</ecuid>
       <year>2008</year>
-      <market>US</market>
+      <market>USDM</market>
       <make>Nissan</make>
       <model>Titan</model>
       <submodel>Flex</submodel>
       <transmission>AT</transmission>
       <memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-      <flashmethod>nisprog</flashmethod>
+      <flashmethod>Nisprog</flashmethod>
       <filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

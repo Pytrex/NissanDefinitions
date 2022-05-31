@@ -4,7 +4,7 @@
 		<caseid>unknown</caseid>
 		<internalidaddress>81CB</internalidaddress>
 		<internalidstring>EV15A</internalidstring>
-		<ecuid>EV15A</ecuid>
+		<ecuid>1EV15A</ecuid>
 		<year>2006</year>
 		<market>USDM</market>
 		<make>Infiniti</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

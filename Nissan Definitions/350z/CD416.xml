@@ -4,7 +4,7 @@
 		<caseid>2WLM1D13</caseid>
 		<internalidaddress>8023</internalidaddress>
 		<internalidstring>CD416</internalidstring>
-		<ecuid>CD416</ecuid>
+		<ecuid>1CD416</ecuid>
 		<year>2003</year>
 		<market>JDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Fenugrec</author>
 		<version>v1.0</version>
@@ -87,7 +87,7 @@
 		<table type="Y Axis" storageaddress="0x81E9"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x9F48">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x9F48">
 		<table type="X Axis" storageaddress="0xA21C"/>
 		<table type="Y Axis" storageaddress="0xA18C"/>
 	</table>

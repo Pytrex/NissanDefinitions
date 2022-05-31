@@ -4,7 +4,7 @@
 		<caseid>6GIZ7N4</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CM80A</internalidstring>
-		<ecuid>CM80A</ecuid>
+		<ecuid>1CM80A</ecuid>
 		<year>2006</year>
 		<market>JDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

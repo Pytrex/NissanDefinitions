@@ -4,7 +4,7 @@
 		<caseid>2WLGHD10</caseid>
 		<internalidaddress>8163</internalidaddress>
 		<internalidstring>CD415</internalidstring>
-		<ecuid>CD415</ecuid>
+		<ecuid>1CD415</ecuid>
 		<year>2003</year>
 		<market>JDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>AT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Fenugrec</author>
 		<version>v1.0</version>
@@ -65,12 +65,12 @@
       <table type="Y Axis" storageaddress="0x8311"/>
     </table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x6B09"> 
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x6B09"> 
 		<table type="X Axis" storageaddress="0x81B0"/>
 		<table type="Y Axis" storageaddress="0x81A8"/> 
 	</table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x6AC9"> 
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x6AC9"> 
 		<table type="X Axis" storageaddress="0x81B0"/>
 		<table type="Y Axis" storageaddress="0x81A8"/> 
 	</table>
@@ -90,7 +90,7 @@
 		<table type="Y Axis" storageaddress="0x8329"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xA088">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xA088">
 		<table type="X Axis" storageaddress="0xA35C"/>
 		<table type="Y Axis" storageaddress="0xA2CC"/>
 	</table>

@@ -5,7 +5,7 @@
 		<caseid>1ZVMAT0NH</caseid>
 		<internalidaddress>23c1</internalidaddress>
 		<internalidstring>4y916</internalidstring>
-		<ecuid>4y916</ecuid>
+		<ecuid>14y916</ecuid>
 		<year>2001</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -14,9 +14,9 @@
 		<transmission>MT</transmission>
 		<memmodel>SH705507</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Pytrex</author>
+		<author>Unknown</author>
 		<version>v1.0</version>
 	</romid>
 

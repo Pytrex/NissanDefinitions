@@ -4,7 +4,7 @@
 		<caseid>2WLJ6D11</caseid>
 		<internalidaddress>8163</internalidaddress>
 		<internalidstring>AM905</internalidstring>
-		<ecuid>AM905</ecuid>
+		<ecuid>1AM905</ecuid>
 		<year>2003</year>
 		<market>JDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Fenugrec</author>
 		<version>v1.0</version>
@@ -33,8 +33,8 @@
 	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8D59"/>
 	<table name="Fuel Cut Timing Retard Delay Table" storageaddress="0x8639"/>
 	<table name="MAF Factor" storageaddress="0x5FB4"/>
-	<table name="CID1120 supmask"  storageaddress="0x8392"/>
-    <table name="CID1200 supmask"  storageaddress="0x839E"/>
+	<table name="CID1120 Supmask"  storageaddress="0x8392"/>
+    <table name="CID1200 Supmask"  storageaddress="0x839E"/>
 	<table name="Engine Torque Map" storageaddress="0x7DF4"/>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6749">
@@ -87,7 +87,7 @@
 		<table type="Y Axis" storageaddress="0x8329"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xA088">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xA088">
 		<table type="X Axis" storageaddress="0xA35C"/>
 		<table type="Y Axis" storageaddress="0xA2CC"/>
 	</table>

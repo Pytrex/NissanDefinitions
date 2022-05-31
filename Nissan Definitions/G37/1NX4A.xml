@@ -4,7 +4,7 @@
 		<caseid>?</caseid>
 		<internalidaddress>8205</internalidaddress>
 		<internalidstring>1NX4A</internalidstring>
-		<ecuid>1NX4A</ecuid>
+		<ecuid>11NX4A</ecuid>
 		<year>2011</year>
 		<market>USDM</market>
 		<make>Infiniti</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7059</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1536kb</filesize>
 		<author>Unknown</author>
 		<version>v1.0</version>
@@ -117,7 +117,7 @@
 		<table type="Y Axis" storageaddress="0xb4e6"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xDB62">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xDB62">
 		<table type="X Axis" storageaddress="0xde38"/>
 		<table type="Y Axis" storageaddress="0xdda8"/>
 	</table>
@@ -145,39 +145,26 @@
 	</table>
 
 	<table name="Target Idle Table" storageaddress="0xbd02"/>
-
 	<table name="Radiator Fan High Coolant" storageaddress="0x8287"/>
-
 	<table name="Speed Limiter" storageaddress="0x8A6A"/>
-
 	<table name="Bosch Fuel Cut Table" storageaddress="0xBCBE"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0xBCF2"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0xBD6A"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0xBE6E"/>
-
 	<table name="K-Value" storageaddress="0x8906"/>
-
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8ACC"/>
-
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0xbea2"/>
-
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x8003"/>
-
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x846C"/>
-
 	<table name="Fuel Injector Latency Adder" storageaddress="0x7DA3"/>
-
 	<table name="Crank Fueling TP Value Table" storageaddress="0xd1a2"/>
-
 	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4C"/>
-
 	<table name="Long Term Fuel Trim Limits" storageaddress="0x82C5"/>
 	<table name="Idle BFS Limits" storageaddress="0x8B10"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0xcb2c"/>
 	<table name="MAF Factor" storageaddress="0x8226"/>
-
 	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xC26C"/>
-
+	
 	<table name="Catalyst DTCs" storageaddress="0xdd68"/>
 
 	<!--<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C54" xorloc="0x8C4C"/>-->

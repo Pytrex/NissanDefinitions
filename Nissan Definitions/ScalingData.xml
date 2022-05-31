@@ -1,229 +1,96 @@
 <roms>
+<!--Distance-->
 
-	<scalingbase name="- (x*0.00001)" units="|" expression="x*0.00001" to_byte="x/0.00001" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="j/mole (x*40)" units="j/mole" expression="x*40" to_byte="x/40" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="- (x*0.1)" units="-" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Voltage sqrt(x*1280000)" units="V" expression="sqrt(x*1280000)" to_byte="x^2/1280000" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="Meters (x*0.001)" units="m" expression="x*0.001" to_byte="x/0.001" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="g/m^3 (x)" units="g/m3?" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="A (x*0.00000762939)" units="A" expression="x*0.00000762939" to_byte="x/0.00000762939" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="L/min/RPM (x*0.005)" units="L/min/rp" expression="x*0.005" to_byte="x/0.005" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Temp F (x/1.609)" units="Fahrenheit" expression="x/1.609" to_byte="x*1.609" format="0.00" fineincrement="1" coarseincrement="2" system="Standard"/>
-	
-	<scalingbase name="wvPAMB (x*0.078125)" units="wvPAMB" expression="x*0.078125" to_byte="x/0.078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="g/m^3 (x*125)" units="Unburned Gas Density (g/m^3)" expression="x*125" to_byte="x/125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="cc/ms (x*0.000125)" units="cc/ms" expression="x*0.000125" to_byte="x/0.000125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Laminar Flame Speed (cc/ms)" units="Laminar Flame Speed (cc/ms)" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Laminar Flame Speed (m^3/s)" units="Laminar Flame Speed (m^3/s)" expression="x*0.0000625" to_byte="x/0.0000625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="fes (x*32)" units="fes" expression="x*32" to_byte="x/32" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="mv^2se (x*128)" units="(mV^2)se" expression="x*128" to_byte="x/128" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="1/V^2/3 (x*0.0015625)" units="1/V^(2/3)" expression="x*0.0015625" to_byte="x/0.0015625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="fes (x*100)" units="fes" expression="x*100" to_byte="x/100" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	
-
-	
-<!--Degrees-->
-	<scalingbase name="Degrees/50RPM (x)" units="Degrees/50RPM" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="3" system="Universal"/>
-	
-	<scalingbase name="Degrees(V/RPM) (x*0.03125)" units="Degrees(V/RPM)" expression="x*0.03125" to_byte="x/0.03125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees(V/RPM) (x*0.0117188)" units="Deg(V/RPM)" expression="x*0.0117188" to_byte="x/0.0117188" format="0.00" fineincrement="0.3125" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees (x*0.3575)" units="Degrees" expression="x*0.3575" to_byte="x/0.3575" format="0.00" fineincrement="0.3575" coarseincrement="2" system="Universal"/> 
-	
-	<scalingbase name="Degrees (x*0.35-44.8)" units="Degrees" expression="(x*0.35)-44.8" to_byte="(x+44.8)/0.35" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees (x-128)" units="Degrees" expression="x-128" to_byte="x+128" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees (x*0.5)" units="Degrees" expression="x*0.5" to_byte="x/0.5" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Degrees (x)" units="Degrees" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Degrees Adjustment (x-64)" units="Timing Adjustment (°)" expression="x-64" to_byte="x+64" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Degrees (x-64)" units="Degrees" expression="x-64" to_byte="x+64" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees (x-128)*0.5" units="Degrees" expression="(x-128)*0.5" to_byte="(x*2)+128" format="0.0" fineincrement="0.5" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Degrees (x*2)" units="Degrees" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees (x*4)" units="Degrees" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Degrees (x*0.11)" units="Degrees" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="10" coarseincrement="100" system="Universal"/>
-
-	<scalingbase name="Degrees (x*0.35)" units="Degrees" expression="x*0.35" to_byte="x/0.35" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Degrees (x*0.44)" units="Degrees" expression="x*0.44" to_byte="x/0.44" format="0.00" fineincrement="1" coarseincrement="5" system="Universal"/>
-
-	<scalingbase name="Degrees (x*0.00390625)" units="Degrees" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="10" system="Universal"/>
-
-	<scalingbase name="Degrees (x*0.0275)" units="Degrees" expression="x*0.0275" to_byte="x/0.0275" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees/% (x*0.0625)" units="Deg/%" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees/10ms (x*0.125)" units="Deg/10ms" expression="x*0.125" to_byte="x/0.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees/10ms (x*0.11)" units="Degrees/10ms" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Degrees/10ms (x*0.00390625)" units="Degrees/10ms" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees/150ms (x*0.35)" units="Degrees/150ms" expression="x*0.35" to_byte="x/0.35" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees (x*0.0275)" units="Degrees" expression="x*0.0275" to_byte="x/0.0275" format="0.00" fineincrement="1" coarseincrement="10" system="Universal"/>
+	<scalingbase name="Inches (x*0.000240296)" units="Inches" expression="x*0.000240296" to_byte="x/0.000240296" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
 	
 	
-<!--Percentage-->
-	<scalingbase name="QH0 Flow Quantity (x*0.001525879)" units="QH0 Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/> 
 	
-	<scalingbase name="Flow Potential (x*0.001525879)" units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.0.001525879" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/> 
 	
-	<scalingbase name="Percentage (x*0.1953125)" units="Compensation (%)" expression="x*0.1953125" to_byte="x/0.1953125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Percentage (x*2-384)" units="Compensation (%)" expression="(x*2)-384" to_byte="(x+384)/2" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Percentage (x*2.44141)" units="Compensation (%)" expression="x*2.44141" to_byte="x/2.44141" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.0976563)" units="Compensation (%)" expression="x*0.0976563" to_byte="x/0.0976563" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.00610352)" units="Compensation (%)" expression="x*0.00610352" to_byte="x/0.00610352" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.00152879)" units="Compensation (%)" expression="x*0.00152879" to_byte="x/0.00152879" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.001953125)" units="Compensation (%)" expression="x*0.001953125" to_byte="x/0.001953125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.0390625)" units="Compensation (%)" expression="x*0.0390625" to_byte="x/0.0390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.5)" units="Compensation (%)" expression="x*0.5" to_byte="x/0.5" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.0625)" units="Compensation (%)" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*6.25)" units="Compensation (%)" expression="x*6.25" to_byte="x/6.25" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x)" units="Compensation (%)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.1)" units="Compensation (%)" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.01)" units="Compensation (%)" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Axis Percentage (x*0.78125)" units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.78125)" units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625" system="Universal"/>
-
-	<scalingbase name="Inverse Percentage (x*0.390625)" units="Compensation (%)" expression="100-(x*0.390625)" to_byte="(100-x)/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
-
-	<scalingbase name="Inverse Percentage (x*0.00152588)" units="Compensation (%)" expression="100-(x*0.00152588)" to_byte="-((x-100)/0.00152588)" format="0.00" fineincrement="0.5" coarseincrement="5" system="Universal"/>
-
-	<scalingbase name="Axis Percentage (x*0.390625)" units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
 	
-	<scalingbase name="Percentage (x*0.390625)" units="Compensation (%)" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
+<!--Gear and Gear Ratio-->
+	<scalingbase name="Gear (x+1)" units="Next Gear" expression="x+1" to_byte="x-1" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+ 
+	<scalingbase name="Gear (x)" units="Gear" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="Axis Percentage (x*0.00152588)" units="%" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="0.5" coarseincrement="5" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.00152588)" units="Compensation (%)" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="0.5" coarseincrement="5" system="Universal"/>
+	<scalingbase name="Gear Ratio (x*0.000976563)" units=":1" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Percentage (x*0.0030518)" units="Compensation (%)" expression="x*0.0030518" to_byte="x/0.0030518" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*1.5625)" units="Compensation (%)" expression="x*1.5625" to_byte="x/1.5625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*10)" units="Compensation (%)" expression="x*10" to_byte="x/10" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.3125)" units="Compensation (%)" expression="x*0.3125" to_byte="x/0.3125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.024414063)" units="Compensation (%)" expression="x*0.024414063" to_byte="x/0.024414063" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Percentage (x*1.25)" units="Compensation (%)" expression="x*1.25" to_byte="x/1.25" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.125)" units="Compensation (%)" expression="x*0.125" to_byte="x/0.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.25)" units="Compensation (%)" expression="x*0.25" to_byte="x/0.25" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*3.125)" units="Compensation (%)" expression="x*3.125" to_byte="x/3.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Percentage (x*0.00390625)" units="Compensation (%)" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="Torque Ratio (x*0.000976563)" units="Torque Ratio (:1)" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/> 
-
-	<scalingbase name="Percentage (x*0.392156863)" units="Compensation (%)" expression="x*0.392156863" to_byte="x/0.392156863" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*1.953125)" units="Compensation (%)" expression="x*1.953125" to_byte="x/1.953125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Percentage (x*2)" units="Compensation (%)" expression="x*2" to_byte="x/2" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="Percentage (x*0.976563)" units="Compensation (%)" expression="x*0.976563" to_byte="x/0.976563" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+<!--Current-->
+	<scalingbase name="Ampere (x*0.00000762939)" units="A" expression="x*0.00000762939" to_byte="x/0.00000762939" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Percentage (x*4.88281)" units="Compensation (%)" expression="x*4.88281" to_byte="x/4.88281" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-
-
-<!--RPM-->
-	<scalingbase name="RPM/100ms (x*0.78125)" units="rpm/100ms" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="1/RPM (x*0.000004882)" units="1/RPM" expression="x*0.000004882" to_byte="x/0.000004882" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="RPM/kmh (x*0.78125)" units="RPM/kmh" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="RPM^2/3 (x*2)" units="Engine Speed (RPM)^(2/3)" expression="x*2" to_byte="x/2" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="Axis RPM (x*25)" units="RPM" expression="x*25" to_byte="x/25" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+<!--Density-->
+	<scalingbase category="Metric" name="g/m^3 (x)" units="g/m^3" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 	
-	<scalingbase name="RPM (x*25)" units="Engine Speed (RPM)" expression="x*25" to_byte="x/25" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="RPM (x*800)" units="RPM" expression="x*800" to_byte="x/800" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase category="Metric" name="g/m^3 (x*125)" units="g/m^3" expression="x*125" to_byte="x/125" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 	
-    <scalingbase name="RPM (x*50)" units="Engine Speed (RPM)" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
 	
-    <scalingbase name="Axis RPM (x*3.125)" units="RPM" expression="x*3.125" to_byte="x/3.125" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
-
-    <scalingbase name="RPM (x*3.125)" units="Engine Speed (RPM)" expression="x*3.125" to_byte="x/3.125" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
-
-	<scalingbase name="Axis RPM (x*50)" units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
-
-	<scalingbase name="RPM (x*12.5)" units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="RPM (x*10)" units="Engine Speed (RPM)" expression="x*10" to_byte="x/10" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="Target Idle (x*12.5)" units="Target Idle Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="100" system="Universal"/>
-
-	<scalingbase name="RPM (x*0.00390625)" units="Engine Speed (RPM)" expression="x*0.00390625" to_byte="x/0.00390625" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="RPM/50ms (x)" units="RPM/50ms" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="RPM/s (x*12.5)" units="RPM/s" expression="x*12.5" to_byte="x/12.5" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="RPM (x*1.5625)" units="Engine Speed (RPM)" expression="x*1.5625" to_byte="x/1.5625" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="RPM (x*0.78125)" units="Engine Speed (RPM)" expression="x*0.78125" to_byte="x/0.78125" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
-
-	<scalingbase name="RPM (x*0.3125)" units="(RPM)" expression="x*0.3125" to_byte="x/0.3125" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="RPM (x*0.1953125)" units="Engine Speed (RPM)" expression="x*0.1953125" to_byte="x/0.1953125" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="RPM (x)" units="Engine Speed (RPM)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Input Shaft Speed (x*4)" units="Input Shaft Speed (RPM)" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
+<!--Energy-->
+	<scalingbase category="Metric" name="j/mole (x*40)" units="J/mol" expression="x*40" to_byte="x/40" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 
 
 
 
 
 
+<!--Force-->
+	<scalingbase name="N/G (x)" units="N/G" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Newtons (x-32768)" units="Newtons" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" system="Universal"/>
+
+	<scalingbase name="Newtons (x)" units="N" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="N/10ms (x)" units="N/10ms" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="N/100ms (x)" units="N/100ms" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="N/s (x*0.078125)" units="N/s" expression="x*0.078125" to_byte="x/0.078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="N/kmh (x*0.0355)" units="N/kmh" expression="x*0.035511364" to_byte="x/0.035511364" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="N/Deg (x*0.0355)" units="N/deg" expression="x*0.035511364" to_byte="x/0.035511364" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>	
+	
+	<scalingbase name="Nm/100ms (x*0.1)" units="Nm/100ms" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Nm/mph (x*0.6215)" units="Nm/mph" expression="x*0.62150404" to_byte="x/0.62150404" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	
+	
+	
+	
+
+
+<!--Mass-->
+	<scalingbase name="mg (x*2.56)" units="mg" expression="x*2.56" to_byte="x/2.56" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="mg (x*0.01)" units="mg" expression="x*0.01" to_byte="x/0.01" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="mg (x*256-83886.08)" units="mg" expression="(x*2.56)-83886.08" to_byte="(x/2.56)+32768" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="g (x*0.00390625)" units="g" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="g (x*4)" units="g" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+
+
+<!--cc/min-->
+	<Scalingbase category="Metric" name="cc/min (x*0.5)" units="cc/min" expression="x*0.5" to_byte="x/0.5" format="0" fineincrement="2" coarseincrement="10" system="Metric"/>
 
 
 
@@ -231,25 +98,29 @@
 
 
 
+<!--Pulse Width-->
+	<scalingbase name="Axis BFS (x*0.000488)" units="ms" expression="x*0.000488281" to_byte="x/0.000488281" format="0.00" fineincrement="0.1" coarseincrement="1" system="Universal"/>
+	
+	<scalingbase name="BFS (x*0.000488)" units="Base Fuel Schedule (ms)" expression="x*0.000488281" to_byte="x/0.000488281" format="0.00" fineincrement="0.1" coarseincrement="1" system="Universal"/>
 
+	<scalingbase name="BFS (x*0.00390625)" units="ms" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
+	<scalingbase name="Axis BFS (x*0.125)" units="ms" expression="x*0.125" to_byte="x/0.125" format="0.00" system="Universal"/>
+	
+	<scalingbase name="BFS (x*0.125)" units="Injector Pulsewidth (ms)" expression="x*0.125" to_byte="x/0.125" format="0.00" system="Universal"/>
 
+	<scalingbase name="BFS (x*64)" units="ms" expression="x*64" to_byte="x/64" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 
+	<scalingbase name="BFS (x*0.0005)" units="ms" expression="x*0.0005" to_byte="x/0.0005" format="0.00" fineincrement="0.01" coarseincrement="0.10" system="Universal"/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<scalingbase name="BFS (x*16)" units="ms" expression="x*16" to_byte="x/16" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="BFS/100ms (x*0.125)" units="BFS/100ms" expression="x*0.125" to_byte="x/0.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	
+	
+	
+	
 
 
 
@@ -271,8 +142,8 @@
 	
 	
 	
+	
 <!--Torque-->
-
 	<scalingbase category="Metric" name="Metric Engine Torque (x*0.1)" units="Nm" expression="x*0.1" to_byte="x/0.1" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 
 	<scalingbase category="Standard" name="Standard Engine Torque (x*0.073756)" units="Lb-ft" expression="x*0.073756" to_byte="x/0.073756" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
@@ -294,6 +165,7 @@
 
 
 
+
 <!--Area-->
 	<scalingbase category="Metric" name="m^2 (x*0.001)" units="m^2" expression="x*0.001" to_byte="x/0.001" format="0.0000" fineincrement="1" coarseincrement="2" system="Metric"/>
 	
@@ -305,15 +177,160 @@
 	
 	<scalingbase category="Metric" name="Opening Area (x*0.0008)" units="Accelerator Pedal Opening Area (cm^2)" expression="x*0.0008" to_byte="x/0.0008" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/> 
 	
------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 <!--Mass Airflow-->
 	<scalingbase category="Standard" name="Standard Mass Airflow (x*0.0005425423828)" units="Lb/min" expression="x*0.0005425423828" to_byte="x/0.0005425423828" format="0.00" fineincrement="1" coarseincrement="20" system="Standard"/>
 		
 	<scalingbase category="Metric" name="Metric Mass Airflow (x*0.0041015625)" units="g/s" expression="x*0.0041015625" to_byte="x/0.0041015625" format="0.00" fineincrement="1" coarseincrement="10" system="Metric"/>
 
--------------------------------------------------------------------------------------------------------------------------
+
 	
+
+	
+	
+	
+	
+<!--Temperature-->
+	<scalingbase name="Z/100ms (x*0.00390625)" units="Z/100ms" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Z (x-30)" units="Z" expression="x-30" to_byte="x+30" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<Scalingbase category="Metric" name="Metric Temperature (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+
+	<Scalingbase category="Standard" name="Standard Temperature (x*1.8)" units="Temperature (°F)" expression="(x*1.8)+32" to_byte="(x-32)/1.8" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+
+	<Scalingbase category="Metric" name="Metric Temperature (x-50)" units="Temperature (°C)" expression="x-50" to_byte="x+50" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+
+	<Scalingbase category="Standard" name="Standard Temperature (x-50)" units="Temperature (°F)" expression="(x*1.8)-58" to_byte="(x+58)/1.8" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+
+	<Scalingbase category="Standard" name="Axis Standard Temperature (x-50)" units="°F" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+
+	<Scalingbase category="Metric" name="Metric Coolant Temperature (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+
+	<Scalingbase category="Metric" name="Metric Temperature (x*0.625-40)" units="Temperature (°C)" expression="(x*0.625)-40" to_byte="(x+40)/0.625" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	
+	<Scalingbase category="Metric" name="Z (x*4)" units="Temperature (°C)" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+
+	<Scalingbase category="Metric" name="Z (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+
+	<Scalingbase category="Standard" name="Standard Temperature (x*7.2)" units="Temperature (°F)" expression="(x*7.2)+32" to_byte="(x-32)/7.2" format="0" fineincrement="1" coarseincrement="5" system="Standard"/>
+
+	<scalingbase name="Z (x*1.25-200)" units="Z" expression="(x*1.25)-200" to_byte="(x+200)/1.25" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+
+
+
+
+
+
+<!--Vehicle Speed-->
+	<scalingbase name="kmh/RPM (x*0.0000152588)" units="Kmh/RPM" expression="x*0.0000152588" to_byte="x/0.0000152588" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<Scalingbase category="Standard" name="Standard Speed (x*0.6215040398)" units="Vehicle Speed (MPH)" expression="x*0.6215040398" to_byte="x/0.6215040398" format="0" fineincrement="1" coarseincrement="2" system="Standard"/> 
+
+	<Scalingbase category="Standard" name="Standard Speed (x*0.000000533)" units="Vehicle Speed (MPH)" expression="x*0.000000533" to_byte="x/0.000000533" format="0" fineincrement="1" coarseincrement="5" system="Standard"/>
+	
+	<Scalingbase category="Standard" name="Axis Standard Speed (x*0.0621371)" units="MPH" expression="x*0.0621371" to_byte="x/0.0621371" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+	
+	<Scalingbase category="Standard" name="Standard Speed (x*0.0621371)" units="Vehicle Speed (MPH)" expression="x*0.0621371" to_byte="x/0.0621371" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+
+	<Scalingbase category="Standard" name="Axis Standard Speed (x*1.24300808)" units="Vehicle Speed (MPH)" expression="x*1.24300808" to_byte="x/1.24300808" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+	
+	<Scalingbase category="Standard" name="Standard Speed (x*1.24300808)" units="Vehicle Speed (MPH)" expression="x*1.24300808" to_byte="x/1.24300808" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+
+	<Scalingbase category="Standard" name="Axis Standard Speed (x*0.062150404)" units="Vehicle Speed (MPH)" expression="x*0.062150404" to_byte="x/0.062150404" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+	
+	<Scalingbase category="Standard" name="Standard Speed (x*0.062150404)" units="Vehicle Speed (MPH)" expression="x*0.062150404" to_byte="x/0.062150404" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+
+	<Scalingbase category="Metric" name="Metric Speed (x*2)" units="Km/h" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	
+	
+	
+	
+	
+	
+	
+<!--Pressure-->
+	<Scalingbase category="Metric" name="mPa (x*0.003)" units="mPa" expression="x*0.003" to_byte="x/0.003" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/>
+	
+	<Scalingbase category="Standard" name="PSI (x*0.29)" units="PSI" expression="x*0.29006526468" to_byte="x/0.29006526468" format="0.00" fineincrement="1" coarseincrement="2" system="Standard"/>
+
+	<Scalingbase category="Metric" name="kPa (x*2)" units="kPa" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+
+	<Scalingbase category="Standard" name="PSI (x*0.000283)" units="PSI" expression="x*0.0002832775566999" to_byte="x/0.0002832775566999" format="0.00" fineincrement="1" coarseincrement="2" system="Standard"/>
+	
+	<Scalingbase category="Metric" name="kPa (x*0.00195)" units="kPa" expression="x*0.00195313" to_byte="x/0.00195313" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/>
+		
+	<Scalingbase category="Metric" name="MPa (x*0.02)" units="MPa" expression="x*0.02" to_byte="x/0.02" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/>
+	
+	
+	
+	
+	
+
+
+<!--Conversions-->
+	<Scalingbase name="Degrees/V (x*0.1)" units="Degrees/V" expression="x*0.1" to_byte="x/0.1" format="0.00 Degrees/V" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<Scalingbase category="Metric" name="ms/kg (x)" units="ms/kg" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	
+	<Scalingbase category="Metric" name="mm^3/ms (x*0.01)" units="mm^3/ms" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/>
+
+	<Scalingbase category="Standard" name="PSI/V (x*0.0283728)" units="PSI/V" expression="x*0.0283278" to_byte="x/0.0283278" format="0.000" fineincrement="0.2" coarseincrement="1" system="Standard"/>
+	
+	<Scalingbase category="Metric" name="kPa/V (x*0.195313)" units="kPa/V" expression="x*0.195313" to_byte="x/0.195313" format="0.000" fineincrement="1" coarseincrement="10" system="Metric"/>
+
+	<Scalingbase category="Metric" name="cm^2/%" units="cm^2/%" expression="x*0.000003125" to_byte="x/0.000003125" format="0.00000" fineincrement="1" coarseincrement="2" system="Metric"/>
+	
+	<Scalingbase category="Metric" name="Kg/hr (x*0.0001)" units="Kg/hr" expression="x*0.0001" to_byte="x/0.0001" format="0.0000" fineincrement="0.0001" coarseincrement="0.001" system="Metric"/>
+
+	<scalingbase name="ms/V (50%)" units="ms/V" expression="x*0.000976563" to_byte="x/0.000976563" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="ms/V (100%)" units="ms/V" expression="x*0.001953126" to_byte="x/0.001953126" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="RPM/ms (x*0.006)" units="RPM/ms" expression="x*0.00610352" to_byte="x/0.00610352" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+
+
+
+
+
+
+<!--Voltage-->
+	<scalingbase name="Voltage sqrt(x*1280000)" units="V" expression="sqrt(x*1280000)" to_byte="x^2/1280000" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="mV (x*5)" units="mV" expression="x*5" to_byte="x/5" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="mV (x*0.78125)" units="mV" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="mV (x*0.078125)" units="mV" expression="x*0.078125" to_byte="x/0.078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Voltage (x)" units="(V)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Voltage (x*0.08)" units="(V)" expression="x*0.08" to_byte="x/0.08" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Voltage (x*0.02)" units="(V)" expression="x*0.02" to_byte="x/0.02" format="0.00" fineincrement="0.5" coarseincrement="4" system="Universal"/>
+
+	<scalingbase name="Voltage (x*0.0025)" units="V" expression="x*0.0025" to_byte="x/0.0025" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Voltage (x*0.000078125)" units="V" expression="x*0.000078125" to_byte="x/0.000078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Voltage (x*0.01)" units="V" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Voltage (x*0.005)" units="V" expression="x*0.005" to_byte="x/0.005" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="mV/ms (x*0.009765625)" units="mV/ms" expression="x*0.009765625" to_byte="x/0.009765625" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="mV (x*0.01953125)" units="mV" expression="x*0.01953125" to_byte="x/0.01953125" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+
+
+
+
+
 <!--Volume-->
 	<Scalingbase category="Standard" name="Gal/min (x*2.113376)" units="Gal/min" expression="x*2.113376" to_byte="x/2.113376" format="0.00" fineincrement="1" coarseincrement="2" system="Standard"/> 
 	
@@ -365,140 +382,255 @@
 	
 	
 	
-<!--Temperature-->
 
-	<Scalingbase category="Metric" name="Metric Temperature (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 
-	<Scalingbase category="Standard" name="Standard Temperature (x*1.8)" units="Temperature (°F)" expression="(x*1.8)+32" to_byte="(x-32)/1.8" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
-
-	<Scalingbase category="Metric" name="Metric Temperature (x-50)" units="Temperature (°C)" expression="x-50" to_byte="x+50" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
-
-	<Scalingbase category="Standard" name="Standard Temperature (x-50)" units="Temperature (°F)" expression="(x*1.8)-58" to_byte="(x+58)/1.8" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
-
-	<Scalingbase category="Standard" name="Axis Standard Temperature (x-50)" units="°F" expression="(x-50)*1.8+32" to_byte="(x-32)/1.8+50" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
-
-	<Scalingbase category="Metric" name="Metric Coolant Temperature (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
-
-	<Scalingbase category="Metric" name="Metric Temperature (x*0.625-40)" units="Temperature (°C)" expression="(x*0.625)-40" to_byte="(x+40)/0.625" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+<!--Degrees-->
+	<scalingbase name="/0.11deg (x*0.390625)" units="/0.11deg" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<Scalingbase category="Metric" name="Z (x*4)" units="Temperature (°C)" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<scalingbase name="Degrees/40ms (x*0.11)" units="Deg/40ms" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<Scalingbase category="Metric" name="Z (x)" units="Temperature (°C)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<scalingbase name="Degrees/REF (x)" units="Deg/REF" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<Scalingbase category="Standard" name="Standard Temperature (x*7.2)" units="Temperature (°F)" expression="(x*7.2)+32" to_byte="(x-32)/7.2" format="0" fineincrement="1" coarseincrement="5" system="Standard"/>
-
-
-
-<!--Vehicle Speed-->
-	<Scalingbase category="Standard" name="Standard Speed (x*0.6215040398)" units="Vehicle Speed (MPH)" expression="x*0.6215040398" to_byte="x/0.6215040398" format="0" fineincrement="1" coarseincrement="2" system="Standard"/> 
-
-	<Scalingbase category="Standard" name="Standard Speed (x*0.000000533)" units="Vehicle Speed (MPH)" expression="x*0.000000533" to_byte="x/0.000000533" format="0" fineincrement="1" coarseincrement="5" system="Standard"/>
-
-	<Scalingbase category="Standard" name="Standard Speed (x*0.0621371)" units="Vehicle Speed (MPH)" expression="x*0.0621371" to_byte="x/0.0621371" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
-
-	<Scalingbase category="Standard" name="Axis Standard Speed (x*1.24300808)" units="Vehicle Speed (MPH)" expression="x*1.24300808" to_byte="x/1.24300808" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
+	<scalingbase name="Degrees/10Z (x*0.015625)" units="Deg/10Z" expression="x*0.015625" to_byte="x/0.015625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<Scalingbase category="Standard" name="Standard Speed (x*1.24300808)" units="Vehicle Speed (MPH)" expression="x*1.24300808" to_byte="x/1.24300808" format="0" fineincrement="1" coarseincrement="2" system="Standard"/>
-
-	<Scalingbase category="Standard" name="Axis Standard Speed (x*0.062150404)" units="Vehicle Speed (MPH)" expression="x*0.062150404" to_byte="x/0.062150404" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
+	<scalingbase name="Degrees/50RPM (x)" units="Degrees/50RPM" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="3" system="Universal"/>
 	
-	<Scalingbase category="Standard" name="Standard Speed (x*0.062150404)" units="Vehicle Speed (MPH)" expression="x*0.062150404" to_byte="x/0.062150404" format="0" fineincrement="1" coarseincrement="10" system="Standard"/>
-
-	<Scalingbase category="Metric" name="Metric Speed (x*2)" units="Km/h" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<scalingbase name="Degrees(V/RPM) (x*0.03125)" units="Degrees(V/RPM)" expression="x*0.03125" to_byte="x/0.03125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-
---------------------------------------------------------------------------------------------------------------------------
+	<scalingbase name="Degrees(V/RPM) (x*0.0117188)" units="Deg(V/RPM)" expression="x*0.0117188" to_byte="x/0.0117188" format="0.00" fineincrement="0.3125" coarseincrement="2" system="Universal"/>
 	
-<!--Pressure-->
-	<Scalingbase category="Metric" name="mPa (x*0.003)" units="mPa" expression="x*0.003" to_byte="x/0.003" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<scalingbase name="Degrees (x*0.3575)" units="Degrees" expression="x*0.3575" to_byte="x/0.3575" format="0.00" fineincrement="0.3575" coarseincrement="2" system="Universal"/> 
 	
-	<Scalingbase category="Standard" name="PSI (x*0.29)" units="PSI" expression="x*0.29006526468" to_byte="x/0.29006526468" format="0.00" fineincrement="1" coarseincrement="2" system="Standard"/>
-
-	<Scalingbase category="Metric" name="kPa (x*2)" units="kPa" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
-
-	<Scalingbase category="Standard" name="PSI (x*0.000283)" units="PSI" expression="x*0.0002832775566999" to_byte="x/0.0002832775566999" format="0.00" fineincrement="1" coarseincrement="2" system="Standard"/>
+	<scalingbase name="Degrees (x*0.35-44.8)" units="Degrees" expression="(x*0.35)-44.8" to_byte="(x+44.8)/0.35" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<Scalingbase category="Metric" name="kPa (x*0.00195)" units="kPa" expression="x*0.00195313" to_byte="x/0.00195313" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/>
-		
-	<Scalingbase category="Metric" name="MPa (x*0.02)" units="MPa" expression="x*0.02" to_byte="x/0.02" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<scalingbase name="Degrees (x-128)" units="Degrees" expression="x-128" to_byte="x+128" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Degrees (x*0.5)" units="Degrees" expression="x*0.5" to_byte="x/0.5" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Degrees (x)" units="Degrees" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Degrees Adjustment (x-64)" units="Timing Adjustment (°)" expression="x-64" to_byte="x+64" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Degrees (x-64)" units="Degrees" expression="x-64" to_byte="x+64" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Degrees (x-128)*0.5" units="Degrees" expression="(x-128)*0.5" to_byte="(x*2)+128" format="0.0" fineincrement="0.5" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Degrees (x*2)" units="Degrees" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Degrees (x*4)" units="Degrees" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Degrees (x*0.11)" units="Degrees" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="10" coarseincrement="100" system="Universal"/>
+
+	<scalingbase name="Degrees (x*0.35)" units="Degrees" expression="x*0.35" to_byte="x/0.35" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Degrees (x*0.44)" units="Degrees" expression="x*0.44" to_byte="x/0.44" format="0.00" fineincrement="1" coarseincrement="5" system="Universal"/>
+
+	<scalingbase name="Degrees (x*0.00390625)" units="Degrees" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="10" system="Universal"/>
+
+	<scalingbase name="Degrees (x*0.0275)" units="Degrees" expression="x*0.0275" to_byte="x/0.0275" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Degrees/% (x*0.0625)" units="Deg/%" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Degrees/10ms (x*0.125)" units="Deg/10ms" expression="x*0.125" to_byte="x/0.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Degrees/10ms (x*0.11)" units="Degrees/10ms" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Degrees/10ms (x*0.00390625)" units="Degrees/10ms" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Degrees/150ms (x*0.35)" units="Degrees/150ms" expression="x*0.35" to_byte="x/0.35" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Degrees (x*0.0275)" units="Degrees" expression="x*0.0275" to_byte="x/0.0275" format="0.00" fineincrement="1" coarseincrement="10" system="Universal"/>
 	
 	
---------------------------------------------------------------------------------------------------------------------------
-
-<!--Conversions-->
-	<Scalingbase name="Degrees/V (x*0.1)" units="Degrees/V" expression="x*0.1" to_byte="x/0.1" format="0.00 Degrees/V" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<Scalingbase category="Metric" name="ms/kg (x)" units="ms/kg" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Metric"/>
 	
-	<Scalingbase category="Metric" name="mm^3/ms (x*0.01)" units="mm^3/ms" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Metric"/>
+<!--Percentage-->
+	<scalingbase name="%/100ms (x*0.1)" units="%/100ms" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<Scalingbase category="Standard" name="PSI/V (x*0.0283728)" units="PSI/V" expression="x*0.0283278" to_byte="x/0.0283278" format="0.000" fineincrement="0.2" coarseincrement="1" system="Standard"/>
+	<scalingbase name="%/100ms (x*0.0390625)" units="%/100ms" expression="x*0.0390625" to_byte="x/0.0390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="%/s (x*0.5)" units="%/s" expression="x*0.5" to_byte="x/0.5" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.05)" units="Compensation (%)" expression="x*0.05" to_byte="x/0.05" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="%/s (x*0.05)" units="%/s" expression="x*0.05" to_byte="x/0.05" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<Scalingbase category="Metric" name="kPa/V (x*0.195313)" units="kPa/V" expression="x*0.195313" to_byte="x/0.195313" format="0.000" fineincrement="1" coarseincrement="10" system="Metric"/>
-
-	<Scalingbase category="Metric" name="cm^2/%" units="cm^2/%" expression="x*0.000003125" to_byte="x/0.000003125" format="0.00000" fineincrement="1" coarseincrement="2" system="Metric"/>
+	<scalingbase name="%/s (x*0.01)" units="%/s" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<Scalingbase category="Metric" name="Kg/hr (x*0.0001)" units="Kg/hr" expression="x*0.0001" to_byte="x/0.0001" format="0.0000" fineincrement="0.0001" coarseincrement="0.001" system="Metric"/>
+	<scalingbase name="/10ms (x*0.00006)" units="/10ms" expression="x*0.0000610352" to_byte="x/0.0000610352" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
---------------------------------------------------------------------------------------------------------------------------
-
-<!--cc/min-->
-	<Scalingbase category="Metric" name="cc/min (x*0.5)" units="cc/min" expression="x*0.5" to_byte="x/0.5" format="0" fineincrement="2" coarseincrement="10" system="Metric"/>
-
-
---------------------------------------------------------------------------------------------------------------------------
-
-<!--Pulse Width-->
-	<scalingbase name="BFS (x*0.000488)" units="Base Fuel Schedule (ms)" expression="x*0.000488281" to_byte="x/0.000488281" format="0.00" fineincrement="0.1" coarseincrement="1" system="Universal"/>
-
-	<scalingbase name="BFS (x*0.00390625)" units="ms" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="BFS (x*0.125)" units="Injector Pulsewidth (ms)" expression="x*0.125" to_byte="x/0.125" format="0.00" system="Universal"/>
-
-	<scalingbase name="BFS (x*64)" units="ms" expression="x*64" to_byte="x/64" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="BFS (x*0.0005)" units="ms" expression="x*0.0005" to_byte="x/0.0005" format="0.00" fineincrement="0.01" coarseincrement="0.10" system="Universal"/>
-
-	<scalingbase name="BFS (x*16)" units="ms" expression="x*16" to_byte="x/16" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="%/100ms" units="%/100ms" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="BFS/100ms (x*0.125)" units="BFS/100ms" expression="x*0.125" to_byte="x/0.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="Knock Strength Threshold (x*0.0015259)" units="Knock Strength Threshold (%)" expression="x*0.0015259" to_byte="x/0.0015259" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
---------------------------------------------------------------------------------------------------------------------------
-
-<!--Voltage-->
-	<scalingbase name="mV (x*5)" units="mV" expression="x*5" to_byte="x/5" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="mV (x*0.78125)" units="mV" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="mV (x*0.078125)" units="mV" expression="x*0.078125" to_byte="x/0.078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Voltage (x)" units="(V)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Voltage (x*0.08)" units="(V)" expression="x*0.08" to_byte="x/0.08" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Voltage (x*0.02)" units="(V)" expression="x*0.02" to_byte="x/0.02" format="0.00" fineincrement="0.5" coarseincrement="4" system="Universal"/>
-
-	<scalingbase name="Voltage (x*0.0025)" units="V" expression="x*0.0025" to_byte="x/0.0025" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="QH0 Flow Quantity (x*0.001525879)" units="QH0 Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/> 
 	
-	<scalingbase name="Voltage (x*0.000078125)" units="V" expression="x*0.000078125" to_byte="x/0.000078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Voltage (x*0.01)" units="V" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Voltage (x*0.005)" units="V" expression="x*0.005" to_byte="x/0.005" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="mV/ms (x*0.009765625)" units="mV/ms" expression="x*0.009765625" to_byte="x/0.009765625" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="mV (x*0.01953125)" units="mV" expression="x*0.01953125" to_byte="x/0.01953125" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="Flow Potential (x*0.001525879)" units="Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.0.001525879" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/> 
 	
+	<scalingbase name="Percentage (x*0.1953125)" units="Compensation (%)" expression="x*0.1953125" to_byte="x/0.1953125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*2-384)" units="Compensation (%)" expression="(x*2)-384" to_byte="(x+384)/2" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*2.44141)" units="Compensation (%)" expression="x*2.44141" to_byte="x/2.44141" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.0976563)" units="Compensation (%)" expression="x*0.0976563" to_byte="x/0.0976563" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Axis Percentage (x*0.00610352)" units="%" expression="x*0.00610352" to_byte="x/0.00610352" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*0.00610352)" units="Compensation (%)" expression="x*0.00610352" to_byte="x/0.00610352" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.00152879)" units="Compensation (%)" expression="x*0.00152879" to_byte="x/0.00152879" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.001953125)" units="Compensation (%)" expression="x*0.001953125" to_byte="x/0.001953125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.0390625)" units="Compensation (%)" expression="x*0.0390625" to_byte="x/0.0390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.5)" units="Compensation (%)" expression="x*0.5" to_byte="x/0.5" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.0625)" units="Compensation (%)" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*6.25)" units="Compensation (%)" expression="x*6.25" to_byte="x/6.25" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x)" units="Compensation (%)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.1)" units="Compensation (%)" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.01)" units="Compensation (%)" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Axis Percentage (x*0.78125)" units="%" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.78125)" units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625" system="Universal"/>
+
+	<scalingbase name="Inverse Percentage (x*0.390625)" units="Compensation (%)" expression="100-(x*0.390625)" to_byte="(100-x)/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
+
+	<scalingbase name="Inverse Percentage (x*0.00152588)" units="Compensation (%)" expression="100-(x*0.00152588)" to_byte="-((x-100)/0.00152588)" format="0.00" fineincrement="0.5" coarseincrement="5" system="Universal"/>
+
+	<scalingbase name="Axis Percentage (x*0.390625)" units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*0.390625)" units="Compensation (%)" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125" system="Universal"/>
+
+	<scalingbase name="Axis Percentage (x*0.00152588)" units="%" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="0.5" coarseincrement="5" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.00152588)" units="Compensation (%)" expression="x*0.00152588" to_byte="x/0.00152588" format="0.00" fineincrement="0.5" coarseincrement="5" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*0.0030518)" units="Compensation (%)" expression="x*0.0030518" to_byte="x/0.0030518" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Axis Percentage (x*1.5625)" units="%" expression="x*1.5625" to_byte="x/1.5625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*1.5625)" units="Compensation (%)" expression="x*1.5625" to_byte="x/1.5625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*10)" units="Compensation (%)" expression="x*10" to_byte="x/10" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.3125)" units="Compensation (%)" expression="x*0.3125" to_byte="x/0.3125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.024414063)" units="Compensation (%)" expression="x*0.024414063" to_byte="x/0.024414063" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*1.25)" units="Compensation (%)" expression="x*1.25" to_byte="x/1.25" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.125)" units="Compensation (%)" expression="x*0.125" to_byte="x/0.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.25)" units="Compensation (%)" expression="x*0.25" to_byte="x/0.25" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*3.125)" units="Compensation (%)" expression="x*3.125" to_byte="x/3.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*0.00390625)" units="Compensation (%)" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Torque Ratio (x*0.000976563)" units="Torque Ratio (:1)" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/> 
+
+	<scalingbase name="Percentage (x*0.392156863)" units="Compensation (%)" expression="x*0.392156863" to_byte="x/0.392156863" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*1.953125)" units="Compensation (%)" expression="x*1.953125" to_byte="x/1.953125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*2)" units="Compensation (%)" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Percentage (x*0.976563)" units="Compensation (%)" expression="x*0.976563" to_byte="x/0.976563" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Percentage (x*4.88281)" units="Compensation (%)" expression="x*4.88281" to_byte="x/4.88281" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 
 
-------------------------------------------------------------------------------------------------------------------------
+
+
+<!--RPM-->
+	<scalingbase name="1/RPM (x*0.000000019)" units="1/rpm" expression="x*0.000000019" to_byte="x/0.000000019" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="RPM/kmh (x*1.5625)" units="RPM/kmh" expression="x*1.5625" to_byte="x/1.5625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Revolution (x)" units="Revolutions" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="RPM/100ms (x*0.78125)" units="rpm/100ms" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="1/RPM (x*0.000004882)" units="1/RPM" expression="x*0.000004882" to_byte="x/0.000004882" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="RPM/kmh (x*0.78125)" units="RPM/kmh" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="RPM^2/3 (x*2)" units="Engine Speed (RPM)^(2/3)" expression="x*2" to_byte="x/2" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Axis RPM (x*25)" units="RPM" expression="x*25" to_byte="x/25" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="RPM (x*25)" units="Engine Speed (RPM)" expression="x*25" to_byte="x/25" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="RPM (x*800)" units="RPM" expression="x*800" to_byte="x/800" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+    <scalingbase name="RPM (x*50)" units="Engine Speed (RPM)" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
+	
+    <scalingbase name="Axis RPM (x*3.125)" units="RPM" expression="x*3.125" to_byte="x/3.125" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
+
+    <scalingbase name="RPM (x*3.125)" units="Engine Speed (RPM)" expression="x*3.125" to_byte="x/3.125" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
+
+	<scalingbase name="Axis RPM (x*50)" units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
+
+	<scalingbase name="RPM (x*12.5)" units="Engine Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Axis RPM (x*12.5)" units="RPM" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="RPM (x*10)" units="Engine Speed (RPM)" expression="x*10" to_byte="x/10" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Target Idle (x*12.5)" units="Target Idle Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="1" coarseincrement="100" system="Universal"/>
+
+	<scalingbase name="RPM (x*0.00390625)" units="Engine Speed (RPM)" expression="x*0.00390625" to_byte="x/0.00390625" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="RPM/50ms (x)" units="RPM/50ms" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="RPM/s (x*12.5)" units="RPM/s" expression="x*12.5" to_byte="x/12.5" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="RPM (x*1.5625)" units="Engine Speed (RPM)" expression="x*1.5625" to_byte="x/1.5625" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Axis RPM (x*0.78125)" units="RPM" expression="x*0.78125" to_byte="x/0.78125" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
+	
+	<scalingbase name="RPM (x*0.78125)" units="Engine Speed (RPM)" expression="x*0.78125" to_byte="x/0.78125" format="0" fineincrement="50" coarseincrement="250" system="Universal"/>
+
+	<scalingbase name="RPM (x*0.3125)" units="(RPM)" expression="x*0.3125" to_byte="x/0.3125" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="RPM (x*0.1953125)" units="Engine Speed (RPM)" expression="x*0.1953125" to_byte="x/0.1953125" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="RPM (x)" units="Engine Speed (RPM)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Input Shaft Speed (x*4)" units="Input Shaft Speed (RPM)" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+
+
+
+
+
+
 
 <!--Time-->
-	<scalingbase name="ms (50%)" units="Milliseconds" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="ms*RPM (x*3.125)" units="ms*RPM" expression="x*3.125" to_byte="x/3.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="ms (100%)" units="Milliseconds" expression="x*0.02" to_byte="x/0.02" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="/10ms (x*0.0078125)" units="/10ms" expression="x*0.0078125" to_byte="x/0.0078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="ms/2^(ST) (x)" units="ms/2^(ST)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="1/10ms (x*0.000012207)" units="1/10ms" expression="x*0.000012207" to_byte="x/0.000012207" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
+ 
+ 	<scalingbase name="1/10ms (x*0.00390625)" units="1/10ms" expression="x*0.00390625" to_byte="x/0.00390625" format="0.000" fineincrement="1" coarseincrement="5" system="Universal"/>
+
+	<scalingbase name="Microseconds (x*256)" units="us" expression="x*256" to_byte="x/256" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="ms (50%)" units="ms" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="ms (100%)" units="ms" expression="x*0.02" to_byte="x/0.02" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
 	<scalingbase name="ms (x*4)" units="ms" expression="x*4" to_byte="x/4" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
@@ -539,17 +671,13 @@
 	<scalingbase name="ms (x*0.01953125)" units="ms" expression="x*0.01953125" to_byte="x/0.01953125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
 
---------------------------------------------------------------------------------------------------------------------------
-
 
 
 
 <!--Misc-->
-	<scalingbase name="ms/V (50%)" units="Milliseconds Per Volt" expression="x*0.000976563" to_byte="x/0.000976563" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="- (x*0.1)" units="-" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="ms/V (100%)" units="Milliseconds Per Volt" expression="x*0.001953126" to_byte="x/0.001953126" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="RPM/ms (x*0.006)" units="RPM/ms" expression="x*0.00610352" to_byte="x/0.00610352" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	<scalingbase name="- (x*0.00001)" units="|" expression="x*0.00001" to_byte="x/0.00001" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="Knock Window" units="Knock Window (0: Off | 1: On)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="1" system="Universal"/>
 	
@@ -560,10 +688,6 @@
 	<scalingbase name="Count (x*0.00390625)" units="Count" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="%n (x)" units="%n" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="/10ms (x*0.00006)" units="/10ms" expression="x*0.0000610352" to_byte="x/0.0000610352" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="%/100ms" units="%/100ms" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="- (x*0.00390625)" units="-" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
@@ -583,145 +707,41 @@
 
 	<scalingbase name="- (x*0.00195)" units="-" expression="x*0.00195" to_byte="x/0.00195" format="0.00" fineincrement="1" coarseincrement="4" system="Universal"/> 
 
-	<scalingbase name="RPM/kmh (x*1.5625)" units="RPM/kmh" expression="x*1.5625" to_byte="x/1.5625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
 	<scalingbase name="- (x*0.0078125)" units="-" expression="x*0.0078125" to_byte="x/0.0078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="1/k (x*0.1)" units="1/k" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="N/10ms (x)" units="N/10ms" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>	
-	
-	<scalingbase name="N/100ms (x)" units="N/100ms" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="G (x*0.00390625)" units="G" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="| (x*0.02)" units="|" expression="x*0.02" to_byte="x/0.02" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="N/G (x)" units="N/G" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="j/mmks (x*0.1)" units="j/mmks" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="%/ms (x*0.09765)" units="%/ms" expression="x*0.09765" to_byte="x/0.09765" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="1/RPM (x*0.000000019)" units="1/rpm" expression="x*0.000000019" to_byte="x/0.000000019" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="/10ms (x*0.0078125)" units="/10ms" expression="x*0.0078125" to_byte="x/0.0078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
 	<scalingbase name="- (x*0.000977)" units="-" expression="x*0.000976563" to_byte="x/0.000976563" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Revolution (x)" units="Revolutions" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="- (x*0.05)" units="-" expression="x*0.05" to_byte="x/0.05" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="%/s (x*0.5)" units="%/s" expression="x*0.5" to_byte="x/0.5" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Percentage (x*0.05)" units="Compensation (%)" expression="x*0.05" to_byte="x/0.05" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="%/s (x*0.05)" units="%/s" expression="x*0.05" to_byte="x/0.05" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
 	<scalingbase name="- (x*0.015625)" units="-" expression="x*0.015625" to_byte="x/0.015625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Z/100ms (x*0.00390625)" units="Z/100ms" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="N/s (x*0.078125)" units="N/s" expression="x*0.078125" to_byte="x/0.078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="%/s (x*0.01)" units="%/s" expression="x*0.01" to_byte="x/0.01" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="g (x*4)" units="g" expression="x*4" to_byte="x/4" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Newtons (x-32768)" units="Newtons" expression="x-32768" to_byte="x+32768" format="0" fineincrement="1" coarseincrement="10" system="Universal"/>
 
 	<scalingbase name="- (x*0.000015259)" units="-" expression="x*0.000015259" to_byte="x/0.000015259" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="Newtons (x)" units="N" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="N/kmh (x*0.0355)" units="N/kmh" expression="x*0.035511364" to_byte="x/0.035511364" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="N/Deg (x*0.0355)" units="N/deg" expression="x*0.035511364" to_byte="x/0.035511364" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Meters (x*0.001)" units="m" expression="x*0.001" to_byte="x/0.001" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Ohm (x*0.001)" units="Ohm" expression="x*0.001" to_byte="x/0.001" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
 	<scalingbase name="Number (x)" units="#" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Microseconds (x*256)" units="us" expression="x*256" to_byte="x/256" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="kmole/j (x*0.03)" units="kmole/j" expression="x*0.03" to_byte="x/0.03" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="Bit (x*0.0078125)" units="Bit" expression="x*0.0078125" to_byte="x/0.0078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="| (x*0.0011)" units="|" expression="x*0.0011" to_byte="x/0.0011" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="mg (x*2.56)" units="mg" expression="x*2.56" to_byte="x/2.56" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="ms/2^(ST) (x)" units="ms/2^(ST)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
 	<scalingbase name="Count (x-128)" units="Count" expression="x-128" to_byte="x+128" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
-	<scalingbase name="gZ (x*10.24)" units="gZ" expression="x*10.24" to_byte="x/10.24" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="mg (x*0.01)" units="mg" expression="x*0.01" to_byte="x/0.01" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
-
 	<scalingbase name="- (x*0.0625)" units="-" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="- (x*0.002)" units="-" expression="x*0.002" to_byte="x/0.002" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
-	<scalingbase name="mg (x*256-83886.08)" units="mg" expression="(x*2.56)-83886.08" to_byte="(x/2.56)+32768" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
 	<scalingbase name="- (x*0.078125)" units="-" expression="x*0.078125" to_byte="x/0.078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Z (x-30)" units="Z" expression="x-30" to_byte="x+30" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Cylinder (x*0.33)" units="Cyl" expression="x*0.333333" to_byte="x/0.333333" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Degrees/40ms (x*0.11)" units="Deg/40ms" expression="x*0.11" to_byte="x/0.11" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-		
-	<scalingbase name="Degrees/REF (x)" units="Deg/REF" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Degrees/10Z (x*0.015625)" units="Deg/10Z" expression="x*0.015625" to_byte="x/0.015625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="%/100ms (x*0.1)" units="%/100ms" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="%/100ms (x*0.0390625)" units="%/100ms" expression="x*0.0390625" to_byte="x/0.0390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="AFR Change Rate (x*0.000000488)" units="AFR Change Rate" expression="x*0.000000488" to_byte="x/0.000000488" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="Bit (x)" units="Bit" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="- (x*0.004)" units="-" expression="x*0.004" to_byte="x/0.004" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 
 	<scalingbase name="- (x*0.001)" units="-" expression="x*0.001" to_byte="x/0.001" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Nm/mph (x*0.6215)" units="Nm/mph" expression="x*0.62150404" to_byte="x/0.62150404" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>	
-	
-	<scalingbase name="Gear (x+1)" units="Next Gear" expression="x+1" to_byte="x-1" format="0" fineincrement="1" coarseincrement="2" system="Universal"/> 
-	
-	<scalingbase name="Gear (x)" units="Gear" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
 	<scalingbase name="- (x*0.000976563)" units="-" expression="x*0.000976563" to_byte="x/0.000976563" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
 		
-	<scalingbase name="Gear Ratio (x*0.000976563)" units=":1" expression="x*0.000976563" to_byte="x/0.000976563" format="0.000" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Inches (x*0.000240296)" units="Inches" expression="x*0.000240296" to_byte="x/0.000240296" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="kmh/RPM (x*0.0000152588)" units="Kmh/RPM" expression="x*0.0000152588" to_byte="x/0.0000152588" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="1/10ms (x*0.000012207)" units="1/10ms" expression="x*0.000012207" to_byte="x/0.000012207" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/> 
-	
-	<scalingbase name="cm^2/L" units="cm^2/L" expression="x*0.0000152588" to_byte="x/0.0000152588" format="0.000000" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="1/10ms (x*0.00390625)" units="1/10ms" expression="x*0.00390625" to_byte="x/0.00390625" format="0.000" fineincrement="1" coarseincrement="5" system="Universal"/>
-	
-	<scalingbase name="ms*RPM (x*3.125)" units="ms*RPM" expression="x*3.125" to_byte="x/3.125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
 	<scalingbase name="fes (x*0.025)" units="fes" expression="x*0.025" to_byte="x/0.025" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="/0.11deg (x*0.390625)" units="/0.11deg" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="- (256/x)" units="-" expression="256/x" to_byte="256/x" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Nm/100ms (x*0.1)" units="Nm/100ms" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
 	<scalingbase name="- (x*0.00048828125)" units="-" expression="x*0.00048828125" to_byte="x/0.00048828125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
@@ -730,14 +750,6 @@
 	<scalingbase name="step/L (x*0.001953125)" units="step/L" expression="x*0.001953125" to_byte="x/0.001953125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
 	<scalingbase name="C/R (x)" units="C/R (Cycles per Rotation)" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="g (x*0.00390625)" units="g" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
-
-	<scalingbase name="Standard mLPMTOAA" units="cm^2/Gal" expression="x*0.00000036966930880183922" to_byte="x/0.00000036966930880183922" format="0.00000000" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Z (x*1.25-200)" units="Z" expression="(x*1.25)-200" to_byte="(x+200)/1.25" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
-	
-	<scalingbase name="Knock Strength Threshold (x*0.0015259)" units="Knock Strength Threshold (%)" expression="x*0.0015259" to_byte="x/0.0015259" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
 	<scalingbase name="REF (x)" units="Ref" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
@@ -747,10 +759,50 @@
 	
 	<scalingbase name="- (x*0.25)" units="-" expression="x*0.25" to_byte="x/0.25" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
+	<scalingbase name="- (256/x)" units="-" expression="256/x" to_byte="256/x" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>	
 	
 	
 	
 	
+<!--Unsorted-->	
+	<scalingbase name="1/k (x*0.1)" units="1/k" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="G (x*0.00390625)" units="G" expression="x*0.00390625" to_byte="x/0.00390625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="j/mmks (x*0.1)" units="j/mmks" expression="x*0.1" to_byte="x/0.1" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="%/ms (x*0.09765)" units="%/ms" expression="x*0.09765" to_byte="x/0.09765" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Ohm (x*0.001)" units="Ohm" expression="x*0.001" to_byte="x/0.001" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="kmole/j (x*0.03)" units="kmole/j" expression="x*0.03" to_byte="x/0.03" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="gZ (x*10.24)" units="gZ" expression="x*10.24" to_byte="x/10.24" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Cylinder (x*0.33)" units="Cylinder" expression="x*0.333333" to_byte="x/0.333333" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="AFR Change Rate (x*0.000000488)" units="AFR Change Rate" expression="x*0.000000488" to_byte="x/0.000000488" format="0.0000" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="cm^2/L" units="cm^2/L" expression="x*0.0000152588" to_byte="x/0.0000152588" format="0.000000" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="Standard mLPMTOAA" units="cm^2/Gal" expression="x*0.00000036966930880183922" to_byte="x/0.00000036966930880183922" format="0.00000000" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
+	<scalingbase name="L/min/RPM (x*0.005)" units="L/min/RPM" expression="x*0.005" to_byte="x/0.005" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
 	
+	<scalingbase name="Temp F (x/1.609)" units="Fahrenheit" expression="x/1.609" to_byte="x*1.609" format="0.00" fineincrement="1" coarseincrement="2" system="Standard"/>
 	
+	<scalingbase name="wvPAMB (x*0.078125)" units="wvPAMB" expression="x*0.078125" to_byte="x/0.078125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="cc/ms (x*0.000125)" units="cc/ms" expression="x*0.000125" to_byte="x/0.000125" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Laminar Flame Speed (cc/ms)" units="Laminar Flame Speed (cc/ms)" expression="x*0.0625" to_byte="x/0.0625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="Laminar Flame Speed (m^3/s)" units="Laminar Flame Speed (m^3/s)" expression="x*0.0000625" to_byte="x/0.0000625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="fes (x*32)" units="fes" expression="x*32" to_byte="x/32" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="mv^2se (x*128)" units="mV^2" expression="x*128" to_byte="x/128" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>
+	
+	<scalingbase name="1/V^2/3 (x*0.0015625)" units="1/V^(2/3)" expression="x*0.0015625" to_byte="x/0.0015625" format="0.00" fineincrement="1" coarseincrement="2" system="Universal"/>
+
+	<scalingbase name="fes (x*100)" units="fes" expression="x*100" to_byte="x/100" format="0" fineincrement="1" coarseincrement="2" system="Universal"/>

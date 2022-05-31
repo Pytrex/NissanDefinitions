@@ -4,7 +4,7 @@
 		<caseid>9QE4V3DQ</caseid>
 		<internalidaddress>1ED1</internalidaddress>
 		<internalidstring>AG920</internalidstring>
-		<ecuid>AG920</ecuid>
+		<ecuid>1AG920</ecuid>
 		<year>??</year>
 		<market>??</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>?</transmission>
 		<memmodel>SH7051</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>256kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

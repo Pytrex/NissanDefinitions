@@ -4,7 +4,7 @@
 		<caseid>33</caseid>
 		<internalidaddress>E4E5</internalidaddress>
 		<internalidstring>ZY70D</internalidstring>
-		<ecuid>ZY70D</ecuid>
+		<ecuid>1ZY70D</ecuid>
 		<year>11</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>CVT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

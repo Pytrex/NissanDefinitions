@@ -4,7 +4,7 @@
 		<caseid>1TKE8Z5N5</caseid>
 		<internalidaddress>6B78</internalidaddress>
 		<internalidstring>8J164</internalidstring>
-		<ecuid>8J164</ecuid>
+		<ecuid>18J164</ecuid>
 		<year>2002</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>4AT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -87,7 +87,7 @@
 		<table type="Y Axis" storageaddress="0x6d3a"/>   
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x850a">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x850a">
 		<table type="X Axis" storageaddress="0x87d8"/>
 		<table type="Y Axis" storageaddress="0x8747"/>   
 	</table>

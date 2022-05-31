@@ -4,7 +4,7 @@
 		<caseid>5X61BENHN6</caseid>
 		<internalidaddress>7D56</internalidaddress>
 		<internalidstring>8U906</internalidstring>
-		<ecuid>8U906</ecuid>
+		<ecuid>18U906</ecuid>
 		<year>2004</year>
 		<market>CAN</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>a33b</author>
 		<version>v1.0</version>

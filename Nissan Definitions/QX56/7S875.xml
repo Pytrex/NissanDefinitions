@@ -18,121 +18,143 @@
 		<author>Pytrex</author>
 		<version>v1.0</version>
     </romid>
-
-    <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6ACD">
+	
+<table name="CID1100 supmask"  storageaddress="0x7E83"/>					
+<table name="CID1120 supmask"  storageaddress="0x7E8F"/>					
+<table name="CID1140 supmask"  storageaddress="0x7E87"/>					
+<table name="CID1160 supmask"  storageaddress="0x7E8B"/>					
+<table name="CID1200 supmask"  storageaddress="0x7E9B"/>					
+<table name="CID1220 supmask"  storageaddress="0x7E9F"/>					
+<table name="CID1300 supmask"  storageaddress="0x7EA3"/>					
+<table name="CID1301 supmask"  storageaddress="0x7ED3"/>					
+<table name="CID1302 supmask"  storageaddress="0x7ECF"/>					
+<table name="CID1303 supmask"  storageaddress="0x7ED0"/>					
+<table name="CID1304 supmask"  storageaddress="0x7ED1"/>					
+<table name="CID1305 supmask"  storageaddress="0x7ED2"/>					
+<table name="CID1306 supmask"  storageaddress="0x7D23"/>					
+<table name="CID1307 supmask"  storageaddress="0x7D24"/>					
+<table name="CID1308 supmask"  storageaddress="0x7D25"/>					
+<table name="CID1309 supmask"  storageaddress="0x7D26"/>					
+<table name="CID130A supmask"  storageaddress="0x7D27"/>					
+<table name="CID130B supmask"  storageaddress="0x7D28"/>					
+<table name="CID130C supmask"  storageaddress="0x7D6F"/>					
+<table name="CID130F supmask"  storageaddress="0x7D08"/>					
+<table name="CID1310 supmask"  storageaddress="0x7D09"/>					
+<table name="CID1311 supmask"  storageaddress="0x7D29"/>					
+<table name="CID1313 supmask"  storageaddress="0x7D2A"/>					
+<table name="Mode 6 TID 01-20 supmask"  storageaddress="0x7E05"/>					
+<table name="Mode 6 TID 21-40 supmask"  storageaddress="0x7E09"/>					
+<table name="Mode 6 TID 41-60 supmask"  storageaddress="0x7E0D"/>					
+<table name="OBD-2 PID 01-20 supmask"  storageaddress="0x7D59"/>					
+<table name="OBD-2 PID 21-40 supmask"  storageaddress="0x7D5D"/>					
+	<table name="Bosch Fuel Cut Table" storageaddress="0x8362"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0x840E"/>
+	<table name="Catalyst DTCs" storageaddress="0x96B2"/>
+	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6ACD">
 		<table type="X Axis" storageaddress="0x7F1C"/>
 		<table type="Y Axis" storageaddress="0x7F2C"/>
 	</table>
-
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x6ACD">
 		<table type="X Axis" storageaddress="0x7F1C"/>
 		<table type="Y Axis" storageaddress="0x7F2C"/>
 	</table>
-
-	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6BCD">
-		<table type="X Axis" storageaddress="0x7F1C"/>
-		<table type="Y Axis" storageaddress="0x7F2C"/>
-	</table>
-
-	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x6BCD">
-		<table type="X Axis" storageaddress="0x7F1C"/>
-		<table type="Y Axis" storageaddress="0x7F2C"/>
-	</table>
-
+	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x8044"/>
+	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0x86FA"/>
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x68E8"/>
+	<table name="Dilution Modification Coefficient" storageaddress="0x60BF"/>
+	<table name="Engine Torque Map" storageaddress="0x79E8"/>
+	<table name="Flags 14" storageaddress="0x620F"/>
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x6DAD">
 		<table type="X Axis" storageaddress="0x7E6A"/>
 		<table type="Y Axis" storageaddress="0x7E2E"/>
 	</table>
-
-	<table name="Target AFR Map (8x8)" storageaddress="0x6EFD">
-		<table type="X Axis" storageaddress="0x7D89"/>
-		<table type="Y Axis" storageaddress="0x7E26"/>
+	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x81FC"/>
+	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x6BCD">
+		<table type="X Axis" storageaddress="0x7F1C"/>
+		<table type="Y Axis" storageaddress="0x7F2C"/>
 	</table>
-
-	<table name="Target AFR Table (High Detonation)" storageaddress="0x8294"/>
-
-    <table name="LTFT Map BFS Axis" storageaddress="0x82BC"/>
-	<table name="LTFT Map RPM Axis" storageaddress="0x835A"/>
-
-	<table name="MAF Table" storageaddress="0x8A3E"/>
-    <table name="MAF Factor" storageaddress="0x63D1"/>
-
-	<table name="Rev Limit (Fuel Cut - 2D)" storageaddress="0x6828"/>
-	<table name="Throttle Rev Limiter" storageaddress="0x688C"/>
-
-	<table name="Bosch Fuel Cut Table" storageaddress="0x8362"/>
+	<table name="High Detonation Ignition Timing Map Knock Window" storageaddress="0x6BCD">
+		<table type="X Axis" storageaddress="0x7F1C"/>
+		<table type="Y Axis" storageaddress="0x7F2C"/>
+	</table>
+	<table name="High Temperature Fuel Compensation Map" storageaddress="0x6ABD">
+		<table type="X Axis" storageaddress="0x7DA5"/>
+		<table type="Y Axis" storageaddress="0x7DA1"/>
+	</table>
+	<table name="Ignition Delay Time" storageaddress="0x64A9"/>
+	<table name="Ignition Timing Main Constant" storageaddress="0x62C1"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x849E"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x8386"/>
-	<table name="Bosch Fuel Restore Table" storageaddress="0x840E"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0x848A"/>
-	
-	<table name="Target Idle Table" storageaddress="0x8396"/>
-	<table name="Target Idle Table 2" storageaddress="0x83CE"/>
-
 	<table name="K-Value" storageaddress="0x67D6"/>
-	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x68E8"/>
-
-	<table name="Engine Torque Map" storageaddress="0x79E8"/>
-
-	<table name="QH0/ Torque Conversion Map" storageaddress="0x7468">
-		<table type="X Axis" storageaddress="0x8A1E"/>
-		<table type="Y Axis" storageaddress="0x7E4A"/>
+	<table name="Knock Slice Map" storageaddress="0x7BE8"/>
+	<table name="LTFT Map BFS Axis" storageaddress="0x82BC"/>
+	<table name="LTFT Map RPM Axis" storageaddress="0x835A"/>
+	<table name="MAF Factor" storageaddress="0x63D1"/>
+	<table name="MAF Startup Voltage Limit" storageaddress="0x6680"/>
+	<table name="MAF Startup Voltage Limit 2" storageaddress="0x6682"/>
+	<table name="MAF Table" storageaddress="0x8A3E"/>
+	<table name="MAF Voltage Lower Limit" storageaddress="0x6686"/>
+	<table name="MAF Voltage Upper Limit" storageaddress="0x6684"/>
+	<table name="MBT Flame Speed Map" storageaddress="0x6CCD">
+		<table type="X Axis" storageaddress="0x7D81"/>
 	</table>
-
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x94AC">
-		<table type="X Axis" storageaddress="0x9740"/>
-		<table type="Y Axis" storageaddress="0x96F0"/>
-	</table>
-
-	<table name="Misfire Diagnosis Map A" storageaddress="0x700D">
-		<table type="X Axis" storageaddress="0x7DDD"/>
-		<table type="Y Axis" storageaddress="0x7DBD"/>
-	</table>
-
-	<table name="Misfire Diagnosis Map B" storageaddress="0x710D">
-		<table type="X Axis" storageaddress="0x7DDD"/>
-		<table type="Y Axis" storageaddress="0x7DBD"/>
-	</table>
-
+	<table name="Minimum Injector Pulse Width" storageaddress="0x68D6"/>
 	<table name="Misfire Diagnosis Basic Map" storageaddress="0x720D">
 		<table type="X Axis" storageaddress="0x7DDD"/>
 		<table type="Y Axis" storageaddress="0x7DBD"/>
 	</table>
-
-	<table name="Knock Slice Map" storageaddress="0x7BE8"/>
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0x849E"/>
-
-	<table name="Catalyst DTCs" storageaddress="0x96B2"/>
-    <table name="Secondary O2 DTCs" storageaddress="0x96DE"/>
+	<table name="Misfire Diagnosis Map A" storageaddress="0x700D">
+		<table type="X Axis" storageaddress="0x7DDD"/>
+		<table type="Y Axis" storageaddress="0x7DBD"/>
+	</table>
+	<table name="Misfire Diagnosis Map B" storageaddress="0x710D">
+		<table type="X Axis" storageaddress="0x7DDD"/>
+		<table type="Y Axis" storageaddress="0x7DBD"/>
+	</table>
+	<table name="O2 Sensor Position Flags" storageaddress="0x6349"/>
+	<table name="OBD-2 PID 01-20 supmask" storageaddress="0x7D59"/>
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x7468">
+		<table type="X Axis" storageaddress="0x8A1E"/>
+		<table type="Y Axis" storageaddress="0x7E4A"/>
+	</table>
+	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x94AC">
+		<table type="X Axis" storageaddress="0x9740"/>
+		<table type="Y Axis" storageaddress="0x96F0"/>
+	</table>
+	<table name="Rev Limit (Fuel Cut - 2D)" storageaddress="0x6828"/>
+	<table name="Secondary O2 DTCs" storageaddress="0x96DE"/>
 	<table name="Secondary O2 Knock DTCs" storageaddress="0x96DF"/>
+	<table name="Target AFR MBT Compensation Table" storageaddress="0x8034"/>
+	<table name="Target AFR MBT Compensation Table 2" storageaddress="0x84AA"/>
+	<table name="Target AFR Map (8x8)" storageaddress="0x6EFD">
+		<table type="X Axis" storageaddress="0x7D89"/>
+		<table type="Y Axis" storageaddress="0x7E26"/>
+	</table>
+	<table name="Target AFR Table (High Detonation)" storageaddress="0x8294"/>
+	<table name="Target Idle Table" storageaddress="0x8396"/>
+	<table name="Target Idle Table 2" storageaddress="0x83CE"/>
+	<table name="Target Throttle Valve Opening Table" storageaddress="0x880E">
+		<table type="X Axis" storageaddress="0x9018"/>
+	</table>
+	<table name="Target Throttle Valve Opening Table (Trustful)" storageaddress="0x9700">
+		<table type="X Axis" storageaddress="0x98E0"/>
+	</table>
+	<table name="Throttle Flow Potential Table" storageaddress="0x9088">
+		<table type="X Axis" storageaddress="0x8F78"/>
+	</table>
+	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0x90C8">
+		<table type="X Axis" storageaddress="0x8FB8"/>
+	</table>
+	<table name="Throttle Flow Potential Table 2" storageaddress="0x98A0">
+		<table type="X Axis" storageaddress="0x9820"/>
+	</table>
+	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0x9860">
+		<table type="X Axis" storageaddress="0x97E0"/>
+	</table>
+	<table name="Throttle Rev Limiter" storageaddress="0x688C"/>
+	<table name="War Way Speed Weight Constant" storageaddress="0x62C2"/>
 
-    <table name="CID1100 supmask"  storageaddress="0x7E83"/>
-	<table name="CID1120 supmask"  storageaddress="0x7E8F"/>
-	<table name="CID1140 supmask"  storageaddress="0x7E87"/>
-	<table name="CID1160 supmask"  storageaddress="0x7E8B"/>
-	<table name="CID1200 supmask"  storageaddress="0x7E9B"/>
-	<table name="CID1220 supmask"  storageaddress="0x7E9F"/>
-	<table name="CID1300 supmask"  storageaddress="0x7EA3"/>
-	<table name="CID1301 supmask"  storageaddress="0x7ED3"/>
-	<table name="CID1302 supmask"  storageaddress="0x7ECF"/>
-	<table name="CID1303 supmask"  storageaddress="0x7ED0"/>
-	<table name="CID1304 supmask"  storageaddress="0x7ED1"/>
-	<table name="CID1305 supmask"  storageaddress="0x7ED2"/>
-	<table name="CID1306 supmask"  storageaddress="0x7D23"/>
-	<table name="CID1307 supmask"  storageaddress="0x7D24"/>
-	<table name="CID1308 supmask"  storageaddress="0x7D25"/>
-	<table name="CID1309 supmask"  storageaddress="0x7D26"/>
-	<table name="CID130A supmask"  storageaddress="0x7D27"/>
-	<table name="CID130B supmask"  storageaddress="0x7D28"/>
-	<table name="CID130C supmask"  storageaddress="0x7D6F"/>
-	<table name="CID130F supmask"  storageaddress="0x7D08"/>
-	<table name="CID1310 supmask"  storageaddress="0x7D09"/>
-	<table name="CID1311 supmask"  storageaddress="0x7D29"/>
-	<table name="CID1313 supmask"  storageaddress="0x7D2A"/>
-	<table name="OBD-2 PID 01-20 supmask"  storageaddress="0x7D59"/>
-	<table name="OBD-2 PID 21-40 supmask"  storageaddress="0x7D5D"/>
-	<table name="Mode 6 TID 01-20 supmask"  storageaddress="0x7E05"/>
-	<table name="Mode 6 TID 21-40 supmask"  storageaddress="0x7E09"/>
-	<table name="Mode 6 TID 41-60 supmask"  storageaddress="0x7E0D"/>
 
     <checksum type="std" start="0" end="0x7FFFF" sumloc="0x69F4" xorloc="0x69EC"/>
 

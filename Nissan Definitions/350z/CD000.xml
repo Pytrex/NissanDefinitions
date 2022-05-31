@@ -4,16 +4,16 @@
 		<caseid>3GIGGN02</caseid>
 		<internalidaddress>824C</internalidaddress>
 		<internalidstring>CD000</internalidstring>
-		<ecuid>CD000</ecuid>
+		<ecuid>1CD000</ecuid>
 		<year>2003</year>
-		<market>US</market>
+		<market>USDM</market>
 		<make>Nissan</make>
 		<model>350Z</model>
 		<submodel>Performance</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

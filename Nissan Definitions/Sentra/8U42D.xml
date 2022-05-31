@@ -4,7 +4,7 @@
 		<caseid>3QGEZEJCNC8</caseid>
 		<internalidaddress>82B9</internalidaddress>
 		<internalidstring>8U42D</internalidstring>
-		<ecuid>8U42D</ecuid>
+		<ecuid>18U42D</ecuid>
 		<year>2003</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH705513</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -69,11 +69,9 @@
 		<table type="Y Axis" storageaddress="0x8956"/>
 	</table>
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6606">
-	</table>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6606"/>
 
-	<table name="MAF Table" storageaddress="0x92b2">
-	</table>
+	<table name="MAF Table" storageaddress="0x92b2"/>
 
 
 

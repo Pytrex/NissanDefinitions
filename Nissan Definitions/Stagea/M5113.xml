@@ -4,7 +4,7 @@
 		<caseid>N1MATBH5D5</caseid>
 		<internalidaddress>7772</internalidaddress>
 		<internalidstring>M5113</internalidstring>
-		<ecuid>M5113</ecuid>
+		<ecuid>1M5113</ecuid>
 		<year>2003</year>
 		<market>JP</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>AT</transmission>
 		<memmodel>SH705507</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -243,17 +243,17 @@
 		<table type="Y Axis" storageaddress="0x7925"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x97D8">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x97D8">
 		<table type="X Axis" storageaddress="0x9b26"/>
 		<table type="Y Axis" storageaddress="0x9a96"/>
 	</table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x5405"> 
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x5405"> 
 		<table type="X Axis" storageaddress="0x77DE"/>
 		<table type="Y Axis" storageaddress="0x77D6"/> 
 	</table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x53C5"> 
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x53C5"> 
 		<table type="X Axis" storageaddress="0x77DE"/>
 		<table type="Y Axis" storageaddress="0x77D6"/> 
 	</table>

@@ -4,7 +4,7 @@
 		<caseid>9CMCVAPD31</caseid>
 		<internalidaddress>92EB</internalidaddress>
 		<internalidstring>BT67A</internalidstring>
-		<ecuid>BT67A</ecuid>
+		<ecuid>1BT67A</ecuid>
 		<year>-</year>
 		<market>-</market>
 		<make>-</make>
@@ -13,7 +13,7 @@
 		<transmission>-</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

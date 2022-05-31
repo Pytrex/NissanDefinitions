@@ -4,7 +4,7 @@
 		<caseid>6GIZ7N4</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CF41E</internalidstring>
-		<ecuid>CF41E</ecuid>
+		<ecuid>1CF41E</ecuid>
 		<year>2006</year>
 		<market>JDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -102,7 +102,7 @@
 		<table type="Y Axis" storageaddress="0xb4e6"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xDB62">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xDB62">
 		<table type="X Axis" storageaddress="0xde38"/>
 		<table type="Y Axis" storageaddress="0xdda8"/>
 	</table>

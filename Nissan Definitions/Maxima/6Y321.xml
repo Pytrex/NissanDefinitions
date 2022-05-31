@@ -4,7 +4,7 @@
 		<caseid>1TKE8Z5N56</caseid>
 		<internalidaddress>6C39</internalidaddress>
 		<internalidstring>6Y321</internalidstring>
-		<ecuid>6Y321</ecuid>
+		<ecuid>16Y321</ecuid>
 		<year>2003</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>AT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

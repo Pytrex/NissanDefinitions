@@ -5,7 +5,7 @@
 		<caseid>5TTTDN4</caseid>
 		<internalidaddress>9FFE</internalidaddress>
 		<internalidstring>ZB070</internalidstring>
-		<ecuid>ZB070</ecuid>
+		<ecuid>1ZB070</ecuid>
 		<year>2005</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -14,7 +14,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Fenugrec</author>
 		<version>v1.0</version>
@@ -101,7 +101,7 @@
 		<table type="Y Axis" storageaddress="0xA234"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xC7B6">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xC7B6">
 		<table type="X Axis" storageaddress="0xCA8A"/>
 		<table type="Y Axis" storageaddress="0xC9FA"/>
 	</table>

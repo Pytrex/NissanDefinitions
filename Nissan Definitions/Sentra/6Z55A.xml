@@ -1,7 +1,7 @@
 <rom base="A2L">
 	<romid>
 		<xmlid>6Z55A</xmlid>
-		<caseid>5X6E58TPN9</caseid>
+		<hwid>5X6E58TPN9</hwid>
 		<internalidaddress>88EA</internalidaddress>
 		<internalidstring>6Z55A</internalidstring>
 		<ecuid>6Z55A</ecuid>
@@ -16,7 +16,7 @@
 		<flashmethod>nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
-		<version>v1.0</version>
+		<version>v0.01</version>
 	</romid>
 
 <!-- Known Issues:

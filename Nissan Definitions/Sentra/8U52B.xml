@@ -4,7 +4,7 @@
 		<caseid>3TREE21N19</caseid>
 		<internalidaddress>747C</internalidaddress>
 		<internalidstring>8U52B</internalidstring>
-		<ecuid>8U52B</ecuid>
+		<ecuid>18U52B</ecuid>
 		<year>2003</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -78,7 +78,7 @@
 		<table type="Y Axis" storageaddress="0x76c6"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x95A4">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x95A4">
 		<table type="X Axis" storageaddress="0x98F8"/>
 		<table type="Y Axis" storageaddress="0x9868"/>
 	</table>

@@ -4,7 +4,7 @@
 		<caseid>5X61BECCNA</caseid>
 		<internalidaddress>7DCA</internalidaddress>
 		<internalidstring>8U92A</internalidstring>
-		<ecuid>8U92A</ecuid>
+		<ecuid>18U92A</ecuid>
 		<year>2004</year>
 		<market>CAN</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

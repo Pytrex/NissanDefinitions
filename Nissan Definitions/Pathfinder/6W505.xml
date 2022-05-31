@@ -4,7 +4,7 @@
 		<caseid>4WXLKN3</caseid>
 		<internalidaddress>8153</internalidaddress>
 		<internalidstring>6W505</internalidstring>
-		<ecuid>6W505</ecuid>
+		<ecuid>16W505</ecuid>
 		<year>2004</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>Auto</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>

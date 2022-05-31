@@ -4,7 +4,7 @@
 		<caseid>2WLYFD110</caseid>
 		<internalidaddress>81DF</internalidaddress>
 		<internalidstring>AM91A</internalidstring>
-		<ecuid>AM91A</ecuid>
+		<ecuid>1AM91A</ecuid>
 		<year>2003</year>
 		<market>JDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>AT</transmission>
 		<memmodel>SH705513</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -77,7 +77,7 @@
 		<table type="Y Axis" storageaddress="0x83B5"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xa144">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xa144">
 		<table type="X Axis" storageaddress="0xa418"/>
 		<table type="Y Axis" storageaddress="0xa388"/>
 	</table>

@@ -4,7 +4,7 @@
 		<caseid>4XXES9NP</caseid>
 		<internalidaddress>835A</internalidaddress>
 		<internalidstring>8Y106</internalidstring>
-		<ecuid>8Y106</ecuid>
+		<ecuid>18Y106</ecuid>
 		<year>2004</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>AT</transmission>
 		<memmodel>SH7055-13</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Fenugrec</author>
 		<version>v1.0</version>

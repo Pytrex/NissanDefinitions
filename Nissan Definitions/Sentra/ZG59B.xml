@@ -4,7 +4,7 @@
 		<caseid>6X6E58SYMN36</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>ZG59B</internalidstring>
-		<ecuid>ZG59B</ecuid>
+		<ecuid>1ZG59B</ecuid>
 		<year>2006</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,12 +13,98 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
-		<author>Fenugrec</author>
+		<author>Pytrex</author>
 		<version>v1.0</version>
 	</romid>
 <!-- Children: ZD89A -->
+
+	<table name="Target Idle Table" storageaddress="0xABBC"/>
+	<table name="Target AFR Table (High Detonation)" storageaddress="0xAA7E"/>
+	<table name="MAF Table" storageaddress="0xB468"/>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x86DC"/>
+	<table name="Throttle Rev Limiter" storageaddress="0x876E"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0xAB88"/>
+	<table name="Bosch Fuel Restore Table" storageaddress="0xAC04"/>
+	<table name="JECS Fuel Restore Table" storageaddress="0xACC8"/>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0xB6F6"/>
+	<table name="QH0 High Flow Quantity Table" storageaddress="0xB95E"/>
+	<table name="QH0 Low Flow Quantity Table" storageaddress="0xB97E"/>
+	<table name="Gear Ratio Table" storageaddress="0xBA4E"/>
+	<table name="ISC Opening Area Upper Limit Table" storageaddress="0xB566"/>
+	<table name="ISC Opening Area Upper Limit Table (RPM Compensation)" storageaddress="0xB586"/>
+	<table name="EGR Modification Coefficient" storageaddress="0x7D37"/>
+	<table name="Flags 14" storageaddress="0x7E7C"/>
+	<table name="Ignition Timing Main Constant" storageaddress="0x7F5C"/>
+	<table name="O2 Sensor Position Flags" storageaddress="0x8012"/>
+	<table name="Retard Side Maximum Change Width" storageaddress="0x80E5"/>
+	<table name="Ignition Delay Time" storageaddress="0x81D3"/>
+	<table name="Dwell Limits" storageaddress="0x81EB"/>
+	<table name="MAF Startup Voltage Limit 2" storageaddress="0x849A"/>
+	<table name="MAF Voltage Upper Limit" storageaddress="0x849C"/>
+	<table name="Short Term Fuel Trim Limits" storageaddress="0x84CA"/>
+	<table name="APO Threshold (Brake)" storageaddress="0x8506"/>
+	<table name="K-Value" storageaddress="0x864C"/>
+	<table name="Minimum Injector Pulse Width" storageaddress="0x87CA"/>
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x87E0"/>
+	<table name="Dwell VB Coefficient" storageaddress="0x882A"/>
+	<table name="High Temperature Fuel Compensation Map" storageaddress="0x8A21">
+		<table type="X Axis" storageaddress="0xA3F3"/>
+		<table type="Y Axis" storageaddress="0xA3EF"/>
+	</table>
+	<table name="MBT Flame Speed Map" storageaddress="0x8D71">
+		<table type="X Axis" storageaddress="0xA3B7"/>
+	</table>
+	<table name="AFR Correction Map (Bank 1)" storageaddress="0x958C">
+		<table type="X Axis" storageaddress="0xB428"/>
+	</table>
+	<table name="AFR Correction Map (Bank 2)" storageaddress="0x960C">
+		<table type="X Axis" storageaddress="0xB428"/>
+	</table>
+	<table name="Engine Torque Map" storageaddress="0xA00C"/>
+	<table name="OBD-2 PID 41-60 Supmask" storageaddress="0xA397"/>
+	<table name="JAR Sound Compensation Table (Coolant Temperature)" storageaddress="0xA602"/>
+	<table name="JAR Sound Compensation Table (Engine RPM)" storageaddress="0xA612"/>
+	<table name="Cranking Advance Table" storageaddress="0xA6EA"/>
+	<table name="Unburned Gas Density Table" storageaddress="0xA3AF"/>
+	<table name="Dwell RPM Table" storageaddress="0xA786"/>
+	<table name="Dwell Battery Table" storageaddress="0xA78E"/>
+	<table name="Target AFR MBT Compensation Table" storageaddress="0xA7F6"/>
+	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xA806"/>
+	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0xA9E6"/>
+	<table name="LTFT Map BFS Axis" storageaddress="0xAABE"/>
+	<table name="LTFT Map RPM Axis" storageaddress="0xAB80"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0xABAC"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0xACE4"/>
+	<table name="Target AFR MBT Compensation Table 2" storageaddress="0xACEE"/>
+	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xAF96"/>
+	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0xAFD6"/>
+	
+	
+	<table name="Target Throttle Valve Opening Table" storageaddress="0xB136">
+		<table type="X Axis" storageaddress="0xBC2C"/>
+	</table>
+	<table name="AFR Conversion Table" storageaddress="0xB6D6">
+		<table type="X Axis" storageaddress="0xBE2C"/>
+	</table>
+	<table name="Throttle Flow Potential Table" storageaddress="0xBCAC">
+		<table type="X Axis" storageaddress="0xBB8C"/>
+	</table>
+	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0xBCEC">
+		<table type="X Axis" storageaddress="0xBBCC"/>
+	</table>
+	<table name="Target Throttle Valve Opening Table (Trustful)" storageaddress="0xC6FC">
+		<table type="X Axis" storageaddress="0xC946"/>
+	</table>
+	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xC8BC">
+		<table type="X Axis" storageaddress="0xC83C"/>
+	</table>
+	<table name="Throttle Flow Potential Table 2" storageaddress="0xC8FC">
+		<table type="X Axis" storageaddress="0xC87C"/>
+	</table>
+
+
 
 <!-- Notes: I haven't personally gone through and verified addresses. ROM is apparently without NATS. -->
 
@@ -77,7 +163,7 @@
 		<table type="Y Axis" storageaddress="0xA524"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xC49E">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xC49E">
 		<table type="X Axis" storageaddress="0xC77C"/>
 		<table type="Y Axis" storageaddress="0xC6EC"/>
 	</table>
@@ -96,23 +182,6 @@
 		<table type="X Axis" storageaddress="0xA42B"/>
 		<table type="Y Axis" storageaddress="0xA44B"/>
 	</table>
-
-	<table name="Target Idle Table" storageaddress="0xABBC"/>
-	<table name="K-Value" storageaddress="0x864C"/>
-	<table name="Target AFR Table (High Detonation)" storageaddress="0xAA7E"/>
-	<table name="LTFT Map BFS Axis" storageaddress="0xAABE"/>
-	<table name="LTFT Map RPM Axis" storageaddress="0xAB80"/>
-	<table name="MAF Table" storageaddress="0xB468"/>
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x86DC"/>
-	<table name="Throttle Rev Limiter" storageaddress="0x876E"/>
-	<table name="Dwell RPM Table" storageaddress="0xA786"/>
-	<table name="Dwell Battery Table" storageaddress="0xA78E"/>
-	<table name="Unburned Gas Density Table" storageaddress="0xA3AF"/>
-	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xAF96"/>
-	<table name="Bosch Fuel Cut Table" storageaddress="0xAB88"/>
-	<table name="JECS Fuel Cut Table" storageaddress="0xABAC"/>
-	<table name="Bosch Fuel Restore Table" storageaddress="0xAC04"/>
-	<table name="JECS Fuel Restore Table" storageaddress="0xACC8"/>
 	
 	<table name="Catalyst DTCs" storageaddress="0xC6A4"/>
 	<table name="Evap DTCs" storageaddress="0xC6AD"/>
@@ -125,5 +194,5 @@
 	<table name="Evap Leaks DTCs"  storageaddress="0xC6D7"/>
 
 	<checksum type="alt" start="0x2414" end="0x4246" sumloc="0x240C" xorloc="0x2410"/>
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8918" xorloc="8910"/>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8918" xorloc="0x8910"/>
 </rom>

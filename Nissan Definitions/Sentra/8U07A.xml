@@ -4,16 +4,16 @@
 		<caseid>3TREE21N15</caseid>
 		<internalidaddress>744C</internalidaddress>
 		<internalidstring>8U07A</internalidstring>
-		<ecuid>8U07A</ecuid>
+		<ecuid>18U07A</ecuid>
 		<year>2002</year>
-		<market>US</market>
+		<market>USDM</market>
 		<make>Nissan</make>
 		<model>Sentra</model>
 		<submodel>Spec-V</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -69,18 +69,13 @@
 		<table type="Y Axis" storageaddress="0x818b"/>
 	</table>	
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x53ae">
-	</table>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x53ae"/>
 
-	<table name="MAF Table" storageaddress="0x84da">
-		<scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100"/>
-	</table>
+	<table name="MAF Table" storageaddress="0x84da"/>
+	<table name="Target Idle Table" storageaddress="0x7d47"/>
 
-	<table name="Target Idle Table" storageaddress="0x7d47">
-	</table>
-
-	<table name="K-Value" storageaddress="0x5340">
-	</table>
+	<table name="K-Value" storageaddress="0x5340"/>
+	
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x683c">
 		<table type="X Axis" storageaddress="0x84ba"/>
 		<table type="Y Axis" storageaddress="0x7696"/>

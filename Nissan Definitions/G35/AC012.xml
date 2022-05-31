@@ -4,16 +4,16 @@
         <caseid>3GIPAN07</caseid>
         <internalidaddress>8060</internalidaddress>
         <internalidstring>AC012</internalidstring>
-        <ecuid>AC012</ecuid>
+        <ecuid>1AC012</ecuid>
         <year>2004</year>
-        <market>US</market>
+        <market>USDM</market>
         <make>Infiniti</make>
         <model>G35</model>
         <submodel>Sedan</submodel>
         <transmission>5AT</transmission>
         <memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-        <flashmethod>nisprog</flashmethod>
+        <flashmethod>Nisprog</flashmethod>
         <filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -90,12 +90,12 @@
 		<table type="Y Axis" storageaddress="0x80B5"/>
 	</table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x6A49"> 
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x6A49"> 
 		<table type="X Axis" storageaddress="0x80A9"/> 
 		<table type="Y Axis" storageaddress="0x80A1"/> 
 	</table>
 	
-	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x6A89"> 
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x6A89"> 
 		<table type="X Axis" storageaddress="0x80A9"/> 
 		<table type="Y Axis" storageaddress="0x80A1"/> 
 	</table>
@@ -170,7 +170,7 @@
         <table type="Y Axis" storageaddress="0x81FE"/>
     </table>
 
-    <table name="QH0/ Torque Conversion Map 2" storageaddress="0x9B18">
+    <table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x9B18">
         <table type="X Axis" storageaddress="0x9DEC"/>
         <table type="Y Axis" storageaddress="0x9D5C"/>
     </table>
@@ -178,24 +178,24 @@
 	
 
 	<table name="DTC 1" storageaddress="0x9D18"/>
-	<table name="DTC 2" storageaddress="0x9D1A"/>
-	<table name="DTC 3" storageaddress="0x9D1E"/>
-	<table name="DTC 4" storageaddress="0x9D22"/>
-	<table name="DTC 5" storageaddress="0x9D26"/>
-	<table name="DTC 6" storageaddress="0x9D2A"/>
-	<table name="DTC 7" storageaddress="0x9D2E"/>
-	<table name="DTC 8" storageaddress="0x9D32"/>
-	<table name="DTC 9" storageaddress="0x9D36"/>
-	<table name="DTC 10" storageaddress="0x9D3A"/>
-	<table name="DTC 11" storageaddress="0x9D3E"/>
-	<table name="DTC 12" storageaddress="0x9D42"/>
-	<table name="DTC 13" storageaddress="0x9D46"/>
-	<table name="DTC 14" storageaddress="0x9D4A"/>
-	<table name="DTC 15" storageaddress="0x9D4E"/>
-	<table name="DTC 16" storageaddress="0x9D52"/>
-	<table name="DTC 17" storageaddress="0x9D56"/>
-	<table name="DTC 18" storageaddress="0x9D5A"/>
-	<table name="DTC 19" storageaddress="0x9D5E"/>
+	<table name="DTC 2" storageaddress="0x9D1C"/>
+	<table name="DTC 3" storageaddress="0x9D20"/>
+	<table name="DTC 4" storageaddress="0x9D24"/>
+	<table name="DTC 5" storageaddress="0x9D28"/>
+	<table name="DTC 6" storageaddress="0x9D2C"/>
+	<table name="DTC 7" storageaddress="0x9D30"/>
+	<table name="DTC 8" storageaddress="0x9D34"/>
+	<table name="DTC 9" storageaddress="0x9D38"/>
+	<table name="DTC 10" storageaddress="0x9D3C"/>
+	<table name="DTC 11" storageaddress="0x9D40"/>
+	<table name="DTC 12" storageaddress="0x9D44"/>
+	<table name="DTC 13" storageaddress="0x9D48"/>
+	<table name="DTC 14" storageaddress="0x9D4C"/>
+	<table name="DTC 15" storageaddress="0x9D50"/>
+	<table name="DTC 16" storageaddress="0x9D54"/>
+	<table name="DTC 17" storageaddress="0x9D58"/>
+	<table name="DTC 18" storageaddress="0x9D5C"/>
+
 
 
     <checksum type="std" start="0" end="0x7FFFF" sumloc="0x65C0" xorloc="0x65B8"/>

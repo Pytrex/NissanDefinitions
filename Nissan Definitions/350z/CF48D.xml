@@ -4,7 +4,7 @@
 		<caseid>6GIZ7N4</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CF48D</internalidstring>
-		<ecuid>CF48D</ecuid>
+		<ecuid>1CF48D</ecuid>
 		<year>2006</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -19,8 +19,8 @@
 		<version>v1.0</version>
 	</romid>
 <!-- Children: CF40A, CF41A, CF41B, CF41D, CF41E, CF42A, CF44B, CF44C, CF44D, CF49A, CF50A, CM80A, ZH96E, CM30C, CM32C, ZC070 (Not all have been added)-->
-	
-	<table name="AFR Compensation Limits" storageaddress="0x8704"/>
+
+	<table name="STFT Compensation Limits" storageaddress="0x8704"/>
 	<table name="QH0 High Flow Quantity Table" storageaddress="0xCE98"/> 
 	<table name="QH0 Low Flow Quantity Table" storageaddress="0xCEB8"/> 
 	<table name="ISC Opening Area Upper Limit Table 2 (RPM Compensation)" storageaddress="0xDEE2"/> 
@@ -43,7 +43,7 @@
 	<table name="Target Idle Table" storageaddress="0xBCE6"/>
 	<table name="Dilution Modification Coefficient" storageaddress="0x7CCA"/> 	
 	<table name="Short Term Fuel Trim Limits" storageaddress="0x8708"/>
-	<table name="Long Term Fuel Trim Limits" storageaddress="0x829F"/> 
+	<table name="Idle LTFT Limits" storageaddress="0x829F"/> 
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8ADE"/>
 	<table name="K-Value" storageaddress="0x88E8"/>	
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xCA70"/>
@@ -60,7 +60,7 @@
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x7FDA"/> 
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB834"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xC210"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xD1F6"/>
+	<table name="Crank Fueling TP Table" storageaddress="0xD1F6"/>
 	<table name="Unburned Gas Density Table" storageaddress="0xB724"/>
 	<table name="Dwell RPM Table" storageaddress="0xB794"/>
 	<table name="Dwell TIM Coefficient" storageaddress="0x7DA0"/> 
@@ -78,8 +78,8 @@
 	<table name="K2Y Table (Deceleration Advance)" storageaddress="0xBA28"/> 
 	<table name="K1 Table (Acceleration Retard)" storageaddress="0xBA30"/> 
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0xC144"/>
-	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0xC14C"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0xC148"/>
+	<table name="Initial Retard Quantity Table (Stepping on from Idle)" storageaddress="0xC14C"/>
 	<table name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" storageaddress="0xC150"/>
 	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0xC154"/>
 	<table name="VVT MBT Compensation Quantity Table" storageaddress="0xC2D4"/>
@@ -94,7 +94,7 @@
 	<table name="Ignition Timing Main Constant" storageaddress="0x804B"/>
 	<table name="EGR Modification Coefficient" storageaddress="0x7DB6"/> 
 	<table name="Dwell Limits" storageaddress="0x8342"/> 
-	<table name="Advance Side Maximum Change Width (Cranking)" storageaddress="0x7B38"/> 
+	<table name="Advance Side Maximum Change Width (2)" storageaddress="0x7B38"/> 
 	<table name="Retard Side Maximum Change Width" storageaddress="0x8221"/> 
 	<table name="Advance Side Maximum Change Width" storageaddress="0x7B36"/> 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x897A"/>
@@ -129,11 +129,11 @@
 		<table type="X Axis" storageaddress="0xD146"/>
 	</table>
 	
-	<table name="Throttle Flow Potential Table 2" storageaddress="0xE022">
+	<table name="Throttle Flow Potential Table Trustful" storageaddress="0xE022">
 		<table type="X Axis" storageaddress="0xDFA2"/>
 	</table>
 	
-	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xDFE2">
+	<table name="Throttle Flow Potential Table (High Flow-Quantity) Trustful" storageaddress="0xDFE2">
 		<table type="X Axis" storageaddress="0xDF62"/>
 	</table>
 	
@@ -214,12 +214,12 @@
 		<table type="Y Axis" storageaddress="0xB4AE"/>
 	</table>
 	
-	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x91F1"> 
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x91F1"> 
 		<table type="X Axis" storageaddress="0xB2CD"/> 
 		<table type="Y Axis" storageaddress="0xB2C5"/> 
 	</table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x91B1"> 
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x91B1"> 
 		<table type="X Axis" storageaddress="0xB2CD"/> 
 		<table type="Y Axis" storageaddress="0xB2C5"/> 
 	</table>
@@ -244,7 +244,7 @@
 		<table type="Y Axis" storageaddress="0xC2B8"/>	
 	</table>
 
-	<table name="VTC Drive Abnormality Diagnosis Judgement Delay Map" storageaddress="0x8D01"> 
+	<table name="VVT Drive Abnormality Diagnosis Judgement Delay Map" storageaddress="0x8D01"> 
 		<table type="X Axis" storageaddress="0xB26A"/> 
 		<table type="Y Axis" storageaddress="0xB262"/>
 	</table>
@@ -274,7 +274,7 @@
 		<table type="Y Axis" storageaddress="0xB4CA"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xDBCA">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xDBCA">
 		<table type="X Axis" storageaddress="0xDEA2"/>
 		<table type="Y Axis" storageaddress="0xDE11"/>
 	</table>
@@ -294,7 +294,6 @@
 		<table type="Y Axis" storageaddress="0xC394"/>
 	</table>	
 	
-	<table name="DOMON Distinction Flag" storageaddress="0xB27F"/>
 	<table name="CO Variable Flag" storageaddress="0x7E5F"/> 
 	<table name="A Hand-Operated Purge Cut Flag" storageaddress="0x7E88"/> 
 	<table name="KTRM Variable Flag" storageaddress="0x7EC0"/> 
@@ -336,36 +335,35 @@
 	<table name="Flags 25" storageaddress="0x7F45"/>
 	<table name="Flags 26" storageaddress="0x7C4B"/> 
 	<table name="Flags 27" storageaddress="0x82F9"/> 
-	<table name="Flags 28" storageaddress="0xDDE8"/> 
 
 	<table name="DTC 1" storageaddress="0xDDCA"/>
-	<table name="DTC 2" storageaddress="0xDDCC"/>
-	<table name="DTC 3" storageaddress="0xDDD0"/>
-	<table name="DTC 4" storageaddress="0xDDD4"/>
-	<table name="DTC 5" storageaddress="0xDDD8"/>
-	<table name="DTC 6" storageaddress="0xDDDC"/>
-	<table name="DTC 7" storageaddress="0xDDE0"/>
-	<table name="DTC 8" storageaddress="0xDDE4"/>
-	<table name="DTC 9" storageaddress="0xDDE8"/>
-	<table name="DTC 10" storageaddress="0xDDEC"/>
-	<table name="DTC 11" storageaddress="0xDDF0"/>
-	<table name="DTC 12" storageaddress="0xDDF4"/>
-	<table name="DTC 13" storageaddress="0xDDF8"/>
-	<table name="DTC 14" storageaddress="0xDDFC"/>
-	<table name="DTC 15" storageaddress="0xDE00"/>
-	<table name="DTC 16" storageaddress="0xDE04"/>
-	<table name="DTC 17" storageaddress="0xDE08"/>
-	<table name="DTC 18" storageaddress="0xDE0C"/>
-	<table name="DTC 19" storageaddress="0xDE10"/>
+	<table name="DTC 2" storageaddress="0xDDCE"/>
+	<table name="DTC 3" storageaddress="0xDDD2"/>
+	<table name="DTC 4" storageaddress="0xDDD6"/>
+	<table name="DTC 5" storageaddress="0xDDDA"/>
+	<table name="DTC 6" storageaddress="0xDDDE"/>
+	<table name="DTC 7" storageaddress="0xDDE2"/>
+	<table name="DTC 8" storageaddress="0xDDE6"/>
+	<table name="DTC 9" storageaddress="0xDDEA"/>
+	<table name="DTC 10" storageaddress="0xDDEE"/>
+	<table name="DTC 11" storageaddress="0xDDF2"/>
+	<table name="DTC 12" storageaddress="0xDDF6"/>
+	<table name="DTC 13" storageaddress="0xDDFA"/>
+	<table name="DTC 14" storageaddress="0xDDFE"/>
+	<table name="DTC 15" storageaddress="0xDE02"/>
+	<table name="DTC 16" storageaddress="0xDE06"/>
+	<table name="DTC 17" storageaddress="0xDE0A"/>
+	<table name="DTC 18" storageaddress="0xDE0E"/>
+
 	
-	<table name="CID1100 supmask" storageaddress="0xB547"/> 
-	<table name="CID1120 supmask" storageaddress="0xB553"/>
-	<table name="CID1140 supmask" storageaddress="0xB54B"/> 
-	<table name="CID1160 supmask" storageaddress="0xB54F"/> 
-	<table name="CID1200 supmask" storageaddress="0xB55F"/> 
-	<table name="CID1220 supmask" storageaddress="0xB563"/>
-	<table name="CID1240 supmask" storageaddress="0xB567"/> 	
-	<table name="CID1300 supmask" storageaddress="0xB56B"/>
+	<table name="CID1100 Supmask" storageaddress="0xB547"/> 
+	<table name="CID1120 Supmask" storageaddress="0xB553"/>
+	<table name="CID1140 Supmask" storageaddress="0xB54B"/> 
+	<table name="CID1160 Supmask" storageaddress="0xB54F"/> 
+	<table name="CID1200 Supmask" storageaddress="0xB55F"/> 
+	<table name="CID1220 Supmask" storageaddress="0xB563"/>
+	<table name="CID1240 Supmask" storageaddress="0xB567"/> 	
+	<table name="CID1300 Supmask" storageaddress="0xB56B"/>
 	<table name="CID1400 Supmask" storageaddress="0xB557"/> 
 	<table name="CID1420 Supmask" storageaddress="0xB55B"/> 
 	<table name="CID1500 Supmask" storageaddress="0xB56F"/> 

@@ -4,7 +4,7 @@
 		<caseid>1TKE8Z5N57</caseid>
 		<internalidaddress>6C39</internalidaddress>
 		<internalidstring>9J074</internalidstring>
-		<ecuid>9J074</ecuid>
+		<ecuid>19J074</ecuid>
 		<year>2003</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>AT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -68,15 +68,11 @@
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5026">
 	</table>
 
-	<table name="MAF Table" storageaddress="0x796a">
-		<scaling units="Airflow g/s" expression="(x-3121)*105/25600" to_byte="3121+x*25600/105" format="0.00" fineincrement="1" coarseincrement="100"/>
-	</table>
-	<table name="Target Idle Table" storageaddress="0x73b7">
-	</table>
-	<table name="Target Idle Table 2" storageaddress="0x73db">
-	</table>
-	<table name="K-Value" storageaddress="0x4FD0">
-	</table>
+	<table name="MAF Table" storageaddress="0x796a"/>
+	
+	<table name="Target Idle Table" storageaddress="0x73b7"/>
+	<table name="Target Idle Table 2" storageaddress="0x73db"/>
+	<table name="K-Value" storageaddress="0x4FD0"/>
 	<table name="Speed Limiter" storageaddress="0x5074"/>
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x85dc">
 		<table type="X Axis" storageaddress="0x88b0"/>

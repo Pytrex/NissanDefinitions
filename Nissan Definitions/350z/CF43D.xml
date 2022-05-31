@@ -4,7 +4,7 @@
 		<caseid>6GI5VN6</caseid>
 		<internalidaddress>2401</internalidaddress>
 		<internalidstring>CF43D</internalidstring>
-		<ecuid>CF43D</ecuid>
+		<ecuid>1CF43D</ecuid>
 		<year>2006</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>v1.0</version>
@@ -37,9 +37,9 @@
 	<table name="APO Threshold (Brake)" storageaddress="0x8768"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0xBCBE"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0xBD6A"/>
-	<table name="CID1120 supmask" storageaddress="0xB56F"/>
-	<table name="CID1200 supmask" storageaddress="0xB57B"/>
-	<table name="CID1220 supmask" storageaddress="0xB57F"/>
+	<table name="CID1120 Supmask" storageaddress="0xB56F"/>
+	<table name="CID1200 Supmask" storageaddress="0xB57B"/>
+	<table name="CID1220 Supmask" storageaddress="0xB57F"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x8001"/>
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DED">
 		<table type="X Axis" storageaddress="0xB640"/>
@@ -106,12 +106,12 @@
 		<table type="Y Axis" storageaddress="0xB4CA"/>
 	</table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x91CD">
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x91CD">
 		<table type="X Axis" storageaddress="0xB2E9"/>
 		<table type="Y Axis" storageaddress="0xB2E1"/>
 	</table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x920D">
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x920D">
 		<table type="X Axis" storageaddress="0xB2E9"/>
 		<table type="Y Axis" storageaddress="0xB2E1"/>
 	</table>
@@ -129,24 +129,24 @@
 	<table name="Fuel Injector Latency Adder" storageaddress="0x7d9f"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x846a"/>
 	<table name="DTC 1" storageaddress="0xDD62"/>
-	<table name="DTC 2" storageaddress="0xDD64"/>
-	<table name="DTC 3" storageaddress="0xDD68"/>
-	<table name="DTC 4" storageaddress="0xDD6C"/>
-	<table name="DTC 5" storageaddress="0xDD70"/>
-	<table name="DTC 6" storageaddress="0xDD74"/>
-	<table name="DTC 7" storageaddress="0xDD78"/>
-	<table name="DTC 8" storageaddress="0xDD7C"/>
-	<table name="DTC 9" storageaddress="0xDD80"/>
-	<table name="DTC 10" storageaddress="0xDD84"/>
-	<table name="DTC 11" storageaddress="0xDD88"/>
-	<table name="DTC 12" storageaddress="0xDD8C"/>
-	<table name="DTC 13" storageaddress="0xDD90"/>
-	<table name="DTC 14" storageaddress="0xDD94"/>
-	<table name="DTC 15" storageaddress="0xDD98"/>
-	<table name="DTC 16" storageaddress="0xDD9C"/>
-	<table name="DTC 17" storageaddress="0xDDA0"/>
-	<table name="DTC 18" storageaddress="0xDDA4"/>
-	<table name="DTC 19" storageaddress="0xDDA8"/>
+	<table name="DTC 2" storageaddress="0xDD66"/>
+	<table name="DTC 3" storageaddress="0xDD6A"/>
+	<table name="DTC 4" storageaddress="0xDD6E"/>
+	<table name="DTC 5" storageaddress="0xDD72"/>
+	<table name="DTC 6" storageaddress="0xDD76"/>
+	<table name="DTC 7" storageaddress="0xDD7A"/>
+	<table name="DTC 8" storageaddress="0xDD7E"/>
+	<table name="DTC 9" storageaddress="0xDD82"/>
+	<table name="DTC 10" storageaddress="0xDD86"/>
+	<table name="DTC 11" storageaddress="0xDD8A"/>
+	<table name="DTC 12" storageaddress="0xDD8E"/>
+	<table name="DTC 13" storageaddress="0xDD92"/>
+	<table name="DTC 14" storageaddress="0xDD96"/>
+	<table name="DTC 15" storageaddress="0xDD9A"/>
+	<table name="DTC 16" storageaddress="0xDD9E"/>
+	<table name="DTC 17" storageaddress="0xDDA2"/>
+	<table name="DTC 18" storageaddress="0xDDA6"/>
+
 	<table name="GOV Addition Table (Drive)" storageaddress="0xB664"/>
 	<table name="GOV Addition Table (Neutral)" storageaddress="0xB66C"/>
 	<table name="GOV Table" storageaddress="0xB8A0"/>
@@ -242,7 +242,7 @@
 	<table name="OBD Function Choice Flags" storageaddress="0x814F"/>
 	<table name="OBD Function Choice Flags 2" storageaddress="0x8150"/>
 	<table name="OBD Function Choice Flags 3" storageaddress="0x8151"/>
-	<table name="OBD-2 PID 01-20 supmask" storageaddress="0xB2C9"/>
+	<table name="OBD-2 PID 01-20 Supmask" storageaddress="0xB2C9"/>
 	<table name="OBD-2 PID 41-60 Supmask" storageaddress="0xB2D1"/>
 	<table name="P-Gain Computed Map (Bank 1)" storageaddress="0x92CD">
 		<table type="X Axis" storageaddress="0xC3F8"/>
@@ -262,7 +262,7 @@
 		<table type="Y Axis" storageaddress="0xB4E6"/>
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0xDB62">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xDB62">
 		<table type="X Axis" storageaddress="0xDE38"/>
 		<table type="Y Axis" storageaddress="0xDDA8"/>
 	</table>

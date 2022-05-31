@@ -4,7 +4,7 @@
 		<caseid>1TKE8Z5N53</caseid>
 		<internalidaddress>6B7C</internalidaddress>
 		<internalidstring>5Y724</internalidstring>
-		<ecuid>5Y724</ecuid>
+		<ecuid>15Y724</ecuid>
 		<year>2002</year>
 		<market>USDM</market>
 		<make>Nissan</make>
@@ -87,7 +87,7 @@
 		<table type="Y Axis" storageaddress="0x6D3E"/>   
 	</table>
 
-	<table name="QH0/ Torque Conversion Map 2" storageaddress="0x850E">
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x850E">
 		<table type="X Axis" storageaddress="0x87DC"/>
 		<table type="Y Axis" storageaddress="0x874B"/>   
 	</table>
@@ -107,12 +107,12 @@
 		<table type="Y Axis" storageaddress="0x6C45"/>
 	</table>
 	
-	<table name="Fuel Compensation Map (Transient Throttle Deceleration)" storageaddress="0x55A5"> 
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x55A5"> 
 		<table type="X Axis" storageaddress="0x6BF9"/>
 		<table type="Y Axis" storageaddress="0x6BF1"/>
 	</table>
 
-	<table name="Fuel Compensation Map (Transient Throttle Acceleration)" storageaddress="0x5565"> 
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x5565"> 
 		<table type="X Axis" storageaddress="0x6BF9"/>
 		<table type="Y Axis" storageaddress="0x6BF1"/>
 	</table>
