@@ -16,14 +16,15 @@
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
-		<version>v1.0</version>
+		<version>EXPERIMENTAL</version>
 	</romid>	
 
 <!--Children: EV13B, EV16A-->
 
 <!--NOTE: THIS IS AN EXTREMELY EXPERIMENTAL DEFINITION FILE. DO NOT USE.-->
 
-	
+	<table name="Injector Magnification Reciprocal Number" storageaddress="0x9370"/>
+
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x8CB3"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x84F9"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0x16A00"/>	

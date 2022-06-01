@@ -15,8 +15,8 @@
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
-		<author>Pytrex</author>
-		<version>v1.0</version>
+		<author>Fenugrec</author>
+		<version>EXPERIMENTAL</version>
 	</romid>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7cb1">

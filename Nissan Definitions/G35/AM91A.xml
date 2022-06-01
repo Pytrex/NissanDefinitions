@@ -15,7 +15,7 @@
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Pytrex</author>
+		<author>Fenugrec</author>
 		<version>v1.0</version>
 	</romid>
 <!-- Children: AM90A -->

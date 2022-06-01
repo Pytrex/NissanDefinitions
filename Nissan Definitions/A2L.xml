@@ -632,7 +632,7 @@
 
 	<table type="1D" name="K-Value" category="Fuel Delivery//Fuel Injector Calibration//Specifications//Main" storagetype="uint16" userlevel="1">
 		<scaling base="ms/kg (x)"/>
-		<description><!--mKCONST-->Global Fuel injection Multiplier. Value is used to convert a raw airflow amount into an injector pulsewidth per kilogram of air.</description>
+		<description><!--mKCONST-->Air volume pulse width conversion constant. Represents a fuel injector factor.</description>
 	</table>
 
 	<table type="1D" name="Fuel Injector Latency at 14V" category="Fuel Delivery//Fuel Injector Calibration//Specifications//Main" storagetype="uint8" userlevel="3">
