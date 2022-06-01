@@ -24,6 +24,7 @@ Each ROM has its own definition file that stores the ROM addresses for all defin
 - Semi-Automated Definition Files (Automated initial definition files with manual verification) 
 - Ability to Modify Individual ROM Contents and Definition Files
 - Cross Compatible with Any Preexisting Definition Repositories (add the preexisting definition template to your "Nissan Definitions" folder)
+- "EXPERIMENTAL" Tag for ROMs that Haven't Been Thoroughly Tested
 
 ### A2L Template Specific Features
 
