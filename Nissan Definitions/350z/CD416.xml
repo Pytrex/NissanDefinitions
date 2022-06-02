@@ -15,7 +15,7 @@
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Fenugrec</author>
+		<author>Pytrex</author>
 		<version>v1.0</version>
     </romid>
 <!--Children: CD406-->

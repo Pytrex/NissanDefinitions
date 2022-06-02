@@ -19,34 +19,34 @@
 		<version>EXPERIMENTAL</version>
     </romid>
 	
-<table name="CID1100 supmask"  storageaddress="0x7E83"/>					
-<table name="CID1120 supmask"  storageaddress="0x7E8F"/>					
-<table name="CID1140 supmask"  storageaddress="0x7E87"/>					
-<table name="CID1160 supmask"  storageaddress="0x7E8B"/>					
-<table name="CID1200 supmask"  storageaddress="0x7E9B"/>					
-<table name="CID1220 supmask"  storageaddress="0x7E9F"/>					
-<table name="CID1300 supmask"  storageaddress="0x7EA3"/>					
-<table name="CID1301 supmask"  storageaddress="0x7ED3"/>					
-<table name="CID1302 supmask"  storageaddress="0x7ECF"/>					
-<table name="CID1303 supmask"  storageaddress="0x7ED0"/>					
-<table name="CID1304 supmask"  storageaddress="0x7ED1"/>					
-<table name="CID1305 supmask"  storageaddress="0x7ED2"/>					
-<table name="CID1306 supmask"  storageaddress="0x7D23"/>					
-<table name="CID1307 supmask"  storageaddress="0x7D24"/>					
-<table name="CID1308 supmask"  storageaddress="0x7D25"/>					
-<table name="CID1309 supmask"  storageaddress="0x7D26"/>					
-<table name="CID130A supmask"  storageaddress="0x7D27"/>					
-<table name="CID130B supmask"  storageaddress="0x7D28"/>					
-<table name="CID130C supmask"  storageaddress="0x7D6F"/>					
-<table name="CID130F supmask"  storageaddress="0x7D08"/>					
-<table name="CID1310 supmask"  storageaddress="0x7D09"/>					
-<table name="CID1311 supmask"  storageaddress="0x7D29"/>					
-<table name="CID1313 supmask"  storageaddress="0x7D2A"/>					
-<table name="Mode 6 TID 01-20 supmask"  storageaddress="0x7E05"/>					
-<table name="Mode 6 TID 21-40 supmask"  storageaddress="0x7E09"/>					
-<table name="Mode 6 TID 41-60 supmask"  storageaddress="0x7E0D"/>					
-<table name="OBD-2 PID 01-20 supmask"  storageaddress="0x7D59"/>					
-<table name="OBD-2 PID 21-40 supmask"  storageaddress="0x7D5D"/>					
+<table name="CID1100 supmask" storageaddress="0x7E83"/>
+<table name="CID1120 supmask" storageaddress="0x7E8F"/>
+<table name="CID1140 supmask" storageaddress="0x7E87"/>
+<table name="CID1160 supmask" storageaddress="0x7E8B"/>
+<table name="CID1200 supmask" storageaddress="0x7E9B"/>
+<table name="CID1220 supmask" storageaddress="0x7E9F"/>
+<table name="CID1300 supmask" storageaddress="0x7EA3"/>
+<table name="CID1301 supmask" storageaddress="0x7ED3"/>
+<table name="CID1302 supmask" storageaddress="0x7ECF"/>
+<table name="CID1303 supmask" storageaddress="0x7ED0"/>
+<table name="CID1304 supmask" storageaddress="0x7ED1"/>
+<table name="CID1305 supmask" storageaddress="0x7ED2"/>
+<table name="CID1306 supmask" storageaddress="0x7D23"/>
+<table name="CID1307 supmask" storageaddress="0x7D24"/>
+<table name="CID1308 supmask" storageaddress="0x7D25"/>
+<table name="CID1309 supmask" storageaddress="0x7D26"/>
+<table name="CID130A supmask" storageaddress="0x7D27"/>
+<table name="CID130B supmask" storageaddress="0x7D28"/>
+<table name="CID130C supmask" storageaddress="0x7D6F"/>
+<table name="CID130F supmask" storageaddress="0x7D08"/>
+<table name="CID1310 supmask" storageaddress="0x7D09"/>
+<table name="CID1311 supmask" storageaddress="0x7D29"/>
+<table name="CID1313 supmask" storageaddress="0x7D2A"/>
+<table name="Mode 6 TID 01-20 supmask" storageaddress="0x7E05"/>
+<table name="Mode 6 TID 21-40 supmask" storageaddress="0x7E09"/>
+<table name="Mode 6 TID 41-60 supmask" storageaddress="0x7E0D"/>
+<table name="OBD-2 PID 01-20 supmask" storageaddress="0x7D59"/>
+<table name="OBD-2 PID 21-40 supmask" storageaddress="0x7D5D"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x8362"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x840E"/>
 	<table name="Catalyst DTCs" storageaddress="0x96B2"/>

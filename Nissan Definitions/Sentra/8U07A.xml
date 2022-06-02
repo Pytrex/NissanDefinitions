@@ -58,7 +58,7 @@
 		<table type="X Axis" storageaddress="0x7531"/>
 		<table type="Y Axis" storageaddress="0x7666"/>
 	</table>
-
+<!--
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5fb1">
 		<table type="X Axis" storageaddress="0x81af"/>
 		<table type="Y Axis" storageaddress="0x8183"/>
@@ -67,8 +67,8 @@
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5f71">
 		<table type="X Axis" storageaddress="0x819f"/>
 		<table type="Y Axis" storageaddress="0x818b"/>
-	</table>	
-
+	</table>
+-->
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x53ae"/>
 
 	<table name="MAF Table" storageaddress="0x84da"/>

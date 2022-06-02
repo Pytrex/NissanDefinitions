@@ -13,7 +13,7 @@
 		<transmission>MT</transmission>
 		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
-		<flashmethod>nisprog</flashmethod>
+		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>EXPERIMENTAL</version>
@@ -21,30 +21,53 @@
 
 <!-- Known Issues:
 - MBT flame speed map needs Y-axis defined
-
-
-
 -->
 
-
-<!-- Likely, but verify	<table name="War Way Speed Weight Constant" storageaddress="0x68AF"/> -->
-<!-- Verify	<table name="Dilution Modification Coefficient" storageaddress="0x6616"/> -->
-<!-- Verify	<table name="Dwell VB Coefficient" storageaddress="0x6FDA"/> -->
-<!-- Verify	<table name="ISC Opening Area Upper Limit Table (RPM Compensation)" storageaddress="0x97A4"/> -->
-<!-- Verify to be safe	<table name="Dwell Limits" storageaddress="0x6B1D"/> -->
+	<table name="Consult Ignition Timing Adjustment Limits" storageaddress="0x64C4"/>
+	<table name="ATRET Limit" storageaddress="0x64E1"/>
+	<table name="Advance Side Maximum Change Width" storageaddress="0x6511"/>
+	<table name="Flags 6" storageaddress="0x6568"/>
+	<table name="MAF Characteristic Coefficient" storageaddress="0x65D9"/>
+	<table name="Dilution Modification Coefficient" storageaddress="0x6616"/>
+	<table name="Advance Side Maximum Change Width (2)" storageaddress="0x66A9"/>
+	<table name="Flags 9" storageaddress="0x673B"/>
+	<table name="Flags 11" storageaddress="0x67C5"/>
 	<table name="Flags 14" storageaddress="0x67D1"/>
+	<table name="Flags 16" storageaddress="0x67D3"/>
+	<table name="Flags 17" storageaddress="0x67D4"/>
 	<table name="Ignition Timing Main Constant" storageaddress="0x68AE"/>
+	<table name="War Way Speed Weight Constant" storageaddress="0x68AF"/>
 	<table name="O2 Sensor Position Flags" storageaddress="0x696C"/>
+	<table name="OBD Function Choice Flags" storageaddress="0x6976"/>
+	<table name="OBD Function Choice Flags 2" storageaddress="0x6977"/>
+	<table name="OBD Function Choice Flags 3" storageaddress="0x6978"/>
+	<table name="Electronic Throttle Control Flags" storageaddress="0x69F9"/>
+	<table name="Flags 24" storageaddress="0x69FA"/>
+	<table name="Flags 23" storageaddress="0x6ABB"/>
+	<table name="Cruise Control Specifications Choice Flags" storageaddress="0x6ADB"/>
+	<table name="Cruise Control, PTD Open-Degree Operation Switching Flag" storageaddress="0x6ADC"/>
+	<table name="O2/S System Choice Flag" storageaddress="0x6ADD"/>
+	<table name="QH0 Operation Flags" storageaddress="0x6AE0"/>
+	<table name="Flags 22" storageaddress="0x6AE2"/>
+	<table name="Flags 4" storageaddress="0x6AE3"/>
+	<table name="Flags 2" storageaddress="0x6AE4"/>
+	<table name="Flags 27" storageaddress="0x6AE5"/>
+	<table name="Flags 3" storageaddress="0x6AE6"/>
+	<table name="Flags 21" storageaddress="0x6AEB"/>
+	<table name="Flags 1" storageaddress="0x6AED"/>
+	<table name="KATHOS Choice Flag" storageaddress="0x6AEE"/>
+	<table name="Flags 19" storageaddress="0x6AF0"/>
 	<table name="Ignition Delay Time" storageaddress="0x6B0A"/>
+	<table name="The Whole Area Torque Going Down Control Switching Flag" storageaddress="0x6B1A"/>
+	<table name="Dwell Limits" storageaddress="0x6B1D"/>
+	<table name="Flags 7" storageaddress="0x6BD6"/>
+	<table name="Flags 12" storageaddress="0x6C7D"/>
 	<table name="MAF Startup Voltage Limit 2" storageaddress="0x6D34"/>
 	<table name="MAF Voltage Upper Limit" storageaddress="0x6D36"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x6D72"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x6F8E"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x6FA0"/>
-
-	<table name="MBT Flame Speed Map" storageaddress="0x7509">
-		<table type="X Axis" storageaddress="0x893B"/>
-	</table>
+	<table name="Dwell VB Coefficient" storageaddress="0x6FDA"/>
 	<table name="Engine Torque Map" storageaddress="0x8574"/>
 	<table name="OBD-2 PID 41-60 Supmask" storageaddress="0x8919"/>
 	<table name="JAR Sound Compensation Table (Coolant Temperature)" storageaddress="0x8B52"/>
@@ -54,31 +77,85 @@
 	<table name="Dwell Battery Table" storageaddress="0x8CC6"/>
 	<table name="Target AFR MBT Compensation Table" storageaddress="0x8D2E"/>
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x8D3E"/>
+	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x8ECA"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x9090"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x91D8"/>
 	<table name="Target AFR MBT Compensation Table 2" storageaddress="0x91E2"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0x947A"/>
-	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x94BA"/>
-	<table name="Target Throttle Valve Opening Table" storageaddress="0x955E">
-		<table type="X Axis" storageaddress="0x9CBA"/>
-	</table>
+	<table name="TCS Fuel Cut Prohibition RPM Table" storageaddress="0x94BA"/>
+	<table name="MAF Table" storageaddress="0x96E4"/>
 	<table name="ISC Opening Area Upper Limit Table" storageaddress="0x9784"/>
-
+	<table name="ISC Opening Area Upper Limit Table (RPM Compensation)" storageaddress="0x97A4"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0x97E4"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0x98B4"/>
-	<table name="Throttle Flow Potential Table" storageaddress="0x9D2A">
-		<table type="X Axis" storageaddress="0x9C3A"/>
-	</table>
-	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0x9D6A">
-		<table type="X Axis" storageaddress="0x9C7A"/>
-	</table>
+	<table name="QH0 High Flow Quantity Table" storageaddress="0x9AAC"/>
+	<table name="QH0 Low Flow Quantity Table" storageaddress="0x9ACC"/>
+	<table name="Gear Ratio Table" storageaddress="0x9B4C"/>
+	<table name="Torque Converter Torque Ratio Table" storageaddress="0x9DBA"/>
+	<table name="ISC Opening Area Upper Limit Table 2" storageaddress="0xA778"/>
+	<table name="ISC Opening Area Upper Limit Table 2 (RPM Compensation)" storageaddress="0xA798"/>
+	<table name="Torque Converter Torque Ratio Table 2" storageaddress="0xA962"/>
+
 	<table name="Target Throttle Valve Opening Table (Trustful)" storageaddress="0xA6D8">
 		<table type="X Axis" storageaddress="0xA922"/>
 	</table>
-	<table name="Throttle Flow Potential Table 2 (High Flow-Quantity)" storageaddress="0xA898">
-		<table type="X Axis" storageaddress="0xA818"/>
-	</table>
-	<table name="Throttle Flow Potential Table 2" storageaddress="0xA8D8">
+
+	<table name="Throttle Flow Potential Table Trustful" storageaddress="0xA8D8">
 		<table type="X Axis" storageaddress="0xA858"/>
 	</table>
+
+	<table name="Throttle Flow Potential Table (High Flow-Quantity) Trustful" storageaddress="0xA898">
+		<table type="X Axis" storageaddress="0xA818"/>
+	</table>
+
+	<table name="Target Throttle Valve Opening Table" storageaddress="0x955E">
+		<table type="X Axis" storageaddress="0x9CBA"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0x9D6A">
+		<table type="X Axis" storageaddress="0x9C7A"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table" storageaddress="0x9D2A">
+		<table type="X Axis" storageaddress="0x9C3A"/>
+	</table>
+
+	<table name="TVO Upper Limit Table 2" storageaddress="0x9472">
+		<table type="X Axis" storageaddress="0x9462"/>
+	</table>
+
+	<table name="TVO Upper Limit Table" storageaddress="0x946A">
+		<table type="X Axis" storageaddress="0x945A"/>
+	</table>
+
+	<table name="MBT Flame Speed Map" storageaddress="0x7509">
+		<table type="X Axis" storageaddress="0x893B"/>
+	</table>
+
+	<table name="High Temperature Fuel Compensation Map" storageaddress="0x7199">
+		<table type="X Axis" storageaddress="0x894F"/>
+		<table type="Y Axis" storageaddress="0x894B"/>
+	</table>
+
+	<table name="DTC 1" storageaddress="0xA684"/>
+	<table name="DTC 2" storageaddress="0xA688"/>
+	<table name="DTC 3" storageaddress="0xA68C"/>
+	<table name="DTC 4" storageaddress="0xA690"/>
+	<table name="DTC 5" storageaddress="0xA694"/>
+	<table name="DTC 6" storageaddress="0xA698"/>
+	<table name="DTC 7" storageaddress="0xA69C"/>
+	<table name="DTC 8" storageaddress="0xA6A0"/>
+	<table name="DTC 9" storageaddress="0xA6A4"/>
+	<table name="DTC 10" storageaddress="0xA6A8"/>
+	<table name="DTC 11" storageaddress="0xA6AC"/>
+	<table name="DTC 12" storageaddress="0xA6B0"/>
+	<table name="DTC 13" storageaddress="0xA6B4"/>
+	<table name="DTC 14" storageaddress="0xA6B8"/>
+	<table name="DTC 15" storageaddress="0xA6BC"/>
+	<table name="DTC 16" storageaddress="0xA6C0"/>
+	<table name="DTC 17" storageaddress="0xA6C4"/>
+	<table name="DTC 18" storageaddress="0xA6C8"/>
+
 	
 	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x70A0" xorloc="0x7098"/>
 </rom>

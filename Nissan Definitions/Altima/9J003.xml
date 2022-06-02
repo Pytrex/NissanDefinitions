@@ -70,7 +70,7 @@
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5F5D">
 		<table type="X Axis" storageaddress="0x816B"/>
 		<table type="Y Axis" storageaddress="0x8157"/>
-	</table>	
+	</table>
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x539E"/>
 

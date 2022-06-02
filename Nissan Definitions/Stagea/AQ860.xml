@@ -1,4 +1,4 @@
-<rom base="A2L">	
+<rom base="A2L">
 	<romid>
 		<xmlid>AQ860</xmlid>
 		<caseid>1MATBHDK</caseid>
@@ -11,7 +11,7 @@
 		<model>Stagea</model>
 		<submodel>Impul</submodel>
 		<transmission>AT</transmission>
-		<memmodel>SH705507</memmodel>
+		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>

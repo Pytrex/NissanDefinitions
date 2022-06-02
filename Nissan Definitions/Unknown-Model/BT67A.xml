@@ -49,7 +49,7 @@
 		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
 
-752E fuel comp or cam timing 
+<!--752E fuel comp or cam timing-->
 
 	<table name="Misfire Diagnosis Basic Map" storageaddress="0x7CAE">
 		<table type="X Axis" storageaddress="0x0000"/>
@@ -63,9 +63,8 @@
 	
 	<table name="Misfire Diagnosis Map B" storageaddress="0x7BAE">
 		<table type="X Axis" storageaddress="0x0000"/>
-		<table type="Y Axis" storageaddress="0x0000"/>	
+		<table type="Y Axis" storageaddress="0x0000"/>
 	</table>
 	
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0xB88" xorloc="0xB80"/>
-
 </rom>

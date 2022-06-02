@@ -11,13 +11,14 @@
 		<model>Sentra</model>
 		<submodel>Base</submodel>
 		<transmission>MT</transmission>
-		<memmodel>SH705513</memmodel>
+		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
 		<author>Pytrex</author>
 		<version>EXPERIMENTAL</version>
 	</romid>
+<!-- No ROM dump-->
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6931">
 		<table type="X Axis" storageaddress="0x85B9"/>

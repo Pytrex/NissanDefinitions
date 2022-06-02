@@ -11,7 +11,7 @@
 		<model>Maxima</model>
 		<submodel>Base</submodel>
 		<transmission>AT</transmission>
-		<memmodel>SH7055-13</memmodel>
+		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
@@ -19,7 +19,7 @@
 		<version>EXPERIMENTAL</version>
 	</romid>
 <!--Children: 7Y006-->
-
+<!--Doesn't Diff well with CD002-->
 <!--Note: I haven't personally verified the addresses.-->
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6931">

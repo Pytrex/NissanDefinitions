@@ -50,7 +50,7 @@
 		<table type="Y Axis" storageaddress="0xa37e"/>
 	</table>
 
-	<table  name="MBT Flame Speed Map"  storageaddress="0x7F1D">
+	<table  name="MBT Flame Speed Map" storageaddress="0x7F1D">
 		<table type="X Axis" storageaddress="0xA047"/>
 		<table type="Y Axis" storageaddress="0xA04B"/>
 	</table>

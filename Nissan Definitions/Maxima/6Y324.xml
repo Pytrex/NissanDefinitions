@@ -15,32 +15,50 @@
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Fenugrec</author>
+		<author>Pytrex</author>
 		<version>EXPERIMENTAL</version>
 	</romid>
 <!--Children: 9J081, 5Y703, 6Y303, 6Y314-->
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5062"/>
-	<table name="MAF Table" storageaddress="0x7992"/>
-	<table name="K-Value" storageaddress="0x500C"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0x73DF"/>
+	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x70F5"/>
+	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0x76F9"/>
 	<table name="Engine Torque Map" storageaddress="0x68F4"/>
-	
+	<table name="GOV Addition Table (Drive)" storageaddress="0x713D"/>
+	<table name="GOV Addition Table (Neutral)" storageaddress="0x712D"/>
+	<table name="GOV3 Table" storageaddress="0x7135"/>
+	<table name="ISC Opening Area Upper Limit Table" storageaddress="0x7A32"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x7403"/>
+	<table name="K-Value" storageaddress="0x500C"/>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0x7B32"/>
+	<table name="MAF Table" storageaddress="0x7992"/>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x5062"/>
+	<table name="TCS Fuel Cut Prohibition RPM Table" storageaddress="0x7739"/>
+	<table name="Target AFR MBT Compensation Table 2" storageaddress="0x7509"/>
+
+	<table name="Throttle Flow Potential Table Trustful" storageaddress="0x8A30">
+		<table type="X Axis" storageaddress="0x89B0"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table (High Flow-Quantity) Trustful" storageaddress="0x89F0">
+		<table type="X Axis" storageaddress="0x8970"/>
+	</table>
+
+	<table name="Target Throttle Valve Opening Table" storageaddress="0x77F6">
+		<table type="X Axis" storageaddress="0x7E68"/>
+	</table>
+
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x5AD9">
+		<table type="X Axis" storageaddress="0x7785"/>
+		<table type="Y Axis" storageaddress="0x7795"/>
+	</table>
+
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x52C9">
 		<table type="X Axis" storageaddress="0x6F21"/>
 		<table type="Y Axis" storageaddress="0x6F31"/>
 	</table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x52C9">
-		<table type="X Axis" storageaddress="0x6F21"/>
-		<table type="Y Axis" storageaddress="0x6F31"/>
-	</table>
-
-	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x53C9">
-		<table type="X Axis" storageaddress="0x6F21"/>
-		<table type="Y Axis" storageaddress="0x6F31"/>
-	</table>
-
-	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x53C9">
 		<table type="X Axis" storageaddress="0x6F21"/>
 		<table type="Y Axis" storageaddress="0x6F31"/>
 	</table>
@@ -55,6 +73,16 @@
 		<table type="Y Axis" storageaddress="0x6F31"/>
 	</table>
 
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x53C9">
+		<table type="X Axis" storageaddress="0x6F21"/>
+		<table type="Y Axis" storageaddress="0x6F31"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x53C9">
+		<table type="X Axis" storageaddress="0x6F21"/>
+		<table type="Y Axis" storageaddress="0x6F31"/>
+	</table>
+
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x5789">
 		<table type="X Axis" storageaddress="0x6E77"/>
 		<table type="Y Axis" storageaddress="0x6E1B"/>
@@ -65,11 +93,27 @@
 		<table type="Y Axis" storageaddress="0x6D13"/>
 	</table>
 
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0x5AD9">
-		<table type="X Axis" storageaddress="0x7785"/>
-		<table type="Y Axis" storageaddress="0x7795"/>
-	</table>
-	
+
+	<table name="DTC 1" storageaddress="0x87FC"/>
+	<table name="DTC 2" storageaddress="0x8800"/>
+	<table name="DTC 3" storageaddress="0x8804"/>
+	<table name="DTC 4" storageaddress="0x8808"/>
+	<table name="DTC 5" storageaddress="0x880C"/>
+	<table name="DTC 6" storageaddress="0x8810"/>
+	<table name="DTC 7" storageaddress="0x8814"/>
+	<table name="DTC 8" storageaddress="0x8818"/>
+	<table name="DTC 9" storageaddress="0x881C"/>
+	<table name="DTC 10" storageaddress="0x8820"/>
+	<table name="DTC 11" storageaddress="0x8824"/>
+	<table name="DTC 12" storageaddress="0x8828"/>
+	<table name="DTC 13" storageaddress="0x882C"/>
+	<table name="DTC 14" storageaddress="0x8830"/>
+	<table name="DTC 15" storageaddress="0x8834"/>
+	<table name="DTC 16" storageaddress="0x8838"/>
+	<table name="DTC 17" storageaddress="0x883C"/>
+	<table name="DTC 18" storageaddress="0x8840"/>
+
+
 	<checksum type="alt" start="0x408" end="0x2046" sumloc="0x400" xorloc="0x404"/>
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x51C0" xorloc="0x51B8"/>
 </rom>

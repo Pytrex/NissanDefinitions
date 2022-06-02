@@ -9,7 +9,7 @@
 		<market>CAN</market>
 		<make>Nissan</make>
 		<model>Sentra</model>
-		<submodel>Base</submodel>
+		<submodel>Spec-V</submodel>
 		<transmission>MT</transmission>
 		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
@@ -19,7 +19,7 @@
 		<version>EXPERIMENTAL</version>
 	</romid>
 <!-- Children: 8U901 -->
-
+<!-- Doesn't diff well with CD002 -->
 <!-- Note: I haven't personally verified these addresses. -->
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x630A"/>
@@ -88,15 +88,15 @@
 	
 	<table name="Catalyst DTCs" storageaddress="0x99e0"/>
 	<table name="Evap DTCs" storageaddress="0x99e9"/>
-	<table name="Evap 2 DTCs"  storageaddress="0x99ea"/>
-	<table name="Power Steering DTC"  storageaddress="0x99f4"/>
+	<table name="Evap 2 DTCs" storageaddress="0x99ea"/>
+	<table name="Power Steering DTC" storageaddress="0x99f4"/>
 	<table name="Primary O2 DTCs" storageaddress="0x9a0a"/>
 	<table name="Primary O2 Idle DTCs" storageaddress="0x9a0b"/>
 	<table name="Secondary O2 DTCs" storageaddress="0x9a0c"/>
 	<table name="Secondary O2 Knock DTCs" storageaddress="0x9a0d"/>
 	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0x9a10"/>
 	<table name="Evap Pressure Flow DTCs" storageaddress="0x9a12"/>
-	<table name="Evap Leaks DTCs"  storageaddress="0x9a13"/>
+	<table name="Evap Leaks DTCs" storageaddress="0x9a13"/>
 
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6494" xorloc="0x648C"/>
 

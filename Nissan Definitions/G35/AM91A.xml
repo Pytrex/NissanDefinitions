@@ -11,12 +11,12 @@
 		<model>Skyline</model>
 		<submodel>Base</submodel>
 		<transmission>AT</transmission>
-		<memmodel>SH705513</memmodel>
+		<memmodel>SH7055</memmodel>
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Fenugrec</author>
-		<version>v1.0</version>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
 	</romid>
 <!-- Children: AM90A -->
 

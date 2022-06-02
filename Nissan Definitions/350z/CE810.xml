@@ -26,38 +26,38 @@
 	<table name="APO Threshold (Brake)" storageaddress="0x6DC0"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
 	<table name="Throttle Rev Limiter" storageaddress="0x7036"/>
-	<table name="Knock Slice Map" storageaddress="0x8E88"/> 
+	<table name="Knock Slice Map" storageaddress="0x8E88"/>
 	<table name="Speed Limiter" storageaddress="0x705E"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x70A8"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xA37C"/>
 	<table name="Engine Torque Map" storageaddress="0x8C88"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xA982"/>
-	<table name="MAF Idle Voltage Limits" storageaddress="0x70F0"/> 
+	<table name="MAF Idle Voltage Limits" storageaddress="0x70F0"/>
 	<table name="Cranking Advance Table" storageaddress="0x93AE"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x99B0"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0x98F4"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x987C"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x9848"/>
-	<table name="Target Idle Table" storageaddress="0x988C"/>	
+	<table name="Target Idle Table" storageaddress="0x988C"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x652D"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x6B40"/>
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x6C18"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x6C24"/>
 	<table name="MAF Factor" storageaddress="0x691F"/>
-	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6740"/> 
+	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6740"/>
 	<table name="GOV Table" storageaddress="0x9526"/>
-	<table name="GOV3 Table" storageaddress="0x952E"/> 
-	<table name="GOVL Table" storageaddress="0x9536"/> 
-	<table name="GOV Addition Table (Drive)" storageaddress="0x930E"/> 
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x9316"/> 
+	<table name="GOV3 Table" storageaddress="0x952E"/>
+	<table name="GOVL Table" storageaddress="0x9536"/>
+	<table name="GOV Addition Table (Drive)" storageaddress="0x930E"/>
+	<table name="GOV Addition Table (Neutral)" storageaddress="0x9316"/>
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x9C02"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0x9C06"/>
 	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0x9C0A"/>
 	<table name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" storageaddress="0x9C0E"/>
 	<table name="Initial Retard Quantity Table (Fuel Cut)" storageaddress="0x9C12"/>
 	<table name="Target AFR Table (High Detonation)" storageaddress="0x974E"/>
-	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x96BE"/> 
-	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4"/>	
+	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x96BE"/>
+	<table name="Individual Cylinder Fuel Trims" storageaddress="0x99E4"/>
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x9ED6">
 		<table type="X Axis" storageaddress="0xA932"/>
@@ -93,29 +93,29 @@
 		<table type="Y Axis" storageaddress="0x9033"/>
 	</table>
 
-	<table name="Acceleration Fuel Compensation Map" storageaddress="0x76AD"> 
-		<table type="X Axis" storageaddress="0x9027"/> 
-		<table type="Y Axis" storageaddress="0x901F"/> 
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x76AD">
+		<table type="X Axis" storageaddress="0x9027"/>
+		<table type="Y Axis" storageaddress="0x901F"/>
 	</table>
 	
-	<table name="Deceleration Fuel Compensation Map" storageaddress="0x76ED"> 
-		<table type="X Axis" storageaddress="0x9027"/> 
-		<table type="Y Axis" storageaddress="0x901F"/> 
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x76ED">
+		<table type="X Axis" storageaddress="0x9027"/>
+		<table type="Y Axis" storageaddress="0x901F"/>
 	</table>
 
-	<table name="AFR Correction Map (Bank 1)" storageaddress="0x8088"> 
+	<table name="AFR Correction Map (Bank 1)" storageaddress="0x8088">
 		<table type="X Axis" storageaddress="0xA188"/>
 		<table type="Y Axis" storageaddress="0xA168"/>
 	</table>
 	
-	<table name="AFR Correction Map (Bank 2)" storageaddress="0x8108"> 
+	<table name="AFR Correction Map (Bank 2)" storageaddress="0x8108">
 		<table type="X Axis" storageaddress="0xA188"/>
 		<table type="Y Axis" storageaddress="0xA168"/>
 	</table>
 	
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x7C3D">
-		<table type="X Axis" storageaddress="0x9D4E"/> 
-		<table type="Y Axis" storageaddress="0x9D5E"/>	
+		<table type="X Axis" storageaddress="0x9D4E"/>
+		<table type="Y Axis" storageaddress="0x9D5E"/>
 	</table>
 	
 	<table name="Misfire Diagnosis Basic Map" storageaddress="0x7EED">
@@ -130,10 +130,10 @@
 	
 	<table name="Misfire Diagnosis Map B" storageaddress="0x7DED">
 		<table type="X Axis" storageaddress="0x90C3"/>
-		<table type="Y Axis" storageaddress="0x90A3"/>	
+		<table type="Y Axis" storageaddress="0x90A3"/>
 	</table>
 	
-	<table name="QH0/ Torque Conversion Map" storageaddress="0x8708"> 
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x8708">
 		<table type="X Axis" storageaddress="0xA1C8"/>
 		<table type="Y Axis" storageaddress="0x91C8"/>
 	</table>
@@ -143,8 +143,8 @@
 		<table type="Y Axis" storageaddress="0xB4A4"/>
 	</table>
 
-	<table name="TTEPTD Torque Compensation Map" storageaddress="0x8C08"> 
-		<table type="X Axis" storageaddress="0xA4BC"/> 
+	<table name="TTEPTD Torque Compensation Map" storageaddress="0x8C08">
+		<table type="X Axis" storageaddress="0xA4BC"/>
 		<table type="Y Axis" storageaddress="0xA4CC"/>
 	</table>
 	

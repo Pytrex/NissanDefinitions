@@ -17,7 +17,7 @@
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
 		<version>EXPERIMENTAL</version>
-	</romid>	
+	</romid>
 
 <!--Children: EV13B, EV16A-->
 
@@ -27,7 +27,7 @@
 
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x8CB3"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x84F9"/>
-	<table name="Load Base Fuel Schedule Table" storageaddress="0x16A00"/>	
+	<table name="Load Base Fuel Schedule Table" storageaddress="0x16A00"/>
 	<table name="Engine Torque Map" storageaddress="0x1286A"/>
 	<table name="Engine Torque Map 2" storageaddress="0x1266A"/>
 	<table name="Consult Ignition Timing Adjustment Limits" storageaddress="0x821C"/>
@@ -109,7 +109,7 @@
 	<table name="MAF Table 3" storageaddress="0x1635A"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x14991"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x1471D"/>
-	<table name="Bosch Fuel Cut Table" storageaddress="0x146E9"/> 
+	<table name="Bosch Fuel Cut Table" storageaddress="0x146E9"/>
 	<table name="Target Idle Table" storageaddress="0x1472D"/>
 	<table name="MAF Factor" storageaddress="0x8A35"/>
 	<table name="GOV Table" storageaddress="0x14173"/>
@@ -150,19 +150,19 @@
 		<table type="Y Axis" storageaddress="0x13AA0"/>
 	</table>
 	
-	<table name="Intake Cam Timing Map (16x16)" storageaddress="0xB696"> 
+	<table name="Intake Cam Timing Map (16x16)" storageaddress="0xB696">
       <table type="X Axis" storageaddress="0x14F33" />
       <table type="Y Axis" storageaddress="0x14F53" />
     </table>
 
-	<table name="Exhaust Cam Timing Map" storageaddress="0xB596"> 
+	<table name="Exhaust Cam Timing Map" storageaddress="0xB596">
 		<table type="X Axis" storageaddress="0x14F23"/>
 		<table type="Y Axis" storageaddress="0x14F43"/>
 	</table>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0xB796">
 		<table type="X Axis" storageaddress="0x14EBF"/>
-		<table type="Y Axis" storageaddress="0x14EDF"/>	
+		<table type="Y Axis" storageaddress="0x14EDF"/>
 	</table>
 	
 	<table name="Misfire Diagnosis Basic Map" storageaddress="0xBA76">
@@ -185,7 +185,7 @@
 		<table type="Y Axis" storageaddress="0x13CE9"/>
 	</table>
 
-	<table name="TTEPTD Torque Compensation Map" storageaddress="0x125EA"> 
+	<table name="TTEPTD Torque Compensation Map" storageaddress="0x125EA">
 		<table type="X Axis" storageaddress="0x16BC0"/>
 		<table type="Y Axis" storageaddress="0x16BD0"/>
 	</table>
@@ -234,12 +234,12 @@
 		<table type="X Axis" storageaddress="0x17F06"/>
 	</table>
 
-	<table name="AFR Correction Map (Bank 1)" storageaddress="0xC7EA"> 
+	<table name="AFR Correction Map (Bank 1)" storageaddress="0xC7EA">
 		<table type="X Axis" storageaddress="0x15E1A"/>
 		<table type="Y Axis" storageaddress="0x15DDA"/>
 	</table>
 	
-	<table name="AFR Correction Map (Bank 2)" storageaddress="0xC86A"> 
+	<table name="AFR Correction Map (Bank 2)" storageaddress="0xC86A">
 		<table type="X Axis" storageaddress="0x15E1A"/>
 		<table type="Y Axis" storageaddress="0x15DDA"/>
 	</table>
@@ -269,7 +269,7 @@
 
 
 	
-	<checksum type="alt" start="0x2040C" end="0x2258E" sumloc="0x20404" xorloc="0x20408"/>	
+	<checksum type="alt" start="0x2040C" end="0x2258E" sumloc="0x20404" xorloc="0x20408"/>
 	<!--<checksum type="alt2" start="0x8204" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>-->
 
 </rom>

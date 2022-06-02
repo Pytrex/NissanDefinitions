@@ -88,16 +88,16 @@
 	
 	<table name="Catalyst DTCs" storageaddress="0xa35a"/>
 	<table name="Evap DTCs" storageaddress="0xa363"/>
-	<table name="Evap 2 DTCs"  storageaddress="0xa364"/>
-	<table name="VIAS DTCs"  storageaddress="0xa368"/>
-	<table name="Power Steering DTC"  storageaddress="0xa36e"/>
+	<table name="Evap 2 DTCs" storageaddress="0xa364"/>
+	<table name="VIAS DTCs" storageaddress="0xa368"/>
+	<table name="Power Steering DTC" storageaddress="0xa36e"/>
 	<table name="Primary O2 DTCs" storageaddress="0xa384"/>
 	<table name="Primary O2 Idle DTCs" storageaddress="0xa385"/>
 	<table name="Secondary O2 DTCs" storageaddress="0xa386"/>
 	<table name="Secondary O2 Knock DTCs" storageaddress="0xa387"/>
 	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0xa38a"/>
 	<table name="Evap Pressure Flow DTCs" storageaddress="0xa38c"/>
-	<table name="Evap Leaks DTCs"  storageaddress="0xa38d"/>
+	<table name="Evap Leaks DTCs" storageaddress="0xa38d"/>
 
 	<table name="Load Base Fuel Schedule Table" storageaddress="0x938a"/>
 

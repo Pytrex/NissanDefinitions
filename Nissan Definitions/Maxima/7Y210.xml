@@ -11,13 +11,15 @@
 		<model>Maxima</model>
 		<submodel>Base</submodel>
 		<transmission>??</transmission>
-		<memmodel>SH705821</memmodel>
+		<memmodel>SH7058</memmodel>
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Fenugrec</author>
 		<version>EXPERIMENTAL</version>
 	</romid>
+
+<!--Need ROM-->
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7cb1">
 		<table type="X Axis" storageaddress="0xa4d2"/>

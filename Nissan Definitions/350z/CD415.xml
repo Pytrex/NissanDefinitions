@@ -15,7 +15,7 @@
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Fenugrec</author>
+		<author>Pytrex</author>
 		<version>v1.0</version>
     </romid>
 <!--Children: CD405-->
@@ -65,14 +65,14 @@
       <table type="Y Axis" storageaddress="0x8311"/>
     </table>
 
-	<table name="Deceleration Fuel Compensation Map" storageaddress="0x6B09"> 
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x6B09">
 		<table type="X Axis" storageaddress="0x81B0"/>
-		<table type="Y Axis" storageaddress="0x81A8"/> 
+		<table type="Y Axis" storageaddress="0x81A8"/>
 	</table>
 
-	<table name="Acceleration Fuel Compensation Map" storageaddress="0x6AC9"> 
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x6AC9">
 		<table type="X Axis" storageaddress="0x81B0"/>
-		<table type="Y Axis" storageaddress="0x81A8"/> 
+		<table type="Y Axis" storageaddress="0x81A8"/>
 	</table>
 
     <table name="Target AFR Map (8x8)" storageaddress="0x6E19">
@@ -95,7 +95,7 @@
 		<table type="Y Axis" storageaddress="0xA2CC"/>
 	</table>
 
-	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7D74"> 
+	<table name="TTEPTD Torque Compensation Map" storageaddress="0x7D74">
 		<table type="X Axis" storageaddress="0x936E"/>
 		<table type="Y Axis" storageaddress="0x937E"/>
 	</table>

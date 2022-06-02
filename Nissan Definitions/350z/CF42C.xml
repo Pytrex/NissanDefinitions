@@ -15,7 +15,7 @@
 		<endian>Big</endian>
 		<flashmethod>nisprog</flashmethod>
 		<filesize>1024kb</filesize>
-		<author>Fenugrec</author>
+		<author>Pytrex</author>
 		<version>v1.0</version>
 	</romid>
 <!-- Children: CM37A, ZH98A, ZH98C, ZH99A, ZK01B -->
@@ -87,7 +87,7 @@
 	<table name="QH0 High Flow Quantity Table" storageaddress="0xCE00"/>
 	<table name="QH0 Low Flow Quantity Table" storageaddress="0xCE20"/>
 	<table name="Gear Ratio Table" storageaddress="0xCEF0"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xD15E"/>		
+	<table name="Crank Fueling TP Value Table" storageaddress="0xD15E"/>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DA9">
 		<table type="X Axis" storageaddress="0xB5FC"/>
@@ -224,14 +224,14 @@
 
 	<table name="Catalyst DTCs" storageaddress="0xDD24"/>
 	<table name="Evap DTCs" storageaddress="0xDD2D"/>
-	<table name="Evap 2 DTCs"  storageaddress="0xDD2E"/>
-	<table name="VIAS DTCs"  storageaddress="0xDD32"/>
-	<table name="Power Steering DTC"  storageaddress="0xDD38"/>
+	<table name="Evap 2 DTCs" storageaddress="0xDD2E"/>
+	<table name="VIAS DTCs" storageaddress="0xDD32"/>
+	<table name="Power Steering DTC" storageaddress="0xDD38"/>
 	<table name="Secondary O2 DTCs" storageaddress="0xDD50"/>
 	<table name="Secondary O2 Knock DTCs" storageaddress="0xDD51"/>
 	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0xDD54"/>
 	<table name="Evap Pressure Flow DTCs" storageaddress="0xDD55"/>
-	<table name="Evap Leaks DTCs"  storageaddress="0xDD56"/>
+	<table name="Evap Leaks DTCs" storageaddress="0xDD56"/>
 	
 	
 	<checksum type="alt" start="0x2414" end="0x4162" sumloc="0x240C" xorloc="0x2410"/>

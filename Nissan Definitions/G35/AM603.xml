@@ -25,26 +25,26 @@
 	
 
 	<table name="APO Threshold (Brake)" storageaddress="0x4E8A"/>
-	<table name="Minimum Injector Pulse Width" storageaddress="0x5070"/> 
-	<table name="Knock Slice Map" storageaddress="0x6AC4"/> 
+	<table name="Minimum Injector Pulse Width" storageaddress="0x5070"/>
+	<table name="Knock Slice Map" storageaddress="0x6AC4"/>
 	<table name="Speed Limiter" storageaddress="0x5058"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x507E"/> <!-- Might want to verify as well-->
-	<table name="K-Value" storageaddress="0x4F96"/>	
+	<table name="K-Value" storageaddress="0x4F96"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0x7A50"/>
 	<table name="Engine Torque Map" storageaddress="0x68C4"/>
 	<table name="MAF Table" storageaddress="0x7980"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x4FF2"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x4854"/>
-	<table name="Fuel Injector Latency at 14V" storageaddress="0x4D28"/> 
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x4D28"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x74CA"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0x7422"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x73D2"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x73AE"/>
-	<table name="Target Idle Table" storageaddress="0x73EA"/>	
+	<table name="Target Idle Table" storageaddress="0x73EA"/>
 	<table name="GOV Table" storageaddress="0x70F4"/>
-	<table name="GOV3 Table" storageaddress="0x70FC"/> 
+	<table name="GOV3 Table" storageaddress="0x70FC"/>
 	<table name="GOVL Table" storageaddress="0x7104"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x6F08"/> 
+	<table name="GOV Addition Table (Drive)" storageaddress="0x6F08"/>
 	<table name="GOV Addition Table (Neutral)" storageaddress="0x6F10"/>
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x76A4"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0x76A8"/>
@@ -93,19 +93,19 @@
 		<table type="Y Axis" storageaddress="0x6CC1"/>
 	</table>
 
-	<table name="Acceleration Fuel Compensation Map" storageaddress="0x5619"> 
-		<table type="X Axis" storageaddress="0x6CB5"/> 
-		<table type="Y Axis" storageaddress="0x6CAD"/> 
+	<table name="Acceleration Fuel Compensation Map" storageaddress="0x5619">
+		<table type="X Axis" storageaddress="0x6CB5"/>
+		<table type="Y Axis" storageaddress="0x6CAD"/>
 	</table>
 	
-	<table name="Deceleration Fuel Compensation Map" storageaddress="0x5659"> 
-		<table type="X Axis" storageaddress="0x6CB5"/> 
-		<table type="Y Axis" storageaddress="0x6CAD"/> 
+	<table name="Deceleration Fuel Compensation Map" storageaddress="0x5659">
+		<table type="X Axis" storageaddress="0x6CB5"/>
+		<table type="Y Axis" storageaddress="0x6CAD"/>
 	</table>
 	
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5BA9">
 		<table type="X Axis" storageaddress="0x7758"/>
-		<table type="Y Axis" storageaddress="0x7760"/>	
+		<table type="Y Axis" storageaddress="0x7760"/>
 	</table>
 	
 	<table name="Misfire Diagnosis Basic Map" storageaddress="0x5E19">
@@ -123,7 +123,7 @@
 		<table type="Y Axis" storageaddress="0x6D01"/>
 	</table>
 
-	<table name="TTEPTD Torque Compensation Map" storageaddress="0x6844"> 
+	<table name="TTEPTD Torque Compensation Map" storageaddress="0x6844">
 		<table type="X Axis" storageaddress="0x7B70"/>
 		<table type="Y Axis" storageaddress="0x7B80"/>
 	</table>
@@ -175,12 +175,12 @@
 
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x6444">
 		<table type="X Axis" storageaddress="0x7960"/>
-		<table type="Y Axis" storageaddress="0x6DFA"/>   
+		<table type="Y Axis" storageaddress="0x6DFA"/>
 	</table>
 
 	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x8674">
 		<table type="X Axis" storageaddress="0x8948"/>
-		<table type="Y Axis" storageaddress="0x88B8"/>   
+		<table type="Y Axis" storageaddress="0x88B8"/>
 	</table>
 
 	

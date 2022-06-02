@@ -19,6 +19,8 @@
 		<version>EXPERIMENTAL</version>
 	</romid>
 
+<!-- Doesn't diff well with CD002 -->
+
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6611">
 		<table type="X Axis" storageaddress="0x8062"/>
 		<table type="Y Axis" storageaddress="0x8052"/>
@@ -59,9 +61,7 @@
 		<table type="Y Axis" storageaddress="0x7f2c"/>
 	</table>
 
-	<table name="Target AFR Table (Regular Fuel)" storageaddress="0x843A">
-		<table type="X Axis" storageaddress="0x7f2c"/>
-	</table>
+	<table name="Target AFR Table (Regular Fuel)" storageaddress="0x843A"/>
 
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x6e11">
 		<table type="X Axis" storageaddress="0x897a"/>
@@ -73,16 +73,13 @@
 		<table type="Y Axis" storageaddress="0x8956"/>
 	</table>
 
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x636A">
-	</table>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x636A"/>
 
-	<table name="MAF Table" storageaddress="0x8b36">
-	</table>
+	<table name="MAF Table" storageaddress="0x8b36"/>
 
 	<table name="Target Idle Table" storageaddress="0x8564"/>
 
-	<table name="K-Value" storageaddress="0x6310">
-	</table>
+	<table name="K-Value" storageaddress="0x6310"/>
 
 	<table name="Bosch Fuel Cut Table" storageaddress="0x8538"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x854C"/>

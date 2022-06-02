@@ -15,8 +15,8 @@
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Fenugrec</author>
-		<version>v1.0</version>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
 	</romid>
 <!--Children: AM900-->
 
@@ -33,8 +33,8 @@
 	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8D59"/>
 	<table name="Fuel Cut Timing Retard Delay Table" storageaddress="0x8639"/>
 	<table name="MAF Factor" storageaddress="0x5FB4"/>
-	<table name="CID1120 Supmask"  storageaddress="0x8392"/>
-    <table name="CID1200 Supmask"  storageaddress="0x839E"/>
+	<table name="CID1120 Supmask" storageaddress="0x8392"/>
+    <table name="CID1200 Supmask" storageaddress="0x839E"/>
 	<table name="Engine Torque Map" storageaddress="0x7DF4"/>
 	
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6749">

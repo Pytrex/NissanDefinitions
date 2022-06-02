@@ -71,7 +71,7 @@
 	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5FA1">
 		<table type="X Axis" storageaddress="0x81CF"/>
 		<table type="Y Axis" storageaddress="0x81BB"/>
-	</table>	
+	</table>
 
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x686C">
 		<table type="X Axis" storageaddress="0x84EA"/>
@@ -106,19 +106,19 @@
 	<table name="LTFT Map BFS Axis" storageaddress="0x7C7D"/>
 	<table name="LTFT Map RPM Axis" storageaddress="0x7D5B"/>
 	<table name="MAF Factor" storageaddress="0x4DEC"/>
-	<table name="MAF Offset" storageaddress="0x5446"/> 
+	<table name="MAF Offset" storageaddress="0x5446"/>
 	<table name="Speed Limiter" storageaddress="0x5482"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x54C2"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x4FC9"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x4A05"/>
 	<table name="Catalyst DTCs" storageaddress="0x982A"/>
 	<table name="Evap DTCs" storageaddress="0x9833"/>
-	<table name="Evap 2 DTCs"  storageaddress="0x9834"/>
+	<table name="Evap 2 DTCs" storageaddress="0x9834"/>
 	<table name="Secondary O2 DTCs" storageaddress="0x9856"/>
 	<table name="Secondary O2 Knock DTCs" storageaddress="0x9857"/>
 	<table name="Fuel Evap Purge Solenoid DTCs" storageaddress="0x985A"/>
 	<table name="Evap Pressure Flow DTCs" storageaddress="0x985C"/>
-	<table name="Evap Leaks DTCs"  storageaddress="0x985D"/>
+	<table name="Evap Leaks DTCs" storageaddress="0x985D"/>
 
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x5614" xorloc="0x560C"/>
 </rom>
