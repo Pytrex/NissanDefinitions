@@ -15,12 +15,68 @@
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Fenugrec</author>
-		<version>v1.0</version>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
 	</romid>
 <!--Children: 8U023, 8U073, 8U523-->
 
-<!--NOTES: Addresses need to be verified. Need a dump of 9J003 to verify whether 9J003 is apart of this grouping or not.-->
+	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x79BD"/>
+	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0x80B7"/>
+	<table name="Engine Torque Map" storageaddress="0x6EA8"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x7791"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x7799"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x79ED"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x79F5"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x79FD"/>
+	<table name="Gear Ratio Table" storageaddress="0x89EE"/>
+	<table name="JAR Sound Compensation Table (Coolant Temperature)" storageaddress="0x7751"/>
+	<table name="JAR Sound Compensation Table (Engine RPM)" storageaddress="0x7761"/>
+	<table name="K-Value" storageaddress="0x5332"/>
+	<table name="Knock Slice Map" storageaddress="0x70A8"/>
+	<table name="LTFT Map RPM Axis" storageaddress="0x7CFF"/>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0x8766"/>
+	<table name="MAF Table" storageaddress="0x84A6"/>
+	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x539E"/>
+	<table name="TCS Fuel Cut Prohibition RPM Table" storageaddress="0x80F7"/>
+	<table name="Target AFR MBT Compensation Table 2" storageaddress="0x7E5F"/>
+	<table name="Target Idle RPM Table" storageaddress="0x7D1B"/>
+	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0x8696"/>
+	<table name="Unburned Gas Density Table" storageaddress="0x78A5"/>
+
+	<table name="Target Throttle Valve Opening Table (Trustful)" storageaddress="0x9814">
+		<table type="X Axis" storageaddress="0x9AAE"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table Trustful" storageaddress="0x9A54">
+		<table type="X Axis" storageaddress="0x99B4"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table (High Flow-Quantity) Trustful" storageaddress="0x9A14">
+		<table type="X Axis" storageaddress="0x9974"/>
+	</table>
+
+	<table name="Target Throttle Valve Opening Table" storageaddress="0x821C">
+		<table type="X Axis" storageaddress="0x8BAC"/>
+	</table>
+
+	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0x8C4C">
+		<table type="X Axis" storageaddress="0x8B6C"/>
+	</table>
+
+	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x9540">
+		<table type="X Axis" storageaddress="0x9894"/>
+		<table type="Y Axis" storageaddress="0x9804"/>
+	</table>
+
+	<table name="TTEPTD Torque Compensation Map" storageaddress="0x6E28">
+		<table type="X Axis" storageaddress="0x87E6"/>
+		<table type="Y Axis" storageaddress="0x87F6"/>
+	</table>
+
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5F5D">
+		<table type="X Axis" storageaddress="0x816B"/>
+		<table type="Y Axis" storageaddress="0x8157"/>
+	</table>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x56DD">
 		<table type="X Axis" storageaddress="0x7771"/>
@@ -28,16 +84,6 @@
 	</table>
 
 	<table name="Cold Ignition Timing Map Knock Window" storageaddress="0x56DD">
-		<table type="X Axis" storageaddress="0x7771"/>
-		<table type="Y Axis" storageaddress="0x7781"/>
-	</table>
-
-	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x57DD">
-		<table type="X Axis" storageaddress="0x7771"/>
-		<table type="Y Axis" storageaddress="0x7781"/>
-	</table>
-
-	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x57DD">
 		<table type="X Axis" storageaddress="0x7771"/>
 		<table type="Y Axis" storageaddress="0x7781"/>
 	</table>
@@ -52,6 +98,21 @@
 		<table type="Y Axis" storageaddress="0x7781"/>
 	</table>
 
+	<table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x57DD">
+		<table type="X Axis" storageaddress="0x7771"/>
+		<table type="Y Axis" storageaddress="0x7781"/>
+	</table>
+
+	<table name="High Octane Ignition Timing Map Knock Window" storageaddress="0x57DD">
+		<table type="X Axis" storageaddress="0x7771"/>
+		<table type="Y Axis" storageaddress="0x7781"/>
+	</table>
+
+	<table name="QH0/ Torque Conversion Map" storageaddress="0x6828">
+		<table type="X Axis" storageaddress="0x8486"/>
+		<table type="Y Axis" storageaddress="0x7672"/>
+	</table>
+
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x5BDD">
 		<table type="X Axis" storageaddress="0x769E"/>
 		<table type="Y Axis" storageaddress="0x765A"/>
@@ -62,33 +123,25 @@
 		<table type="Y Axis" storageaddress="0x7652"/>
 	</table>
 
-	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5F9D">
-		<table type="X Axis" storageaddress="0x817B"/>
-		<table type="Y Axis" storageaddress="0x814F"/>
-	</table>
+	<table name="DTC 1" storageaddress="0x97C0"/>
+	<table name="DTC 2" storageaddress="0x97C4"/>
+	<table name="DTC 3" storageaddress="0x97C8"/>
+	<table name="DTC 4" storageaddress="0x97CC"/>
+	<table name="DTC 5" storageaddress="0x97D0"/>
+	<table name="DTC 6" storageaddress="0x97D4"/>
+	<table name="DTC 7" storageaddress="0x97D8"/>
+	<table name="DTC 8" storageaddress="0x97DC"/>
+	<table name="DTC 9" storageaddress="0x97E0"/>
+	<table name="DTC 10" storageaddress="0x97E4"/>
+	<table name="DTC 11" storageaddress="0x97E8"/>
+	<table name="DTC 12" storageaddress="0x97EC"/>
+	<table name="DTC 13" storageaddress="0x97F0"/>
+	<table name="DTC 14" storageaddress="0x97F4"/>
+	<table name="DTC 15" storageaddress="0x97F8"/>
+	<table name="DTC 16" storageaddress="0x97FC"/>
+	<table name="DTC 17" storageaddress="0x9800"/>
+	<table name="DTC 18" storageaddress="0x9804"/>
 
-	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x5F5D">
-		<table type="X Axis" storageaddress="0x816B"/>
-		<table type="Y Axis" storageaddress="0x8157"/>
-	</table>
-
-	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x539E"/>
-
-	<table name="MAF Table" storageaddress="0x84A6"/>
-
-	<table name="Target Idle Table" storageaddress="0x7D1B"/>
-
-	<table name="K-Value" storageaddress="0x5332"/>
 	
-	<table name="QH0/ Torque Conversion Map" storageaddress="0x6828">
-		<table type="X Axis" storageaddress="0x8486"/>
-		<table type="Y Axis" storageaddress="0x7672"/>
-	</table>
-
-	<table name="QH0/ Torque Conversion Map Trustful" storageaddress="0x9540">
-		<table type="X Axis" storageaddress="0x9894"/>
-		<table type="Y Axis" storageaddress="0x9804"/>
-	</table>
-
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x55D0" xorloc="0x55C8"/>
 </rom>

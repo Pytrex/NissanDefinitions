@@ -21,11 +21,11 @@
 <!-- Children: CF42A, CF44A -->
 	<table name="Fuel Injector Latency Adder" storageaddress="0x7DA3"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x846C"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0xB664"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0xB66C"/>
-	<table name="GOV Table" storageaddress="0xB8A0"/>
-	<table name="GOV3 Table" storageaddress="0xB8A8"/>
-	<table name="GOVL Table" storageaddress="0xB8B0"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0xB664"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0xB66C"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0xB8A0"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0xB8A8"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0xB8B0"/>
 	<table name="Gear Ratio Table" storageaddress="0xCF34"/>
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0xBACC"/>
 	<table name="JAR Sound Compensation Table (Coolant Temperature)" storageaddress="0xB620"/>
@@ -68,7 +68,7 @@
 	<table name="Target AFR MBT Compensation Table 2" storageaddress="0xBEAC"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xCA3C"/>
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xBBB4"/>
-	<table name="Target Idle Table" storageaddress="0xBD02"/>
+	<table name="Target Idle RPM Table" storageaddress="0xBD02"/>
 	<table name="War Way Speed Weight Constant" storageaddress="0x8075"/>
 	<table name="Throttle Rev Limiter" storageaddress="0x8A32"/>
 	<table name="Time of Closed Loop, GOV-Neutral Compensation Table" storageaddress="0xB674"/>
@@ -80,7 +80,7 @@
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB850"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xC22C"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xD1A2"/>
-	<table name="Cranking Advance Table" storageaddress="0xB710"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0xB710"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8AFC"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x876A"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0xBCBE"/>

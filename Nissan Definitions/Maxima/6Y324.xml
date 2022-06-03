@@ -24,9 +24,9 @@
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x70F5"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0x76F9"/>
 	<table name="Engine Torque Map" storageaddress="0x68F4"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x713D"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x712D"/>
-	<table name="GOV3 Table" storageaddress="0x7135"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x713D"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x712D"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x7135"/>
 	<table name="ISC Opening Area Upper Limit Table" storageaddress="0x7A32"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x7403"/>
 	<table name="K-Value" storageaddress="0x500C"/>

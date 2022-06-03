@@ -184,7 +184,7 @@
 	<table name="High Detonation Knock Limit Map" storageaddress="0xA2E8"/>
 	<table name="JAR Sound Compensation Table (Coolant Temperature)" storageaddress="0xA4B2"/>
 	<table name="JAR Sound Compensation Table (Engine RPM)" storageaddress="0xA4C2"/>
-	<table name="Cranking Advance Table" storageaddress="0xA5A2"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0xA5A2"/>
 	<table name="Unburned Gas Density Table" storageaddress="0xA5D2"/>
 	<table name="Fuel Cut Timing Retard Delay Table" storageaddress="0xA6BA"/>
 	<table name="Target AFR MBT Compensation Table" storageaddress="0xA6D2"/>
@@ -229,7 +229,7 @@
 	<table name="QH0 High Flow Quantity Table" storageaddress="0xBC04"/>
 	<table name="QH0 Low Flow Quantity Table" storageaddress="0xBC24"/>
 	<table name="Gear Ratio Table" storageaddress="0xBCF4"/>
-	<table name="Crank Fueling TP Table" storageaddress="0xBF62"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xBF62"/>
 	<table name="Throttle Flow Potential Table" storageaddress="0xBF82">
 		<table type="X Axis" storageaddress="0xBE72"/>
 	</table>

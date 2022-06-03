@@ -78,7 +78,7 @@
 	<table name="JECS Fuel Cut Table" storageaddress="0x8996"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x8A06"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0x8B06"/>
-	<table name="Target Idle Table" storageaddress="0x89AE"/>
+	<table name="Target Idle RPM Table" storageaddress="0x89AE"/>
 
 	<table name="K-Value" storageaddress="0x6420"/>
 

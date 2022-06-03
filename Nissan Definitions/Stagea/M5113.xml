@@ -48,15 +48,15 @@
 	<table name="Minimum Injector Pulse Width" storageaddress="0x4B1A"/>
 	<table name="Fuel Injection Quantity Lower Limit" storageaddress="0x4CBC"/>
 	<table name="Maximum Injector Pulsewidth Table" storageaddress="0x829A"/>
-	<table name="Target Idle Table" storageaddress="0x7F80"/>
+	<table name="Target Idle RPM Table" storageaddress="0x7F80"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x41B1"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x4607"/>
 	<table name="Individual Cylinder Fuel Trims" storageaddress="0x80E8"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x7A78"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x7A80"/>
-	<table name="GOV Table" storageaddress="0x7C38"/>
-	<table name="GOV3 Table" storageaddress="0x7C40"/>
-	<table name="GOVL Table" storageaddress="0x7C48"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x7A78"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x7A80"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x7C38"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x7C40"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x7C48"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x7F1C"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x7F70"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x80C4"/>
@@ -69,7 +69,7 @@
 	<table name="ISC Opening Area Upper Limit Table 2 (RPM Compensation)" storageaddress="0x9B46"/>
 	<table name="Gear Ratio Table" storageaddress="0x8D1E"/>
 	<table name="Gear Ratio Table 2" storageaddress="0x9D16"/>
-	<table name="Cranking Advance Table" storageaddress="0x7A88"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0x7A88"/>
 
 
 //

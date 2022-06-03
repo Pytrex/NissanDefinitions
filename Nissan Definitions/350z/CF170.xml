@@ -38,16 +38,16 @@
 	<table name="JECS Fuel Restore Table" storageaddress="0x8497"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x844F"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x843B"/>
-	<table name="Target Idle Table" storageaddress="0x845F"/>
+	<table name="Target Idle RPM Table" storageaddress="0x845F"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x5A43"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x5E92"/>
 	<table name="MAF Factor" storageaddress="0x5D15"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x5BB5"/>
-	<table name="GOV Table" storageaddress="0x815D"/>
-	<table name="GOV3 Table" storageaddress="0x8165"/>
-	<table name="GOVL Table" storageaddress="0x816D"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x7FFD"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x8005"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x815D"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x8165"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x816D"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x7FFD"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x8005"/>
 	<table name="K2Y Table (Deceleration Advance)" storageaddress="0x8291" userlevel="5"/> <!-- Needs verified-->
 	<table name="K1 Table (Acceleration Retard)" storageaddress="0x8299" userlevel="5"/> <!-- Needs verified-->
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x86E9"/>

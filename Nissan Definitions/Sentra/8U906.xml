@@ -24,7 +24,7 @@
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x630A"/>
 	<table name="MAF Table" storageaddress="0x8A8A"/>
-	<table name="Target Idle Table" storageaddress="0x84C8"/>
+	<table name="Target Idle RPM Table" storageaddress="0x84C8"/>
 	<table name="K-Value" storageaddress="0x62B2"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x849C"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x84B0"/>

@@ -32,7 +32,7 @@
 	<table name="Bosch Fuel Cut Table" storageaddress="0x9848"/>
 	<table name="MAF Table" storageaddress="0xA1E8"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
-	<table name="Target Idle Table" storageaddress="0x988C"/>
+	<table name="Target Idle RPM Table" storageaddress="0x988C"/>
 	<table name="K-Value" storageaddress="0x6F24"/>
 	<table name="Radiator Fan Switch Point" storageaddress="0x697A"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x707C"/>
@@ -50,14 +50,14 @@
 	<table name="Engine Torque Map" storageaddress="0x8C88"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x70A8"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xA37C"/>
-	<table name="Cranking Advance Table" storageaddress="0x93AE"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0x93AE"/>
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x6C18"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x6C24"/>
-	<table name="GOV Table" storageaddress="0x9526"/>
-	<table name="GOV3 Table" storageaddress="0x952E"/>
-	<table name="GOVL Table" storageaddress="0x9536"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x930E"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x9316"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x9526"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x952E"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x9536"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x930E"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x9316"/>
 	<table name="K2Y Table (Deceleration Advance)" storageaddress="0x9662"/>
 	<table name="K1 Table (Acceleration Retard)" storageaddress="0x966A"/>
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x9C02"/>

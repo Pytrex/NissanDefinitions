@@ -77,7 +77,7 @@
 
 	<table name="MAF Table" storageaddress="0x8b36"/>
 
-	<table name="Target Idle Table" storageaddress="0x8564"/>
+	<table name="Target Idle RPM Table" storageaddress="0x8564"/>
 
 	<table name="K-Value" storageaddress="0x6310"/>
 

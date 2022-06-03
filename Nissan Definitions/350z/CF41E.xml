@@ -49,7 +49,7 @@
 		<table type="Y Axis" storageaddress="0xB650"/>
 	</table>
 
-	<table  name="MBT Flame Speed Map" storageaddress="0x91ad">
+	<table name="MBT Flame Speed Map" storageaddress="0x91ad">
 		<table type="X Axis" storageaddress="0xb2f1"/>
 		<table type="Y Axis" storageaddress="0xb2f5"/>
 	</table>
@@ -117,7 +117,7 @@
 		<table type="Y Axis" storageaddress="0xDDF8"/>
 	</table>
 
-	<table name="Target Idle Table" storageaddress="0xbd02"/>
+	<table name="Target Idle RPM Table" storageaddress="0xbd02"/>
 
 	<table name="Radiator Fan High Coolant" storageaddress="0x8287"/>
 

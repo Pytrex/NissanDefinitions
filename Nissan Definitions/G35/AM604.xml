@@ -35,13 +35,13 @@
 	<table name="JECS Fuel Restore Table" storageaddress="0x745A"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x740A"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x73E6"/>
-	<table name="Target Idle Table" storageaddress="0x7422"/>
+	<table name="Target Idle RPM Table" storageaddress="0x7422"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x48AD"/>
-	<table name="GOV Table" storageaddress="0x711C"/>
-	<table name="GOV3 Table" storageaddress="0x7124"/>
-	<table name="GOVL Table" storageaddress="0x712C"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x6F30"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x6F38"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x711C"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x7124"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x712C"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x6F30"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x6F38"/>
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x76E4"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0x76E8"/>
 	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0x76EC"/>

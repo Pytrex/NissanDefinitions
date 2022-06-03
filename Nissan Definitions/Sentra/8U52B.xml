@@ -100,7 +100,7 @@
 
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x53D4"/>
 	<table name="MAF Table" storageaddress="0x850A"/>
-	<table name="Target Idle Table" storageaddress="0x7D77"/>
+	<table name="Target Idle RPM Table" storageaddress="0x7D77"/>
 	<table name="K-Value" storageaddress="0x5366"/>
 	<table name="Engine Torque Map" storageaddress="0x6EEC"/>
 	<table name="LTFT Map BFS Axis" storageaddress="0x7C7D"/>
@@ -120,5 +120,6 @@
 	<table name="Evap Pressure Flow DTCs" storageaddress="0x985C"/>
 	<table name="Evap Leaks DTCs" storageaddress="0x985D"/>
 
+	<checksum type="alt" start="0x408" end="0x2196" sumloc="0x400" xorloc="0x404"/>
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x5614" xorloc="0x560C"/>
 </rom>

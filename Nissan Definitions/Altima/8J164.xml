@@ -31,14 +31,14 @@ Add/Convert these to A2L names;
 
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x6FFC"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0x7600"/>
-	<table name="Cranking Advance Table" storageaddress="0x6EC8"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0x6EC8"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x4FDC"/>
 	<table name="Engine Torque Map" storageaddress="0x680C"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x6E48"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x6E50"/>
-	<table name="GOV Table" storageaddress="0x7034"/>
-	<table name="GOV3 Table" storageaddress="0x703C"/>
-	<table name="GOVL Table" storageaddress="0x7044"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x6E48"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x6E50"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x7034"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x703C"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x7044"/>
 	<table name="ISC Opening Area Upper Limit Table" storageaddress="0x7938"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0x75C0"/>
 	<table name="Initial Retard Quantity Table (Fuel Cut Lock-Up)" storageaddress="0x75C8"/>
@@ -57,7 +57,7 @@ Add/Convert these to A2L names;
 	<table name="Speed Limiter" storageaddress="0x4FBA"/>
 	<table name="TCS Fuel Cut Prohibition RPM Table" storageaddress="0x7640"/>
 	<table name="Target AFR MBT Compensation Table 2" storageaddress="0x7410"/>
-	<table name="Target Idle Table" storageaddress="0x72E6"/>
+	<table name="Target Idle RPM Table" storageaddress="0x72E6"/>
 
 	<table name="Throttle Flow Potential Table Trustful" storageaddress="0x8938">
 		<table type="X Axis" storageaddress="0x88B8"/>

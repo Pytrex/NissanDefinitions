@@ -1,0 +1,26 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>1KE6C</xmlid>
+		<caseid>2XHK19BDF1</caseid>
+		<internalidaddress>8205</internalidaddress>
+		<internalidstring>1KE6C</internalidstring>
+		<ecuid>11KE6C</ecuid>
+		<year>2010</year>
+		<market>Unknown</market>
+		<make>Nissan</make>
+		<model>Juke</model>
+		<submodel>Unknown</submodel>
+		<transmission>Unknown</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	<checksum type="alt" start="0x2040C" end="0x22268" sumloc="0x20404" xorloc="0x20408"/>
+<!--<checksum type="alt2" start="0x8204" end="0xFFFFF" sumlock="0x99A8" xorlock="0x99A0"/>-->
+
+	
+</rom>

@@ -23,7 +23,7 @@
 	<table name="MAF Table" storageaddress="0x913E"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0x92FE"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6488"/>
-	<table name="Target Idle Table" storageaddress="0x8993"/>
+	<table name="Target Idle RPM Table" storageaddress="0x8993"/>
 	<table name="K-Value" storageaddress="0x6428"/>
 	<table name="Speed Limiter" storageaddress="0x64EA"/>
     <table name="Speed Limiter (Fuel Cut)" storageaddress="0x621B"/>

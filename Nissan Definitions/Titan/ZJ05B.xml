@@ -111,7 +111,7 @@
 		<table type="Y Axis" storageaddress="0xae60"/>
 	</table>
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xB44A"/>
-	<table name="Target Idle Table" storageaddress="0xB5A0"/>
+	<table name="Target Idle RPM Table" storageaddress="0xB5A0"/>
 	<table name="Target Idle Table 2" storageaddress="0xB5D8"/>
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xBC14">
 		<table type="X Axis" storageaddress="0xCA20"/>

@@ -24,7 +24,7 @@
 	<table name="MAF Table" storageaddress="0x8FFE"/>
 	<table name="Engine Torque Map" storageaddress="0x7CB4"/>
 	<table name="K-Value" storageaddress="0x62E6"/>
-	<table name="Target Idle Table" storageaddress="0x8853"/>
+	<table name="Target Idle RPM Table" storageaddress="0x8853"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x8817"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x8973"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0x888B"/>

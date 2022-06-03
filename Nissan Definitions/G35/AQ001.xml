@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>AQ001</xmlid>
+		<caseid>1ZVDGND6</caseid>
+		<internalidaddress>90F6</internalidaddress>
+		<internalidstring>AQ001</internalidstring>
+		<ecuid>1AQ001</ecuid>
+		<year>Unknown</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>Skyline</model>
+		<submodel>Unknown</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	<checksum type="alt" start="0x408" end="0x207A" sumloc="0x400" xorloc="0x404"/>
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x52E8" xorloc="0x52D4"/>
+</rom>

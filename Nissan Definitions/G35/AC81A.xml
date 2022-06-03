@@ -23,7 +23,7 @@
 	<table name="MAF Table" storageaddress="0x0B73C"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x791C"/>
 	<table name="Throttle Rev Limiter" storageaddress="0x79B4"/>
-	<table name="Target Idle Table" storageaddress="0xAC58"/>
+	<table name="Target Idle RPM Table" storageaddress="0xAC58"/>
 	<table name="Radiator Fan Switch Point" storageaddress="0x7214"/>
 	<table name="Speed Limiter" storageaddress="0x79E6"/>
 	<table name="K-Value" storageaddress="0x788A"/>
@@ -42,7 +42,7 @@
 	<table name="Engine Torque Map" storageaddress="0x9E90"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x7A74"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xB910"/>
-	<table name="Cranking Advance Table" storageaddress="0xA66E"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0xA66E"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0xADBC"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0xACC0"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0xAC48"/>
@@ -50,11 +50,11 @@
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x74F0"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x74FC"/>
 	<table name="MAF Factor" storageaddress="0x71B4"/>
-	<table name="GOV Table" storageaddress="0xA7FE"/>
-	<table name="GOV3 Table" storageaddress="0xA806"/>
-	<table name="GOVL Table" storageaddress="0xA80E"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0xA5C2"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0xA5CA"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0xA7FE"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0xA806"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0xA80E"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0xA5C2"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0xA5CA"/>
 	<table name="K2Y Table (Deceleration Advance)" storageaddress="0xA9A2"/>
 	<table name="K1 Table (Acceleration Retard)" storageaddress="0xA9AA"/>
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0xB09E"/>

@@ -33,23 +33,23 @@
 	<table name="Engine Torque Map" storageaddress="0x8C88"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xA982"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x70F0"/>
-	<table name="Cranking Advance Table" storageaddress="0x93AE"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0x93AE"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x99B0"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0x98F4"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x987C"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x9848"/>
-	<table name="Target Idle Table" storageaddress="0x988C"/>
+	<table name="Target Idle RPM Table" storageaddress="0x988C"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x652D"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x6B40"/>
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x6C18"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x6C24"/>
 	<table name="MAF Factor" storageaddress="0x691F"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6740"/>
-	<table name="GOV Table" storageaddress="0x9526"/>
-	<table name="GOV3 Table" storageaddress="0x952E"/>
-	<table name="GOVL Table" storageaddress="0x9536"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x930E"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x9316"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x9526"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x952E"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x9536"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x930E"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x9316"/>
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x9C02"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0x9C06"/>
 	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0x9C0A"/>

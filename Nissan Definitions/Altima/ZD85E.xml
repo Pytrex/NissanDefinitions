@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>ZD85E</xmlid>
+		<caseid>6X6E58SYMN36</caseid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>ZD85E</internalidstring>
+		<ecuid>1ZD85E</ecuid>
+		<year>2006</year>
+		<market>Unknown</market>
+		<make>Nissan</make>
+		<model>Altima</model>
+		<submodel>Unknown</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	<checksum type="alt" start="0x2414" end="0x4246" sumloc="0x240C" xorloc="0x2410"/>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8918" xorloc="0x8910"/>
+</rom>

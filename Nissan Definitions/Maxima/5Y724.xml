@@ -21,22 +21,22 @@
 <!-- Children: 5Y702, 5Y713 -->
 
 <!-- Figure out
-	<table name="Target Idle Table" storageaddress="0x72EA"/>
+	<table name="Target Idle RPM Table" storageaddress="0x72EA"/>
 	<table name="Target Idle Table 2" storageaddress="0x730E"/>
 -->
 
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x7000"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0x7604"/>
-	<table name="Cranking Advance Table" storageaddress="0x6ECC"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0x6ECC"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x4FDC"/>
 	<table name="Engine Torque Map" storageaddress="0x6810"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x480D"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x4CC0"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x6E4C"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x6E54"/>
-	<table name="GOV Table" storageaddress="0x7038"/>
-	<table name="GOV3 Table" storageaddress="0x7040"/>
-	<table name="GOVL Table" storageaddress="0x7048"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x6E4C"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x6E54"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x7038"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x7040"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x7048"/>
 	<table name="Gear Ratio Table" storageaddress="0x7BC4"/>
 	<table name="ISC Opening Area Upper Limit Table" storageaddress="0x793C"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0x75C4"/>

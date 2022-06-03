@@ -25,7 +25,7 @@
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x8524"/>
     <table name="Speed Limiter (Fuel Restore)" storageaddress="0x8530"/>
 	<table name="MAF Table" storageaddress="0x0c7fa"/>
-	<table name="Target Idle Table" storageaddress="0xbcbe"/>
+	<table name="Target Idle RPM Table" storageaddress="0xbcbe"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x8428"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x7d5f"/>
 	<table name="Speed Limiter" storageaddress="0x8a24"/>
@@ -55,17 +55,17 @@
 	<table name="OBD-2 PID 41-60 Supmask" storageaddress="0xB28D"/>
 	<table name="JAR Sound Compensation Table (Coolant Temperature)" storageaddress="0xB5DC"/>
 	<table name="JAR Sound Compensation Table (Engine RPM)" storageaddress="0xB5EC"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0xB620"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0xB628"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0xB620"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0xB628"/>
 	<table name="Time of Closed Loop, GOV-Neutral Compensation Table" storageaddress="0xB630"/>
 	<table name="Time of PI Control, GOV-Neutral Compensation Table" storageaddress="0xB638"/>
-	<table name="Cranking Advance Table" storageaddress="0xB6CC"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0xB6CC"/>
 	<table name="Unburned Gas Density Table" storageaddress="0xB6FC"/>
 	<table name="Target AFR MBT Compensation Table" storageaddress="0xB7FC"/>
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB80C"/>
-	<table name="GOV Table" storageaddress="0xB85C"/>
-	<table name="GOV3 Table" storageaddress="0xB864"/>
-	<table name="GOVL Table" storageaddress="0xB86C"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0xB85C"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0xB864"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0xB86C"/>
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0xBA88"/>
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xBB70"/>
 	<table name="LTFT Map BFS Axis" storageaddress="0xBBB0"/>

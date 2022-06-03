@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>9W73B</xmlid>
+		<caseid>4ZVA9D6</caseid>
+		<internalidaddress>8289</internalidaddress>
+		<internalidstring>9W73B</internalidstring>
+		<ecuid>19W73B</ecuid>
+		<year>2007</year>
+		<market>Unknown</market>
+		<make>Nissan</make>
+		<model>Teana</model>
+		<submodel>Unknown</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x66E4" xorloc="0x66DC"/>
+</rom>

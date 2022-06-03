@@ -77,7 +77,7 @@
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x938C"/>
 	<table name="Minimum Injector Pulse Width" storageaddress="0x9536"/>
 	<table name="OBD-2 PID 01-20 Supmask" storageaddress="0x13A6C"/>
-	<table name="Cranking Advance Table" storageaddress="0x13F9B"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0x13F9B"/>
 	<table name="Target AFR MBT Compensation Table" storageaddress="0x140FB"/>
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x1410B"/>
 	<table name="High Coolant Temperature Increase Compensation Table" storageaddress="0x14407"/>
@@ -96,7 +96,7 @@
 	<table name="QH0 High Flow Quantity Table" storageaddress="0x17148"/>
 	<table name="QH0 Low Flow Quantity Table" storageaddress="0x17168"/>
 	<table name="Gear Ratio Table" storageaddress="0x17388"/>
-	<table name="Crank Fueling TP Table" storageaddress="0x177C6"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0x177C6"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x904E"/>
 	<table name="Throttle Rev Limiter" storageaddress="0x9478"/>
 	<table name="Knock Slice Map" storageaddress="0x12A6A"/>
@@ -110,13 +110,13 @@
 	<table name="Bosch Fuel Restore Table" storageaddress="0x14991"/>
 	<table name="JECS Fuel Cut Table" storageaddress="0x1471D"/>
 	<table name="Bosch Fuel Cut Table" storageaddress="0x146E9"/>
-	<table name="Target Idle Table" storageaddress="0x1472D"/>
+	<table name="Target Idle RPM Table" storageaddress="0x1472D"/>
 	<table name="MAF Factor" storageaddress="0x8A35"/>
-	<table name="GOV Table" storageaddress="0x14173"/>
-	<table name="GOV3 Table" storageaddress="0x1417B"/>
-	<table name="GOVL Table" storageaddress="0x14183"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x13EE7"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x13EEF"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x14173"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x1417B"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x14183"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x13EE7"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x13EEF"/>
 	<table name="K2Y Table (Deceleration Advance)" storageaddress="0x1437F"/>
 	<table name="K1 Table (Acceleration Retard)" storageaddress="0x14387"/>
 	

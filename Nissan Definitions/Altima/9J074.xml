@@ -22,9 +22,9 @@
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0x70CD"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0x76D1"/>
 	<table name="Engine Torque Map" storageaddress="0x68CC"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x7115"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x7105"/>
-	<table name="GOV3 Table" storageaddress="0x710D"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x7115"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x7105"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x710D"/>
 	<table name="Gear Ratio Table" storageaddress="0x7C92"/>
 	<table name="ISC Opening Area Upper Limit Table" storageaddress="0x7A0A"/>
 	<table name="K-Value" storageaddress="0x4FD0"/>
@@ -34,7 +34,7 @@
 	<table name="Speed Limiter" storageaddress="0x5074"/>
 	<table name="TCS Fuel Cut Prohibition RPM Table" storageaddress="0x7711"/>
 	<table name="Target AFR MBT Compensation Table 2" storageaddress="0x74E1"/>
-	<table name="Target Idle Table" storageaddress="0x73B7"/>
+	<table name="Target Idle RPM Table" storageaddress="0x73B7"/>
 	<table name="Target Idle Table 2" storageaddress="0x73DB"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0x7A3A"/>
 

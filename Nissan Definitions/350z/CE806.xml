@@ -33,7 +33,7 @@
 	<table name="Bosch Fuel Restore Table" storageaddress="0x98F4"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0x99B0"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0xA46C"/>
-	<table name="Target Idle Table" storageaddress="0x988C"/>
+	<table name="Target Idle RPM Table" storageaddress="0x988C"/>
 	<table name="MAF Table" storageaddress="0x0A1E8"/>
 	<table name="K-Value" storageaddress="0x6F24"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6FA8"/>
@@ -44,14 +44,14 @@
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xA37C"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xA982"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x70F0"/>
-	<table name="Cranking Advance Table" storageaddress="0x93AE"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0x93AE"/>
 	<table name="MAF Factor" storageaddress="0x691F"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6740"/>
-	<table name="GOV Table" storageaddress="0x9526"/>
-	<table name="GOV3 Table" storageaddress="0x952E"/>
-	<table name="GOVL Table" storageaddress="0x9536"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0x930E"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0x9316"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0x9526"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0x952E"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0x9536"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0x930E"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x9316"/>
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0x9C02"/>
 	<table name="Initial Retard Quantity Table" storageaddress="0x9C06"/>
 	<table name="Initial Retard Quantity Table (Idle)" storageaddress="0x9C0A"/>

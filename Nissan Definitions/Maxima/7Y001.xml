@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>7Y001</xmlid>
+		<caseid>4XXEKSNF</caseid>
+		<internalidaddress>861A</internalidaddress>
+		<internalidstring>7Y001</internalidstring>
+		<ecuid>17Y001</ecuid>
+		<year>2004</year>
+		<market>Unknown</market>
+		<make>Nissan</make>
+		<model>Maxima</model>
+		<submodel>Unknown</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	<checksum type="alt" start="0x1408" end="0x2FEE" sumloc="0x1400" xorloc="0x1404"/>
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6758" xorloc="0x6750"/>
+</rom>

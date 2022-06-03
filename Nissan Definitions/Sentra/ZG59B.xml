@@ -30,7 +30,7 @@
 	<table name="Consult Ignition Timing Adjustment Limits" storageaddress="0x7ADC"/>
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xA806"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xAF96"/>
-	<table name="Cranking Advance Table" storageaddress="0xA6EA"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0xA6EA"/>
 	<table name="Cruise Control Specifications Choice Flags" storageaddress="0x81A3"/>
 	<table name="Cruise Control, PTD Open-Degree Operation Switching Flag" storageaddress="0x81A4"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x87E0"/>
@@ -117,7 +117,7 @@
 	<table name="Target AFR MBT Compensation Table" storageaddress="0xA7F6"/>
 	<table name="Target AFR MBT Compensation Table 2" storageaddress="0xACEE"/>
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xAA7E"/>
-	<table name="Target Idle Table" storageaddress="0xABBC"/>
+	<table name="Target Idle RPM Table" storageaddress="0xABBC"/>
 	<table name="The Whole Area Torque Going Down Control Switching Flag" storageaddress="0x81E6"/>
 	<table name="Throttle Rev Limiter" storageaddress="0x876E"/>
 	<table name="Torque Converter Torque Ratio Table" storageaddress="0xBD3C"/>

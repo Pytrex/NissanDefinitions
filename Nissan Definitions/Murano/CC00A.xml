@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>CC00A</xmlid>
+		<caseid>5TTVBN6</caseid>
+		<internalidaddress>A076</internalidaddress>
+		<internalidstring>CC00A</internalidstring>
+		<ecuid>1CC00A</ecuid>
+		<year>Unknown</year>
+		<market>Unknown</market>
+		<make>Nissan</make>
+		<model>Murano</model>
+		<submodel>Unknown</submodel>
+		<transmission>CVT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	<checksum type="alt" start="0x1408" end="0x30F6" sumloc="0x1400" xorloc="0x1404"/>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7A2C" xorloc="0x7A24"/>
+</rom>

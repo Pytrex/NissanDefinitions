@@ -59,7 +59,7 @@
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB850"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xC22C"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xD1A2"/>
-	<table name="Cranking Advance Table" storageaddress="0xB710"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0xB710"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8AFA"/>
 	<table name="Cylinder Fresh Air Rate Map" storageaddress="0x91BD">
 		<table type="X Axis" storageaddress="0xB2F1"/>
@@ -147,11 +147,11 @@
 	<table name="DTC 17" storageaddress="0xDDA2"/>
 	<table name="DTC 18" storageaddress="0xDDA6"/>
 
-	<table name="GOV Addition Table (Drive)" storageaddress="0xB664"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0xB66C"/>
-	<table name="GOV Table" storageaddress="0xB8A0"/>
-	<table name="GOV3 Table" storageaddress="0xB8A8"/>
-	<table name="GOVL Table" storageaddress="0xB8B0"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0xB664"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0xB66C"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0xB8A0"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0xB8A8"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0xB8B0"/>
 	<table name="Gear Ratio Table" storageaddress="0xCF34"/>
 	<table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x8FED">
 		<table type="X Axis" storageaddress="0xB640"/>
@@ -288,7 +288,7 @@
 	</table>
 
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xBBB4"/>
-	<table name="Target Idle Table" storageaddress="0xBD02"/>
+	<table name="Target Idle RPM Table" storageaddress="0xBD02"/>
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xC4CC">
 		<table type="X Axis" storageaddress="0xD152"/>
 	</table>

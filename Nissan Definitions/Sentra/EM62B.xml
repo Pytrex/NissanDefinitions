@@ -1,0 +1,26 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>EM62B</xmlid>
+		<caseid>1CMC7QPD401</caseid>
+		<internalidaddress>8205</internalidaddress>
+		<internalidstring>EM62B</internalidstring>
+		<ecuid>1EM62B</ecuid>
+		<year>2004-2012</year>
+		<market>Unknown</market>
+		<make>Nissan</make>
+		<model>Tiida</model>
+		<submodel>Unknown</submodel>
+		<transmission>Unknown</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	<checksum type="alt" start="0x131FC" end="0x14E24" sumloc="0x10404" xorloc="0x10408"/>
+<!--<checksum type="alt2" start="0x8204" end="0xFFFFF" sumlock="0x8D38" xorlock="0x8D30"/>-->
+
+	
+</rom>

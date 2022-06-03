@@ -72,7 +72,7 @@
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x53ae"/>
 
 	<table name="MAF Table" storageaddress="0x84da"/>
-	<table name="Target Idle Table" storageaddress="0x7d47"/>
+	<table name="Target Idle RPM Table" storageaddress="0x7d47"/>
 
 	<table name="K-Value" storageaddress="0x5340"/>
 	

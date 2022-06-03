@@ -6,7 +6,7 @@
 		<internalidstring>9W84A</internalidstring>
 		<ecuid>19W84A</ecuid>
 		<year>2007</year>
-		<market>JM</market>
+		<market>JDM</market>
 		<make>Nissan</make>
 		<model>Teana</model>
 		<submodel>Base</submodel>
@@ -18,7 +18,7 @@
 		<author>Unknown</author>
 		<version>EXPERIMENTAL</version>
 	</romid>
-
+<!--Doesn't diff well with CD002-->
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6C05">
 		<table type="X Axis" storageaddress="0x892D"/>
@@ -50,12 +50,12 @@
 		<table type="Y Axis" storageaddress="0x893D"/>
 	</table>
 
-	<table  name="MBT Flame Speed Map" storageaddress="0x6F65">
+	<table name="MBT Flame Speed Map" storageaddress="0x6F65">
 		<table type="X Axis" storageaddress="0x8676"/>
 		<table type="Y Axis" storageaddress="0x867A"/>
 	</table>
 
-	<table  name="Cylinder Fresh Air Rate Map" storageaddress="0x6F75">
+	<table name="Cylinder Fresh Air Rate Map" storageaddress="0x6F75">
 		<table type="X Axis" storageaddress="0x8676"/>
 		<table type="Y Axis" storageaddress="0x867A"/>
 	</table>
@@ -173,14 +173,13 @@
 	<table name="Minimum Injector Pulse Width" storageaddress="0x69DC"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x624B"/>
 
-	<table name="Cranking Advance Table" storageaddress="0x89DD"/>
-	<!--<table name="Crank Fueling TP value" storageaddress="0x"/>-->
+	<table name="Cranking Ignition Timing Table" storageaddress="0x89DD"/>
 	<table name="High Temperature Fuel Compensation Map" storageaddress="0x6BF5">
 		<table type="X Axis" storageaddress="0x8686"/>
 		<table type="Y Axis" storageaddress="0x868A"/>
 	</table>
 
-	<table name="Target Idle Table" storageaddress="0x8EED"/>
+	<table name="Target Idle RPM Table" storageaddress="0x8EED"/>
 	
 	<table name="ASCD Max Set Speed" storageaddress="0x6A70"/>
 	<table name="ASCD Min Set Speed" storageaddress="0x6A7C"/>

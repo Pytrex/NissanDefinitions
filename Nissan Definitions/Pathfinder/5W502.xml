@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>5W502</xmlid>
+		<caseid>1ZVMBUNH</caseid>
+		<internalidaddress>23C3</internalidaddress>
+		<internalidstring>5W502</internalidstring>
+		<ecuid>15W502</ecuid>
+		<year>2002</year>
+		<market>Unknown</market>
+		<make>Nissan</make>
+		<model>Pathfinder</model>
+		<submodel>Unknown</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>512kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	
+	<checksum type="std" start="0" end="0x7FFFF" sumloc="0xE34" xorloc="0xE28"/>
+</rom>

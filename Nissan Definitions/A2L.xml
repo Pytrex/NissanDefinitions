@@ -5,9 +5,9 @@
 		<flashmethod>Nisprog</flashmethod>
 	</romid>
 
-	<table type="2D" name="Crank Fueling TP Table" category="Engine Start Performance//Cranking Control//Fuel Delivery" storagetype="uint16" sizex="8" userlevel="3">
+	<table type="2D" name="Cranking Base Fuel Schedule Table" category="Engine Start Performance//Cranking Control//Fuel Delivery" storagetype="uint16" sizex="8" userlevel="3">
 		<scaling base="BFS (x*0.000488)"/>
-		<table type="Static X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
+		<table type="Static X Axis" name="Coolant Temperature (°F)" sizex="8">
 			<data>-40</data>
 			<data>-4</data>
 			<data>32</data>
@@ -17,12 +17,12 @@
 			<data>176</data>
 			<data>212</data>
 		</table>
-		<description><!--mTTPINT-->This table bypasses the injector K value, so modifying this for larger injectors is essential. This table value DOES get multiplied by the Fuel Compensation Map Value! So you can also adjust the fuel compensation map to affect cranking fueling.</description>
+		<description><!--mTTPINT-->Sets the cranking BFS. This table value is still compensated by the Fuel Compensation Map, so you can use that map to further dial in cranking fueling. During cranking, the K-Value is not utilized. So you'll have to adjust this table whenever you modify your fueling system (i.e. larger injectors).</description>
 	</table>
 
-	<table type="2D" name="Cranking Advance Table" category="Engine Start Performance//Cranking Control//Ignition Timing" storagetype="uint8" sizex="8" userlevel="3">
+	<table type="2D" name="Cranking Ignition Timing Table" category="Engine Start Performance//Cranking Control//Ignition Timing" storagetype="uint8" sizex="8" userlevel="3">
 		<scaling base="Degrees (x)"/>
-		<table type="Static X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
+		<table type="Static X Axis" name="Coolant Temperature (°F)" sizex="8">
 			<data>-40</data>
 			<data>-4</data>
 			<data>32</data>
@@ -32,10 +32,10 @@
 			<data>176</data>
 			<data>212</data>
 		</table>
-		<description><!--mTCRADV-->CRADV table// Cranking Timing A</description>
+		<description><!--mTCRADV-->Cranking Advance Table.</description>
 	</table>
 
-	<table type="2D" name="GOV Table" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="3">
+	<table type="2D" name="Cold Idle Ignition Timing Table" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="3">
 		<scaling base="Degrees (x-128)"/>
 		<table type="Static X Axis" name="Engine Speed (RPM)" sizex="8">
 			<data>0</data>
@@ -47,10 +47,10 @@
 			<data>2400</data>
 			<data>2800</data>
 		</table>
-		<description><!--mTGOV-->Ignition timing value during idle/deceleration. Used when coolant temperature is below mGOVTW's value. (Stock = 131*F)</description>
+		<description><!--mTGOV-->Ignition timing during idle/deceleration. Used when coolant temperature is below mGOVTW's value. (Stock = 131*F)</description>
 	</table>
 
-	<table type="2D" name="GOV3 Table" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="3">
+	<table type="2D" name="Idle Ignition Timing Table" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="3">
 		<scaling base="Degrees (x-128)"/>
 		<table type="Static X Axis" name="Engine Speed (RPM)" sizex="8">
 			<data>0</data>
@@ -62,10 +62,10 @@
 			<data>2400</data>
 			<data>2800</data>
 		</table>
-		<description><!--mTGOV3-->Ignition timing value during idle/deceleration. Used whenever the coolant temperature is above mGOVTW's value. (Stock = 131*F)</description>
+		<description><!--mTGOV3-->Ignition timing during idle/deceleration. During idle/deceleration, the calculated MBT ignition system is not in use. Instead, the ECU uses the GOV Table as the base timing and applies compensations on top of it (Ignition Timing Maps don't affect it).</description>
 	</table>
 
-	<table type="2D" name="GOVL Table" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="4">
+	<table type="2D" name="Lean Burn Idle Ignition Timing Table" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="4">
 		<scaling base="Degrees (x-128)"/>
 		<table type="Static X Axis" name="Engine Speed (RPM)" sizex="8">
 			<data>0</data>
@@ -77,52 +77,7 @@
 			<data>2400</data>
 			<data>2800</data>
 		</table>
-		<description><!--mTGOVL-->Ignition timing value during idle/deceleration. Used for lean burn engines.</description>
-	</table>
-
-	<table type="2D" name="GOV Addition Table (Drive)" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="3">
-		<scaling base="Degrees (x)"/>
-		<table type="Static X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
-			<data>-40</data>
-			<data>-4</data>
-			<data>32</data>
-			<data>68</data>
-			<data>104</data>
-			<data>140</data>
-			<data>176</data>
-			<data>212</data>
-		</table>
-		<description><!--mTAVCD1-->Value is added onto the GOV Table value when in drive.</description>
-	</table>
-
-	<table type="2D" name="GOV Addition Table (Neutral)" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="3">
-		<scaling base="Degrees (x)"/>
-		<table type="Static X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
-			<data>-40</data>
-			<data>-4</data>
-			<data>32</data>
-			<data>68</data>
-			<data>104</data>
-			<data>140</data>
-			<data>176</data>
-			<data>212</data>
-		</table>
-		<description><!--mTAVCN1-->Value is added onto the GOV Table value when in neutral.</description>
-	</table>
-
-	<table type="2D" name="Time of Closed Loop, GOV-Neutral Compensation Table" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="3">
-		<scaling base="Degrees (x)"/>
-		<table type="Static X Axis" name="Coolant Temperature (Fahrenheit)" sizex="8">
-			<data>-40</data>
-			<data>-4</data>
-			<data>32</data>
-			<data>68</data>
-			<data>104</data>
-			<data>140</data>
-			<data>176</data>
-			<data>212</data>
-		</table>
-		<description><!--mTAVCNL-->Value is subtracted from the mTAVCN1 Table value</description>
+		<description><!--mTGOVL-->Ignition timing during idle/deceleration. Used exclusively for lean burn engines.</description>
 	</table>
 
 	<table type="2D" name="Time of PI Control, GOV-Neutral Compensation Table" category="Idle Speed Control//Ignition Timing//GOV Control" storagetype="uint8" sizex="8" userlevel="3">
@@ -158,7 +113,7 @@
 		<description><!--mTPRVL-->If your BFS at idle exceeds these values, it'll throw a P0507(5 or 607? the ISC one)</description>
 	</table>
 
-	<table type="2D" name="Target Idle Table" category="Idle Speed Control//PID Control//Main" storagetype="uint8" sizex="16" userlevel="1">
+	<table type="2D" name="Target Idle RPM Table" category="Idle Speed Control//PID Control//Main" storagetype="uint8" sizex="16" userlevel="1">
 		<scaling base="Target Idle (x*12.5)"/>
 		<table type="Static X Axis" name="Coolant Temperature (Fahrenheit)" sizex="16">
 			<data>-40</data>
@@ -178,7 +133,7 @@
 			<data>212</data>
 			<data>230</data>
 		</table>
-		<description><!--zTGTIDLE-->The main target idle table. This table sets the RPM target that the ECU will attempt to hit. Do note that changing the target values could have adverse effects due to the limiters in place. So if you make adjustments to this table, ensure that you're not breaching any of the set limits.</description>
+		<description><!--zTGTIDLE-->Sets the idle RPM that the ECU will attempt to hit.</description>
 	</table>
 
 	<table type="2D" name="MAF Idle Voltage Limits" category="Idle Speed Control//Limiters//General Limiters" storagetype="uint16" sizex="2" userlevel="3">
@@ -618,11 +573,6 @@
 			<data>6000</data>
 		</table>
 		<description><!--mTTPMAX-->If your pulsewidth exceeds this value, fuel cut will occur.</description>
-	</table>
-
-	<table type="1D" name="Fuel Injection Quantity Lower Limit" category="Fuel Delivery//Fuel Injector Calibration//Specifications//Main" storagetype="uint32" userlevel="3">
-		<scaling base="RPM/ms (x*0.006)"/>
-		<description><!--mTPDEFO--></description>
 	</table>
 
 	<table type="1D" name="Cylinder Filling Up Efficiency Scaler" category="Fuel Delivery//Fuel Injector Calibration//Specifications//Main" storagetype="uint16" userlevel="1">
@@ -1772,7 +1722,7 @@
 			<data>212</data>
 			<data>230</data>
 		</table>
-		<description><!--mTTXNEL-->"Fuel cut prohibited rotation speed table". This table sets the RPM threshold that has to be breached before the TCS can cut fuel. If RPM's drop below the table value, fueling will be restored.</description>
+		<description><!--mTTXNEL-->This table sets the RPM threshold that has to be breached before the TCS can cut fuel. If RPM's drop below the table value, fueling will be restored.</description>
 	</table>
 
 	<table type="3D" name="Fuel Cut Extreme Short Rest Time Map" category="Traction Control System" storagetype="uint8" sizex="4" sizey="4" userlevel="3">
@@ -2103,390 +2053,6 @@
 		<description><!--mSCID24--></description>
 	</table>
 
-	<table type="BitwiseSwitch" name="CID1300 Supmask" storagetype="uint32" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="31" name="01 vSWMONT_R#5"/>
-		<bit position="30" name="02 vSWMONT_R#1"/>
-		<bit position="29" name="03 vSWMONT_R#2"/>
-		<bit position="28" name="04 vSWMONT_R#3"/>
-		<bit position="27" name="05 vSWMONT_R#4"/>
-		<bit position="26" name="06 vDOMON_R#1"/>
-		<bit position="25" name="07 vDOMON_R#2"/>
-		<bit position="24" name="08 vDOMON_R#3"/>
-		<bit position="23" name="09 vDOMON_R#4"/>
-		<bit position="22" name="0A vDOMON_R#5"/>
-		<bit position="21" name="0B vDOMON_R#6"/>
-		<bit position="20" name="0C vGSTIMR_R#1"/>
-		<bit position="19" name="0D vASCDMON1"/>
-		<bit position="18" name="0E vASCDMON2"/>
-		<bit position="17" name="0F vCANDLM_R#1"/>
-		<bit position="16" name="10 vCANDLM_R#2"/>
-		<bit position="15" name="11 vDOMON_R#7"/>
-		<bit position="14" name="12 undefined"/>
-		<bit position="13" name="13 vDOMON_R#8"/>
-		<bit position="12" name="U12 -"/>
-		<bit position="11" name="U11 -"/>
-		<bit position="10" name="U10 -"/>
-		<bit position="9" name="U9 -"/>
-		<bit position="8" name="U8 -"/>
-		<bit position="7" name="U7 -"/>
-		<bit position="6" name="U6 -"/>
-		<bit position="5" name="U5 -"/>
-		<bit position="4" name="U4 -"/>
-		<bit position="3" name="U3 -"/>
-		<bit position="2" name="U2 -"/>
-		<bit position="1" name="U1 -"/>
-		<bit position="0" name="U0 -"/>
-		<description><!--mSCID30--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1301 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Snow Mode"/>
-		<bit position="1" name="Cls TPS"/>
-		<bit position="2" name="CVTC Learn"/>
-		<bit position="3" name="Unknown 3"/>
-		<bit position="4" name="A/C Sig"/>
-		<bit position="5" name="Unknown 5"/>
-		<bit position="6" name="HO2 B2S3"/>
-		<bit position="7" name="HO2 B1S3"/>
-		<description><!--zmSCID301-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1302 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Cls TPS"/>
-		<bit position="1" name="Start"/>
-		<bit position="2" name="Park/N"/>
-		<bit position="3" name="A/C"/>
-		<bit position="4" name="A/C Sig"/>
-		<bit position="5" name="Electrical Load"/>
-		<bit position="6" name="CAN VC SW"/>
-		<bit position="7" name="Ambient"/>
-		<description><!--zmSCID302-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1303 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Sol B"/>
-		<bit position="1" name="Sol A"/>
-		<bit position="2" name="A/T D2 In"/>
-		<bit position="3" name="A/T D1 In"/>
-		<bit position="4" name="HO2 B1S2 (rich/lean)"/>
-		<bit position="5" name="HO2 B2S2 (rich/lean)"/>
-		<bit position="6" name="HO2 B1S1 (rich/lean)"/>
-		<bit position="7" name="HO2 B2S1 (rich/lean)"/>
-		<description><!--zmSCID303-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1304 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Susp Unload"/>
-		<bit position="1" name="A/C"/>
-		<bit position="2" name="TCC"/>
-		<bit position="3" name="OD"/>
-		<bit position="4" name="Heater Fan"/>
-		<bit position="5" name="Clutch P/P"/>
-		<bit position="6" name="SWL VC"/>
-		<bit position="7" name="Ignition Switch"/>
-		<description><!--zmSCID304-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1305 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Combustion"/>
-		<bit position="1" name="-"/>
-		<bit position="2" name="Brake Switch"/>
-		<bit position="3" name="Rev Unit D"/>
-		<bit position="4" name="Boost Vac"/>
-		<bit position="5" name="FTVOLNEX"/>
-		<bit position="6" name="Idle A/V"/>
-		<bit position="7" name="FQCAL"/>
-		<description><!--zmSCID305-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1306 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="VVL S/V Exh"/>
-		<bit position="1" name="VVL S/V Int"/>
-		<bit position="2" name="Int Sol B2"/>
-		<bit position="3" name="Int Sol B1"/>
-		<bit position="4" name="VIAS S/V"/>
-		<bit position="5" name="Vari Duct S/V"/>
-		<bit position="6" name="-"/>
-		<bit position="7" name="Swrl Cont S/V"/>
-		<description><!--zmSCID306-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1307 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="A/T D3 Out"/>
-		<bit position="1" name="ISC OPEN/CLOSED judgement"/>
-		<bit position="2" name="Engine Mount"/>
-		<bit position="3" name="OD Cancel"/>
-		<bit position="4" name="TCC Sol"/>
-		<bit position="5" name="EGRC Sol"/>
-		<bit position="6" name="A/C Relay"/>
-		<bit position="7" name="IACV Up"/>
-		<description><!--zmSCID307-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1308 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="FPCM"/>
-		<bit position="1" name="FPCM"/>
-		<bit position="2" name="FPCM"/>
-		<bit position="3" name="FPump Relay"/>
-		<bit position="4" name="VVL Sol"/>
-		<bit position="5" name="Fuel Cntrl"/>
-		<bit position="6" name="Fuel Cntrl"/>
-		<bit position="7" name="EGRC Sol"/>
-		<description><!--zmSCID308-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1309 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Purg Sol"/>
-		<bit position="1" name="Vent Cntrl"/>
-		<bit position="2" name="Purg Sol"/>
-		<bit position="3" name="VC/V Byp"/>
-		<bit position="4" name="Map/Baro"/>
-		<bit position="5" name="P/Reg Cntrl"/>
-		<bit position="6" name="-"/>
-		<bit position="7" name="-"/>
-		<description><!--zmSCID309-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID130A Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="IACV FICD"/>
-		<bit position="1" name="Auxi Sol"/>
-		<bit position="2" name="Air Relay"/>
-		<bit position="3" name="AIR/P Sol"/>
-		<bit position="4" name="TPS Relay"/>
-		<bit position="5" name="Cold Start"/>
-		<bit position="6" name="HO2 B2S3"/>
-		<bit position="7" name="HO2 B1S3"/>
-		<description><!--zmSCID30A-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID130B Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="HO2 B2S2 heater"/>
-		<bit position="1" name="HO2 B1S2 heater"/>
-		<bit position="2" name="HO2 B2S1 heater"/>
-		<bit position="3" name="HO2 B1S1 heater"/>
-		<bit position="4" name="Fan high speed"/>
-		<bit position="5" name="Fan low speed"/>
-		<bit position="6" name="W/B B2"/>
-		<bit position="7" name="W/G B1"/>
-		<description><!--zmSCID30B-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID130C Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Catalyst Readiness"/>
-		<bit position="1" name="H Cat Readiness"/>
-		<bit position="2" name="Evap Readiness"/>
-		<bit position="3" name="Sec Air Readiness"/>
-		<bit position="4" name="Refigerant Readiness"/>
-		<bit position="5" name="HO2 Sensor Readiness"/>
-		<bit position="6" name="HO2 Heater Readiness"/>
-		<bit position="7" name="EGR Readiness"/>
-		<description><!--zmSCID30C-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID130D Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Cruise Switch"/>
-		<bit position="1" name="Cancel Switch"/>
-		<bit position="2" name="Resume/Acc Switch"/>
-		<bit position="3" name="Set/Dec Switch"/>
-		<bit position="4" name="Brake 1 (ASCD) released = h'10"/>
-		<bit position="5" name="Brake 2 (Stop Lamp) depressed = h'20"/>
-		<bit position="6" name="Distance"/>
-		<bit position="7" name="-"/>
-		<description><!--zmSCID30D-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID130E Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="-"/>
-		<bit position="1" name="-"/>
-		<bit position="2" name="VSS Cutoff"/>
-		<bit position="3" name="Low Spd Cut"/>
-		<bit position="4" name="Cruise Lamp"/>
-		<bit position="5" name="A/T OD"/>
-		<bit position="6" name="A/T OD Cncl"/>
-		<bit position="7" name="Set Lamp"/>
-		<description><!--zmSCID30E-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID130F Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Inital Diag"/>
-		<bit position="1" name="Tran Diag"/>
-		<bit position="2" name="TCM"/>
-		<bit position="3" name="TCS/ABS"/>
-		<bit position="4" name="Meter/M+A"/>
-		<bit position="5" name="ICC"/>
-		<bit position="6" name="BCM/SEC"/>
-		<bit position="7" name="IPDM E/R"/>
-		<description><!--zmSCID30F-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1310 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="AWD/4WD"/>
-		<bit position="1" name="EPS"/>
-		<bit position="2" name="-"/>
-		<bit position="3" name="-"/>
-		<bit position="4" name="-"/>
-		<bit position="5" name="-"/>
-		<bit position="6" name="-"/>
-		<bit position="7" name="-"/>
-		<description><!--zmSCID310-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1311 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="SCB/V Sol"/>
-		<bit position="1" name="VT Learn"/>
-		<bit position="2" name="-"/>
-		<bit position="3" name="Ex V/T Learn"/>
-		<bit position="4" name="-"/>
-		<bit position="5" name="-"/>
-		<bit position="6" name="-"/>
-		<bit position="7" name="-"/>
-		<description><!--zmSCID311-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1312 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="LPG Cut Sol"/>
-		<bit position="1" name="Slow Cut Sol"/>
-		<bit position="2" name="-"/>
-		<bit position="3" name="-"/>
-		<bit position="4" name="-"/>
-		<bit position="5" name="-"/>
-		<bit position="6" name="-"/>
-		<bit position="7" name="-"/>
-		<description><!--zmSCID312-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1313 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="Fan High"/>
-		<bit position="1" name="Fan Med"/>
-		<bit position="2" name="Fan Low"/>
-		<bit position="3" name="-"/>
-		<bit position="4" name="-"/>
-		<bit position="5" name="-"/>
-		<bit position="6" name="-"/>
-		<bit position="7" name="-"/>
-		<description><!--zmSCID313-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1314 Supmask" category="Options//Supmasks//CIDs" userlevel="3">
-		<bit position="0" name="-"/>
-		<bit position="1" name="Blower Fan"/>
-		<bit position="2" name="Defogger"/>
-		<bit position="3" name="-"/>
-		<bit position="4" name="-"/>
-		<bit position="5" name="-"/>
-		<bit position="6" name="-"/>
-		<bit position="7" name="-"/>
-		<description><!--zmSCID314-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1400 Supmask" storagetype="uint32" category="Options//Supmasks//CIDs" userlevel="5">
-		<bit position="31" name="01 -"/>
-		<bit position="30" name="02 -"/>
-		<bit position="29" name="03 -"/>
-		<bit position="28" name="04 -"/>
-		<bit position="27" name="05 -"/>
-		<bit position="26" name="06 -"/>
-		<bit position="25" name="07 -"/>
-		<bit position="24" name="08 -"/>
-		<bit position="23" name="09 -"/>
-		<bit position="22" name="0A -"/>
-		<bit position="21" name="0B -"/>
-		<bit position="20" name="0C -"/>
-		<bit position="19" name="0D -"/>
-		<bit position="18" name="0E -"/>
-		<bit position="17" name="0F -"/>
-		<bit position="16" name="10 -"/>
-		<bit position="15" name="11 -"/>
-		<bit position="14" name="12 -"/>
-		<bit position="13" name="13 -"/>
-		<bit position="12" name="14 -"/>
-		<bit position="11" name="15 -"/>
-		<bit position="10" name="16 -"/>
-		<bit position="9" name="17 -"/>
-		<bit position="8" name="18 -"/>
-		<bit position="7" name="19 -"/>
-		<bit position="6" name="1A -"/>
-		<bit position="5" name="1B -"/>
-		<bit position="4" name="1C -"/>
-		<bit position="3" name="1D -"/>
-		<bit position="2" name="1E -"/>
-		<bit position="1" name="1F -"/>
-		<bit position="0" name="20 -"/>
-		<description><!--mSCID14--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1420 Supmask" storagetype="uint32" category="Options//Supmasks//CIDs" userlevel="5">
-		<bit position="31" name="U31 -"/>
-		<bit position="30" name="U30 -"/>
-		<bit position="29" name="U29 -"/>
-		<bit position="28" name="U28 -"/>
-		<bit position="27" name="U27 -"/>
-		<bit position="26" name="U26 -"/>
-		<bit position="25" name="U25 -"/>
-		<bit position="24" name="U24 -"/>
-		<bit position="23" name="U23 -"/>
-		<bit position="22" name="U22 -"/>
-		<bit position="21" name="U21 -"/>
-		<bit position="20" name="U20 -"/>
-		<bit position="19" name="U19 -"/>
-		<bit position="18" name="U18 -"/>
-		<bit position="17" name="U17 -"/>
-		<bit position="16" name="U16 -"/>
-		<bit position="15" name="U15 -"/>
-		<bit position="14" name="U14 -"/>
-		<bit position="13" name="U13 -"/>
-		<bit position="12" name="U12 -"/>
-		<bit position="11" name="U11 -"/>
-		<bit position="10" name="U10 -"/>
-		<bit position="9" name="U9 -"/>
-		<bit position="8" name="U8 -"/>
-		<bit position="7" name="U7 -"/>
-		<bit position="6" name="U6 -"/>
-		<bit position="5" name="U5 -"/>
-		<bit position="4" name="U4 -"/>
-		<bit position="3" name="U3 -"/>
-		<bit position="2" name="U2 -"/>
-		<bit position="1" name="U1 -"/>
-		<bit position="0" name="U0 -"/>
-		<description><!--mSCID16--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="CID1500 Supmask" storagetype="uint32" category="Options//Supmasks//CIDs" userlevel="5">
-		<bit position="31" name="01 -"/>
-		<bit position="30" name="02 -"/>
-		<bit position="29" name="03 -"/>
-		<bit position="28" name="04 -"/>
-		<bit position="27" name="05 -"/>
-		<bit position="26" name="06 -"/>
-		<bit position="25" name="07 -"/>
-		<bit position="24" name="08 -"/>
-		<bit position="23" name="09 -"/>
-		<bit position="22" name="0A -"/>
-		<bit position="21" name="0B -"/>
-		<bit position="20" name="0C -"/>
-		<bit position="19" name="0D -"/>
-		<bit position="18" name="0E -"/>
-		<bit position="17" name="0F -"/>
-		<bit position="16" name="10 -"/>
-		<bit position="15" name="11 -"/>
-		<bit position="14" name="12 -"/>
-		<bit position="13" name="13 -"/>
-		<bit position="12" name="14 -"/>
-		<bit position="11" name="15 -"/>
-		<bit position="10" name="16 -"/>
-		<bit position="9" name="17 -"/>
-		<bit position="8" name="18 -"/>
-		<bit position="7" name="19 -"/>
-		<bit position="6" name="1A -"/>
-		<bit position="5" name="1B -"/>
-		<bit position="4" name="1C -"/>
-		<bit position="3" name="1D -"/>
-		<bit position="2" name="1E -"/>
-		<bit position="1" name="1F -"/>
-		<bit position="0" name="20 -"/>
-		<description><!--mSCID50--></description>
-	</table>
-
 	<table type="BitwiseSwitch" name="OBD-2 PID 01-20 Supmask" storagetype="uint32" category="Options//Supmasks//OBD-II PIDs" userlevel="3">
 		<bit position="31" name="01 Status since the last clearing of fault codes"/>
 		<bit position="30" name="02 Fault code that caused the recording of 'freeze frame' data"/>
@@ -2557,42 +2123,6 @@
 		<bit position="1" name="3F Catalyst temperature in °C bank 2, sensor 2"/>
 		<bit position="0" name="40 List of PIDs supported (range 41 to 60)"/>
 		<description><!--zmGSTPI2-->Bits enable/disable</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="OBD-2 PID 41-60 Supmask" storagetype="uint32" category="Options//Supmasks//OBD-II PIDs" userlevel="3">
-		<bit position="31" name="41 "/>
-		<bit position="30" name="42 "/>
-		<bit position="29" name="43 "/>
-		<bit position="28" name="44 "/>
-		<bit position="27" name="45 "/>
-		<bit position="26" name="46 "/>
-		<bit position="25" name="47 "/>
-		<bit position="24" name="48 "/>
-		<bit position="23" name="49"/>
-		<bit position="22" name="4A"/>
-		<bit position="21" name="4B"/>
-		<bit position="20" name="4C "/>
-		<bit position="19" name="4D "/>
-		<bit position="18" name="4E "/>
-		<bit position="17" name="4F "/>
-		<bit position="16" name="50 "/>
-		<bit position="15" name="51 "/>
-		<bit position="14" name="52 "/>
-		<bit position="13" name="53 "/>
-		<bit position="12" name="54"/>
-		<bit position="11" name="55"/>
-		<bit position="10" name="56"/>
-		<bit position="9" name="57 "/>
-		<bit position="8" name="58 "/>
-		<bit position="7" name="59 "/>
-		<bit position="6" name="5A "/>
-		<bit position="5" name="5B"/>
-		<bit position="4" name="5C"/>
-		<bit position="3" name="5D"/>
-		<bit position="2" name="5E"/>
-		<bit position="1" name="5F"/>
-		<bit position="0" name="60 List of TIDs supported"/>
-		<description><!--mGSTPI2-->Bits enable/disable</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="CO Variable Flag" category="Options//Flags" userlevel="3">
@@ -2821,317 +2351,6 @@
 	0x02		<bit position="1" name="mfIDLVTC - [0: Do Not Allow Drive During VTC Idle | 1: Allow Drive During VTC Idle]"/>
 	0x01		<bit position="0" name="mfCSSMPM - [0: Cold Strategy Parameter Calculation Not Permitted | 1: Cold Strategy Parameter Calculation Permitted]"/>
 		<description><!--mOBDSW4-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 1" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfATMT - Transmission Distinction Flag [0: AT/CVT | 1: MT]"/>
-	0x40		<bit position="6" name="mfUJH - [0: Hard Without Expansion | 1: Hard with Expansion]"/>
-	0x20		<bit position="5" name="mfLKUP - [0: DT5 Output | 1: Lock Up]"/>
-	0x10		<bit position="4" name="mfFATTRQ - Torque Control Switching Flag [0: Other Than Torque Communication Type AT | 1: Torque Communication Type AT]"/>
-	0x08		<bit position="3" name="mfATTNS - Automatic Transmission Turbine Sensor [0: Disabled | 1: Enabled]"/>
-	0x04		<bit position="2" name="mfRATIOFB - Ratio F/B Control Choice Flag [0: No Resio F / B Control (When MfFATTRQ = 0) | 1: With Resio F / B Control]"/>
-	0x02		<bit position="1" name="mfREGHOS - TENG Regular Compensation [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfCOADJ - CO Adjustment Control by Consult Communication [0: Disabled | 1: Enabled]"/>
-		<description><!--mSpecDIRCT-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 2" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfVPASS - Switching for Matching Control [0: Disabled | 1: Enabled]"/>
-	0x40		<bit position="6" name="mfVINV - Control Excuse Switching for Tuning [0: No Switching for Matching Control | 1: Switching with Control for Matching]"/>
-	0x20		<bit position="5" name="mfECOIDLE - Echo Lamp at Idle [0: Not Lit | 1: Lit]"/>
-	0x10		<bit position="4" name="mfFLNJS - [0: TP Fixed Value Control | 1: Reflect STFBYA In TPFBYA Calculation]"/>
-	0x08		<bit position="3" name="mfDLGACON - Air Conditioner Switch On Condition [0: Unavailable | 1: Available]"/>
-	0x04		<bit position="2" name="mfSNOWARI - Control [0: Prohibited | 1: Permitted]"/>
-	0x02		<bit position="1" name="mfSTFSARI - APOFS Shaft Conversion Process [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" Name="Unknown 0 - "/>
-		<description><!--mSWREG3-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 3" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfKT - Toroidal CVT Car Choice Flag [0: Non-Toroidal CVT Model | 1: Toroidal CVT Model]"/>
-	0x40		<bit position="6" name="mfTRQ4WDSW - Electronically Controlled 4WD Drive Protection Control [0: Disabled | 1: Enabled]"/>
-	0x20		<bit position="5" name="mfESP - [0: Conventional TCS/VDC (Non-ESP Specification) | 1: ESP Specification TCS/VDC]"/>
-	0x10		<bit position="4" name="mfJK - The Car Choice Flag for The Drive Protection of JK (CVT) [0: Non-JK Model | 1: JK Model]"/>
-	0x08		<bit position="3" name="mfMU - T/M Choice Flag [0: Non-MU Model | 1: MU Model (Aisin AW 5-Speed AT)]"/>
-	0x04		<bit position="2" Name="Unknown 2 - "/>
-	0x02		<bit position="1" name="mfFCTCS - TCS Form Choice Flag [0: Ignition Timing Retard Type TCS | 1: Fuel Cut Type TCS]"/>
-	0x01		<bit position="0" name="mfMSR_ON - MSR Control [0: Disabled | 1: Enabled]"/>
-		<description><!--mSWVDC-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 4" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfAPOTD - Torque Going Down Control Executive Flag [0: Control Non-Execution | 1: Control Execution]"/>
-	0x40		<bit position="6" name="mfFTASEEP - ISCLRC EEPROM Writing Choice Flag [0: No EEP-ROM Writing | 1: With EEP-ROM Writing]"/>
-	0x20		<bit position="5" name="mfFTPDGN - [0: TCS System Abnormality Diagnosis Prohibited | 1: TCS System Abnormality Diagnosis Permitted]"/>
-	0x10		<bit position="4" name="mfFVTCS - TCS Fuel Cut Variable Control Flag [0: TCS Fuel Cut Variable Control Not Available | 1: TCS Fuel Cut Variable Control Available]"/>
-	0x08		<bit position="3" name="mfFTXACR - AC Relay Control [0: Without TCS_A / C Relay Control | 1: With TCS_A / C Relay Control]"/>
-	0x04		<bit position="2" name="mfFETDMM - ETD Control Mode [0: ETD Normal Mode | 1: ETD Matching Mode]"/>
-	0x02		<bit position="1" name="mfFLTC - Torque Control [0: No Torque Control | 1: With Torque Control]"/>
-	0x01		<bit position="0" name="mfFKNALL - ALLC During Knock Control [0: ALLC Permission During Knock Control | 1: ALLC Prohibition During Knock Control]"/>
-		<description><!--mSWREG2-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 5" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfFFTASW - There's ISC AC Compensation TASW, Flag [0: Without ISC Air Conditioner Correction TASW | 1: With ISC Air Conditioner Correction TASW]"/>
-	0x40		<bit position="6" name="mfFO2H - Front O2 Heater [0: Previous_O2 Heater_ON / OFF_No Drive | 1: Previous_O2 Heater_ON / OFF_Drive]"/>
-	0x20		<bit position="5" name="mfFAFICD - Flag with PWST Interlock FICD Compensation [0: Without PWST Interlocking FICD Correction | 1: With PWST Interlocking FICD Correction]"/>
-	0x10		<bit position="4" name="mfSWAP - Exhaust Secondary Air Pump [0: Exhaust Secondary Air Pump Control Not Available | 1: Exhaust Secondary Air Pump Control Available]"/>
-	0x08		<bit position="3" name="mfBGLINH - BGL Control When Entering KNK Territory [0: No BGL Control When Entering The Knk Area | 1: With BGL Control When Entering The KNK Area]"/>
-	0x04		<bit position="2" name="mfFTCS - TCS Control Switching Flag [0: Without TCS Control | 1: With TCS Control]"/>
-	0x02		<bit position="1" name="mfFKORFN - Radio Fan Control [0: Without Radio Control | 1: With Radio Control]"/>
-	0x01		<bit position="0" name="mfFLNBRN - Lean Burn Control [0: Without Lean Burn Control | 1: With Lean Burn Control]"/>
-		<description><!--mIDOS-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 6" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfRADCAN - [0: LOW Request | 1: MID Request]"/>
-	0x40		<bit position="6" name="mfACPDCUT - Meter CAN #PDCUT Output Excuse Flag [0: No Meter CAN_ # PDCUT Output _ (# METCAN = 0 | 1: With Meter CAN _ # PDCUT Output _ (# METCAN = 0]"/>
-	0x20		<bit position="5" name="mfMETIPDM1 - [0: No IPDM Support | 1: IPDM Support Available]"/>
-	0x10		<bit position="4" name="mfMETIPDM - [0: No IPDM Support | 1: IPDM Support Available]"/>
-	0x08		<bit position="3" name="mfMETCAN3 - Meter CAN VSP [0: Other Than CAN Input | 1: CAN Input]"/>
-	0x04		<bit position="2" name="mfMETCAN2 - [0: Other Than CAN Input | 1: CAN Input]"/>
-	0x02		<bit position="1" name="mfMETCAN1 - Related To The Meter CAN A/C (Others) [0: Other Than CAN Input | 1: CAN Input]"/>
-	0x01		<bit position="0" name="mfMETCAN - (HTASW Is Removed) Related To The Meter CAN A/C [0: Other Than CAN Input | 1: CAN Input]"/>
-		<description><!--mCANFLG-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 7" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" Name="Unknown 7 -"/>
-	0x40		<bit position="6" name="mfNG1DFLT2 - [0: Default Mechanism Diagnosis 2 TRIP Selection (Bank 2) | 1: Default Mechanism Diagnosis 1 TRIP Selection (Bank 2)]"/>
-	0x20		<bit position="5" name="mfNG1SPG22 - [0: Return Spring Diagnosis 2 TRIP Selection When Key OFF | 1: Return Spring Diagnosis 1 TRIP Selection When Key OFF]"/>
-	0x10		<bit position="4" name="mfNG1SPG12 - [0: Return Spring Diagnosis 2 TRIP Selection When Key ON | 1: Return Spring Diagnosis 1 TRIP Selection When Key ON]"/>
-	0x08		<bit position="3" name="mfNG1RLYON - Motor Relay Diagnosis 2TRIP Flag [0: Motor Relay Diagnosis 2 TRIP | 1: Motor Relay Diagnosis 2 TRIP Not]"/>
-	0x04		<bit position="2" name="mfNG1DEFLT - Default Mechanism Diagnosis 2TRIP Flag [0: Default Mechanism Diagnosis 2 TRIP Selection | 1: Default Mechanism Diagnosis 1 TRIP Selection]"/>
-	0x02		<bit position="1" name="mfNG1SPRG2 - IGNOFF Return Spring Diagnosis 2TRIP Flag [0: Return Spring Diagnosis 2 TRIP Selection When Key OFF | 1: Return Spring Diagnosis 1 TRIP Selection When Key OFF]"/>
-	0x01		<bit position="0" name="mfNG1SPRG1 - IGNON Return Spring Diagnosis 2TRIP Flag [0: Return Spring Diagnosis 2 TRIP Selection When Key ON | 1: Return Spring Diagnosis 1 TRIP Selection When Key ON]"/>
-		<description><!--mTRIPSWS-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 9" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" Name="Unknown 7 -"/>
-	0x40		<bit position="6" Name="Unknown 6 -"/>
-	0x20		<bit position="5" Name="Unknown 5 -"/>
-	0x10		<bit position="4" name="mfTVOFQLA - [0: High-Speed Air Volume Active Learning Not | 1: High-Speed Air Volume Active Learning]"/>
-	0x08		<bit position="3" name="mfFTASAC - At Time of A/C Panel SW On, Learning Switch Flag [0: Do Not Learn When A / C Panel SW_ON | 1: Learn When A / C Panel SW_ON]"/>
-	0x04		<bit position="2" name="mfFFRQTAS - Friction Learning Control Switch Flag [0: No Friction Learning Control | 1: Friction Learning Control]"/>
-	0x02		<bit position="1" name="mfTASSW - [0: Current Specification | 1: Proposed Specification]"/>
-	0x01		<bit position="0" name="mfFATAS - [0: No Depot Support | 1: Depot Support Available]"/>
-		<description><!--mFATAS-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 10" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfDTYFLG - Wind Up Countermeasure Control Excuse Switching Flag [0: None | 1: Yes]"/>
-	0x40		<bit position="6" name="mfROGFLG - Dizzer Control/PID Control Switching Flag [0: Designer Control | 1: PID Control]"/>
-	0x20		<bit position="5" name="mfFLGEDGE - [0: Before UD-Lot | 1: After UC-Lot]"/>
-	0x10		<bit position="4" name="mfVTCUC - [0: Other Than UC-Lot | 1: UC-Lot Only]"/>
-	0x08		<bit position="3" name="mfFVTCHG - [0: PID Control | 1: SMC Control]"/>
-	0x04		<bit position="2" name="mfVVTCE - [0: BASTRGE Normal Operation | 1: BASTRGE Variable Operation]"/>
-	0x02		<bit position="1" name="mfFVTNWST - [0: No Processing | 1: With Processing]"/>
-	0x01		<bit position="0" name="mfFFULVTC - At Time of Full Increase, A Flag for VTC [0: No Support | 1: With Support]"/>
-		<description><!--mFLGPTN-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 11" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfRICHSEL - [0: Rich Shift Control After Lean | 1: Rich Spike Control After Lean]"/>
-	0x40		<bit position="6" name="mfFMILON - [0: No MIL Display | 1: With MIL Display]"/>
-	0x20		<bit position="5" name="mfFCOVR - Existence of The CO Adjustment Volume [0: No CO Adjustment Volume | 1: With CO Adjustment Volume]"/>
-	0x10		<bit position="4" name="mfDRVFBS - [0: Operability Measures Without Λ Controller Control | 1: Operability Measures with Λ Controller Control]"/>
-	0x08		<bit position="3" name="mfSWTF - [0: Without Fuel Temperature Sensor | 1: With Fuel Temperature Sensor]"/>
-	0x04		<bit position="2" name="mfISLBCL - [0: Clear ISC Learning Value with DDL | 1: Clear Air-Fuel Ratio Learning Value with DDL]"/>
-	0x02		<bit position="1" name="mfFINCA - Choice Flag for INCA [0: Without INCA Compatible Control | 1: With INCA Compatible Control]"/>
-	0x01		<bit position="0" name="mfNEWADJ - [0: External Adjustment Module Not Supported | 1: External Adjustment Module Compatible]"/>
-		<description><!--mID-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 12" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfTRK1TYP - [0: TRK1_6.X Next Regular Version Hardware Support | 1: Others]"/>
-	0x40		<bit position="6" name="mfMILGSTIM - at Time of KeyON, MIL Specifications Choice Flag [0: MIL Blinks When Key On | 1: MIL Lights When Key On]"/>
-	0x20		<bit position="5" name="mfAFMDGSEL - MAF Function Diagnosis for The Choice Flag [0: OBD Specifications After 2005 | 1: OBD Specifications Before 2004]"/>
-	0x10		<bit position="4" name="mfWOTTP - WOT Adoption/Non-Adoption Choice [0: WOT Not Adopted | 1: WOT Adopted]"/>
-	0x08		<bit position="3" name="mfACCINJ - [0: No Delta-TP Judgement Method | 1: With Delta-TP Judgement Method]"/>
-	0x04		<bit position="2" name="mfKNKTYP - Knock Sensor Distinction [0: Single Knock Sensor | 1: Twin Knock Sensors]"/>
-	0x02		<bit position="1" name="mfNEUTLH - [0: See NEUTL | 1: See NEUTH]"/>
-	0x01		<bit position="0" name="mfVP3KTYP - [0: A-Type | 1: B-Type]"/>
-		<description><!--mVP3KROM-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 13" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfCATCNG - Catalyst Diagnosis Slice Setup Region Switching Flag [0: Slice Decrease Until The End Of Catalyst Diagnosis | 1: Slice Decrease Only In The Catalyst Diagnosis Area]"/>
-	0x40		<bit position="6" name="mfPREDAF - The Existence of The SMC Prediction AFR Flag [0: Without SMC Prediction AFR | 1: With SMC Prediction AFR]"/>
-	0x20		<bit position="5" name="mfOSCBANK - A Control Choice Flag for The Bank [0: Non-Bank Compatible Control Selection | 1: Bank Compatible Control Selection]"/>
-	0x10		<bit position="4" name="mfAFIDLESW - Idle SW Enable/Disable Switching Flag [0: Idle SW Enabled | 1: Idle SW Disabled]"/>
-	0x08		<bit position="3" name="mfAFVSEL - AFR Voltage Sampling Periodic Choice Flag"/>
-	0x04		<bit position="2" name="mfAFDCHG - Time/Slice Switching Choice Flag [0: Time Switching | 1: Slice Switching]"/>
-	0x02		<bit position="1" name="mfAFDTGCLP - Target AFR It's Fixed To MABFCMV [0: Not Fixed | 1: Fixed To Target AFR MABFCMV]"/>
-	0x01		<bit position="0" name="mfAFDSEL - Alpha/Target Form Choice Flag [0: Alpha Method | 1: Target Method]"/>
-		<description><!--mOSCSW-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 14" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfECVT - CVT Vehicle Identifier [0: Non-CVT Compatible | 1: CVT Compatible]"/>
-	0x40		<bit position="6" name="mfFDUET - DUETTE Control [0: Non-DUETTE Compatible | 1: DUETTE Compatible]"/>
-	0x20		<bit position="5" name="mfFEEGR - [0: No EGR Or Cut / Introduced Solenoid Type EGR | 1: Electronically Controlled EGR]"/>
-	0x10		<bit position="4" name="mfCVTC - [0: Not Compatible with C-VTC | 1: Compatible with C-VTC]"/>
-	0x08		<bit position="3" name="mfFEGRCT - [0: EGR Cut with EGR Cut Solenoid ON EGR Cut | 1: EGR Cut Solenoid OFF with EGR Cut]"/>
-	0x04		<bit position="2" name="mfFLAN - [0: DUETTE Control Is 5 Lines / 3 Lines | 1: DUETTE Control Is LAN / 1CPU]"/>
-	0x02		<bit position="1" name="mfFHTWLU - [0: High Coolant Temperature 2nd L/U Control Not Supported | 1: High Coolant Temperature 2nd L/U Control Supported]"/>
-	0x01		<bit position="0" name="mfCPCCHK - [0: Cal | 1: Fed]"/>
-		<description><!--mIDOS2-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 15" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfFLCFCA - During FCADV Switching Flag [0: No Switching | 1: With Switching]"/>
-	0x40		<bit position="6" name="mfCMADVC - Non L/UP Control Excuse Flag [0: With Non-L / UP Phase Control | 1: Without Non-L / UP Phase Control]"/>
-	0x20		<bit position="5" name="mfFCSCVL - [0: 1 | 1: 2]"/>
-	0x10		<bit position="4" name="mfF1OR3 - [0: DUETTE Control Is LAN Or 5 Lines | 1: DUETTE Control Is 1 CPU Or 3 Lines]"/>
-	0x08		<bit position="3" name="mfPWSTV - Power Steering Valve Excuse Flag [0: No Power Steering Valve | 1: With Power Steering Valve]"/>
-	0x04		<bit position="2" name="mfFACPDS - A/C Pd Pressure Sensor Excuse Choice Flag [0: Without A / C_Pd Pressure Sensor | 1: With A / C_Pd Pressure Sensor]"/>
-	0x02		<bit position="1" name="mfFFANSET - [0: Electric Fan | 1: Flood Drive Fan]"/>
-	0x01		<bit position="0" name="mfSCHARGER - [0: Not Compatible with DUETTE for Superchargers | 1: Compatible with DUETTE for Superchargers]"/>
-		<description><!--mIDOS3-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 16" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfBRKTD - [0: No Torque Down Control During Breaking Stalling | 1: With Torque Down Control During Braking Stalling]"/>
-	0x40		<bit position="6" name="mfCANDAT - [0: CAN Input | 1: Other Than CAN Input]"/>
-	0x20		<bit position="5" name="mfFLANCAN - [0: When Using LAN Communication | 1: When Using CAN Communication]"/>
-	0x10		<bit position="4" name="mfFBAROS - Atmospheric Pressure Sensor Excuse Flag [0: Without Barometric Pressure Sensor | 1: With Atmospheric Pressure Sensor]"/>
-	0x08		<bit position="3" name="mfPSS - P/S Oil Pressure Sensor Specifications Choice Flag [0: Without P / S Hydraulic Sensor | 1: With P / S Hydraulic Sensor]"/>
-	0x04		<bit position="2" name="mfPRINJ - [0: Do Not Perform Fuel Pre-Injection Control at Start | 1: Perform Fuel Pre-Injection Control at Start]"/>
-	0x02		<bit position="1" name="mfTQD1 - [0: 1 Speed Torque Down Control Not Available | 1: 1 Speed Torque Down Control Available]"/>
-	0x01		<bit position="0" name="mfFISCV - At The Time of ECM Internal Organs ISCVvol Use, Un-Use, Switching Flag [0: ECM Built-In ISCV Vol Unused | 1: ECM Built-In ISCV Vol Used]"/>
-		<description><!--mIDOS4-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 17" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfREGGASI - High Octane Logic [0: Enabled | 1: Disabled] OR [0: Initial Value of REGGAS_0 | 1: Initial Value of REGGAS_1]"/>
-	0x20		<bit position="5" name="mfASCDTYP1 - [0: ASCD_SW_TYPE2 | 1: ASCD_SW_TYPE1]"/>
-	0x10		<bit position="4" name="mfFDMFFC - [0: Without F / C Control (DMF Protection) During Self-Excited Vibration | 1: With F / C Control (DMF Protection) During Self-Excited Vibration]"/>
-	0x08		<bit position="3" name="mfEMSYS - [0: DC Motor Type | 1: Negative Pressure Solenoid Type]"/>
-	0x04		<bit position="2" name="mfPRGFHCH - [0: Variable P / REG Drive Frequency = 320Hz | 1: Variable P / REG Drive Frequency = 780Hz]"/>
-	0x02		<bit position="1" name="mfFTARTD - [0: With High Intake Air Temperature Retard Idle | 1: Without High Intake Air Temperature Retard Idle]"/>
-	0x01		<bit position="0" name="mfTASEN - IAT Sensor Specifications Choice Flag [0: Without Intake Air Temperature Sensor | 1: With Intake Air Temperature Sensor]"/>
-		<description><!--mIDOS5-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 18" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfRO2OUS -  RrO2/S Response Time Diagnosis Stage 2 Diagnosis Execution Judgement Flag [0: RrO2 / S Response Time Diagnosis Stage 1 Diagnosis Only | 1: RrO2 / S Response Time Diagnosis Stage 2 Diagnosis Performed]"/>
-	0x40		<bit position="6" name="mfRO2IZS - RrO2/S Unusual Voltage Diagnosis Stage 2 Diagnosis Execution Judgement Flag [0: RrO2 / S Abnormal Voltage Diagnosis Stage 1 Diagnosis Only | 1: RrO2 / S Abnormal Voltage Diagnosis Stage 2 Diagnosis Performed]"/>
-	0x20		<bit position="5" name="mfAFSMF - Misfire Diagnosis NG Learning Permission Flag [0: Do Not Learn When Misfire Diagnosis Is NG | 1: Learn When Misfire Diagnosis Is NG]"/>
-	0x10		<bit position="4" name="mfHOSMF - Misfire Diagnosis NG Learning Permission Flag [0: Do Not Learn When Misfire Diagnosis Is NG | 1: Learn When Misfire Diagnosis Is NG]"/>
-	0x08		<bit position="3" name="mfHOSKIN - HOSCMAX Learning Prohibition Flag [0: Learn HOSCMAX | 1: Do Not Learn HOSCMAX]"/>
-	0x04		<bit position="2" name="mfRO2OUST - [0: 3rdO2 / S Response Time Diagnosis Stage 1 Diagnosis | 1: ErdO2 / S Response Time Diagnosis Stage 2 Examination]"/>
-	0x02		<bit position="1" name="mfRO2IZST - [0: 3rdO2 / S Abnormal Voltage Diagnosis Stage 1 Diagnosis | 1: ErdO2 / S Abnormal Voltage Diagnosis Stage 2 Diagnosis]"/>
-	0x01		<bit position="0" name="mfAFHZLR - AFR Sensor LR Response Diagnosis Judgement[0: A / F Sensor L → R Response Diagnosis Not Performed | 1: A / F Sensor L → R Response Diagnosis Not Performed]"/>
-		<description><!--mSOBSW2-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 19" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfVADV - Ignition Variable Control Requirement Flag [0: With Ignition Variable Control | 1: Without Ignition Variable Control]"/>
-	0x40		<bit position="6" name="mfVKNK - An Ignition Variable Control Requirement Flag by The Cylinder [0: With Ignition Variable Control for Each Cylinder | 1: Without Ignition Variable Control for Each Cylinder]"/>
-	0x20		<bit position="5" name="mfFVKTRM - KTRM Variable Control Requirement Flag [0: With KTRM Variable Control | 1: Without KTRM Variable Control]"/>
-	0x10		<bit position="4" name="mfVEGR - [0: EGRQ Normal Operation | 1: EGRQ Variable Operation]"/>
-	0x08		<bit position="3" name="mfVPFUEL - [0: PFDUTY Normal Operation | 1: PFDUTY Variable Operation]"/>
-	0x04		<bit position="2" name="mfVSCV - [0: SCVSTPD Normal Operation | 1: SCVSTPD Variable Operation]"/>
-	0x02		<bit position="1" name="mfVVTC - [0: VTCTRG Normal Operation | 1: VTCTRG Variable Operation]"/>
-	0x01		<bit position="0" name="mfANADEG - Digital Variable Control Switching Flag [0: Analog Variable Control Selection | 1: Digital Variable Control Selection]"/>
-		<description><!--mSpecVARI-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 20" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfFALRN - An Off-Line Idle Learning Lambda Control Condition Flag [0: None | 1: Yes]"/>
-	0x40		<bit position="6" name="mfFQINT - Off-Line Idle Learning Flag #FQLRN Initial Value Flag [0: #FQLRN = 0 | 1: # FQLRN = 1]"/>
-	0x20		<bit position="5" name="mfFCLPON - [0: No Condition | 1: With Condition]"/>
-	0x10		<bit position="4" name="mfFIDLP - [0: No Control | 1: With Control]"/>
-	0x08		<bit position="3" name="mfFPGCUT - [0: Prohibition | 1: Permit]"/>
-	0x04		<bit position="2" name="mfISCSF - [0: Old Control | 1: Control Prohibited by Cylinder]"/>
-	0x02		<bit position="1" name="mfO2SENSOR - [0: Single O2 Sensor | 1: Twin O2 Sensor]"/>
-	0x01		<bit position="0" name="mfTWO - [0: Coolant Temperature Sensor Transmission Control Not Supported | 1: Coolant Temperature Sensor Transmission Control Supported]"/>
-		<description><!--mSpecOTHER-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 21" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfFKNK - Knock Control Switching Flag [0: No Knock Control | 1: With Knock Control]"/>
-	0x40		<bit position="6" name="mfFREGDT - DUETTE Control During High Detonation [0: Do Not Prohibit Control | 1: Prohibit Control]"/>
-	0x20		<bit position="5" name="mfADVKNK - [0: No Advanced Dock Control | 1: With Advanced Dock Control]"/>
-	0x10		<bit position="4" name="mfNCIMBT - [0: No Combustion Prediction Type Ignition Timing Control | 1: With Combustion Prediction Type Ignition Timing Control]"/>
-	0x08		<bit position="3" name="mfKNKTYP2 - Single 2 Gain, Twin 2 Gain Choice Flag [0: Single Knock Sensor (2-Stage Gain) | 1: Twin-Knock Sensor (2-Stage Gain)]"/>
-	0x04		<bit position="2" name="mfADVFB - at Time of N->D Select, Retard Limitation Flag [0: No Limit On ND Select Return | 1: There Is Limit On ND Select Return]"/>
-	0x02		<bit position="1" name="mfFFULTRM - WOT Trimming Map Compensation Judgement [0: No Trimming Map Correction When Full Increase | 1: Trimming Map Correction When Full Increase]"/>
-	0x01		<bit position="0" name="mfFAVCLR - [0: Do Not Clear TRADV | 1: Clear TRADV]"/>
-		<description><!--mSpecADV-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 22" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfOVH_FC - at The Time of Overheat, Fuel Cut Control Flag [0: No Fuel Cut Control During Overheat | 1: With Fuel Cut Control During Overheat]"/>
-	0x40		<bit position="6" name="mfICREGIN - [0: Disallowed | 1: Allowed]"/>
-	0x20		<bit position="5" name="mfFFSTEN - [0: Disallowed | 1: Allowed]"/>
-	0x10		<bit position="4" name="mfFCHVER - ETD Adoption Engine Variable Control Switching Flag [0: Uniform Disapproval | 1: Individual Permission]"/>
-	0x08		<bit position="3" name="mfFTEGRV - [0: Disallowed | 1: Allowed]"/>
-	0x04		<bit position="2" name="mfFTRGPHI - [0: TTC Judgment | 1: FLGHS Setting]"/>
-	0x02		<bit position="1" name="mfFVTFA0 - TFBYA0 Variable Control Switching Flag [0: TFBYA0 Without Variable Control | 1: With Variable Control]"/>
-	0x01		<bit position="0" name="mfFVTIM - TITM Variable Control Switching Flag [0: With TITM Variable Control | 1: Without Variable Control]"/>
-		<description><!--mSWREG-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 23" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfEVPLNP - A Leak-Down Release Condition Distinction for The Evapo [0: Leak Down Release Condition Line Pressure Cancel Condition A | 1: Leak Down Release Condition Line Pressure Cancel Condition]"/>
-	0x40		<bit position="6" name="mfFROSEL - A Distinction for The Evapo [0: With Fuel Cut Condition | 1: No Fuel Cut Condition]"/>
-	0x20		<bit position="5" name="mfAFSDIAG - AFR Sensor Response Diagnosis Form Choice Flag [0: Fuel Cut Method | 1: Active Method]"/>
-	0x10		<bit position="4" Name="Unknown 4 -"/>
-	0x08		<bit position="3" name="mfMFSTSW - A Misfire Diagnosis for The Switching Flag[0: Misfire Diagnosis_Diagnosis Permission STSW Condition Available | 1: Misfire Diagnosis_Diagnosis Permission STSW Condition Not Available]"/>
-	0x04		<bit position="2" name="mfGSTM8 - A Flag for The GST Mode 8 [0: Not Compatible with GST Mode 8 | 1: Compatible with GST Mode 8]"/>
-	0x02		<bit position="1" name="mfGSTM67 - GST Mode 6, A Flag for 7 [0: Does Not Support GST Modes 6 And 7 | 1: Supports GST Modes 6 And 7]"/>
-	0x01		<bit position="0" name="mfRATECLR - Prohibition of Permission/Of The Rate Law Counter Clear Treatment [0: Prohibition of Counter Clear by Self-Diagnosis Clear | 1: Allow of Counter Clear by Self-Diagnosis Clear]"/>
-		<description><!--mSOBDSW-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 24" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfITOHOSON - [0: Intention Detection Control OFF | 1: Intention Detection Control ON]"/>
-	0x40		<bit position="6" name="mfJERKON - [0: Without Jerk Control Control | 1: With Jerk Control Control]"/>
-	0x20		<bit position="5" name="mfFNETQHOS - TTEPTD Torque Compensation Map Logic [0: No Rotation Speed Torque Correction | 1: With Rotation Speed Torque Correction]"/>
-	0x10		<bit position="4" name="mfFHHTQHOS - Highlands, Heat Ground Compensation Control Flag [0: No Highland / Hot Area Correction Control | 1: With Highland / Hot Area Correction Control]"/>
-	0x08		<bit position="3" name="mfTRLNON - [0: No Acceleration Linearity Control When Stepping On | 1: With Acceleration Linearity Control When Stepping On]"/>
-	0x04		<bit position="2" name="mfFSPTFAC - [0: Intention Detection Control Tuning OFF | 1: Intention Detection Control Tuning ON]"/>
-	0x02		<bit position="1" name="mfFZADDFD - A Control Flag for The Area Attribute [0: Regional Attribute Correspondence Control OFF | 1: Regional Attribute Correspondence Control ON]"/>
-	0x01		<bit position="0" name="mfFADDFD - A Control On/Off Flag for The Running Resistance [0: Running Resistance Control OFF | 1: Running Resistance Control ON]"/>
-		<description><!--mPTDSW2-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 25" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" Name="Unknown 7 -"/>
-	0x40		<bit position="6" name="mfFSR - [0: No SR Control | 1: SR Control]"/>
-	0x20		<bit position="5" name="mfECOEXP - [0: Normal Setting | 1: Vehicle Compatible Setting]"/>
-	0x10		<bit position="4" Name="Unknown 4 -"/>
-	0x08		<bit position="3" name="mfFGVARI - Gear Position Variable Control Executive Permission Flag [0: Gear Position Variable Control Not Executed | 1: Gear Position Variable Control Executed]"/>
-	0x04		<bit position="2" name="mfDUETOTON - [0: Lean Is Prohibited When The AT Signal Line Is Abnormal | 1: Lean Is Not Prohibited When The AT Signal Line Is Abnormal]"/>
-	0x02		<bit position="1" name="mfFPSR - PSR Control Switching Flag [0: Normal PSR Control | 1: DUETTE Control Ignore Mode]"/>
-	0x01		<bit position="0" name="mfLUINHEM - [0: L / U Is Not Prohibited When The Exhaust Transmission Line Is Selected | 1: L / U Is Prohibited When The Exhaust Transmission Line Is Selected]"/>
-		<description><!--mIDSCI-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 26" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfRPDLFMNC - Selects A Manual Interpolation Factor"/>
-	0x40		<bit position="6" name="mfRMAXPOW - Option Selecting Explicit Power Calculation for Driver Torque Setpoint"/>
-	0x20		<bit position="5" name="mfENASIPDY - Activation of Max Gear Change Delay Diagnosis // If 0: Uses The First Delay Weight Table. If | 1: Sets VTENG22 To 0xFF3132 :O "/>
-	0x10		<bit position="4" name="mfTQCMDTYP - Torque Command Type : 1"/>
-	0x08		<bit position="3" Name="Unknown 3 -"/>
-	0x04		<bit position="2" Name="Unknown 2 -"/>
-	0x02		<bit position="1" name="mfRSAMAXTQ - Renault Specific Selection for Maximum Torque Calculation"/>
-	0x01		<bit position="0" name="mfRSAMINTQ - Renault Specific Selection for Minimum Torque Calculation"/>
-		<description><!--mRG3TRQ-->Toggle On/Off</description>
-	</table>
-
-	<table type="BitwiseSwitch" name="Flags 27" category="Options//Flags" userlevel="4">
-	0x80		<bit position="7" name="mfFQTCI - [0: No ISC Close Condition | 1: ISC Close Condition Available]"/>
-	0x40		<bit position="6" name="mfMKSCV - SCV Use Choice [0: No SCV Used | 1: SCV Used]"/>
-	0x20		<bit position="5" name="mfIDCHOS - [0: No CHOS Cancel Control at Idle | 1: With CHOS Cancel Control at Idle]"/>
-	0x10		<bit position="4" name="mfSTPKUB - at The Time of The Start, An Unburned Advantage, Stop Flag [0: No Unburned Stop at Start | 1: With Unburned Stop at Start]"/>
-	0x08		<bit position="3" Name="Unknown 3 -"/>
-	0x04		<bit position="2" name="mfFTWTWF - [0: Use TWK for TMFHQT Grid | 1: Use TWF for TMFHQT Grid]"/>
-	0x02		<bit position="1" Name="Unknown 1 -"/>
-	0x01		<bit position="0" Name="Unknown 0 -"/>
-		<description><!--mSWSOFS-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="DTC 1" category="Options//DTCs//Lists" storagetype="uint32">

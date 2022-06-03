@@ -1,0 +1,24 @@
+<rom base="A2L">
+	<romid>
+		<xmlid>ZK03A</xmlid>
+		<caseid>6ZVYXN00</caseid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>ZK03A</internalidstring>
+		<ecuid>1ZK03A</ecuid>
+		<year>2006</year>
+		<market>Unknown</market>
+		<make>Nissan</make>
+		<model>Maxima</model>
+		<submodel>Unknown</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+		<endian>Big</endian>
+		<flashmethod>Nisprog</flashmethod>
+		<filesize>1024kb</filesize>
+		<author>Pytrex</author>
+		<version>EXPERIMENTAL</version>
+	</romid>
+
+	<checksum type="alt" start="0x2414" end="0x4162" sumloc="0x240C" xorloc="0x2410"/>
+	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x8C10" xorloc="0x8C08"/>
+</rom>

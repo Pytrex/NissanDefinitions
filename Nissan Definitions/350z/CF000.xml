@@ -24,7 +24,7 @@
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x78A6"/>
 	<table name="Throttle Rev Limiter" storageaddress="0x793E"/>
 	<table name="Target AFR Table (High Detonation)" storageaddress="0xAA42"/>
-	<table name="Target Idle Table" storageaddress="0xAB88"/>
+	<table name="Target Idle RPM Table" storageaddress="0xAB88"/>
 	<table name="Speed Limiter" storageaddress="0x7970"/>
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x7492"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x749E"/>
@@ -43,15 +43,15 @@
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xB818"/>
 	<table name="Crank Fueling TP Value Table" storageaddress="0xBF5E"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x7A4C"/>
-	<table name="Cranking Advance Table" storageaddress="0xA59E"/>
+	<table name="Cranking Ignition Timing Table" storageaddress="0xA59E"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x6CE6"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x7398"/>
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6F42"/>
-	<table name="GOV Table" storageaddress="0xA72E"/>
-	<table name="GOV3 Table" storageaddress="0xA736"/>
-	<table name="GOVL Table" storageaddress="0xA73E"/>
-	<table name="GOV Addition Table (Drive)" storageaddress="0xA4F2"/>
-	<table name="GOV Addition Table (Neutral)" storageaddress="0xA4FA"/>
+	<table name="Cold Idle Ignition Timing Table" storageaddress="0xA72E"/>
+	<table name="Idle Ignition Timing Table" storageaddress="0xA736"/>
+	<table name="Lean Burn Idle Ignition Timing Table" storageaddress="0xA73E"/>
+	<table name="Drive Idle Ignition Timing Addition Table" storageaddress="0xA4F2"/>
+	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0xA4FA"/>
 	<table name="K2Y Table (Deceleration Advance)" storageaddress="0xA8D2"/>
 	<table name="K1 Table (Acceleration Retard)" storageaddress="0xA8DA"/>
 	<table name="Initial Retard Quantity Table (Lock-Up)" storageaddress="0xAFA6"/>
