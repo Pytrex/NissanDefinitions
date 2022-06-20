@@ -24,7 +24,6 @@
 <!--NOTE: THIS IS AN EXTREMELY EXPERIMENTAL DEFINITION FILE. DO NOT USE.-->
 
 	<table name="Injector Magnification Reciprocal Number" storageaddress="0x9370"/>
-
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x8CB3"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x84F9"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0x16A00"/>
@@ -119,15 +118,15 @@
 	<table name="Neutral Idle Ignition Timing Addition Table" storageaddress="0x13EEF"/>
 	<table name="K2Y Table (Deceleration Advance)" storageaddress="0x1437F"/>
 	<table name="K1 Table (Acceleration Retard)" storageaddress="0x14387"/>
-	
+
 	<table name="Target Throttle Valve Opening Table" storageaddress="0x15218">
 		<table type="X Axis" storageaddress="0x17736"/>
 	</table>
-	
+
 	<table name="Throttle Flow Potential Table" storageaddress="0x17826">
 		<table type="X Axis" storageaddress="0x17696"/>
 	</table>
-	
+
 	<table name="Throttle Flow Potential Table (High Flow-Quantity)" storageaddress="0x17866">
 		<table type="X Axis" storageaddress="0x176D6"/>
 	</table>
@@ -135,7 +134,7 @@
 	<table name="Throttle Flow Potential Table (High Flow-Quantity) Trustful" storageaddress="0x1BC6A">
 		<table type="X Axis" storageaddress="0x1BB1A"/>
 	</table>
-	
+
 	<table name="Throttle Flow Potential Table Trustful" storageaddress="0x1BCAA">
 		<table type="X Axis" storageaddress="0x1BB5A"/>
 	</table>
@@ -149,10 +148,15 @@
 		<table type="X Axis" storageaddress="0x13A9C"/>
 		<table type="Y Axis" storageaddress="0x13AA0"/>
 	</table>
-	
+
+	<table name="Cylinder Fresh Air Rate Map" storageaddress="0x9E96">
+		<table type="X Axis" storageaddress="0x13A9C"/>
+		<table type="Y Axis" storageaddress="0x13AA0"/>
+	</table>
+
 	<table name="Intake Cam Timing Map (16x16)" storageaddress="0xB696">
-      <table type="X Axis" storageaddress="0x14F33" />
-      <table type="Y Axis" storageaddress="0x14F53" />
+		<table type="X Axis" storageaddress="0x14F33"/>
+		<table type="Y Axis" storageaddress="0x14F53"/>
     </table>
 
 	<table name="Exhaust Cam Timing Map" storageaddress="0xB596">
@@ -164,22 +168,22 @@
 		<table type="X Axis" storageaddress="0x14EBF"/>
 		<table type="Y Axis" storageaddress="0x14EDF"/>
 	</table>
-	
+
 	<table name="Misfire Diagnosis Basic Map" storageaddress="0xBA76">
 		<table type="X Axis" storageaddress="0x13B68"/>
 		<table type="Y Axis" storageaddress="0x13B48"/>
 	</table>
-	
+
 	<table name="Misfire Diagnosis Map A" storageaddress="0xB876">
 		<table type="X Axis" storageaddress="0x13B68"/>
 		<table type="Y Axis" storageaddress="0x13B48"/>
 	</table>
-	
+
 	<table name="Misfire Diagnosis Map B" storageaddress="0xB976">
 		<table type="X Axis" storageaddress="0x13B68"/>
 		<table type="Y Axis" storageaddress="0x13B48"/>
 	</table>
-	
+
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x1026A">
 		<table type="X Axis" storageaddress="0x161FA"/>
 		<table type="Y Axis" storageaddress="0x13CE9"/>
@@ -194,7 +198,7 @@
 		<table type="X Axis" storageaddress="0x13AA4"/>
 		<table type="Y Axis" storageaddress="0x13C9D"/>
 	</table>
-	
+
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0xA2F6">
 		<table type="X Axis" storageaddress="0x13D29"/>
 		<table type="Y Axis" storageaddress="0x13CCD"/>
@@ -238,7 +242,7 @@
 		<table type="X Axis" storageaddress="0x15E1A"/>
 		<table type="Y Axis" storageaddress="0x15DDA"/>
 	</table>
-	
+
 	<table name="AFR Correction Map (Bank 2)" storageaddress="0xC86A">
 		<table type="X Axis" storageaddress="0x15E1A"/>
 		<table type="Y Axis" storageaddress="0x15DDA"/>
@@ -268,7 +272,7 @@
 
 
 
-	
+
 	<checksum type="alt" start="0x2040C" end="0x2258E" sumloc="0x20404" xorloc="0x20408"/>
 	<!--<checksum type="alt2" start="0x8204" end="0xFFFFF" sumloc="0x9738" xorloc="0x9730"/>-->
 

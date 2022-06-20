@@ -222,6 +222,11 @@
 		<table type="Y Axis" storageaddress="0xB2F5"/>
 	</table>
 
+	<table name="Cylinder Fresh Air Rate Map" storageaddress="0x91BD">
+		<table type="X Axis" storageaddress="0xB2F1"/>
+		<table type="Y Axis" storageaddress="0xB2F5"/>
+	</table>
+	
 	<table name="Minimum Injector Pulse Width" storageaddress="0x8ACA"/>
 	<table name="Misfire Diagnosis Basic Map" storageaddress="0x9F0D">
 		<table type="X Axis" storageaddress="0xB385"/>

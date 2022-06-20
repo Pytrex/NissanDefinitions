@@ -18,7 +18,7 @@
 		<author>Pytrex</author>
 		<version>EXPERIMENTAL</version>
 	</romid>
-	
+
 	<table name="Bosch Fuel Cut Table" storageaddress="0xB56C"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0xB628"/>
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8AD1">
@@ -77,9 +77,12 @@
 	<table name="MAF Table" storageaddress="0xC0E4"/>
 	<table name="MAF Voltage Lower Limit" storageaddress="0x8510"/>
 	<table name="MAF Voltage Upper Limit" storageaddress="0x850A"/>
+	
 	<table name="MBT Flame Speed Map" storageaddress="0x8D41">
 		<table type="X Axis" storageaddress="0xAD5F"/>
+		<table type="Y Axis" storageaddress="0xAD63"/>
 	</table>
+	
 	<table name="Misfire Diagnosis Basic Map" storageaddress="0x95A1">
 		<table type="X Axis" storageaddress="0xADF3"/>
 		<table type="Y Axis" storageaddress="0xADD3"/>

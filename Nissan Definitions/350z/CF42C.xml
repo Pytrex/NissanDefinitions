@@ -190,7 +190,7 @@
 
 	<table name="TTEPTD Torque Compensation Map" storageaddress="0xAE64">
 		<table type="X Axis" storageaddress="0xCC38"/>
-		<table type="X Axis" storageaddress="0xCC48"/>
+		<table type="Y Axis" storageaddress="0xCC48"/>
 	</table>
 	
 	<table name="Target Throttle Valve Opening Table" storageaddress="0xC488">

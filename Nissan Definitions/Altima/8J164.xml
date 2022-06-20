@@ -125,7 +125,7 @@ Add/Convert these to A2L names;
 		<table type="X Axis" storageaddress="0x87D8"/>
 		<table type="Y Axis" storageaddress="0x8747"/>
 	</table>
-	
+
 	<table name="Fuel Compensation Map (16x16)" storageaddress="0x56A1">
 		<table type="X Axis" storageaddress="0x6D7E"/>
 		<table type="Y Axis" storageaddress="0x6D22"/>
@@ -136,12 +136,12 @@ Add/Convert these to A2L names;
 		<table type="Y Axis" storageaddress="0x6C05"/>
 	</table>
 
-	<table name="Misfire Diagnosis Map A" storageaddress="0X5B61">
+	<table name="Misfire Diagnosis Map A" storageaddress="0x5B61">
 		<table type="X Axis" storageaddress="0x6C65"/>
 		<table type="Y Axis" storageaddress="0x6C41"/>
 	</table>
-	
-	<table name="Misfire Diagnosis Map B" storageaddress="0X5C61">
+
+	<table name="Misfire Diagnosis Map B" storageaddress="0x5C61">
 		<table type="X Axis" storageaddress="0x6C65"/>
 		<table type="Y Axis" storageaddress="0x6C41"/>
 	</table>
@@ -150,7 +150,7 @@ Add/Convert these to A2L names;
 		<table type="X Axis" storageaddress="0x6C65"/>
 		<table type="Y Axis" storageaddress="0x6C41"/>
 	</table>
-	
+
 	<table name="DTC 1" storageaddress="0x870A"/>
 	<table name="DTC 2" storageaddress="0x870E"/>
 	<table name="DTC 3" storageaddress="0x8712"/>
