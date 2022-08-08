@@ -16,6 +16,9 @@ NissanDefinitions supports ECU ROM definition files for SH7055/SH7058 Nissan and
 
 Each ROM has its own definition file that stores the ROM addresses for all defined tables. This definition file references the A2L template file, which contains table specific data. The ScalingData file is where all table scalars are stored. Using the "Combine All.bat" file will merge all files into one, NissanDefinitions. As time goes on, more and more ROMs will be defined. But there's no guarantee that every ROM will have the same tables defined for it in this repository. 
 
+# Important Notice 
+Due to RomRaider's decision to no longer allow bitwise switches larger than four bytes, DTCs are currently in a very dysfunctional state. So while DTC addresses will be accurate, the actual DTCs you'll see have no guarantee of accuracy. So I'd highly recommend not altering DTCs for the time being.
+
 # Key Features
 
 ### General Repository Features
