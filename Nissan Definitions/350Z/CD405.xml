@@ -1,0 +1,16 @@
+<rom base="CD415">
+	<romid>
+		<xmlid>CD405</xmlid>
+		<caseid>2WLGHD10</caseid>
+		<internalidaddress>8163</internalidaddress>
+		<internalidstring>CD405</internalidstring>
+		<ecuid>1CD405</ecuid>
+		<year>2003</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7055</memmodel>
+	</romid>
+</rom>

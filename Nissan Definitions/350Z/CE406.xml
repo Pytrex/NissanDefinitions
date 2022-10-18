@@ -1,0 +1,31 @@
+<rom base="A2L">
+  <romid>
+    <xmlid>CE406</xmlid>
+    <hwid>3GIPAN07</hwid>
+    <internalidaddress>8060</internalidaddress>
+    <internalidstring>CE406</internalidstring>
+    <ecuid>CE406</ecuid>
+    <year>2003</year>
+    <market>USDM</market>
+    <make>Nissan</make>
+    <model>350Z</model>
+    <submodel>Unknown</submodel>
+    <transmission>MT</transmission>
+    <memmodel>SH705513</memmodel>
+    <endian>Big</endian>
+    <flashmethod>Nisprog</flashmethod>
+    <filesize>512kb</filesize>
+    <author>Pytrex</author>
+    <version>v1.0</version>
+  </romid>
+  
+  <table name="K-Value" storageaddress="0x63B2"/>
+  <table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6412"/>
+  <table name="Speed Limiter" storageaddress="0x647E"/>
+  <table name="Bosch Fuel Cut Table" storageaddress="0x8A07"/>
+  <table name="Bosch Fuel Restore Table" storageaddress="0x8B49"/>
+  <table name="DTC 1" storageaddress="0x9F30"/>
+  
+  <checksum type="alt" start="0x1408" end="0x30CA" sumloc="0x1400" xorloc="0x1404"/>
+  <checksum type="std" start="0x0000" end="0x7FFFF" sumloc="0x65C0" xorloc="0x65B8"/>
+</rom>

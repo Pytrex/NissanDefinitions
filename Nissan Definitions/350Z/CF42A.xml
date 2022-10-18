@@ -1,0 +1,16 @@
+<rom base="CF49A">
+	<romid>
+		<xmlid>CF42A</xmlid>
+		<caseid>6GIZ7N4</caseid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF42A</internalidstring>
+		<ecuid>1CF42A</ecuid>
+		<year>2006</year>
+		<market>JDM</market>
+		<make>Nissan</make>
+		<model>Fairlady Z</model>
+		<submodel>Base</submodel>
+		<transmission>MT</transmission>
+		<memmodel>SH7058</memmodel>
+	</romid>
+</rom>

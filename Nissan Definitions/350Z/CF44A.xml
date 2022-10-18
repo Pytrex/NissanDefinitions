@@ -1,0 +1,16 @@
+<rom base="CF49A">
+	<romid>
+		<xmlid>CF44A</xmlid>
+		<caseid>6GIZ7N4</caseid>
+		<internalidaddress>2401</internalidaddress>
+		<internalidstring>CF44A</internalidstring>
+		<ecuid>1CF44A</ecuid>
+		<year>2006</year>
+		<market>USDM</market>
+		<make>Nissan</make>
+		<model>350Z</model>
+		<submodel>Unknown-RevUp</submodel>
+		<transmission>Manual</transmission>
+		<memmodel>SH7058</memmodel>
+	</romid>
+</rom>

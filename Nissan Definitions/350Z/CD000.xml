@@ -1,0 +1,23 @@
+<rom base="A2L">
+  <romid>
+    <xmlid>CD000</xmlid>
+    <hwid>3GIGGN02</hwid>
+    <internalidaddress>824C</internalidaddress>
+    <internalidstring>CD000</internalidstring>
+    <ecuid>CD000</ecuid>
+    <year>2003</year>
+    <market>USDM</market>
+    <make>Nissan</make>
+    <model>350Z</model>
+    <submodel>Performance</submodel>
+    <transmission>MT</transmission>
+    <memmodel>SH705513</memmodel>
+    <endian>Big</endian>
+    <flashmethod>Nisprog</flashmethod>
+    <filesize>512kb</filesize>
+    <author>Pytrex</author>
+    <version>v1.0</version>
+  </romid>
+  <checksum type="alt" start="0x1408" end="0x30CA" sumloc="0x1400" xorloc="0x1404"/>
+  <checksum type="std" start="0x0000" end="0x7FFFF" sumloc="0x67AC" xorloc="0x67A4"/>
+</rom>

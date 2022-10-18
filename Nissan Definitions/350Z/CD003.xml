@@ -1,0 +1,21 @@
+<rom base="CE406">
+  <romid>
+    <xmlid>CD003</xmlid>
+    <hwid>3GIPAN07</hwid>
+    <internalidaddress>8060</internalidaddress>
+    <internalidstring>CD003</internalidstring>
+    <ecuid>CD003</ecuid>
+    <year>2003</year>
+    <market>USDM</market>
+    <make>Nissan</make>
+    <model>350Z</model>
+    <submodel>Performance</submodel>
+    <transmission>MT</transmission>
+    <memmodel>SH705513</memmodel>
+    <endian>Big</endian>
+    <flashmethod>Nisprog</flashmethod>
+    <filesize>512kb</filesize>
+    <author>Pytrex</author>
+    <version>v1.0</version>
+  </romid>
+</rom>

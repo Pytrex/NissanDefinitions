@@ -1,0 +1,21 @@
+<rom base="CD515">
+  <romid>
+    <xmlid>CD001</xmlid>
+    <hwid>3GIJ7N04</hwid>
+    <internalidaddress>828C</internalidaddress>
+    <internalidstring>CD001</internalidstring>
+    <ecuid>CD001</ecuid>
+    <year>2003</year>
+    <market>USDM</market>
+    <make>Nissan</make>
+    <model>350Z</model>
+    <submodel>Performance</submodel>
+    <transmission>MT</transmission>
+    <memmodel>SH705513</memmodel>
+    <endian>Big</endian>
+    <flashmethod>Nisprog</flashmethod>
+    <filesize>512kb</filesize>
+    <author>Pytrex</author>
+    <version>v1.0</version>
+  </romid>
+</rom>
