@@ -12,30 +12,28 @@ Nissan and Infiniti ECU ROM Definitions for use with RomRaider Editor.
 
 #### Current Stable RomRaider Version (Repository): v0.9.4 
 
-NissanDefinitions supports ECU ROM definition files for SH7055/SH7058 Nissan and Infiniti ECU's. These definition files are formatted to be compatible with RomRaider editor. Vehicles with SH7055/SH7058 ECU's typically includes model years between ~2001-2010. 
+NissanDefinitions supports ECU ROM definition files for SH7055/SH7058 Nissan and Infiniti ECU's. These definition files are formatted to be compatible with RomRaider. Vehicles with these ECU's typically includes model years between ~2001-2010. 
 
-Each ROM has its own definition file that stores the ROM addresses for all defined tables. This definition file references the A2L template file, which contains table specific data. The ScalingData file is where all table scalars are stored. Using the "Combine All.bat" file will merge all files into one, NissanDefinitions. As time goes on, more and more ROMs will be defined. But there's no guarantee that every ROM will have the same tables defined for it in this repository. 
+Each ROM has its own definition file that stores the ROM addresses for all defined tables. This definition file references the A2L template file, which contains table specific data. The ScalingData file is where all table scalars are stored. Using the "Combine All.bat" file will merge all files into one. As time goes on, more and more ROMs will be defined.
 
 # Important Notice 
-Due to RomRaider's decision to no longer allow bitwise switches larger than four bytes, DTCs are currently in a very dysfunctional state. So while DTC addresses will be accurate, the actual DTCs you'll see have no guarantee of accuracy. So I'd highly recommend not altering DTCs for the time being.
+Due to RomRaider no longer allowing bitwise switches larger than four bytes, DTCs are currently in a very dysfunctional state. So while DTC addresses will be accurate, the actual DTCs you'll see have no guarantee of accuracy. So I'd highly recommend not altering DTCs for the time being. 
 
 # Key Features
 
 ### General Repository Features
 
 - Utilizes RomRaider's XML Formatting to its Full Extent (Scalingbase, Subcategories, etc) 
-- Semi-Automated Definition Files (Automated initial definition files with manual verification) 
-- Ability to Modify Individual ROM Contents and Definition Files
-- Cross Compatible with Any Preexisting Definition Repositories (add the preexisting definition template to your "Nissan Definitions" folder)
-- "EXPERIMENTAL" Tag for ROMs that Haven't Been Thoroughly Tested
+- Fully-Automated Definition Files (Definition Files are Generated from Binary Diffing) 
+- Ability to Modify Individual ECU Definition Files
 
 ### A2L Template Specific Features
 
-- Tables Derived from [ZB060 a2l file](https://www.romraider.com/forum/viewtopic.php?f=45&t=14750) (It means that the tables are official tables from Nissan directly)
+- Tables Derived from [ZB060 a2l file](https://www.romraider.com/forum/viewtopic.php?f=45&t=14750) (all tables are derived from an official Nissan/Renault a2l file)
 - ~221 Supported Tables 
 - Separate Maps for Ignition Timing Adjustment and Knock Window
-- Full DTC Support 
-- Full CID Supmask Support
+- ~~Full DTC Support~~ 
+- ~~Full CID Supmask Support~~ 
 - ROM Flags
 
 #### Example of CF48D
