@@ -1,0 +1,16 @@
+<rom base="CF065">
+	<romid>
+		<xmlid>AC610</xmlid>
+		<caseid>5ZVSVNJ</caseid>
+		<internalidaddress>A152</internalidaddress>
+		<internalidstring>AC610</internalidstring>
+		<ecuid>1AC610</ecuid>
+		<year>2004/2005</year>
+		<market>JDM</market>
+		<make>Skyline</make>
+		<model>V35</model>
+		<submodel>Unknown</submodel>
+		<transmission>AT</transmission>
+		<memmodel>SH7058</memmodel>
+	</romid>
+</rom>
