@@ -1,0 +1,23 @@
+<rom base="CF065"> <!-- Switch to CF115 later -->
+  <romid>
+    <xmlid>AC610</xmlid>
+    <hwid>5ZVSVNJ</hwid>
+    <internalidaddress>A152</internalidaddress>
+    <internalidstring>AC610</internalidstring>
+    <ecuid>AC610</ecuid>
+    <year>2004/2005</year>
+    <market>JDM</market>
+    <make>Infiniti</make>
+    <model>G35</model>
+    <submodel>V35</submodel>
+    <transmission>AT</transmission>
+    <memmodel>SH705821</memmodel>
+    <endian>Big</endian>
+    <flashmethod>Nisprog</flashmethod>
+    <filesize>1024kb</filesize>
+    <author>Pytrex</author>
+    <version>v1.0</version>
+  </romid>
+
+
+</rom>
