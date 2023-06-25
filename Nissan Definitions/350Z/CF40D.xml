@@ -95,7 +95,7 @@
 	<table name="Flags 14" storageaddress="0x7F3A"/>
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB82C"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xC208"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xD1EE"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xD1EE"/>
 	<table name="Cranking Ignition Timing Table" storageaddress="0xB6EC"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8AD8"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x8742"/>

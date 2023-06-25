@@ -32,7 +32,7 @@
 	<table name="MAF Table" storageaddress="0x8B1E"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x61DC"/>
 	<table name="KT Low Oil Temperature Fuel Cut/Restore" storageaddress="0x61E4"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0x9228"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0x9228"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x62D2"/>
 	<table name="Bosch Fuel Restore Table" storageaddress="0x851F"/>
 	<table name="JECS Fuel Restore Table" storageaddress="0x8497"/>

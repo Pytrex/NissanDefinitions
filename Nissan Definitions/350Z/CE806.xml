@@ -42,7 +42,7 @@
 	<table name="Engine Torque Map" storageaddress="0x8C88"/>
 	<table name="Speed Limiter" storageaddress="0x705E"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xA37C"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xA982"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xA982"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x70F0"/>
 	<table name="Cranking Ignition Timing Table" storageaddress="0x93AE"/>
 	<table name="MAF Factor" storageaddress="0x691F"/>

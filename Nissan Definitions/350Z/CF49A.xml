@@ -79,7 +79,7 @@
 	<table name="Engine Torque Map" storageaddress="0xAF28"/>
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB850"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xC22C"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xD1A2"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xD1A2"/>
 	<table name="Cranking Ignition Timing Table" storageaddress="0xB710"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8AFC"/>
 	<table name="APO Threshold (Brake)" storageaddress="0x876A"/>

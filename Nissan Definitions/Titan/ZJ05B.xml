@@ -35,7 +35,7 @@
 	</table>
 	<table name="Coolant Temperature MBT Compensation Table" storageaddress="0xB13A"/>
 	<table name="Coolant Temperature MBT Compensation Table 2" storageaddress="0xBA08"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xCA70"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xCA70"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x8884"/>
 	<table name="Dilution Modification Coefficient" storageaddress="0x7CD4"/>
 	<table name="Dwell Battery Table" storageaddress="0xB0CA"/>

@@ -32,7 +32,7 @@
 	<table name="Closed Loop to Open Loop Delay" storageaddress="0x6F97"/>
 	<table name="Fuel Injector Latency at 14V" storageaddress="0x73F5"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x6D38"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xC056"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xC056"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x7AC4"/>
 	<table name="Idle BFS Limits" storageaddress="0x7A88"/>
 	<table name="Load Base Fuel Schedule Table" storageaddress="0xBA00"/>

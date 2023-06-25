@@ -87,7 +87,7 @@
 	<table name="QH0 High Flow Quantity Table" storageaddress="0xCE00"/>
 	<table name="QH0 Low Flow Quantity Table" storageaddress="0xCE20"/>
 	<table name="Gear Ratio Table" storageaddress="0xCEF0"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xD15E"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xD15E"/>
 
 	<table name="Cold Ignition Timing Map (16x16)" storageaddress="0x8DA9">
 		<table type="X Axis" storageaddress="0xB5FC"/>

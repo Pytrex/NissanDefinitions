@@ -135,7 +135,7 @@
 
 	<table name="Fuel Injector Latency Adder" storageaddress="0x7DA3"/>
 
-	<table name="Crank Fueling TP Value Table" storageaddress="0xd1a2"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xd1a2"/>
 
 	<table name="MAF Idle Voltage Limits" storageaddress="0x8B4C"/>
 

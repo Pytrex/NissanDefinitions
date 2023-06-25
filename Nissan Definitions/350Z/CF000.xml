@@ -41,7 +41,7 @@
 	<table name="Engine Torque Map" storageaddress="0x9DD8"/>
 	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x79FC"/>
 	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0xB818"/>
-	<table name="Crank Fueling TP Value Table" storageaddress="0xBF5E"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0xBF5E"/>
 	<table name="MAF Idle Voltage Limits" storageaddress="0x7A4C"/>
 	<table name="Cranking Ignition Timing Table" storageaddress="0xA59E"/>
 	<table name="Fuel Injector Latency Adder" storageaddress="0x6CE6"/>
