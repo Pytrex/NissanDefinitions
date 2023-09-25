@@ -1,0 +1,22 @@
+<rom base="CF92A">
+  <romid>
+    <xmlid>CF90A</xmlid>
+    <hwid>7ZV6DN62</hwid>
+    <internalidaddress>2401</internalidaddress>
+    <internalidstring>CF90A</internalidstring>
+    <ecuid>CF90A</ecuid>
+    <year>2007</year>
+    <market>USDM</market>
+    <make>Infiniti</make>
+    <model>G35</model>
+    <submodel>Unknown</submodel>
+    <transmission>AT</transmission>
+    <memmodel>SH705823</memmodel>
+    <endian>Big</endian>
+    <flashmethod>Nisprog</flashmethod>
+    <filesize>1024kb</filesize>
+    <author>Pytrex</author>
+    <version>v1.0</version>
+  </romid>
+
+</rom>
