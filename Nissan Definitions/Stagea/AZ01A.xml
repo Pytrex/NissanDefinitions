@@ -1,0 +1,23 @@
+<rom base="CF42C">
+  <romid>
+    <xmlid>AZ01A</xmlid>
+    <hwid>6ZVYXN00</hwid>
+    <internalidaddress>2401</internalidaddress>
+    <internalidstring>AZ01A</internalidstring>
+    <ecuid>AZ01A</ecuid>
+    <year>Unknown</year>
+    <market>Unknown</market>
+    <make>Nissan</make>
+    <model>Stagea</model>
+    <submodel>Unknown</submodel>
+    <transmission>Unknown</transmission>
+    <memmodel>SH7058</memmodel>
+    <endian>Big</endian>
+    <flashmethod>Nisprog</flashmethod>
+    <filesize>1024kb</filesize>
+    <author>Pytrex</author>
+    <version>v1.0</version>
+  </romid>
+
+
+</rom>
