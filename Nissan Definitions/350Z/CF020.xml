@@ -1,4 +1,4 @@
-<rom base="A2L">
+<rom base="CF115">
 	<romid>
 		<xmlid>CF020</xmlid>
 		<caseid>5ZVSVNJ</caseid>
@@ -16,9 +16,5 @@
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>1024kb</filesize>
 		<author>Pytrex</author>
-		<version>EXPERIMENTAL</version>
 	</romid>
-
-	<checksum type="alt" start="0x1408" end="0x313E" sumloc="0x1400" xorloc="0x1404"/>
-	<checksum type="std" start="0" end="0xFFFFF" sumloc="0x7B58" xorloc="0x7B50"/>
 </rom>
