@@ -10,7 +10,7 @@ Nissan and Infiniti ECU ROM Definitions for use with RomRaider Editor.
 
 # About
 
-#### Current Stable RomRaider Version (Repository): v0.9.4 
+#### Current Stable RomRaider Version: v1.0.0
 
 NissanDefinitions supports ECU ROM definition files for SH7055/SH7058 Nissan and Infiniti ECU's. These definition files are formatted to be compatible with RomRaider. Vehicles with these ECU's typically includes model years between ~2001-2010. 
 
