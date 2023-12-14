@@ -19,7 +19,10 @@
     <version>v1.0</version>
   </romid>
 
-
+  <table name="Target Idle RPM Table" a2l="zTGTIDLE" storageaddress="0xAB8C"/>
+  <table name="Cold Idle Ignition Timing Table" a2l="mTGOV" storageaddress="0xA732"/>
+  <table name="Idle Ignition Timing Table" a2l="mTGOV3" storageaddress="0xA73A"/>
+  <table name="Lean Burn Idle Ignition Timing Table" a2l="mTGOVL" storageaddress="0xA742"/>
   <table name="APO Threshold (Brake)" storageaddress="0x7680"/>
   <table name="ATRET Limit" storageaddress="0x6A70"/>
   <table name="Bosch Fuel Cut Table" storageaddress="0xAB48"/>
