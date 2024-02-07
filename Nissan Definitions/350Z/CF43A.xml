@@ -1,0 +1,23 @@
+<rom base="CF49A">
+  <romid>
+    <xmlid>CF43A</xmlid>
+    <hwid>6GIZ7N4</hwid>
+    <internalidaddress>2401</internalidaddress>
+    <internalidstring>CF43A</internalidstring>
+    <ecuid>CF43A</ecuid>
+    <year>2006</year>
+    <market>USDM</market>
+    <make>Nissan</make>
+    <model>350Z</model>
+    <submodel>Unknown</submodel>
+    <transmission>MT</transmission>
+    <memmodel>SH705823</memmodel>
+    <endian>Big</endian>
+    <flashmethod>Nisprog</flashmethod>
+    <filesize>1024kb</filesize>
+    <author>Pytrex</author>
+    <version>v1.0</version>
+  </romid>
+
+
+</rom>
