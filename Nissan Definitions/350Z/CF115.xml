@@ -19,10 +19,10 @@
     <version>v1.0</version>
   </romid>
 
-  <table name="Target Idle RPM Table" a2l="zTGTIDLE" storageaddress="0xAB8C"/>
-  <table name="Cold Idle Ignition Timing Table" a2l="mTGOV" storageaddress="0xA732"/>
-  <table name="Idle Ignition Timing Table" a2l="mTGOV3" storageaddress="0xA73A"/>
-  <table name="Lean Burn Idle Ignition Timing Table" a2l="mTGOVL" storageaddress="0xA742"/>
+  <table name="Target Idle RPM Table" storageaddress="0xAB8C"/>
+  <table name="Cold Idle Ignition Timing Table" storageaddress="0xA732"/>
+  <table name="Idle Ignition Timing Table" storageaddress="0xA73A"/>
+  <table name="Lean Burn Idle Ignition Timing Table" storageaddress="0xA742"/>
   <table name="APO Threshold (Brake)" storageaddress="0x7680"/>
   <table name="ATRET Limit" storageaddress="0x6A70"/>
   <table name="Bosch Fuel Cut Table" storageaddress="0xAB48"/>
@@ -125,8 +125,11 @@
   <table name="Torque Converter Torque Ratio Table 2" storageaddress="0xCDE0"/>
   <table name="Unburned Gas Density Table" storageaddress="0xA5D2"/>
   <table name="VVT MBT Compensation Quantity Table" storageaddress="0xB13A"/>
-  <table name="VVT NK Threshold TP Table" storageaddress="0xB182"/>
   <table name="War Way Speed Weight Constant" storageaddress="0x6FB6"/>
+
+  <table name="VVT NK Threshold TP Table" storageaddress="0xB182">
+    <table type="X Axis" storageaddress="0xB172"/>
+  </table>
 
   <table name="AFR Conversion Table" storageaddress="0xB8EC">
     <table type="X Axis" storageaddress="0xC1A2"/>
@@ -134,10 +137,12 @@
 
   <table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x8AF1">
     <table type="X Axis" storageaddress="0xB106"/>
+    <table type="Y Axis" storageaddress="0xB11E"/>
   </table>
 
   <table name="MBT Flame Speed Map" storageaddress="0x8071">
     <table type="X Axis" storageaddress="0xA19B"/>
+    <table type="Y Axis" storageaddress="0xA19F"/>
   </table>
 
   <table name="Target Throttle Valve Opening Table" storageaddress="0xB2F6">
@@ -166,6 +171,7 @@
 
   <table name="TTEPTD Torque Compensation Map" storageaddress="0x9D5C">
     <table type="X Axis" storageaddress="0xBA3C"/>
+    <table type="Y Axis" storageaddress="0xBA4C"/>
   </table>
 
   <table name="TVO Upper Limit Table" storageaddress="0xB066">
@@ -188,27 +194,27 @@
 
   <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x7CB1">
     <table type="X Axis" storageaddress="0xA4D2"/>
-    <table type="Y Axis" storageaddress="0xA36C"/>
+    <table type="Y Axis" storageaddress="0xA4E2"/>
   </table>
 
   <table name="Fuel Compensation Map (16x16)" storageaddress="0x8351">
     <table type="X Axis" storageaddress="0xA3C8"/>
-    <table type="Y Axis" storageaddress="0xA36C"/>
+    <table type="Y Axis" storageaddress="0xA4E2"/>
   </table>
 
   <table name="Fuel Cut Extreme Short Rest Time Map" storageaddress="0x8731">
-    <table type="X Axis" storageaddress="0x0000"/>
+    <table type="X Axis" storageaddress="0xB1FE"/>
     <table type="Y Axis" storageaddress="0xB1FA"/>
   </table>
 
   <table name="High Detonation Ignition Timing Map (16x16)" storageaddress="0x7EB1">
     <table type="X Axis" storageaddress="0xA4D2"/>
-    <table type="Y Axis" storageaddress="0xA36C"/>
+    <table type="Y Axis" storageaddress="0xA4E2"/>
   </table>
 
   <table name="High Octane Ignition Timing Map (16x16)" storageaddress="0x7DB1">
     <table type="X Axis" storageaddress="0xA4D2"/>
-    <table type="Y Axis" storageaddress="0xA36C"/>
+    <table type="Y Axis" storageaddress="0xA4E2"/>
   </table>
 
   <table name="High Temperature Fuel Compensation Map" storageaddress="0x7CA1">
@@ -217,8 +223,8 @@
   </table>
 
   <table name="Intake Cam Timing Map (16x16)" storageaddress="0x89F1">
-    <table type="X Axis" storageaddress="0x0000"/>
-    <table type="Y Axis" storageaddress="0xA36C"/>
+    <table type="X Axis" storageaddress="0xB152"/>
+    <table type="Y Axis" storageaddress="0xB172"/>
   </table>
 
   <table name="Misfire Diagnosis Basic Map" storageaddress="0x8DC1">
@@ -249,6 +255,11 @@
   <table name="QH0/ Torque Conversion Map" storageaddress="0x965C">
     <table type="X Axis" storageaddress="0xB628"/>
     <table type="Y Axis" storageaddress="0xA388"/>
+  </table>
+
+  <table name="QH0/ Torque Conversion Map Trustful" storageaddress="0xC902">
+    <table type="X Axis" storageaddress="0xCBD6"/>
+    <table type="Y Axis" storageaddress="0xCB46"/>
   </table>
 
   <table name="Target AFR Map (8x8)" storageaddress="0x85E1">
