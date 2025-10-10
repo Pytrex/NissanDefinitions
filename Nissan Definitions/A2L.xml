@@ -446,10 +446,10 @@
 		<table type="Y Axis" name="Engine Speed" storagetype="uint8">
 			<scaling base="Axis RPM (x*50)"/>
 		</table>
-		<description><!--mMTFA-->AXES NEED TO BE FIXED. This map will be directly influence fueling. Any cells that are set to 14.7 AFR will have the ECU run in closed-loop mode. (Obviously excluding decel) This map will not guarantee that your targets are hit, so you will need to adjust your fueling elsewhere to ensure you're hitting your targets.</description>
+		<description><!--mMTFA--> This map will be directly influence fueling. Any cells that are set to 14.7 AFR will have the ECU run in closed-loop mode. (Obviously excluding decel) This map will not guarantee that your targets are hit, so you will need to adjust your fueling elsewhere to ensure you're hitting your targets.</description>
 	</table>
 
-	<table type="3D" name="Stock Target AFR Map (16x16)" category="Fuel Delivery//Air Fuel Ratio//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+	<table type="3D" name="Target AFR Map (16x16)" category="Fuel Delivery//Air Fuel Ratio//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
 		<scaling base="Target AFR (1881.6/x)"/>
 		<table type="X Axis" name="Cylinder Filling Up Efficiency" storagetype="uint8">
 			<scaling base="Axis Percentage (x*0.78125)"/>
@@ -2126,689 +2126,544 @@
 	</table>
 
 	<table type="BitwiseSwitch" name="CO Variable Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="Unknown 7 -"/>
-	0x40		<bit position="6" name="Unknown 6 -"/>
-	0x20		<bit position="5" name="Unknown 5 -"/>
-	0x10		<bit position="4" name="Unknown 4 -"/>
-	0x08		<bit position="3" name="Unknown 3 -"/>
-	0x04		<bit position="2" name="Unknown 2 -"/>
-	0x02		<bit position="1" name="Unknown 1 -"/>
-	0x01		<bit position="0" name="Unknown 0 -"/>
+			<bit position="7" name="Unknown 7 -"/>
+			<bit position="6" name="Unknown 6 -"/>
+			<bit position="5" name="Unknown 5 -"/>
+			<bit position="4" name="Unknown 4 -"/>
+			<bit position="3" name="Unknown 3 -"/>
+			<bit position="2" name="Unknown 2 -"/>
+			<bit position="1" name="Unknown 1 -"/>
+			<bit position="0" name="Unknown 0 -"/>
 		<description><!--mFCOVR-->CO variable (ROM flag)</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="A Hand-Operated Purge Cut Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="Unknown 7 -"/>
-	0x40		<bit position="6" name="Unknown 6 -"/>
-	0x20		<bit position="5" name="Unknown 5 -"/>
-	0x10		<bit position="4" name="Unknown 4 -"/>
-	0x08		<bit position="3" name="Unknown 3 -"/>
-	0x04		<bit position="2" name="Unknown 2 -"/>
-	0x02		<bit position="1" name="Unknown 1 -"/>
-	0x01		<bit position="0" name="Unknown 0 -"/>
+			<bit position="7" name="Unknown 7 -"/>
+			<bit position="6" name="Unknown 6 -"/>
+			<bit position="5" name="Unknown 5 -"/>
+			<bit position="4" name="Unknown 4 -"/>
+			<bit position="3" name="Unknown 3 -"/>
+			<bit position="2" name="Unknown 2 -"/>
+			<bit position="1" name="Unknown 1 -"/>
+			<bit position="0" name="Unknown 0 -"/>
 		<description><!--mFPCUT-->A hand-operated purge cut flag</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="KTRM Variable Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="Unknown 7 -"/>
-	0x40		<bit position="6" name="Unknown 6 -"/>
-	0x20		<bit position="5" name="Unknown 5 -"/>
-	0x10		<bit position="4" name="Unknown 4 -"/>
-	0x08		<bit position="3" name="Unknown 3 -"/>
-	0x04		<bit position="2" name="Unknown 2 -"/>
-	0x02		<bit position="1" name="Unknown 1 -"/>
-	0x01		<bit position="0" name="Unknown 0 -"/>
+			<bit position="7" name="Unknown 7 -"/>
+			<bit position="6" name="Unknown 6 -"/>
+			<bit position="5" name="Unknown 5 -"/>
+			<bit position="4" name="Unknown 4 -"/>
+			<bit position="3" name="Unknown 3 -"/>
+			<bit position="2" name="Unknown 2 -"/>
+			<bit position="1" name="Unknown 1 -"/>
+			<bit position="0" name="Unknown 0 -"/>
 		<description><!--mFVKTRM-->KTRM variable (ROM flag)</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="TFBYA Variable Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="Unknown 7 -"/>
-	0x40		<bit position="6" name="Unknown 6 -"/>
-	0x20		<bit position="5" name="Unknown 5 -"/>
-	0x10		<bit position="4" name="Unknown 4 -"/>
-	0x08		<bit position="3" name="Unknown 3 -"/>
-	0x04		<bit position="2" name="Unknown 2 -"/>
-	0x02		<bit position="1" name="Unknown 1 -"/>
-	0x01		<bit position="0" name="Unknown 0 -"/>
+			<bit position="7" name="Unknown 7 -"/>
+			<bit position="6" name="Unknown 6 -"/>
+			<bit position="5" name="Unknown 5 -"/>
+			<bit position="4" name="Unknown 4 -"/>
+			<bit position="3" name="Unknown 3 -"/>
+			<bit position="2" name="Unknown 2 -"/>
+			<bit position="1" name="Unknown 1 -"/>
+			<bit position="0" name="Unknown 0 -"/>
 		<description><!--mFVTFA0-->TFBYA variable (ROM flag)</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="The Whole Area Torque Going Down Control Switching Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="Unknown 7 -"/>
-	0x40		<bit position="6" name="Unknown 6 -"/>
-	0x20		<bit position="5" name="Unknown 5 -"/>
-	0x10		<bit position="4" name="Unknown 4 -"/>
-	0x08		<bit position="3" name="Unknown 3 -"/>
-	0x04		<bit position="2" name="Unknown 2 -"/>
-	0x02		<bit position="1" name="Unknown 1 -"/>
-	0x01		<bit position="0" name="Unknown 0 -"/>
+			<bit position="7" name="Unknown 7 -"/>
+			<bit position="6" name="Unknown 6 -"/>
+			<bit position="5" name="Unknown 5 -"/>
+			<bit position="4" name="Unknown 4 -"/>
+			<bit position="3" name="Unknown 3 -"/>
+			<bit position="2" name="Unknown 2 -"/>
+			<bit position="1" name="Unknown 1 -"/>
+			<bit position="0" name="Unknown 0 -"/>
 		<description><!--mTDRQARI2-->The whole area torque going down control switching flag</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="C/S Backup Excuse Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="Unknown 7 -"/>
-	0x40		<bit position="6" name="Unknown 6 -"/>
-	0x20		<bit position="5" name="mfFFITIM - [0: 1st Fuel Injection at Start | 1: 2nd Initial Fuel Injection at Start]"/>
-	0x10		<bit position="4" name="mfFCSMK - C/S Mask Control at Start [0: Disabled | 1: Enabled]"/>
-	0x08		<bit position="3" name="Unknown 3 -"/>
-	0x04		<bit position="2" name="mfFIGNRG - Ignition Misdistribution Prevention Function [0: Disabled | 1: Enabled]"/>
-	0x02		<bit position="1" name="mfFRF110C - Psuedo REF Generation [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfCSBU- C/S Backup [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="Unknown 7 -"/>
+			<bit position="6" name="Unknown 6 -"/>
+			<bit position="5" name="mfFFITIM - [0: 1st Fuel Injection at Start | 1: 2nd Initial Fuel Injection at Start]"/>
+			<bit position="4" name="mfFCSMK - C/S Mask Control at Start [0: Disabled | 1: Enabled]"/>
+			<bit position="3" name="Unknown 3 -"/>
+			<bit position="2" name="mfFIGNRG - Ignition Misdistribution Prevention Function [0: Disabled | 1: Enabled]"/>
+			<bit position="1" name="mfFRF110C - Psuedo REF Generation [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfCSBU- C/S Backup [0: Disabled | 1: Enabled]"/>
 		<description><!--mCSBUID-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="QH0 Operation Flags" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfFTVFQSNG - [0: Allow | 1: Prohibit]"/>
-	0x40		<bit position="6" name="mfQH0ETD - QH0 Operation [0: Conventional SOFIS Specification | 1: QH0 Basic Value Calculated by ETD Air Volume Learning]"/>
-	0x20		<bit position="5" name="mfFTTCPB - [0: TTC For ISC Is Corrected For Atmospheric Pressure/IAT | 1: TTC For ESC Is Corrected For Atmospheric Pressure/IAT]"/>
-	0x10		<bit position="4" name="mfFALLPART - [0: Partial Combustion Switching 2-Stage Injection | 1: Full Combustion Switching 2-Stage Injection]"/>
-	0x08		<bit position="3" name="mfFSTRSTP - [0: Other than the One on the Right | 1: Permission to Start Stratification]"/>
-	0x04		<bit position="2" name="mfFBSLCFP - Base/Basic Learning Condition [0: Enabled | 1: Disabled]"/>
-	0x02		<bit position="1" name="mfRESPINH - Response Delay Compensation [0: Enabled | 1: Disabled]"/>
-	0x01		<bit position="0" name="mfETDIDLCH - Response Delay Compensation [0: Enabled | 1: Disabled]"/>
+			<bit position="7" name="mfFTVFQSNG - [0: Allow | 1: Prohibit]"/>
+			<bit position="6" name="mfQH0ETD - QH0 Operation [0: Conventional SOFIS Specification | 1: QH0 Basic Value Calculated by ETD Air Volume Learning]"/>
+			<bit position="5" name="mfFTTCPB - [0: TTC For ISC Is Corrected For Atmospheric Pressure/IAT | 1: TTC For ESC Is Corrected For Atmospheric Pressure/IAT]"/>
+			<bit position="4" name="mfFALLPART - [0: Partial Combustion Switching 2-Stage Injection | 1: Full Combustion Switching 2-Stage Injection]"/>
+			<bit position="3" name="mfFSTRSTP - [0: Other than the One on the Right | 1: Permission to Start Stratification]"/>
+			<bit position="2" name="mfFBSLCFP - Base/Basic Learning Condition [0: Enabled | 1: Disabled]"/>
+			<bit position="1" name="mfRESPINH - Response Delay Compensation [0: Enabled | 1: Disabled]"/>
+			<bit position="0" name="mfETDIDLCH - Response Delay Compensation [0: Enabled | 1: Disabled]"/>
 		<description><!--mSWETD3-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="TINT Compensation Permission Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfKTIUSE - TINT Compensation [0: Disabled | 1: Enabled]"/>
-	0x40		<bit position="6" name="Unknown 6 -"/>
-	0x20		<bit position="5" name="Unknown 5 -"/>
-	0x10		<bit position="4" name="Unknown 4 -"/>
-	0x08		<bit position="3" name="Unknown 3 -"/>
-	0x04		<bit position="2" name="mfMFJDG3 - Monitor [0: Disabled | 1: Enabled]"/>
-	0x02		<bit position="1" name="mfMFJDG2 - Monitor [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfMFJDG1 - Monitor [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="mfKTIUSE - TINT Compensation [0: Disabled | 1: Enabled]"/>
+			<bit position="6" name="Unknown 6 -"/>
+			<bit position="5" name="Unknown 5 -"/>
+			<bit position="4" name="Unknown 4 -"/>
+			<bit position="3" name="Unknown 3 -"/>
+			<bit position="2" name="mfMFJDG3 - Monitor [0: Disabled | 1: Enabled]"/>
+			<bit position="1" name="mfMFJDG2 - Monitor [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfMFJDG1 - Monitor [0: Disabled | 1: Enabled]"/>
 		<description><!--mMFPRMM-->I would strongly recommend NOT disabling the TINT Compensation Flag, as this would eliminate a large chunk of misifre detection logic!</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="O2/S System Choice Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="Unknown 7 -"/>
-	0x40		<bit position="6" name="Unknown 6 -"/>
-	0x20		<bit position="5" name="Unknown 5 -"/>
-	0x10		<bit position="4" name="mfSDFED - [0: Perform Full-Area DOS Control | 1: Perform Area-Limited DOS Control for FED]"/>
-	0x08		<bit position="3" name="mfFDOSL - DOS Learning [0: Disabled | 1: Enabled]"/>
-	0x04		<bit position="2" name="mfF2IN1 - O2/S System Choice Flag [0: O2/S System is 1in1 or 2in2 | 1: O2/S System is 2in1]"/>
-	0x02		<bit position="1" name="Unknown 1 -"/>
-	0x01		<bit position="0" name="mfFDOSGO - DOS Control [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="Unknown 7 -"/>
+			<bit position="6" name="Unknown 6 -"/>
+			<bit position="5" name="Unknown 5 -"/>
+			<bit position="4" name="mfSDFED - [0: Perform Full-Area DOS Control | 1: Perform Area-Limited DOS Control for FED]"/>
+			<bit position="3" name="mfFDOSL - DOS Learning [0: Disabled | 1: Enabled]"/>
+			<bit position="2" name="mfF2IN1 - O2/S System Choice Flag [0: O2/S System is 1in1 or 2in2 | 1: O2/S System is 2in1]"/>
+			<bit position="1" name="Unknown 1 -"/>
+			<bit position="0" name="mfFDOSGO - DOS Control [0: Disabled | 1: Enabled]"/>
 		<description><!--mSWDOS-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="O2 Sensor Position Flags" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfS2O2B2 - Bank 2 O2 Sensor 4 [0: Disabled | 1: Enabled]"/>
-	0x40		<bit position="6" name="mfS1O2B2 - Bank 2 O2 Sensor 3 [0: Disabled | 1: Enabled]"/>
-	0x20		<bit position="5" name="mfRO2B2 - Bank 2 O2 Sensor 2 [0: Disabled | 1: Enabled]"/>
-	0x10		<bit position="4" name="mfFO2B2 - Bank 2 O2 Sensor 1 [0: Disabled | 1: Enabled]"/>
-	0x08		<bit position="3" name="mfS2O2B1 - Bank 1 O2 Sensor 4 [0: Disabled | 1: Enabled]"/>
-	0x04		<bit position="2" name="mfS1O2B1 - Bank 1 O2 Sensor 3 [0: Disabled | 1: Enabled]"/>
-	0x02		<bit position="1" name="mfRO2B1 - Bank 1 O2 Sensor 2 [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfFO2B1 - Bank 1 O2 Sensor 1 [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="mfS2O2B2 - Bank 2 O2 Sensor 4 [0: Disabled | 1: Enabled]"/>
+			<bit position="6" name="mfS1O2B2 - Bank 2 O2 Sensor 3 [0: Disabled | 1: Enabled]"/>
+			<bit position="5" name="mfRO2B2 - Bank 2 O2 Sensor 2 [0: Disabled | 1: Enabled]"/>
+			<bit position="4" name="mfFO2B2 - Bank 2 O2 Sensor 1 [0: Disabled | 1: Enabled]"/>
+			<bit position="3" name="mfS2O2B1 - Bank 1 O2 Sensor 4 [0: Disabled | 1: Enabled]"/>
+			<bit position="2" name="mfS1O2B1 - Bank 1 O2 Sensor 3 [0: Disabled | 1: Enabled]"/>
+			<bit position="1" name="mfRO2B1 - Bank 1 O2 Sensor 2 [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfFO2B1 - Bank 1 O2 Sensor 1 [0: Disabled | 1: Enabled]"/>
 		<description><!--mO2S-->Controls what O2 sensors the ECU thinks it has. Disabling any of them will cause said sensor to no longer be utilized by the ECU. (MIGHT need to force emission readiness, as it'll probably show "not supported" for catalyst monitoring)</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Electronic Throttle Control Flags" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="Unknown 7 -"/>
-	0x40		<bit position="6" name="mfTTE_ON - Torque TTE Control [0: Disabled (TATE = APP0) | 1: Enabled (TATE = TTEPTD)]"/>
-	0x20		<bit position="5" name="mfTFD_ON - Driving Force TFD Control [0: Disabled (TTEPDT = TTEAP0) | 1: Enabled (TATE = TTEPTD)] "/>
-	0x10		<bit position="4" name="Unknown 4 -"/>
-	0x08		<bit position="3" name="Unknown 3 -"/>
-	0x04		<bit position="2" name="mfTFDCVT - Drive Power Choice Flag for CVT [0: Send TFD0 to CVT | 1: Send TFDD to CVT]"/>
-	0x02		<bit position="1" name="mfCVTFL_ON - CVTFAIL Flag [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfPTD_ON - Driving Force Demand Control [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="Unknown 7 -"/>
+			<bit position="6" name="mfTTE_ON - Torque TTE Control [0: Disabled (TATE = APP0) | 1: Enabled (TATE = TTEPTD)]"/>
+			<bit position="5" name="mfTFD_ON - Driving Force TFD Control [0: Disabled (TTEPDT = TTEAP0) | 1: Enabled (TATE = TTEPTD)] "/>
+			<bit position="4" name="Unknown 4 -"/>
+			<bit position="3" name="Unknown 3 -"/>
+			<bit position="2" name="mfTFDCVT - Drive Power Choice Flag for CVT [0: Send TFD0 to CVT | 1: Send TFDD to CVT]"/>
+			<bit position="1" name="mfCVTFL_ON - CVTFAIL Flag [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfPTD_ON - Driving Force Demand Control [0: Disabled | 1: Enabled]"/>
 		<description><!--mPTDSW-->PTD Specifications Choice SW. Disabling the ETC Control flag will cause the throttle to be 1:1 with the accelerator. I would highly recommend against disabling it, as you would be removing the incredible advantages DBW has over cable driven throttles.</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="KATHOS Choice Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfFBSCLR - Base Learning Clear when Power is Turned On [0: Disabled | 1: Enabled]"/>
-	0x40		<bit position="6" name="mfFSCLR - Learning Map Clear when Power is Turned On [0: Disabled | 1: Enabled]"/>
-	0x20		<bit position="5" name="mfFTSCLR - TS-Compatible Learning Clear when Power is On [0: Disabled | 1: Enabled]"/>
-	0x10		<bit position="4" name="mfFSHLRSP - Request Desorption at Time of Switching [0: Disabled | 1: Enabled]"/>
-	0x08		<bit position="3" name="mfLTEGRCT - EGR [0: Don't Cut EGR | 1: Cut EGR]"/>
-	0x04		<bit position="2" name="mfISCKH - KATHOS Choice Flag [0: Add KATHOS | 1: Don't add KATHOS]"/>
-	0x02		<bit position="1" name="mfFREBEN - Base Relearning [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfFKPART - Division [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="mfFBSCLR - Base Learning Clear when Power is Turned On [0: Disabled | 1: Enabled]"/>
+			<bit position="6" name="mfFSCLR - Learning Map Clear when Power is Turned On [0: Disabled | 1: Enabled]"/>
+			<bit position="5" name="mfFTSCLR - TS-Compatible Learning Clear when Power is On [0: Disabled | 1: Enabled]"/>
+			<bit position="4" name="mfFSHLRSP - Request Desorption at Time of Switching [0: Disabled | 1: Enabled]"/>
+			<bit position="3" name="mfLTEGRCT - EGR [0: Don't Cut EGR | 1: Cut EGR]"/>
+			<bit position="2" name="mfISCKH - KATHOS Choice Flag [0: Add KATHOS | 1: Don't add KATHOS]"/>
+			<bit position="1" name="mfFREBEN - Base Relearning [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfFKPART - Division [0: Disabled | 1: Enabled]"/>
 		<description><!--mSpecEGI-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Control Switching Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfFSEISOR - Deceleration Stratification [0: No Stratified Combustion Recoverer | 1: Layered Combustion Recoverer]"/>
-	0x40		<bit position="6" name="mfFIDLHS - [0: Other Than The One On The Right | 1: Select Stratified Map]"/>
-	0x20		<bit position="5" name="mfFDIDHS - Idle Stratification [0: Disabled | 1: Enabled]"/>
-	0x10		<bit position="4" name="mfFPSSPH - [0: Other Than The One On The Right | 1: Idle Power Steering On, Stratification Prohibited]"/>
-	0x08		<bit position="3" name="mfFBCFBYA - AFR Correction [0: Disabled | 1: Enabled]"/>
-	0x04		<bit position="2" name="mfFTWSEL - [0: Use Coolant Temperature At Start-Up | 1: Use Outside Air Temperature Sw Input For A/C]"/>
-	0x02		<bit position="1" name="mfFETC - ETC Control [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfFETDEN - ETD Control [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="mfFSEISOR - Deceleration Stratification [0: No Stratified Combustion Recoverer | 1: Layered Combustion Recoverer]"/>
+			<bit position="6" name="mfFIDLHS - [0: Other Than The One On The Right | 1: Select Stratified Map]"/>
+			<bit position="5" name="mfFDIDHS - Idle Stratification [0: Disabled | 1: Enabled]"/>
+			<bit position="4" name="mfFPSSPH - [0: Other Than The One On The Right | 1: Idle Power Steering On, Stratification Prohibited]"/>
+			<bit position="3" name="mfFBCFBYA - AFR Correction [0: Disabled | 1: Enabled]"/>
+			<bit position="2" name="mfFTWSEL - [0: Use Coolant Temperature At Start-Up | 1: Use Outside Air Temperature Sw Input For A/C]"/>
+			<bit position="1" name="mfFETC - ETC Control [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfFETDEN - ETD Control [0: Disabled | 1: Enabled]"/>
 		<description><!--mSWETD-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Cruise Control Specifications Choice Flags" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfFLGNICCS - NICCS Compatible Control [0: Disabled | 1: Enabled]"/>
-	0x40		<bit position="6" name="mfCOASTINI - Servo Initialization at End of Coast [0: Disabled | 1: Enabled]"/>
-	0x20		<bit position="5" name="mfFLGBCACC - ACC Brake Control [0: Not Supported | 1: Supported]"/>
-	0x10		<bit position="4" name="mfACCPUB - [0: ACC Active Booster Specification | 1: ACC Pump Up Brake Specification]"/>
-	0x08		<bit position="3" name="mfMFTYPESW - ASCD Switch Type [0: Normal type (Independent Switch) | 1: MF type (Seesaw Switch)]"/>
-	0x04		<bit position="2" name="mfFLGINCH - Inching Compatible Control [0: Disabled | 1: Enabled]"/>
-	0x02		<bit position="1" name="mfFLGACC - ACC Compatible Control [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfFASCD - Cruise Control [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="mfFLGNICCS - NICCS Compatible Control [0: Disabled | 1: Enabled]"/>
+			<bit position="6" name="mfCOASTINI - Servo Initialization at End of Coast [0: Disabled | 1: Enabled]"/>
+			<bit position="5" name="mfFLGBCACC - ACC Brake Control [0: Not Supported | 1: Supported]"/>
+			<bit position="4" name="mfACCPUB - [0: ACC Active Booster Specification | 1: ACC Pump Up Brake Specification]"/>
+			<bit position="3" name="mfMFTYPESW - ASCD Switch Type [0: Normal type (Independent Switch) | 1: MF type (Seesaw Switch)]"/>
+			<bit position="2" name="mfFLGINCH - Inching Compatible Control [0: Disabled | 1: Enabled]"/>
+			<bit position="1" name="mfFLGACC - ACC Compatible Control [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfFASCD - Cruise Control [0: Disabled | 1: Enabled]"/>
 		<description><!--mSWASCD-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="Cruise Control, PTD Open-Degree Operation Switching Flag" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfCRUONAGB - [0: CRUISE2 Normal Transmission | 1: CRUISE2 Temporary Acceleration Not Transmitted]"/>
-	0x40		<bit position="6" name="mfPTDASCD - Driving Force Calculation at ASCD [0: Disabled | 1: Enabled]"/>
-	0x20		<bit position="5" name="mfSWDECSS - Vehicle Speed Servo Control at Coast [0: Disabled | 1: Enabled]"/>
-	0x10		<bit position="4" name="mfMMODECAN - ASCD Release in M-MODE [0: Disabled | 1: Enabled]"/>
-	0x08		<bit position="3" name="mfDSFTNEGP - At Downshift [0: Use CURGP | 1: Use NEXTGP]"/>
-	0x04		<bit position="2" name="mfACCENINI - Phase Compensator Clear at End of Accelerator Clear [0: Disabled | 1: Enabled]"/>
-	0x02		<bit position="1" name="mfACCADCLR - Additional Clear at End of Accelerator [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfACCODOFF - [0: OD Off Fixed At Accelerator Rate | 1: OD Off Fixed At Accelerator Rate]"/>
+			<bit position="7" name="mfCRUONAGB - [0: CRUISE2 Normal Transmission | 1: CRUISE2 Temporary Acceleration Not Transmitted]"/>
+			<bit position="6" name="mfPTDASCD - Driving Force Calculation at ASCD [0: Disabled | 1: Enabled]"/>
+			<bit position="5" name="mfSWDECSS - Vehicle Speed Servo Control at Coast [0: Disabled | 1: Enabled]"/>
+			<bit position="4" name="mfMMODECAN - ASCD Release in M-MODE [0: Disabled | 1: Enabled]"/>
+			<bit position="3" name="mfDSFTNEGP - At Downshift [0: Use CURGP | 1: Use NEXTGP]"/>
+			<bit position="2" name="mfACCENINI - Phase Compensator Clear at End of Accelerator Clear [0: Disabled | 1: Enabled]"/>
+			<bit position="1" name="mfACCADCLR - Additional Clear at End of Accelerator [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfACCODOFF - [0: OD Off Fixed At Accelerator Rate | 1: OD Off Fixed At Accelerator Rate]"/>
 		<description><!--mSWASCD2-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="OBD Function Choice Flags" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfCJST2 - Catalyst Diagnosis Stage 2 [0: Not Repeated | 1: Repeated]"/>
-	0x40		<bit position="6" name="mfFCATP - Catalyst Diagnosis Parameter [0: HZRATE | 1: SUMAMP]"/>
-	0x20		<bit position="5" name="mfFLEET - FLEET Experiment Car [0: Non-Experimental Vehicle | 1: Experimental Vehicle]"/>
-	0x10		<bit position="4" name="mfFCATS - Stage Choice [0: Catalyst Diagnosis 1STAGE Diagnosis | 1: Catalyst Diagnosis 2STAGE Diagnosis]"/>
-	0x08		<bit position="3" name="mfDUETSW - [0: DUETTE Diagnosis RTDNG.NGMEM Set | 1: DUETTE Signal Line Diagnosis 2 Set with TRIP]"/>
-	0x04		<bit position="2" name="mfCATDGN - Catalyst Diagnostic Specifications [0: Normal | 1: For Experiments]"/>
-	0x02		<bit position="1" name="mfFMRKMR - Add Whole Area Learning Value to KMR [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfPRIDRV - Pre-Driver Disconnection Diagnosis [0: Supported | 1: Not Compatible]"/>
+			<bit position="7" name="mfCJST2 - Catalyst Diagnosis Stage 2 [0: Not Repeated | 1: Repeated]"/>
+			<bit position="6" name="mfFCATP - Catalyst Diagnosis Parameter [0: HZRATE | 1: SUMAMP]"/>
+			<bit position="5" name="mfFLEET - FLEET Experiment Car [0: Non-Experimental Vehicle | 1: Experimental Vehicle]"/>
+			<bit position="4" name="mfFCATS - Stage Choice [0: Catalyst Diagnosis 1STAGE Diagnosis | 1: Catalyst Diagnosis 2STAGE Diagnosis]"/>
+			<bit position="3" name="mfDUETSW - [0: DUETTE Diagnosis RTDNG.NGMEM Set | 1: DUETTE Signal Line Diagnosis 2 Set with TRIP]"/>
+			<bit position="2" name="mfCATDGN - Catalyst Diagnostic Specifications [0: Normal | 1: For Experiments]"/>
+			<bit position="1" name="mfFMRKMR - Add Whole Area Learning Value to KMR [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfPRIDRV - Pre-Driver Disconnection Diagnosis [0: Supported | 1: Not Compatible]"/>
 		<description><!--mOBDSW-->Toggle On/Off. If you enable mfCJST2 AND mfCATDGN, then it skips the DTC check and something else.</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="OBD Function Choice Flags 2" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfFEVAP5 - Line Pressure Sensor [0: Relative Pressure Measurement Type | 1: Absolute Pressure Measurement Type]"/>
-	0x40		<bit position="6" name="mfEVAP4 - Space Volume Correction [0: Enabled | 1: Disabled]"/>
-	0x20		<bit position="5" name="mfFEVAP3 - Pull-Down During Deceleration [0: Disabled | 1: Enabled]"/>
-	0x10		<bit position="4" name="mfFEVAP2 - Pulldown-Leakdown Diagnosis [0: Not Repeated | 1: Is Repeated]"/>
-	0x08		<bit position="3" name="mfFEVAP1 - Leak Down Diagnosis at Tank Positive Pressure [0: Not Repeated | 1: Is Repeated]"/>
-	0x04		<bit position="2" name="mfFFPCM - [0: Non-Experimental | 1: Experimental (FPCM Diagnostic)]"/>
-	0x02		<bit position="1" name="mfTCATB2 - Catalyst Temperature Input B2 [0: Disabled | 1: Enabled]"/>
-	0x01		<bit position="0" name="mfTCATB1 - Catalyst Temperature Input B1 [0: Disabled | 1: Enabled]"/>
+			<bit position="7" name="mfFEVAP5 - Line Pressure Sensor [0: Relative Pressure Measurement Type | 1: Absolute Pressure Measurement Type]"/>
+			<bit position="6" name="mfEVAP4 - Space Volume Correction [0: Enabled | 1: Disabled]"/>
+			<bit position="5" name="mfFEVAP3 - Pull-Down During Deceleration [0: Disabled | 1: Enabled]"/>
+			<bit position="4" name="mfFEVAP2 - Pulldown-Leakdown Diagnosis [0: Not Repeated | 1: Is Repeated]"/>
+			<bit position="3" name="mfFEVAP1 - Leak Down Diagnosis at Tank Positive Pressure [0: Not Repeated | 1: Is Repeated]"/>
+			<bit position="2" name="mfFFPCM - [0: Non-Experimental | 1: Experimental (FPCM Diagnostic)]"/>
+			<bit position="1" name="mfTCATB2 - Catalyst Temperature Input B2 [0: Disabled | 1: Enabled]"/>
+			<bit position="0" name="mfTCATB1 - Catalyst Temperature Input B1 [0: Disabled | 1: Enabled]"/>
 		<description><!--mOBDSW2-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="OBD Function Choice Flags 3" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfVPRES12 - [0: Built-In Atmospheric Pressure Sensor 1x Input To VPRES | 1: Built-In Atmospheric Pressure Sensor 2x Input To VPRES]"/>
-	0x40		<bit position="6" name="mfPAMB00 - Atmospheric Pressure Reference Value PAMB00 Fixed Switching Flag [0: Reflect VPRES On PAMB | 1: Reflect PAMBO # On PAMB (Atmospheric Pressure]"/>
-	0x20		<bit position="5" name="mfEVPSCR - [0: NG Judgment Clearer For Positive Pressure Diagnosis Is 0.04 In 1: NG Judgment Clearer For Positive Pressure Diagnosis Is 0.02 In]"/>
-	0x10		<bit position="4" name="mfEVF2NG - Judgement Criteria Switching Flag [0: NG Judgment Criteria Is 0.04in | 1: NG Judgment Criteria Is 0.02in]"/>
-	0x08		<bit position="3" name="mfFKHMIL - [0: High Coolant Temperature Increase Diagnosis MIL Lighting Not Permitted | 1: High Coolant Temperature Increase Diagnosis MIL Lighting Permitted]"/>
-	0x04		<bit position="2" name="Unknown 2 -"/>
-	0x02		<bit position="1" name="mfTO2SE2 - [0: FrO2 / S Bank 2 Element Temperature Without A / D Conversion | 1: FrO2 / S Bank 2 Element Temperature With A / D Conversion]"/>
-	0x01		<bit position="0" name="mfTO2SE1 - [0: FrO2 / S Bank 1 Element Temperature Without A / D Conversion | 1: FrO2 / S Bank 1 Element Temperature With A / D Conversion]"/>
+			<bit position="7" name="mfVPRES12 - [0: Built-In Atmospheric Pressure Sensor 1x Input To VPRES | 1: Built-In Atmospheric Pressure Sensor 2x Input To VPRES]"/>
+			<bit position="6" name="mfPAMB00 - Atmospheric Pressure Reference Value PAMB00 Fixed Switching Flag [0: Reflect VPRES On PAMB | 1: Reflect PAMBO # On PAMB (Atmospheric Pressure]"/>
+			<bit position="5" name="mfEVPSCR - [0: NG Judgment Clearer For Positive Pressure Diagnosis Is 0.04 In 1: NG Judgment Clearer For Positive Pressure Diagnosis Is 0.02 In]"/>
+			<bit position="4" name="mfEVF2NG - Judgement Criteria Switching Flag [0: NG Judgment Criteria Is 0.04in | 1: NG Judgment Criteria Is 0.02in]"/>
+			<bit position="3" name="mfFKHMIL - [0: High Coolant Temperature Increase Diagnosis MIL Lighting Not Permitted | 1: High Coolant Temperature Increase Diagnosis MIL Lighting Permitted]"/>
+			<bit position="2" name="Unknown 2 -"/>
+			<bit position="1" name="mfTO2SE2 - [0: FrO2 / S Bank 2 Element Temperature Without A / D Conversion | 1: FrO2 / S Bank 2 Element Temperature With A / D Conversion]"/>
+			<bit position="0" name="mfTO2SE1 - [0: FrO2 / S Bank 1 Element Temperature Without A / D Conversion | 1: FrO2 / S Bank 1 Element Temperature With A / D Conversion]"/>
 		<description><!--mOBDSW3-->Toggle On/Off</description>
 	</table>
 
 	<table type="BitwiseSwitch" name="OBD Function Choice Flags 4" category="Options//Flags" userlevel="3">
-	0x80		<bit position="7" name="mfCSMSEL - [0: Cold Strategy Diagnosis_TPTFBYA Method | 1: Cold Strategy Diagnosis_TP Method]"/>
-	0x40		<bit position="6" name="mfMBTHMPA - [0: Coolant Temperature Estimation Model Thermostat Diagnosis_Palace | 1: Coolant Temperature Estimation Model Thermostat Diagnosis_Palace]"/>
-	0x20		<bit position="5" name="mfMBTHMD - [0: THermostat Diagnosis Permission Failure Code Separation Vs. | 1: Blow E Key Estimation Model Base Thermostat Diagnosis Permission]"/>
-	0x10		<bit position="4" name="mfFMRKMR2 - KBLRC Addition Prohibition Condition Choice Flag [0: Do Not Add KBLRC During OPEN_LOOP | 1: Do Not Add KBLRC Only In KMR Area]"/>
-	0x08		<bit position="3" name="mfVTCSLW - [0: Other Than Right | 1: VTC Slow Response State Reproduction]"/>
-	0x04		<bit position="2" name="mfVTCTGE - [0: Other Than Right | 1: VTC Target Error State Reproduction]"/>
-	0x02		<bit position="1" name="mfIDLVTC - [0: Do Not Allow Drive During VTC Idle | 1: Allow Drive During VTC Idle]"/>
-	0x01		<bit position="0" name="mfCSSMPM - [0: Cold Strategy Parameter Calculation Not Permitted | 1: Cold Strategy Parameter Calculation Permitted]"/>
+			<bit position="7" name="mfCSMSEL - [0: Cold Strategy Diagnosis_TPTFBYA Method | 1: Cold Strategy Diagnosis_TP Method]"/>
+			<bit position="6" name="mfMBTHMPA - [0: Coolant Temperature Estimation Model Thermostat Diagnosis_Palace | 1: Coolant Temperature Estimation Model Thermostat Diagnosis_Palace]"/>
+			<bit position="5" name="mfMBTHMD - [0: THermostat Diagnosis Permission Failure Code Separation Vs. | 1: Blow E Key Estimation Model Base Thermostat Diagnosis Permission]"/>
+			<bit position="4" name="mfFMRKMR2 - KBLRC Addition Prohibition Condition Choice Flag [0: Do Not Add KBLRC During OPEN_LOOP | 1: Do Not Add KBLRC Only In KMR Area]"/>
+			<bit position="3" name="mfVTCSLW - [0: Other Than Right | 1: VTC Slow Response State Reproduction]"/>
+			<bit position="2" name="mfVTCTGE - [0: Other Than Right | 1: VTC Target Error State Reproduction]"/>
+			<bit position="1" name="mfIDLVTC - [0: Do Not Allow Drive During VTC Idle | 1: Allow Drive During VTC Idle]"/>
+			<bit position="0" name="mfCSSMPM - [0: Cold Strategy Parameter Calculation Not Permitted | 1: Cold Strategy Parameter Calculation Permitted]"/>
 		<description><!--mOBDSW4-->Toggle On/Off</description>
 	</table>
-
-	<table type="BitwiseSwitch" name="DTC 1" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="6" name="P0100 - MAF Sensor Circuit Range/Performance Error"/>
-		<bit position="29" name="P0115 - Engine Coolant Temperature Circuit Malfunction"/>
-		<bit position="28" name="P0500 - Vehicle Speed Sensor Malfunction"/>
-		<bit position="25" name="P1211 - ABS/TCS Control Unit"/>
-		<bit position="24" name="P1106 - Barometric Pressure Sensor Range/Performance Problem"/>
-		<bit position="23" name="P1320 - Ignition Signal"/>
-		<bit position="18" name="P0235 - Turbocharger Boost Sensor A Circuit Malfunction"/>
-		<bit position="16" name="P1217 - Engine Coolant Temperature"/>
-		<bit position="13" name="P0130 - O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)"/>
-		<bit position="12" name="P0325 - Knock Sensor Circuit Malfunction"/>
-		<bit position="15" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="9" name="P1148 - Closed Loop, Bank 1"/>
-		<bit position="8" name="P1168 - Closed Loop, Bank 2"/>
-		<bit position="7" name="P0110 - Intake Air Temperature Circuit Malfunction"/>
-		<bit position="4" name="P1212 - ABS/TCS Communication Line"/>
-		<description><!--zDTC1--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 2" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="23" name="P0308 - Cylinder 8 Misfire Detected"/>
-		<bit position="22" name="P0307 - Cylinder 7 Misfire Detected"/>
-		<bit position="21" name="P0306 - Cylinder 6 Misfire Detected"/>
-		<bit position="20" name="P0305 - Cylinder 5 Misfire Detected"/>
-		<bit position="19" name="P0304 - Cylinder 4 Misfire Detected"/>
-		<bit position="18" name="P0303 - Cylinder 3 Misfire Detected"/>
-		<bit position="17" name="P0302 - Cylinder 2 Misfire Detected"/>
-		<bit position="16" name="P0301 - Cylinder 1 Misfire Detected"/>
-		<bit position="10" name="P0170 - Fuel Trim Malfunction (Bank 1)"/>
-		<bit position="15" name="P0300 - Random/Multiple Cylinder Misfire Detected"/>
-		<bit position="14" name="P0420 - Catalyst System Efficiency Below Threshold (Bank 1)"/>
-		<bit position="13" name="P0430 - Catalyst System Efficiency Below Threshold (Bank 2)"/>
-		<bit position="7" name="P1490 - Vacuum Cut Valve Bypass Valve"/>
-		<bit position="6" name="P0335 - Crankshaft Position Sensor A Circuit Malfunction"/>
-		<bit position="2" name="P0173 - Fuel Trim Malfunction (Bank 2)"/>
-		<description><!--zDTC2--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 3" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P0135 - O2 Sensor Heater Circuit Malfunction (Bank 1 Sensor 1)"/>
-		<bit position="24" name="P0125 - Insufficient Coolant Temperature for Closed Loop Fuel Control"/>
-		<bit position="21" name="P1706 - PNP Switch"/>
-		<bit position="21" name="P0850 - Park/Neutral Switch Input Circuit"/>
-		<bit position="17" name="P0443 - Evaporative Emission Control System Purge Control Valve Circuit Malfunction"/>
-		<bit position="15" name="P0705 - Transmission Range Sensor Circuit malfunction (PRNDL Input)"/>
-		<bit position="14" name="P0720 - Output Speed Sensor Circuit Malfunction"/>
-		<bit position="13" name="P0731 - Gear 1 Incorrect ratio"/>
-		<bit position="12" name="P0732 - Gear 2 Incorrect ratio"/>
-		<bit position="11" name="P0733 - Gear 3 Incorrect ratio"/>
-		<bit position="10" name="P0734 - Gear 4 Incorrect ratio"/>
-		<bit position="9" name="P0744 - Torque Converter Clutch Circuit Intermittent"/>
-		<bit position="8" name="P0750 - Shift Solenoid A Malfunction"/>
-		<bit position="7" name="P0755 - Shift Solenoid B Malfunction"/>
-		<bit position="5" name="P1760 - Overrun Clutch S/V"/>
-		<bit position="4" name="P0740 - Torque Converter Clutch Circuit Malfuction"/>
-		<bit position="3" name="P0745 - Pressure Control Solenoid Malfunction"/>
-		<bit position="2" name="P1705 - Throttle Position Sensor"/>
-		<bit position="1" name="P0725 - Engine Speed input Circuit Malfunction"/>
-		<bit position="0" name="P0710 - Transmission Fluid Temperature Sensor Circuit Malfunction"/>
-		<description><!--zDTC3--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 4" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="3" name="P1220 - Fuel Pump Control Module"/>
-		<bit position="21" name="P1610 - Lock Mode: Unregistered Key Used 5 Times. BCM Or ECU is Malfunctioning."/>
-		<bit position="20" name="P1611 - ID Discord: IMM-ECU. ID Verification Between BCM And ECU is NG. System Initialization is Required."/>
-		<bit position="19" name="P1612 - Chain of ECM-IMME: Communication Impossible Between ECU and BCM."/>
-		<bit position="18" name="P1613 - NATS Malfunction"/>
-		<bit position="17" name="P1614 - Chain of IMMU-KEY: BCM Cannot Receive the Key ID Signal"/>
-		<bit position="16" name="P1615 - Difference of Key: BCM Can Receive the Key ID Signal but the Result of ID Verification Between Key ID and BCM is NG."/>
-		<bit position="23" name="P1134 - HO2S Transition Time Ratio Bank 1 Sensor 1"/>
-		<bit position="22" name="P1154 - HO2S Transition Time Ratio Bank 2 Sensor 1"/>
-		<bit position="10" name="P0172 - System too Rich (Bank 1)"/>
-		<bit position="9" name="P0171 - System too Lean (Bank 1)"/>
-		<bit position="2" name="P1444 - Purge Volume Control/V"/>
-		<bit position="1" name="P1446 - Vent Control Valve"/>
-		<bit position="0" name="P0455 - Evaporative Emission Control System Leak Detected (gross leak)"/>
-		<bit position="5" name="P0217 - Engine Overtemp Condition"/>
-		<bit position="2" name="P0443 - Evaporative Emission Control System Purge Control Valve Circuit Malfunction"/>
-		<bit position="1" name="P0448 - Evaporative Emission Control System Vent Control Circuit Shorted"/>
-		<description><!--zDTC4--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 5" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P1448 - Vent Control Valve"/>
-		<bit position="31" name="P0447 - Evaporative Emission Control System Vent Control Circuit Open"/>
-		<bit position="29" name="P1491 - Vacuum Cut Valve Bypass Valve"/>
-		<bit position="20" name="P0134 - O2 Sensor Circuit No Activity Detected (Bank I Sensor 1)"/>
-		<bit position="4" name="P1111 - Intake Valve Timing Control Solenoid Valve"/>
-		<bit position="3" name="P1136 - Intake Valve Timing Control Solenoid Valve"/>
-		<bit position="4" name="P0075 - Intake Valve Control Solenoid Circuit (Bank 1)"/>
-		<description><!--zDTC5--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 6" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="5" name="P1778 - Shift Change Signal"/>
-		<bit position="28" name="P0715 - Input/Turbine Speed Sensor Circuit Malfunction"/>
-		<bit position="27" name="P1777 - Shift Change Signal"/>
-		<bit position="26" name="P1791 - VIAS Control Solenoid Valve"/>
-		<bit position="25" name="P0740 - Torque Converter Clutch Circuit Malfuction"/>
-		<bit position="24" name="P0745 - Pressure Control Solenoid Malfunction"/>
-		<bit position="31" name="P1800 - VIAS Control Solenoid Valve"/>
-		<bit position="21" name="P0744 - Torque Converter Clutch Circuit Intermittent"/>
-		<bit position="20" name="P0746 - Pressure Control Solenoid Performance or Stuck Off"/>
-		<bit position="19" name="P0776 - Pressure Control Solenoid 'B' Performance or Stuck Off"/>
-		<bit position="18" name="P0778 - Pressure Control Solenoid 'B' Electrical"/>
-		<bit position="17" name="P1740 - Input Clutch Solenoid Valve"/>
-		<bit position="5" name="P0461 - Fuel Level Sensor Circuit Range/Performance"/>
-		<bit position="4" name="P0460 - Fuel Level Sensor Circuit Malfunction"/>
-		<bit position="3" name="P1464 - Fuel Level Sensor Circuit Ground Signal"/>
-		<description><!--zDTC6--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 7" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="5" name="P0340 - Camshaft Position Sensor Circuit Malfunction"/>
-		<bit position="28" name="P0340 - Camshaft Position Sensor Circuit Malfunction"/>
-		<bit position="27" name="P0340 - Camshaft Position Sensor Circuit Malfunction"/>
-		<bit position="26" name="P0335 - Crankshaft Position Sensor A Circuit Malfunction"/>
-		<bit position="25" name="P0335 - Crankshaft Position Sensor A Circuit Malfunction"/>
-		<bit position="24" name="P0335 - Crankshaft Position Sensor A Circuit Malfunction"/>
-		<bit position="8" name="P0550 - Power Steering Pressure Sensor Circuit Malfunction"/>
-		<bit position="7" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="6" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="5" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="4" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="3" name="U1001 - CAN Communication Line"/>
-		<bit position="2" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="1" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="0" name="U1000 - CAN Communication Line"/>
-		<description><!--zDTC7--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 8" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="15" name="P0121 - Throttle/Petal Position Sensor/Switch A Circuit Range/Performance Problem"/>
-		<bit position="14" name="P0121 - Throttle/Petal Position Sensor/Switch A Circuit Range/Performance Problem"/>
-		<bit position="13" name="P0121 - Throttle/Petal Position Sensor/Switch A Circuit Range/Performance Problem"/>
-		<bit position="8" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
-		<bit position="12" name="P2004 - Tumble Control Valve Stuck Open"/>
-		<bit position="9" name="P2014 - Tumble Control Valve Position Sensor Circuit"/>
-		<bit position="7" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
-		<bit position="6" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
-		<bit position="5" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
-		<bit position="4" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="1" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
-		<bit position="0" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction"/>
-		<description><!--zDTC8--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 9" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P1122 - Electronic Throttle Control Actuator"/>
-		<bit position="29" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="28" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="27" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="26" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="25" name="P1122 - Electronic Throttle Control Actuator"/>
-		<bit position="31" name="P2101 - Electric Throttle Control Function"/>
-		<bit position="25" name="P2101 - Electric Throttle Control Function"/>
-		<bit position="24" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="19" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="18" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="17" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="16" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="20" name="P1700 - Transmission Control Module (RAM)"/>
-		<bit position="15" name="P1123 - Throttle Control Motor Relay"/>
-		<bit position="14" name="P1123 - Throttle Control Motor Relay"/>
-		<bit position="11" name="P1122 - Electronic Throttle Control Actuator"/>
-		<bit position="10" name="P1720 - Vehicle Speed Sensor- A/T Output"/>
-		<bit position="9" name="P1715 - Input Speed Sensor (Turbine Revolution Sensor)"/>
-		<bit position="13" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="12" name="P1780 - Shift Change Signal"/>
-		<bit position="5" name="P1805 - Brake Switch/Circuit 2"/>
-		<bit position="1" name="P0650 - Malfunction Indicator Lamp (MIL) Control Circuit Malfunction"/>
-		<bit position="0" name="P0650 - Malfunction Indicator Lamp (MIL) Control Circuit Malfunction"/>
-		<description><!--zDTC9--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 10" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P1121 - Electronic Throttle Control Actuator"/>
-		<bit position="30" name="P1121 - Electronic Throttle Control Actuator"/>
-		<bit position="29" name="P1121 - Electronic Throttle Control Actuator"/>
-		<bit position="28" name="P1065 - ECM Power Supply Circuit"/>
-		<bit position="26" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="25" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="31" name="P2119 - Electric Throttle Control Actuator"/>
-		<bit position="30" name="P2119 - Electric Throttle Control Actuator"/>
-		<bit position="29" name="P2119 - Electric Throttle Control Actuator"/>
-		<bit position="28" name="P0603 - Internal Control Module Keep Alive Memory (KAM) Error"/>
-		<bit position="23" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="22" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="19" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="18" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="17" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="16" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="12" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="3" name="P1110 - Intake Valve Timing Control (Bank 1)"/>
-		<bit position="2" name="P1135 - Intake Valve Timing Control (Bank 2)"/>
-		<bit position="1" name="P1110 - Intake Valve Timing Control (Bank 1)"/>
-		<bit position="0" name="P1135 - Intake Valve Timing Control (Bank 2)"/>
-		<description><!--zDTC10--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 11" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="30" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="29" name="P1564 - ASCD Steering Switch"/>
-		<bit position="28" name="P1572 - ASCD Brake Switch"/>
-		<bit position="27" name="P1574 - ASCD Vehicle Speed Sensor"/>
-		<bit position="26" name="P1568 - ICC (Intelligent Cruise Control)"/>
-		<bit position="25" name="P0605 - Internal Control Module Read Only Memory (ROM) Error"/>
-		<bit position="24" name="U1000 - CAN Communication Line"/>
-		<bit position="24" name="U1001 - CAN Communication Line"/>
-		<bit position="15" name="P1110 - Intake Valve Timing Control (Bank 1)"/>
-		<bit position="14" name="P1135 - Intake Valve Timing Control (Bank 2)"/>
-		<bit position="10" name="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2)"/>
-		<bit position="9" name="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2)"/>
-		<bit position="8" name="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2)"/>
-		<bit position="7" name="P1271 - AFR No activity (Bank 1 Sensor 1)"/>
-		<bit position="6" name="P1272 - AFR Sensor No activity (Bank 1 Sensor 1)"/>
-		<bit position="5" name="P1273 - AFR Sensor Lean shift (Bank 1 Sensor 1)"/>
-		<bit position="4" name="P1274 - AFR Sensor Rich shift (Bank 1 Sensor 1)"/>
-		<bit position="2" name="P1276 - AFR Sensor High voltage (Bank 1 Sensor 1)"/>
-		<bit position="7" name="P0131 - O2 Sensor Circuit Low Voltage (Bank 1 Sensor 1)"/>
-		<bit position="6" name="P0132 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 1)"/>
-		<bit position="5" name="P2A00 - AFR Sensor 1 Bank 1 Circuit Range/Performance"/>
-		<bit position="4" name="P2A00 - AFR Sensor 1 Bank 1 Circuit Range/Performance"/>
-		<bit position="2" name="P0130 - O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)"/>
-		<description><!--zDTC11--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 12" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P1281 - AFR Sensor (Bank 2 Sensor 1)"/>
-		<bit position="30" name="P1282 - AFR Sensor (Bank 2 Sensor 1)"/>
-		<bit position="29" name="P1283 - Lean Bank 2"/>
-		<bit position="28" name="P1284 - AFR Sensor (Bank 2 Sensor 1)"/>
-		<bit position="26" name="P1286 - AFR Sensor (Bank 2 Sensor 1)"/>
-		<bit position="23" name="P0143 - O2 Sensor Circuit Low Voltage (Bank I Sensor 3)"/>
-		<bit position="22" name="P0144 - O2 Sensor Circuit High Voltage (Bank I Sensor 3)"/>
-		<bit position="21" name="P0145 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 3)"/>
-		<bit position="20" name="P0146 - O2 Sensor Circuit No Activity Detected (Bank I Sensor 3)"/>
-		<bit position="18" name="P0043 - HO2S Heater Control Circuit Low (Bank 1 Sensor 3)"/>
-		<bit position="17" name="P0044 - HO2S Heater Control Circuit High (Bank 1 Sensor 3)"/>
-		<bit position="15" name="P1716 - Turbing Revolution Sensor"/>
-		<bit position="14" name="P1730 - A/T Interlock"/>
-		<bit position="13" name="P1769 - High and Low Reverse Clutch Solenoid Valve Function"/>
-		<bit position="12" name="P1767 - High and Low Reverse Clutch Solenoid Valve"/>
-		<bit position="11" name="P1764 - Direct Clutch Solenoid Valve Function"/>
-		<bit position="10" name="P1762 - Direct Clutch Solenoid Valve"/>
-		<bit position="9" name="P1759 - Front Brake Solenoid Valve Function"/>
-		<bit position="8" name="P1757 - Front Brake Solenoid Valve"/>
-		<bit position="7" name="P1754 - Input Clutch Solenoid Valve Function"/>
-		<bit position="6" name="P1752 - Input Clutch Solenoid Valve"/>
-		<bit position="5" name="P1774 - Low Coast Brake Solenoid Valve Function"/>
-		<bit position="4" name="P1772 - Low Coast Brake Solenoid Valve"/>
-		<bit position="3" name="P0700 - Transmission Control System Malfunction"/>
-		<description><!--zDTC12--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 13" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
-		<bit position="30" name="P0153 - O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)"/>
-		<bit position="29" name="P1143 - Heated O2 Sensor 1 Lean Shift Monitoring Bank 1"/>
-		<bit position="28" name="P1163 - Heated O2 Sensor 1 Lean Shift Monitoring Bank 2"/>
-		<bit position="27" name="P1144 - Heated O2 Sensor 1 Rich Shift Monitoring Bank 1"/>
-		<bit position="26" name="P1164 - Heated O2 Sensor 1 Rich Shift Monitoring Bank 2"/>
-		<bit position="25" name="P0134 - O2 Sensor Circuit No Activity Detected (Bank I Sensor 1)"/>
-		<bit position="24" name="P0154 - O2 Sensor Circuit No Activity Detected (Bank 2 Sensor 1)"/>
-		<bit position="17" name="P0506 - Idle Control System RPM Lower Than Expected"/>
-		<bit position="16" name="P0507 - Idle Control System RPM Higher Than Expected"/>
-		<bit position="23" name="P0132 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 1)"/>
-		<bit position="22" name="P0152 - O2 Sensor Circuit High Voltage (Bank 2 Sensor 1)"/>
-		<bit position="21" name="P0032 - Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 1)"/>
-		<bit position="20" name="P0052 - Heated O2 Sensor Heater Control Circuit High (Bank 2 Sensor 1)"/>
-		<bit position="19" name="P0031 - Heated O2 Sensor Heater Control Circuit Low (Bank 1 Sensor 1)"/>
-		<bit position="18" name="P0051 - Heated O2 Sensor Heater Control Circuit Low (Bank 2 Sensor 1)"/>
-		<bit position="15" name="P0139 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 2)"/>
-		<bit position="14" name="P0159 - O2 Sensor Circuit Slow Response (Bank 2 Sensor 2)"/>
-		<bit position="13" name="P1146 - Heated O2 Sensor 2 Minimum Voltage Monitoring Bank 1"/>
-		<bit position="11" name="P1147 - Heated O2 Sensor 2 Maximum Voltage Monitoring Bank 1"/>
-		<bit position="12" name="P1166 - Heated O2 Sensor 2 Minimum Voltage Monitoring Bank 2"/>
-		<bit position="10" name="P1167 - Heated O2 Sensor 2 Maximum Voltage Monitoring Bank 2"/>
-		<bit position="9" name="P0138 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 2)"/>
-		<bit position="8" name="P0158 - O2 Sensor Circuit High Voltage (Bank 2 Sensor 2)"/>
-		<bit position="13" name="P0138 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 2)"/>
-		<bit position="11" name="P0137 - O2 Sensor Circuit Low Voltage (Bank 1 Sensor 2)"/>
-		<bit position="7" name="P0038 - Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 2)"/>
-		<bit position="6" name="P0058 - Heated O2 Sensor Heater Control Circuit High (Bank 2 Sensor 2)"/>
-		<bit position="5" name="P0037 - Heated O2 Sensor Heater Control Circuit Low (Bank 1 Sensor 2)"/>
-		<bit position="4" name="P0057 - Heated O2 Sensor Heater Control Circuit Low (Bank 2 Sensor 2)"/>
-		<bit position="3" name="P0327 - Knock Sensor 1 Circuit Low Input (Bank 1 or Single Sensor)"/>
-		<bit position="2" name="P0328 - Knock Sensor 1 Circuit High Input (Bank 1 or Single Sensor)"/>
-		<bit position="1" name="P0332 - Knock Sensor 2 Circuit Low Input (Bank 2)"/>
-		<bit position="0" name="P0333 - Knock Sensor 2 Circuit High Input (Bank 2)"/>
-		<description><!--zDTC13--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 14" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P0121 - Throttle/Petal Position Sensor/Switch A Circuit Range/Performance Problem"/>
-		<bit position="30" name="P0122 - Throttle/Petal Position Sensor/Switch A Circuit Low Input"/>
-		<bit position="29" name="P0123 - Throttle/Petal Position Sensor/Switch A Circuit High Input"/>
-		<bit position="28" name="P0101 - Mass or Volume Air Flow Circuit Range/Performance Problem"/>
-		<bit position="27" name="P0102 - Mass or Volume Air Flow Circuit Low Input"/>
-		<bit position="26" name="P0103 - Mass or Volume Air Flow Circuit High Input"/>
-		<bit position="24" name="P0350 - Ignition Coil Primary/Secondary Circuit Malfunction"/>
-		<bit position="25" name="P1102 - Mass Air Flow Sensor Function Heater"/>
-		<bit position="23" name="P0117 - Engine Coolant Temperature Circuit Low Input"/>
-		<bit position="22" name="P0118 - Engine Coolant Temperature Circuit High Input"/>
-		<bit position="19" name="P0112 - Intake Air Temperature Circuit Low Input"/>
-		<bit position="18" name="P0113 - Intake Air Temperature Circuit High Input"/>
-		<bit position="17" name="P0127 - Intake Air Temperature Too High"/>
-		<bit position="16" name="P0451 - Evaporative Emission Control System Pressure Sensor Range/Performance"/>
-		<bit position="15" name="P0181 - Fuel Temperature Sensor A Circuit Range/Performance"/>
-		<bit position="14" name="P0182 - Fuel Temperature Sensor A Circuit Low Input"/>
-		<bit position="13" name="P0183 - Fuel Temperature Sensor A Circuit High Input"/>
-		<bit position="12" name="P0462 - Fuel Level Sensor Circuit Low Input"/>
-		<bit position="11" name="P0463 - Fuel Level Sensor Circuit High Input"/>
-		<bit position="10" name="P0444 - Evaporative Emission Control System Purge Control Valve Circuit Open"/>
-		<bit position="9" name="P0445 - Evaporative Emission Control System Purge Control Valve Circuit Shorted"/>
-		<bit position="8" name="P0128 - Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)"/>
-		<bit position="7" name="P0172 - System too Rich (Bank 1)"/>
-		<bit position="6" name="P0171 - System too Lean (Bank 1)"/>
-		<bit position="5" name="P0175 - System too Rich (Bank 2)"/>
-		<bit position="4" name="P0174 - System too Lean (Bank 2)"/>
-		<bit position="3" name="P0011 - Intake Valve Timing Control Performance Bank 1"/>
-		<bit position="2" name="P0021 - Intake Valve Timing Control Performance Bank 2"/>
-		<description><!--zDTC14--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 15" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P0106 - Manifold Absolute Pressure/Barometric Pressure Circuit Range/Performance Problem"/>
-		<bit position="30" name="P0107 - Manifold Absolute Pressure/Barometric Pressure Circuit Low Input"/>
-		<bit position="29" name="P0108 - Manifold Absolute Pressure/Barometric Pressure Circuit High Input"/>
-		<bit position="27" name="P0452 - Evaporative Emission Control System Pressure Sensor Low Input"/>
-		<bit position="26" name="P0453 - Evaporative Emission Control System Pressure Sensor High Input"/>
-		<bit position="25" name="P0441 - Evaporative Emission Control System Incorrect Purge Flow"/>
-		<bit position="24" name="P0447 - Evaporative Emission Control System Vent Control Circuit Open"/>
-		<bit position="17" name="P0197 - Engine Oil Temperature Sensor Low"/>
-		<bit position="16" name="P0198 - Engine Oil Temperature Sensor High"/>
-		<bit position="23" name="P0456 - Evaporative Emission Control System Leak Detected (very small leak)"/>
-		<bit position="21" name="P0442 - Evaporative Emission Control System Leak Detected (small leak)"/>
-		<bit position="22" name="P1456 - EVAP Control System"/>
-		<bit position="20" name="P1442 - Canister Control Vacuum Check Switch"/>
-		<bit position="19" name="P0505 - Idle Control System Malfunction"/>
-		<bit position="15" name="P0228 - Throttle/Petal Position Sensor/Switch C Circuit High Input"/>
-		<bit position="14" name="P0227 - Throttle/Petal Position Sensor/Switch C Circuit Low Input"/>
-		<bit position="13" name="P1228 - Accelerator Pedal Position Sensor 2"/>
-		<bit position="12" name="P1227 - Accelerator Pedal Position Sensor 2"/>
-		<bit position="11" name="P0226 - Throttle/Petal Position Sensor/Switch C Circuit Range/Performance Problem"/>
-		<bit position="8" name="P1229 - Sensor Power Supply"/>
-		<bit position="15" name="P2123 - Accelerator Pedal Position Sensor"/>
-		<bit position="14" name="P2122 - Accelerator Pedal Position Sensor"/>
-		<bit position="13" name="P2128 - Accelerator Pedal Position Sensor 2"/>
-		<bit position="12" name="P2127 - Accelerator Pedal Position Sensor 2"/>
-		<bit position="11" name="P2138 - A/F Sensor 1 Bank 1 Circuit Range/Performance"/>
-		<bit position="10" name="P0196 - Engine Oil Temperature Sensor Range/Performance"/>
-		<bit position="9" name="P0456 - Evaporative Emission Control System Leak Detected (very small leak)"/>
-		<bit position="8" name="P0643 - A/C Clutch Relay Control Circuit"/>
-		<bit position="7" name="P0223 - Throttle/Pedal Position Sensor/Switch B Circuit High Input"/>
-		<bit position="6" name="P0222 - Throttle/Pedal Position Sensor/Switch B Circuit Low Input"/>
-		<bit position="5" name="P1224 - Throttle Position Sensor 2"/>
-		<bit position="4" name="P1223 - Throttle Position Sensor 2"/>
-		<bit position="3" name="P0221 - Throttle/Petal Position Sensor/Switch B Circuit Range/Performance Problem"/>
-		<bit position="1" name="P1225 - Closed Throttle Position Learning"/>
-		<bit position="0" name="P1226 - Closed Throttle Position Learning"/>
-		<bit position="5" name="P0123 - Throttle/Petal Position Sensor/Switch A Circuit High Input"/>
-		<bit position="4" name="P0122 - Throttle/Petal Position Sensor/Switch A Circuit Low Input"/>
-		<bit position="3" name="P2135 - Throttle Position Sensor"/>
-		<description><!--zDTC15--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 16" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="7" name="P1126 - Throttle Control Motor Relay"/>
-		<bit position="30" name="P1124 - Throttle Control Motor Relay"/>
-		<bit position="29" name="P1127 - Throttle Control Motor"/>
-		<bit position="28" name="P1128 - Throttle Control Motor"/>
-		<bit position="27" name="P1129 - Swirl Control Valve Control Solenoid Valve"/>
-		<bit position="31" name="P2100 - Throttle Control Motor Relay"/>
-		<bit position="30" name="P2103 - Throttle Control Motor Relay"/>
-		<bit position="28" name="P2118 - Throttle Control Motor"/>
-		<bit position="23" name="P1278 - A/F Sensor Slow response (Bank 1 Sensor 1)"/>
-		<bit position="22" name="P1279 - A/F Sensor Slow response (Bank 1 Sensor 1)"/>
-		<bit position="21" name="P1288 - A/F Sensor (Bank 2 Sensor 1)"/>
-		<bit position="20" name="P1289 - A/F Sensor (Bank 2 Sensor 1)"/>
-		<bit position="19" name="P1031 - Air/Fuel Ratio Sensor Heater (Bank 1)"/>
-		<bit position="18" name="P1032 - Air/Fuel Ratio Sensor Heater (Bank 1)"/>
-		<bit position="17" name="P1051 - Air/Fuel Ratio Sensor Heater (Bank 1)"/>
-		<bit position="16" name="P1052 - Air/Fuel Ratio Sensor Heater (Bank 1)"/>
-		<bit position="23" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
-		<bit position="22" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
-		<bit position="19" name="P0031 - Heated O2 Sensor Heater Control Circuit Low (Bank 1 Sensor 1)"/>
-		<bit position="18" name="P0032 - Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 1)"/>
-		<bit position="15" name="P1278 - A/F Sensor Slow response (Bank 1 Sensor 1)"/>
-		<bit position="14" name="P1279 - A/F Sensor Slow response (Bank 1 Sensor 1)"/>
-		<bit position="13" name="P1288 - A/F Sensor (Bank 2 Sensor 1)"/>
-		<bit position="12" name="P1289 - A/F Sensor (Bank 2 Sensor 1)"/>
-		<bit position="15" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
-		<bit position="14" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)"/>
-		<description><!--zDTC16--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 17" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="18" name="P0840 - Transmission Fluid Pressure Sensor/Switch 'A' Circuit"/>
-		<bit position="17" name="P0845 - Transmission Fluid Pressure Sensor/Switch 'B' Circuit"/>
-		<bit position="16" name="P0841 - Transmission Fluid Pressure Sensor/Switch 'A' Circuit Range/Performance"/>
-		<bit position="15" name="P1557 - Battery Temperature Sensor Low Input (Below 0.16V)"/>
-		<bit position="14" name="P1556 - Battery Temperature Sensor High Input (Above 4.84V)"/>
-		<bit position="12" name="P1554 - Battery Current Sensor Circuit Performance"/>
-		<bit position="11" name="P1553 - Battery Current Sensor Circuit Performance"/>
-		<bit position="10" name="P1552 - Battery Current Sensor Circuit High Input"/>
-		<bit position="9" name="P1551 - Battery Current Sensor Circuit Low Input"/>
-		<bit position="8" name="P1550 - Battery Current Sensor Circuit Range/Performance"/>
-		<bit position="2" name="P0451 - Evaporative Emission Control System Pressure Sensor Range/Performance"/>
-		<bit position="0" name="U1010 - CAN Communication Bus"/>
-		<description><!--zDTC17--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 18" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="9" name="P1422 - EVAP Small Leak"/>
-		<bit position="8" name="P1421 - Cold Start Control"/>
-		<description><!--zDTC18--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 19" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="2" name="P0130 - O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)"/>
-		<description><!--zDTC19--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 20" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="16" name="P2423"/>
-		<description><!--zDTC20--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 21" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="3" name="P0116 - Engine Coolant Temperature Circuit Range/Performance Problem"/>
-		<description><!--zDTC21--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 22" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="6" name="PC164"/>
-		<bit position="5" name="PC140"/>
-		<bit position="4" name="PC101"/>
-		<bit position="1" name="P0139 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 2)"/>
-		<description><!--zDTC22--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 23" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="2" name="P050B"/>
-		<bit position="1" name="P050A - Cold start idle air control system performance"/>
-		<bit position="0" name="P050E - Cold start engine exhaust temperature too low"/>
-		<description><!--zDTC23--></description>
-	</table>
-
-	<table type="BitwiseSwitch" name="DTC 24" category="Options//DTCs//Lists" storagetype="uint32">
-		<bit position="6" name="P015B"/>
-		<bit position="28" name="P015A"/>
-		<bit position="26" name="P014D"/>
-		<bit position="24" name="P014C"/>
-		<description><!--zDTC24--></description>
-	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 1" category="Options//DTCs//Lists" storagetype="uint32">
+  	  		<bit position="4" name="P1212 - ABS/TCS Communication Line" />
+  	  		<bit position="8" name="P1168 - Closed Loop, Bank 2" />
+  	  		<bit position="9" name="P1148 - Closed Loop, Bank 1" />
+  	  		<bit position="14" name="P0400 - Exhaust Gas Recirculation Flow Malfunction" />
+  	  		<bit position="15" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  		<bit position="16" name="P1217 - Engine Coolant Temperature" />
+  	  		<bit position="25" name="P1211 - ABS/TCS Control Unit" />
+  	  		<bit position="28" name="P0500 - Vehicle Speed Sensor Malfunction" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 2" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="2" name="P0173 - Fuel Trim Malfunction (Bank 2)" />
+  	  	<bit position="6" name="P0335 - Crankshaft Position Sensor A Circuit Malfunction" />
+  	  	<bit position="10" name="P0170 - Fuel Trim Malfunction (Bank 1)" />
+  	  	<bit position="13" name="P0430 - Catalyst System Efficiency Below Threshold (Bank 2)" />
+  	  	<bit position="14" name="P0420 - Catalyst System Efficiency Below Threshold (Bank 1)" />
+  	  	<bit position="15" name="P0300 - Random/Multiple Cylinder Misfire Detected" />
+  	  	<bit position="16" name="P0301 - Cylinder 1 Misfire Detected" />
+  	  	<bit position="17" name="P0302 - Cylinder 2 Misfire Detected" />
+  	  	<bit position="18" name="P0303 - Cylinder 3 Misfire Detected" />
+  	  	<bit position="19" name="P0304 - Cylinder 4 Misfire Detected" />
+  	  	<bit position="20" name="P0305 - Cylinder 5 Misfire Detected" />
+  	  	<bit position="21" name="P0306 - Cylinder 6 Misfire Detected" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 3" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="0" name="P0710 - Transmission Fluid Temperature Sensor Circuit Malfunction" />
+  	  	<bit position="1" name="P0725 - Engine Speed input Circuit Malfunction" />
+  	  	<bit position="2" name="P1705 - Throttle Position Sensor" />
+  	  	<bit position="3" name="P0745 - Pressure Control Solenoid Malfunction" />
+  	  	<bit position="4" name="P0740 - Torque Converter Clutch Circuit Malfuction" />
+  	  	<bit position="5" name="P1760 - Overrun Clutch S/V" />
+  	  	<bit position="7" name="P0755 - Shift Solenoid B Malfunction" />
+  	  	<bit position="8" name="P0750 - Shift Solenoid A Malfunction" />
+  	  	<bit position="9" name="P0744 - Torque Converter Clutch Circuit Intermittent" />
+  	  	<bit position="10" name="P0734 - Gear 4 Incorrect ratio" />
+  	  	<bit position="11" name="P0733 - Gear 3 Incorrect ratio" />
+  	  	<bit position="12" name="P0732 - Gear 2 Incorrect ratio" />
+  	  	<bit position="13" name="P0731 - Gear 1 Incorrect ratio" />
+  	  	<bit position="14" name="P0720 - Output Speed Sensor Circuit Malfunction" />
+  	  	<bit position="15" name="P0705 - Transmission Range Sensor Circuit malfunction (PRNDL Input)" />
+  	  	<bit position="21" name="P0850 - Park/Neutral Switch Input Circuit" />
+  	  	<bit position="24" name="P0125 - Insufficient Coolant Temperature for Closed Loop Fuel Control" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 4" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="0" name="P0455 - Evaporative Emission Control System Leak Detected (gross leak)" />
+  	  	<bit position="1" name="P0448 - Evaporative Emission Control System Vent Control Circuit Shorted" />
+  	  	<bit position="2" name="P0443 - Evaporative Emission Control System Purge Control Valve Circuit Malfunction" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 5" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="3" name="P0081 - Intake Valve Control Solenoid Circuit (Bank 2)" />
+  	  	<bit position="4" name="P0075 - Intake Valve Control Solenoid Circuit (Bank 1)" />
+  	  	<bit position="7" name="P0403 - Exhaust Gas Recirculation Circuit Malfunction" />
+  	  	<bit position="10" name="P1402 - EGR System" />
+  	  	<bit position="31" name="P0447 - Evaporative Emission Control System Vent Control Circuit Open" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 6" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="4" name="P0460 - Fuel Level Sensor Circuit Malfunction" />
+  	  	<bit position="5" name="P0461 - Fuel Level Sensor Circuit Range/Performance" />
+  	  	<bit position="18" name="P0778 - Pressure Control Solenoid 'B' Electrical" />
+  	  	<bit position="19" name="P0776 - Pressure Control Solenoid 'B' Performance or Stuck Off" />
+  	  	<bit position="20" name="P0746 - Pressure Control Solenoid Performance or Stuck Off" />
+  	  	<bit position="21" name="P0744 - Torque Converter Clutch Circuit Intermittent" />
+  	  	<bit position="24" name="P0745 - Pressure Control Solenoid Malfunction" />
+  	  	<bit position="25" name="P0740 - Torque Converter Clutch Circuit Malfuction" />
+  	  	<bit position="28" name="P0715 - Input/Turbine Speed Sensor Circuit Malfunction" />
+  	  	<bit position="31" name="P1800 - VIAS Control Solenoid Valve" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 7" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="0" name="U1000 - CAN Communication Fault" />
+  	  	<bit position="1" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="2" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="3" name="U1001 - CAN Communication Line" />
+  	  	<bit position="4" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="5" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="6" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="7" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="8" name="P0550 - Power Steering Pressure Sensor Circuit Malfunction" />
+  	  	<bit position="24" name="P0335 - Crankshaft Position Sensor A Circuit Malfunction" />
+  	  	<bit position="25" name="P0335 - Crankshaft Position Sensor A Circuit Malfunction" />
+  	  	<bit position="26" name="P0335 - Crankshaft Position Sensor A Circuit Malfunction" />
+  	  	<bit position="27" name="P0340 - Camshaft Position Sensor Circuit Malfunction (Bank 1)" />
+  	  	<bit position="28" name="P0340 - Camshaft Position Sensor Circuit Malfunction (Bank 1)" />
+  	  	<bit position="29" name="P0340 - Camshaft Position Sensor Circuit Malfunction (Bank 1)" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 8" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="0" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction" />
+  	  	<bit position="1" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction" />
+  	  	<bit position="4" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="8" name="P0120 - Throttle/Petal Position Sensor/Switch A Circuit Malfunction" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 9" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="5" name="P1805 - Brake Switch/Circuit 2" />
+  	  	<bit position="9" name="P1715 - Input Speed Sensor (Turbine Revolution Sensor)" />
+  	  	<bit position="10" name="P1720 - Vehicle Speed Sensor - Automatic Transmission Output" />
+  	  	<bit position="12" name="P1780 - Shift Change Signal" />
+  	  	<bit position="16" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="17" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="18" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="19" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="25" name="P2101 - Electric Throttle Control Function" />
+  	  	<bit position="26" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="27" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="28" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="29" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="31" name="P2101 - Electric Throttle Control Function" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 10" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="12" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="16" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="17" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="18" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="19" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="22" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="23" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="25" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="26" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="28" name="P0603 - Internal Control Module Keep Alive Memory (KAM) Error" />
+  	  	<bit position="29" name="P2119 - Electric Throttle Control Actuator" />
+  	  	<bit position="30" name="P2119 - Electric Throttle Control Actuator" />
+  	  	<bit position="31" name="P2119 - Electric Throttle Control Actuator" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 11" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="2" name="P0130 - O2 Sensor Circuit Malfunction (Bank 1 Sensor 1)" />
+  	  	<bit position="4" name="P2A00 - AFR Sensor 1 Bank 1 Circuit Range/Performance" />
+  	  	<bit position="5" name="P2A00 - AFR Sensor 1 Bank 1 Circuit Range/Performance" />
+  	  	<bit position="6" name="P0132 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 1)" />
+  	  	<bit position="7" name="P0131 - O2 Sensor Circuit Low Voltage (Bank 1 Sensor 1)" />
+  	  	<bit position="8" name="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2)" />
+  	  	<bit position="9" name="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2)" />
+  	  	<bit position="10" name="P0345 - Camshaft Position Sensor 'A' Circuit (Bank 2)" />
+  	  	<bit position="24" name="U1000 - CAN Communication Fault" />
+  	  	<bit position="25" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="26" name="P1568 - ICC (Intelligent Cruise Control)" />
+  	  	<bit position="27" name="P1574 - ASCD Vehicle Speed Sensor" />
+  	  	<bit position="28" name="P1572 - ASCD Brake Switch" />
+  	  	<bit position="29" name="P1564 - ASCD Steering Switch" />
+  	  	<bit position="30" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<bit position="31" name="P0605 - Internal Control Module Read Only Memory (ROM) Error" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 12" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="3" name="P0700 - Transmission Control System Malfunction" />
+  	  	<bit position="4" name="P1772 - Low Coast Brake Solenoid Valve" />
+  	  	<bit position="5" name="P1774 - Low Coast Brake Solenoid Valve Function" />
+  	  	<bit position="6" name="P1752 - Input Clutch Solenoid Valve" />
+  	  	<bit position="7" name="P1754 - Input Clutch Solenoid Valve Function" />
+  	  	<bit position="8" name="P1757 - Front Brake Solenoid Valve" />
+  	  	<bit position="9" name="P1759 - Front Brake Solenoid Valve Function" />
+  	  	<bit position="10" name="P1762 - Direct Clutch Solenoid Valve" />
+  	  	<bit position="11" name="P1764 - Direct Clutch Solenoid Valve Function" />
+  	  	<bit position="12" name="P1767 - High and Low Reverse Clutch Solenoid Valve" />
+  	  	<bit position="13" name="P1769 - High and Low Reverse Clutch Solenoid Valve Function" />
+  	  	<bit position="14" name="P1730 - Automatic Transmission Interlock" />
+  	  	<bit position="15" name="P0717 - Input/Turbine Speed Sensor Circuit No Signal" />
+  	  	<bit position="26" name="P0150 - O2 Sensor Circuit Malfunction (Bank 2 Sensor 1)" />
+  	  	<bit position="28" name="P2A03 - AFR Sensor 1 Bank 2 Circuit Range/Performance" />
+  	  	<bit position="29" name="P2A03 - AFR Sensor 1 Bank 2 Circuit Range/Performance" />
+  	  	<bit position="30" name="P0152 - O2 Sensor Circuit High Voltage (Bank 2 Sensor 1)" />
+  	  	<bit position="31" name="P0151 - O2 Sensor Circuit Low Voltage (Bank 2 Sensor 1)" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 13" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="0" name="P0333 - Knock Sensor 2 Circuit High Input (Bank 2)" />
+  	  	<bit position="1" name="P0332 - Knock Sensor 2 Circuit Low Input (Bank 2)" />
+  	  	<bit position="2" name="P0328 - Knock Sensor 1 Circuit High Input (Bank 1 or Single Sensor)" />
+  	  	<bit position="3" name="P0327 - Knock Sensor 1 Circuit Low Input (Bank 1 or Single Sensor)" />
+  	  	<bit position="4" name="P0057 - Heated O2 Sensor Heater Control Circuit Low (Bank 2 Sensor 2)" />
+  	  	<bit position="5" name="P0037 - Heated O2 Sensor Heater Control Circuit Low (Bank 1 Sensor 2)" />
+  	  	<bit position="6" name="P0058 - Heated O2 Sensor Heater Control Circuit High (Bank 2 Sensor 2)" />
+  	  	<bit position="7" name="P0038 - Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 2)" />
+  	  	<bit position="8" name="P0158 - O2 Sensor Circuit High Voltage (Bank 2 Sensor 2)" />
+  	  	<bit position="9" name="P0138 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 2)" />
+  	  	<bit position="10" name="P0157 - O2 Sensor Circuit Low Voltage (Bank 2 Sensor 2)" />
+  	  	<bit position="11" name="P0137 - O2 Sensor Circuit Low Voltage (Bank 1 Sensor 2)" />
+  	  	<bit position="12" name="P0158 - O2 Sensor Circuit High Voltage (Bank 2 Sensor 2)" />
+  	  	<bit position="13" name="P0138 - O2 Sensor Circuit High Voltage (Bank 1 Sensor 2)" />
+  	  	<bit position="14" name="P0159 - O2 Sensor Circuit Slow Response (Bank 2 Sensor 2)" />
+  	  	<bit position="15" name="P0139 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 2)" />
+  	  	<bit position="16" name="P0507 - Idle Control System RPM Higher Than Expected" />
+  	  	<bit position="17" name="P0506 - Idle Control System RPM Lower Than Expected" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 14" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="2" name="P0021 - 'A' Camshaft Position - Timing Over-Advanced or System Performance (Bank 2)" />
+  	  	<bit position="3" name="P0011 - 'A' Camshaft Position - Timing Over-Advanced or System Performance (Bank 1)" />
+  	  	<bit position="4" name="P0174 - System too Lean (Bank 2)" />
+  	  	<bit position="5" name="P0175 - System too Rich (Bank 2)" />
+  	  	<bit position="6" name="P0171 - System too Lean (Bank 1)" />
+  	  	<bit position="7" name="P0172 - System too Rich (Bank 1)" />
+  	  	<bit position="8" name="P0128 - Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)" />
+  	  	<bit position="9" name="P0445 - Evaporative Emission Control System Purge Control Valve Circuit Shorted" />
+  	  	<bit position="10" name="P0444 - Evaporative Emission Control System Purge Control Valve Circuit Open" />
+  	  	<bit position="11" name="P0463 - Fuel Level Sensor Circuit High Input" />
+  	  	<bit position="12" name="P0462 - Fuel Level Sensor Circuit Low Input" />
+  	  	<bit position="13" name="P0183 - Fuel Temperature Sensor A Circuit High Input" />
+  	  	<bit position="14" name="P0182 - Fuel Temperature Sensor A Circuit Low Input" />
+  	  	<bit position="15" name="P0181 - Fuel Temperature Sensor A Circuit Range/Performance" />
+  	  	<bit position="16" name="P0451 - Evaporative Emission Control System Pressure Sensor Range/Performance" />
+  	  	<bit position="17" name="P0127 - Intake Air Temperature Too High" />
+  	  	<bit position="18" name="P0113 - Intake Air Temperature Circuit High Input" />
+  	  	<bit position="19" name="P0112 - Intake Air Temperature Circuit Low Input" />
+  	  	<bit position="20" name="P0406 - Exhaust Gas Recirculation Sensor A Circuit High" />
+  	  	<bit position="21" name="P0405 - Exhaust Gas Recirculation Sensor A Circuit Low" />
+  	  	<bit position="22" name="P0118 - Engine Coolant Temperature Circuit High Input" />
+  	  	<bit position="23" name="P0117 - Engine Coolant Temperature Circuit Low Input" />
+  	  	<bit position="24" name="P0350 - Ignition Coil Primary/Secondary Circuit Malfunction" />
+  	  	<bit position="26" name="P0103 - Mass or Volume Air Flow Circuit High Input" />
+  	  	<bit position="27" name="P0102 - Mass or Volume Air Flow Circuit Low Input" />
+  	  	<bit position="28" name="P0101 - Mass or Volume Air Flow Circuit Range/Performance Problem" />
+  	  	<bit position="29" name="P0123 - Throttle/Petal Position Sensor/Switch A Circuit High Input" />
+  	  	<bit position="30" name="P0122 - Throttle/Petal Position Sensor/Switch A Circuit Low Input" />
+  	  	<bit position="31" name="P0121 - Throttle/Petal Position Sensor/Switch A Circuit Range/Performance Problem" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 15" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="0" name="P1226 - Closed Throttle Position Learning" />
+  	  	<bit position="1" name="P1225 - Closed Throttle Position Learning" />
+  	  	<bit position="3" name="P2135 - Throttle Position Sensor" />
+  	  	<bit position="4" name="P0122 - Throttle/Petal Position Sensor/Switch A Circuit Low Input" />
+  	  	<bit position="5" name="P0123 - Throttle/Petal Position Sensor/Switch A Circuit High Input" />
+  	  	<bit position="6" name="P0222 - Throttle/Pedal Position Sensor/Switch B Circuit Low Input" />
+  	  	<bit position="7" name="P0223 - Throttle/Pedal Position Sensor/Switch B Circuit High Input" />
+  	  	<bit position="8" name="P0643 - Sensor Power Supply" />
+  	  	<bit position="11" name="P2138 - Accelerator Pedal Position Sensor" />
+  	  	<bit position="12" name="P2127 - Accelerator Pedal Position Sensor 2" />
+  	  	<bit position="13" name="P2128 - Accelerator Pedal Position Sensor 2" />
+  	  	<bit position="14" name="P2122 - Accelerator Pedal Position Sensor" />
+  	  	<bit position="15" name="P2123 - Accelerator Pedal Position Sensor" />
+  	  	<bit position="19" name="P0505 - Idle Control System Malfunction" />
+  	  	<bit position="21" name="P0442 - Evaporative Emission Control System Leak Detected (small leak)" />
+  	  	<bit position="22" name="P1456 - EVAP Control System" />
+  	  	<bit position="23" name="P0456 - Evaporative Emission Control System Leak Detected (very small leak)" />
+  	  	<bit position="24" name="P0447 - Evaporative Emission Control System Vent Control Circuit Open" />
+  	  	<bit position="25" name="P0441 - Evaporative Emission Control System Incorrect Purge Flow" />
+  	  	<bit position="26" name="P0453 - Evaporative Emission Control System Pressure Sensor High Input" />
+  	  	<bit position="27" name="P0452 - Evaporative Emission Control System Pressure Sensor Low Input" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 16" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="0" name="P0711 - Transmission Fluid Temperature Sensor Circuit Range/Performance" />
+  	  	<bit position="1" name="P0717 - Input/Turbine Speed Sensor Circuit No Signal" />
+  	  	<bit position="2" name="P0722 - Output Speed Sensor No Signal" />
+  	  	<bit position="3" name="P0795 - Pressure Control Solenoid 'C'" />
+  	  	<bit position="4" name="P0775 - Pressure Control Solenoid 'B'" />
+  	  	<bit position="5" name="P0770 - Shift Solenoid E Malfunction" />
+  	  	<bit position="6" name="P0765 - Shift Solenoid D Malfunction" />
+  	  	<bit position="7" name="P0760 - Shift Solenoid C Malfunction" />
+  	  	<bit position="12" name="P0153 - O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)" />
+  	  	<bit position="13" name="P0153 - O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)" />
+  	  	<bit position="14" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)" />
+  	  	<bit position="15" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)" />
+  	  	<bit position="16" name="P0052 - Heated O2 Sensor Heater Control Circuit High (Bank 2 Sensor 1)" />
+  	  	<bit position="17" name="P0051 - Heated O2 Sensor Heater Control Circuit Low (Bank 2 Sensor 1)" />
+  	  	<bit position="18" name="P0032 - Heated O2 Sensor Heater Control Circuit High (Bank 1 Sensor 1)" />
+  	  	<bit position="19" name="P0031 - Heated O2 Sensor Heater Control Circuit Low (Bank 1 Sensor 1)" />
+  	  	<bit position="20" name="P0153 - O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)" />
+  	  	<bit position="21" name="P0153 - O2 Sensor Circuit Slow Response (Bank 2 Sensor 1)" />
+  	  	<bit position="22" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)" />
+  	  	<bit position="23" name="P0133 - O2 Sensor Circuit Slow Response (Bank 1 Sensor 1)" />
+  	  	<bit position="28" name="P2118 - Throttle Control Motor" />
+  	  	<bit position="30" name="P2103 - Throttle Control Motor Relay" />
+  	  	<bit position="31" name="P2100 - Throttle Control Motor Relay" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 17" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="8" name="P1550 - Battery Current Sensor Circuit Range/Performance" />
+  	  	<bit position="9" name="P1551 - Battery Current Sensor Circuit Low Input" />
+  	  	<bit position="10" name="P1552 - Battery Current Sensor Circuit High Input" />
+  	  	<bit position="11" name="P1553 - Battery Current Sensor Circuit Performance" />
+  	  	<bit position="12" name="P1554 - Battery Current Sensor Circuit Performance" />
+  	  	<bit position="16" name="P0841 - Transmission Fluid Pressure Sensor/Switch 'A' Circuit Range/Performance" />
+  	  	<bit position="17" name="P0845 - Transmission Fluid Pressure Sensor/Switch 'B' Circuit" />
+  	  	<bit position="18" name="P0840 - Transmission Fluid Pressure Sensor/Switch 'A' Circuit" />
+  	  	<bit position="25" name="P0726 - Engine Speed Input Circuit Range/Performance" />
+  	  	<bit position="26" name="P0780 - Shift Malfunction" />
+  	  	<bit position="27" name="P0762 - Shift Solenoid C Stuck On" />
+  	  	<bit position="28" name="P0736 - Reverse incorrect gear ratio" />
+  	  	<bit position="29" name="P0735 - Gear 5 Incorrect ratio" />
+  	  	<bit position="30" name="P0797 - Pressure Control Solenoid 'C' Stuck On" />
+  	  	<bit position="31" name="P0882 - TCM Power Input Signal Low" />
+  	  	<description></description>
+  	</table>
+	
+  	<table type="BitwiseSwitch" name="DTC 18" category="Options//DTCs//Lists" storagetype="uint32">
+  	  	<bit position="8" name="P1421 - Cold Start Control" />
+  	  	<description></description>
+  	</table>
 </rom>

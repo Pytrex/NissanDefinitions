@@ -41,6 +41,23 @@
   <table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x7A00"/>
   <table name="Dilution Modification Coefficient" storageaddress="0x6C45"/>
   <table name="DTC 1" storageaddress="0xCB02"/>
+  <table name="DTC 2" storageaddress="0xCB06"/>
+  <table name="DTC 3" storageaddress="0xCB0A"/>
+  <table name="DTC 4" storageaddress="0xCB0E"/>
+  <table name="DTC 5" storageaddress="0xCB12"/>
+  <table name="DTC 6" storageaddress="0xCB16"/>
+  <table name="DTC 7" storageaddress="0xCB1A"/>
+  <table name="DTC 8" storageaddress="0xCB1E"/>
+  <table name="DTC 9" storageaddress="0xCB22"/>
+  <table name="DTC 10" storageaddress="0xCB26"/>
+  <table name="DTC 11" storageaddress="0xCB2A"/>
+  <table name="DTC 12" storageaddress="0xCB2E"/>
+  <table name="DTC 13" storageaddress="0xCB32"/>
+  <table name="DTC 14" storageaddress="0xCB36"/>
+  <table name="DTC 15" storageaddress="0xCB3A"/>
+  <table name="DTC 16" storageaddress="0xCB3E"/>
+  <table name="DTC 17" storageaddress="0xCB42"/>
+  <table name="DTC 18" storageaddress="0xCB46"/>
   <table name="Electronic Throttle Control Flags" storageaddress="0x7134"/>
   <table name="Engine Torque Map" storageaddress="0x9DDC"/>
   <table name="Fuel Cut Timing Retard Delay Table" storageaddress="0xA6BA"/>
