@@ -16,9 +16,6 @@ NissanDefinitions supports ECU ROM definition files for SH7055/SH7058 Nissan and
 
 Each ROM has its own definition file that stores the ROM addresses for all defined tables. This definition file references the A2L template file, which contains table specific data. The ScalingData file is where all table scalars are stored. Using the "Combine All.bat" file will merge all files into one. As time goes on, more and more ROMs will be defined.
 
-# Important Notice 
-Due to RomRaider no longer allowing bitwise switches larger than four bytes, DTCs are currently in a very dysfunctional state. So while DTC addresses will be accurate, the actual DTCs you'll see have no guarantee of accuracy. So I'd highly recommend not altering DTCs for the time being. 
-
 # Key Features
 
 ### General Repository Features
@@ -32,8 +29,7 @@ Due to RomRaider no longer allowing bitwise switches larger than four bytes, DTC
 - Tables Derived from [ZB060 a2l file](https://www.romraider.com/forum/viewtopic.php?f=45&t=14750) (all tables are derived from an official Nissan/Renault a2l file)
 - ~221 Supported Tables 
 - Separate Maps for Ignition Timing Adjustment and Knock Window
-- ~~Full DTC Support~~ 
-- ~~Full CID Supmask Support~~ 
+- Full DTC Support 
 - ROM Flags
 
 #### Example of CF48D
