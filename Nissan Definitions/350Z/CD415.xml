@@ -15,13 +15,14 @@
 		<endian>Big</endian>
 		<flashmethod>Nisprog</flashmethod>
 		<filesize>512kb</filesize>
-		<author>Pytrex</author>
+		<author>Asdow</author>
 		<version>v1.0</version>
     </romid>
 <!--Children: CD405-->
 	
 	<table name="Knock Slice Map" storageaddress="0x7FF4"/>
 	<table name="MAF Table" storageaddress="0x913E"/>
+	<table name="MAF Factor" storageaddress="0x5fb3"/>
 	<table name="K-Value" storageaddress="0x6426"/>
 	<table name="Target Idle RPM Table" storageaddress="0x8993"/>
 	<table name="Engine Torque Map" storageaddress="0x7DF4"/>
@@ -29,6 +30,18 @@
 	<table name="Speed Limiter (Fuel Cut)" storageaddress="0x621A"/>
 	<table name="Speed Limiter (Fuel Restore)" storageaddress="0x6224"/>
 	<table name="Rev Limit (Fuel Cut - 3D)" storageaddress="0x6486"/>
+	<table name="Throttle Body Opening Area Calibration Table" storageaddress="0x922E"/>
+	<table name="Bosch Fuel Cut Table" storageaddress="0x8957"/>
+	<table name="JECS Fuel Cut Table" storageaddress="0x897B"/>
+	<table name="Cranking Base Fuel Schedule Table" storageaddress="0x9794"/>
+	<table name="Injector Magnification Reciprocal Number" storageaddress="0x6476"/>
+	<table name="Fuel Injector Latency Adder" storageaddress="0x5C31"/>
+	<table name="Fuel Injector Latency at 14V" storageaddress="0x6165"/>
+	<table name="Minimum Injector Pulse Width" storageaddress="0x64FC"/>
+	<table name="Cylinder Filling Up Efficiency Scaler" storageaddress="0x651A"/>
+	<table name="Load Base Fuel Schedule Table" storageaddress="0x92fe"/>
+	<table name="Fuel Cut Timing Retard Delay Table" storageaddress="0x8639"/>
+	<table name="TCS Fuel Cut Prohibition Speed Table" storageaddress="0x8D59"/>
 
     <table name="Cold Ignition Timing Map (16x16)" storageaddress="0x6749">
       <table type="X Axis" storageaddress="0x8437"/>
@@ -85,6 +98,11 @@
 		<table type="Y Axis" storageaddress="0x8E05"/>
 	</table>
 
+	<table name="Cold Intake Cam Timing Map (8x8)" storageaddress="0x7099">
+		<table type="X Axis" storageaddress="0x8DC1"/>
+		<table type="Y Axis" storageaddress="0x8DD1"/>
+	</table>
+
 	<table name="QH0/ Torque Conversion Map" storageaddress="0x7974">
 		<table type="X Axis" storageaddress="0x911E"/>
 		<table type="Y Axis" storageaddress="0x8329"/>
@@ -109,6 +127,47 @@
 		<table type="X Axis" storageaddress="0x81B8"/>
 		<table type="Y Axis" storageaddress="0x81BC"/>
 	</table>
+
+	<table name="Target Throttle Valve Opening Table" storageaddress="0xA2DC">
+		<table type="X Axis" storageaddress="0xA556"/>
+	</table>
+
+	<!-- Flags -->
+	<table name="Cruise Control Specifications Choice Flags" storageaddress="0x6066"/>
+	<table name="Cruise Control, PTD Open-Degree Operation Switching Flag" storageaddress="0x6067"/>
+
+	<!-- DTCs -->
+	<table name="DTC 1" storageaddress="0xa288"/>
+	<table name="DTC 2" storageaddress="0xa28c"/>
+	<table name="DTC 3" storageaddress="0xa290"/>
+	<table name="DTC 4" storageaddress="0xa294"/>
+	<table name="DTC 5" storageaddress="0xa298"/>
+	<table name="DTC 6" storageaddress="0xa29c"/>
+	<table name="DTC 7" storageaddress="0xa2a0"/>
+	<table name="DTC 8" storageaddress="0xa2a4"/>
+	<table name="DTC 9" storageaddress="0xa2a8"/>
+	<table name="DTC 10" storageaddress="0xa2ac"/>
+	<table name="DTC 11" storageaddress="0xa2b0"/>
+	<table name="DTC 12" storageaddress="0xa2b4"/>
+	<table name="DTC 13" storageaddress="0xa2b8"/>
+	<table name="DTC 14" storageaddress="0xa2bc"/>
+	<table name="DTC 15" storageaddress="0xa2c0"/>
+	<table name="DTC 16" storageaddress="0xa2c4"/>
+	<table name="DTC 17" storageaddress="0xa2c8"/>
+
+	<!-- Supmasks -->
+	<table name="CID1100 Supmask" storageaddress="0x8386"/>
+	<table name="CID1120 Supmask" storageaddress="0x8392"/>
+	<table name="CID1140 Supmask" storageaddress="0x838A"/> 
+	<table name="CID1160 Supmask" storageaddress="0x838E"/> 
+	<table name="CID1200 Supmask" storageaddress="0x839E"/> 
+	<table name="CID1220 Supmask" storageaddress="0x83A2"/>
+	<table name="CID1240 Supmask" storageaddress="0x83A6"/> 	
+	<table name="CID1300 Supmask" storageaddress="0x83AA"/>
+	<table name="CID1400 Supmask" storageaddress="0x8396"/> 
+	<table name="CID1420 Supmask" storageaddress="0x839A"/> 
+	<table name="CID1500 Supmask" storageaddress="0x83AE"/> 
+
 
 	<checksum type="std" start="0x1408" end="0x3186" sumloc="0x1400" xorloc="0x1404"/>
 	<checksum type="std" start="0" end="0x7FFFF" sumloc="0x6640" xorloc="0x6638"/>
