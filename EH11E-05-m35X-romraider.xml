@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EH11E (2005 Infiniti M35x, MEC35-972, SH7058) - RomRaider-format definition.
+     GENERATED from files/EH11E.ghosttech by hidden_files/eh11e_gen_defs.py - do not hand-edit.
+     Contains ONLY entries proven against m35x_stock.bin (GhostTech, 2026-10-06):
+     ROM ID, the five 16x16 fuel compensation banks and their two shared axes,
+     plus the Tier A tables proven 2026-10-06. No borrowed addresses. -->
+<roms>
+ <rom>
+  <romid>
+   <xmlid>1EH11E</xmlid>
+   <internalidaddress>A351</internalidaddress>
+   <internalidstring>1EH11E</internalidstring>
+   <ecuid>1EH11E</ecuid>
+   <year>2005</year>
+   <market>USDM</market>
+   <make>Infiniti</make>
+   <model>M35</model>
+   <submodel>x AWD</submodel>
+   <transmission>5AT</transmission>
+   <memmodel>SH7058</memmodel>
+   <endian>Big</endian>
+   <flashmethod>Nisprog</flashmethod>
+   <filesize>1024kb</filesize>
+  </romid>
+  <table type="3D" storageaddress="0x8BD1" name="Fuel Compensation Map (16x16) Bank 1" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625"/>
+   <table type="X Axis" name="QH0 Flow Quantity" storageaddress="0xA42F" storagetype="uint8">
+    <scaling units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125"/>
+   </table>
+   <table type="Y Axis" name="Engine Speed" storageaddress="0xA44F" storagetype="uint8">
+    <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100"/>
+   </table>
+   <description>Proven EH11E fuel compensation bank 1 (byte x 0.78125, 128 = 100%). Axes proven from the OEM lookup routine: X = load-side axis @0xA42F, Y = engine speed axis @0xA44F. X-axis unit label follows the AC-family pattern; the breakpoints themselves are read from this ROM.</description>
+  </table>
+  <table type="3D" storageaddress="0x8CD1" name="Fuel Compensation Map (16x16) Bank 2" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625"/>
+   <table type="X Axis" name="QH0 Flow Quantity" storageaddress="0xA42F" storagetype="uint8">
+    <scaling units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125"/>
+   </table>
+   <table type="Y Axis" name="Engine Speed" storageaddress="0xA44F" storagetype="uint8">
+    <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100"/>
+   </table>
+   <description>Proven EH11E fuel compensation bank 2 (byte x 0.78125, 128 = 100%). Axes proven from the OEM lookup routine: X = load-side axis @0xA42F, Y = engine speed axis @0xA44F. X-axis unit label follows the AC-family pattern; the breakpoints themselves are read from this ROM.</description>
+  </table>
+  <table type="3D" storageaddress="0x8DB1" name="Fuel Compensation Map (16x16) Bank 3" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625"/>
+   <table type="X Axis" name="QH0 Flow Quantity" storageaddress="0xA42F" storagetype="uint8">
+    <scaling units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125"/>
+   </table>
+   <table type="Y Axis" name="Engine Speed" storageaddress="0xA44F" storagetype="uint8">
+    <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100"/>
+   </table>
+   <description>Proven EH11E fuel compensation bank 3 (byte x 0.78125, 128 = 100%). Axes proven from the OEM lookup routine: X = load-side axis @0xA42F, Y = engine speed axis @0xA44F. X-axis unit label follows the AC-family pattern; the breakpoints themselves are read from this ROM.</description>
+  </table>
+  <table type="3D" storageaddress="0x8EB1" name="Fuel Compensation Map (16x16) Bank 4" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625"/>
+   <table type="X Axis" name="QH0 Flow Quantity" storageaddress="0xA42F" storagetype="uint8">
+    <scaling units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125"/>
+   </table>
+   <table type="Y Axis" name="Engine Speed" storageaddress="0xA44F" storagetype="uint8">
+    <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100"/>
+   </table>
+   <description>Proven EH11E fuel compensation bank 4 (byte x 0.78125, 128 = 100%). Axes proven from the OEM lookup routine: X = load-side axis @0xA42F, Y = engine speed axis @0xA44F. X-axis unit label follows the AC-family pattern; the breakpoints themselves are read from this ROM.</description>
+  </table>
+  <table type="3D" storageaddress="0x8FB1" name="Fuel Compensation Map (16x16) Bank 5" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625"/>
+   <table type="X Axis" name="QH0 Flow Quantity" storageaddress="0xA42F" storagetype="uint8">
+    <scaling units="%" expression="x*0.390625" to_byte="x/0.390625" format="0.00" fineincrement="0.390625" coarseincrement="0.78125"/>
+   </table>
+   <table type="Y Axis" name="Engine Speed" storageaddress="0xA44F" storagetype="uint8">
+    <scaling units="RPM" expression="x*50" to_byte="x/50" format="0" fineincrement="50" coarseincrement="100"/>
+   </table>
+   <description>Proven EH11E fuel compensation bank 5 (byte x 0.78125, 128 = 100%). Axes proven from the OEM lookup routine: X = load-side axis @0xA42F, Y = engine speed axis @0xA44F. X-axis unit label follows the AC-family pattern; the breakpoints themselves are read from this ROM.</description>
+  </table>
+  <table type="2D" storageaddress="0xB542" name="MAF Table" category="Airflow//Main" storagetype="uint16" sizex="32" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   <table type="X Axis" name="MAF Axis" storageaddress="0xC188" storagetype="uint16">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   </table>
+   <description>Proven 2026-10-06: 1-D uint16 curve over axis @0xC188 (32 breakpoints rising 0-3172), consumer wrapper 0x63C0 at 0x2169C, 0x5873A and others. 32 live points; table entries past 31 are zero / other data. No family scaling exists - raw counts.</description>
+  </table>
+  <table type="3D" storageaddress="0x984C" name="QH0 Torque Conversion Map (16x16)" category="Engine Torque//Main" storagetype="uint16" sizex="16" sizey="16" userlevel="1">
+   <scaling units="Requested Torque (lb-ft)" expression="x*0.073756-2416.836136" to_byte="(x+2416.836136)/0.073756" format="0.0" fineincrement="0.073756" coarseincrement="0.147512"/>
+   <table type="X Axis" name="Torque Conversion X Axis" storageaddress="0xA590" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <table type="Y Axis" name="Torque Conversion Y Axis" storageaddress="0xB874" storagetype="uint16">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   </table>
+   <description>Proven 2026-10-06: 16x16 uint16 map, consumer wrapper 0x6190 at 0x54A6A and others; X axis @0xA590 (16 breakpoints), Y axis @0xB874 (16 breakpoints, 0-65535), axis scalings unproven. Family name and scaling; reads -74.4 to +259.2 lb-ft stock.</description>
+  </table>
+  <table type="3D" storageaddress="0x91CC" name="TTEPTD Torque Compensation Map" category="Engine Torque//Main" storagetype="uint16" sizex="8" sizey="8" userlevel="1">
+   <scaling units="Compensation (%)" expression="x*0.0030518" to_byte="x/0.0030518" format="0.00" fineincrement="0.0030518" coarseincrement="0.0061036"/>
+   <table type="X Axis" name="TTEPTD X Axis" storageaddress="0xB7F4" storagetype="uint16">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   </table>
+   <table type="Y Axis" name="TTEPTD Y Axis" storageaddress="0xB814" storagetype="uint16">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   </table>
+   <description>Proven 2026-10-06: 8x8 uint16 map, consumer wrapper 0x6128 at 0x457D8; axes @0xB7F4 (X) and @0xB814 (Y), axis scalings unproven. Family name and scaling; stock values read 100.1-100.3% (near unity).</description>
+  </table>
+  <table type="3D" storageaddress="0x89D1" name="Target AFR Map (8x8)" category="Fuel Delivery//Main" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
+   <scaling units="Target AFR (Gasoline Scale)" expression="1881.6/x" to_byte="1881.6/x" format="0.00" fineincrement="0.01" coarseincrement="0.1"/>
+   <table type="X Axis" name="Target AFR X Axis" storageaddress="0xB10A" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <table type="Y Axis" name="Target AFR Y Axis" storageaddress="0xB112" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <description>Proven 2026-10-06: 8x8 uint8 map, consumer wrapper 0x6018 at 0x7DC38 in the target-AFR function; axes @0xB10A (X) and @0xB112 (Y), axis scalings unproven. Nine cells hold the sentinel raw 25 (a disabled corner region). Family name and scaling.</description>
+  </table>
+  <table type="3D" storageaddress="0x8531" name="AFR Correction Map Bank 1" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   <table type="X Axis" name="AFR Correction X Axis" storageaddress="0xA574" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <table type="Y Axis" name="AFR Correction Y Axis" storageaddress="0xA5D0" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <description>Proven 2026-10-06: 16x16 uint8 map (candidate pass guessed 8x8 uint16), consumer wrapper 0x60B8 at 0x13B3A; axes @0xA574 (X) and @0xA5D0 (Y), axis scalings unproven. Raw band 109-127. Scaling unproven - the family expression presumes uint16 data.</description>
+  </table>
+  <table type="3D" storageaddress="0x8331" name="Acceleration Fuel Compensation Map" category="Fuel Delivery//Main" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
+   <scaling units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625"/>
+   <table type="X Axis" name="Accel/Decel Fuel Comp X Axis" storageaddress="0xB46E" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <table type="Y Axis" name="Accel/Decel Fuel Comp Y Axis" storageaddress="0xB48E" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <description>Proven 2026-10-06: 8x8 uint8 map, consumer wrapper 0x6018 at 0x92FFC, selected against 0x8371 by a state bit at 0x92FDE; axes @0xB46E (X) and @0xB48E (Y), axis scalings unproven. Byte-identical to 0x8371 in the stock ROM - editing one copy does not change the other; accel/decel assignment follows the family order.</description>
+  </table>
+  <table type="3D" storageaddress="0x8371" name="Deceleration Fuel Compensation Map" category="Fuel Delivery//Main" storagetype="uint8" sizex="8" sizey="8" userlevel="1">
+   <scaling units="Compensation (%)" expression="x*0.78125" to_byte="x/0.78125" format="0.00" fineincrement="0.78125" coarseincrement="1.5625"/>
+   <table type="X Axis" name="Accel/Decel Fuel Comp X Axis" storageaddress="0xB46E" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <table type="Y Axis" name="Accel/Decel Fuel Comp Y Axis" storageaddress="0xB48E" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <description>Proven 2026-10-06: 8x8 uint8 map, consumer wrapper 0x6018 at 0x92FFC, selected against 0x8331 by a state bit (this copy loads at 0x92FEC); axes @0xB46E (X) and @0xB48E (Y), axis scalings unproven. Byte-identical to 0x8331 in the stock ROM - editing one copy does not change the other; accel/decel assignment follows the family order.</description>
+  </table>
+  <table type="3D" storageaddress="0x7E91" name="Cold Ignition Timing Map (16x16)" category="Ignition//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   <description>Proven 2026-10-06: 16x16 uint8 map, consumer wrapper 0x60F0 (core 0x65E4) at 0x2FD56. Data is flagged bytes: the low 7 bits are the value and bit 7 is a flag - display raw; the family x-64 reading applies to the 7-bit value only. Axes pinned 2026-10-08: X @0xA6FE, Y @0xA6EE (both 16x u8, values 8,16,...,128). Byte-identical to 0x7F91 in the stock ROM; name assignment follows the family order.</description>
+  </table>
+  <table type="3D" storageaddress="0x7F91" name="Misfire Diagnosis Basic Map" category="Diagnostics//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   <description>Proven 2026-10-06: 16x16 uint8 map, consumer wrapper 0x60F0 (core 0x65E4) at 0x2FEF0 and 0x2C0C8. Data is flagged bytes: the low 7 bits are the value and bit 7 is a flag - display raw. Axes pinned 2026-10-08: X @0xA6FE, Y @0xA6EE (both 16x u8, values 8,16,...,128). Byte-identical to 0x7E91 in the stock ROM; name assignment follows the family order.</description>
+  </table>
+
+  <table type="3D" storageaddress="0x8091" name="Table 0x8091 (unnamed 16x16 uint8)" category="Ignition//Main" storagetype="uint8" sizex="16" sizey="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   <description>Proven 2026-10-08: 16x16 uint8 map, third member of the consumer wrapper 0x60F0 family (core 0x65E4). Direct consumer at 0x2C0EE; also the default table in the 0x2FC92 function, swapped for 0x7F91 when RAM 0xFFFF23A0 bit 7 is set. Data is flagged bytes: the low 7 bits are the value (43-71; the family x-64 reading gives -21 to +7) and bit 7 is a flag - display raw. Differs from 0x7F91 in 186/256 bytes, pulled back almost everywhere; in the misfire routine it is read over the same axes right after 0x7F91 and the difference between the two feeds a clamped, learned RAM value. Axes pinned 2026-10-08: X @0xA6FE, Y @0xA6EE (both 16x u8, values 8,16,...,128). NO proven name yet - unnamed on purpose; do not rename on shape alone.</description>
+  </table>
+  <table type="3D" storageaddress="0x9FCC" name="Table 0x9FCC (unnamed 16x16 uint16)" category="Misc//Main" storagetype="uint16" sizex="16" sizey="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   <description>Proven 2026-10-06: unnamed 16x16 uint16 map, consumer wrapper 0x5F24 at 0x4B38C; the consumer subtracts 32768 from the result (centered-value convention). Axes are internal to search routine 0x68C8. No family name or scaling exists - raw counts.</description>
+  </table>
+  <table type="2D" storageaddress="0xA5A8" name="Bosch Fuel Restore Table" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" userlevel="1">
+   <scaling units="Engine Speed (RPM)" expression="x*25" to_byte="x/25" format="0" fineincrement="25" coarseincrement="50"/>
+   <table type="X Axis" name="Bosch Fuel Restore Axis" storageaddress="0xA2DC" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <description>Proven 2026-10-06: 16-point uint8 curve over axis @0xA2DC, consumer wrapper 0x6348 at 0x49CD4. The candidate pass had this pair's roles swapped - 0xA5A8 is the table, 0xA2DC is its axis. Family name and scaling; values are RPM thresholds (0-6375 stock).</description>
+  </table>
+  <table type="2D" storageaddress="0xAA4A" name="Target Idle RPM Table" category="Idle Control//Main" storagetype="uint8" sizex="16" userlevel="1">
+   <scaling units="Target Idle Speed (RPM)" expression="x*12.5" to_byte="x/12.5" format="0" fineincrement="12.5" coarseincrement="25"/>
+   <table type="X Axis" name="Target Idle Axis" storageaddress="0xA40B" storagetype="uint8">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   </table>
+   <description>Proven 2026-10-06: 16-point uint8 curve over axis @0xA40B, consumer wrapper 0x6348 at 0x45956; the result feeds idle-control RAM. The candidate pass named the axis (0xA40B) as this table - the table is here. Family name and scaling; reads 875-1762 RPM stock (fast-idle curve).</description>
+  </table>
+  <table type="2D" storageaddress="0xA6DE" name="AFR Conversion Table" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   <description>Proven 2026-10-06: 16-point uint8 curve via lookup helper 0x6230 at 0x2E200 (coordinate = struct byte @(11,0x85CC)); no stored axis - the helper indexes by the coordinate directly. Stock values are all zero - a consumed but zeroed calibration in this variant. Family name; scaling unproven.</description>
+  </table>
+  <table type="2D" storageaddress="0xA722" name="Load Base Fuel Schedule Table" category="Fuel Delivery//Main" storagetype="uint8" sizex="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10"/>
+   <description>Proven 2026-10-06: 16-point uint8 curve via lookup helper 0x6218 at 0x2DA56; no stored axis - the helper indexes by the coordinate directly. Stock values are all zero. Family name; scaling unproven - the family expression presumes uint16 pulse widths.</description>
+  </table>
+  <table type="2D" storageaddress="0xB894" name="Table 0xB894 (unnamed 16 uint16 curve)" category="Misc//Main" storagetype="uint16" sizex="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   <description>Proven 2026-10-06: unnamed 16-point uint16 curve via lookup helper 0x62C4 at 0x20CB2 (the helper core's index is 4 bits - 16 entries, not the 64 the shape scan guessed). No family name or scaling - raw counts.</description>
+  </table>
+  <table type="2D" storageaddress="0xBA02" name="Table 0xBA02 (unnamed 16 uint16 curve)" category="Misc//Main" storagetype="uint16" sizex="16" userlevel="1">
+   <scaling expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   <description>Proven 2026-10-06: unnamed 16-point uint16 curve via lookup helper 0x6290 at 0x2A1C8 (pass-2 monitor function); the result is summed with a RAM word and clamped. No family name or scaling - raw counts.</description>
+  </table>
+  <table type="2D" storageaddress="0xBE9A" name="Throttle Flow Potential Table (low segment)" category="Throttle//Main" storagetype="uint16" sizex="16" userlevel="1">
+   <scaling units="QH0 Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00" fineincrement="0.001525879" coarseincrement="0.003051758"/>
+   <description>Proven 2026-10-06: LOW segment (16 uint16) of the segmented Throttle Flow Potential curve, consumer helper 0x6290 at 0x215F4 - coordinates below 15360 land here; the high segment is @0xBE7A. No stored axis - the helper indexes by the coordinate directly. Family name and scaling.</description>
+  </table>
+  <table type="2D" storageaddress="0xBE7A" name="Throttle Flow Potential Table (high segment)" category="Throttle//Main" storagetype="uint16" sizex="16" userlevel="1">
+   <scaling units="QH0 Flow Potential (%)" expression="x*0.001525879" to_byte="x/0.001525879" format="0.00" fineincrement="0.001525879" coarseincrement="0.003051758"/>
+   <description>Proven 2026-10-06: HIGH segment (16 uint16) of the segmented Throttle Flow Potential curve, consumer helper 0x6290 at 0x21600 - coordinates of 15360 and up land here with the offset subtracted; the low segment is @0xBE9A. No stored axis. Family scaling carried from the one curve.</description>
+  </table>
+  <table type="2D" storageaddress="0xC1F8" name="Target Throttle Valve Opening Table (Trustful)" category="Throttle//Main" storagetype="uint16" sizex="32" userlevel="1">
+   <scaling units="Accelerator Pedal Opening Area (cm^2)" expression="x*0.0008" to_byte="x/0.0008" format="0.00" fineincrement="0.0008" coarseincrement="0.0016"/>
+   <table type="X Axis" name="Target Throttle Axis" storageaddress="0xC0E8" storagetype="uint16">
+    <scaling units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="100"/>
+   </table>
+   <description>Proven 2026-10-06: 32-point uint16 curve over axis @0xC0E8, consumer wrapper 0x63C0 at 0x216F4 and others. Family name and scaling; reads 0-51.6 cm^2 stock.</description>
+  </table>
+  <table type="1D" storageaddress="0x6C24" name="Speed Limiter (Fuel Restore)" category="Limits//Main" storagetype="uint8" sizex="1" userlevel="1">
+   <scaling units="Speed" expression="x*1.24300808" to_byte="x/1.24300808" format="0.0" fineincrement="1.24300808" coarseincrement="2.48601616"/>
+   <description>Proven 2026-10-06: single uint8 threshold (stock 48) read by the threshold-monitor function at 0x3E4E4 and compared against a speed-class quantity, with a hysteresis partner byte at 0x6C25 (stock 22 - not part of this entry). Family name and scaling.</description>
+  </table>
+ </rom>
+</roms>
